@@ -1,0 +1,11 @@
+.btn{
+	// font-size: 15px;
+	padding: 2px 40px;
+	min-width: 116px;
+	&-primary{
+		color: $body-bg;
+	}
+	&-outline-dark{
+		color: $grey;
+	}
+}

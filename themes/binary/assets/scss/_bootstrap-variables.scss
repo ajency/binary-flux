@@ -1,6 +1,8 @@
 $theme-colors: (
-  "primary": $dark,
+  "primary": #3D90F7,
+  "secondary": #0F2952,
   "light":  $light,
+  "dark":  #5A5B6B,
   "error": #d74025
 );
 
@@ -16,7 +18,7 @@ $container-max-widths: (
   sm: 566px,
   md: 740px,
   lg: 960px,
-  xl: 1140px,
+  xl: 1250px,
 );
 
 $grid-gutter-width: 30px;
@@ -39,3 +41,4 @@ $spacers: map-merge(
   ),
   $spacers
 );
+

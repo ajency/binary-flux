@@ -1,0 +1,174 @@
+{{ define "main" }}
+
+<div class="container mt-2">
+
+	<h1 class="pt-5">Style Guide</h1>
+
+	<hr class="my-5">
+
+	<div class="row">
+		<div class="col-3">
+			<h4 class="mb-4">Typography</h4>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3 text-right">
+			<label>Section Title</label>
+		</div>
+		<div class="col-9">
+			<h5 class="section-title text-uppercase mt-0">Add a new source</h5>
+			<p><code>h5</code> tag with classes <code>.section-title</code>, <code>.text-uppercase</code></p>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3 text-right">
+			<label class="">Label</label>
+		</div>
+		<div class="col-9">
+			<label class="">Company Name</label>
+			<p>Default <code>label</code> tag</p>
+			<hr>
+		</div>
+	</div>
+
+  	<div class="row">
+		<div class="col-3 text-right">
+			<label class="">Body Text</label>
+		</div>
+		<div class="col-9">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			<p>Default <code>p</code> tag</p>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3 text-right">
+			<label class="">Small Text</label>
+		</div>
+		<div class="col-9">
+			<p class="small">Small text here</p>
+			<p class="mt-1"><code>p</code> tag with class <code>.small</code> </p>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3 text-right">
+			<label class="">Link</label>
+		</div>
+		<div class="col-9">
+			<a href="#" class="">Click Here</a>
+			<p class="mt-1">Default <code>a</code> tag </p>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3 text-right">
+			<label class="">Headings</label>
+		</div>
+		<div class="col-9">
+			<h1>Heading 1</h1>
+			<p class="mt-1">Default <code>h1</code> tag </p>
+			<h2>Heading 2</h2>
+			<p class="mt-1">Default <code>h2</code> tag </p>
+			<h3>Heading 3</h3>
+			<p class="mt-1">Default <code>h3</code> tag </p>
+			<h4>Heading 4</h4>
+			<p class="mt-1">Default <code>h4</code> tag </p>
+			<h5>Heading 5</h5>
+			<p class="mt-1">Default <code>h5</code> tag </p>
+			<h6>Heading 6</h6>
+			<p class="mt-1">Default <code>h6</code> tag </p>
+			
+		</div>
+	</div>
+
+	
+
+	<hr class="my-5">
+
+	<div class="row">
+		<div class="col-3">
+			<h4 class="mb-4">Form Elements</h4>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-3 text-right">
+			<label>Input Styles</label>
+		</div>
+		<div class="col-9">
+		   <div class="form-field">
+		       <label class="form-label">
+		           <span class="form-label-content">Input Label</span>
+		       </label>
+		       <input class="form-control" type="text">                            
+		   </div>
+			<p>
+				Input should have class <code>.form-control</code>
+			</p>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3 text-right">
+			<label>Radio Selection</label>
+		</div>
+		<div class="col-9">
+			<div class="custom-control custom-radio cibil-radio">
+			  <input type="radio" id="radio1" name="radioselect" class="custom-control-input" checked>
+			  <label class="custom-control-label" for="radio1">Radio 1</label>
+			</div>
+			<div class="custom-control custom-radio cibil-radio">
+			  <input type="radio" id="radio2" name="radioselect" class="custom-control-input">
+			  <label class="custom-control-label" for="radio2">Radio 2</label>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3 text-right">
+			<label>Check Box</label>
+		</div>
+		<div class="col-9">
+			<div class="custom-control custom-checkbox cibil-checkbox">
+			  <input type="checkbox" class="custom-control-input" id="acceptTerms" checked="">
+			  <label class="custom-control-label font-light" for="acceptTerms">Checkbox label</label>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+	<hr class="my-5">		
+
+	<div class="row">
+		<div class="col-3">					
+			<h4 class="mb-4">Buttons</h4>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-3 text-right">
+			<label>Default/Hover</label>
+		</div>
+		<div class="col-9">
+			<button class="btn btn-primary">Save</button>
+			<p class="mt-2">Button should have class <code>.btn .btn-primary</code>.</p>
+			<hr>
+			<button class="btn btn-outline-dark">Test</button>
+			<p class="mt-2">Button should have class <code>.btn .btn-outline-dark</code>.</p>
+		</div>
+	</div>
+
+	<hr class="my-5">
+
+</div>
+
+{{ end }}
