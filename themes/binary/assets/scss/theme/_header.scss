@@ -3,3 +3,14 @@ header{
 	padding: 10px;
 	box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.5);
 }
+
+.logo {
+	display: block;
+	max-width: 160px;
+	height: 32px;
+	width: 100%;	
+
+	&-wrap {
+		padding-left: 10px;
+	}
+}
