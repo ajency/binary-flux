@@ -1,0 +1,22 @@
+ul,ol {
+    padding-left: 10px;
+}
+.liststyle {
+    &-bullet {
+        list-style: none;
+        li {
+            position: relative;
+            &:after {
+                content: "";
+                display: block;
+                width: 4px;
+                height: 4px;
+                border-radius: 56%;
+                background: rgba(#FFFFFF, 0.5);
+                position: absolute;
+                left: -10px;
+                top: 6px;
+            }
+        }
+    }
+}

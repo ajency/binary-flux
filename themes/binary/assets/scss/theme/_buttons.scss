@@ -9,3 +9,11 @@
 		color: $grey;
 	}
 }
+a.btn-grey {
+	color: $grey;
+	&:focus,
+	&:hover {
+		color: $grey;
+		opacity: 0.85;
+	}
+}
