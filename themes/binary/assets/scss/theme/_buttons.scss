@@ -8,6 +8,18 @@
 	&-outline-dark{
 		color: $grey;
 	}
+	&-icon {
+		padding: 2px 10px;
+		vertical-align: middle;
+		.icon {
+			margin-right: 5px;			
+			color: inherit;
+			
+			&:before {
+				color: inherit;
+			}
+		}
+	}
 }
 a.btn-grey {
 	color: $grey;

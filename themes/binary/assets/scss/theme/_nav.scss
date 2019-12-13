@@ -11,7 +11,7 @@
             right: 0;
             height: 2px;
             border-bottom: 2px solid rgba($grey7, 0.5);
-            z-index: -1;
+            z-index: 1;
         }
         .nav {
             &-link {
@@ -20,7 +20,9 @@
                 border-radius: 0;
                 border: 0;
                 border-bottom: 3px solid transparent;
-                padding: 0 15px 10px;
+                padding: 10px 15px 10px;
+                position: relative;
+                z-index: 2;
 
                 .icon-checked {
                     font-size: 15px;
@@ -34,13 +36,41 @@
 
                 &.active {
                     background: transparent;
-                    font-weight: 900;
+                    font-weight: 900 !important;
                     color: #fff;     
                     border-bottom-color: $primary;
                     &:hover {
                         border-bottom: 3px solid $primary;
                     }
+                    .sticky-badge {
+                        background: $primary;
+                        color: #fff;
+                    }
                 }
+                .sticky-badge {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0;
+
+                    &-text {
+                        position: relative;
+                        padding-right: 35px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    &-divider-dark {
+        &:after {
+            border-bottom-color: rgba(#191A35, 0.3);
+        }
+    }
+    &-fill {
+        &-50 {
+            .nav-item {
+                flex: 1 0 50%;
             }
         }
     }
