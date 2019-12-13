@@ -74,4 +74,12 @@
             }
         }
     }
+    &.no-border{
+        &:after{
+            display: none;
+        }
+    }
+    &.blue-bg{
+        background: $bg-blue;
+    }
 }

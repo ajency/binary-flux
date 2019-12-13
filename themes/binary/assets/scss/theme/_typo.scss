@@ -20,3 +20,23 @@ ul,ol {
         }
     }
 }
+
+.reactangular-list{
+    padding-left: 0;
+    list-style: none;
+    li{
+        position: relative;
+        padding-left: 17px;
+        color: $light-blue;
+        margin-bottom: 10px;
+        &:after{
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            left: 0;
+            top: 6px;
+            content: "";
+            background: $light-blue;
+        } 
+    }
+}

@@ -23,3 +23,20 @@
         }
     }
 }
+
+a.block-link{
+    display: block;
+    padding: 17px 15px;
+    background-color: $grey9;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid $grey7;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    &:hover{
+        color: #fff;
+        background-color: #5A5B6B;
+        border-color: #5A5B6B;
+    }
+}
