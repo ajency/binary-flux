@@ -36,6 +36,9 @@ hr{
 	&b-15 {
 		margin-bottom: 15px !important;
 	}
+	&t-25{
+		margin-top: 25px;
+	}
 }
 
 .text {
@@ -84,11 +87,42 @@ hr{
 	font-size: 12px;
 	line-height: 16px;
 }
+
 .fw {
 	&-300 {
 		font-weight: 300;
 	}
 	&-900 {
 		font-weight: 900;
+	}
+}
+
+.p{
+	&-t{
+		&-130{
+			padding-top: 130px;
+			@media (max-width: 767px) {
+				padding-top: 40px;
+			}
+		}
+		&-140{
+			padding-top: 140px;
+			@media (max-width: 767px) {
+				padding-top: 40px;
+			}
+		}
+	}
+}
+
+.mh-md-100{
+	@media (min-width: 768px) {
+		min-height: calc(100vh - 80px);
+	}
+}
+
+.max {
+	&-935 { 
+		max-width: 935px;
+		margin: 0 auto;
 	}
 }

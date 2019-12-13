@@ -13,6 +13,13 @@
             border-bottom: 2px solid rgba($grey7, 0.5);
             z-index: 1;
         }
+        .nav-item{
+            &:first-child{
+                a{
+                    padding-left: 0;
+                }
+            }
+        }
         .nav {
             &-link {
                 color: rgba(#FFFFFF, 0.5);
@@ -39,6 +46,7 @@
                     font-weight: 900 !important;
                     color: #fff;     
                     border-bottom-color: $primary;
+                    text-transform: uppercase;
                     &:hover {
                         border-bottom: 3px solid $primary;
                     }
