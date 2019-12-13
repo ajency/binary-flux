@@ -24,6 +24,18 @@ hr{
 	&b-05 {
 		margin-bottom: 5px !important;
 	}
+	&l-15 {
+		margin-left: 15px !important;	
+	}
+	&r-15 {
+		margin-right: 15px !important;
+	}
+	&t-15 {
+		margin-top: 15px !important;	
+	}
+	&b-15 {
+		margin-bottom: 15px !important;
+	}
 }
 
 .text {
@@ -65,5 +77,18 @@ hr{
 .padding-md-0 {
 	@include media-between(lg,xxl){
 		padding: 0;
+	}
+}
+
+.f-12 {
+	font-size: 12px;
+	line-height: 16px;
+}
+.fw {
+	&-300 {
+		font-weight: 300;
+	}
+	&-900 {
+		font-weight: 900;
 	}
 }

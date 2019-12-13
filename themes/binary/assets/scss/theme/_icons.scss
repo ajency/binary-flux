@@ -25,14 +25,28 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-icon-dots-hr:before {
+  content: "\e90f";
+  color: #3c92ff;
+}
+.icon-icon-filter:before {
+  content: "\e910";
+  color: #5d5e72;
+}
+
 .icon-arrow-right-light:before {
   content: "\e90d";
   color: #fff;
 }
 
+.icon-preview:before {
+  content: "\e90e";
+  color: #5b5d71;
+}
+
 .icon-add:before {
   content: "\e900";
-  color: #3c92ff;
+  color: inherit;
 }
 .icon-arrow-down-sm:before {
   content: "\e902";
@@ -60,15 +74,15 @@
 }
 .icon-dots:before {
   content: "\e908";
-  color: #659cc8;
+  color: inherit;
 }
 .icon-setting:before {
   content: "\e909";
-  color: #5c5e79;
+  color: #5b5d71;
 }
 .icon-close:before {
   content: "\e90a";
-  color: #659cc8;
+  color: rgba(#ffffff,0.5);
 }
 .icon-arrow-down-lg:before {
   content: "\e90b";
@@ -87,5 +101,22 @@
       &-wrap {
         padding: 0 8px;
       }
+  }
+
+  .icon-hamburger {
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+    span {
+      background: $white-5;
+      width: 22px;
+      height: 2px;
+      margin-bottom: 4px;
+      display: block;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
   

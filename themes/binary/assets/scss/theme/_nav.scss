@@ -75,3 +75,101 @@
         }
     }
 }
+
+.nav {
+    &-list-items {
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+    }
+    &-lists {
+        padding: 0;
+        margin: 0;
+        .list-item {
+            position: relative;
+            padding: 8px 8px 8px 20px;
+            border-top: 2px solid $grey10;                    
+            cursor: pointer;
+            &:last-child {
+                border-bottom: 2px solid $grey10;
+            }
+            &:hover {
+                background: $darkblue;
+            }
+
+            &-wrap {
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                &:before {
+                    content: "\e902";
+                    display: block;
+                    color: rgba($blue-light, 0.5);
+                    font-family: 'icomoon';
+                    position: absolute;
+                    left: -15px;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(-90deg);
+                    font-size: 10px;
+                }
+            }
+            &-logo {
+                img {
+                    max-width: 22px;
+                    height: auto;
+                    display: block;
+                    width: 100%;
+                }
+            }
+            &-label {
+                padding-left: 10px;
+            }
+            // > ul {
+            //     padding-top: 5px;
+            //     padding-left: 20px;
+            // }
+            // ul {
+            //     .request {
+            //         &-label {
+            //             color: $white-6;
+            //         }
+            //     }
+
+            //     li {
+            //         ul li {
+            //             .list-item-wrap:before {
+            //                 display: none;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+        .request {
+            &-label,
+            &-count {
+                font-size: 12px;
+                line-height: 16px;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            &-label {
+                color: #FFFFFF;
+            }
+            &-count {
+                color: $white-6;
+            }
+            // &-type {
+            //     font-size: 7px;
+            //     &.post {
+            //         color: $orange;
+            //     }
+            //     &.get {
+            //         color: $blue2;
+            //     }
+            // }
+        }
+    }
+}

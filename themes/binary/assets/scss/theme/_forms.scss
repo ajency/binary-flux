@@ -22,10 +22,22 @@
 	font-weight: 300;
 }
 
+.custom-checkbox-dark {
+	.custom-control-label{
+		color: $white-5;
+		&::before{
+			border-color: $grey7;
+		}
+	}
+}
+
 .form-control{
 	&:focus{
 		background-color: $body-bg;
 		color: white;
+	}
+	&-dark {
+		border-color: $grey7;
 	}
 }
 
