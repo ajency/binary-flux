@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 60.1 (101010) - https://sketch.com -->
+    <title>71899848-BF59-4FBD-934D-49609997B8E5</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="End-User" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4.event_form_27Nov" transform="translate(-1307.000000, -9.000000)">
+            <g id="header">
+                <g id="logo-header">
+                    <g id="ic_notifications" transform="translate(1303.000000, 7.000000)">
+                        <polygon id="Bounds" points="0 0 24 0 24 24 0 24"></polygon>
+                        <path d="M12,22 C12.14,22 12.27,21.99 12.4,21.96 C13.05,21.82 13.58,21.38 13.84,20.78 C13.94,20.54 13.99,20.28 13.99,20 L9.99,20 C10,21.1 10.89,22 12,22 L12,22 Z M18,11 C18,7.93 16.36,5.36 13.5,4.68 L13.5,4 C13.5,3.17 12.83,2.5 12,2.5 C11.17,2.5 10.5,3.17 10.5,4 L10.5,4.68 C7.63,5.36 6,7.92 6,11 L6,16 L4,18 L4,19 L20,19 L20,18 L18,16 L18,11 L18,11 Z" id="Icon" fill="#5C5E79"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
