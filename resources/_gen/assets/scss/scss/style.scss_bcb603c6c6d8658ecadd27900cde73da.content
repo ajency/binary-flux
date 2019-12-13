@@ -7152,6 +7152,8 @@ a.text-error:hover, a.text-error:focus {
     height: 2px;
     border-bottom: 2px solid rgba(93, 94, 114, 0.5);
     z-index: 1; }
+  .nav-tabs .nav-item:first-child a {
+    padding-left: 0; }
   .nav-tabs .nav-link {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 300 !important;
@@ -7171,7 +7173,8 @@ a.text-error:hover, a.text-error:focus {
       background: transparent;
       font-weight: 900 !important;
       color: #fff;
-      border-bottom-color: #3D90F7; }
+      border-bottom-color: #3D90F7;
+      text-transform: uppercase; }
       .nav-tabs .nav-link.active:hover {
         border-bottom: 3px solid #3D90F7; }
       .nav-tabs .nav-link.active .sticky-badge {
@@ -7257,7 +7260,7 @@ ul, ol {
   .reactangular-list li {
     position: relative;
     padding-left: 17px;
-    color: #3C92FF;
+    color: #3B92FF;
     margin-bottom: 10px; }
     .reactangular-list li:after {
       width: 7px;
@@ -7266,7 +7269,10 @@ ul, ol {
       left: 0;
       top: 6px;
       content: "";
-      background: #3C92FF; }
+      background: #3B92FF; }
+
+.font-weight-bolder {
+  font-weight: 900 !important; }
 
 .navigation-navs ul {
   list-style: none;
@@ -7288,7 +7294,7 @@ ul, ol {
 a.block-link {
   display: block;
   padding: 17px 15px;
-  background-color: #35374F;
+  background-color: #2D3046;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -7325,7 +7331,11 @@ body {
 
 label {
   font-size: 15px;
+  font-weight: 700;
   color: #93949E; }
+
+h1, .h1 {
+  font-size: 36px; }
 
 .dropdown-profile {
   display: inline-block;
