@@ -25,6 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right-light:before {
+  content: "\e90d";
+  color: #fff;
+}
+
 .icon-add:before {
   content: "\e900";
   color: #3c92ff;
