@@ -12,6 +12,6 @@ html/tags/
 html/index.html
 html/index.xml
 html/sitemap.xml
-screens/admin-interface/
-screens/welcome/
-screens/index.xml
+html/screens/admin-interface/
+html/screens/welcome/
+html/screens/index.xml
