@@ -1,0 +1,26 @@
+.modal{
+    &-dialog{
+        max-width: 800px;
+    }
+    &-content{
+        background-color: #27293D;
+        box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px 0 rgba(0,0,0,0.2);
+        border: 0;
+    }
+    &-header{
+        border: 0;
+        border-bottom: 1px solid rgba(93, 94, 114, 0.5);
+        .close{
+            padding: 0;
+            margin: 0;
+            line-height: 15px;
+            opacity: 1;
+            .icon-close{
+                font-size: 12px;
+                &:before{
+                    color: #93949D;
+                }
+            }
+        }
+    }
+}

@@ -39,6 +39,10 @@
 	&-dark {
 		border-color: $grey7;
 	}
+	&.input-small{
+		height: 30px;
+		padding: 5px 10px;
+	}
 }
 
 .form {

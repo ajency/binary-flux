@@ -7620,6 +7620,10 @@ h1, .h1 {
 .form-control-dark {
   border-color: #5D5E72; }
 
+.form-control.input-small {
+  height: 30px;
+  padding: 5px 10px; }
+
 .form-field {
   margin-bottom: 15px; }
 
@@ -7743,6 +7747,27 @@ a.btn-grey {
 
 .border-white--5 {
   border: 1px solid #5D5E72; }
+
+.modal-dialog {
+  max-width: 800px; }
+
+.modal-content {
+  background-color: #27293D;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px 0 rgba(0, 0, 0, 0.2);
+  border: 0; }
+
+.modal-header {
+  border: 0;
+  border-bottom: 1px solid rgba(93, 94, 114, 0.5); }
+  .modal-header .close {
+    padding: 0;
+    margin: 0;
+    line-height: 15px;
+    opacity: 1; }
+    .modal-header .close .icon-close {
+      font-size: 12px; }
+      .modal-header .close .icon-close:before {
+        color: #93949D; }
 
 hr {
   border-top: 2px solid #34364A; }
