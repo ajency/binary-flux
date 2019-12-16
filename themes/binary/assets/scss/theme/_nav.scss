@@ -224,3 +224,54 @@
         }
     }
 }
+
+.navpills{
+    .nav-pills {
+        display:none;
+    }
+    .card{
+        .nav-link{
+            background-color: transparent;
+            padding: 10px 15px;
+            border-radius: 0;
+            font-weight: 900;
+            border-top: 1px solid rgba(93, 94, 114, 0.5);
+            &[aria-expanded="true"]{
+                background-color: #3C92FF;
+                color: #27293D;
+                border-top: 1px solid #3C92FF;
+            }
+        }
+        .tab-content{
+            .field-row{
+                @media (max-width: 767px) {
+                    padding: 15px !important;
+                }
+            }
+        }
+    }
+    @media(min-width:768px) {
+        .nav-pills {
+            display: flex;
+        }
+        
+        .card {
+            border: none;
+        }
+    
+        .card .card-header {
+            display:none;
+        }  
+    
+        .card .collapse{
+            display:block;
+        }
+    }
+    
+    @media(max-width:767px){
+        .tab-content > .tab-pane {
+            display: block !important;
+            opacity: 1;
+        }
+    }
+}
