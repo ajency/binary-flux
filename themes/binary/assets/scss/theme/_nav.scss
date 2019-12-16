@@ -188,3 +188,39 @@
         }
     }
 }
+
+.nav-pills{
+    .nav-link{
+        background-color: transparent;
+        padding: 10px 15px;
+        border-radius: 0;
+        font-weight: 900;
+        border-top: 1px solid rgba(93, 94, 114, 0.5);
+        &.active{
+            background-color: #3C92FF;
+            color: #27293D;
+            border-top: 1px solid #3C92FF;
+            &:hover{
+                color: #27293D;
+            }
+        }
+        &:hover{
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+.tab-content{
+    .tab-pane{
+        .tab-header{
+            //border-bottom: 1px solid rgba(93, 94, 114, 0.5);
+        }
+        .tab-content{
+            .form-field{
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

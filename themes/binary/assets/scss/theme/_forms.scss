@@ -43,6 +43,22 @@
 		height: 30px;
 		padding: 5px 10px;
 	}
+	&.input-search{
+		border: 0;
+		outline: 0;
+		border: 1px solid $blue-light;	
+		opacity: 0.5;	
+		border-radius: 17.5px;
+		@include placeholder {
+			color: $blue-light;
+		}
+	}
+	&.w-260{
+		width: 260px;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
 }
 
 .form {
