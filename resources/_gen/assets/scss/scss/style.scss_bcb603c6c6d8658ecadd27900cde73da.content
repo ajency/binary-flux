@@ -7559,6 +7559,8 @@ header {
   background-color: #0F2952;
   padding: 4px 20px;
   box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.5); }
+  header .list-inline {
+    cursor: default; }
 
 .logo {
   display: block;
@@ -7567,9 +7569,6 @@ header {
   width: 100%; }
   .logo-wrap {
     padding-left: 10px; }
-
-.list-inline {
-  cursor: default; }
 
 body {
   color: #BBBDC3;

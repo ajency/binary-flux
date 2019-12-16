@@ -2,6 +2,9 @@ header{
 	background-color: $secondary;
 	padding: 4px 20px;
 	box-shadow: 0 4px 10px 1px rgba(0, 0, 0, 0.5);
+	.list-inline{
+		cursor: default;
+	}
 }
 
 .logo {
@@ -13,8 +16,4 @@ header{
 	&-wrap {
 		padding-left: 10px;
 	}
-}
-
-.list-inline{
-	cursor: default;
 }
