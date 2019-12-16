@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>Admin Interface - Binary Flux</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="/binary-flux/img/favicon.ico" rel="shortcut icon">
+	
+		
+			
+			<link rel="stylesheet" href="/binary-flux/css/style.min.5f976fdf2e201096b5c5a5ed67c563ad8c5663d6c84e2a474723be85e4f453e0.css">
+		
+		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
+</head><body><header>
+	<div class="d-flex justify-content-between align-items-center">
+		<div class="logo-wrap">			
+			<a href="#">
+				<img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+			</a>
+		</div>
+		<div class="navbar-right">
+			<ul class="list-inline m-0">
+				<li class="list-inline-item ml-1 ml-md-0 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_settings.svg" width="20" height="20" alt="settings"></a></li>
+				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_notifications.svg" width="20" height="20" alt="notify"></a></li>
+				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" class="dropdown dropdown-profile dropdown-arrow-blue" target="_self"><img src="/binary-flux/images/ic_account_circle.svg" width="20" height="20" alt="profile"></a></li>
+			</ul>
+			<div class="dropdown-menu">
+
+			</div>
+		</div>
+	</div>
+	
+</header><div id="content">
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3 col-lg-2 p-0">
+			<div class="sidear-container">
+				<ul class="nav nav-tabs nav-divider-dark nav-fill-50" id="siderbar-tabs" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link sticky-badge-wrap" id="web_api-tab" data-toggle="tab" href="#web_api" role="tab" aria-controls="home" aria-selected="true"><span class="sticky-badge-text">WEB API <span class="badge sticky-badge">12</span></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active sticky-badge" id="custom_api-tab" data-toggle="tab" href="#custom_api" role="tab" aria-controls="custom_api" aria-selected="false"><span class="sticky-badge-text">CUSTOM <span class="badge sticky-badge">12</span></span></a>
+					</li>
+				</ul>
+				<div class="tab-content pt-1" id="siderbar-content">
+					<div class="tab-pane fade" id="web_api" role="tabpanel" aria-labelledby="web_api-tab">
+						<div class="pl-1 pr-1 pt-1 pb-3">
+							<button class="btn btn-outline-primary btn-icon"><i class="icon icon-add"></i>Add New</button>
+						</div>
+					</div>
+					<div class="tab-pane fade show active" id="custom_api" role="tabpanel" aria-labelledby="custom_api-tab">
+						<div class="pl-1 pr-1 pt-1 pb-3">
+							<button class="btn btn-outline-primary btn-icon"><i class="icon icon-add"></i>Add New</button>
+						</div>
+						<div class="nav-list-items">
+							<ul class="nav-lists">
+								<li class="list-item">
+									<div class="list-item-wrap">
+										<div class="list-item-logo">
+											<img src="/binary-flux/images/logo_aws.svg" alt>
+										</div>
+										<div class="list-item-label">
+											<label class="request-label d-block mb-0">Swagger Pet Store 2</label>
+											<label class="request-count d-block mb-0">3 requests</label>
+										</div>
+									</div>
+									
+								</li>
+								<li class="list-item">
+									<div class="list-item-wrap">
+										<div class="list-item-logo">
+											<img src="/binary-flux/images/logo_aws.svg" alt>
+										</div>
+										<div class="list-item-label">
+											<label class="request-label d-block mb-0">Swagger Pet Store 2</label>
+											<label class="request-count d-block mb-0">3 requests</label>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-9 col-lg-10 p-0">
+			<div class="d-flex justify-content-between workspace-header-bar">
+				<div class="workspace-bar-tabs">	
+					<div class="side-menu-toggle icon-hamburger d-lg-none">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="tab-list">
+						<div class="tab-btn tab active">Custom Source <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
+					</div>
+					<div class="tab-list-action">
+						<button class="tab-btn tab-btn-add"><i class="icon-add"></i></button>
+						<button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
+					</div>
+				</div>
+				<div>
+					<div class="workspace-actiions d-flex align-items-center">
+						<div class="workspace-environment mr-1">
+							<select class="select2-outline-dark" data-placeholder="No Environment">
+								<option></option>	
+								<option>Environment 1</option>	
+								<option>Environment 2</option>	
+							</select>
+						</div>
+						<a href="#" target="_self" class="mr-1 text-decoration-none"><i class="icon-preview"></i></a>
+						<a href="#" target="_self" class="text-decoration-none"><i class="icon-setting"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="workspace-tab-container">
+				<div class="workspace-tab-content">
+					<div class="workspace-tab-header">
+						<div class="d-flex flex-wrap mt-1">
+							<div class="col-12 col-lg-8">
+								<h6 class="workspace-name text-white f-12 fw-900 mb-0">B086 Connection</h6>
+								<h6 class="workspace-name text-white--5 f-12 fw-300">Custom SQL Source connection for Petzilla <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></button> Edit</span></h6>
+							</div>
+							<div class="col-12 col-lg-4">
+								<div class="workspace-info">
+									<ul>
+										<li><i class="icon-comment icon"></i> Comments <span>(3)</span></li>
+										<li>Examples <span>(3)</span> <i class="icon-arrow-down-sm icon"></i></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="workspace-actions">
+							<div class="btn-group btn-primary mr-1">
+								<button type="button" class="btn">Save</button>
+								<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+							<div class="btn-group btn-outline-dark">
+								<button type="button" class="btn">Preview</button>
+								<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</div>
+							</div>
+						</div>
+						<div class="element-fields-wrapper">
+							<div class="element-field-row d-flex flex-wrap">
+								<div class="col-lg-9">
+									<div class="row">
+										<div class="col-lg-4">
+											<h6 class="f-12 mb-05 fw-900 text-white">JD EDWARDS <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
+											<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
+										</div>
+										<div class="col-lg-5">
+											<div class="field-wrapper">
+												<div class="form-field mb-0 mt-1">
+													<input class="form-control form-control-dark" type="text" placeholder="Enter Help Text">                            
+												</div> 
+											</div> 
+										</div>
+										<div class="col-lg-3">
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="element-field-setting text-right text-lg-left mt-15">
+										<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
+										<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-05"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="element-field-row d-flex flex-wrap">
+								<div class="col-lg-9">
+									<div class="row">
+										<div class="col-lg-4">
+											<h6 class="f-12 mb-05 fw-900 text-white">JAdd Text Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
+											<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
+										</div>
+										<div class="col-lg-5">
+											<div class="field-wrapper">
+												<div class="form-field mb-0 mt-1">
+													<input class="form-control form-control-dark" type="text" placeholder="Enter Help Text">                            
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="custom-control custom-checkbox custom-checkbox-dark mt-15">
+												<input type="checkbox" class="custom-control-input" id="mandatory1">
+												<label class="custom-control-label font-light" for="mandatory1">Mark field as mandatory</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="element-field-setting text-right text-lg-left mt-15">
+										<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
+										<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-05"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="element-field-row d-flex flex-wrap">
+								<div class="col-lg-9">
+									<div class="row">
+										<div class="col-lg-4">
+											<h6 class="f-12 mb-05 fw-900 text-white">Add Radio Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
+											<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
+										</div>
+										<div class="col-lg-5">
+											<div class="field-wrapper field-type-ratio field-repeat">
+												<div class="form-field fi mb-0 mt-1">
+													<input class="form-control form-control-dark" type="text" placeholder="Enter Value">
+													<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+												</div>
+												<div class="form-field fi mb-0 mt-1">
+													<input class="form-control form-control-dark" type="text" placeholder="Enter Value">
+													<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+												</div>
+												<div class="form-field fi mb-0 mt-1">
+													<input class="form-control form-control-dark" type="text" placeholder="Enter Value">
+													<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+												</div>
+												<div class="field-repeat-btn-wrap">
+													<button class="btn-icon"><i class="icon-add-circle mr-05"></i> Add Another</button>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">											
+											<div class="custom-control custom-checkbox custom-checkbox-dark mt-15">
+												<input type="checkbox" class="custom-control-input" id="mandatory2">
+												<label class="custom-control-label font-light" for="mandatory2">Mark field as mandatory</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-3">
+									<div class="element-field-setting text-right text-lg-left mt-15">
+										<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
+										<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-05"></i></button>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 mt-1">
+								<button class="btn-icon"><i class="icon-add-circle mr-05"></i> Add New Field</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+        </div><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/binary-flux/vendor/select2/select2.full.js"></script>
+<script src="/binary-flux/js/app.js"></script></body>
+</html>
