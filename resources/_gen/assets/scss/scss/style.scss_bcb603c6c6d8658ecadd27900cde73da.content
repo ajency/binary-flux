@@ -7198,8 +7198,7 @@ a.text-error:hover, a.text-error:focus {
       background: transparent;
       font-weight: 900 !important;
       color: #fff;
-      border-bottom-color: #3D90F7;
-      text-transform: uppercase; }
+      border-bottom-color: #3D90F7; }
       .nav-tabs .nav-link.active:hover {
         border-bottom: 3px solid #3D90F7; }
       .nav-tabs .nav-link.active .sticky-badge {
