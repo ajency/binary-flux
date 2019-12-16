@@ -7221,6 +7221,12 @@ a.text-error:hover, a.text-error:focus {
 .nav-fill-50 .nav-item {
   flex: 1 0 50%; }
 
+.nav.no-border:after {
+  display: none; }
+
+.nav.blue-bg {
+  background: #121425; }
+
 .nav-list-items ul {
   padding: 0;
   margin: 0;
