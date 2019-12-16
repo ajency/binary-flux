@@ -7196,8 +7196,7 @@ a.text-error:hover, a.text-error:focus {
       background: transparent;
       font-weight: 900 !important;
       color: #fff;
-      border-bottom-color: #3D90F7;
-      text-transform: uppercase; }
+      border-bottom-color: #3D90F7; }
       .nav-tabs .nav-link.active:hover {
         border-bottom: 3px solid #3D90F7; }
       .nav-tabs .nav-link.active .sticky-badge {
@@ -7549,6 +7548,9 @@ header {
   width: 100%; }
   .logo-wrap {
     padding-left: 10px; }
+
+.list-inline {
+  cursor: default; }
 
 body {
   color: #BBBDC3;
