@@ -7177,8 +7177,6 @@ a.text-error:hover, a.text-error:focus {
     height: 2px;
     border-bottom: 2px solid rgba(93, 94, 114, 0.5);
     z-index: 1; }
-  .nav-tabs .nav-item:first-child a {
-    padding-left: 0; }
   .nav-tabs .nav-link {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 300 !important;
@@ -7277,8 +7275,24 @@ a.text-error:hover, a.text-error:focus {
 
 .sidear-container {
   background: #35374F;
-  box-shadow: 0 16px 20px 3px rgba(16, 17, 35, 0.6), 0 6px 20px 5px rgba(40, 41, 62, 0.3), 0 8px 5px 0 rgba(0, 0, 0, 0.33);
-  height: calc(100vh - 40px); }
+  box-shadow: 0 16px 20px 3px rgba(16, 17, 35, 0.6), 0 6px 20px 5px rgba(40, 41, 62, 0.3), 0 8px 5px 0 rgba(0, 0, 0, 0.33); }
+  @media (max-width: 767px) {
+    .sidear-container.mobile-slide-in {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 9;
+      top: 0;
+      left: 0;
+      background-color: #27283D;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px; }
+      .sidear-container.mobile-slide-in.show {
+        width: 100%; } }
+  @media (min-width: 768px) {
+    .sidear-container {
+      height: calc(100vh - 40px); } }
 
 .select2-container {
   max-width: 140px !important;
@@ -7318,6 +7332,9 @@ a.text-error:hover, a.text-error:focus {
 .workspace-actions {
   padding: 0 15px;
   text-align: right; }
+  @media (max-width: 767px) {
+    .workspace-actions {
+      text-align: left; } }
 
 .workspace-info ul {
   list-style: none;
@@ -7343,6 +7360,10 @@ a.text-error:hover, a.text-error:focus {
       width: 2px; }
     .workspace-info ul li:last-child:after {
       display: none; }
+  @media (max-width: 767px) {
+    .workspace-info ul {
+      justify-content: flex-start;
+      padding-left: 0; } }
 
 .tab {
   font-size: 12px;
@@ -7697,6 +7718,12 @@ h1, .h1 {
     outline: 0 !important; }
     .btn-icon i {
       vertical-align: middle; }
+  .btn-small {
+    padding: 2px 15px; }
+    .btn-small i {
+      margin-right: 7px;
+      position: relative;
+      top: 1px; }
 
 a.btn-grey {
   color: #93949E; }

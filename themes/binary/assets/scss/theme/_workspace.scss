@@ -10,6 +10,9 @@
     &-actions {
         padding: 0 15px;
         text-align: right;
+        @media (max-width: 767px) {
+            text-align: left;
+        }
     }
     &-info {
         ul {
@@ -44,6 +47,10 @@
                         display: none;
                     }
                 }
+            }
+            @media (max-width: 767px) {
+                justify-content: flex-start;
+                padding-left: 0;
             }
         }
     }

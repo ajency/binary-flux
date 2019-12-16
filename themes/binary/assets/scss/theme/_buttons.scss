@@ -112,6 +112,14 @@
 			vertical-align: middle;
 		}
 	}
+	&-small{
+		padding: 2px 15px;
+		i{
+			margin-right: 7px;
+			position: relative;
+			top: 1px;
+		}
+	}
 }
 a.btn-grey {
 	color: $grey;

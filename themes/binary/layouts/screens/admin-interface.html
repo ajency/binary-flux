@@ -14,13 +14,13 @@
 				</ul>
 				<div class="tab-content pt-1" id="siderbar-content">
 					<div class="tab-pane fade" id="web_api" role="tabpanel" aria-labelledby="web_api-tab">
-						<div class="pl-1 pr-1 pt-1 pb-3">
-							<button class="btn btn-outline-primary btn-icon"><i class="icon icon-add"></i>Add New</button>
+						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
+							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>Add New</button>
 						</div>
 					</div>
 					<div class="tab-pane fade show active" id="custom_api" role="tabpanel" aria-labelledby="custom_api-tab">
-						<div class="pl-1 pr-1 pt-1 pb-3">
-							<button class="btn btn-outline-primary btn-icon"><i class="icon icon-add"></i>Add New</button>
+						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
+							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>Add New</button>
 						</div>
 						<div class="nav-list-items">
 							<ul class="nav-lists">
@@ -116,6 +116,7 @@
 					</div>
 				</div>
 			</div>
+			
 			<div class="workspace-tab-container">
 				<div class="workspace-tab-content">
 					<div class="workspace-tab-header">
@@ -155,104 +156,115 @@
 								</div>
 							</div>
 						</div>
-						<div class="element-fields-wrapper">
-							<div class="element-field-row d-flex flex-wrap">
-								<div class="col-lg-9">
-									<div class="row">
-										<div class="col-lg-4">
-											<h6 class="f-12 mb-05 fw-900 text-white">JD EDWARDS <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
-											<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
-										</div>
-										<div class="col-lg-5">
-											<div class="field-wrapper">
-												<div class="form-field mb-0 mt-1">
-													<input class="form-control form-control-dark" type="text" placeholder="Enter Help Text">                            
-												</div> 
-											</div> 
-										</div>
-										<div class="col-lg-3">
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-3">
-									<div class="element-field-setting text-right text-lg-left mt-15">
-										<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
-										<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-05"></i></button>
-									</div>
-								</div>
-							</div>
-							<div class="element-field-row d-flex flex-wrap">
-								<div class="col-lg-9">
-									<div class="row">
-										<div class="col-lg-4">
-											<h6 class="f-12 mb-05 fw-900 text-white">JAdd Text Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
-											<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
-										</div>
-										<div class="col-lg-5">
-											<div class="field-wrapper">
-												<div class="form-field mb-0 mt-1">
-													<input class="form-control form-control-dark" type="text" placeholder="Enter Help Text">                            
+						<ul class="nav nav-tabs mt-2" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="jdedwards-tab" data-toggle="tab" href="#jdedwards" role="tab" aria-controls="jdedwards" aria-selected="true">JD Edwards</a>
+							</li>
+							<button class="btn-icon ml-15"><i class="icon-add-circle mr-05"></i> Add New Field</button>
+						</ul>
+
+						<div class="tab-content pt-1" id="myTabContent">
+							<div class="tab-pane fade show active" id="jdedwards" role="tabpanel" aria-labelledby="jdedwards-tab">
+								<div class="element-fields-wrapper pb-2 pb-md-0">
+									<div class="element-field-row d-flex flex-wrap">
+										<div class="col-lg-9">
+											<div class="row">
+												<div class="col-lg-4">
+													<h6 class="f-12 mb-05 fw-900 text-white">JD EDWARDS <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
+													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
+												</div>
+												<div class="col-lg-5">
+													<div class="field-wrapper">
+														<div class="form-field mb-0 mt-1">
+															<input class="form-control form-control-dark" type="text" placeholder="Enter Help Text">                            
+														</div> 
+													</div> 
+												</div>
+												<div class="col-lg-3">
 												</div>
 											</div>
 										</div>
 										<div class="col-lg-3">
-											<div class="custom-control custom-checkbox custom-checkbox-dark mt-15">
-												<input type="checkbox" class="custom-control-input" id="mandatory1">
-												<label class="custom-control-label font-light" for="mandatory1">Mark field as mandatory</label>
+											<div class="element-field-setting text-md-right text-lg-left mt-15">
+												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
+												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-05"></i></button>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-3">
-									<div class="element-field-setting text-right text-lg-left mt-15">
-										<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
-										<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-05"></i></button>
-									</div>
-								</div>
-							</div>
-							<div class="element-field-row d-flex flex-wrap">
-								<div class="col-lg-9">
-									<div class="row">
-										<div class="col-lg-4">
-											<h6 class="f-12 mb-05 fw-900 text-white">Add Radio Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
-											<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
-										</div>
-										<div class="col-lg-5">
-											<div class="field-wrapper field-type-ratio field-repeat">
-												<div class="form-field fi mb-0 mt-1">
-													<input class="form-control form-control-dark" type="text" placeholder="Enter Value">
-													<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+									<div class="element-field-row d-flex flex-wrap">
+										<div class="col-lg-9">
+											<div class="row">
+												<div class="col-lg-4">
+													<h6 class="f-12 mb-05 fw-900 text-white">JAdd Text Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
+													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
 												</div>
-												<div class="form-field fi mb-0 mt-1">
-													<input class="form-control form-control-dark" type="text" placeholder="Enter Value">
-													<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+												<div class="col-lg-5">
+													<div class="field-wrapper">
+														<div class="form-field mb-0 mt-1">
+															<input class="form-control form-control-dark" type="text" placeholder="Enter Help Text">                            
+														</div>
+													</div>
 												</div>
-												<div class="form-field fi mb-0 mt-1">
-													<input class="form-control form-control-dark" type="text" placeholder="Enter Value">
-													<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
-												</div>
-												<div class="field-repeat-btn-wrap">
-													<button class="btn-icon"><i class="icon-add-circle mr-05"></i> Add Another</button>
+												<div class="col-lg-3">
+													<div class="custom-control custom-checkbox custom-checkbox-dark mt-15">
+														<input type="checkbox" class="custom-control-input" id="mandatory1">
+														<label class="custom-control-label font-light" for="mandatory1">Mark field as mandatory</label>
+													</div>
 												</div>
 											</div>
 										</div>
-										<div class="col-lg-3">											
-											<div class="custom-control custom-checkbox custom-checkbox-dark mt-15">
-												<input type="checkbox" class="custom-control-input" id="mandatory2">
-												<label class="custom-control-label font-light" for="mandatory2">Mark field as mandatory</label>
+										<div class="col-lg-3">
+											<div class="element-field-setting text-md-right text-lg-left mt-15">
+												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
+												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-05"></i></button>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-3">
-									<div class="element-field-setting text-right text-lg-left mt-15">
-										<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
-										<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-05"></i></button>
+									<div class="element-field-row d-flex flex-wrap">
+										<div class="col-lg-9">
+											<div class="row">
+												<div class="col-lg-4">
+													<h6 class="f-12 mb-05 fw-900 text-white">Add Radio Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
+													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
+												</div>
+												<div class="col-lg-5">
+													<div class="field-wrapper field-type-ratio field-repeat">
+														<div class="form-field fi mb-0 mt-1">
+															<input class="form-control form-control-dark" type="text" placeholder="Enter Value">
+															<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+														</div>
+														<div class="form-field fi mb-0 mt-1">
+															<input class="form-control form-control-dark" type="text" placeholder="Enter Value">
+															<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+														</div>
+														<div class="form-field fi mb-0 mt-1">
+															<input class="form-control form-control-dark" type="text" placeholder="Enter Value">
+															<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+														</div>
+														<div class="field-repeat-btn-wrap">
+															<button class="btn-icon"><i class="icon-add-circle mr-05"></i> Add Another</button>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3">											
+													<div class="custom-control custom-checkbox custom-checkbox-dark mt-15">
+														<input type="checkbox" class="custom-control-input" id="mandatory2">
+														<label class="custom-control-label font-light" for="mandatory2">Mark field as mandatory</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="element-field-setting text-md-right text-lg-left mt-15">
+												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
+												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-05"></i></button>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 mt-1">
+										<button class="btn-icon"><i class="icon-add-circle mr-05"></i> Add New Field</button>
 									</div>
 								</div>
-							</div>
-							<div class="col-12 mt-1">
-								<button class="btn-icon"><i class="icon-add-circle mr-05"></i> Add New Field</button>
 							</div>
 						</div>
 					</div>

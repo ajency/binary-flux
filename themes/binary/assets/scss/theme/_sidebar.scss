@@ -2,6 +2,25 @@
     &-container {
         background: $grey9;
         box-shadow: 0 16px 20px 3px rgba(16,17,35,0.6), 0 6px 20px 5px rgba(40,41,62,0.3), 0 8px 5px 0 rgba(0,0,0,0.33);
-        height: calc(100vh - 40px);
+        &.mobile-slide-in{
+            @media (max-width: 767px) {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 9;
+                top: 0;
+                left: 0;
+                background-color: #27283D;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+                &.show{
+                    width: 100%;
+                }
+            }
+        }
+        @media (min-width: 768px) {
+            height: calc(100vh - 40px);
+        }
     }
 }
