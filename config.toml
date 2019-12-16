@@ -1,5 +1,0 @@
-baseURL = "https://ajency.github.io/binary-flux/"
-languageCode = "en-us"
-title = "Binary Flux"
-theme = "binary"
-publishDir = "docs"

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>Event Form - Binary Flux</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	
+	
+		
+			
+			<link rel="stylesheet" href="../../css/style.min.633b47ae0fbc6bed378513ec557accbde0a5d9a64f069cd389948429faa71339.css">
+		
+		<link rel="stylesheet" href="../../vendor/select2/select2.min.css">
+</head><body><header>
+	<div class="d-flex justify-content-between align-items-center">
+		<div class="logo-wrap">			
+			<a href="#">
+				<img src="../../images/logo.svg" alt="logo" class="logo">
+			</a>
+		</div>
+		<div class="navbar-right">
+			<ul class="list-inline m-0">
+				<li class="list-inline-item ml-1 ml-md-0 mr-0"><a href="#" target="_self"><img src="../../images/ic_settings.svg" width="20" height="20" alt="settings"></a></li>
+				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" target="_self"><img src="../../images/ic_notifications.svg" width="20" height="20" alt="notify"></a></li>
+				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" class="dropdown dropdown-profile dropdown-arrow-blue" target="_self"><img src="../../images/ic_account_circle.svg" width="20" height="20" alt="profile"></a></li>
+			</ul>
+			<div class="dropdown-menu">
+
+			</div>
+		</div>
+	</div>
+	
+</header><div id="content">
+
+<div class="page-wrapper">
+	<div class="container fw-cont-mobile">
+		<div class="row">
+			<div class="col-12 col-lg-2 padding-md-0">
+				<a href="#" class="btn-grey btn-data-sources text-white--5 text-uppercase text-decoration-none"><i class="icon-arrow-left-light icon-wrap mr-1"></i> All Data Sources</a>
+				<div class="text-lg-center mt-2 mb-3">
+					<img src="../../images/logo_aws.svg" class="logo-data-source img-fluid">
+				</div>
+			</div>
+			<div class="col-12 col-lg-8">
+				<h5 class="section-title text-uppercase mt-0">Add a New Source</h5>
+				<hr class="grey my-0">
+				<div class="d-flex justify-content-between align-items-center aws-config mt-1 flex-wrap">
+					<div class="col-12 col-lg-6 p-0">
+						<h5 class="section-title text-uppercase mt-0 mb-05">AWS Config</h5>
+						<p class="mb-0 text-white--5 text-break">AWS Database for Pet Management</p>
+					</div>
+					<div class="col-12 col-lg-6 p-0">
+						<div class="mt-1 mt-lg-0 text-lg-right">
+							<button class="btn btn-primary mr-1 font-weight-bolder">Save</button>
+							<button class="btn btn-outline-dark font-weight-bolder">Test</button>
+						</div>
+					</div>
+				</div>
+				<hr class="grey mt-1 my-0">
+				<div>			
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Header <i class="icon-checked icon-check-circle"></i></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">JD EDWARDS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Documentation</a>
+						</li>
+					</ul>
+					<div class="tab-content pt-1" id="myTabContent">
+						<div class="tab-pane fade show active" id="jd_edwards" role="tabpanel" aria-labelledby="jd_edwards-tab">
+							<h5 class="section-title mt-0 mb-05">Import events from files on Amazon S3</h5>
+							<p class="mb-05">Alooma can import files from an Amazon S3 Bucket</p>
+							<hr class="grey mt-1 mb-1">
+							<ul class="text-break">
+								<li>The content of the files on S3 must include one events per line</li>
+								<li>Events maybe in any text format JSON, csv, syslog, etc (Use a transform function in the Code Engine to parse the events into JSON format)</li>
+								<li>Files may be packaged and compressed with Tar & Gzip</li>
+								<li>You may choose to import all files from the bucket , or only new files created from now on</li>
+							</ul>
+							<hr class="grey mt-1 mb-1">
+							<p class="mb-1 font-weight-bold text-break">To begin importing events from S3, Configure the following details.</p>
+							<div>
+								<form>
+									<div class="form-field">
+										<label class="form-label">
+											<span class="form-label-content">AWS Access Key ID</span>
+										</label>
+										<input class="form-control" type="text">                            
+									</div>
+									<div class="form-field">
+										<label class="form-label">
+											<span class="form-label-content">AWS Secret Access Key</span>
+										</label>
+										<input class="form-control" type="text">                            
+									</div>
+									<div class="form-field">
+										<label class="form-label">
+											<span class="form-label-content">Bucket Name</span>
+										</label>
+										<input class="form-control" type="text">                            
+									</div>
+									<div class="form-field">
+										<label class="form-label">
+											<span class="form-label-content">File perfix (optional)</span>
+										</label>
+										<input class="form-control" type="text">                            
+									</div>
+									<div class="form-field">
+										<label class="form-label">
+											<span class="form-label-content">File will be imported from</span>
+										</label>
+										<input class="form-control" type="text">                            
+									</div>
+									<div class="form-field form-radio-group">
+										<label class="form-label">
+											<span class="form-label-content">Select which files to import</span>
+										</label>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="fonly_new" name="fileimport" class="custom-control-input" checked="">
+											<label class="custom-control-label" for="fonly_new">Only New</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="fall" name="fileimport" class="custom-control-input" checked="">
+											<label class="custom-control-label" for="fall">All</label>
+										</div>
+									</div>
+									<div class="form-field form-radio-group mb-0">
+										<label class="form-label">
+											<span class="form-label-content">File Format</span>
+										</label>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="ff_json" name="fileformat" class="custom-control-input" checked="">
+											<label class="custom-control-label" for="ff_json">JSON lines</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="ff_del" name="fileformat" class="custom-control-input" checked="">
+											<label class="custom-control-label" for="ff_del">Delimited with header (CSV/TSV)</label>
+										</div>
+										<div class="custom-control custom-radio">
+											<input type="radio" id="ff_other" name="fileformat" class="custom-control-input" checked="">
+											<label class="custom-control-label" for="ff_other">Other(Delimited without header, Syslog, XML, other)</label>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="navigation-navs mt-2">
+						<ul>
+							<li class="prev-nav"><a href="#" class="text-decoration-none" target="_self"><i class="icon-arrow-left-light icon-wrap mr-1"></i> Previous</a></li>
+							<li class="next-nav"><a href="#" class="text-decoration-none" target="_self">Next <i class="icon-arrow-left-light icon-wrap ml-1 rotate-180"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+        </div><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="../../vendor/select2/select2.full.js"></script>
+<script src="../../js/app.js"></script></body>
+</html>

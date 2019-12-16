@@ -1,0 +1,17 @@
+archetypes/
+content/
+data/
+docs/
+layouts/
+resources/
+static/
+themes/
+config.toml
+html/categories/
+html/tags/
+html/index.html
+html/index.xml
+html/sitemap.xml
+screens/admin-interface/
+screens/welcome/
+screens/index.xml
