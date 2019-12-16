@@ -7529,6 +7529,9 @@ header {
   .logo-wrap {
     padding-left: 10px; }
 
+.list-inline {
+  cursor: default; }
+
 body {
   color: #BBBDC3;
   font-size: 12px; }
