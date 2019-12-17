@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.46fb0808127b25f3394b25f33c417167a575c7b77f7ad36847c13717d30d63fa.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.452dccb8847267b31530eabc86e6ae8afa8b08602617ad7917aae62b72a3d6ab.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 </head><body><header>
@@ -259,7 +259,7 @@
 										</div>
 									</div>
 									<div class="col-12 mt-1 pb-10">
-										<button class="btn-icon" data-toggle="modal" data-target="#addfieldsmodal"><i class="icon-add-circle mr-05"></i> Add New Field</button>
+										<button class="btn-icon" data-toggle="modal" data-target="#addfieldsmodal" data-backdrop="static"><i class="icon-add-circle mr-05"></i> Add New Field</button>
 									</div>
 								</div>
 							</div>
@@ -285,13 +285,13 @@
 			<div class="modal-body rounded-0 p-0 navpills">
 					<div class="row m-0">
 						<div class="col-md-3 p-0 shadow">
-							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-								<div class="search-wrap p-15">
-									<div class="position-relative">
-										<img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
-										<input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
-									</div>
+							<div class="search-wrap p-15">
+								<div class="position-relative">
+									<img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
+									<input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
 								</div>
+							</div>
+							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">								
 								<a class="nav-link active text-white--5" id="v-pills-textboxes-tab" data-toggle="pill" href="#v-pills-textboxes" role="tab" aria-controls="v-pills-textboxes" aria-selected="true">
 									Text Boxes
 								</a>
@@ -327,57 +327,71 @@
 												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
-															<input class="form-control form-control-dark w-260" type="text" placeholder="abcdefghijklmnopqrstuvwxyz">                            
+															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="abcdefghijklmnopqrstuvwxyz">                            
 														</div>
-														<div class="help-text text-white--5 mt-1 mt-md-0">
+														<div class="help-text text-white--5 mt-1 mt-lg-0">
 															<p class="m-0 font-weight-bolder">Alphabetic</p>
 															<p class="m-0 font-weight-light">Allow only char a-z</p>
 														</div>
 													</div>
-													<div class="btn-wrapper mt-1 mt-md-0">
-														<button type="button" class="btn btn-primary rounded-0">Add</button>
+													<div class="btn-wrapper mt-1 mt-lg-0">
+														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
 												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
-															<input class="form-control form-control-dark w-260" type="text" placeholder="0123456789">                            
+															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="0123456789">                            
 														</div>
-														<div class="help-text text-white--5 mt-1 mt-md-0">
+														<div class="help-text text-white--5 mt-1 mt-lg-0">
 															<p class="m-0 font-weight-bolder">Numeric</p>
 															<p class="m-0 font-weight-light">Allow only char 0-9</p>
 														</div>
 													</div>
-													<div class="btn-wrapper mt-1 mt-md-0">
-														<button type="button" class="btn btn-primary rounded-0">Add</button>
+													<div class="btn-wrapper mt-1 mt-lg-0">
+														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
 												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
-															<input class="form-control form-control-dark w-260" type="text" placeholder="0a1bcd2efg3ghtu344dku5d126s7s…">                            
+															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="0a1bcd2efg3ghtu344dku5d126s7s…">                            
 														</div>
-														<div class="help-text text-white--5 mt-1 mt-md-0">
+														<div class="help-text text-white--5 mt-1 mt-lg-0">
 															<p class="m-0 font-weight-bolder">Alpha Numeric String</p>
 															<p class="m-0 font-weight-light">Allow both char a-z and 0-9</p>
 														</div>
 													</div>
-													<div class="btn-wrapper mt-1 mt-md-0">
-														<button type="button" class="btn btn-primary rounded-0">Add</button>
+													<div class="btn-wrapper mt-1 mt-lg-0">
+														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
 												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
-															<input class="form-control form-control-dark w-260" type="text" placeholder="***********************">                            
+															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="***********************">                            
 														</div>
-														<div class="help-text text-white--5 mt-1 mt-md-0">
+														<div class="help-text text-white--5 mt-1 mt-lg-0">
 															<p class="m-0 font-weight-bolder">Password Field</p>
 															<p class="m-0 font-weight-light">Allow both char a-z and 0-9</p>
 														</div>
 													</div>
-													<div class="btn-wrapper mt-1 mt-md-0">
-														<button type="button" class="btn btn-primary rounded-0">Add</button>
+													<div class="btn-wrapper mt-1 mt-lg-0">
+														<button type="button" class="btn btn-primary btn-add">Add</button>
+													</div>
+												</div>
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+													<div class="d-flex align-items-center flex-wrap">
+														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
+															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="0a1bc#@3gh344!%@dku5d126#!@">                            
+														</div>
+														<div class="help-text text-white--5 mt-1 mt-lg-0 max-145">
+															<p class="m-0 font-weight-bolder">String Field</p>
+															<p class="m-0 font-weight-light">Allow all char a-z, numbers 0-9 and, special char !@#</p>
+														</div>
+													</div>
+													<div class="btn-wrapper mt-1 mt-lg-0">
+														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
 											</div>

@@ -128,8 +128,19 @@ hr{
 		max-width: 935px;
 		margin: 0 auto;
 	}
+	&-145{
+		max-width: 145px;
+	}
 }
 
+
+.border{
+	&-radius{
+		&-2{
+			border-radius: 2px !important;
+		}
+	}
+}
 .pa-lc{
 	position: absolute;
 	top: 50%;

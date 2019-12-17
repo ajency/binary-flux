@@ -204,11 +204,12 @@
         background-color: transparent;
         padding: 10px 15px;
         border-radius: 0;
-        font-weight: 900;
+        font-weight: 300;
         border-top: 1px solid rgba(93, 94, 114, 0.5);
         &.active{
             background-color: #3C92FF;
             color: #27293D;
+            font-weight: 900;
             border-top: 1px solid #3C92FF;
             &:hover{
                 color: #27293D;

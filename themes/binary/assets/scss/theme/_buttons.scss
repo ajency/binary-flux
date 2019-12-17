@@ -120,6 +120,11 @@
 			top: 1px;
 		}
 	}
+	&-add{
+		font-weight: 900;
+		border-radius: 2px;
+		font-size: 12px;
+	}
 }
 a.btn-grey {
 	color: $grey;

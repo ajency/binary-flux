@@ -7282,11 +7282,12 @@ a.text-error:hover, a.text-error:focus {
   background-color: transparent;
   padding: 10px 15px;
   border-radius: 0;
-  font-weight: 900;
+  font-weight: 300;
   border-top: 1px solid rgba(93, 94, 114, 0.5); }
   .nav-pills .nav-link.active {
     background-color: #3C92FF;
     color: #27293D;
+    font-weight: 900;
     border-top: 1px solid #3C92FF; }
     .nav-pills .nav-link.active:hover {
       color: #27293D; }
@@ -7732,22 +7733,28 @@ h1, .h1 {
 .form-control.input-search {
   border: 0;
   outline: 0;
-  border: 1px solid #659CC8;
-  opacity: 0.5;
-  border-radius: 17.5px; }
+  border: 2px solid #659CC8;
+  border-radius: 17.5px;
+  color: #fff; }
   .form-control.input-search::-webkit-input-placeholder {
-    color: #659CC8; }
+    color: #659CC8;
+    font-weight: 700; }
   .form-control.input-search:-moz-placeholder {
     /* Firefox 18- */
-    color: #659CC8; }
+    color: #659CC8;
+    font-weight: 700; }
   .form-control.input-search::-moz-placeholder {
     /* Firefox 19+ */
-    color: #659CC8; }
+    color: #659CC8;
+    font-weight: 700; }
   .form-control.input-search:-ms-input-placeholder {
-    color: #659CC8; }
+    color: #659CC8;
+    font-weight: 700; }
 
 .form-control.w-260 {
-  width: 260px; }
+  width: 260px;
+  padding-left: 15px;
+  padding-right: 15px; }
   @media (max-width: 767px) {
     .form-control.w-260 {
       width: 100%; } }
@@ -7859,6 +7866,10 @@ h1, .h1 {
       margin-right: 7px;
       position: relative;
       top: 1px; }
+  .btn-add {
+    font-weight: 900;
+    border-radius: 2px;
+    font-size: 12px; }
 
 a.btn-grey {
   color: #93949E; }
@@ -7885,8 +7896,9 @@ button {
 .border-top-grey {
   border-top: 1px solid rgba(93, 94, 114, 0.5); }
 
-.modal-dialog {
-  max-width: 800px; }
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 800px; } }
 
 .modal-content {
   background-color: #27293D;
@@ -7895,7 +7907,7 @@ button {
 
 .modal-header {
   border: 0;
-  border-bottom: 1px solid rgba(93, 94, 114, 0.5); }
+  border-bottom: 2px solid rgba(93, 94, 114, 0.5); }
   .modal-header .close {
     padding: 0;
     margin: 0;
@@ -7906,6 +7918,9 @@ button {
       font-size: 12px; }
       .modal-header .close .icon-close:before {
         color: #93949D; }
+
+.modal-backdrop.show {
+  opacity: 0.7; }
 
 hr {
   border-top: 2px solid #34364A; }
@@ -8000,6 +8015,12 @@ hr {
 .max-935 {
   max-width: 935px;
   margin: 0 auto; }
+
+.max-145 {
+  max-width: 145px; }
+
+.border-radius-2 {
+  border-radius: 2px !important; }
 
 .pa-lc {
   position: absolute;
