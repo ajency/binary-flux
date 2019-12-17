@@ -31,7 +31,7 @@
             li {                
                 padding: 0 5px;
                 position: relative;
-                
+                color: $grey;
                 &:after {
                     content: "";
                     display: block;
@@ -51,6 +51,16 @@
             @media (max-width: 767px) {
                 justify-content: flex-start;
                 padding-left: 0;
+            }
+        }
+    }
+    &-actiions{
+        .icon{
+            &-preview{
+                font-size: 13px;
+            }
+            &-setting{
+                font-size: 15px;
             }
         }
     }
@@ -76,13 +86,15 @@
         right: 3px;
         text-decoration: none !important;
         i {
-            font-size: 10px;
+            font-size: 9px;
         }
     }
     &-list {
         display: flex;
         &-action {
             padding-left: 25px;
+            position: relative;
+            top: -2px;
         }   
     }
     &-btn {
@@ -101,6 +113,8 @@
             outline: 0 !important;
             i {
                 color: $white-5;
+                font-size: 9px;
+                font-weight: 300;
             }
         }
     }    

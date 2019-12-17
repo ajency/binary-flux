@@ -36,6 +36,13 @@
             right: -30px;
             top: 50%;
             transform: translateY(-50%);
+            i{
+                font-size: 10px;
+                font-weight: 300;
+                &::before{
+                    color: $grey7;
+                }
+            }
         }
         &-btn-wrap {
             padding-left: 90px;

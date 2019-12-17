@@ -20,6 +20,14 @@
                 }
             }
         }
+        &-left{
+            .nav-item{
+                padding-right: 15px;
+                a{
+                    padding-left: 0;
+                }
+            }
+        }
         .nav {
             &-link {
                 color: rgba(#FFFFFF, 0.5);
@@ -133,7 +141,7 @@
             }
             &-logo {
                 img {
-                    max-width: 22px;
+                    max-width: 23px;
                     height: auto;
                     display: block;
                     width: 100%;
@@ -172,9 +180,11 @@
             }
             &-label {
                 color: #FFFFFF;
+                font-weight: 900;
             }
             &-count {
                 color: $white-6;
+                font-weight: 300;
             }
             // &-type {
             //     font-size: 7px;

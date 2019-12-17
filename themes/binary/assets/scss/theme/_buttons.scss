@@ -49,6 +49,7 @@
 			&.dropdown-toggle {
 				padding: 0 11px;
 				border: 2px solid $white-5;	
+				border-left: 1px solid $white-5;	
 				border-top-left-radius: 2px;
 				border-bottom-left-radius: 2px;
 				&:after {
@@ -126,5 +127,12 @@ a.btn-grey {
 	&:hover {
 		color: $grey;
 		opacity: 0.85;
+	}
+}
+
+button{
+	outline: 0;
+	&:focus{
+		outline: 0;
 	}
 }
