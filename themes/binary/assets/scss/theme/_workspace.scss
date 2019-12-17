@@ -2,6 +2,9 @@
     &-header-bar {
         padding: 5px 15px 0;
         background: $black2;
+        @media (max-width: 767px) {
+            padding: 5px 15px 5px;
+        }
     }
     &-bar-tabs {
         display: flex;
@@ -55,6 +58,11 @@
         }
     }
     &-actiions{
+        a.mr-15{
+            @media (max-width: 480px) {
+                margin-right: 5px !important;
+            }
+        }
         .icon{
             &-preview{
                 font-size: 13px;
@@ -85,6 +93,8 @@
         position: absolute;
         right: 3px;
         text-decoration: none !important;
+        top: 50%;
+        transform: translateY(-50%);
         i {
             font-size: 9px;
         }
@@ -118,4 +128,19 @@
             }
         }
     }    
+}
+
+.wordspace-tabs{
+    .nav-item{
+        position: relative;
+        &::after{
+            position: absolute;
+            right: -17px;
+            top: 7px;
+            content: "";
+            width: 1px;
+            height: 23px;
+            background: $white-5;
+        }
+    }
 }

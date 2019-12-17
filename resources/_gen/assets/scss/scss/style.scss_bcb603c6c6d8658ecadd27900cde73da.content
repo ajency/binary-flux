@@ -7195,7 +7195,7 @@ a.text-error:hover, a.text-error:focus {
       margin-left: 5px;
       vertical-align: middle; }
     .nav-tabs .nav-link:hover {
-      border-bottom: 0; }
+      border-bottom: transparent; }
     .nav-tabs .nav-link.active {
       background: transparent;
       font-weight: 900 !important;
@@ -7344,9 +7344,19 @@ a.text-error:hover, a.text-error:focus {
       background-color: #27283D;
       overflow-x: hidden;
       transition: 0.5s;
-      padding-top: 60px; }
+      padding-top: 40px; }
+      .sidear-container.mobile-slide-in button.close {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        cursor: pointer; }
+        .sidear-container.mobile-slide-in button.close i {
+          font-size: 15px; }
       .sidear-container.mobile-slide-in.show {
         width: 100%; } }
+  @media (min-width: 1350px) and (max-width: 1400px) {
+    .sidear-container {
+      padding: 10px 10px 10px; } }
   @media (min-width: 768px) {
     .sidear-container {
       height: calc(100vh - 40px); } }
@@ -7381,6 +7391,9 @@ a.text-error:hover, a.text-error:focus {
 .workspace-header-bar {
   padding: 5px 15px 0;
   background: #121425; }
+  @media (max-width: 767px) {
+    .workspace-header-bar {
+      padding: 5px 15px 5px; } }
 
 .workspace-bar-tabs {
   display: flex;
@@ -7423,6 +7436,10 @@ a.text-error:hover, a.text-error:focus {
       justify-content: flex-start;
       padding-left: 0; } }
 
+@media (max-width: 480px) {
+  .workspace-actiions a.mr-15 {
+    margin-right: 5px !important; } }
+
 .workspace-actiions .icon-preview {
   font-size: 13px; }
 
@@ -7445,7 +7462,9 @@ a.text-error:hover, a.text-error:focus {
   .tab-close {
     position: absolute;
     right: 3px;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    top: 50%;
+    transform: translateY(-50%); }
     .tab-close i {
       font-size: 9px; }
   .tab-list {
@@ -7468,6 +7487,17 @@ a.text-error:hover, a.text-error:focus {
         color: #9c9da4;
         font-size: 9px;
         font-weight: 300; }
+
+.wordspace-tabs .nav-item {
+  position: relative; }
+  .wordspace-tabs .nav-item::after {
+    position: absolute;
+    right: -17px;
+    top: 7px;
+    content: "";
+    width: 1px;
+    height: 23px;
+    background: #9c9da4; }
 
 .element-field-row {
   border-bottom: 2px solid rgba(68, 71, 90, 0.5);

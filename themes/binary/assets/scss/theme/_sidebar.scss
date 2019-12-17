@@ -13,11 +13,23 @@
                 background-color: #27283D;
                 overflow-x: hidden;
                 transition: 0.5s;
-                padding-top: 60px;
+                padding-top: 40px;
+                button.close{
+                    position: absolute;
+                    top: 5px;
+                    right: 15px;
+                    cursor: pointer;
+                    i{
+                        font-size: 15px;
+                    }
+                }
                 &.show{
                     width: 100%;
                 }
             }
+        }
+        @media (min-width: 1350px) and (max-width: 1400px) {
+            padding: 10px 10px 10px;
         }
         @media (min-width: 768px) {
             height: calc(100vh - 40px);

@@ -3,7 +3,10 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-3 col-lg-2 p-0">
-			<div class="sidear-container">
+			<div class="sidear-container mobile-slide-in">
+				<button type="button" class="close d-block d-md-none">
+					<i class="icon-close"></i>
+				</button>
 				<ul class="nav nav-tabs nav-divider-dark nav-fill-50" id="siderbar-tabs" role="tablist">
 					<li class="nav-item">
 						<a class="nav-link sticky-badge-wrap" id="web_api-tab" data-toggle="tab" href="#web_api" role="tab" aria-controls="home" aria-selected="true"><span class="sticky-badge-text">WEB API <span class="badge sticky-badge">12</span></span></a>
@@ -89,7 +92,7 @@
 		<div class="col-md-9 col-lg-10 p-0">
 			<div class="d-flex justify-content-between workspace-header-bar">
 				<div class="workspace-bar-tabs">	
-					<div class="side-menu-toggle icon-hamburger d-lg-none">
+					<div class="side-menu-toggle icon-hamburger d-md-none">
 						<span></span>
 						<span></span>
 						<span></span>
@@ -102,7 +105,7 @@
 						<button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
 					</div>
 				</div>
-				<div>
+				<div class="d-flex align-items-center d-sm-block">
 					<div class="workspace-actiions d-flex align-items-center">
 						<div class="workspace-environment mr-1">
 							<select class="select2-outline-dark" data-placeholder="No Environment">
@@ -156,9 +159,9 @@
 								</div>
 							</div>
 						</div>
-						<ul class="nav nav-tabs mt-1" id="myTab" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link active text-uppercase" id="jdedwards-tab" data-toggle="tab" href="#jdedwards" role="tab" aria-controls="jdedwards" aria-selected="true">JD Edwards</a>
+						<ul class="nav nav-tabs mt-1 wordspace-tabs" id="myTab" role="tablist">
+							<li class="nav-item mr-15">
+								<a class="nav-link active text-uppercase pr-0" id="jdedwards-tab" data-toggle="tab" href="#jdedwards" role="tab" aria-controls="jdedwards" aria-selected="true">JD Edwards</a>
 							</li>
 							<button class="btn-icon ml-15"><i class="icon-add-circle mr-05"></i> Add New Section</button>
 						</ul>
@@ -174,13 +177,13 @@
 													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
 												</div>
 												<div class="col-lg-5">
-													<div class="field-wrapper"><div class="form-field mb-0 mt-1 mt-md-0"><input class="form-control form-control-dark input-small" type="text" placeholder="Enter Help Text"></div></div></div>
+													<div class="field-wrapper"><div class="form-field mb-0 mt-1 mt-lg-0"><input class="form-control form-control-dark input-small" type="text" placeholder="Enter Help Text"></div></div></div>
 												<div class="col-lg-3">
 												</div>
 											</div>
 										</div>
 										<div class="col-lg-3">
-											<div class="element-field-setting text-md-right text-lg-left mt-1 mt-md-0">
+											<div class="element-field-setting text-md-right text-lg-left mt-1 mt-lg-0">
 												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
 												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-2"></i></button>
 											</div>
@@ -195,13 +198,13 @@
 												</div>
 												<div class="col-lg-5">
 													<div class="field-wrapper">
-														<div class="form-field mb-0 mt-1 mt-md-0">
+														<div class="form-field mb-0 mt-1 mt-lg-0">
 															<input class="form-control form-control-dark input-small" type="text" placeholder="Enter Help Text">                            
 														</div>
 													</div>
 												</div>
 												<div class="col-lg-3">
-													<div class="custom-control custom-checkbox custom-checkbox-dark mt-1 mt-md-0">
+													<div class="custom-control custom-checkbox custom-checkbox-dark mt-1 mt-lg-0">
 														<input type="checkbox" class="custom-control-input" id="mandatory1">
 														<label class="custom-control-label font-light" for="mandatory1">Mark field as mandatory</label>
 													</div>
@@ -209,7 +212,7 @@
 											</div>
 										</div>
 										<div class="col-lg-3">
-											<div class="element-field-setting text-md-right text-lg-left mt-0">
+											<div class="element-field-setting text-md-right text-lg-left mt-1 mt-lg-0">
 												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
 												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-2"></i></button>
 											</div>
