@@ -43,31 +43,31 @@ hr{
 
 .p{
 	&l-05 {
-		margin-left: 5px !important;	
+		padding-left: 5px !important;	
 	}
 	&r-05 {
-		margin-right: 5px !important;
+		padding-right: 5px !important;
 	}
 	&t-05 {
-		margin-top: 5px !important;	
+		padding-top: 5px !important;	
 	}
 	&b-05 {
-		margin-bottom: 5px !important;
+		padding-bottom: 5px !important;
 	}
 	&l-15 {
-		margin-left: 15px !important;	
+		padding-left: 15px !important;	
 	}
 	&r-15 {
-		margin-right: 15px !important;
+		padding-right: 15px !important;
 	}
 	&t-15 {
-		margin-top: 15px !important;	
+		padding-top: 15px !important;	
 	}
 	&b-15 {
-		margin-bottom: 15px !important;
+		padding-bottom: 15px !important;
 	}
 	&t-25{
-		margin-top: 25px;
+		padding-top: 25px;
 	}
 }
 
@@ -80,6 +80,12 @@ hr{
 		&--8 {
 			color: rgba(#ffffff, 0.8);
 		}
+	}
+	&-light-blue{
+		color: $blue-light;
+	}
+	&-yellow{
+		color: #FFA400;
 	}
 }
 
@@ -116,6 +122,11 @@ hr{
 .f-12 {
 	font-size: 12px;
 	line-height: 16px;
+}
+
+.f-7 {
+	font-size: 7px;
+	line-height: 10px;
 }
 
 .fw {
@@ -163,6 +174,12 @@ hr{
 	}
 }
 
+.min{
+	&-25{
+		min-width: 25px;
+	}
+}
+
 
 .border{
 	&-radius{
@@ -180,4 +197,38 @@ hr{
 
 .shadow{
 	box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px 0 rgba(0,0,0,0.2);
+}
+
+.h-31{
+	height: 31px;
+}
+
+.w{
+	&-sm{
+		@media (max-width: 575px) {
+			&-100{
+				width: 100%;
+			}
+		}
+	}
+}
+
+.justify-content{
+	&-maxsm{
+		@media (max-width: 575px) {
+			justify-content: flex-end;
+		}
+	}
+}
+
+.horizontal-scroll{
+	@media (max-width: 768px) {
+		flex-wrap: nowrap;
+		overflow-x: scroll;
+		li{
+			a{
+				white-space: nowrap;
+			}
+		}
+	}
 }

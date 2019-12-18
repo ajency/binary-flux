@@ -18,4 +18,7 @@ $(document).ready(function(){
         $('html,body').removeClass('overflow-hidden');
         $(".sidear-container").removeClass('show');
     });
+
+    $('.openDefault').modal('show');
+    
 });

@@ -18,94 +18,98 @@
 				<div class="tab-content pt-1" id="siderbar-content">
 					<div class="tab-pane fade show active" id="web_api" role="tabpanel" aria-labelledby="web_api-tab">
 						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
-							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>Add New</button>
+							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>New Collection</button>
+						</div>
+						<div class="nav-list-items">
+							<ul class="nav-lists">
+								<li class="list-item">
+									<a href="#" class="list-item-a">
+										<div class="list-item-wrap">
+											<div class="list-item-logo">
+												<img src="{{"images/logo_aws.svg" | relURL }}" alt>
+											</div>
+											<div class="list-item-label">
+												<label class="request-label d-block mb-0">Swagger Pet Store 2</label>
+												<label class="request-count d-block mb-0">3 requests</label>
+											</div>
+										</div>
+									</a>
+									<ul class="sub-ul">
+										<li class="list-item">
+											<a href="#" class="list-item-a">
+												<div class="list-item-wrap">
+													<div class="list-item-logo">
+														<img src="{{"images/logo_aws.svg" | relURL }}" alt>
+													</div>
+													<div class="list-item-label">
+														<label class="request-label d-block mb-0">Pets</label>
+													</div>
+												</div>
+											</a>
+											<ul class="sub-ul">
+												<li>
+													<a href="#" class="list-item-a">
+														<label class="request-type d-inline-block mb-0 text-yellow f-7 min-25 mr-05">POST</label>
+														<label class="request-label d-inline-block mb-0">Create Pets</label>	
+													</a>												
+												</li>
+												<li>
+													<a href="#" class="list-item-a">
+														<label class="request-type d-inline-block mb-0 text-light-blue f-7 min-25 mr-05">GET</label>
+														<label class="request-label d-inline-block mb-0">List of Pets</label>
+													</a>
+												</li>
+												<li>
+													<a href="#" class="list-item-a">
+														<label class="request-type d-inline-block mb-0 get f-7 min-25 mr-05">PATCH</label>
+														<label class="request-label d-inline-block mb-0">Info for a specific Pet</label>
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="list-item">
+									<a href="#" class="list-item-a">
+										<div class="list-item-wrap">
+											<div class="list-item-logo">
+												<img src="{{"images/logo_aws.svg" | relURL }}" alt>
+											</div>
+											<div class="list-item-label">
+												<label class="request-label d-block mb-0">Swagger Pet Store 2</label>
+												<label class="request-count d-block mb-0">3 requests</label>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div class="tab-pane fade" id="custom_api" role="tabpanel" aria-labelledby="custom_api-tab">
 						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
 							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>Add New</button>
-						</div>
-						<div class="nav-list-items">
-							<ul class="nav-lists">
-								<li class="list-item">
-									<div class="list-item-wrap">
-										<div class="list-item-logo">
-											<img src="{{"images/logo_aws.svg" | relURL }}" alt>
-										</div>
-										<div class="list-item-label">
-											<label class="request-label d-block mb-0">Swagger Pet Store 2</label>
-											<label class="request-count d-block mb-0">3 requests</label>
-										</div>
-									</div>
-									<!-- <ul>
-										<li>
-											<div class="list-item-wrap">
-												<div class="list-item-logo">
-													<img src="{{"images/logo_aws.svg" | relURL }}" alt>
-												</div>
-												<div class="list-item-label">
-													<label class="request-label d-block mb-0">Pets</label>
-												</div>
-											</div>
-											<ul>
-												<li>
-													<div class="list-item-wrap">
-														<div class="list-item-logo">
-															<label class="request-type d-block mb-0 post">POST</label>
-														</div>
-														<div class="list-item-label">
-															<label class="request-label d-block mb-0">Create Pets</label>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="list-item-wrap">
-														<div class="list-item-logo">
-															<label class="request-type d-block mb-0 get">GET</label>
-														</div>
-														<div class="list-item-label">
-															<label class="request-label d-block mb-0">List of Pets</label>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</li>
-									</ul> -->
-								</li>
-								<li class="list-item">
-									<div class="list-item-wrap">
-										<div class="list-item-logo">
-											<img src="{{"images/logo_aws.svg" | relURL }}" alt>
-										</div>
-										<div class="list-item-label">
-											<label class="request-label d-block mb-0">Swagger Pet Store 2</label>
-											<label class="request-count d-block mb-0">3 requests</label>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
+						</div>						
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-9 col-lg-10 p-0">
-			<div class="d-flex justify-content-between workspace-header-bar">
-				<div class="workspace-bar-tabs">	
+			<div class="d-flex justify-content-between workspace-header-bar flex-wrap">
+				<div class="workspace-bar-tabs w-sm-100">	
 					<div class="side-menu-toggle icon-hamburger d-md-none">
 						<span></span>
 						<span></span>
 						<span></span>
 					</div>
 					<div class="tab-list">
-						<div class="tab-btn tab active pl-0"><span class="text-orange text-uppercase small mr-1">Post</span>Create Pets <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
+						<div class="tab-btn tab active pl-0"><span class="text-yellow text-uppercase small mr-1">Post</span>Create Pets <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
 					</div>
 					<div class="tab-list-action">
 						<button class="tab-btn tab-btn-add"><i class="icon-add"></i></button>
 						<button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
 					</div>
 				</div>
-				<div class="d-flex align-items-center d-sm-block">
+				<div class="d-flex align-items-center d-sm-block w-sm-100 justify-content-maxsm">
 					<div class="workspace-actiions d-flex align-items-center">
 						<div class="workspace-environment mr-1">
 							<select class="select2-outline-dark" data-placeholder="No Environment">
@@ -125,7 +129,7 @@
 					<div class="workspace-tab-header">
 						<div class="d-flex flex-wrap mt-15">
 							<div class="col-12 col-lg-8">
-								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase">Create Pets</h6>
+								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase d-flex align-items-center"><span>Create Pets</span></h6>
 								<h6 class="workspace-name text-white--5 f-12 fw-300">Post request form to collect pet information from the end user <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button> </h6>
 							</div>
 							<div class="col-12 col-lg-4">
@@ -137,11 +141,21 @@
 								</div>
 							</div>
 						</div>
-						<div class="workspace-actions">
-							<div class="">
-
+						<div class="workspace-actions d-flex  mt-1">
+							<div class="request">
+								<div class="request-select">
+									<select class="select2-outline-dark">
+										<option value="patch">PATCH</option>
+										<option value="put">PUT</option>
+										<option value="post">POST</option>
+										<option value="get" selected>GET</option>
+									</select>
+								</div>
+								<div class="request-input">
+									<input class="form-control form-control-dark" type="text" placeholder="Enter request URL">
+								</div>
 							</div>
-							<div class="btn-group btn-primary mr-1">
+							<div class="btn-group btn-primary mr-0 ml-1">
 								<button type="button" class="btn">Save</button>
 								<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								</button>
@@ -152,7 +166,7 @@
 								</div>
 							</div>
 						</div>
-						<ul class="nav nav-tabs mt-1" id="myTab" role="tablist">
+						<ul class="nav nav-tabs horizontal-scroll mt-1" id="myTab" role="tablist">
 							<li class="nav-item">
 								<a class="nav-link active text-uppercase" id="params-tab" data-toggle="tab" href="#params" role="tab" aria-controls="params" aria-selected="true">Params</a>
 							</li>
@@ -219,6 +233,14 @@
 							</div>
 							<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
 								Test 6
+							</div>
+						</div>
+						<div class="pt-10 pb-10 text-center">
+							<div class="">
+								<img src="{{"images/illiustraion.svg" | relURL }}" alt="logo" class="img-fluid">
+							</div>
+							<div class="mt-25">
+								Hit Send (↵) <span class="text-light-blue">to get a response</span>
 							</div>
 						</div>
 					</div>

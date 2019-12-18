@@ -110,18 +110,36 @@
     &-lists {
         padding: 0;
         margin: 0;
-        .list-item {
-            position: relative;
-            padding: 8px 8px 8px 20px;
-            border-top: 2px solid $grey10;                    
-            cursor: pointer;
+        > li{
+            border-top: 2px solid $grey10; 
             &:last-child {
                 border-bottom: 2px solid $grey10;
             }
-            &:hover {
-                background: $darkblue;
+        }
+        .sub-ul{
+            li{
+                a{
+                    padding: 4px 8px 4px 20px !important;
+                    padding-left: 50px !important;
+                    label{
+                        font-weight: 300;
+                        text-transform: capitalize;
+                        text-align: center;
+                    }
+                }
             }
-
+        }
+        .list-item {
+            .list-item-a{
+                position: relative;
+                padding: 8px 8px 8px 30px;                   
+                cursor: pointer;
+                display: block;
+                text-decoration: none;
+                &:hover {
+                    background: $darkblue;
+                }
+            }   
             &-wrap {
                 display: flex;
                 align-items: center;
@@ -133,7 +151,7 @@
                     color: rgba($blue-light, 0.5);
                     font-family: 'icomoon';
                     position: absolute;
-                    left: -15px;
+                    left: -20px;
                     top: 50%;
                     transform: translateY(-50%) rotate(-90deg);
                     font-size: 10px;

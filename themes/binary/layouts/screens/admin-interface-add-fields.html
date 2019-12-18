@@ -1,36 +1,4 @@
-<!DOCTYPE html>
-<html><head>
-
-	<title>Admin Interface Web - Binary Flux</title>
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
-	<link type="image/x-icon" href="/binary-flux/img/favicon.ico" rel="shortcut icon">
-	
-		
-			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.86da8dd0bb9a5724bd846da1a132987f11fcd0fd28d01a9a4de9a7315fd7fcbc.css">
-		
-		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
-</head><body><header>
-	<div class="d-flex justify-content-between align-items-center">
-		<div class="logo-wrap">			
-			<a href="#">
-				<img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
-			</a>
-		</div>
-		<div class="navbar-right">
-			<ul class="list-inline m-0">
-				<li class="list-inline-item ml-1 ml-md-0 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_settings.svg" width="20" height="20" alt="settings"></a></li>
-				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_notifications.svg" width="20" height="20" alt="notify"></a></li>
-				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" class="dropdown dropdown-profile dropdown-arrow-blue" target="_self"><img src="/binary-flux/images/ic_account_circle.svg" width="20" height="20" alt="profile"></a></li>
-			</ul>
-			<div class="dropdown-menu">
-
-			</div>
-		</div>
-	</div>
-	
-</header><div id="content">
+{{ define "main" }}
 
 <div class="container-fluid">
 	<div class="row">
@@ -41,16 +9,21 @@
 				</button>
 				<ul class="nav nav-tabs nav-divider-dark nav-fill-50" id="siderbar-tabs" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link active sticky-badge-wrap" id="web_api-tab" data-toggle="tab" href="#web_api" role="tab" aria-controls="home" aria-selected="true"><span class="sticky-badge-text">WEB API <span class="badge sticky-badge">12</span></span></a>
+						<a class="nav-link sticky-badge-wrap" id="web_api-tab" data-toggle="tab" href="#web_api" role="tab" aria-controls="home" aria-selected="true"><span class="sticky-badge-text">WEB API <span class="badge sticky-badge">12</span></span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link  sticky-badge" id="custom_api-tab" data-toggle="tab" href="#custom_api" role="tab" aria-controls="custom_api" aria-selected="false"><span class="sticky-badge-text">CUSTOM <span class="badge sticky-badge">12</span></span></a>
+						<a class="nav-link active sticky-badge" id="custom_api-tab" data-toggle="tab" href="#custom_api" role="tab" aria-controls="custom_api" aria-selected="false"><span class="sticky-badge-text">CUSTOM <span class="badge sticky-badge">12</span></span></a>
 					</li>
 				</ul>
 				<div class="tab-content pt-1" id="siderbar-content">
-					<div class="tab-pane fade show active" id="web_api" role="tabpanel" aria-labelledby="web_api-tab">
+					<div class="tab-pane fade" id="web_api" role="tabpanel" aria-labelledby="web_api-tab">
 						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
-							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>New Collection</button>
+							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>Add New</button>
+						</div>
+					</div>
+					<div class="tab-pane fade show active" id="custom_api" role="tabpanel" aria-labelledby="custom_api-tab">
+						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
+							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>Add New</button>
 						</div>
 						<div class="nav-list-items">
 							<ul class="nav-lists">
@@ -58,7 +31,7 @@
 									<a href="#" class="list-item-a">
 										<div class="list-item-wrap">
 											<div class="list-item-logo">
-												<img src="/binary-flux/images/logo_aws.svg" alt>
+												<img src="{{"images/logo_aws.svg" | relURL }}" alt>
 											</div>
 											<div class="list-item-label">
 												<label class="request-label d-block mb-0">Swagger Pet Store 2</label>
@@ -66,46 +39,12 @@
 											</div>
 										</div>
 									</a>
-									<ul class="sub-ul">
-										<li class="list-item">
-											<a href="#" class="list-item-a">
-												<div class="list-item-wrap">
-													<div class="list-item-logo">
-														<img src="/binary-flux/images/logo_aws.svg" alt>
-													</div>
-													<div class="list-item-label">
-														<label class="request-label d-block mb-0">Pets</label>
-													</div>
-												</div>
-											</a>
-											<ul class="sub-ul">
-												<li>
-													<a href="#" class="list-item-a">
-														<label class="request-type d-inline-block mb-0 text-yellow f-7 min-25 mr-05">POST</label>
-														<label class="request-label d-inline-block mb-0">Create Pets</label>	
-													</a>												
-												</li>
-												<li>
-													<a href="#" class="list-item-a">
-														<label class="request-type d-inline-block mb-0 text-light-blue f-7 min-25 mr-05">GET</label>
-														<label class="request-label d-inline-block mb-0">List of Pets</label>
-													</a>
-												</li>
-												<li>
-													<a href="#" class="list-item-a">
-														<label class="request-type d-inline-block mb-0 get f-7 min-25 mr-05">PATCH</label>
-														<label class="request-label d-inline-block mb-0">Info for a specific Pet</label>
-													</a>
-												</li>
-											</ul>
-										</li>
-									</ul>
 								</li>
 								<li class="list-item">
 									<a href="#" class="list-item-a">
 										<div class="list-item-wrap">
 											<div class="list-item-logo">
-												<img src="/binary-flux/images/logo_aws.svg" alt>
+												<img src="{{"images/logo_aws.svg" | relURL }}" alt>
 											</div>
 											<div class="list-item-label">
 												<label class="request-label d-block mb-0">Swagger Pet Store 2</label>
@@ -116,11 +55,6 @@
 								</li>
 							</ul>
 						</div>
-					</div>
-					<div class="tab-pane fade" id="custom_api" role="tabpanel" aria-labelledby="custom_api-tab">
-						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
-							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>Add New</button>
-						</div>						
 					</div>
 				</div>
 			</div>
@@ -134,7 +68,7 @@
 						<span></span>
 					</div>
 					<div class="tab-list">
-						<div class="tab-btn tab active pl-0"><span class="text-yellow text-uppercase small mr-1">Post</span>Create Pets <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
+						<div class="tab-btn tab active pl-0">Custom Source <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
 					</div>
 					<div class="tab-list-action">
 						<button class="tab-btn tab-btn-add"><i class="icon-add"></i></button>
@@ -161,8 +95,8 @@
 					<div class="workspace-tab-header">
 						<div class="d-flex flex-wrap mt-15">
 							<div class="col-12 col-lg-8">
-								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase d-flex align-items-center"><span>Create Pets</span></h6>
-								<h6 class="workspace-name text-white--5 f-12 fw-300">Post request form to collect pet information from the end user <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button> </h6>
+								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase">B086 Connection</h6>
+								<h6 class="workspace-name text-white--5 f-12 fw-300">Custom SQL Source connection for Petzilla <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button> </h6>
 							</div>
 							<div class="col-12 col-lg-4">
 								<div class="workspace-info">
@@ -173,21 +107,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="workspace-actions d-flex  mt-1">
-							<div class="request">
-								<div class="request-select">
-									<select class="select2-outline-dark">
-										<option value="patch">PATCH</option>
-										<option value="put">PUT</option>
-										<option value="post">POST</option>
-										<option value="get" selected>GET</option>
-									</select>
-								</div>
-								<div class="request-input">
-									<input class="form-control form-control-dark" type="text" placeholder="Enter request URL">
-								</div>
-							</div>
-							<div class="btn-group btn-primary mr-0 ml-1">
+						<div class="workspace-actions">
+							<div class="btn-group btn-primary mr-1">
 								<button type="button" class="btn">Save</button>
 								<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								</button>
@@ -197,93 +118,133 @@
 									<a class="dropdown-item" href="#">Something else here</a>
 								</div>
 							</div>
-						</div>
-						<ul class="nav nav-tabs horizontal-scroll mt-1" id="myTab" role="tablist">
-							<li class="nav-item">
-								<a class="nav-link active text-uppercase" id="params-tab" data-toggle="tab" href="#params" role="tab" aria-controls="params" aria-selected="true">Params</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-uppercase" id="authorization-tab" data-toggle="tab" href="#authorization" role="tab" aria-controls="authorization">Authorization</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-uppercase" id="headers-tab" data-toggle="tab" href="#headers" role="tab" aria-controls="headers">Headers</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-uppercase" id="body-tab" data-toggle="tab" href="#body" role="tab" aria-controls="body">Body</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-uppercase" id="prerequestscript-tab" data-toggle="tab" href="#prerequestscript" role="tab" aria-controls="prerequestscript">Pre-request Script</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-uppercase" id="tests-tab" data-toggle="tab" href="#tests" role="tab" aria-controls="prerequestscript">Tests</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-uppercase" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="prerequestscript">Settings</a>
-							</li>						
-						</ul>
-						<div class="tab-content pt-0" id="myTabContent">
-							<div class="tab-pane fade show active" id="params" role="tabpanel" aria-labelledby="params-tab">
-								<div class="tab-inner-ontent">
-									<div class="tab-title pl-15 pr-15 pt-1 pb-1">
-										<p class="m-0 text-uppercase text-white--5 font-weight-bolder">Query Params</p>
-									</div>
-									<div class="tab-body table-responsive">
-										<table class="table-bordered" width="100%">
-											<tr>
-											   <th width="43" class="border-left-0"></th>
-											   <th class="text-uppercase">KEY</th>
-											   <th class="text-uppercase">Value</th>
-											   <th class="border-right-0 text-uppercase">Description</th>
-											</tr>
-											<tr>
-												<td width="43" class="border-left-0"></td>
-											    <td><input class="form-control" type="text" placeholder="Key"></td>
-											    <td><input class="form-control" type="text" placeholder="value"></td>
-											    <td class="border-right-0"><input class="form-control" type="text" placeholder="Description"></td>
-											</tr>
-										</table>
-									</div>
-									<div class="tab-footer pl-15 pr-15 pt-1 pb-1">
-										<p class="m-0 text-uppercase text-white--5 font-weight-light">Response</p>
-									</div>
+							<div class="btn-group btn-outline-dark">
+								<button type="button" class="btn">Preview</button>
+								<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								</button>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="#">Action</a>
+									<a class="dropdown-item" href="#">Another action</a>
+									<a class="dropdown-item" href="#">Something else here</a>
 								</div>
 							</div>
-							<div class="tab-pane fade" id="authorization" role="tabpanel" aria-labelledby="authorization-tab">
-								Test 1
-							</div>
-							<div class="tab-pane fade" id="headers" role="tabpanel" aria-labelledby="headers-tab">
-								Test 2
-							</div>
-							<div class="tab-pane fade" id="body" role="tabpanel" aria-labelledby="body-tab">
-								Test 3
-							</div>
-							<div class="tab-pane fade" id="prerequestscript" role="tabpanel" aria-labelledby="prerequestscript-tab">
-								Test 4
-							</div>
-							<div class="tab-pane fade" id="tests" role="tabpanel" aria-labelledby="tests-tab">
-								Test 5
-							</div>
-							<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
-								Test 6
-							</div>
 						</div>
-						<div class="pt-10 pb-10 text-center">
-							<div class="">
-								<img src="/binary-flux/images/illiustraion.svg" alt="logo" class="img-fluid">
-							</div>
-							<div class="mt-25">
-								Hit Send (↵) <span class="text-light-blue">to get a response</span>
+						<ul class="nav nav-tabs mt-1 wordspace-tabs" id="myTab" role="tablist">
+							<li class="nav-item mr-15">
+								<a class="nav-link active text-uppercase pr-0" id="jdedwards-tab" data-toggle="tab" href="#jdedwards" role="tab" aria-controls="jdedwards" aria-selected="true">JD Edwards</a>
+							</li>
+							<button class="btn-icon ml-15 text-white--8"><i class="icon-add-circle mr-05"></i> Add New Section</button>
+						</ul>
+
+						<div class="tab-content pt-0" id="myTabContent">
+							<div class="tab-pane fade show active" id="jdedwards" role="tabpanel" aria-labelledby="jdedwards-tab">
+								<div class="element-fields-wrapper pb-2 pb-md-0">
+									<div class="element-field-row d-flex flex-wrap align-items-center">
+										<div class="col-lg-9">
+											<div class="row align-items-center">
+												<div class="col-xl-3 col-lg-4">
+													<h6 class="f-12 mb-05 fw-900 text-white">JD EDWARDS <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
+													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
+												</div>
+												<div class="col-lg-5">
+													<div class="field-wrapper"><div class="form-field mb-0 mt-1 mt-lg-0"><input class="form-control form-control-dark input-small" type="text" placeholder="Enter Help Text"></div></div></div>
+												<div class="col-lg-3">
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="element-field-setting text-right text-lg-left mt-1 mt-lg-0">
+												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
+												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-2"></i></button>
+											</div>
+										</div>
+									</div>
+									<div class="element-field-row d-flex flex-wrap align-items-center">
+										<div class="col-lg-9">
+											<div class="row align-items-center">
+												<div class="col-xl-3 col-lg-4">
+													<h6 class="f-12 mb-05 fw-900 text-white">Add Text Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
+													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
+												</div>
+												<div class="col-lg-5">
+													<div class="field-wrapper">
+														<div class="form-field mb-0 mt-1 mt-lg-0">
+															<input class="form-control form-control-dark input-small" type="text" placeholder="Enter Help Text">                            
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3">
+													<div class="custom-control custom-checkbox custom-checkbox-dark mt-1 mt-lg-0">
+														<input type="checkbox" class="custom-control-input" id="mandatory1">
+														<label class="custom-control-label font-light" for="mandatory1">Mark field as mandatory</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="element-field-setting text-right text-lg-left mt-1 mt-lg-0">
+												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
+												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-2"></i></button>
+											</div>
+										</div>
+									</div>
+									<div class="element-field-row d-flex flex-wrap">
+										<div class="col-lg-9">
+											<div class="row">
+												<div class="col-xl-3 col-lg-4">
+													<h6 class="f-12 mb-05 fw-900 text-white">Add Radio Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
+													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
+												</div>
+												<div class="col-lg-5">
+													<div class="field-wrapper field-type-ratio field-repeat mt-1 mt-md-0">
+														<div class="form-field fi mb-0 mt-0">
+															<input class="form-control form-control-dark input-small" type="text" placeholder="Enter Value">
+															<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+														</div>
+														<div class="form-field fi mb-0 mt-15">
+															<input class="form-control form-control-dark input-small" type="text" placeholder="Enter Value">
+															<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+														</div>
+														<div class="form-field fi mb-0 mt-15">
+															<input class="form-control form-control-dark input-small" type="text" placeholder="Enter Value">
+															<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
+														</div>
+														<div class="field-repeat-btn-wrap">
+															<button class="btn-icon"><i class="icon-add-circle mr-05"></i> Add Another</button>
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-3">											
+													<div class="custom-control custom-checkbox custom-checkbox-dark mt-1">
+														<input type="checkbox" class="custom-control-input" id="mandatory2">
+														<label class="custom-control-label font-light" for="mandatory2">Mark field as mandatory</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-3">
+											<div class="element-field-setting text-right text-lg-left mt-1">
+												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
+												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-2"></i></button>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 mt-1 pb-10">
+										<button class="btn-icon" data-toggle="modal" data-target="#addfieldsmodal" data-backdrop="static"><i class="icon-add-circle mr-05"></i> Add New Field</button>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </div>
 
-
-<div class="modal fade" id="addfieldsmodal" tabindex="-1" role="dialog" aria-labelledby="addfieldsmodal" aria-hidden="true">
+<!-- Modal -->
+<div class="modal fade openDefault" id="addfieldsmodal" tabindex="-1" role="dialog" aria-labelledby="addfieldsmodal" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered" role="document">
 		<div class="modal-content rounded-0">
 			<div class="modal-header rounded-0">
@@ -297,7 +258,7 @@
 						<div class="col-md-3 p-0 shadow">
 							<div class="search-wrap p-15">
 								<div class="position-relative">
-									<img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
+									<img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc" width="17" height="17" />
 									<input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
 								</div>
 							</div>
@@ -327,7 +288,7 @@
 											Text Boxes
 										</a>
 									</div>
-									
+									<!-- Note: New place of `data-parent` -->
 									<div id="collapse-A" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-A">
 										<div class="card-body">
 											<div class="tab-header p-15 pl-2 pr-2 d-none d-md-block">
@@ -414,7 +375,7 @@
 											Toggles
 										</a>
 									</div>
-									
+									<!-- Note: New place of `data-parent` -->
 									<div id="collapse-B" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-B">
 										<div class="card-body">
 											<div class="tab-header p-15 pl-2 pr-2 d-none d-md-block">
@@ -434,7 +395,7 @@
 											Checkboxes
 										</a>
 									</div>
-									
+									<!-- Note: New place of `data-parent` -->
 									<div id="collapse-C" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-C">
 										<div class="card-body">
 											<div class="tab-header p-15 pl-2 pr-2 d-none d-md-block">
@@ -454,7 +415,7 @@
 											Radio Buttons
 										</a>
 									</div>
-									
+									<!-- Note: New place of `data-parent` -->
 									<div id="collapse-D" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-D">
 										<div class="card-body">
 											<div class="tab-header p-15 pl-2 pr-2 d-none d-md-block">
@@ -474,7 +435,7 @@
 											Custom code
 										</a>
 									</div>
-									
+									<!-- Note: New place of `data-parent` -->
 									<div id="collapse-E" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-E">
 										<div class="card-body">
 											<div class="tab-header p-15 pl-2 pr-2 d-none d-md-block">
@@ -497,13 +458,4 @@
 </div>
 
 
-
-        </div><script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="/binary-flux/vendor/select2/select2.full.js"></script>
-<script src="/binary-flux/js/app.js"></script></body>
-</html>
+{{ end }}

@@ -9,6 +9,9 @@
     &-bar-tabs {
         display: flex;
         align-items: center;
+        @media (max-width: 575px) {
+            justify-content: flex-start;
+        }
     }
     &-actions {
         padding: 0 15px;
@@ -16,6 +19,7 @@
         @media (max-width: 767px) {
             text-align: left;
         }
+        
     }
     &-info {
         ul {
@@ -70,6 +74,10 @@
             &-setting{
                 font-size: 15px;
             }
+        }
+        @media (max-width: 575px) {
+            margin-bottom: 5px;
+            margin-top: 10px;
         }
     }
 }
@@ -141,6 +149,54 @@
             width: 1px;
             height: 23px;
             background: $white-7;
+        }
+    }
+}
+
+.request{
+    width: 100%;
+    position: relative;
+    &-select{
+        position: absolute;
+        top: 0;
+        left: 0;
+        .select2{
+            &.select2-container{
+                max-width: 100px !important;
+                width: 100px !important;
+                text-align: left;
+            }
+            .selection{
+                .select2-selection{
+                    border: 2px solid #415F65;
+                    background: #415F65;
+                    border-radius: 0;
+                    color: #B0BCBF;
+                    height: 31px;
+                    &__rendered{
+                        font-size: 15px;
+                        color: #B0BCBF;
+                        line-height: 31px;
+                        padding-left: 15px;
+                    }
+                    &__clear{
+                        display: none;
+                    }
+                    &__arrow{
+                        right: 10px;
+                        b{
+                            border-color: #B0BCBF transparent transparent transparent;
+                            border-width: 6px 5px 0 5px;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    &-input{
+        .form-control{
+            padding-left: 115px;
+            height: 31px;
         }
     }
 }
