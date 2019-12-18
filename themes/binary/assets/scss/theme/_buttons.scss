@@ -17,7 +17,7 @@
 
 			&.dropdown-toggle {
 				padding: 0 11px;
-				border-left: 2px solid rgba($black3, 0.5);
+				border-left: 1px solid rgba($black3, 0.5);
 				&:after {
 					border: 0;
 					content: "\e902";
@@ -121,7 +121,7 @@
 		}
 	}
 	&-add{
-		font-weight: 900;
+		font-weight: 700;
 		border-radius: 2px;
 		font-size: 12px;
 	}

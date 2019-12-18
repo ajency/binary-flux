@@ -7416,7 +7416,7 @@ a.text-error:hover, a.text-error:focus {
     vertical-align: middle;
     margin-right: 10px; }
   .workspace-info ul .icon-arrow-down-sm {
-    font-size: 7px; }
+    font-size: 5px; }
   .workspace-info ul li {
     padding: 0 5px;
     position: relative;
@@ -7498,7 +7498,7 @@ a.text-error:hover, a.text-error:focus {
     content: "";
     width: 1px;
     height: 23px;
-    background: #9c9da4; }
+    background: #5F6069; }
 
 .element-field-row {
   border-bottom: 2px solid rgba(68, 71, 90, 0.5);
@@ -7715,7 +7715,7 @@ h1, .h1 {
   font-weight: 300; }
 
 .custom-checkbox-dark .custom-control-label {
-  color: #C6C6CB; }
+  color: #5F6069; }
   .custom-checkbox-dark .custom-control-label::before {
     border-color: #44475A; }
 
@@ -7791,7 +7791,7 @@ h1, .h1 {
         min-width: 84px; }
       .btn-primary .btn.dropdown-toggle {
         padding: 0 11px;
-        border-left: 2px solid rgba(39, 41, 61, 0.5); }
+        border-left: 1px solid rgba(39, 41, 61, 0.5); }
         .btn-primary .btn.dropdown-toggle:after {
           border: 0;
           content: "\e902";
@@ -7867,7 +7867,7 @@ h1, .h1 {
       position: relative;
       top: 1px; }
   .btn-add {
-    font-weight: 900;
+    font-weight: 700;
     border-radius: 2px;
     font-size: 12px; }
 
