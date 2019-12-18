@@ -36,3 +36,15 @@
         }
     }
 }
+
+.sidear-container{
+    .nav{
+        &-item{
+            a{
+                @media (min-width: 1200px) and (max-width: 1400px) {
+                    padding: 10px 5px 10px;
+                }
+            }
+        }
+    }
+}

@@ -9,19 +9,19 @@
 				</button>
 				<ul class="nav nav-tabs nav-divider-dark nav-fill-50" id="siderbar-tabs" role="tablist">
 					<li class="nav-item">
-						<a class="nav-link sticky-badge-wrap" id="web_api-tab" data-toggle="tab" href="#web_api" role="tab" aria-controls="home" aria-selected="true"><span class="sticky-badge-text">WEB API <span class="badge sticky-badge">12</span></span></a>
+						<a class="nav-link active sticky-badge-wrap" id="web_api-tab" data-toggle="tab" href="#web_api" role="tab" aria-controls="home" aria-selected="true"><span class="sticky-badge-text">WEB API <span class="badge sticky-badge">12</span></span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active sticky-badge" id="custom_api-tab" data-toggle="tab" href="#custom_api" role="tab" aria-controls="custom_api" aria-selected="false"><span class="sticky-badge-text">CUSTOM <span class="badge sticky-badge">12</span></span></a>
+						<a class="nav-link  sticky-badge" id="custom_api-tab" data-toggle="tab" href="#custom_api" role="tab" aria-controls="custom_api" aria-selected="false"><span class="sticky-badge-text">CUSTOM <span class="badge sticky-badge">12</span></span></a>
 					</li>
 				</ul>
 				<div class="tab-content pt-1" id="siderbar-content">
-					<div class="tab-pane fade" id="web_api" role="tabpanel" aria-labelledby="web_api-tab">
+					<div class="tab-pane fade show active" id="web_api" role="tabpanel" aria-labelledby="web_api-tab">
 						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
 							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>Add New</button>
 						</div>
 					</div>
-					<div class="tab-pane fade show active" id="custom_api" role="tabpanel" aria-labelledby="custom_api-tab">
+					<div class="tab-pane fade" id="custom_api" role="tabpanel" aria-labelledby="custom_api-tab">
 						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
 							<button class="btn btn-small btn-outline-primary"><i class="icon icon-add"></i>Add New</button>
 						</div>
@@ -98,7 +98,7 @@
 						<span></span>
 					</div>
 					<div class="tab-list">
-						<div class="tab-btn tab active pl-0">Custom Source <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
+						<div class="tab-btn tab active pl-0"><span class="text-orange text-uppercase small mr-1">Post</span>Create Pets <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
 					</div>
 					<div class="tab-list-action">
 						<button class="tab-btn tab-btn-add"><i class="icon-add"></i></button>
@@ -125,8 +125,8 @@
 					<div class="workspace-tab-header">
 						<div class="d-flex flex-wrap mt-15">
 							<div class="col-12 col-lg-8">
-								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase">B086 Connection</h6>
-								<h6 class="workspace-name text-white--5 f-12 fw-300">Custom SQL Source connection for Petzilla <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button> </h6>
+								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase">Create Pets</h6>
+								<h6 class="workspace-name text-white--5 f-12 fw-300">Post request form to collect pet information from the end user <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button> </h6>
 							</div>
 							<div class="col-12 col-lg-4">
 								<div class="workspace-info">
@@ -138,6 +138,9 @@
 							</div>
 						</div>
 						<div class="workspace-actions">
+							<div class="">
+
+							</div>
 							<div class="btn-group btn-primary mr-1">
 								<button type="button" class="btn">Save</button>
 								<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -148,127 +151,79 @@
 									<a class="dropdown-item" href="#">Something else here</a>
 								</div>
 							</div>
-							<div class="btn-group btn-outline-dark">
-								<button type="button" class="btn">Preview</button>
-								<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								</button>
-								<div class="dropdown-menu">
-									<a class="dropdown-item" href="#">Action</a>
-									<a class="dropdown-item" href="#">Another action</a>
-									<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+						<ul class="nav nav-tabs mt-1" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active text-uppercase" id="params-tab" data-toggle="tab" href="#params" role="tab" aria-controls="params" aria-selected="true">Params</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-uppercase" id="authorization-tab" data-toggle="tab" href="#authorization" role="tab" aria-controls="authorization">Authorization</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-uppercase" id="headers-tab" data-toggle="tab" href="#headers" role="tab" aria-controls="headers">Headers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-uppercase" id="body-tab" data-toggle="tab" href="#body" role="tab" aria-controls="body">Body</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-uppercase" id="prerequestscript-tab" data-toggle="tab" href="#prerequestscript" role="tab" aria-controls="prerequestscript">Pre-request Script</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-uppercase" id="tests-tab" data-toggle="tab" href="#tests" role="tab" aria-controls="prerequestscript">Tests</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-uppercase" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="prerequestscript">Settings</a>
+							</li>						
+						</ul>
+						<div class="tab-content pt-0" id="myTabContent">
+							<div class="tab-pane fade show active" id="params" role="tabpanel" aria-labelledby="params-tab">
+								<div class="tab-inner-ontent">
+									<div class="tab-title pl-15 pr-15 pt-1 pb-1">
+										<p class="m-0 text-uppercase text-white--5 font-weight-bolder">Query Params</p>
+									</div>
+									<div class="tab-body table-responsive">
+										<table class="table-bordered" width="100%">
+											<tr>
+											   <th width="43" class="border-left-0"></th>
+											   <th class="text-uppercase">KEY</th>
+											   <th class="text-uppercase">Value</th>
+											   <th class="border-right-0 text-uppercase">Description</th>
+											</tr>
+											<tr>
+												<td width="43" class="border-left-0"></td>
+											    <td><input class="form-control" type="text" placeholder="Key"></td>
+											    <td><input class="form-control" type="text" placeholder="value"></td>
+											    <td class="border-right-0"><input class="form-control" type="text" placeholder="Description"></td>
+											</tr>
+										</table>
+									</div>
+									<div class="tab-footer pl-15 pr-15 pt-1 pb-1">
+										<p class="m-0 text-uppercase text-white--5 font-weight-light">Response</p>
+									</div>
 								</div>
 							</div>
-						</div>
-						<ul class="nav nav-tabs mt-1 wordspace-tabs" id="myTab" role="tablist">
-							<li class="nav-item mr-15">
-								<a class="nav-link active text-uppercase pr-0" id="jdedwards-tab" data-toggle="tab" href="#jdedwards" role="tab" aria-controls="jdedwards" aria-selected="true">JD Edwards</a>
-							</li>
-							<button class="btn-icon ml-15 text-white--8"><i class="icon-add-circle mr-05"></i> Add New Section</button>
-						</ul>
-
-						<div class="tab-content pt-0" id="myTabContent">
-							<div class="tab-pane fade show active" id="jdedwards" role="tabpanel" aria-labelledby="jdedwards-tab">
-								<div class="element-fields-wrapper pb-2 pb-md-0">
-									<div class="element-field-row d-flex flex-wrap align-items-center">
-										<div class="col-lg-9">
-											<div class="row align-items-center">
-												<div class="col-lg-4">
-													<h6 class="f-12 mb-05 fw-900 text-white">JD EDWARDS <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
-													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
-												</div>
-												<div class="col-lg-5">
-													<div class="field-wrapper"><div class="form-field mb-0 mt-1 mt-lg-0"><input class="form-control form-control-dark input-small" type="text" placeholder="Enter Help Text"></div></div></div>
-												<div class="col-lg-3">
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-3">
-											<div class="element-field-setting text-right text-lg-left mt-1 mt-lg-0">
-												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
-												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-2"></i></button>
-											</div>
-										</div>
-									</div>
-									<div class="element-field-row d-flex flex-wrap align-items-center">
-										<div class="col-lg-9">
-											<div class="row align-items-center">
-												<div class="col-lg-4">
-													<h6 class="f-12 mb-05 fw-900 text-white">Add Text Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
-													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
-												</div>
-												<div class="col-lg-5">
-													<div class="field-wrapper">
-														<div class="form-field mb-0 mt-1 mt-lg-0">
-															<input class="form-control form-control-dark input-small" type="text" placeholder="Enter Help Text">                            
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-3">
-													<div class="custom-control custom-checkbox custom-checkbox-dark mt-1 mt-lg-0">
-														<input type="checkbox" class="custom-control-input" id="mandatory1">
-														<label class="custom-control-label font-light" for="mandatory1">Mark field as mandatory</label>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-3">
-											<div class="element-field-setting text-right text-lg-left mt-1 mt-lg-0">
-												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
-												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-2"></i></button>
-											</div>
-										</div>
-									</div>
-									<div class="element-field-row d-flex flex-wrap">
-										<div class="col-lg-9">
-											<div class="row">
-												<div class="col-lg-4">
-													<h6 class="f-12 mb-05 fw-900 text-white">Add Radio Field Name <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></h6>
-													<p class="f-12 fw-300 mb-0">Add description <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button></p>
-												</div>
-												<div class="col-lg-5">
-													<div class="field-wrapper field-type-ratio field-repeat mt-1 mt-md-0">
-														<div class="form-field fi mb-0 mt-0">
-															<input class="form-control form-control-dark input-small" type="text" placeholder="Enter Value">
-															<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
-														</div>
-														<div class="form-field fi mb-0 mt-15">
-															<input class="form-control form-control-dark input-small" type="text" placeholder="Enter Value">
-															<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
-														</div>
-														<div class="form-field fi mb-0 mt-15">
-															<input class="form-control form-control-dark input-small" type="text" placeholder="Enter Value">
-															<button class="btn-icon btn-field-remove"><i class="icon-close"></i></button>                          
-														</div>
-														<div class="field-repeat-btn-wrap">
-															<button class="btn-icon"><i class="icon-add-circle mr-05"></i> Add Another</button>
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-3">											
-													<div class="custom-control custom-checkbox custom-checkbox-dark mt-1">
-														<input type="checkbox" class="custom-control-input" id="mandatory2">
-														<label class="custom-control-label font-light" for="mandatory2">Mark field as mandatory</label>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-lg-3">
-											<div class="element-field-setting text-right text-lg-left mt-1">
-												<button class="btn-icon mr-1"><i class="icon-icon-filter"></i></button>
-												<button class="btn-icon text-white">Advanced Settings <i class="icon-icon-dots-hr ml-2"></i></button>
-											</div>
-										</div>
-									</div>
-									<div class="col-12 mt-1 pb-10">
-										<button class="btn-icon" data-toggle="modal" data-target="#addfieldsmodal" data-backdrop="static"><i class="icon-add-circle mr-05"></i> Add New Field</button>
-									</div>
-								</div>
+							<div class="tab-pane fade" id="authorization" role="tabpanel" aria-labelledby="authorization-tab">
+								Test 1
+							</div>
+							<div class="tab-pane fade" id="headers" role="tabpanel" aria-labelledby="headers-tab">
+								Test 2
+							</div>
+							<div class="tab-pane fade" id="body" role="tabpanel" aria-labelledby="body-tab">
+								Test 3
+							</div>
+							<div class="tab-pane fade" id="prerequestscript" role="tabpanel" aria-labelledby="prerequestscript-tab">
+								Test 4
+							</div>
+							<div class="tab-pane fade" id="tests" role="tabpanel" aria-labelledby="tests-tab">
+								Test 5
+							</div>
+							<div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+								Test 6
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
 	</div>
 </div>
