@@ -125,6 +125,10 @@
                         font-weight: 300;
                         text-transform: capitalize;
                         text-align: center;
+                        &.sub-label{
+                            color: #b0b0b7;
+                            font-weight: 300;
+                        }
                     }
                 }
             }
