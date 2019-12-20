@@ -2,24 +2,57 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-3 col-lg-3 p-0">
+        <div class="col-md-3 col-lg-2 p-0">
             <div class="sidear-container mobile-slide-in">
                 <button type="button" class="close d-block d-md-none">
                     <i class="icon-close"></i>
                 </button>
                 <div class="data-wrap d-flex align-items-center justify-content-between pl-15 pr-15 pt-1 pb-1">
                     <h5 class="section-title text-uppercase m-0">Data sources</h5>
-                    <button class="btn btn-add-icon">Add new <i class="icon-add ml-1 f-9"></i></button>
+                    <button class="btn btn-add-icon">Add New <i class="icon-add ml-1 f-9"></i></button>
                 </div>     
                 <div class="search-wrap p-15 pt-0">
                     <div class="position-relative">
                         <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc" width="17" height="17" />
                         <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
                     </div>
-                </div>      
+                </div>    
+                <div class="nav-list-items">
+                    <ul class="nav-lists">
+                        <li class="list-item">
+                            <a href="#" class="list-item-a">
+                                <div class="list-item-wrap">
+                                    <div class="list-item-logo">
+                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
+                                    </div>
+                                    <div class="list-item-label">
+                                        <label class="request-label d-block mb-0">Swagger Australia</label>
+                                        <label class="request-count d-block mb-0">AWS</label>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-item-a">
+                                <div class="list-item-wrap">
+                                    <div class="list-item-logo">
+                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
+                                    </div>
+                                    <div class="list-item-label">
+                                        <label class="request-label d-block mb-0">Swagger Australia</label>
+                                        <label class="request-count d-block mb-0">AWS</label>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>  
             </div>
         </div>
-        <div class="col-md-9 col-lg-9 p-0">
+        <div class="col-md-9 col-lg-10 p-0">
+            <div class="workspace-header-bar pb-1 pt-1">
+                <p class="m-0 text-white">Refresh</p>
+            </div>
             <div class="d-flex justify-content-between workspace-header-bar flex-wrap">
                 <div class="workspace-bar-tabs w-sm-100">	
                     <div class="side-menu-toggle icon-hamburger d-md-none">
@@ -28,24 +61,11 @@
                         <span></span>
                     </div>
                     <div class="tab-list">
-                        <div class="tab-btn tab active pl-0">Custom Source <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
+                        <div class="tab-btn tab active pl-0">B086 Config <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
                     </div>
                     <div class="tab-list-action">
                         <button class="tab-btn tab-btn-add"><i class="icon-add"></i></button>
                         <button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
-                    </div>
-                </div>
-                <div class="d-flex align-items-center d-sm-block w-sm-100 justify-content-maxsm">
-                    <div class="workspace-actiions d-flex align-items-center">
-                        <div class="workspace-environment mr-1">
-                            <select class="select2-outline-dark" data-placeholder="No Environment">
-                                <option></option>	
-                                <option>Environment 1</option>	
-                                <option>Environment 2</option>	
-                            </select>
-                        </div>
-                        <a href="#" target="_self" class="mr-15 text-decoration-none"><i class="icon-preview"></i></a>
-                        <a href="#" target="_self" class="text-decoration-none"><i class="icon-setting"></i></a>
                     </div>
                 </div>
             </div>
@@ -55,16 +75,32 @@
                     <div class="workspace-tab-header">
                         <div class="d-flex flex-wrap mt-15">
                             <div class="col-12 col-lg-8">
-                                <h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase">B086 Connection</h6>
-                                <h6 class="workspace-name text-white--5 f-12 fw-300">Custom SQL Source connection for Petzilla <button class="text-white-5 ml-1 btn-edit"><span class="icon-edit"></span> Edit</button> </h6>
+                                <h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase">B086 Config</h6>
+                                <h6 class="workspace-name text-white--5 f-12 fw-300">Custom SQL Source connection for Petzilla </h6>
                             </div>
                             <div class="col-12 col-lg-4">
-                                <div class="workspace-info">
-                                    <ul>
-                                        <li><i class="icon-comment icon"></i> Comments <span>(3)</span></li>
-                                        <li class="pr-0">Examples <span>(3)</span> <i class="icon-arrow-down-sm icon mr-0"></i></li>
-                                    </ul>
-                                </div>
+                                <div class="workspace-actions">
+                                    <div class="btn-group btn-primary mr-1">
+                                        <button type="button" class="btn">Save</button>
+                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                    <div class="btn-group btn-outline-dark">
+                                        <button type="button" class="btn">Preview</button>
+                                        <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                         </div>                       
                     </div>
