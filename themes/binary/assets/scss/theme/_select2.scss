@@ -20,6 +20,7 @@
             }
             .select2-selection__rendered {
                 padding-right: 23px;
+                font-weight: 700;
             }
             .select2-selection__arrow {
                 height: 30px;
@@ -36,6 +37,35 @@
         border-radius: 0;
         .select2-results__option[aria-selected=true] {
             background: $secondary;
+        }
+    }
+}
+
+.fw-select{
+    .select2-container{
+        max-width: 100% !important;
+        width: 100% !important;
+        .select-out-dark-wrap{
+            border: 2px solid $grey7;
+            background: transparent;
+            height: 36px;
+            outline: 0;
+            .select2-selection{
+                &__arrow {
+                    height: 34px;
+                    right: 5px;
+                    b{
+                        border-width: 5px 5px 0 5px;
+                    }
+                }
+                &__clear{
+                    display: none;
+                }
+                
+                &__rendered{
+                    line-height: 33px;
+                }
+            }
         }
     }
 }

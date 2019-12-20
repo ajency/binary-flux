@@ -1,0 +1,141 @@
+{{ define "main" }}
+<!-- Modal -->
+<div class="modal fade openDefault" id="adddatasourcemodal" tabindex="-1" role="dialog" aria-labelledby="adddatasourcemodal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content rounded-0 pl-15 pr-15">
+            <div class="modal-header rounded-0 pl-0 pr-0">
+                <h5 class="modal-title section-title text-uppercase" id="adddatasourcemodal">Add a New Source</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon-close"></i>
+                </button>
+            </div>
+            <div class="modal-body rounded-0 p-0 navpills">
+                <div class="datasource-header pt-3 pb-3 d-flex flex-wrap align-items-center justify-content-between">
+                    <div class="datasource-title d-flex align-items-center ">
+                        <div class="mr-2">
+                            <img src="{{"images/logo_aws.svg" | relURL }}" alt="" width="38">
+                        </div>
+                        <div class="">
+                            <h6 class="section-title text-white fw-900 mb-05 text-uppercase">B086 Config</h6>
+                            <h6 class="text-white--5 f-12 mb-0 fw-300">SQL Database for Pet Management</h6>
+                        </div>                       
+                    </div>
+                    <div class="datasource-actions mt-2 mt-lg-0">
+                        <div class="btn-group btn-primary mr-1">
+                            <button type="button" class="btn btn-115 text-center">Save</button>                           
+                        </div>
+                        <div class="btn-group btn-outline-dark btn-outline-dark__bl2">
+                            <button type="button" class="btn btn-115 text-center">Test</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="datasource-content">
+                    <ul class="nav nav-tabs nav-tabs-left" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Header <i class="icon-checked icon-check-circle"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">JD EDWARDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Documentation</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content pt-5 pb-3" id="myTabContent">
+                        <div class="tab-pane fade show active" id="jd_edwards" role="tabpanel" aria-labelledby="jd_edwards-tab">
+                            <form>
+                                <div class="form-field">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="form-label">
+                                                <span class="form-label-content">Database Type*</span>
+                                                <p class="mb-0 f-12 font-weight-light">Select a vaild database type</p>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-4 fw-select">
+                                            <select class="select2-outline-dark select2-hidden-accessible form-control form-control-dark" data-select2-id="4" tabindex="-1" aria-hidden="true">
+                                                <option value="patch" data-select2-id="16">Option1</option>
+                                                <option value="put" data-select2-id="17">Option2</option>
+                                                <option value="post" data-select2-id="18">Option3</option>
+                                                <option value="get" selected="" data-select2-id="6">SQL Server</option>
+                                            </select>       
+                                        </div>
+                                    </div>            
+                                </div>
+                                <div class="form-field">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="form-label">
+                                                <span class="form-label-content">Database Driver Class Name*</span>
+                                                <p class="mb-0 f-12 font-weight-light">Enter a valid driver class name</p>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input class="form-control form-control-dark" type="text" placeholder=".Sourceforge.sfds.sdbc.driver">      
+                                        </div>
+                                    </div>               
+                                </div>
+                                <div class="form-field">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="form-label">
+                                                <span class="form-label-content">User ID*</span>
+                                                <p class="mb-0 f-12 font-weight-light">Enter your personal UserID</p>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input class="form-control form-control-dark" type="text" placeholder="Admin_Prashanth"> 
+                                        </div>
+                                    </div>                                                              
+                                </div>
+                                <div class="form-field">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="form-label">
+                                                <span class="form-label-content">Password*</span>
+                                                <p class="mb-0 f-12 font-weight-light">Enter a valid Host Password</p>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input class="form-control form-control-dark" type="text" placeholder="***********"> 
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="custom-control custom-checkbox custom-checkbox-dark mt-05">
+                                                <input type="checkbox" class="custom-control-input" id="mandatory2">
+                                                <label class="custom-control-label font-light" for="mandatory2">Show Password</label>
+                                            </div>
+                                        </div>
+                                    </div>                                                              
+                                </div>
+                                <div class="form-field">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <label class="form-label">
+                                                <span class="form-label-content">Host*</span>
+                                                <p class="mb-0 f-12 font-weight-light">Enter a valid Host ID</p>
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input class="form-control form-control-dark" type="text" placeholder="***********"> 
+                                        </div>
+                                    </div>                                                              
+                                </div>
+                            </form>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="datasource-footer">
+                    <div class="navigation-navs pt-25 pb-25">
+                        <ul>
+                            <li class="prev-nav"><a href="#" class="text-decoration-none" target="_self"><i class="icon-arrow-left-light icon-wrap mr-1"></i> Previous</a></li>
+                            <li class="next-nav"><a href="#" class="text-decoration-none" target="_self">Next <i class="icon-arrow-left-light icon-wrap ml-1 rotate-180"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

@@ -61,6 +61,11 @@
 				}
 			}
 		}
+		&__bl2{
+			.btn{
+				border-right: 2px solid $white-5 !important;
+			}
+		}
 	}
 	&-icon {
 		padding: 2px 10px;
@@ -124,6 +129,9 @@
 		font-weight: 700;
 		border-radius: 2px;
 		font-size: 12px;
+	}
+	&-115{
+		min-width: 115px !important;
 	}
 }
 a.btn-grey {

@@ -69,6 +69,9 @@ hr{
 	&t-25{
 		padding-top: 25px;
 	}
+	&b-25{
+		padding-bottom: 25px;
+	}
 }
 
 .text {
@@ -126,6 +129,11 @@ hr{
 
 .f-7 {
 	font-size: 7px;
+	line-height: 10px;
+}
+
+.f-8 {
+	font-size: 8px;
 	line-height: 10px;
 }
 
@@ -211,6 +219,13 @@ hr{
 			}
 		}
 	}
+	&-lg{
+		@media (max-width: 991px) {
+			&-100{
+				width: 100%;
+			}
+		}
+	}
 }
 
 .justify-content{
@@ -222,7 +237,7 @@ hr{
 }
 
 .horizontal-scroll{
-	@media (max-width: 768px) {
+	@media (max-width: 991px) {
 		flex-wrap: nowrap;
 		overflow-x: scroll;
 		li{

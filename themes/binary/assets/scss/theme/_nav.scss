@@ -215,6 +215,24 @@
             // }
         }
     }
+    &-right{
+        @media (max-width: 991px) {
+            padding: 15px;
+        }
+    }
+    &-wrap{
+        border-bottom: 1px solid $white-7;
+        padding-right: 15px;
+        .horizontal-scroll{
+            @media (max-width: 991px) {
+                border-bottom: 1px solid $white-7;
+            }
+        }
+        @media (max-width: 991px) {
+            border-bottom: 0;
+            padding-right: 0;
+        }
+    }
 }
 
 .nav-pills{
