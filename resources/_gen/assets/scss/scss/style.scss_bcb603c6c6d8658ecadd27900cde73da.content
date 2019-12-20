@@ -8002,7 +8002,7 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 12px; }
   .btn-115 {
     min-width: 115px !important; }
-  .btn-add {
+  .btn-add-icon {
     background: transparent;
     border: 0;
     border: 1px solid #fff;
