@@ -133,6 +133,15 @@
 	&-115{
 		min-width: 115px !important;
 	}
+	&-add{
+		background: transparent;
+		border: 0;
+		border: 1px solid #fff;
+		padding: 5px 10px;
+		color: #fff;
+		font-size: 14px;
+		min-width: auto;
+	}
 }
 a.btn-grey {
 	color: $grey;
