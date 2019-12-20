@@ -7134,7 +7134,7 @@ a.text-error:hover, a.text-error:focus {
 
 .icon-close:before {
   content: "\e90a";
-  color: rgba(255, 255, 255, 0.5); }
+  color: #659CC8; }
 
 .icon-arrow-down-lg:before {
   content: "\e90b";
@@ -7247,6 +7247,9 @@ a.text-error:hover, a.text-error:focus {
       font-weight: 300;
       text-transform: capitalize;
       text-align: center; }
+      .nav-lists .sub-ul li a label.sub-label {
+        color: #b0b0b7;
+        font-weight: 300; }
   .nav-lists .list-item .list-item-a {
     position: relative;
     padding: 8px 8px 8px 30px;
@@ -7690,7 +7693,8 @@ body {
       .tab-inner-ontent .tab-body .table-bordered th input:focus, .tab-inner-ontent .tab-body .table-bordered td input:focus {
         border: 2px solid #afb5ba; }
   .tab-inner-ontent .tab-body .table-bordered th {
-    padding: 11px 12px; }
+    padding: 11px 12px;
+    color: #8B8DA5; }
 
 ul, ol {
   padding-left: 10px; }
