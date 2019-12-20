@@ -8006,10 +8006,12 @@ input[type="search"]::-webkit-search-results-decoration {
     background: transparent;
     border: 0;
     border: 1px solid #fff;
-    padding: 5px 10px;
+    padding: 6px 10px;
     color: #fff;
-    font-size: 14px;
+    font-weight: 900;
     min-width: auto; }
+    .btn-add-icon:hover {
+      color: #fff; }
 
 a.btn-grey {
   color: #93949E; }
