@@ -7395,7 +7395,7 @@ a.text-error:hover, a.text-error:focus {
       padding: 10px 10px 10px; } }
   @media (min-width: 768px) {
     .sidear-container {
-      height: calc(100vh - 40px); } }
+      height: calc(130vh - 40px); } }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .sidear-container .nav-item a {
@@ -7467,6 +7467,12 @@ a.text-error:hover, a.text-error:focus {
   @media (max-width: 767px) {
     .workspace-actions {
       text-align: left; } }
+  @media (max-width: 575px) {
+    .workspace-actions {
+      text-align: right; } }
+  @media (max-width: 575px) {
+    .workspace-actions .btn-primary {
+      margin-top: 0.5rem; } }
 
 .workspace-info ul {
   list-style: none;
@@ -7675,12 +7681,13 @@ body {
   margin-right: 10px; }
   .three-col .image-col span {
     padding: 7px 8px;
-    border-radius: 3.57px; }
+    border-radius: 3.57px;
+    border-width: 2px; }
   .three-col .image-col img {
     max-width: 17px; }
 
 .tab-inner-ontent {
-  border-bottom: 1px solid #5F6069; }
+  border-bottom: 2px solid #44475A; }
   .tab-inner-ontent .tab-body .table-bordered th, .tab-inner-ontent .tab-body .table-bordered td {
     border: 1px solid #5F6069;
     padding: 5px; }
@@ -7692,9 +7699,15 @@ body {
       border: 2px solid transparent; }
       .tab-inner-ontent .tab-body .table-bordered th input:focus, .tab-inner-ontent .tab-body .table-bordered td input:focus {
         border: 2px solid #afb5ba; }
+  .tab-inner-ontent .tab-body .table-bordered tr:last-child {
+    border-bottom: 2px solid #44475A; }
   .tab-inner-ontent .tab-body .table-bordered th {
     padding: 11px 12px;
     color: #8B8DA5; }
+
+.text-grey {
+  opacity: 0.5;
+  color: #8B8DA5; }
 
 ul, ol {
   padding-left: 10px; }
@@ -8006,14 +8019,16 @@ input[type="search"]::-webkit-search-results-decoration {
     font-size: 12px; }
   .btn-115 {
     min-width: 115px !important; }
-  .btn-add {
+  .btn-add-icon {
     background: transparent;
     border: 0;
     border: 1px solid #fff;
-    padding: 5px 10px;
+    padding: 6px 10px;
     color: #fff;
-    font-size: 14px;
+    font-weight: 900;
     min-width: auto; }
+    .btn-add-icon:hover {
+      color: #fff; }
 
 a.btn-grey {
   color: #93949E; }

@@ -19,7 +19,14 @@
         @media (max-width: 767px) {
             text-align: left;
         }
-        
+        @media (max-width: 575px) {
+            text-align: right;
+        }
+        .btn-primary{
+            @media (max-width: 575px){
+                margin-top: 0.5rem;
+            }
+        }
     }
     &-info {
         ul {
