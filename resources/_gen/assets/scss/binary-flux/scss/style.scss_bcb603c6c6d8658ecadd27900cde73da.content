@@ -7618,7 +7618,7 @@ a.text-error:hover, a.text-error:focus {
   border-bottom: 2px solid rgba(93, 94, 114, 0.5); }
 
 .datasource-footer {
-  border-top: 2px solid rgba(93, 94, 114, 0.5); }
+  border-top: 1px solid rgba(93, 94, 114, 0.5); }
 
 .datasource-actions .btn.dropdown-toggle {
   padding: 2px 11px !important; }
@@ -7866,7 +7866,7 @@ h1, .h1 {
   font-weight: 300; }
 
 .custom-checkbox-dark .custom-control-label {
-  color: #5F6069; }
+  color: #afafaf; }
   .custom-checkbox-dark .custom-control-label::before {
     border-color: #44475A; }
 
@@ -8086,7 +8086,7 @@ button {
 
 .modal-header {
   border: 0;
-  border-bottom: 2px solid rgba(93, 94, 114, 0.5); }
+  border-bottom: 1px solid rgba(93, 94, 114, 0.5); }
   .modal-header .close {
     padding: 0;
     margin: 0;
