@@ -1,0 +1,134 @@
+{{ define "main" }}
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3 col-lg-2 p-0">
+			<div class="sidear-container mobile-slide-in">
+                <button type="button" class="close d-block d-md-none">
+                    <i class="icon-close"></i>
+                </button>
+                <div class="data-wrap d-flex align-items-center justify-content-between pl-15 pr-15 pt-1 pb-1">
+                    <h5 class="section-title text-uppercase m-0">Data sources</h5>
+                    <button class="btn btn-add-icon">Add New <i class="icon-add ml-1 f-9"></i></button>
+                </div>     
+                <div class="search-wrap p-15 pt-0">
+                    <div class="position-relative">
+                        <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc" width="17" height="17" />
+                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
+                    </div>
+                </div>    
+                <div class="nav-list-items">
+                    <ul class="nav-lists">
+                        <li class="list-item">
+                            <a href="#" class="list-item-a">
+                                <div class="list-item-wrap">
+                                    <div class="list-item-logo">
+                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
+                                    </div>
+                                    <div class="list-item-label">
+                                        <label class="request-label d-block mb-0">Swagger Australia</label>
+                                        <label class="request-count d-block mb-0">AWS</label>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#" class="list-item-a">
+                                <div class="list-item-wrap">
+                                    <div class="list-item-logo">
+                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
+                                    </div>
+                                    <div class="list-item-label">
+                                        <label class="request-label d-block mb-0">Swagger Australia</label>
+                                        <label class="request-count d-block mb-0">AWS</label>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+		</div>
+		<div class="col-md-9 col-lg-10 p-0">
+			<div class="d-flex justify-content-between workspace-header-bar flex-wrap">
+				<div class="workspace-bar-tabs w-sm-100">	
+					<div class="side-menu-toggle icon-hamburger d-md-none">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="tab-list">
+						<div class="tab-btn tab pl-0">Get Started</div>
+						<div class="tab-btn tab active pl-0">
+							<img src="{{"images/logo_aws.svg" | relURL }}" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close"><i class="icon-close"></i></a>
+						</div>
+					</div>
+					<div class="tab-list-action">
+						<button class="tab-btn tab-btn-add"><i class="icon-add"></i></button>
+						<button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="workspace-tab-container">
+				<div class="workspace-tab-content">
+					<div class="workspace-tab-header">
+						<div class="d-flex flex-wrap mt-2">
+							<div class="col-12 col-lg-8">
+								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase">ALL DATA SOURCES</h6>
+								<h6 class="workspace-name text-white--5 f-12 fw-300">Post request form to collect pet information from the end user</h6>
+							</div>
+							<div class="col-12 col-lg-4">
+								<div class="workspace-actions pr-0">
+									<div class="btn-group btn-primary mr-1">
+										<button type="button" class="btn btn-115 text-center">Start</button>          
+									</div>
+									<div class="btn-group btn-outline-dark btn-outline-dark__bl2 mr-1">
+										<button type="button" class="btn btn-115 text-center">Stop</button>
+									</div>
+									<div class="btn-group btn-outline-dark btn-outline-dark__bl2">
+										<button type="button" class="btn btn-115 text-center">Schedule</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex action-btns">
+							<div class="col-12 text-right">
+								<a href="" class="d-inline-block">
+									<img src="{{"images/icon_refresh.svg" | relURL }}" alt></a>
+								<a href="" class="d-inline-block ml-3">
+									<img src="{{"images/icon_print.svg" | relURL }}" alt>
+								</a>
+								<a href="" class="d-inline-block ml-3">
+									<img src="{{"images/icon_more.svg" | relURL }}" alt>
+								</a>
+							</div>
+						</div>
+						<div class="d-flex p-15">
+							<div class="colum-1">
+								<p class="m-0 tetx-white--5">Total Number of Lines</p>
+								<h6 class="m-0 text-light-blue text-capitalize font-weight-bold">72.47 M</h6>
+								<p class="m-0 tetx-white--5">12:42 am (4 hours ago)</p>
+							</div>
+							<div class="colum-1">
+								<p class="m-0 tetx-white--5">Lines Parsed Successfully</p>
+								<h6 class="m-0 text-light-blue text-capitalize font-weight-bold">60.47 M</h6>
+							</div>
+							<div class="colum-1">
+								<p class="m-0 tetx-white--5">Lines Failed to Parse</p>
+								<h6 class="m-0 text-light-blue text-capitalize font-weight-bold">12 M</h6>
+							</div>
+							<div class="colum-1">
+								<p class="m-0 tetx-white--5">Top Data Sources</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{{ end }}

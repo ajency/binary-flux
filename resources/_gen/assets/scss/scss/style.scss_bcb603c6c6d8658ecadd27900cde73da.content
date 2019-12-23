@@ -7295,6 +7295,10 @@ a.text-error:hover, a.text-error:focus {
   .nav-right {
     padding: 15px; } }
 
+@media (min-width: 992px) {
+  .nav-right {
+    margin-top: 1rem; } }
+
 .nav-wrap {
   border-bottom: 1px solid #5F6069;
   padding-right: 15px; }
@@ -8040,6 +8044,8 @@ input[type="search"]::-webkit-search-results-decoration {
     min-width: auto; }
     .btn-add-icon:hover {
       color: #fff; }
+  .btn.button-border {
+    border-color: #347cd6; }
 
 a.btn-grey {
   color: #93949E; }
