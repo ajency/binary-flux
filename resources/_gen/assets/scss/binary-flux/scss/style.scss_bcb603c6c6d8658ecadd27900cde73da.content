@@ -7295,6 +7295,10 @@ a.text-error:hover, a.text-error:focus {
   .nav-right {
     padding: 15px; } }
 
+@media (min-width: 992px) {
+  .nav-right {
+    margin-top: 1rem; } }
+
 .nav-wrap {
   border-bottom: 1px solid #5F6069;
   padding-right: 15px; }
@@ -8004,6 +8008,9 @@ input[type="search"]::-webkit-search-results-decoration {
     padding: 0;
     box-shadow: none;
     color: #9c9da4; }
+    .btn-edit__test img {
+      position: relative;
+      top: -2px; }
   .btn-icon {
     cursor: pointer;
     border: 0;
@@ -8091,6 +8098,57 @@ button {
 
 .modal-backdrop.show {
   opacity: 0.7; }
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-basis: 100%;
+  padding: 10px;
+  border: 2px solid #44475A;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in;
+  cursor: pointer; }
+  .item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px; }
+  .item:hover {
+    border: 2px solid #3B92FF; }
+  @media (min-width: 576px) {
+    .item {
+      flex-basis: 49.1%;
+      margin: 0 2.5px 5px; } }
+  @media (min-width: 768px) {
+    .item {
+      flex-basis: 32.5%; } }
+  @media (min-width: 1500px) {
+    .item {
+      flex-basis: 24.5%; } }
+
+.pagination ul li {
+  margin-right: 15px; }
+  .pagination ul li a {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all 0.3s ease-in;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-weight: 300; }
+    .pagination ul li a.active, .pagination ul li a.last {
+      border: 1px solid #3B92FF;
+      color: #3B92FF;
+      font-weight: 900; }
+    .pagination ul li a:hover {
+      border: 1px solid #3B92FF;
+      color: #3B92FF;
+      font-weight: 900; }
 
 hr {
   border-top: 2px solid #34364A; }
@@ -8205,6 +8263,10 @@ hr {
   font-size: 12px;
   line-height: 16px; }
 
+.f-10 {
+  font-size: 10px;
+  line-height: 14px; }
+
 .fw-300 {
   font-weight: 300; }
 
@@ -8273,5 +8335,10 @@ hr {
     overflow-x: scroll; }
     .horizontal-scroll li a {
       white-space: nowrap; } }
+
+@media (min-width: 1201px) {
+  .custom-container {
+    margin-left: 6%;
+    margin-right: 6%; } }
 
 /*# sourceMappingURL=style.css.map */
