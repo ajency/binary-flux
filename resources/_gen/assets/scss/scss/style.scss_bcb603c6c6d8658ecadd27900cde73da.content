@@ -7306,6 +7306,10 @@ a.text-error:hover, a.text-error:focus {
       border-bottom: 0;
       padding-right: 0; } }
 
+@media (max-width: 767px) {
+  .nav-items {
+    margin: 0 10px; } }
+
 .nav-pills .nav-link {
   background-color: transparent;
   padding: 10px 15px;
@@ -7704,6 +7708,10 @@ body {
   .tab-inner-ontent .tab-body .table-bordered th {
     padding: 11px 12px;
     color: #8B8DA5; }
+  @media (max-width: 767px) {
+    .tab-inner-ontent {
+      margin: 0 10px;
+      border: 2px solid #44475A; } }
 
 .text-grey {
   opacity: 0.5;
