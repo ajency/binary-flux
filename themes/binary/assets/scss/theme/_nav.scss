@@ -237,6 +237,11 @@
             padding-right: 0;
         }
     }
+    &-items{
+        @media (max-width: 767px){
+            margin: 0 10px;
+        }
+    }
 }
 
 .nav-pills{
