@@ -8044,6 +8044,8 @@ input[type="search"]::-webkit-search-results-decoration {
     min-width: auto; }
     .btn-add-icon:hover {
       color: #fff; }
+  .btn.button-border {
+    border-color: #347cd6; }
 
 a.btn-grey {
   color: #93949E; }
