@@ -1,0 +1,31 @@
+.pagination{
+    ul{
+        li{
+            margin-right: 15px;
+            a{
+                width: 22px;
+                height: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2px;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                transition: all 0.3s ease-in;
+                color: $text-white-05;
+                text-decoration: none;
+                font-weight: 300;
+                &.active, &.last{
+                    border: 1px solid $light-blue;
+                    color: $light-blue;
+                    font-weight: 900;
+                }
+                &:hover{
+                    border: 1px solid $light-blue;
+                    color: $light-blue;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+}

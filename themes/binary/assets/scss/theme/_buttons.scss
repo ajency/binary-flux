@@ -103,6 +103,12 @@
 		padding: 0;
 		box-shadow: none;
 		color: $white-5;
+		&__test{
+			img{
+				position: relative;
+				top: -2px;
+			}
+		}
 	}
 	&-icon {
 		cursor: pointer;

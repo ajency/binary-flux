@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Binary Flux</title>
@@ -44,6 +44,15 @@
       <pubDate>Wed, 11 Dec 2019 13:46:25 +0530</pubDate>
       
       <guid>https://ajency.github.io/binary-flux/screens/admin-interface-web/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>All data sources</title>
+      <link>https://ajency.github.io/binary-flux/screens/all-data-sources/</link>
+      <pubDate>Wed, 11 Dec 2019 13:46:25 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/all-data-sources/</guid>
       <description></description>
     </item>
     

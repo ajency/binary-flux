@@ -1,0 +1,29 @@
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-basis: 100%;
+    padding: 10px;    
+    border: 2px solid $grey7;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    &-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+    }
+    &:hover{
+        border: 2px solid $light-blue;
+    }
+    @media (min-width: 576px) {
+        flex-basis: 49.1%;
+        margin: 0 2.5px 5px;
+    }
+    @media (min-width: 768px) {
+        flex-basis: 32.5%;
+    }
+    @media (min-width: 1500px) {
+        flex-basis: 24.5%;
+    }
+}
