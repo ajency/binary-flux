@@ -50,6 +50,25 @@ body{
 			th{
 				padding: 11px 12px;
 			    color: #8B8DA5;
+			    .action-btn{
+			    	display: inline-block;
+			    	float: right;
+			    	white-space: nowrap;
+			    	.tab-btn-dots{
+			    		border: 1px solid #44475A;
+			    	 	border-top:0;
+			    	 	border-bottom:0;
+				    	i{
+				    		color: #3D90F7;
+				    	}
+			    	}
+			    	@media (max-width: 865px) and (min-width: 768px){
+			    		float: none;
+			    	}
+			    	@media (max-width: 605px){
+			    		float: none;
+			    	}
+			    }
 			}
 		}
 	}
