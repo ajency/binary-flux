@@ -1,9 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="13" height="13">
-	<defs>
-		<image width="144" height="144" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQAQMAAADdiHD7AAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAXF55zSDXWQAAAAJ0Uk5TAP9bkSK1AAAClElEQVR4nI2WS86lIBCFIQyYdMIS2EmzNFyaS7F3cJOeODCXpt6l+CfNwOh3vVWHR9UxBB5jfMJjjDG2FZ0rGi/oWNG5ou+KHjnHGmyswcYaDNF4QfuKJP4vQ7Iavw1djLohSYmix2iWMmKeMZJNKWGe+UJTFRnzTFRURcGpTRRVRcXUELnLxBumBlRFWMfUcCkijFIDSiwsUmp4iCwsUmr8vRNKlBpRI62Z1hxRJa2F1gRRIa2F1gRRIlTdNkSS3/w2k/zmd6Yj6n5naL7d74wsgTsMlZfgr21W4an+sc3KkHyi3YQhmoL3rsLgCS5bU2HwH3y1qrAId5k2UIQBKjNbNmF9/ggouVOE6IIIIqxNVGlJh6JzolN3BifJyITBI7wZTBjEgXhOWBFkwggdwQnL86YDMmF53nQ+vMOjPThhhlRYUqTCANHPKmzmDnrIToe24IRFRSqMUfmIsPJh1C4R1i5G/SvC+tchEqaIywcjOpS5RBxKXEgORS43hwJfPOrfBbVrQfX0CP8DE72rD/nwCMMk3ILLLU6Im1+c4MaPaPcovaP+RN93dHiU/xu1J+Lja6P8hG7uAKVQn+h8R5dHEKc8ERWyG/0d5bv5cJ/YjGDrSE+088GSgU/xZoHSvxDh/nJkLig8BdT4AhcUnhVuj9RdGUlfvUijIboy6tKjDVFZ1sHOF7S5l8HOF9QCyhDnQ6WfoJXu7YQr3ZsOV3rn3r8FdS1AYmCBrAOmLTYHb39ocdQMm3Y9tcyqLU6NtUhQs98sd2bSST4HzMojO5gz/MBfDe6zgCzs/vHQDDnXkiGnOxs6GCVDO6NgSIiltDNaBVkJaPxDURS0hWcwf9zrM5QGOxx6+yCrz/9xzu2GvLf+A3NIDq2ZnA/VAAAAAElFTkSuQmCC"/>
-	</defs>
-	<style>
-		tspan { white-space:pre }
-	</style>
-	<use id="Background" href="#img1" x="24" y="24" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 60.1 (101010) - https://sketch.com -->
+    <title>B95D003F-E251-4DBB-BD78-25E39CF0B32D</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.3">
+        <g id="swagger10-swagger-error" transform="translate(-207.000000, -58.000000)" fill="#FFFFFF">
+            <g id="schedule" transform="translate(206.000000, 56.000000)">
+                <g id="ic_av_timer" transform="translate(0.000000, 1.000000)">
+                    <path d="M6.875,10.625 C6.875,10.96875 7.15625,11.25 7.5,11.25 C7.84375,11.25 8.125,10.96875 8.125,10.625 C8.125,10.28125 7.84375,10 7.5,10 C7.15625,10 6.875,10.28125 6.875,10.625 L6.875,10.625 Z M6.875,1.875 L6.875,4.375 L8.125,4.375 L8.125,3.175 C10.24375,3.48125 11.875,5.29375 11.875,7.5 C11.875,9.91875 9.91875,11.875 7.5,11.875 C5.08125,11.875 3.125,9.91875 3.125,7.5 C3.125,6.45 3.49375,5.4875 4.1125,4.7375 L7.5,8.125 L8.38125,7.24375 L4.13125,2.99375 L4.13125,3.00625 C2.7625,4.03125 1.875,5.65625 1.875,7.5 C1.875,10.60625 4.3875,13.125 7.5,13.125 C10.60625,13.125 13.125,10.60625 13.125,7.5 C13.125,4.39375 10.60625,1.875 7.5,1.875 L6.875,1.875 L6.875,1.875 Z M11.25,7.5 C11.25,7.15625 10.96875,6.875 10.625,6.875 C10.28125,6.875 10,7.15625 10,7.5 C10,7.84375 10.28125,8.125 10.625,8.125 C10.96875,8.125 11.25,7.84375 11.25,7.5 L11.25,7.5 Z M3.75,7.5 C3.75,7.84375 4.03125,8.125 4.375,8.125 C4.71875,8.125 5,7.84375 5,7.5 C5,7.15625 4.71875,6.875 4.375,6.875 C4.03125,6.875 3.75,7.15625 3.75,7.5 L3.75,7.5 Z" id="Icon"></path>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
