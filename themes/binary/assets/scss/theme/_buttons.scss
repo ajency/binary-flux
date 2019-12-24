@@ -170,3 +170,11 @@ button{
 		outline: 0;
 	}
 }
+.test-btn{
+	border: 1px solid #3C92FF;
+	color: #3C92FF !important;
+	&:hover{
+		background: transparent;
+	    border-radius: 0.25rem;
+	}
+}

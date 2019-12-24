@@ -7529,6 +7529,9 @@ a.text-error:hover, a.text-error:focus {
     margin-bottom: 5px;
     margin-top: 10px; } }
 
+.workspace-tab-header {
+  border-bottom: 2px solid #44475a; }
+
 .tab {
   font-size: 12px;
   font-weight: 300;
@@ -7742,6 +7745,23 @@ body {
 .tab-content {
   width: 100%;
   white-space: nowrap; }
+
+.swagger-item {
+  width: 100%;
+  white-space: nowrap; }
+  .swagger-item.start-col span {
+    position: relative;
+    padding-left: 0.8rem; }
+    .swagger-item.start-col span:before {
+      content: "\e902";
+      display: block;
+      color: rgba(101, 156, 200, 0.5);
+      font-family: 'icomoon';
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%) rotate(-90deg);
+      font-size: 10px; }
 
 ul, ol {
   padding-left: 10px; }
@@ -8079,6 +8099,13 @@ button {
   outline: 0; }
   button:focus {
     outline: 0; }
+
+.test-btn {
+  border: 1px solid #3C92FF;
+  color: #3C92FF !important; }
+  .test-btn:hover {
+    background: transparent;
+    border-radius: 0.25rem; }
 
 @media (min-width: 768px) {
   .border-blue-left-md {

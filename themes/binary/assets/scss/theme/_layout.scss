@@ -85,3 +85,24 @@ body{
 	width: 100%;
 	white-space: nowrap;
 }
+.swagger-item{
+	width: 100%;
+	white-space: nowrap;
+	&.start-col{
+		span{
+			position: relative;
+			padding-left: 0.8rem;
+			&:before{
+			    content: "\e902";
+			    display: block;
+			    color: rgba(101, 156, 200, 0.5);
+			    font-family: 'icomoon';
+			    position: absolute;
+			    left: 0px;
+			    top: 50%;
+			    transform: translateY(-50%) rotate(-90deg);
+			    font-size: 10px;
+			}
+		}
+	}
+}
