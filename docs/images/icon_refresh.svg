@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="11px" viewBox="0 0 15 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 60.1 (101010) - https://sketch.com -->
+    <title>BAA88B15-2248-4343-BC2B-A8CF184D4AE2</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="End-User" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.End-User_all-data-source_27Nov" transform="translate(-1305.000000, -142.000000)" fill="#3C92FF">
+            <g id="aws" transform="translate(350.000000, 100.000000)">
+                <g id="row">
+                    <g transform="translate(0.000000, 21.000000)">
+                        <g id="action" transform="translate(955.000000, 19.000000)">
+                            <g id="btn-refresh">
+                                <g id="ic_cached">
+                                    <path d="M11.875,5 L9.375,7.5 L11.25,7.5 C11.25,9.56875 9.56875,11.25 7.5,11.25 C6.86875,11.25 6.26875,11.09375 5.75,10.8125 L4.8375,11.725 C5.60625,12.2125 6.51875,12.5 7.5,12.5 C10.2625,12.5 12.5,10.2625 12.5,7.5 L14.375,7.5 L11.875,5 L11.875,5 Z M3.75,7.5 C3.75,5.43125 5.43125,3.75 7.5,3.75 C8.13125,3.75 8.73125,3.90625 9.25,4.1875 L10.1625,3.275 C9.39375,2.7875 8.48125,2.5 7.5,2.5 C4.7375,2.5 2.5,4.7375 2.5,7.5 L0.625,7.5 L3.125,10 L5.625,7.5 L3.75,7.5 L3.75,7.5 Z" id="Icon"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
