@@ -81,10 +81,6 @@ body{
 	opacity: 0.5;	
 	color: #8B8DA5;
 }
-.tab-content{
-	width: 100%;
-	white-space: nowrap;
-}
 .swagger-item{
 	width: 100%;
 	white-space: nowrap;
@@ -111,5 +107,13 @@ body{
 	border-radius: 0.15rem;
 	i{
 		padding: 0 0.4rem;
+	}
+}
+
+.left-content{
+	width: 30%;
+	padding: 0 1rem;
+	@media (min-width: 1400px){
+		width: 25%;
 	}
 }
