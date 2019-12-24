@@ -12,7 +12,10 @@
                 left: 0;
                 background-color: #27283D;
                 overflow-x: hidden;
-                transition: 0.5s;
+                -webkit-transform: translateX(0%);
+                -ms-transform: translateX(0%);
+                /* transform: translateX(0%); */
+                transition: all .3s ease-in;
                 padding-top: 40px;
                 button.close{
                     position: absolute;
