@@ -7763,6 +7763,12 @@ body {
       transform: translateY(-50%) rotate(-90deg);
       font-size: 10px; }
 
+.tab-border {
+  border: 1px solid #5D5E72;
+  border-radius: 0.15rem; }
+  .tab-border i {
+    padding: 0 0.4rem; }
+
 ul, ol {
   padding-left: 10px; }
 
