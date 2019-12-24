@@ -10,11 +10,9 @@
                 z-index: 9;
                 top: 0;
                 left: 0;
+                opacity: 0;
                 background-color: #27283D;
                 overflow-x: hidden;
-                -webkit-transform: translateX(0%);
-                -ms-transform: translateX(0%);
-                /* transform: translateX(0%); */
                 transition: all .3s ease-in;
                 padding-top: 40px;
                 button.close{
@@ -28,6 +26,7 @@
                 }
                 &.show{
                     width: 100%;
+                    opacity: 1;
                 }
             }
         }

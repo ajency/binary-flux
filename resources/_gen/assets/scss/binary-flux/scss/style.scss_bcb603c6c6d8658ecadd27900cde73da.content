@@ -7385,11 +7385,9 @@ a.text-error:hover, a.text-error:focus {
       z-index: 9;
       top: 0;
       left: 0;
+      opacity: 0;
       background-color: #27283D;
       overflow-x: hidden;
-      -webkit-transform: translateX(0%);
-      -ms-transform: translateX(0%);
-      /* transform: translateX(0%); */
       transition: all .3s ease-in;
       padding-top: 40px; }
       .sidear-container.mobile-slide-in button.close {
@@ -7400,7 +7398,8 @@ a.text-error:hover, a.text-error:focus {
         .sidear-container.mobile-slide-in button.close i {
           font-size: 15px; }
       .sidear-container.mobile-slide-in.show {
-        width: 100%; } }
+        width: 100%;
+        opacity: 1; } }
   @media (min-width: 1350px) and (max-width: 1400px) {
     .sidear-container {
       padding: 10px 10px 10px; } }
@@ -7739,6 +7738,10 @@ body {
 .text-grey {
   opacity: 0.5;
   color: #8B8DA5; }
+
+.tab-content {
+  width: 100%;
+  white-space: nowrap; }
 
 ul, ol {
   padding-left: 10px; }
