@@ -7529,7 +7529,7 @@ a.text-error:hover, a.text-error:focus {
     margin-bottom: 5px;
     margin-top: 10px; } }
 
-.workspace-tab-header {
+.workspace-border {
   border-bottom: 2px solid #44475a; }
 
 .tab {
