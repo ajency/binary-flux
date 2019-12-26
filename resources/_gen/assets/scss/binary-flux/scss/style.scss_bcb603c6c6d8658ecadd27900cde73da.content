@@ -7291,6 +7291,11 @@ a.text-error:hover, a.text-error:focus {
     color: #b0b0b7;
     font-weight: 300; }
 
+@media (max-width: 1053px) {
+  .nav-right {
+    width: 100%;
+    text-align: right; } }
+
 @media (max-width: 991px) {
   .nav-right {
     padding: 15px; } }
@@ -7771,6 +7776,18 @@ body {
   @media (min-width: 1400px) {
     .left-content {
       width: 25%; } }
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 255px;
+    margin: 0;
+    position: fixed;
+    left: 0; } }
+
+@media (min-width: 768px) {
+  .content {
+    width: 100%;
+    padding-left: 255px; } }
 
 ul, ol {
   padding-left: 10px; }
