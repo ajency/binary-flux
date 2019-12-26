@@ -7241,7 +7241,7 @@ a.text-error:hover, a.text-error:focus {
     .nav-lists > li:last-child {
       border-bottom: 2px solid #434755; }
   .nav-lists .sub-ul li a {
-    padding: 4px 8px 4px 20px !important;
+    padding: 4px 6px 4px 20px !important;
     padding-left: 50px !important; }
     .nav-lists .sub-ul li a label {
       font-weight: 300;
@@ -7267,6 +7267,12 @@ a.text-error:hover, a.text-error:focus {
       flex-direction: column;
       position: absolute;
       right: 0; }
+      .nav-lists .list-item .list-item-a .nav-icons span {
+        border: 2px solid #44475A;
+        padding: 6px;
+        border-top: 0; }
+        .nav-lists .list-item .list-item-a .nav-icons span:last-child {
+          padding-bottom: 2px; }
   .nav-lists .list-item-wrap {
     display: flex;
     align-items: center;
