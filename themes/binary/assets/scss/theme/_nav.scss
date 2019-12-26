@@ -143,6 +143,18 @@
                 &:hover {
                     background: $darkblue;
                 }
+                .action-icons{
+                    position: absolute;
+                    right: 0;
+                    i{
+                        color: #3D90F7;
+                    }
+                }
+                .nav-icons{
+                    flex-direction: column;
+                    position: absolute;
+                    right: 0;
+                }
             }   
             &-wrap {
                 display: flex;

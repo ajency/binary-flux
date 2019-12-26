@@ -7258,6 +7258,15 @@ a.text-error:hover, a.text-error:focus {
     text-decoration: none; }
     .nav-lists .list-item .list-item-a:hover {
       background: #1B1A37; }
+    .nav-lists .list-item .list-item-a .action-icons {
+      position: absolute;
+      right: 0; }
+      .nav-lists .list-item .list-item-a .action-icons i {
+        color: #3D90F7; }
+    .nav-lists .list-item .list-item-a .nav-icons {
+      flex-direction: column;
+      position: absolute;
+      right: 0; }
   .nav-lists .list-item-wrap {
     display: flex;
     align-items: center;
