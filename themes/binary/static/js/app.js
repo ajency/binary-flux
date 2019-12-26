@@ -21,6 +21,10 @@ $(document).ready(function(){
 
     $('.openDefault').modal('show');
 
+    $('.nav-lists li a').click(function() {
+        $('.nav-lists li a').removeClass('active');
+        $(this).addClass('active');
+    });
 
     Highcharts.chart('container', {
         chart: {
@@ -28,10 +32,10 @@ $(document).ready(function(){
             borderWidth: 0
         },
         accessibility: {
-            description: ''
+            description: 'Test'
         },
         title: {
-            text: ''
+            text: 'US and USSR nuclear stockpiles'
         },
         yAxis: {
             tickInterval: 100,
@@ -90,5 +94,6 @@ $(document).ready(function(){
             data: [100, 120, 175, 180, 130, 215, 285, 175, 150, 205, 140, 450, 310, 335, 200, 210, 25, 200, 160, 310, 175, 210, 225, 165,],
         }]
     });
-    
+
+
 });

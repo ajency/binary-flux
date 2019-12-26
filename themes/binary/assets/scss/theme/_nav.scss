@@ -140,7 +140,7 @@
                 cursor: pointer;
                 display: block;
                 text-decoration: none;
-                &:hover {
+                &:hover, &.active{
                     background: $darkblue;
                 }
                 .action-icons{
@@ -164,7 +164,7 @@
                     }
                 }
             }   
-            &-wrap {
+            &-wrap{
                 display: flex;
                 align-items: center;
                 position: relative;
