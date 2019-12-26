@@ -55,11 +55,14 @@ body{
 			    	float: right;
 			    	white-space: nowrap;
 			    	.tab-btn-dots{
-			    		border: 1px solid #44475A;
-			    	 	border-top:0;
-			    	 	border-bottom:0;
 				    	i{
 				    		color: #3D90F7;
+				    		&.icon-dots{
+			    				border: 2px solid #44475A;
+			    	 			border-top:0;
+				    	 		border-bottom:0;
+				    	 		padding: 2px 5px;
+			    	 		}
 				    	}
 			    	}
 			    	@media (max-width: 865px) and (min-width: 768px){

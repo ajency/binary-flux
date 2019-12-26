@@ -7726,12 +7726,13 @@ body {
       display: inline-block;
       float: right;
       white-space: nowrap; }
-      .tab-inner-ontent .tab-body .table-bordered th .action-btn .tab-btn-dots {
-        border: 1px solid #44475A;
-        border-top: 0;
-        border-bottom: 0; }
-        .tab-inner-ontent .tab-body .table-bordered th .action-btn .tab-btn-dots i {
-          color: #3D90F7; }
+      .tab-inner-ontent .tab-body .table-bordered th .action-btn .tab-btn-dots i {
+        color: #3D90F7; }
+        .tab-inner-ontent .tab-body .table-bordered th .action-btn .tab-btn-dots i.icon-dots {
+          border: 2px solid #44475A;
+          border-top: 0;
+          border-bottom: 0;
+          padding: 2px 5px; }
       @media (max-width: 865px) and (min-width: 768px) {
         .tab-inner-ontent .tab-body .table-bordered th .action-btn {
           float: none; } }
