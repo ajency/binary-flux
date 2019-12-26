@@ -14,10 +14,10 @@
                 <div class="search-wrap p-15 pt-0">
                     <div class="position-relative">
                         <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc" width="17" height="17" />
-                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
+                        <input class="form-control input-search input-small pl-4 bg-transparent" type="search" q="googlesearch" placeholder="Search">
                     </div>
                 </div>    
-                <div class="nav-list-items">
+				<div class="nav-list-items">
                     <ul class="nav-lists">
                         <li class="list-item">
                             <a href="#" class="list-item-a">
@@ -25,9 +25,37 @@
                                     <div class="list-item-logo">
                                         <img src="/binary-flux/images/logo_aws.svg" alt="">
                                     </div>
-                                    <div class="list-item-label">
+                                    <div class="list-item-label w-100">
                                         <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="request-count d-block mb-0">AWS</label>
+                                        <label class="f-8 d-block mb-0">AWS</label>
+                                        <div class="d-flex align-items-start three-col">
+                                            <div class="time-col swagger-item">
+                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
+                                                <span class="text-white--5">12:42 am</span>
+                                            </div>
+                                            <div class="code-col swagger-item">
+                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
+                                                <span class="text-white--5">2.5 m</span>
+                                            </div>
+                                            <div class="fail-col swagger-item">
+                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
+                                                <span class="text-white--5"> 75.42 k</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start three-col">
+                                            <div class="start-col-active swagger-item">
+                                                <img src="/binary-flux/images/start-arrow.svg" width="8" height="9" alt="schedule">
+                                                <span class="text-blue--5 stop">Start</span>
+                                            </div>
+                                            <div class="stop-col swagger-item">
+                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop">                                                 
+                                                <span class="text-white--5">Stop</span>
+                                            </div>
+                                            <div class="fail-col swagger-item">
+                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">                                                
+                                                <span class="text-white--5 "> Schedule </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -38,15 +66,42 @@
                                     <div class="list-item-logo">
                                         <img src="/binary-flux/images/logo_aws.svg" alt="">
                                     </div>
-                                    <div class="list-item-label">
+                                    <div class="list-item-label w-100">
                                         <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="request-count d-block mb-0">AWS</label>
+                                        <label class="f-8 d-block mb-0">AWS</label>
+                                        <div class="d-flex align-items-start three-col">
+                                            <div class="time-col swagger-item">
+                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
+                                                <span class="text-white--5">12:42 am</span>
+                                            </div>
+                                            <div class="code-col swagger-item">
+                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
+                                                <span class="text-white--5">2.5 m</span>
+                                            </div>
+                                            <div class="fail-col swagger-item">
+                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
+                                                <span class="text-white--5"> 75.42 k</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start three-col">
+                                            <div class="start-col swagger-item">
+                                                <span class="text-white--5">Start</span>
+                                            </div>
+                                            <div class="stop-col swagger-item">
+                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop">                                                 
+                                                <span class="text-white--5">Stop</span>
+                                            </div>
+                                            <div class="fail-col swagger-item">
+                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">                                                
+                                                <span class="text-white--5 "> Schedule </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </li>
                     </ul>
-                </div>  
+                </div>   
             </div>
 		</div>
 		<div class="col-md-9 col-lg-10 p-0">
@@ -76,8 +131,15 @@
 					<div class="workspace-tab-header">
 						<div class="d-flex flex-wrap mt-2">
 							<div class="col-12 col-lg-8">
-								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase">ALL DATA SOURCES</h6>
-								<h6 class="workspace-name text-white--5 f-12 fw-300">Post request form to collect pet information from the end user</h6>
+								<div class="d-flex">
+									<div class="icon d-inline-block mr-2">
+										<img src="/binary-flux/images/logo_aws.svg" alt="" width="24">
+									</div>
+									<div class="d-inline-block ">
+										<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase mb-05">Swagger australia</h6>
+										<h6 class="workspace-name text-white--5 f-12 fw-300">PPost request form to collect pet information from the end user</h6>
+									</div>
+								</div>
 							</div>
 							<div class="col-12 col-lg-4">
 								<div class="workspace-actions pr-0">
@@ -105,23 +167,30 @@
 								</a>
 							</div>
 						</div>
-						<div class="d-flex p-15">
-							<div class="colum-1">
-								<p class="m-0 tetx-white--5">Total Number of Lines</p>
-								<h6 class="m-0 text-light-blue text-capitalize font-weight-bold">72.47 M</h6>
-								<p class="m-0 tetx-white--5">12:42 am (4 hours ago)</p>
+						<div class="p-15">
+							<div class="d-flex colum-row pt-15 pb-15">
+								<div class="colum-1">
+									<p class="m-0 mb-05 text-white--5">Total Number of Lines</p>
+									<h6 class="m-0 mb-05 text-light-blue text-capitalize font-weight-bold f-18">72.47 M</h6>
+									<p class="m-0 text-white--5 d-flex align-items-center"><img class="mr-05" src="{{"images/ic_av_timer.svg" | relURL }}" alt> 12:42 am (4 hours ago)</p>
+								</div>
+								<div class="colum-1">
+									<p class="m-0 mb-05 text-white--5">Lines Parsed Successfully</p>
+									<h6 class="m-0 text-light-blue text-capitalize font-weight-bold f-18">60.47 M</h6>
+								</div>
+								<div class="colum-1">
+									<p class="m-0 mb-05 text-white--5">Lines Failed to Parse</p>
+									<h6 class="m-0 text-orange text-capitalize font-weight-bold f-18">12 M</h6>
+								</div>
 							</div>
-							<div class="colum-1">
-								<p class="m-0 tetx-white--5">Lines Parsed Successfully</p>
-								<h6 class="m-0 text-light-blue text-capitalize font-weight-bold">60.47 M</h6>
-							</div>
-							<div class="colum-1">
-								<p class="m-0 tetx-white--5">Lines Failed to Parse</p>
-								<h6 class="m-0 text-light-blue text-capitalize font-weight-bold">12 M</h6>
-							</div>
-							<div class="colum-1">
-								<p class="m-0 tetx-white--5">Top Data Sources</p>
-							</div>
+						</div>
+
+						<div class="graph">
+
+							<figure class="highcharts-figure">
+								<div id="container"></div>
+							</figure>
+
 						</div>
 					</div>
 				</div>
