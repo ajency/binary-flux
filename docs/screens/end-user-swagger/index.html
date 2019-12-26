@@ -8,9 +8,10 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.6c3621ddc64bc0468ba944249095d482645d1b035cc98995ec1a351d15dcf254.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.cece2c6c0ebb6c7a0c749b055810decfb809889fecd038d87b08d331f8ae504c.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
+		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
 </head><body><header>
 	<div class="d-flex justify-content-between align-items-center">
 		<div class="logo-wrap">			
@@ -46,10 +47,10 @@
                 <div class="search-wrap p-15 pt-0">
                     <div class="position-relative">
                         <img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
-                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
+                        <input class="form-control input-search input-small pl-4 bg-transparent" type="search" q="googlesearch" placeholder="Search">
                     </div>
                 </div>    
-                <div class="nav-list-items">
+				<div class="nav-list-items">
                     <ul class="nav-lists">
                         <li class="list-item">
                             <a href="#" class="list-item-a">
@@ -57,9 +58,37 @@
                                     <div class="list-item-logo">
                                         <img src="/binary-flux/images/logo_aws.svg" alt="">
                                     </div>
-                                    <div class="list-item-label">
+                                    <div class="list-item-label w-100">
                                         <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="request-count d-block mb-0">AWS</label>
+                                        <label class="f-8 d-block mb-0">AWS</label>
+                                        <div class="d-flex align-items-start three-col">
+                                            <div class="time-col swagger-item">
+                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
+                                                <span class="text-white--5">12:42 am</span>
+                                            </div>
+                                            <div class="code-col swagger-item">
+                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
+                                                <span class="text-white--5">2.5 m</span>
+                                            </div>
+                                            <div class="fail-col swagger-item">
+                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
+                                                <span class="text-white--5"> 75.42 k</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start three-col">
+                                            <div class="start-col-active swagger-item">
+                                                <img src="/binary-flux/images/start-arrow.svg" width="8" height="9" alt="schedule">
+                                                <span class="text-blue--5 stop">Start</span>
+                                            </div>
+                                            <div class="stop-col swagger-item">
+                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop">                                                 
+                                                <span class="text-white--5">Stop</span>
+                                            </div>
+                                            <div class="fail-col swagger-item">
+                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">                                                
+                                                <span class="text-white--5 "> Schedule </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -70,15 +99,42 @@
                                     <div class="list-item-logo">
                                         <img src="/binary-flux/images/logo_aws.svg" alt="">
                                     </div>
-                                    <div class="list-item-label">
+                                    <div class="list-item-label w-100">
                                         <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="request-count d-block mb-0">AWS</label>
+                                        <label class="f-8 d-block mb-0">AWS</label>
+                                        <div class="d-flex align-items-start three-col">
+                                            <div class="time-col swagger-item">
+                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
+                                                <span class="text-white--5">12:42 am</span>
+                                            </div>
+                                            <div class="code-col swagger-item">
+                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
+                                                <span class="text-white--5">2.5 m</span>
+                                            </div>
+                                            <div class="fail-col swagger-item">
+                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
+                                                <span class="text-white--5"> 75.42 k</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-start three-col">
+                                            <div class="start-col swagger-item">
+                                                <span class="text-white--5">Start</span>
+                                            </div>
+                                            <div class="stop-col swagger-item">
+                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop">                                                 
+                                                <span class="text-white--5">Stop</span>
+                                            </div>
+                                            <div class="fail-col swagger-item">
+                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">                                                
+                                                <span class="text-white--5 "> Schedule </span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </li>
                     </ul>
-                </div>  
+                </div>   
             </div>
 		</div>
 		<div class="content">
@@ -108,8 +164,15 @@
 					<div class="workspace-tab-header">
 						<div class="d-flex flex-wrap mt-2">
 							<div class="col-12 col-lg-8">
-								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase">ALL DATA SOURCES</h6>
-								<h6 class="workspace-name text-white--5 f-12 fw-300">Post request form to collect pet information from the end user</h6>
+								<div class="d-flex">
+									<div class="icon d-inline-block mr-2">
+										<img src="/binary-flux/images/logo_aws.svg" alt="" width="24">
+									</div>
+									<div class="d-inline-block ">
+										<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase mb-05">Swagger australia</h6>
+										<h6 class="workspace-name text-white--5 f-12 fw-300">PPost request form to collect pet information from the end user</h6>
+									</div>
+								</div>
 							</div>
 							<div class="col-12 col-lg-4">
 								<div class="workspace-actions pr-0">
@@ -137,25 +200,76 @@
 								</a>
 							</div>
 						</div>
-						<div class="d-flex p-15">
-							<div class="colum-1">
-								<p class="m-0 tetx-white--5">Total Number of Lines</p>
-								<h6 class="m-0 text-light-blue text-capitalize font-weight-bold">72.47 M</h6>
-								<p class="m-0 tetx-white--5">12:42 am (4 hours ago)</p>
-							</div>
-							<div class="colum-1">
-								<p class="m-0 tetx-white--5">Lines Parsed Successfully</p>
-								<h6 class="m-0 text-light-blue text-capitalize font-weight-bold">60.47 M</h6>
-							</div>
-							<div class="colum-1">
-								<p class="m-0 tetx-white--5">Lines Failed to Parse</p>
-								<h6 class="m-0 text-light-blue text-capitalize font-weight-bold">12 M</h6>
-							</div>
-							<div class="colum-1">
-								<p class="m-0 tetx-white--5">Top Data Sources</p>
+						<div class="p-15">
+							<div class="d-flex colum-row pt-15 pb-15">
+								<div class="colum-1">
+									<p class="m-0 mb-05 text-white--5">Total Number of Lines</p>
+									<h6 class="m-0 mb-05 text-light-blue text-capitalize font-weight-bold f-18">72.47 M</h6>
+									<p class="m-0 text-white--5 d-flex align-items-center"><img class="mr-05" src="/binary-flux/images/ic_av_timer.svg" alt> 12:42 am (4 hours ago)</p>
+								</div>
+								<div class="colum-1">
+									<p class="m-0 mb-05 text-white--5">Lines Parsed Successfully</p>
+									<h6 class="m-0 text-light-blue text-capitalize font-weight-bold f-18">60.47 M</h6>
+								</div>
+								<div class="colum-1">
+									<p class="m-0 mb-05 text-white--5">Lines Failed to Parse</p>
+									<h6 class="m-0 text-orange text-capitalize font-weight-bold f-18">12 M</h6>
+								</div>
 							</div>
 						</div>
+
+						<div class="graph">
+
+							<figure class="highcharts-figure">
+								<div id="container"></div>
+							</figure>
+
+						</div>
 					</div>
+				</div>
+				<div class="event">
+					<div class="event-header d-flex justify-content-between align-items-center pt-1">
+						<h6 class="event-name text-white f-12 fw-900 mb-0 text-capitalize">Event Logs</h6>
+		                <div class="search-wrap p-15 pt-0">
+		                    <div class="position-relative">
+		                        <img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
+		                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
+		                    </div>
+		                </div>
+	                </div>
+	                <a href="#" class="d-inline-block">
+	                	<div class="event-body p-1 f-12">
+		                	<span class="text-white pr-1">Aug 19 16:43:54</span>
+		                	<span class="pr-1"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></span>
+		                	<span class="text-white pr-1">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</span>
+		                	<span class="text-white--5">2016-08-10T11 : 14 : 16 . 615</span>
+	                	</div>
+	            	</a>
+	                <a href="#" class="d-inline-block">
+		                <div class="event-body p-1 f-12">
+		                	<span class="text-white pr-1">Aug 19 16:43:54</span>
+		                	<span class="pr-1"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></span>
+		                	<span class="text-white pr-1">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</span>
+		                	<span class="text-white--5">2016-08-10T11 : 14 : 16 . 615</span>
+		                </div>
+	                </a>
+	                <a href="#" class="d-flex">
+		                <div class="event-body p-1 f-12">
+		                	<span class="text-white pr-1">Aug 19 16:43:54</span>
+		                	<span class="pr-1"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></span>
+		                	<span class="text-white pr-1">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</span>
+		                	<span class="text-white--5">2016-08-10T11 : 14 : 16 . 615</span>
+		                </div>
+		                <img src="/binary-flux/images/next.svg" alt="">
+	                </a>
+	                <a href="#" class="d-inline-block"> 
+	                	<div class="event-body p-1 f-12">
+		                	<span class="text-white pr-1">Aug 19 16:43:54</span>
+		                	<span class="pr-1"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></span>
+		                	<span class="text-white pr-1">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</span>
+		                	<span class="text-white--5">2016-08-10T11 : 14 : 16 . 615</span>
+		                </div> 
+	                </a>
 				</div>
 			</div>
 		</div>
@@ -171,5 +285,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="/binary-flux/vendor/select2/select2.full.js"></script>
+<script src="/binary-flux/vendor/highchart/highcharts.js"></script>
+<script src="/binary-flux/vendor/highchart/highcharts-more.js"></script>
 <script src="/binary-flux/js/app.js"></script></body>
 </html>

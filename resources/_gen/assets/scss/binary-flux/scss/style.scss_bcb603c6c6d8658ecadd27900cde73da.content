@@ -7822,6 +7822,22 @@ body {
     width: 100%;
     padding-left: 255px; } }
 
+.colum-row {
+  border-top: 1px solid #434755;
+  border-bottom: 1px solid #434755; }
+  @media (max-width: 767px) {
+    .colum-row {
+      flex-wrap: wrap; } }
+
+@media (min-width: 768px) {
+  .colum-1 {
+    padding-right: 25px; } }
+
+@media (max-width: 767px) {
+  .colum-1 {
+    width: 100%;
+    margin-bottom: 15px; } }
+
 ul, ol {
   padding-left: 10px; }
 
@@ -8002,6 +8018,9 @@ h1, .h1 {
   .form-control.input-search:-ms-input-placeholder {
     color: #659CC8;
     font-weight: 700; }
+
+.form-control.bg-transparent {
+  background: transparent; }
 
 .form-control.w-260 {
   width: 260px;
@@ -8260,6 +8279,49 @@ button {
       color: #3B92FF;
       font-weight: 900; }
 
+.highcharts-figure, .highcharts-data-table table {
+  min-width: 320px; }
+
+#container {
+  height: 450px; }
+
+.highcharts-data-table table {
+  border-collapse: collapse;
+  border: 1px solid #EBEBEB;
+  margin: 10px auto;
+  text-align: center;
+  width: 100%;
+  max-width: 500px; }
+
+.highcharts-data-table caption {
+  padding: 1em 0;
+  font-size: 1.2em; }
+
+.highcharts-data-table th {
+  font-weight: 600;
+  padding: 0.5em; }
+
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+  padding: 0.5em; }
+
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+  background: #f8f8f8; }
+
+.highcharts-data-table tr:hover {
+  background: #f1f7ff; }
+
+.highcharts-background {
+  fill: transparent !important; }
+
+.highcharts-axis-labels text {
+  fill: #ffffff !important; }
+
+.highcharts-legend {
+  display: none; }
+
+.highcharts-grid-line {
+  stroke: #44475A !important; }
+
 hr {
   border-top: 2px solid #34364A; }
   hr.grey {
@@ -8340,6 +8402,9 @@ hr {
 .text-yellow {
   color: #FFA400; }
 
+.text-orange {
+  color: #FF594A; }
+
 @media (max-width: 767px) {
   .fw-cont-mobile {
     max-width: 100%; } }
@@ -8369,13 +8434,17 @@ hr {
   font-size: 9px;
   line-height: 11px; }
 
+.f-10 {
+  font-size: 10px;
+  line-height: 14px; }
+
 .f-12 {
   font-size: 12px;
   line-height: 16px; }
 
-.f-10 {
-  font-size: 10px;
-  line-height: 14px; }
+.f-18 {
+  font-size: 18px;
+  line-height: 20px; }
 
 .fw-300 {
   font-weight: 300; }
