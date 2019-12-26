@@ -118,11 +118,16 @@ body{
 		}
 	}
 	&-body{
+		display: flex;
+	    justify-content: space-between;
 		.jojo{
 			color: #D36E2E;
 		}
 		.pump-loop{
 			color: #3C92FF;
+		}
+		@media (max-width: 767px){
+			display: block;
 		}
 	}
 	img{
