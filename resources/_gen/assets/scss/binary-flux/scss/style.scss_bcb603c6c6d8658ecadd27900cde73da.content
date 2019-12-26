@@ -7782,6 +7782,21 @@ body {
       transform: translateY(-50%) rotate(-90deg);
       font-size: 10px; }
 
+.event {
+  padding: 0 30px; }
+  .event a {
+    background: #161721;
+    width: 100%; }
+    .event a:hover {
+      text-decoration: none;
+      background: #35374F; }
+  .event-body .jojo {
+    color: #D36E2E; }
+  .event-body .pump-loop {
+    color: #3C92FF; }
+  .event img {
+    background: #161721; }
+
 .tab-border {
   border: 1px solid #5D5E72;
   border-radius: 0.15rem; }
