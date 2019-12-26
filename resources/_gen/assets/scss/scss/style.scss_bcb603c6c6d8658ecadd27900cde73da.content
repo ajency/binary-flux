@@ -7790,10 +7790,16 @@ body {
     .event a:hover {
       text-decoration: none;
       background: #35374F; }
-  .event-body .jojo {
-    color: #D36E2E; }
-  .event-body .pump-loop {
-    color: #3C92FF; }
+  .event-body {
+    display: flex;
+    justify-content: space-between; }
+    .event-body .jojo {
+      color: #D36E2E; }
+    .event-body .pump-loop {
+      color: #3C92FF; }
+    @media (max-width: 767px) {
+      .event-body {
+        display: block; } }
   .event img {
     background: #161721; }
 

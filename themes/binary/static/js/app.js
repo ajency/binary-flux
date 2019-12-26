@@ -24,7 +24,8 @@ $(document).ready(function(){
 
     Highcharts.chart('container', {
         chart: {
-            type: 'area'
+            type: 'area',
+            borderWidth: 0
         },
         accessibility: {
             description: ''
@@ -56,23 +57,20 @@ $(document).ready(function(){
         tooltip: {
             color: '#455B99',
             pointFormat: '{point.y}',
-            backgroundColor: '#3A678B',
+            backgroundColor: '#000',
             borderRadius: 0
         },
 
         plotOptions: {
             area: {
                 pointStart: 0,
+                color: '#ffffff00',
                 fillColor: {
-                    linearGradient: {
-                        x1: 0,
-                        y1: 0,
-                        x2: 0,
-                        y2: 1
-                    },
+                    linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
                     stops: [
-                        [0, Highcharts.getOptions().colors[0]],
-                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                        [0, '#72C2B3'], // end                        
+                        [0.4173, '#455B99'], // middle
+                        [1, '#27293D'] // start
                     ]
                 },
                 marker: {
