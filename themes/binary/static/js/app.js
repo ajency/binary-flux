@@ -27,10 +27,10 @@ $(document).ready(function(){
             type: 'area'
         },
         accessibility: {
-            description: 'Test'
+            description: ''
         },
         title: {
-            text: 'US and USSR nuclear stockpiles'
+            text: ''
         },
         yAxis: {
             tickInterval: 100,

@@ -264,6 +264,13 @@ hr{
 	}
 }
 
+.top{
+	&-7{
+		top: 7px;
+	}
+
+}
+
 .custom-container{
 	@media (min-width: 1201px) {
 		margin-left: 6%;

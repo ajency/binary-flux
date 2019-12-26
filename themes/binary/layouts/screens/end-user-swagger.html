@@ -130,7 +130,7 @@
 				<div class="workspace-tab-content">
 					<div class="workspace-tab-header">
 						<div class="d-flex flex-wrap mt-2">
-							<div class="col-12 col-lg-8">
+							<div class="col-12 col-lg-6">
 								<div class="d-flex">
 									<div class="icon d-inline-block mr-2">
 										<img src="/binary-flux/images/logo_aws.svg" alt="" width="24">
@@ -141,7 +141,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-lg-4">
+							<div class="col-12 col-lg-6">
 								<div class="workspace-actions pr-0">
 									<div class="btn-group btn-primary mr-1">
 										<button type="button" class="btn btn-115 text-center">Start</button>          
@@ -155,7 +155,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="d-flex action-btns">
+						<div class="d-flex action-btns mt-1 mt-lg-0">
 							<div class="col-12 text-right">
 								<a href="" class="d-inline-block">
 									<img src="{{"images/icon_refresh.svg" | relURL }}" alt></a>
@@ -185,12 +185,35 @@
 							</div>
 						</div>
 
-						<div class="graph">
+						<div class="p-15">
+							<div class="row d-flex align-items-center">
+								<div class="col-md-4">
+									<h6 class="event-name text-white f-12 fw-900 mb-0 text-capitalize">Run Time Chart</h6>
+								</div>
+								<div class="col-md-8 text-md-right pl-md-0">
+									<div class="radio d-inline-block">
+										<span class="mr-1">Show Real Time Data</span>
+										<label class="switch top-7">
+											<input type="checkbox">
+											<span class="slider round"></span>
+										</label>
+									</div>
+									<div class="d-inline-block ml-2">
+										<select class="select2-outline-dark select2-hidden-accessible form-control form-control-dark" tabindex="-1" aria-hidden="true">
+											<option value="option1" >Option1</option>
+											<option value="option2" >Option2</option>
+											<option value="option3" >Option3</option>
+											<option value="option4" selected="">Today (8 Nov, 2019)</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
 
+						<div class="graph p-15 mb-2">
 							<figure class="highcharts-figure">
 								<div id="container"></div>
 							</figure>
-
 						</div>
 					</div>
 				</div>
