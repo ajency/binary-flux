@@ -7268,7 +7268,7 @@ a.text-error:hover, a.text-error:focus {
       position: absolute;
       right: 0; }
       .nav-lists .list-item .list-item-a .nav-icons span {
-        border: 2px solid #44475A;
+        border: 1px solid #44475A;
         padding: 6px;
         border-top: 0; }
         .nav-lists .list-item .list-item-a .nav-icons span:last-child {
@@ -7814,7 +7814,7 @@ body {
   .sidebar {
     width: 255px;
     margin: 0;
-    position: fixed;
+    position: absolute;
     left: 0; } }
 
 @media (min-width: 768px) {
