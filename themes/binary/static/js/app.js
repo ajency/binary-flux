@@ -22,7 +22,14 @@ $(document).ready(function(){
     $('.openDefault').modal('show');
 
     $('.nav-lists li a').click(function() {
-        $('.nav-lists li a').removeClass('active');
+        $('.nav-lists li a').removeClass('active'); 
         $(this).addClass('active');
+        $(this).parent().find('.sub-ul').slideToggle("");
+        $(this).parent().find('.list-item-wrap').toggleClass("rotate-down");
+    });
+
+    $('.sub-ul li a').click(function() {
+        $(this).parent().find('.submenu-ul').slideToggle("");
+        $(this).parent().find('.list-item-wrap').toggleClass("rotate");
     });
 });

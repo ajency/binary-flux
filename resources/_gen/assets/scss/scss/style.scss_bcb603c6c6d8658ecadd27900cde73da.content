@@ -7240,16 +7240,20 @@ a.text-error:hover, a.text-error:focus {
     border-top: 2px solid #434755; }
     .nav-lists > li:last-child {
       border-bottom: 2px solid #434755; }
-  .nav-lists .sub-ul li a {
-    padding: 4px 6px 4px 20px !important;
-    padding-left: 50px !important; }
-    .nav-lists .sub-ul li a label {
-      font-weight: 300;
-      text-transform: capitalize;
-      text-align: center; }
-      .nav-lists .sub-ul li a label.sub-label {
-        color: #b0b0b7;
-        font-weight: 300; }
+  .nav-lists .sub-ul {
+    display: none; }
+    .nav-lists .sub-ul li a {
+      padding: 4px 6px 4px 20px !important;
+      padding-left: 50px !important; }
+      .nav-lists .sub-ul li a label {
+        font-weight: 300;
+        text-transform: capitalize;
+        text-align: center; }
+        .nav-lists .sub-ul li a label.sub-label {
+          color: #b0b0b7;
+          font-weight: 300; }
+    .nav-lists .sub-ul .submenu-ul {
+      display: none; }
   .nav-lists .list-item .list-item-a {
     position: relative;
     padding: 8px 8px 8px 30px;
@@ -7287,6 +7291,10 @@ a.text-error:hover, a.text-error:focus {
       top: 50%;
       transform: translateY(-50%) rotate(-90deg);
       font-size: 10px; }
+    .nav-lists .list-item-wrap.rotate:before {
+      transform: translateY(-50%) rotate(0deg); }
+    .nav-lists .list-item-wrap.rotate-down:before {
+      transform: translateY(-50%) rotate(0deg); }
   .nav-lists .list-item-logo img {
     max-width: 23px;
     height: auto;
@@ -7408,7 +7416,7 @@ a.text-error:hover, a.text-error:focus {
       opacity: 0;
       background-color: #27283D;
       overflow-x: hidden;
-      transition: all .3s ease-in;
+      transition: all 100ms ease-in-out;
       padding-top: 40px; }
       .sidear-container.mobile-slide-in button.close {
         position: absolute;
@@ -7787,7 +7795,8 @@ body {
   .event a {
     background: #161721;
     width: 100%;
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    border-bottom: 1px solid #5D5E72; }
     .event a:hover {
       text-decoration: none;
       background: #35374F; }
