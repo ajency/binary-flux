@@ -210,8 +210,8 @@
 							</div>
 						</div>
 
-						<div class="graph p-15 mb-2">
-							<figure class="highcharts-figure">
+						<div class="graph p-15 pb-0 mb-0">
+							<figure class="highcharts-figure mb-0">
 								<div id="container"></div>
 							</figure>
 						</div>
@@ -283,7 +283,11 @@ document.addEventListener('DOMContentLoaded', function () {
             enabled: false
         },
         yAxis: {
-            tickInterval: 100,
+			tickInterval: 100,
+			//min: 0,
+			title: {
+				text: ''
+			},
             labels: {
                 formatter: function () {
                     return this.value; // clean, unformatted number for year
@@ -292,7 +296,8 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         xAxis: {
             allowDecimals: false,
-            tickInterval: 1,
+			tickInterval: 1,
+			//min: 0,
             labels: {
                 formatter: function () {
                     return this.value; // clean, unformatted number for year

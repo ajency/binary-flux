@@ -218,8 +218,8 @@
 							</div>
 						</div>
 
-						<div class="graph bar-graph p-15 mb-2">
-							<figure class="highcharts-figure">
+						<div class="graph bar-graph p-15 pb-0 mb-0">
+							<figure class="highcharts-figure mb-0">
 								<div id="container"></div>
 							</figure>
 						</div>
@@ -310,6 +310,10 @@
 				enabled: false
 			},
 			yAxis: {
+				//min: 0,
+				title: {
+					text: ''
+				},
 				tickInterval: 100,
 				labels: {
 					formatter: function () {
@@ -318,6 +322,8 @@
 				}
 			},
 			xAxis: {
+				tickInterval: 1,
+				//min: 0,
 				categories: [
 					'1',
 					'2',
@@ -370,20 +376,14 @@
 					'49',
 					'50',
 				],
-				crosshair: true
-			},
-			yAxis: {
-				min: 0,
-				title: {
-					text: 'Rainfall (mm)'
-				}
+				crosshair: false
 			},
 			tooltip: {
-				headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-				pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-					'<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-				footerFormat: '</table>',
-				shared: true,
+				headerFormat: '<div class="">',
+				pointFormat: '<div class="d-flex align-items-center"><img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-15">{point.x}</span><img src="/binary-flux/images/microsoft.svg" alt="" width="47" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-15">{point.x}</span><img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="37" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-15">{point.x}</span></div>',
+				footerFormat: '</div>',
+				backgroundColor: '#000',
+				borderColor: '#fff',
 				useHTML: true
 			},
 			plotOptions: {
@@ -407,7 +407,7 @@
 				}
 			},
 			series: [{
-				name: 'Tokyo',
+				name: 'Time',
 				data: [120, 130, 115, 175, 180, 170, 150, 500, 200, 390, 95.6, 170 ,120, 130, 115, 480, 180, 170, 480, 190, 200, 210, 95.6, 170, 190, 200, 210, 95.6, 170 ,120, 130, 115, 175, 180, 170, 150, 190, 200, 475, 95.6, 170, 190, 410, 210, 95.6, 490 ,120, 130, 115, 175]
 		
 			}]
