@@ -109,26 +109,28 @@ body{
 }
 .event{
 	padding: 0 30px;
-	a{
-		background: #161721;
-		width: 100%;
-		border-bottom: 	1px solid #5D5E72;
-		&:hover{
-			text-decoration: none;
-			background: #35374F;
-		}
-	}
-	&-body{
-		display: flex;
-	    justify-content: space-between;
-		.jojo{
-			color: #D36E2E;
-		}
-		.pump-loop{
-			color: #3C92FF;
-		}
-		@media (max-width: 767px){
-			display: block;
+	.table-wrapper{
+		table{
+			margin-bottom: 0;
+			tbody{
+				background: #161721;
+				width: 100%;
+				border-bottom: 	1px solid #5D5E72;
+			}
+			tr{
+				.jojo{
+					color: #D36E2E;
+				}
+				.pump-loop{
+					color: #3C92FF;
+				}
+				@media (max-width: 767px){
+					display: block;
+				}
+			}
+			@media (max-width: 1228px){
+				width: 900px;
+			}
 		}
 	}
 }

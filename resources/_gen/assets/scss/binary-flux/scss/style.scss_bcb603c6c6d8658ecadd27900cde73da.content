@@ -7792,23 +7792,22 @@ body {
 
 .event {
   padding: 0 30px; }
-  .event a {
-    background: #161721;
-    width: 100%;
-    border-bottom: 1px solid #5D5E72; }
-    .event a:hover {
-      text-decoration: none;
-      background: #35374F; }
-  .event-body {
-    display: flex;
-    justify-content: space-between; }
-    .event-body .jojo {
+  .event .table-wrapper table {
+    margin-bottom: 0; }
+    .event .table-wrapper table tbody {
+      background: #161721;
+      width: 100%;
+      border-bottom: 1px solid #5D5E72; }
+    .event .table-wrapper table tr .jojo {
       color: #D36E2E; }
-    .event-body .pump-loop {
+    .event .table-wrapper table tr .pump-loop {
       color: #3C92FF; }
     @media (max-width: 767px) {
-      .event-body {
+      .event .table-wrapper table tr {
         display: block; } }
+    @media (max-width: 1228px) {
+      .event .table-wrapper table {
+        width: 900px; } }
 
 .tab-border {
   border: 1px solid #5D5E72;
