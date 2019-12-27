@@ -7416,7 +7416,7 @@ a.text-error:hover, a.text-error:focus {
       opacity: 0;
       background-color: #27283D;
       overflow-x: hidden;
-      transition: all .3s ease-in;
+      transition: all 100ms ease-in-out;
       padding-top: 40px; }
       .sidear-container.mobile-slide-in button.close {
         position: absolute;
