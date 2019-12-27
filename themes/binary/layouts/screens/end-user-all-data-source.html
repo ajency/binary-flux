@@ -1,37 +1,4 @@
-<!DOCTYPE html>
-<html><head>
-
-	<title>End user swagger - Binary Flux</title>
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
-	<link type="image/x-icon" href="/binary-flux/img/favicon.ico" rel="shortcut icon">
-	
-		
-			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.b776443dc938f6815fba19d7e69f595e0464e0f6f632b72d29dc7cbd9deda3c2.css">
-		
-		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
-		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
-</head><body><header>
-	<div class="d-flex justify-content-between align-items-center">
-		<div class="logo-wrap">			
-			<a href="#">
-				<img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
-			</a>
-		</div>
-		<div class="navbar-right">
-			<ul class="list-inline m-0">
-				<li class="list-inline-item ml-1 ml-md-0 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_settings.svg" width="20" height="20" alt="settings"></a></li>
-				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_notifications.svg" width="20" height="20" alt="notify"></a></li>
-				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" class="dropdown dropdown-profile dropdown-arrow-blue" target="_self"><img src="/binary-flux/images/ic_account_circle.svg" width="20" height="20" alt="profile"></a></li>
-			</ul>
-			<div class="dropdown-menu">
-
-			</div>
-		</div>
-	</div>
-	
-</header><div id="content">
+{{ define "main" }}
 
 <div class="container-fluid p-0">
 	<div class="end-user-swagger">
@@ -46,7 +13,7 @@
                 </div>     
                 <div class="search-wrap p-15 pt-0">
                     <div class="position-relative">
-                        <img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
+                        <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc" width="17" height="17" />
                         <input class="form-control input-search input-small pl-4 bg-transparent" type="search" q="googlesearch" placeholder="Search">
                     </div>
                 </div>    
@@ -148,7 +115,7 @@
 					<div class="tab-list">
 						<div class="tab-btn tab pl-0">Get Started</div>
 						<div class="tab-btn tab active pl-0">
-							<img src="/binary-flux/images/logo_aws.svg" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close"><i class="icon-close"></i></a>
+							<img src="{{"images/logo_aws.svg" | relURL }}" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close"><i class="icon-close"></i></a>
 						</div>
 					</div>
 					<div class="tab-list-action">
@@ -169,13 +136,13 @@
 										<img src="/binary-flux/images/logo_aws.svg" alt="" width="24">
 									</div>
 									<div class="d-inline-block ">
-										<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase mb-05">Swagger australia</h6>
-										<h6 class="workspace-name text-white--5 f-12 fw-300">PPost request form to collect pet information from the end user</h6>
+										<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase mb-05">ALL DATA SOURCES</h6>
+										<h6 class="workspace-name text-white--5 f-12 fw-300">Post request form to collect pet information from the end user</h6>
 									</div>
 								</div>
 							</div>
 							<div class="col-12 col-lg-7">
-								<div class="workspace-actions pr-0 pl-0">
+								<div class="workspace-actions pr-0">
 									<div class="btn-group btn-primary mr-1 mt-0">
 										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center"><img src="/binary-flux/images/play-icon.svg" alt="" width="8" class="mr-1"> Start</button>          
 									</div>
@@ -191,21 +158,21 @@
 						<div class="d-flex action-btns mt-1 mt-lg-0">
 							<div class="col-12 text-right">
 								<a href="" class="d-inline-block">
-									<img src="/binary-flux/images/icon_refresh.svg" alt></a>
+									<img src="{{"images/icon_refresh.svg" | relURL }}" alt></a>
 								<a href="" class="d-inline-block ml-3">
-									<img src="/binary-flux/images/icon_print.svg" alt>
+									<img src="{{"images/icon_print.svg" | relURL }}" alt>
 								</a>
 								<a href="" class="d-inline-block ml-3">
-									<img src="/binary-flux/images/icon_more.svg" alt>
+									<img src="{{"images/icon_more.svg" | relURL }}" alt>
 								</a>
 							</div>
 						</div>
 						<div class="p-15">
-							<div class="d-flex colum-row pt-15 pb-15">
+							<div class="d-flex colum-row ipad pt-15 pb-15">
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Total Number of Lines</p>
 									<h6 class="m-0 mb-05 text-light-blue text-capitalize font-weight-bold f-18">72.47 M</h6>
-									<p class="m-0 text-white--5 d-flex align-items-center"><img class="mr-05" src="/binary-flux/images/ic_av_timer.svg" alt> 12:42 am (4 hours ago)</p>
+									<p class="m-0 text-white--5 d-flex align-items-center"><img class="mr-05" src="{{"images/ic_av_timer.svg" | relURL }}" alt> 12:42 am (4 hours ago)</p>
 								</div>
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Lines Parsed Successfully</p>
@@ -214,6 +181,14 @@
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Lines Failed to Parse</p>
 									<h6 class="m-0 text-orange text-capitalize font-weight-bold f-18">12 M</h6>
+								</div>
+								<div class="colum-1">
+									<p class="m-0 mb-05 text-white--5">Top Data Sources</p>
+									<div class="d-flex align-items-center">
+										<img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-1">12</span>
+										<img src="/binary-flux/images/microsoft.svg" alt="" width="47" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-1">12</span>
+										<img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="37" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-1">12</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -243,11 +218,12 @@
 							</div>
 						</div>
 
-						<div class="graph p-15 pb-0 mb-0">
+						<div class="graph bar-graph p-15 pb-0 mb-0">
 							<figure class="highcharts-figure mb-0">
 								<div id="container"></div>
 							</figure>
 						</div>
+
 					</div>
 				</div>
 				<div class="event">
@@ -255,14 +231,19 @@
 						<h6 class="event-name text-white f-12 fw-900 mb-0 text-capitalize">Event Logs</h6>
 		                <div class="search-wrap p-15 pt-0 pr-0">
 		                    <div class="position-relative">
-		                        <img src="/binary-flux/images/ic_search.svg" class="pa-lc no-bg" width="17" height="17" />
+		                        <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc no-bg" width="17" height="17" />
 		                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
 		                    </div>
 		                </div>
 	                </div>
 	                <a href="#" class="d-inline-block">
 	                	<div class="event-body p-1 f-12">
-		                	<span class="text-white--8 pr-1">Aug 19 16:43:54</span>
+		                	<div class="text-white--8 pr-1">
+								<span class="d-block">Aug 19 16:43:54 </span>
+								<span class="d-block">
+									<img src="/binary-flux/images/logo_aws.svg" alt="" width="14">
+								</span>
+							</div>
 		                	<span class="pr-1"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></span>
 		                	<span class="text-white--8 pr-1">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</span>
 		                	<span class="text-white--5">2016-08-10T11 : 14 : 16 . 615</span>
@@ -270,7 +251,12 @@
 	            	</a>
 	                <a href="#" class="d-inline-block">
 		                <div class="event-body p-1 f-12">
-		                	<span class="text-white--8 pr-1">Aug 19 16:43:54</span>
+		                	<div class="text-white--8 pr-1">
+								<span class="d-block">Aug 19 16:43:54</span>
+								<span class="d-block">
+									<img src="/binary-flux/images/logo_aws.svg" alt="" width="14">
+								</span>
+							</div>
 		                	<span class="pr-1"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></span>
 		                	<span class="text-white--8 pr-1">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</span>
 		                	<span class="text-white--5">2016-08-10T11 : 14 : 16 . 615</span>
@@ -278,7 +264,12 @@
 	                </a>
 	                <a href="#" class="d-inline-block">
 		                <div class="event-body p-1 f-12">
-		                	<span class="text-white--8 pr-1">Aug 19 16:43:54</span>
+		                	<div class="text-white--8 pr-1">
+								<span class="d-block">Aug 19 16:43:54</span>
+								<span class="d-block">
+									<img src="/binary-flux/images/logo_aws.svg" alt="" width="14">
+								</span>
+							</div>
 		                	<span class="px-1"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></span>
 		                	<span class="text-white--8 px-1">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</span>
 		                	<span class="text-white--5">2016-08-10T11 : 14 : 16 . 615			                <img src="/binary-flux/images/next.svg" alt="" width="16" height="24"></span>
@@ -286,7 +277,12 @@
 	                </a>
 	                <a href="#" class="d-inline-block"> 
 	                	<div class="event-body p-1 f-12">
-		                	<span class="text-white--8 pr-1">Aug 19 16:43:54</span>
+		                	<div class="text-white--8 pr-1">
+								<span class="d-block">Aug 19 16:43:54</span>
+								<span class="d-block">
+									<img src="/binary-flux/images/logo_aws.svg" alt="" width="14">
+								</span>
+							</div>
 		                	<span class="pr-1"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></span>
 		                	<span class="text-white--8 pr-1">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</span>
 		                	<span class="text-white--5">2016-08-10T11 : 14 : 16 . 615</span>
@@ -298,104 +294,129 @@
 	</div>
 </div>
 
-
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-	Highcharts.chart('container', {
-        chart: {
-            type: 'area',
-			borderWidth: 0,
-			height: 250,
-		},
-        accessibility: {
-            description: ''
-        },
-        title: {
-            text: ''
-        },
-        credits: {
-            enabled: false
-        },
-        yAxis: {
-			tickInterval: 100,
-			min: 0,
+	document.addEventListener('DOMContentLoaded', function () {
+		Highcharts.chart('container', {
+			chart: {
+				type: 'column',
+				height: 250,
+			},
 			title: {
 				text: ''
 			},
-            labels: {
-                formatter: function () {
-                    return this.value; 
-                }
-            }
-        },
-        xAxis: {
-            allowDecimals: false,
-			tickInterval: 1,
-			min: 0,
-            labels: {
-                formatter: function () {
-                    return this.value; 
-                }
-            },
-            accessibility: {
-                rangeDescription: 'Range: 0 to 24.'
-            }
-        },
-        tooltip: {
-            color: '#455B99',
-            pointFormat: '{point.y}',
-            backgroundColor: '#000',
-            borderRadius: 0
-		},
-		tooltip: {
-			headerFormat: '<div class="">',
-			pointFormat: '<div class="" style="font-size: 10px;">{point.x} </div><div class="" style="font-size: 10px;font-weight: 900;">{point.y}</div>',
-			footerFormat: '</div>',
-			backgroundColor: '#000',
-			borderColor: '#fff',
-			useHTML: true
-		},
-        plotOptions: {
-            area: {
-                pointStart: 0,
-                color: '#ffffff00',
-                fillColor: {
-                    linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
-                    stops: [
-                        [0, '#72C2B3'],                      
-                        [0.4173, '#455B99'],
-                        [1, '#27293D']
-                    ]
-                },
-                marker: {
-                    enabled: false,
-                    symbol: 'circle',
-                    radius: 0,
-                    states: {
-                        hover: {
-                            enabled: true
-                        }
-                    }
-                }
-            }
-        },
-        series: [{
-            name: '',
-            data: [100, 120, 175, 180, 130, 215, 285, 175, 150, 205, 140, 450, 310, 335, 200, 210, 25, 200, 160, 310, 175, 210, 225, 165,],
-        }]
+			subtitle: {
+				text: ''
+			},
+			credits: {
+				enabled: false
+			},
+			yAxis: {
+				min: 0,
+				title: {
+					text: ''
+				},
+				tickInterval: 100,
+				labels: {
+					formatter: function () {
+						return this.value; // clean, unformatted number for year
+					}
+				}
+			},
+			xAxis: {
+				tickInterval: 5,
+				min: 0,
+				categories: [
+					'0',
+					'1',
+					'2',
+					'3',
+					'4',
+					'5',
+					'6',
+					'7',
+					'8',
+					'9',
+					'10',
+					'11',
+					'12',
+					'13',
+					'14',
+					'15',
+					'16',
+					'17',
+					'18',
+					'19',
+					'20',
+					'21',
+					'22',
+					'23',
+					'24',
+					'25',
+					'26',
+					'27',
+					'28',
+					'29',
+					'30',
+					'31',
+					'32',
+					'33',
+					'34',
+					'35',
+					'37',
+					'38',
+					'39',
+					'40',
+					'40',
+					'41',
+					'42',
+					'43',
+					'44',
+					'45',
+					'46',
+					'47',
+					'48',
+					'49',
+					'50',
+				],
+				crosshair: false
+			},
+			tooltip: {
+				headerFormat: '<div class="">',
+				pointFormat: '<div class="d-flex align-items-center"><img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-15">{point.x}</span><img src="/binary-flux/images/microsoft.svg" alt="" width="47" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-15">{point.x}</span><img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="37" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-15">{point.x}</span></div>',
+				footerFormat: '</div>',
+				backgroundColor: '#000',
+				borderColor: '#fff',
+				useHTML: true
+			},
+			plotOptions: {
+				column: {
+					pointWidth: 15,
+					pointPadding: 0,
+					borderWidth: 0,
+					borderColor: '#ffffff00',
+					shadow: false,
+					color: {
+						linearGradient: {
+							x1: 0,
+							y1: 0,
+							x2: 1,
+							y2: 1
+						},
+						stops: [
+							[0, '#455B99'],
+							[1, '#72C2B3']
+						]
+					}
+				}
+			},
+			series: [{
+				name: 'Time',
+				data: [120, 130, 115, 175, 180, 170, 150, 500, 200, 390, 95.6, 170 ,120, 130, 115, 480, 180, 170, 480, 190, 200, 210, 95.6, 170, 190, 200, 210, 95.6, 170 ,120, 130, 115, 175, 180, 170, 150, 190, 200, 475, 95.6, 170, 190, 410, 210, 95.6, 490 ,120, 130, 115, 175, 196]
+		
+			}]
+		});
 	});
-});
 </script>
 
 
-        </div><script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="/binary-flux/vendor/select2/select2.full.js"></script>
-<script src="/binary-flux/vendor/highchart/highcharts.js"></script>
-<script src="/binary-flux/vendor/highchart/highcharts-more.js"></script>
-<script src="/binary-flux/js/app.js"></script></body>
-</html>
+{{ end }}

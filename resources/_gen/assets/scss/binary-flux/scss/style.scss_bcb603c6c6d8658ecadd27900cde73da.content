@@ -7511,6 +7511,9 @@ a.text-error:hover, a.text-error:focus {
   @media (max-width: 575px) {
     .workspace-actions .btn-primary {
       margin-top: 0.5rem; } }
+  @media (max-width: 575px) {
+    .workspace-actions .btn-115 {
+      min-width: auto !important; } }
 
 .workspace-info ul {
   list-style: none;
@@ -7808,6 +7811,16 @@ body {
     @media (max-width: 1228px) {
       .event .table-wrapper table {
         width: 900px; } }
+  .event-body {
+    display: flex;
+    justify-content: space-between; }
+    .event-body .jojo {
+      color: #D36E2E; }
+    .event-body .pump-loop {
+      color: #3C92FF; }
+    @media (max-width: 767px) {
+      .event-body {
+        display: block; } }
 
 .tab-border {
   border: 1px solid #5D5E72;
@@ -7836,7 +7849,18 @@ body {
 
 .colum-row {
   border-top: 1px solid #434755;
-  border-bottom: 1px solid #434755; }
+  border-bottom: 1px solid #434755;
+  flex-wrap: wrap; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .colum-row.ipad {
+      border-top: 0;
+      border-bottom: 0; }
+      .colum-row.ipad .colum-1 {
+        width: 50%;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border-top: 1px solid #434755;
+        border-bottom: 1px solid #434755; } }
   @media (max-width: 767px) {
     .colum-row {
       flex-wrap: wrap; } }
@@ -7848,7 +7872,9 @@ body {
 @media (max-width: 767px) {
   .colum-1 {
     width: 100%;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #434755; } }
 
 ul, ol {
   padding-left: 10px; }
@@ -8348,37 +8374,6 @@ button {
       color: #3B92FF;
       font-weight: 900; }
 
-.highcharts-figure, .highcharts-data-table table {
-  min-width: 320px; }
-
-#container {
-  height: 450px; }
-
-.highcharts-data-table table {
-  border-collapse: collapse;
-  border: 1px solid #EBEBEB;
-  margin: 10px auto;
-  text-align: center;
-  width: 100%;
-  max-width: 500px; }
-
-.highcharts-data-table caption {
-  padding: 1em 0;
-  font-size: 1.2em; }
-
-.highcharts-data-table th {
-  font-weight: 600;
-  padding: 0.5em; }
-
-.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
-  padding: 0.5em; }
-
-.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
-  background: #f8f8f8; }
-
-.highcharts-data-table tr:hover {
-  background: #f1f7ff; }
-
 .highcharts-background {
   fill: transparent !important; }
 
@@ -8390,6 +8385,15 @@ button {
 
 .highcharts-grid-line {
   stroke: #44475A !important; }
+
+.highcharts-column-series rect.highcharts-point {
+  stroke: transparent !important; }
+
+.highcharts-point-hover {
+  fill: #3C92FF; }
+
+.highcharts-xaxis-labels text, .highcharts-yaxis-labels text {
+  font-size: 9px !important; }
 
 hr {
   border-top: 2px solid #34364A; }

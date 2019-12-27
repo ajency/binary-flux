@@ -130,7 +130,7 @@
 				<div class="workspace-tab-content">
 					<div class="workspace-tab-header">
 						<div class="d-flex flex-wrap mt-2">
-							<div class="col-12 col-lg-6">
+							<div class="col-12 col-lg-5">
 								<div class="d-flex">
 									<div class="icon d-inline-block mr-2">
 										<img src="/binary-flux/images/logo_aws.svg" alt="" width="24">
@@ -141,16 +141,16 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-lg-6">
-								<div class="workspace-actions pr-0">
-									<div class="btn-group btn-primary mr-1">
-										<button type="button" class="btn btn-115 text-center">Start</button>          
+							<div class="col-12 col-lg-7">
+								<div class="workspace-actions pr-0 pl-0">
+									<div class="btn-group btn-primary mr-1 mt-0">
+										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center"><img src="/binary-flux/images/play-icon.svg" alt="" width="8" class="mr-1"> Start</button>          
 									</div>
 									<div class="btn-group btn-outline-dark btn-outline-dark__bl2 mr-1">
-										<button type="button" class="btn btn-115 text-center">Stop</button>
+										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center"><img src="/binary-flux/images/stop.svg" alt="" width="10" class="mr-1"> Stop</button>
 									</div>
 									<div class="btn-group btn-outline-dark btn-outline-dark__bl2">
-										<button type="button" class="btn btn-115 text-center">Schedule</button>
+										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center"><img src="/binary-flux/images/ic_av_timer.svg" alt="" width="15" class="mr-1"> Schedule</button>
 									</div>
 								</div>
 							</div>
@@ -194,7 +194,7 @@
 									<div class="radio d-inline-block">
 										<span class="mr-1">Show Real Time Data</span>
 										<label class="switch top-7">
-											<input type="checkbox">
+											<input type="checkbox" checked>
 											<span class="slider round"></span>
 										</label>
 									</div>
@@ -210,8 +210,8 @@
 							</div>
 						</div>
 
-						<div class="graph p-15 mb-2">
-							<figure class="highcharts-figure">
+						<div class="graph p-15 pb-0 mb-0">
+							<figure class="highcharts-figure mb-0">
 								<div id="container"></div>
 							</figure>
 						</div>
@@ -220,9 +220,9 @@
 				<div class="event">
 					<div class="event-header d-flex justify-content-between align-items-center pt-1">
 						<h6 class="event-name text-white f-12 fw-900 mb-0 text-capitalize">Event Logs</h6>
-		                <div class="search-wrap p-15 pt-0">
+		                <div class="search-wrap p-15 pt-0 pr-0">
 		                    <div class="position-relative">
-		                        <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc" width="17" height="17" />
+		                        <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc no-bg" width="17" height="17" />
 		                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
 		                    </div>
 		                </div>
@@ -262,5 +262,93 @@
 	</div>
 </div>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	Highcharts.chart('container', {
+        chart: {
+            type: 'area',
+			borderWidth: 0,
+			height: 250,
+		},
+        accessibility: {
+            description: ''
+        },
+        title: {
+            text: ''
+        },
+        credits: {
+            enabled: false
+        },
+        yAxis: {
+			tickInterval: 100,
+			min: 0,
+			title: {
+				text: ''
+			},
+            labels: {
+                formatter: function () {
+                    return this.value; // clean, unformatted number for year
+                }
+            }
+        },
+        xAxis: {
+            allowDecimals: false,
+			tickInterval: 1,
+			min: 0,
+            labels: {
+                formatter: function () {
+                    return this.value; // clean, unformatted number for year
+                }
+            },
+            accessibility: {
+                rangeDescription: 'Range: 0 to 24.'
+            }
+        },
+        tooltip: {
+            color: '#455B99',
+            pointFormat: '{point.y}',
+            backgroundColor: '#000',
+            borderRadius: 0
+		},
+		tooltip: {
+			headerFormat: '<div class="">',
+			pointFormat: '<div class="" style="font-size: 10px;">{point.x} </div><div class="" style="font-size: 10px;font-weight: 900;">{point.y}</div>',
+			footerFormat: '</div>',
+			backgroundColor: '#000',
+			borderColor: '#fff',
+			useHTML: true
+		},
+        plotOptions: {
+            area: {
+                pointStart: 0,
+                color: '#ffffff00',
+                fillColor: {
+                    linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
+                    stops: [
+                        [0, '#72C2B3'],                      
+                        [0.4173, '#455B99'],
+                        [1, '#27293D']
+                    ]
+                },
+                marker: {
+                    enabled: false,
+                    symbol: 'circle',
+                    radius: 0,
+                    states: {
+                        hover: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: '',
+            data: [100, 120, 175, 180, 130, 215, 285, 175, 150, 205, 140, 450, 310, 335, 200, 210, 25, 200, 160, 310, 175, 210, 225, 165,],
+        }]
+	});
+});
+</script>
 
 {{ end }}
