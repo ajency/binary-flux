@@ -7892,6 +7892,9 @@ body {
     padding-bottom: 15px;
     border-bottom: 1px solid #434755; } }
 
+.end-user-swagger .btn-text {
+  font-size: 12px; }
+
 ul, ol {
   padding-left: 10px; }
 
