@@ -117,6 +117,7 @@
             }
         }
         .sub-ul{
+            display: none;
             li{
                 a{
                     padding: 4px 6px 4px 20px !important;
@@ -131,6 +132,9 @@
                         }
                     }
                 }
+            }
+            .submenu-ul{
+                display: none;
             }
         }
         .list-item {
@@ -179,6 +183,16 @@
                     top: 50%;
                     transform: translateY(-50%) rotate(-90deg);
                     font-size: 10px;
+                }
+                &.rotate{
+                    &:before {
+                        transform: translateY(-50%) rotate(0deg);
+                   } 
+                }
+                &.rotate-down{
+                    &:before {
+                        transform: translateY(-50%) rotate(0deg);
+                   } 
                 }
             }
             &-logo {
