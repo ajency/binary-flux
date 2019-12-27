@@ -13,7 +13,7 @@
                 opacity: 0;
                 background-color: #27283D;
                 overflow-x: hidden;
- transition: all 100ms ease-in-out;
+                transition: all 100ms ease-in-out;
                 padding-top: 40px;
                 button.close{
                     position: absolute;
@@ -48,5 +48,10 @@
                 }
             }
         }
+    }
+}
+.end-user-swagger{
+    .sidear-container{
+        height: calc(205vh - 40px); 
     }
 }
