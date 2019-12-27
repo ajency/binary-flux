@@ -7589,8 +7589,7 @@ a.text-error:hover, a.text-error:focus {
   .tab.active {
     color: #fff;
     border-bottom: 3px solid #3D90F7;
-    font-weight: 900;
-    padding: 0 20px; }
+    font-weight: 900; }
   .tab-close {
     position: absolute;
     right: 3px;
