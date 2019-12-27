@@ -7511,6 +7511,9 @@ a.text-error:hover, a.text-error:focus {
   @media (max-width: 575px) {
     .workspace-actions .btn-primary {
       margin-top: 0.5rem; } }
+  @media (max-width: 575px) {
+    .workspace-actions .btn-115 {
+      min-width: auto !important; } }
 
 .workspace-info ul {
   list-style: none;
