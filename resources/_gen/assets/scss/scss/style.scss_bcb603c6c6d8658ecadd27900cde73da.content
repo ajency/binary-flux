@@ -7314,7 +7314,7 @@ a.text-error:hover, a.text-error:focus {
     color: #b0b0b7;
     font-weight: 300; }
   .nav-lists.no-arrow .list-item .list-item-a {
-    border-left: 6px solid transparent; }
+    border-left: 7px solid transparent; }
     .nav-lists.no-arrow .list-item .list-item-a:hover, .nav-lists.no-arrow .list-item .list-item-a.active {
       background: #1B1A37;
       border-left: 7px solid #FF594A; }
