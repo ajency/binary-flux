@@ -8331,11 +8331,16 @@ button {
   border: 2px solid #44475A;
   margin-bottom: 5px;
   transition: all 0.3s ease-in;
-  cursor: pointer; }
+  cursor: pointer;
+  border-radius: 4px; }
   .item-wrapper {
     display: flex;
     flex-wrap: wrap;
     margin: 0 -5px; }
+  .item-edit {
+    font-size: 11px; }
+  .item-content p {
+    width: 255px; }
   .item:hover {
     border: 2px solid #3B92FF; }
   @media (min-width: 576px) {
