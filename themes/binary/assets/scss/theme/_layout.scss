@@ -112,6 +112,7 @@ body{
 	a{
 		background: #161721;
 		width: 100%;
+		border-bottom: 	1px solid #5D5E72;
 		&:hover{
 			text-decoration: none;
 			background: #35374F;
@@ -129,9 +130,6 @@ body{
 		@media (max-width: 767px){
 			display: block;
 		}
-	}
-	img{
-		background: #161721;
 	}
 }
 .tab-border{
