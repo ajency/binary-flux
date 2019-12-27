@@ -7808,19 +7808,14 @@ body {
     @media (max-width: 767px) {
       .event .table-wrapper table tr {
         display: block; } }
+    .event .table-wrapper table tr:hover {
+      background: #35374f; }
+    .event .table-wrapper table td {
+      border-top: 0;
+      border-bottom: 1px solid #5D5E72; }
     @media (max-width: 1228px) {
       .event .table-wrapper table {
         width: 900px; } }
-  .event-body {
-    display: flex;
-    justify-content: space-between; }
-    .event-body .jojo {
-      color: #D36E2E; }
-    .event-body .pump-loop {
-      color: #3C92FF; }
-    @media (max-width: 767px) {
-      .event-body {
-        display: block; } }
 
 .tab-border {
   border: 1px solid #5D5E72;

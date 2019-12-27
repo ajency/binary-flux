@@ -127,23 +127,17 @@ body{
 				@media (max-width: 767px){
 					display: block;
 				}
+				&:hover{
+				    background: #35374f;
+				}
+			}
+			td{
+				border-top: 0;
+				border-bottom: 1px solid #5D5E72;
 			}
 			@media (max-width: 1228px){
 				width: 900px;
 			}
-		}
-	}
-	&-body{
-		display: flex;
-	    justify-content: space-between;
-		.jojo{
-			color: #D36E2E;
-		}
-		.pump-loop{
-			color: #3C92FF;
-		}
-		@media (max-width: 767px){
-			display: block;
 		}
 	}
 }
