@@ -252,6 +252,20 @@
             //     }
             // }
         }
+        &.no-arrow{
+            .list-item {
+                .list-item-a{
+                    border-left: 6px solid transparent;
+                    &:hover, &.active{
+                        background: $darkblue;
+                        border-left: 7px solid $light-red;
+                    }
+                }
+            }
+            .list-item-wrap:before{
+                display: none;
+            }
+        }
     }
     &-right{
         @media (max-width: 1053px){

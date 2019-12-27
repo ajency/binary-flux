@@ -271,6 +271,22 @@ hr{
 
 }
 
+.next{
+	position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background:$light-blue;
+    min-width: 22px;
+	text-align: center;
+	img{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 6px;
+	}
+}
+
 .custom-container{
 	@media (min-width: 1201px) {
 		margin-left: 6%;

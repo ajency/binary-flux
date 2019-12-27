@@ -7313,6 +7313,13 @@ a.text-error:hover, a.text-error:focus {
   .nav-lists .request-count {
     color: #b0b0b7;
     font-weight: 300; }
+  .nav-lists.no-arrow .list-item .list-item-a {
+    border-left: 6px solid transparent; }
+    .nav-lists.no-arrow .list-item .list-item-a:hover, .nav-lists.no-arrow .list-item .list-item-a.active {
+      background: #1B1A37;
+      border-left: 7px solid #FF594A; }
+  .nav-lists.no-arrow .list-item-wrap:before {
+    display: none; }
 
 @media (max-width: 1053px) {
   .nav-right {
@@ -7794,29 +7801,29 @@ body {
       font-size: 10px; }
 
 .event {
-  padding: 0 15px; }
-  .event a {
-    background: #161721;
-    width: 100%;
-    margin-bottom: 2px;
-    border-bottom: 1px solid #5D5E72; }
-    .event a:hover {
-      text-decoration: none;
-      background: #35374F; }
-  .event-body {
-    display: flex;
-    justify-content: space-between; }
-    .event-body .jojo {
+  padding: 0 30px; }
+  .event .table-wrapper table {
+    margin-bottom: 0; }
+    .event .table-wrapper table tbody {
+      background: #161721;
+      width: 100%;
+      border-bottom: 1px solid #5D5E72; }
+    .event .table-wrapper table tr .jojo {
       color: #D36E2E; }
-    .event-body .pump-loop {
+    .event .table-wrapper table tr .pump-loop {
       color: #3C92FF; }
     @media (max-width: 767px) {
-      .event-body {
+      .event .table-wrapper table tr {
         display: block; } }
-  .event img {
-    background: #161721; }
-    .event img.no-bg {
-      background: transparent; }
+    .event .table-wrapper table tr:hover {
+      background: #35374f; }
+    .event .table-wrapper table td {
+      border-top: 0;
+      border-bottom: 1px solid #5D5E72;
+      padding: 10px 0.75rem; }
+    @media (max-width: 1228px) {
+      .event .table-wrapper table {
+        width: 900px; } }
 
 .tab-border {
   border: 1px solid #5D5E72;
@@ -8272,6 +8279,10 @@ button {
   outline: 0; }
   button:focus {
     outline: 0; }
+  button.reset {
+    background: transparent;
+    border: 0;
+    padding: 0; }
 
 .test-btn {
   border: 1px solid #3C92FF;
@@ -8590,6 +8601,20 @@ hr {
 
 .top-7 {
   top: 7px; }
+
+.next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #3B92FF;
+  min-width: 22px;
+  text-align: center; }
+  .next img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6px; }
 
 @media (min-width: 1201px) {
   .custom-container {

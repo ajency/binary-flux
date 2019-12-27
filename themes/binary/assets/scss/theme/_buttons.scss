@@ -169,6 +169,11 @@ button{
 	&:focus{
 		outline: 0;
 	}
+	&.reset{
+		background: transparent;
+		border: 0;
+		padding: 0;
+	}
 }
 .test-btn{
 	border: 1px solid #3C92FF;
