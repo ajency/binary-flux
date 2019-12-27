@@ -24,11 +24,11 @@ $(document).ready(function(){
     $('.nav-lists li a').click(function() {
         $('.nav-lists li a').removeClass('active'); 
         $(this).addClass('active');
-        $(this).parent().find('.sub-ul').slideToggle("");
-        $(this).parent().find('.list-item-wrap').toggleClass("rotate-down");
+        $(this).parent().find('.sub-ul').slideToggle("");        
+        $(this).parent().find('.navlistwrap').toggleClass("rotate");
     });
 
-    $('.sub-ul li a').click(function() {
+    $('.sub-ul .list-item a').click(function() {
         $(this).parent().find('.submenu-ul').slideToggle("");
         $(this).parent().find('.list-item-wrap').toggleClass("rotate");
     });
