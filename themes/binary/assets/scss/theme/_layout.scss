@@ -108,10 +108,11 @@ body{
 	}
 }
 .event{
-	padding: 0 30px;
+	padding: 0 15px;
 	a{
 		background: #161721;
 		width: 100%;
+		margin-bottom: 2px;
 		&:hover{
 			text-decoration: none;
 			background: #35374F;
@@ -132,6 +133,9 @@ body{
 	}
 	img{
 		background: #161721;
+		&.no-bg{
+			background: transparent;
+		}
 	}
 }
 .tab-border{
@@ -168,6 +172,20 @@ body{
 	&-row{
 		border-top: 1px solid $grey10;
 		border-bottom: 1px solid $grey10;
+		flex-wrap: wrap;
+		&.ipad{
+			@media (min-width: 768px) and (max-width: 991px) {
+				border-top: 0;
+				border-bottom: 0;
+				.colum-1{
+					width: 50%;
+					padding-bottom: 15px;
+					padding-top: 15px;
+					border-top: 1px solid $grey10;
+					border-bottom: 1px solid $grey10;
+				}				
+			}
+		}
 		@media (max-width: 767px) {
 			flex-wrap: wrap;
 		}
@@ -179,6 +197,8 @@ body{
 		@media (max-width: 767px) {
 			width: 100%;
 			margin-bottom: 15px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid $grey10;
 		}
 	}
 	
