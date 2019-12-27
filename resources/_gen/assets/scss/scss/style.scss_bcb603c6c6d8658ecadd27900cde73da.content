@@ -7836,12 +7836,16 @@ body {
     width: 255px;
     margin: 0;
     position: absolute;
-    left: 0; } }
+    left: 0; }
+    .sidebar-320 {
+      width: 320px; } }
 
 @media (min-width: 768px) {
   .content {
     width: 100%;
-    padding-left: 255px; } }
+    padding-left: 255px; }
+    .content.p-320 {
+      padding-left: 320px; } }
 
 .colum-row {
   border-top: 1px solid #434755;
