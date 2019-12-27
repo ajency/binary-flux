@@ -1,4 +1,37 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html><head>
+
+	<title>End user all data source - Binary Flux</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="/binary-flux/img/favicon.ico" rel="shortcut icon">
+	
+		
+			
+			<link rel="stylesheet" href="/binary-flux/css/style.min.724d6516c98912a309d3ae90208ae83d9043cfaf0667d45aaba9007bc269b49e.css">
+		
+		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
+		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
+</head><body><header>
+	<div class="d-flex justify-content-between align-items-center">
+		<div class="logo-wrap">			
+			<a href="#">
+				<img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+			</a>
+		</div>
+		<div class="navbar-right">
+			<ul class="list-inline m-0">
+				<li class="list-inline-item ml-1 ml-md-0 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_settings.svg" width="20" height="20" alt="settings"></a></li>
+				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_notifications.svg" width="20" height="20" alt="notify"></a></li>
+				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" class="dropdown dropdown-profile dropdown-arrow-blue" target="_self"><img src="/binary-flux/images/ic_account_circle.svg" width="20" height="20" alt="profile"></a></li>
+			</ul>
+			<div class="dropdown-menu">
+
+			</div>
+		</div>
+	</div>
+	
+</header><div id="content">
 
 <div class="container-fluid p-0">
 	<div class="end-user-swagger">
@@ -13,7 +46,7 @@
                 </div>     
                 <div class="search-wrap p-15 pt-0">
                     <div class="position-relative">
-                        <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc" width="17" height="17" />
+                        <img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
                         <input class="form-control input-search input-small pl-4 bg-transparent" type="search" q="googlesearch" placeholder="Search">
                     </div>
                 </div>    
@@ -115,7 +148,7 @@
 					<div class="tab-list">
 						<div class="tab-btn tab pl-0">Get Started</div>
 						<div class="tab-btn tab active pl-0">
-							<img src="{{"images/logo_aws.svg" | relURL }}" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close"><i class="icon-close"></i></a>
+							<img src="/binary-flux/images/logo_aws.svg" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close"><i class="icon-close"></i></a>
 						</div>
 					</div>
 					<div class="tab-list-action">
@@ -158,12 +191,12 @@
 						<div class="d-flex action-btns mt-1 mt-lg-0">
 							<div class="col-12 text-right">
 								<a href="" class="d-inline-block">
-									<img src="{{"images/icon_refresh.svg" | relURL }}" alt></a>
+									<img src="/binary-flux/images/icon_refresh.svg" alt></a>
 								<a href="" class="d-inline-block ml-3">
-									<img src="{{"images/icon_print.svg" | relURL }}" alt>
+									<img src="/binary-flux/images/icon_print.svg" alt>
 								</a>
 								<a href="" class="d-inline-block ml-3">
-									<img src="{{"images/icon_more.svg" | relURL }}" alt>
+									<img src="/binary-flux/images/icon_more.svg" alt>
 								</a>
 							</div>
 						</div>
@@ -172,7 +205,7 @@
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Total Number of Lines</p>
 									<h6 class="m-0 mb-05 text-light-blue text-capitalize font-weight-bold f-18">72.47 M</h6>
-									<p class="m-0 text-white--5 d-flex align-items-center"><img class="mr-05" src="{{"images/ic_av_timer.svg" | relURL }}" alt> 12:42 am (4 hours ago)</p>
+									<p class="m-0 text-white--5 d-flex align-items-center"><img class="mr-05" src="/binary-flux/images/ic_av_timer.svg" alt> 12:42 am (4 hours ago)</p>
 								</div>
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Lines Parsed Successfully</p>
@@ -231,7 +264,7 @@
 						<h6 class="event-name text-white f-12 fw-900 mb-0 text-capitalize">Event Logs</h6>
 		                <div class="search-wrap p-15 pt-0 pr-0">
 		                    <div class="position-relative">
-		                        <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc no-bg" width="17" height="17" />
+		                        <img src="/binary-flux/images/ic_search.svg" class="pa-lc no-bg" width="17" height="17" />
 		                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
 		                    </div>
 		                </div>
@@ -313,7 +346,7 @@
 				tickInterval: 100,
 				labels: {
 					formatter: function () {
-						return this.value; // clean, unformatted number for year
+						return this.value; 
 					}
 				}
 			},
@@ -416,4 +449,15 @@
 </script>
 
 
-{{ end }}
+
+        </div><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="/binary-flux/vendor/select2/select2.full.js"></script>
+<script src="/binary-flux/vendor/highchart/highcharts.js"></script>
+<script src="/binary-flux/vendor/highchart/highcharts-more.js"></script>
+<script src="/binary-flux/js/app.js"></script></body>
+</html>

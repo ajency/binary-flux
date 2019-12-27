@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.68d2097a6ba189522ce688a89fbcced960e384f331fb715fd0c4f8a649695629.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.724d6516c98912a309d3ae90208ae83d9043cfaf0667d45aaba9007bc269b49e.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -227,7 +227,7 @@
 									<div class="radio d-inline-block">
 										<span class="mr-1">Show Real Time Data</span>
 										<label class="switch top-7">
-											<input type="checkbox">
+											<input type="checkbox" checked>
 											<span class="slider round"></span>
 										</label>
 									</div>
@@ -253,9 +253,9 @@
 				<div class="event">
 					<div class="event-header d-flex justify-content-between align-items-center pt-1">
 						<h6 class="event-name text-white f-12 fw-900 mb-0 text-capitalize">Event Logs</h6>
-		                <div class="search-wrap p-15 pt-0">
+		                <div class="search-wrap p-15 pt-0 pr-0">
 		                    <div class="position-relative">
-		                        <img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
+		                        <img src="/binary-flux/images/ic_search.svg" class="pa-lc no-bg" width="17" height="17" />
 		                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
 		                    </div>
 		                </div>
@@ -298,6 +298,82 @@
 	</div>
 </div>
 
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+	Highcharts.chart('container', {
+        chart: {
+            type: 'area',
+            borderWidth: 0
+        },
+        accessibility: {
+            description: ''
+        },
+        title: {
+            text: ''
+        },
+        credits: {
+            enabled: false
+        },
+        yAxis: {
+            tickInterval: 100,
+            labels: {
+                formatter: function () {
+                    return this.value; 
+                }
+            }
+        },
+        xAxis: {
+            allowDecimals: false,
+            tickInterval: 1,
+            labels: {
+                formatter: function () {
+                    return this.value; 
+                }
+            },
+            accessibility: {
+                rangeDescription: 'Range: 0 to 24.'
+            }
+        },
+
+        tooltip: {
+            color: '#455B99',
+            pointFormat: '{point.y}',
+            backgroundColor: '#000',
+            borderRadius: 0
+        },
+
+        plotOptions: {
+            area: {
+                pointStart: 0,
+                color: '#ffffff00',
+                fillColor: {
+                    linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
+                    stops: [
+                        [0, '#72C2B3'],                      
+                        [0.4173, '#455B99'],
+                        [1, '#27293D']
+                    ]
+                },
+                marker: {
+                    enabled: false,
+                    symbol: 'circle',
+                    radius: 0,
+                    states: {
+                        hover: {
+                            enabled: true
+                        }
+                    }
+                }
+            }
+        },
+        series: [{
+            name: '',
+            data: [100, 120, 175, 180, 130, 215, 285, 175, 150, 205, 140, 450, 310, 335, 200, 210, 25, 200, 160, 310, 175, 210, 225, 165,],
+        }]
+	});
+});
+</script>
 
 
         </div><script
