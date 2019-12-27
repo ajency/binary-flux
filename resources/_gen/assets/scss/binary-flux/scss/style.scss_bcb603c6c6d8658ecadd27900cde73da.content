@@ -7583,13 +7583,14 @@ a.text-error:hover, a.text-error:focus {
   line-height: 16px;
   color: #9c9da4;
   text-transform: uppercase;
-  padding: 8px 20px 8px 8px;
+  padding: 8px 40px 8px 8px;
   position: relative;
   cursor: pointer; }
   .tab.active {
     color: #fff;
     border-bottom: 3px solid #3D90F7;
-    font-weight: 900; }
+    font-weight: 900;
+    padding: 0 20px; }
   .tab-close {
     position: absolute;
     right: 3px;
@@ -7608,7 +7609,8 @@ a.text-error:hover, a.text-error:focus {
     border: 0;
     background: transparent;
     box-shadow: none;
-    outline: 0; }
+    outline: 0;
+    font-weight: 600; }
     .tab-btn-add {
       margin-right: 15px; }
     .tab-btn-add, .tab-btn-more {
