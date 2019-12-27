@@ -161,13 +161,19 @@ body{
 		width: 255px;
 	    margin: 0;
 	    position: absolute;
-	    left: 0;
+		left: 0;
+		&-320{
+			width: 320px;
+		}
     }
 }
 .content{
 	@media (min-width: 768px){
  		width: 100%;
- 		padding-left: 255px;
+		padding-left: 255px;
+		&.p-320{
+			padding-left: 320px;
+		}
 	}
 }
 
