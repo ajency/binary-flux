@@ -306,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function () {
             type: 'area',
 			borderWidth: 0,
 			height: 250,
-        },
+		},
         accessibility: {
             description: ''
         },
@@ -341,14 +341,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 rangeDescription: 'Range: 0 to 24.'
             }
         },
-
         tooltip: {
             color: '#455B99',
             pointFormat: '{point.y}',
             backgroundColor: '#000',
             borderRadius: 0
-        },
-
+		},
+		tooltip: {
+			headerFormat: '<div class="">',
+			pointFormat: '<div class="" style="font-size: 10px;">{point.x} </div><div class="" style="font-size: 10px;font-weight: 900;">{point.y}</div>',
+			footerFormat: '</div>',
+			backgroundColor: '#000',
+			borderColor: '#fff',
+			useHTML: true
+		},
         plotOptions: {
             area: {
                 pointStart: 0,
