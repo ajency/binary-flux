@@ -258,7 +258,21 @@
                     border-left: 4px solid transparent;
                     .list-item-wrap{   
                        align-items: flex-start;   
-                       .list-item-logo{margin-top: 0.30rem};                      
+                       .list-item-logo{
+                            margin-top: 0.30rem;
+                        }
+                       .request-label{
+                           position: relative; 
+                            &:before {
+                                content:'';
+                                position: absolute;
+                                right: 0;
+                                width: 10px;
+                                height: 10px;
+                                color: white;
+                                background: url('../images/arrow-icon.svg') no-repeat;
+                            }
+                       }                     
                     }
                     &:hover, &.active{
                         background: $darkblue;

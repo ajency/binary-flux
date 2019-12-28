@@ -7319,6 +7319,16 @@ a.text-error:hover, a.text-error:focus {
       align-items: flex-start; }
       .nav-lists.no-arrow .list-item .list-item-a .list-item-wrap .list-item-logo {
         margin-top: 0.30rem; }
+      .nav-lists.no-arrow .list-item .list-item-a .list-item-wrap .request-label {
+        position: relative; }
+        .nav-lists.no-arrow .list-item .list-item-a .list-item-wrap .request-label:before {
+          content: '';
+          position: absolute;
+          right: 0;
+          width: 10px;
+          height: 10px;
+          color: white;
+          background: url("../images/arrow-icon.svg") no-repeat; }
     .nav-lists.no-arrow .list-item .list-item-a:hover, .nav-lists.no-arrow .list-item .list-item-a.active {
       background: #1B1A37;
       border-left: 4px solid #FF594A; }
