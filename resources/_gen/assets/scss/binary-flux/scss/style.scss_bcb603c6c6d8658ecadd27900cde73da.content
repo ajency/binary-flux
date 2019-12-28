@@ -7820,29 +7820,43 @@ body {
 
 .event {
   padding: 0 30px; }
-  .event .table-wrapper table {
-    margin-bottom: 0; }
-    .event .table-wrapper table tbody {
-      background: #161721;
-      width: 100%;
-      border-bottom: 1px solid #5D5E72;
-      font-size: 10px; }
-    .event .table-wrapper table tr .jojo {
-      color: #D36E2E; }
-    .event .table-wrapper table tr .pump-loop {
-      color: #3C92FF; }
-    @media (max-width: 767px) {
-      .event .table-wrapper table tr {
-        display: block; } }
-    .event .table-wrapper table tr:hover {
-      background: #35374f; }
-    .event .table-wrapper table td {
-      border-top: 0;
-      border-bottom: 1px solid #5D5E72;
-      padding: 10px 0.75rem; }
-    @media (max-width: 1228px) {
-      .event .table-wrapper table {
-        width: 900px; } }
+  .event .table-wrapper {
+    height: 360px;
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .event .table-wrapper table {
+      margin-bottom: 0; }
+      .event .table-wrapper table tbody {
+        background: #161721;
+        width: 100%;
+        border-bottom: 1px solid #5D5E72;
+        font-size: 10px; }
+      .event .table-wrapper table tr .jojo {
+        color: #D36E2E; }
+      .event .table-wrapper table tr .pump-loop {
+        color: #3C92FF; }
+      @media (max-width: 767px) {
+        .event .table-wrapper table tr {
+          display: block; } }
+      .event .table-wrapper table tr:hover {
+        background: #35374f; }
+      .event .table-wrapper table td {
+        border-top: 0;
+        border-bottom: 1px solid #5D5E72;
+        padding: 10px 0.75rem; }
+      @media (max-width: 1228px) {
+        .event .table-wrapper table {
+          width: 900px; } }
+    .event .table-wrapper::-webkit-scrollbar {
+      width: 8px;
+      height: 8px; }
+    .event .table-wrapper::-webkit-scrollbar-track {
+      background: #f1f1f1; }
+    .event .table-wrapper::-webkit-scrollbar-thumb {
+      background: #888; }
+    .event .table-wrapper::-webkit-scrollbar-thumb:hover {
+      background: #555; }
 
 .tab-border {
   border: 1px solid #5D5E72;
@@ -7904,11 +7918,6 @@ body {
 
 .end-user-swagger .btn-text {
   font-size: 12px; }
-
-.highcharts-tooltip-box {
-  fill: black;
-  fill-opacity: 0.6;
-  stroke-width: 0; }
 
 ul, ol {
   padding-left: 10px; }
