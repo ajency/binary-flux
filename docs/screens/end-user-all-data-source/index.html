@@ -692,11 +692,13 @@
 				crosshair: false
 			},
 			tooltip: {
-				headerFormat: '<div class="">',
-				pointFormat: '<div class="d-flex align-items-center"><img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-15">{point.x}</span><img src="/binary-flux/images/microsoft.svg" alt="" width="47" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-15">{point.x}</span><img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="37" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-15">{point.x}</span></div>',
+				headerFormat: '<div class=""  style="background: #3a678b; padding:5px;">',
+				pointFormat: '<div class="d-flex align-items-center"><img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-white text-capitalize font-weight-bold f-14 ml-15">{point.x}</span><img src="/binary-flux/images/microsoft-logo.svg" alt="" width="14" class="ml-15"><span class="m-0 text-white f-10">Microsoft</span><span class="m-0 text-white text-capitalize font-weight-bold f-14 ml-15">{point.x}</span><img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="37" class="ml-15"><span class="m-0 text-white text-capitalize font-weight-bold f-14 ml-15">{point.x}</span></div>',
 				footerFormat: '</div>',
-				backgroundColor: '#000',
-				borderColor: '#fff',
+                borderWidth: null,
+                borderRadius: 6,
+                shadow: false,
+                outside: true,
 				useHTML: true
 			},
 			plotOptions: {
@@ -704,7 +706,7 @@
 					pointWidth: 10,
 					pointPadding: 0,
 					borderWidth: 0,
-					borderColor: '#ffffff00',
+					borderColor: '#000',
 					shadow: false,
 					color: {
 						linearGradient: {
