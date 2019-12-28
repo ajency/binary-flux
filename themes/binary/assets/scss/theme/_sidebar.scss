@@ -34,7 +34,7 @@
             padding: 10px 10px 10px;
         }
         @media (min-width: 768px) {
-            height: calc(130vh - 40px);
+            height: 100%;
         }
     }
 }
@@ -50,8 +50,19 @@
         }
     }
 }
-.end-user-swagger{
-    .sidear-container{
-        height: calc(205vh - 40px); 
+.sidebar{
+    @media (min-width: 768px){
+        width: 255px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        &-320{
+            width: 320px;
+        }
+    }
+    .left-sidebar{
+        height: calc(100vh - 40px);
     }
 }

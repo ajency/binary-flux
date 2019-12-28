@@ -7454,14 +7454,25 @@ a.text-error:hover, a.text-error:focus {
       padding: 10px 10px 10px; } }
   @media (min-width: 768px) {
     .sidear-container {
-      height: calc(130vh - 40px); } }
+      height: 100%; } }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .sidear-container .nav-item a {
     padding: 10px 5px 10px; } }
 
-.end-user-swagger .sidear-container {
-  height: calc(205vh - 40px); }
+@media (min-width: 768px) {
+  .sidebar {
+    width: 255px;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%; }
+    .sidebar-320 {
+      width: 320px; } }
+
+.sidebar .left-sidebar {
+  height: calc(100vh - 40px); }
 
 .select2-container {
   max-width: 140px !important;
@@ -7870,15 +7881,6 @@ body {
   @media (min-width: 1400px) {
     .left-content {
       width: 25%; } }
-
-@media (min-width: 768px) {
-  .sidebar {
-    width: 255px;
-    margin: 0;
-    position: absolute;
-    left: 0; }
-    .sidebar-320 {
-      width: 320px; } }
 
 @media (min-width: 768px) {
   .content {
