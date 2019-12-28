@@ -7905,6 +7905,11 @@ body {
 .end-user-swagger .btn-text {
   font-size: 12px; }
 
+.highcharts-tooltip-box {
+  fill: black;
+  fill-opacity: 0.6;
+  stroke-width: 0; }
+
 ul, ol {
   padding-left: 10px; }
 
