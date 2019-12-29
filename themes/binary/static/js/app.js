@@ -32,4 +32,12 @@ $(document).ready(function(){
         $(this).parent().find('.submenu-ul').slideToggle("");
         $(this).parent().find('.list-item-wrap').toggleClass("rotate");
     });
+
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 0) {
+            $(".sidebar ").addClass("sidebar-scroll");
+        } else {
+            $(".sidebar ").removeClass("sidebar-scroll");
+        }
+    });
 });

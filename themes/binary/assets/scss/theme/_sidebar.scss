@@ -54,15 +54,16 @@
     @media (min-width: 768px){
         width: 255px;
         margin: 0;
-        position: absolute;
+        position: fixed;
         left: 0;
-        top: 0;
+        top: 40px;
         height: 100%;
         &-320{
             width: 320px;
         }
     }
-    .left-sidebar{
-        height: calc(100vh - 40px);
-    }
+}
+.sidebar-scroll{
+    position: absolute;
+    top:0;
 }
