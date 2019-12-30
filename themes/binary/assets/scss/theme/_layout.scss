@@ -132,7 +132,7 @@ body{
 				}
 				&:hover{
 					background-color:$grey9;
-					box-shadow: 0 16px 20px 3px rgba(12,13,25,0.77), 0 6px 20px 5px rgba(40,41,62,0.3), 0 8px 5px 0 rgba(0,0,0,0.33);
+					box-shadow: 0 16px 20px 3px rgba(0, 0, 0, 0.77);
 					td{
 						&:last-child{
 							padding-right: 1.8rem;
