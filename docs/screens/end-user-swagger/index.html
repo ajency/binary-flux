@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.5c57018a0ffce25e371ae2ded7a580df97dcee0c31357d84dfca36c6a9aefe9c.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.d28e98799dad3dbe0f733a2f28270be3d01f725119b5ed770389f1c07ea6b0a2.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -385,7 +385,7 @@
 		</div>
 		<div class="content p-320">
 			<div class="d-flex justify-content-between workspace-header-bar flex-wrap">
-				<div class="workspace-bar-tabs w-sm-100">	
+				<div class="workspace-bar-tabs w-sm-100 responsive-tabs">	
 					<div class="side-menu-toggle icon-hamburger d-md-none">
 						<span></span>
 						<span></span>
@@ -393,8 +393,7 @@
 					</div>
 					<div class="tab-list">
 						<div class="tab-btn tab pl-md-2 font-weight-bold">Get Started</div>
-						<div class="tab-btn tab pl-md-2 font-weight-bolder">Get Started</div>
-						<div class="tab-btn tab active pl-1">
+						<div class="tab-btn tab active pl-3">
 							<img src="/binary-flux/images/logo_aws.svg" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close pr-1"><i class="icon-close"></i></a>
 						</div>
 					</div>
@@ -578,6 +577,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    
 	Highcharts.chart('container', {
         chart: {
             type: 'area',
@@ -641,11 +641,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 marker: {
                     enabled: false,
-                    symbol: 'circle',
-                    radius: 0,
                     states: {
                         hover: {
-                            enabled: true
+                            enabled: true,
+                            lineWidth: 2,
+                            width: 30,
+                            height: 30,
+                            fillColor: '#ffffff',
+                            lineColor: '#799CFF',
                         }
                     }
                 }
