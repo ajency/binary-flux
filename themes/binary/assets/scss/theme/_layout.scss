@@ -222,5 +222,12 @@ body{
 .end-user-swagger{
 	.btn-text{
 		font-size: 12px;
+		padding: 6px 10px !important;
+	}
+	.custom-btn{
+		border: 2px solid $primary;
+		&:hover{
+			border: 2px solid $blue;
+		}
 	}
 }

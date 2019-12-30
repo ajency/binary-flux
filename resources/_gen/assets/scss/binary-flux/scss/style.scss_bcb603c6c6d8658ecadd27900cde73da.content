@@ -7920,7 +7920,13 @@ body {
     border-bottom: 1px solid #434755; } }
 
 .end-user-swagger .btn-text {
-  font-size: 12px; }
+  font-size: 12px;
+  padding: 6px 10px !important; }
+
+.end-user-swagger .custom-btn {
+  border: 2px solid #3D90F7; }
+  .end-user-swagger .custom-btn:hover {
+    border: 2px solid #007bff; }
 
 ul, ol {
   padding-left: 10px; }
