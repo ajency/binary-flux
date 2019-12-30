@@ -8098,22 +8098,22 @@ h1, .h1 {
 .form-control.input-search {
   border: 0;
   outline: 0;
-  border: 2px solid #659CC8;
+  border: 2px solid #4D6A8C;
   border-radius: 17.5px;
   color: #fff; }
   .form-control.input-search::-webkit-input-placeholder {
-    color: #659CC8;
+    color: #4D6A8C;
     font-weight: 700; }
   .form-control.input-search:-moz-placeholder {
     /* Firefox 18- */
-    color: #659CC8;
+    color: #4D6A8C;
     font-weight: 700; }
   .form-control.input-search::-moz-placeholder {
     /* Firefox 19+ */
-    color: #659CC8;
+    color: #4D6A8C;
     font-weight: 700; }
   .form-control.input-search:-ms-input-placeholder {
-    color: #659CC8;
+    color: #4D6A8C;
     font-weight: 700; }
 
 .form-control.bg-transparent {
