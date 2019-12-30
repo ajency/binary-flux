@@ -7928,6 +7928,13 @@ body {
   .end-user-swagger .custom-btn:hover {
     border: 2px solid #007bff; }
 
+.end-user-swagger .text-right {
+  cursor: default; }
+
+.end-user-swagger .sort {
+  position: absolute;
+  right: 4px; }
+
 ul, ol {
   padding-left: 10px; }
 
