@@ -120,6 +120,7 @@ body{
 				font-size: 10px;
 			}
 			tr{
+				position: relative;
 				.jojo{
 					color: $orange-dark;
 				}
@@ -130,14 +131,56 @@ body{
 					display: block;
 				}
 				&:hover{
-					background:$grey9;
+					background-color:$grey9;
 					box-shadow: 0 16px 20px 3px rgba(12,13,25,0.77), 0 6px 20px 5px rgba(40,41,62,0.3), 0 8px 5px 0 rgba(0,0,0,0.33);
+					td{
+						&:last-child{
+							padding-right: 1.8rem;
+						}
+						.next{
+							&:after{
+								content: '';
+								background: url('../images/ic_chevron_right.svg') no-repeat;
+								width: 22px;
+							    height: 36px;
+							    display: table-cell;
+							    background-color: #3B92FF;
+							    background-position-x: center;
+							    background-position-y: center;
+							    position: absolute;
+							    right: 0px;
+							    top:0;
+							    @media (max-width: 1368px){
+							    	height: 50px;
+							    }
+							}
+						}
+						.next1{
+							&:after{
+								content: '';
+								background: url('../images/ic_chevron_right.svg') no-repeat;
+								width: 22px;
+							    height: 45px;
+							    display: table-cell;
+							    background-color: #3B92FF;
+							    background-position-x: center;
+							    background-position-y: center;
+							    position: absolute;
+							    right: 0px;
+							    top:0;
+							    @media (max-width: 1368px){
+							    	height: 60px;
+							    }
+							}
+						}		
+					}
 				}
 			}
 			td{
 				border-top: 0;
 				border-bottom: 1px solid $white-7;
 				padding: 10px 0.75rem;
+				position: relative;
 			}
 			@media (max-width: 1228px){
 				width: 900px;
