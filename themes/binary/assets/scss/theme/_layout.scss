@@ -130,7 +130,8 @@ body{
 					display: block;
 				}
 				&:hover{
-				    background:$grey9;
+					background:$grey9;
+					box-shadow: 0 16px 20px 3px rgba(12,13,25,0.77), 0 6px 20px 5px rgba(40,41,62,0.3), 0 8px 5px 0 rgba(0,0,0,0.33);
 				}
 			}
 			td{
@@ -156,6 +157,9 @@ body{
 		&::-webkit-scrollbar-thumb {
 		  background: $grey2; 
 		}
+	}
+	@media (max-width: 767px) {
+		padding: 0 15px;
 	}
 }
 .tab-border{

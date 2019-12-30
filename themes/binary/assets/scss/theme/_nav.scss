@@ -261,6 +261,11 @@
                        .list-item-logo{
                             margin-top: 0.30rem;
                         }
+                        .list-item-label{
+                            @media (min-width:1200px) {
+                                padding-left: 20px;
+                            }
+                        }
                        .request-label{
                            position: relative; 
                             &:before {

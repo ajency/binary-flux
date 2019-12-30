@@ -7319,6 +7319,9 @@ a.text-error:hover, a.text-error:focus {
       align-items: flex-start; }
       .nav-lists.no-arrow .list-item .list-item-a .list-item-wrap .list-item-logo {
         margin-top: 0.30rem; }
+      @media (min-width: 1200px) {
+        .nav-lists.no-arrow .list-item .list-item-a .list-item-wrap .list-item-label {
+          padding-left: 20px; } }
       .nav-lists.no-arrow .list-item .list-item-a .list-item-wrap .request-label {
         position: relative; }
         .nav-lists.no-arrow .list-item .list-item-a .list-item-wrap .request-label:before {
@@ -7605,7 +7608,7 @@ a.text-error:hover, a.text-error:focus {
   line-height: 16px;
   color: #9c9da4;
   text-transform: uppercase;
-  padding: 8px 40px 8px 8px;
+  padding: 8px 8px 8px 8px;
   position: relative;
   cursor: pointer; }
   .tab.active {
@@ -7641,6 +7644,9 @@ a.text-error:hover, a.text-error:focus {
         color: #9c9da4;
         font-size: 9px;
         font-weight: 300; }
+  @media (min-width: 768px) {
+    .tab {
+      padding: 8px 40px 8px 8px; } }
 
 .wordspace-tabs .nav-item {
   position: relative; }
@@ -7851,7 +7857,8 @@ body {
         .event .table-wrapper table tr {
           display: block; } }
       .event .table-wrapper table tr:hover {
-        background: #35374F; }
+        background: #35374F;
+        box-shadow: 0 16px 20px 3px rgba(12, 13, 25, 0.77), 0 6px 20px 5px rgba(40, 41, 62, 0.3), 0 8px 5px 0 rgba(0, 0, 0, 0.33); }
       .event .table-wrapper table td {
         border-top: 0;
         border-bottom: 1px solid #5F6069;
@@ -7866,6 +7873,9 @@ body {
       background: #121425; }
     .event .table-wrapper::-webkit-scrollbar-thumb {
       background: #34364A; }
+  @media (max-width: 767px) {
+    .event {
+      padding: 0 15px; } }
 
 .tab-border {
   border: 1px solid #5D5E72;
@@ -7917,7 +7927,13 @@ body {
     border-bottom: 1px solid #434755; } }
 
 .end-user-swagger .btn-text {
-  font-size: 12px; }
+  font-size: 12px;
+  padding: 6px 10px !important; }
+
+.end-user-swagger .custom-btn {
+  border: 2px solid #3D90F7; }
+  .end-user-swagger .custom-btn:hover {
+    border: 2px solid #007bff; }
 
 ul, ol {
   padding-left: 10px; }
