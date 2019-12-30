@@ -7693,6 +7693,12 @@ a.text-error:hover, a.text-error:focus {
     padding-left: 115px;
     height: 31px; }
 
+.responsive-tabs .tab-list .tab-btn img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); }
+
 .datasource-header {
   border-bottom: 2px solid rgba(93, 94, 114, 0.5); }
 
@@ -7935,6 +7941,13 @@ body {
   .end-user-swagger .custom-btn:hover {
     border: 2px solid #007bff; }
 
+.end-user-swagger .text-right {
+  cursor: default; }
+
+.end-user-swagger .sort {
+  position: absolute;
+  right: 4px; }
+
 ul, ol {
   padding-left: 10px; }
 
@@ -8098,22 +8111,22 @@ h1, .h1 {
 .form-control.input-search {
   border: 0;
   outline: 0;
-  border: 2px solid #659CC8;
+  border: 2px solid #4D6A8C;
   border-radius: 17.5px;
   color: #fff; }
   .form-control.input-search::-webkit-input-placeholder {
-    color: #659CC8;
+    color: #4D6A8C;
     font-weight: 700; }
   .form-control.input-search:-moz-placeholder {
     /* Firefox 18- */
-    color: #659CC8;
+    color: #4D6A8C;
     font-weight: 700; }
   .form-control.input-search::-moz-placeholder {
     /* Firefox 19+ */
-    color: #659CC8;
+    color: #4D6A8C;
     font-weight: 700; }
   .form-control.input-search:-ms-input-placeholder {
-    color: #659CC8;
+    color: #4D6A8C;
     font-weight: 700; }
 
 .form-control.bg-transparent {

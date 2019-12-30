@@ -352,7 +352,7 @@
 		</div>
 		<div class="content p-320">
 			<div class="d-flex justify-content-between workspace-header-bar flex-wrap">
-				<div class="workspace-bar-tabs w-sm-100">	
+				<div class="workspace-bar-tabs w-sm-100 responsive-tabs">	
 					<div class="side-menu-toggle icon-hamburger d-md-none">
 						<span></span>
 						<span></span>
@@ -360,8 +360,7 @@
 					</div>
 					<div class="tab-list">
 						<div class="tab-btn tab pl-md-2 font-weight-bold">Get Started</div>
-						<div class="tab-btn tab pl-md-2 font-weight-bolder">Get Started</div>
-						<div class="tab-btn tab active pl-1">
+						<div class="tab-btn tab active pl-3">
 							<img src="{{"images/logo_aws.svg" | relURL }}" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close pr-1"><i class="icon-close"></i></a>
 						</div>
 					</div>
@@ -545,6 +544,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+    
 	Highcharts.chart('container', {
         chart: {
             type: 'area',
@@ -608,11 +608,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 marker: {
                     enabled: false,
-                    symbol: 'circle',
-                    radius: 0,
                     states: {
                         hover: {
-                            enabled: true
+                            enabled: true,
+                            lineWidth: 2,
+                            width: 30,
+                            height: 30,
+                            fillColor: '#ffffff',
+                            lineColor: '#799CFF',
                         }
                     }
                 }
