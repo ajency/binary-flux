@@ -234,4 +234,11 @@ body{
 			border: 2px solid $blue;
 		}
 	}
+	.text-right{
+		cursor: default;
+	}
+	.sort{
+		position: absolute;
+		right: 4px;
+	}
 }
