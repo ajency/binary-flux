@@ -7835,27 +7835,26 @@ body {
   .event .table-wrapper {
     height: 360px;
     /* Track */
-    /* Handle */
-    /* Handle on hover */ }
+    /* Handle */ }
     .event .table-wrapper table {
       margin-bottom: 0; }
       .event .table-wrapper table tbody {
-        background: #161721;
+        background: #121425;
         width: 100%;
-        border-bottom: 1px solid #5D5E72;
+        border-bottom: 1px solid #5F6069;
         font-size: 10px; }
       .event .table-wrapper table tr .jojo {
         color: #D36E2E; }
       .event .table-wrapper table tr .pump-loop {
-        color: #3C92FF; }
+        color: #007bff; }
       @media (max-width: 767px) {
         .event .table-wrapper table tr {
           display: block; } }
       .event .table-wrapper table tr:hover {
-        background: #35374f; }
+        background: #35374F; }
       .event .table-wrapper table td {
         border-top: 0;
-        border-bottom: 1px solid #5D5E72;
+        border-bottom: 1px solid #5F6069;
         padding: 10px 0.75rem; }
       @media (max-width: 1228px) {
         .event .table-wrapper table {
@@ -7864,11 +7863,9 @@ body {
       width: 8px;
       height: 8px; }
     .event .table-wrapper::-webkit-scrollbar-track {
-      background: #f1f1f1; }
+      background: #121425; }
     .event .table-wrapper::-webkit-scrollbar-thumb {
-      background: #888; }
-    .event .table-wrapper::-webkit-scrollbar-thumb:hover {
-      background: #555; }
+      background: #34364A; }
 
 .tab-border {
   border: 1px solid #5D5E72;
