@@ -7693,6 +7693,12 @@ a.text-error:hover, a.text-error:focus {
     padding-left: 115px;
     height: 31px; }
 
+.responsive-tabs .tab-list .tab-btn img {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); }
+
 .datasource-header {
   border-bottom: 2px solid rgba(93, 94, 114, 0.5); }
 
