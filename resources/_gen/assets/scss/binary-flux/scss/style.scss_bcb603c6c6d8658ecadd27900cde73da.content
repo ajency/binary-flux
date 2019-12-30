@@ -7605,7 +7605,7 @@ a.text-error:hover, a.text-error:focus {
   line-height: 16px;
   color: #9c9da4;
   text-transform: uppercase;
-  padding: 8px 40px 8px 8px;
+  padding: 8px 8px 8px 8px;
   position: relative;
   cursor: pointer; }
   .tab.active {
@@ -7641,6 +7641,9 @@ a.text-error:hover, a.text-error:focus {
         color: #9c9da4;
         font-size: 9px;
         font-weight: 300; }
+  @media (min-width: 768px) {
+    .tab {
+      padding: 8px 40px 8px 8px; } }
 
 .wordspace-tabs .nav-item {
   position: relative; }
