@@ -7954,7 +7954,11 @@ body {
         padding-bottom: 15px;
         padding-top: 15px;
         border-top: 1px solid #434755;
-        border-bottom: 1px solid #434755; } }
+        border-bottom: 1px solid #434755; }
+        .colum-row.ipad .colum-1:nth-child(even) {
+          width: 60% !important; }
+        .colum-row.ipad .colum-1:nth-child(odd) {
+          width: 40% !important; } }
   @media (max-width: 767px) {
     .colum-row {
       flex-wrap: wrap; } }

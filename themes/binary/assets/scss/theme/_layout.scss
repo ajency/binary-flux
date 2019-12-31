@@ -246,6 +246,12 @@ body{
 					padding-top: 15px;
 					border-top: 1px solid $grey10;
 					border-bottom: 1px solid $grey10;
+					&:nth-child(even){
+						width: 60% !important;
+					}
+					&:nth-child(odd){
+						width: 40% !important;
+					}
 				}				
 			}
 		}
