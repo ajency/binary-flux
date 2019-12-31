@@ -7855,20 +7855,55 @@ body {
         width: 100%;
         border-bottom: 1px solid #5F6069;
         font-size: 10px; }
-      .event .table-wrapper table tr .jojo {
-        color: #D36E2E; }
-      .event .table-wrapper table tr .pump-loop {
-        color: #007bff; }
-      @media (max-width: 767px) {
-        .event .table-wrapper table tr {
-          display: block; } }
-      .event .table-wrapper table tr:hover {
-        background: #35374F;
-        box-shadow: 0 16px 20px 3px rgba(12, 13, 25, 0.77), 0 6px 20px 5px rgba(40, 41, 62, 0.3), 0 8px 5px 0 rgba(0, 0, 0, 0.33); }
+      .event .table-wrapper table tr {
+        position: relative; }
+        .event .table-wrapper table tr .jojo {
+          color: #D36E2E; }
+        .event .table-wrapper table tr .pump-loop {
+          color: #007bff; }
+        @media (max-width: 767px) {
+          .event .table-wrapper table tr {
+            display: block; } }
+        .event .table-wrapper table tr:hover {
+          background-color: #35374F;
+          box-shadow: 0 16px 20px 3px rgba(0, 0, 0, 0.77); }
+          .event .table-wrapper table tr:hover td:last-child {
+            padding-right: 1.8rem; }
+          .event .table-wrapper table tr:hover td .next:after {
+            content: '';
+            background: url("../images/ic_chevron_right.svg") no-repeat;
+            width: 22px;
+            height: 36px;
+            display: table-cell;
+            background-color: #3B92FF;
+            background-position-x: center;
+            background-position-y: center;
+            position: absolute;
+            right: 0px;
+            top: 0; }
+            @media (max-width: 1368px) {
+              .event .table-wrapper table tr:hover td .next:after {
+                height: 50px; } }
+          .event .table-wrapper table tr:hover td .next1:after {
+            content: '';
+            background: url("../images/ic_chevron_right.svg") no-repeat;
+            width: 22px;
+            height: 45px;
+            display: table-cell;
+            background-color: #3B92FF;
+            background-position-x: center;
+            background-position-y: center;
+            position: absolute;
+            right: 0px;
+            top: 0; }
+            @media (max-width: 1368px) {
+              .event .table-wrapper table tr:hover td .next1:after {
+                height: 60px; } }
       .event .table-wrapper table td {
         border-top: 0;
         border-bottom: 1px solid #5F6069;
-        padding: 10px 0.75rem; }
+        padding: 10px 0.75rem;
+        position: relative; }
       @media (max-width: 1228px) {
         .event .table-wrapper table {
           width: 900px; } }
@@ -8218,6 +8253,9 @@ input:checked + .slider:before {
   border-radius: 50%; }
 
 /*** Switch styles ends ***/
+.noresize {
+  resize: none; }
+
 .btn {
   padding: 2px 40px;
   min-width: 116px; }
@@ -8477,6 +8515,9 @@ button {
 .highcharts-xaxis-labels text, .highcharts-yaxis-labels text {
   font-size: 9px !important; }
 
+.highcharts-axis-labels span.active {
+  font-weight: bold; }
+
 hr {
   border-top: 2px solid #34364A; }
   hr.grey {
@@ -8672,20 +8713,6 @@ hr {
 
 .top-7 {
   top: 7px; }
-
-.next {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: #3B92FF;
-  min-width: 22px;
-  text-align: center; }
-  .next img {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 6px; }
 
 @media (min-width: 1201px) {
   .custom-container {
