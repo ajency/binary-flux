@@ -2,7 +2,10 @@
 .select2-container {
     max-width: 140px !important;
     width: 140px !important;
-}
+    @media (min-width: 768px) and (max-width: 991px) {
+        width: 100px !important;
+    }
+ }
 
 .select2-container--default {
     .select2-selection--single {

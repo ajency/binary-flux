@@ -138,6 +138,9 @@
 	}
 	&-115{
 		min-width: 115px !important;
+		@media (min-width: 992px) and (max-width: 1024px) {
+			min-width: 84px !important;
+		}
 	}
 	&-add-icon{
 		background: transparent;

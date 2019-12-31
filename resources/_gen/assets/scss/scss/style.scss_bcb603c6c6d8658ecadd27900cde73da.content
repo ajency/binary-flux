@@ -7481,6 +7481,9 @@ a.text-error:hover, a.text-error:focus {
 .select2-container {
   max-width: 140px !important;
   width: 140px !important; }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .select2-container {
+      width: 100px !important; } }
 
 .select2-container--default .select2-selection--single.select-out-dark-wrap {
   border: 2px solid #44475A;
@@ -7942,7 +7945,7 @@ body {
   border-top: 1px solid #434755;
   border-bottom: 1px solid #434755;
   flex-wrap: wrap; }
-  @media (min-width: 768px) and (max-width: 991px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .colum-row.ipad {
       border-top: 0;
       border-bottom: 0; }
@@ -8359,6 +8362,9 @@ input:checked + .slider:before {
     font-size: 12px; }
   .btn-115 {
     min-width: 115px !important; }
+    @media (min-width: 992px) and (max-width: 1024px) {
+      .btn-115 {
+        min-width: 84px !important; } }
   .btn-add-icon {
     background: transparent;
     border: 0;
