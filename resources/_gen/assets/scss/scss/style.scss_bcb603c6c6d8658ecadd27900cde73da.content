@@ -7570,7 +7570,7 @@ a.text-error:hover, a.text-error:focus {
   .workspace-info ul li {
     padding: 0 5px;
     position: relative;
-    color: #fff; }
+    color: #93949E; }
     .workspace-info ul li:after {
       content: "";
       display: block;
@@ -7582,6 +7582,8 @@ a.text-error:hover, a.text-error:focus {
       width: 2px; }
     .workspace-info ul li:last-child:after {
       display: none; }
+    .workspace-info ul li:hover {
+      color: #fff; }
   @media (max-width: 767px) {
     .workspace-info ul {
       justify-content: flex-start;

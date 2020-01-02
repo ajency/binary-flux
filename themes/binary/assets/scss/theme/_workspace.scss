@@ -51,8 +51,7 @@
             li {                
                 padding: 0 5px;
                 position: relative;
-                // color: $grey;
-                color: #fff;
+                color: $grey;
                 &:after {
                     content: "";
                     display: block;
@@ -67,6 +66,9 @@
                     &:after {
                         display: none;
                     }
+                }
+                &:hover{
+                    color: #fff;
                 }
             }
             @media (max-width: 767px) {
