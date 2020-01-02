@@ -26,7 +26,7 @@
 				</div>
 				<hr class="grey mt-1 my-0">
 				<div>			
-					<ul class="nav nav-tabs nav-tabs-left" id="myTab" role="tablist">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
 						<li class="nav-item">
 							<a class="nav-link" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Header <i class="icon-checked icon-check-circle"></i></a>
 						</li>
@@ -42,7 +42,7 @@
 							<h5 class="section-title mt-0 mb-05">Import events from files on Amazon S3</h5>
 							<p class="mb-05">Alooma can import files from an Amazon S3 Bucket</p>
 							<hr class="grey mt-1 mb-1">
-							<ul class="text-break">
+							<ul class="text-break pl-15">
 								<li>The content of the files on S3 must include one events per line</li>
 								<li>Events maybe in any text format JSON, csv, syslog, etc (Use a transform function in the Code Engine to parse the events into JSON format)</li>
 								<li>Files may be packaged and compressed with Tar & Gzip</li>
@@ -80,10 +80,10 @@
 										<label class="form-label">
 											<span class="form-label-content">File will be imported from</span>
 										</label>
-										<input class="form-control" type="text">                            
+										<input class="file-input form-control" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">                        
 									</div>
 									<div class="form-field form-radio-group">
-										<label class="form-label">
+										<label class="form-label pl-0">
 											<span class="form-label-content">Select which files to import</span>
 										</label>
 										<div class="custom-control custom-radio">
@@ -96,7 +96,7 @@
 										</div>
 									</div>
 									<div class="form-field form-radio-group mb-0">
-										<label class="form-label">
+										<label class="form-label pl-0">
 											<span class="form-label-content">File Format</span>
 										</label>
 										<div class="custom-control custom-radio">

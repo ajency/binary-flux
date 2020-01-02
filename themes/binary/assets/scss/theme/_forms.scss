@@ -174,3 +174,12 @@ input:checked + .slider:before {
 .noresize {
 	resize: none; 
 }
+
+
+.file-input::-webkit-file-upload-button {
+    visibility: hidden; 
+}
+.file-input {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

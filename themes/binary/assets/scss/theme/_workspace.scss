@@ -51,7 +51,8 @@
             li {                
                 padding: 0 5px;
                 position: relative;
-                color: $grey;
+                // color: $grey;
+                color: #fff;
                 &:after {
                     content: "";
                     display: block;
@@ -193,6 +194,8 @@
                     color: #B0BCBF;
                     height: 31px;
                     border-radius: 0.25rem;
+                    border-top-right-radius: 0;
+                    border-bottom-right-radius: 0;
                     &__rendered{
                         font-size: 15px;
                         color: #B0BCBF;

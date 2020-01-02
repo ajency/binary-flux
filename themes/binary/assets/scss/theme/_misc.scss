@@ -126,7 +126,9 @@ hr{
 }
 
 .f{
-	
+	&-0{
+		font-size: 0;
+	}
 	&-7 {
 		font-size: 7px;
 		line-height: 10px;
