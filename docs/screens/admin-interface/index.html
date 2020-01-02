@@ -19,15 +19,21 @@
 				<img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
 			</a>
 		</div>
-		<div class="navbar-right">
+		<div class="navbar-right dropdown">
 			<ul class="list-inline m-0">
 				<li class="list-inline-item ml-1 ml-md-0 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_settings.svg" width="20" height="20" alt="settings"></a></li>
 				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_notifications.svg" width="20" height="20" alt="notify"></a></li>
-				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" class="dropdown dropdown-profile dropdown-arrow-blue" target="_self"><img src="/binary-flux/images/ic_account_circle.svg" width="20" height="20" alt="profile"></a></li>
-			</ul>
-			<div class="dropdown-menu">
-
-			</div>
+				<li class="list-inline-item ml-1 ml-md-4 mr-0">
+					<a class="dropdown-profile dropdown-arrow-blue dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="/binary-flux/images/ic_account_circle.svg" width="20" height="20" alt="profile">
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+						<a class="dropdown-item" href="#">Something else here</a>
+					</div>
+				</li>
+			</ul>			
 		</div>
 	</div>
 	
@@ -415,8 +421,18 @@
 												<h5 class="section-title text-uppercase mt-0 mb-0">Toggles</h5>
 											</div>
 											<div class="tab-content">
-												<div class="p-15">
-													Toggles
+												<div class="tab-content">
+													<div class="field-wrapper field-repeat mt-1 mt-md-0 pl-2">
+														<div class="form-field fi mb-0 mt-0">
+															<input class="form-control form-control-dark" type="text" placeholder="On">                        
+														</div>
+														<div class="form-field fi mb-0 mt-15">
+															<input class="form-control form-control-dark" type="text" placeholder="Off">                       
+														</div>
+														<div class="pl-0 pr-2 pt-2 pb-2">
+															<button type="button" class="btn btn-primary btn-add">Add</button>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
