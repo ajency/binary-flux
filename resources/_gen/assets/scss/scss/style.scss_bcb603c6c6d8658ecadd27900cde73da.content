@@ -8476,9 +8476,6 @@ button {
   @media (min-width: 768px) {
     .item {
       flex-basis: 32.5%; } }
-  @media (min-width: 1500px) {
-    .item {
-      flex-basis: 24.5%; } }
 
 .pagination ul li {
   margin-right: 15px; }
@@ -8687,6 +8684,9 @@ hr {
 .min-25 {
   min-width: 25px; }
 
+.min-70 {
+  min-width: 70px; }
+
 .border-radius-2 {
   border-radius: 2px !important; }
 
@@ -8710,6 +8710,9 @@ hr {
   .w-lg-100 {
     width: 100%; } }
 
+.w-p25 {
+  width: 25px; }
+
 @media (max-width: 575px) {
   .justify-content-maxsm {
     justify-content: flex-end; } }
@@ -8727,6 +8730,6 @@ hr {
 @media (min-width: 1201px) {
   .custom-container {
     margin-left: 6%;
-    margin-right: 6%; } }
+    max-width: 1060px; } }
 
 /*# sourceMappingURL=style.css.map */

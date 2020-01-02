@@ -202,6 +202,9 @@ hr{
 	&-25{
 		min-width: 25px;
 	}
+	&-70{
+		min-width: 70px;
+	}
 }
 
 
@@ -242,6 +245,9 @@ hr{
 			}
 		}
 	}
+	&-p25{
+		width: 25px;
+	}
 }
 
 .justify-content{
@@ -275,6 +281,6 @@ hr{
 .custom-container{
 	@media (min-width: 1201px) {
 		margin-left: 6%;
-    	margin-right: 6%;
+    	max-width: 1060px;
 	}
 }
