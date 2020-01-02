@@ -587,12 +587,15 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
 		tooltip: {
-			headerFormat: '<div class="">',
-			pointFormat: '<div class="" style="font-size: 9px;">{point.x} AM</div><div class="" style="font-size: 10px;font-weight: 900;">{point.y}</div>',
+			headerFormat: '<div class="" style="background: #3a678b; padding:5px;">',
+			pointFormat: '<div class="text-white" style="font-size: 9px;">{point.x} AM</div><div class="text-white" style="font-size: 10px;font-weight: 900;">{point.y}</div>',
 			footerFormat: '</div>',
-			backgroundColor: '#000',
-			borderColor: '#fff',
-			useHTML: true
+            backgroundColor: null,
+            borderWidth: null,
+            borderRadius: 6,
+            shadow: false,
+            outside: true,
+            useHTML: true
 		},
         plotOptions: {
             area: {

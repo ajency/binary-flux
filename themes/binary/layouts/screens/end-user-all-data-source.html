@@ -663,7 +663,8 @@
 			tooltip: {
 				headerFormat: '<div class=""  style="background: #3a678b; padding:5px;">',
 				pointFormat: '<div class="d-flex align-items-center"><img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span><img src="/binary-flux/images/microsoft-logo.svg" alt="" width="14" class="ml-15"><span class="m-0 text-white f-10">Microsoft</span><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span><img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="37" class="ml-15"><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span></div>',
-				footerFormat: '</div>',
+                footerFormat: '</div>',
+                backgroundColor: null,
                 borderWidth: null,
                 borderRadius: 6,
                 shadow: false,
@@ -678,16 +679,11 @@
 					borderColor: '#000',
 					shadow: false,
 					color: {
-						linearGradient: {
-							x1: 0,
-							y1: 0,
-							x2: 1,
-							y2: 1
-						},
-						stops: [
-							[0, '#455B99'],
-							[1, '#72C2B3']
-						]
+						linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
+                        stops: [
+                            [0, '#455B99'],    
+                            [1, '#72C2B3']
+                        ]
 					}
 				}
 			},
