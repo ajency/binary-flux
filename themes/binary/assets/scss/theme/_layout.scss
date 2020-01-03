@@ -49,11 +49,13 @@ body{
 			}
 			th{
 				padding: 11px 12px;
-			    color: #8B8DA5;
+				color: #8B8DA5;
+				vertical-align: middle;
 			    .action-btn{
 			    	display: inline-block;
 			    	float: right;
-			    	white-space: nowrap;
+					white-space: nowrap;
+					line-height: 16px;
 			    	.tab-btn-dots{
 				    	i{
 				    		color: #3D90F7;

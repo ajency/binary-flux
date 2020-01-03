@@ -7819,11 +7819,13 @@ body {
     border-bottom: 2px solid #44475A; }
   .tab-inner-ontent .tab-body .table-bordered th {
     padding: 11px 12px;
-    color: #8B8DA5; }
+    color: #8B8DA5;
+    vertical-align: middle; }
     .tab-inner-ontent .tab-body .table-bordered th .action-btn {
       display: inline-block;
       float: right;
-      white-space: nowrap; }
+      white-space: nowrap;
+      line-height: 16px; }
       .tab-inner-ontent .tab-body .table-bordered th .action-btn .tab-btn-dots i {
         color: #3D90F7; }
         .tab-inner-ontent .tab-body .table-bordered th .action-btn .tab-btn-dots i.icon-dots {
