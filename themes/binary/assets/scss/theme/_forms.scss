@@ -139,7 +139,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: #ccc;
+	// background-color: #ccc;
 	-webkit-transition: .4s;
 	transition: .4s;
 	border: 2px solid #3A4C67;
@@ -158,7 +158,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 input:checked + .slider {
-	background-color: #27283D;
+	background-color: #ccc;
     border: 2px solid #3A4C67;
 }
 
