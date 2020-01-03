@@ -49,6 +49,12 @@
 		border: 2px solid $light-blue-5;	
 		border-radius: 17.5px;
 		color: #fff;
+		&:hover{
+			box-shadow: 0px 0px 0px 0.2rem rgba(61, 144, 247, 0.25);
+		}
+		&:focus{
+			box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+		}
 		@include placeholder {
 			color: $light-blue-5;
 			font-weight: 700;
@@ -64,6 +70,9 @@
 		@media (max-width: 767px) {
 			width: 100%;
 		}
+	}
+	&:disabled{
+		background-color: transparent;
 	}
 }
 

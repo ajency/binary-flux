@@ -7741,14 +7741,14 @@ a.text-error:hover, a.text-error:focus {
 
 .field-type-ratio .form-field {
   position: relative;
-  padding-left: 90px; }
+  padding-left: 30px; }
   .field-type-ratio .form-field:before {
     content: "";
     display: block;
     border: 2px solid #44475A;
     border-radius: 56%;
     position: absolute;
-    left: 60px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 15px;
@@ -7769,7 +7769,7 @@ a.text-error:hover, a.text-error:focus {
       color: #44475A; }
 
 .field-repeat-btn-wrap {
-  padding-left: 90px;
+  padding-left: 0;
   margin-top: 10px; }
 
 .badge {
@@ -7860,10 +7860,25 @@ body {
       color: rgba(101, 156, 200, 0.5);
       font-family: 'icomoon';
       position: absolute;
-      left: 0px;
-      top: 50%;
-      transform: translateY(-50%) rotate(-90deg);
+      left: 0;
+      top: 0;
+      transform: rotate(-90deg);
       font-size: 10px; }
+  .swagger-item.start-col-active img {
+    position: relative;
+    top: -2px; }
+  .swagger-item.time-col img {
+    position: relative;
+    top: -1px; }
+  .swagger-item.code-col img {
+    position: relative;
+    top: -1px; }
+  .swagger-item.fail-col img {
+    position: relative;
+    top: -2px; }
+  .swagger-item.stop-col img {
+    position: relative;
+    top: -2px; }
 
 .event {
   padding: 0 30px; }
@@ -8196,6 +8211,10 @@ h1, .h1 {
   border: 2px solid #4D6A8C;
   border-radius: 17.5px;
   color: #fff; }
+  .form-control.input-search:hover {
+    box-shadow: 0px 0px 0px 0.2rem rgba(61, 144, 247, 0.25); }
+  .form-control.input-search:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25); }
   .form-control.input-search::-webkit-input-placeholder {
     color: #4D6A8C;
     font-weight: 700; }
@@ -8221,6 +8240,9 @@ h1, .h1 {
   @media (max-width: 767px) {
     .form-control.w-260 {
       width: 100%; } }
+
+.form-control:disabled {
+  background-color: transparent; }
 
 .form-field {
   margin-bottom: 15px; }

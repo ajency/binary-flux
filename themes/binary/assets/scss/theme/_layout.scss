@@ -99,11 +99,42 @@ body{
 			    color: rgba(101, 156, 200, 0.5);
 			    font-family: 'icomoon';
 			    position: absolute;
-			    left: 0px;
-			    top: 50%;
-			    transform: translateY(-50%) rotate(-90deg);
+				left: 0;
+				top: 0;
+			    // top: 50%;
+			    transform: rotate(-90deg);
 			    font-size: 10px;
 			}
+		}
+		&-active{
+			img{
+				position: relative;
+				top: -2px;
+			}
+		}
+	}
+	&.time-col{
+		img{
+			position: relative;
+			top: -1px;
+		}
+	}
+	&.code-col{
+		img{
+			position: relative;
+			top: -1px;
+		}
+	}
+	&.fail-col{
+		img{
+			position: relative;
+			top: -2px;
+		}
+	}
+	&.stop-col{
+		img{
+			position: relative;
+			top: -2px;
 		}
 	}
 }
