@@ -21,4 +21,16 @@
             }
         }
     }
+    &-menu{
+        padding: 0;
+
+    }
+    &-item{
+        background-color: $grey9;
+        color: $text;
+        &:hover{
+            background-color: $blue-light-1;
+            color: #fff;
+        }
+    }
 }

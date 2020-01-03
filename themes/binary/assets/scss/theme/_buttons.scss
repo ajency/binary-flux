@@ -27,6 +27,11 @@
 				}
 			}
 		}
+		&:hover{
+			color: #27283D;
+			background-color: #187bf5;
+			border-color: #0c74f5;
+		}
 	}
 	&-outline-dark{
 		color: $grey;
@@ -59,6 +64,9 @@
 					vertical-align: middle;
 					font-size: 10px;
 				}
+			}
+			&:hover{
+				color: #fff;
 			}
 		}
 		&__bl2{
@@ -189,5 +197,13 @@ button{
 	&:hover{
 		background: transparent;
 	    border-radius: 0.25rem;
+	}
+}
+
+.dropdown-toggle{
+	&[aria-expanded="true"]{
+		&::after{
+			transform: rotate(180deg);
+		}		
 	}
 }

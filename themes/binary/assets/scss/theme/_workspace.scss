@@ -238,3 +238,18 @@
         }
     }
 }
+
+.green-select .select2 .selection .select2-selection{
+    border: 2px solid #415f65;
+    background: #415f65;
+    color: #B0BCBF;
+    &__placeholder{
+        color: #B0BCBF;
+    }
+    &__rendered{
+        color: #B0BCBF;
+    }
+    &__clear{
+        display: none;
+    }
+}
