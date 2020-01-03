@@ -8816,4 +8816,9 @@ hr {
     margin-left: 6%;
     max-width: 1060px; } }
 
+.file-iocn {
+  position: absolute;
+  top: 10px;
+  right: 15px; }
+
 /*# sourceMappingURL=style.css.map */
