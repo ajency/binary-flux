@@ -292,3 +292,16 @@ hr{
 	top: 10px;
 	right: 15px;
 }
+
+.arrow-down {
+	width: 0; 
+	height: 0; 
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #3a678b;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -8px;
+	z-index: 9999;
+}
