@@ -156,10 +156,10 @@
 		border: 1px solid #fff;
 		padding: 6px 10px;
 		color: #fff;
-		font-weight: 900;
 		min-width: auto;
 		&:hover{
-			color: #fff;
+			border: 1px solid #3C92FF;
+			color: #3C92FF !important;
 		}
 	}
 	&.button-border{
@@ -191,10 +191,12 @@ button{
 	}
 }
 .test-btn{
-	border: 1px solid #3C92FF;
-	color: #3C92FF !important;
+	border: 1px solid #fff;
+	color: #fff !important;
 	padding: 0.25rem 0.5rem;
 	&:hover{
+		border: 1px solid #3C92FF;
+		color: #3C92FF !important;
 		background: transparent;
 	    border-radius: 0.25rem;
 	}
