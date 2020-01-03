@@ -157,9 +157,19 @@
 		padding: 6px 10px;
 		color: #fff;
 		min-width: auto;
+		i{
+			&::before{
+				color: #fff;
+			}
+		}
 		&:hover{
 			border: 1px solid #3C92FF;
 			color: #3C92FF !important;
+			i{
+				&::before{
+					color: #3C92FF;
+				}
+			}
 		}
 	}
 	&.button-border{
@@ -207,5 +217,22 @@ button{
 		&::after{
 			transform: rotate(180deg);
 		}		
+	}
+}
+
+button{
+	.n-image{
+		display: block;
+	}
+	.h-image{
+		display: none;
+	}
+	&:hover{
+		.n-image{
+			display: none;
+		}
+		.h-image{
+			display: block;
+		} 
 	}
 }

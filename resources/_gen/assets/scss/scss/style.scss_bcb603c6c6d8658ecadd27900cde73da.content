@@ -7061,8 +7061,8 @@ a.text-error:hover, a.text-error:focus {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?2sljro");
-  src: url("../fonts/icomoon.eot?2sljro#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?2sljro") format("truetype"), url("../fonts/icomoon.woff?2sljro") format("woff"), url("../fonts/icomoon.svg?2sljro#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?qw1uq9");
+  src: url("../fonts/icomoon.eot?qw1uq9#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?qw1uq9") format("truetype"), url("../fonts/icomoon.woff?qw1uq9") format("woff"), url("../fonts/icomoon.svg?qw1uq9#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block; }
@@ -7080,6 +7080,41 @@ a.text-error:hover, a.text-error:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.icon-ic_av_timer:before {
+  content: "\e911";
+  color: #fff; }
+
+.icon-stop:before {
+  content: "\e912";
+  color: #fff; }
+
+.icon-check_box:before {
+  content: "\e913";
+  color: #fff; }
+
+.icon-code-white:before {
+  content: "\e914";
+  color: #fff; }
+
+.icon-ic_notifications:before {
+  content: "\e915";
+  color: #5c5e79; }
+
+.icon-ic_settings:before {
+  content: "\e916";
+  color: #5c5e79; }
+
+.icon-radio-icon:before {
+  content: "\e917";
+  color: #fff; }
+
+.icon-text:before {
+  content: "\e918"; }
+
+.icon-toggle:before {
+  content: "\e919";
+  color: #fff; }
+
 .icon-icon-dots-hr:before {
   content: "\e90f";
   color: #3c92ff; }
@@ -7088,17 +7123,17 @@ a.text-error:hover, a.text-error:focus {
   content: "\e910";
   color: #5d5e72; }
 
+.icon-preview:before {
+  content: "\e90e";
+  color: #8b8da5; }
+
 .icon-arrow-right-light:before {
   content: "\e90d";
   color: #fff; }
 
-.icon-preview:before {
-  content: "\e90e";
-  color: #5b5d71; }
-
 .icon-add:before {
   content: "\e900";
-  color: inherit; }
+  color: #3c92ff; }
 
 .icon-arrow-down-sm:before {
   content: "\e902";
@@ -7126,15 +7161,15 @@ a.text-error:hover, a.text-error:focus {
 
 .icon-dots:before {
   content: "\e908";
-  color: inherit; }
+  color: #659cc8; }
 
 .icon-setting:before {
   content: "\e909";
-  color: #5b5d71; }
+  color: #5c5e79; }
 
 .icon-close:before {
   content: "\e90a";
-  color: #659CC8; }
+  color: #659cc8; }
 
 .icon-arrow-down-lg:before {
   content: "\e90b";
@@ -7142,11 +7177,11 @@ a.text-error:hover, a.text-error:focus {
 
 .icon-check-circle:before {
   content: "\e901";
-  color: #93949E; }
+  color: #fff; }
 
 .icon-arrow-left-light:before {
   content: "\e90c";
-  color: #93949E; }
+  color: #fff; }
 
 .icon-wrap {
   padding: 0 8px; }
@@ -7380,11 +7415,19 @@ a.text-error:hover, a.text-error:focus {
     left: 15px;
     top: 50%;
     transform: translateY(-50%); }
+  .nav-pills .nav-link .n-image {
+    display: none; }
+  .nav-pills .nav-link .h-image {
+    display: block; }
   .nav-pills .nav-link.active {
     background-color: #3C92FF;
     color: #27293D;
     font-weight: 900;
     border-top: 1px solid #3C92FF; }
+    .nav-pills .nav-link.active .n-image {
+      display: block; }
+    .nav-pills .nav-link.active .h-image {
+      display: none; }
     .nav-pills .nav-link.active:hover {
       color: #27293D; }
   .nav-pills .nav-link:hover {
@@ -7430,6 +7473,19 @@ a.text-error:hover, a.text-error:focus {
   .navpills .tab-content > .tab-pane {
     display: block !important;
     opacity: 1; } }
+
+.navbar-right li a {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle; }
+  .navbar-right li a .n-image {
+    display: block; }
+  .navbar-right li a .h-image {
+    display: none; }
+  .navbar-right li a:hover .n-image {
+    display: none; }
+  .navbar-right li a:hover .h-image {
+    display: block; }
 
 .sidear-container {
   background: #35374F;
@@ -8456,9 +8512,13 @@ input:checked + .slider:before {
     padding: 6px 10px;
     color: #fff;
     min-width: auto; }
+    .btn-add-icon i::before {
+      color: #fff; }
     .btn-add-icon:hover {
       border: 1px solid #3C92FF;
       color: #3C92FF !important; }
+      .btn-add-icon:hover i::before {
+        color: #3C92FF; }
   .btn.button-border {
     border-color: #347cd6; }
 
@@ -8490,6 +8550,18 @@ button {
 
 .dropdown-toggle[aria-expanded="true"]::after {
   transform: rotate(180deg); }
+
+button .n-image {
+  display: block; }
+
+button .h-image {
+  display: none; }
+
+button:hover .n-image {
+  display: none; }
+
+button:hover .h-image {
+  display: block; }
 
 @media (min-width: 768px) {
   .border-blue-left-md {

@@ -340,11 +340,23 @@
             top: 50%;
             transform: translateY(-50%);
         }
+        .n-image{
+            display: none;
+        }
+        .h-image{
+            display: block;
+        }
         &.active{
             background-color: #3C92FF;
             color: #27293D;
             font-weight: 900;
             border-top: 1px solid #3C92FF;
+            .n-image{
+                display: block;
+            }
+            .h-image{
+                display: none;
+            }
             &:hover{
                 color: #27293D;
             }
@@ -422,4 +434,29 @@
             opacity: 1;
         }
     }
+}
+
+.navbar-right{
+    li{
+        a{
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: middle;
+            .n-image{
+                display: block;
+            }
+            .h-image{
+                display: none;
+            }
+            &:hover{
+                .n-image{
+                    display: none;
+                }
+                .h-image{
+                    display: block;
+                } 
+            }
+        }
+    }
+    
 }

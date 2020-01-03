@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.e7743faaf8381f3a2365f09726e14d2363e537c6bc25c10262a0c81f4162d90f.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.68444a5b541af12649a9be1acbfa0e9f64a341dfbdaf20c807f2b16dc573231a.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -21,8 +21,18 @@
 		</div>
 		<div class="navbar-right dropdown">
 			<ul class="list-inline m-0">
-				<li class="list-inline-item ml-1 ml-md-0 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_settings.svg" width="20" height="20" alt="settings"></a></li>
-				<li class="list-inline-item ml-1 ml-md-4 mr-0"><a href="#" target="_self"><img src="/binary-flux/images/ic_notifications.svg" width="20" height="20" alt="notify"></a></li>
+				<li class="list-inline-item ml-1 ml-md-0 mr-0">
+					<a href="#" target="_self">
+						<img class="n-image" src="/binary-flux/images/ic_settings.svg" width="20" height="20" alt="settings">
+						<img class="h-image" src="/binary-flux/images/ic_settings_blue.svg" width="20" height="20" alt="settings">
+					</a>
+				</li>
+				<li class="list-inline-item ml-1 ml-md-4 mr-0">
+					<a href="#" target="_self">
+						<img class="n-image" src="/binary-flux/images/ic_notifications.svg" width="20" height="20" alt="notify">
+						<img class="h-image" src="/binary-flux/images/ic_notifications_blue.svg" width="20" height="20" alt="notify">
+					</a>
+				</li>
 				<li class="list-inline-item ml-1 ml-md-4 mr-0">
 					<a class="dropdown-profile dropdown-arrow-blue dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<img src="/binary-flux/images/ic_account_circle.svg" width="20" height="20" alt="profile">
@@ -427,13 +437,24 @@
 							<div class="col-12 col-lg-7">
 								<div class="workspace-actions pr-0">
 									<div class="btn-group btn-primary mr-1 mt-0 custom-btn">
-										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text"><img src="/binary-flux/images/play-icon.svg" alt="" width="8" class="mr-1"> Start</button>          
+										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                                            <img src="/binary-flux/images/play-icon.svg" alt="" width="8" class="mr-1">
+                                             Start
+                                        </button>          
 									</div>
 									<div class="btn-group btn-outline-dark btn-outline-dark__bl2 mr-1">
-										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text"><img src="/binary-flux/images/stop.svg" alt="" width="10" class="mr-1"> Stop</button>
+										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                                            <img src="/binary-flux/images/stop.svg" alt="" width="10" class="mr-1 n-image"> 
+                                            <img src="/binary-flux/images/stop_blue.svg" alt="" width="10" class="mr-1 h-image"> 
+                                            Stop
+                                        </button>
 									</div>
 									<div class="btn-group btn-outline-dark btn-outline-dark__bl2">
-										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text"><img src="/binary-flux/images/ic_av_timer.svg" alt="" width="15" class="mr-1"> Schedule</button>
+										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                                            <img src="/binary-flux/images/ic_av_timer.svg" alt="" width="15" class="mr-1 n-image"> 
+                                            <img src="/binary-flux/images/ic_av_timer_blue.svg" alt="" width="15" class="mr-1 h-image"> 
+                                            Schedule
+                                        </button>
 									</div>
 								</div>
 							</div>
@@ -698,7 +719,7 @@
 				crosshair: false
 			},
 			tooltip: {
-				headerFormat: '<div class="test1"  style="background: #3a678b; padding:5px;position-relative;"><div class="arrow-down"></div>',
+				headerFormat: '<div class="test1"  style="background: #3a678b; padding:5px;position-relative;border-radius:3px;"><div class="arrow-down"></div>',
 				pointFormat: '<div class="d-flex align-items-center"><img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span><img src="/binary-flux/images/microsoft-logo.svg" alt="" width="14" class="ml-15"><span class="m-0 text-white f-10">Microsoft</span><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span><img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="37" class="ml-15"><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span></div>',
                 footerFormat: '</div>',
                 backgroundColor: null,

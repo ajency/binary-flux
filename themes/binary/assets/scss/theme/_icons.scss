@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?2sljro');
-  src:  url('../fonts/icomoon.eot?2sljro#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?2sljro') format('truetype'),
-    url('../fonts/icomoon.woff?2sljro') format('woff'),
-    url('../fonts/icomoon.svg?2sljro#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?qw1uq9');
+  src:  url('../fonts/icomoon.eot?qw1uq9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qw1uq9') format('truetype'),
+    url('../fonts/icomoon.woff?qw1uq9') format('woff'),
+    url('../fonts/icomoon.svg?qw1uq9#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,41 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-ic_av_timer:before {
+  content: "\e911";
+  color: #fff;
+}
+.icon-stop:before {
+  content: "\e912";
+  color: #fff;
+}
+.icon-check_box:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-code-white:before {
+  content: "\e914";
+  color: #fff;
+}
+.icon-ic_notifications:before {
+  content: "\e915";
+  color: #5c5e79;
+}
+.icon-ic_settings:before {
+  content: "\e916";
+  color: #5c5e79;
+}
+.icon-radio-icon:before {
+  content: "\e917";
+  color: #fff;
+}
+.icon-text:before {
+  content: "\e918";
+}
+.icon-toggle:before {
+  content: "\e919";
+  color: #fff;
+}
 .icon-icon-dots-hr:before {
   content: "\e90f";
   color: #3c92ff;
@@ -33,20 +68,17 @@
   content: "\e910";
   color: #5d5e72;
 }
-
+.icon-preview:before {
+  content: "\e90e";
+  color: #8b8da5;
+}
 .icon-arrow-right-light:before {
   content: "\e90d";
   color: #fff;
 }
-
-.icon-preview:before {
-  content: "\e90e";
-  color: #5b5d71;
-}
-
 .icon-add:before {
   content: "\e900";
-  color: inherit;
+  color: #3c92ff;
 }
 .icon-arrow-down-sm:before {
   content: "\e902";
@@ -74,15 +106,15 @@
 }
 .icon-dots:before {
   content: "\e908";
-  color: inherit;
+  color: #659cc8;
 }
 .icon-setting:before {
   content: "\e909";
-  color: #5b5d71;
+  color: #5c5e79;
 }
 .icon-close:before {
   content: "\e90a";
-  color: #659CC8;
+  color: #659cc8;
 }
 .icon-arrow-down-lg:before {
   content: "\e90b";
@@ -90,11 +122,11 @@
 }
 .icon-check-circle:before {
   content: "\e901";
-  color: $grey;
+  color: #fff;
 }
 .icon-arrow-left-light:before {
   content: "\e90c";
-  color: $grey;
+  color: #fff;
 }
 
   .icon {
