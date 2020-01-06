@@ -8252,7 +8252,7 @@ h1, .h1 {
 
 .custom-control-input:checked ~ .custom-control-label::before {
   border: 2px solid #3D90F7;
-  background-color: #27283D; }
+  background-color: #3D90F7; }
 
 .custom-control-label {
   font-size: 12px;
@@ -8287,7 +8287,9 @@ h1, .h1 {
   .form-control.input-search:hover {
     box-shadow: 0px 0px 0px 0.2rem rgba(61, 144, 247, 0.25); }
   .form-control.input-search:focus {
-    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25); }
+    background-color: #27283D;
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.25);
+    border-color: #afb5ba; }
   .form-control.input-search::-webkit-input-placeholder {
     color: #4D6A8C;
     font-weight: 700; }
