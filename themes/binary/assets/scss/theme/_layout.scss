@@ -91,24 +91,22 @@ body{
 .swagger-item{
 	width: 100%;
 	white-space: nowrap;
+
 	&.start-col{
-		span{
+		img{
 			position: relative;
-			padding-left: 0.8rem;
-			&:before{
-			    content: "\e902";
-			    display: block;
-			    color: rgba(101, 156, 200, 0.5);
-			    font-family: 'icomoon';
-			    position: absolute;
-				left: 0;
-				top: 0;
-			    // top: 50%;
-			    transform: rotate(-90deg);
-			    font-size: 10px;
-			}
+			top: -2px;
 		}
 		&-active{
+			.n-image{
+				display: none !important;
+			}
+			.h-image{
+				display: inline-block !important;
+			}
+			.text-white--5{
+				color: #3d90f7;
+			}
 			img{
 				position: relative;
 				top: -2px;
@@ -136,7 +134,7 @@ body{
 	&.stop-col{
 		img{
 			position: relative;
-			top: -2px;
+			top: -1px;
 		}
 	}
 	span{
@@ -325,5 +323,27 @@ body{
 	.sort{
 		position: absolute;
 		right: 4px;
+	}
+}
+
+.hover-row{
+	.swagger-item{
+		.n-image{
+			display: inline-block;
+		}
+		.h-image{
+			display: none;
+		}
+		&:hover{
+			span{
+				color: #fff;
+			}
+			.n-image{
+				display: none;
+			}
+			.h-image{
+				display: inline-block;
+			}
+		}
 	}
 }
