@@ -40,4 +40,15 @@ $(document).ready(function(){
             $(".sidebar ").removeClass("sidebar-scroll");
         }
     });
+    
+    $('#avatar').bind('change', function () {
+        var filename = $("#avatar").val();
+        if (/^\s*$/.test(filename)) {
+          $("#noFile").text("No file chosen..."); 
+        }
+        else {
+          $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+        }
+    });
+
 });

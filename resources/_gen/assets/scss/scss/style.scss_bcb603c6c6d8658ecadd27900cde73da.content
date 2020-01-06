@@ -7631,7 +7631,8 @@ a.text-error:hover, a.text-error:focus {
   .workspace-info ul li {
     padding: 0 5px;
     position: relative;
-    color: #93949E; }
+    color: #93949E;
+    cursor: pointer; }
     .workspace-info ul li:after {
       content: "";
       display: block;
@@ -7689,6 +7690,8 @@ a.text-error:hover, a.text-error:focus {
     transform: translateY(-50%); }
     .tab-close i {
       font-size: 9px; }
+      .tab-close i::before {
+        color: #fff; }
   .tab-list {
     display: flex; }
     .tab-list-action {
@@ -8399,13 +8402,29 @@ input:checked + .slider:before {
 .noresize {
   resize: none; }
 
+/*** File input styling  ***/
 .file-input::-webkit-file-upload-button {
   visibility: hidden; }
 
 .file-input {
   padding-top: 5px;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  position: relative;
+  z-index: 2;
+  background-color: transparent !important;
+  font-size: 0;
+  cursor: pointer; }
 
+#noFile {
+  position: absolute;
+  left: 12px;
+  display: inline-block;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d8d8dc;
+  z-index: 1; }
+
+/*** File input styling ends ***/
 .btn {
   padding: 2px 40px;
   min-width: 116px; }
@@ -8430,8 +8449,10 @@ input:checked + .slider:before {
           font-family: icomoon;
           vertical-align: middle;
           font-size: 10px; }
+      .btn-primary .btn:hover {
+        color: #fff; }
     .btn-primary:hover {
-      color: #27283D;
+      color: #fff;
       background-color: #187bf5;
       border-color: #0c74f5; }
   .btn-outline-dark {
@@ -8534,6 +8555,8 @@ input:checked + .slider:before {
         color: #3C92FF; }
   .btn.button-border {
     border-color: #347cd6; }
+  .btn-outline-primary:hover .icon-add::before {
+    color: #fff; }
 
 a.btn-grey {
   color: #93949E; }

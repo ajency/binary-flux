@@ -52,6 +52,7 @@
                 padding: 0 5px;
                 position: relative;
                 color: $grey;
+                cursor: pointer;
                 &:after {
                     content: "";
                     display: block;
@@ -124,6 +125,9 @@
         transform: translateY(-50%);
         i {
             font-size: 9px;
+            &::before{
+                color: #fff;
+            }
         }
     }
     &-list {

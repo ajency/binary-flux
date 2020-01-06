@@ -26,9 +26,12 @@
 					font-size: 10px;
 				}
 			}
+			&:hover{
+				color: #fff;
+			}
 		}
 		&:hover{
-			color: #27283D;
+			color: #fff;
 			background-color: #187bf5;
 			border-color: #0c74f5;
 		}
@@ -174,6 +177,15 @@
 	}
 	&.button-border{
 		border-color: #347cd6;
+	}
+	&-outline-primary{
+		&:hover{
+			.icon-add{
+				&::before{
+					color: #fff;
+				}
+			}
+		}
 	}
 }
 a.btn-grey {
