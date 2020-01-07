@@ -8253,9 +8253,12 @@ h1, .h1 {
   transform: scale(0.5);
   background-image: none; }
 
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #3D90F7; }
+
 .custom-control-input:checked ~ .custom-control-label::before {
   border: 2px solid #3D90F7;
-  background-color: #3D90F7; }
+  background-color: #27283D; }
 
 .custom-control-label {
   font-size: 12px;

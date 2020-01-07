@@ -10,9 +10,12 @@
 	background-image: none;
 }
 
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before{
+	background-color: $primary;
+}
 .custom-control-input:checked ~ .custom-control-label::before{
 	border: 2px solid $primary;
-	background-color: $primary;
+	background-color: $body-bg;
 }
 
 .custom-control-label{
