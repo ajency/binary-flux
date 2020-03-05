@@ -8099,6 +8099,105 @@ body {
 .hover-row .swagger-item:hover .h-image {
   display: inline-block; }
 
+.landing-main {
+  min-height: calc(100vh - 40px);
+  flex-wrap: wrap; }
+
+.landing-col-40 {
+  background-color: #08182E;
+  padding: 30px;
+  padding-top: 125px;
+  width: 100%; }
+  @media (min-width: 1200px) {
+    .landing-col-40 {
+      padding: 100px; } }
+  @media (min-width: 992px) {
+    .landing-col-40 {
+      width: 40%; } }
+  @media (max-width: 991px) {
+    .landing-col-40 {
+      padding-top: 150px; } }
+
+.landing-col-60 {
+  background-color: #3F6A87;
+  background: linear-gradient(220.59deg, #455B99 0%, #5C90A7 35.29%, #102A52 100%);
+  box-shadow: -10px 2px 50px 0 rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  width: 100%;
+  padding-bottom: 125px; }
+  @media (min-width: 1200px) {
+    .landing-col-60 {
+      padding: 100px 60px 100px 50px;
+      padding-top: 125px; } }
+  @media (min-width: 992px) {
+    .landing-col-60 {
+      width: 60%;
+      padding-top: 125px; } }
+
+.slick-slider .slick-list .slick-track .slide-item img {
+  width: 100%;
+  height: auto; }
+
+.slick-slider .slick-arrow {
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; }
+
+.slick-slider .slick-prev {
+  background: url("../images/slide_left.svg") no-repeat;
+  left: -42px; }
+  @media (max-width: 1199px) {
+    .slick-slider .slick-prev {
+      left: -30px; } }
+
+.slick-slider .slick-next {
+  background: url("../images/slide_right.svg") no-repeat;
+  right: -35px; }
+  @media (max-width: 1199px) {
+    .slick-slider .slick-next {
+      right: -30px; } }
+
+.slick-slider .slide-item {
+  display: none; }
+  .slick-slider .slide-item img, .slick-slider .slide-item > div {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease;
+    -webkit-transition: opacity 1s ease; }
+  .slick-slider .slide-item:first-child {
+    display: block; }
+
+.slick-slider.slick-initialized .slide-item {
+  display: block; }
+  .slick-slider.slick-initialized .slide-item img, .slick-slider.slick-initialized .slide-item > div {
+    opacity: 1;
+    visibility: visible; }
+
+@media (max-width: 480px) {
+  .site-logo .first-image {
+    width: 40px; } }
+
+@media (max-width: 480px) {
+  .site-logo .second-image {
+    width: 190px; } }
+
+@media (max-width: 991px) {
+  .welcom-text h1 {
+    font-size: 30px;
+    line-height: 35px; } }
+
+@media (max-width: 991px) {
+  .welcom-text .f-18 {
+    font-size: 14px;
+    line-height: 22px; } }
+
 ul, ol {
   padding-left: 10px; }
 
@@ -8560,6 +8659,17 @@ input:checked + .slider:before {
     border-color: #347cd6; }
   .btn-outline-primary:hover .icon-add::before {
     color: #fff; }
+  .btn-demo {
+    background-color: #15BFFF;
+    line-height: 41px;
+    color: #fff;
+    font-size: 22px;
+    border-radius: 4px;
+    box-shadow: 0 2px 20px 0 #0A1931; }
+    @media (max-width: 991px) {
+      .btn-demo {
+        font-size: 16px;
+        line-height: 31px; } }
 
 a.btn-grey {
   color: #93949E; }
@@ -8849,6 +8959,10 @@ hr {
   font-size: 18px;
   line-height: 20px; }
 
+.f-40 {
+  font-size: 40px;
+  line-height: 48px; }
+
 .fw-300 {
   font-weight: 300; }
 
@@ -8867,6 +8981,12 @@ hr {
     .p-t-140 {
       padding-top: 40px; } }
 
+.p-b-140 {
+  padding-bottom: 140px; }
+  @media (max-width: 767px) {
+    .p-b-140 {
+      padding-bottom: 40px; } }
+
 .p-15 {
   padding: 15px; }
 
@@ -8880,6 +9000,12 @@ hr {
 
 .max-145 {
   max-width: 145px; }
+
+.max-470 {
+  max-width: 470px; }
+
+.max-275 {
+  max-width: 275px; }
 
 .min-25 {
   min-width: 25px; }
@@ -8948,5 +9074,25 @@ hr {
   transform: translateX(-50%);
   bottom: -8px;
   z-index: 9999; }
+
+.line-height-30 {
+  line-height: 30px; }
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 125px;
+  max-width: 900px;
+  left: 50%;
+  transform: translateX(-50%); }
+
+#particles-js-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 125px; }
+
+#content {
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

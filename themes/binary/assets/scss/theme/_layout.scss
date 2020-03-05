@@ -347,3 +347,131 @@ body{
 		}
 	}
 }
+
+.landing{
+	&-main{
+		min-height: calc(100vh - 40px);
+		flex-wrap: wrap;
+	}
+	&-col{
+		&-40{
+			background-color: #08182E;
+			padding: 30px;
+			padding-top: 125px;
+			width: 100%;
+			@media (min-width: 1200px) {
+				padding: 100px;				
+			}
+			@media (min-width: 992px) {
+				width: 40%;				
+			}
+			@media (max-width: 991px) {
+				padding-top: 150px;			
+			}
+		}
+		&-60{
+			background-color: #3F6A87;
+			background: linear-gradient(220.59deg, #455B99 0%, #5C90A7 35.29%, #102A52 100%);
+			box-shadow: -10px 2px 50px 0 rgba(0,0,0,0.5);
+			padding: 30px;
+			width: 100%;
+			padding-bottom: 125px;
+			@media (min-width: 1200px) {
+				padding: 100px 60px 100px 50px;
+				padding-top: 125px;
+			}
+			@media (min-width: 992px) {
+				width: 60%;
+				padding-top: 125px;
+			}
+		}
+	}
+}
+
+.slick-slider{
+	.slick-list{
+		.slick-track{
+			.slide-item{
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+	.slick-arrow{
+		width: 30px;
+		height: 30px;
+		background-repeat: no-repeat !important;
+    	background-position: center !important;
+		border: 0;
+		outline: 0;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+	}
+	.slick-prev{
+		background: url('../images/slide_left.svg') no-repeat;
+		left: -42px;
+		@media (max-width: 1199px) {
+			left: -30px;
+		}
+	}
+	.slick-next{
+		background: url('../images/slide_right.svg') no-repeat;
+		right: -35px;
+		@media (max-width: 1199px) {
+			right: -30px;
+		}
+	}
+	.slide-item {
+		display: none;
+		img, > div {
+			opacity: 0;
+			visibility: hidden;
+			transition: opacity 1s ease;
+			-webkit-transition: opacity 1s ease;
+		}
+		&:first-child{
+		  display: block;
+		}
+	}
+	&.slick-initialized{
+		.slide-item{
+			display: block;
+			img, > div {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.site-logo{
+	.first-image{
+		@media (max-width: 480px) {
+			width: 40px;
+		}
+	}
+	.second-image{
+		@media (max-width: 480px) {
+			width: 190px;
+		}
+	}
+}
+
+.welcom-text{
+	h1{
+		@media (max-width: 991px) {
+			font-size: 30px;
+			line-height: 35px;
+		}
+	}
+	.f-18 {
+		@media (max-width: 991px) {
+			font-size: 14px;
+			line-height: 22px;
+		}
+	}
+}
