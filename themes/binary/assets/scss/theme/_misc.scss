@@ -93,6 +93,9 @@ hr{
 	&-orange{
 		color: #FF594A;
 	}
+	&-blue{
+		color: #CCDEFE;
+	}
 }
 
 .fw-cont-mobile {
@@ -214,7 +217,9 @@ hr{
 		max-width: 470px;
 	}
 	&-275{
-		max-width: 275px;
+		@media(min-width: 768px){
+			max-width: 275px;
+		}
 	}
 }
 

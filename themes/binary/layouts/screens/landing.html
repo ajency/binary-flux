@@ -9,12 +9,12 @@
             <img src="{{"images/text-logo.svg" | relURL }}" width="255" alt="logo" class="second-image">                
         </div>
         <div class="welcom-text">
-            <h1 class="font-weight-light f-40 mb-2 max-275">Your data, like you never knew it.</h1>
-            <div class="f-18 text-white--5 font-weight-light line-height-30 mb-2 mb-lg-5">
+            <h1 class="font-weight-light f-40 mb-2 max-275 text-white font-weight-lighter">Your data, <br>like you never knew it.</h1>
+            <div class="f-18 text-white--5 font-weight-light line-height-30 mb-2 mb-lg-5 max-275 text-blue">
                 Binary Flux enables IT Operations and Cyber Security Professionals to store, analyse and investigate their ecosystem data powered by deep learning & artificial neural networking.
             </div>
-            <h5 class="f-18 font-weight-bold mb-3 mb-lg-2">Dive deep, to know more.</h5>
-            <button class="btn btn-demo">Request a Demo</button>
+            <h5 class="f-18 font-weight-bold mb-3 mb-lg-2 text-blue">Dive deep, to know more.</h5>
+            <button class="btn btn-demo" data-toggle="modal" data-target="#requestDemo">Request a Demo</button>
         </div>
     </div>
     <div class="landing-col landing-col-60">
@@ -56,6 +56,49 @@
             </div>
         </div>
        
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="requestDemo" tabindex="-1" role="dialog" aria-labelledby="requestDemo" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header rounded-0">
+                <h4 class="modal-title">Request a Demo</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="{{"images/ic_close.svg" | relURL }}" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <div class="col-md-12 p-0">
+                        <div class="modal-form-field mb-4">
+                            <label>Name</label>
+                            <input class="form-control form-control-dark w-360" type="text" placeholder="" >
+                        </div>
+                        <div class="modal-form-field mb-4">
+                            <label>Email ID</label>
+                            <input class="form-control form-control-dark w-360" type="text" placeholder="" >
+                        </div>
+                        <div class="modal-form-field mb-4">
+                            <label>Mobile No.</label>
+                            <input class="form-control form-control-dark w-360" type="text" placeholder="" >
+                        </div>
+                        <div class="modal-form-field mb-4">
+                            <label>Company name</label>
+                            <input class="form-control form-control-dark w-360" type="text" placeholder="" >
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-1 mb-4">
+                    <button class="btn btn-lg btn-demo demo-submit" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 

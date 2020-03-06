@@ -81,6 +81,15 @@
 			width: 100%;
 		}
 	}
+	&.w-360{
+		width: 360px;
+		padding-left: 15px;
+		padding-right: 15px;
+		height: 42px;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
 	&:disabled{
 		background-color: transparent;
 	}
@@ -220,3 +229,19 @@ input:checked + .slider:before {
 }
 
 /*** File input styling ends ***/
+
+.modal-form-field{
+	position: relative;
+	max-width: 360px;
+	margin: auto;
+	label{
+		position: absolute;
+		top: -11px;
+		left: 10px;
+		background-color: $body-bg;
+		padding: 0 5px;
+		margin: 0;
+	    text-transform: uppercase;
+	    font-size: 12px;
+	}
+}
