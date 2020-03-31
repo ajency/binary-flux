@@ -8341,7 +8341,7 @@ header {
   padding: 20px 30px;
   font-size: 12px;
   font-weight: 300;
-  background: linear-gradient(224.34deg, #455B99 0%, #5C90A7 11.05%, #102A52 100%);
+  background: linear-gradient(250deg, #5C90A7 0%, #102A52 40%, #102A52 100%);
   box-shadow: -10px 2px 50px 0 rgba(0, 0, 0, 0.5); }
   .footer a {
     color: #CCDEFE; }
