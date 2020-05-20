@@ -8293,9 +8293,13 @@ body {
     font-size: 40px;
     padding-bottom: 20px; }
   .login-main .form-control {
-    border: 1px solid #1391FF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     background: transparent;
     border-radius: 0; }
+    .login-main .form-control:active, .login-main .form-control:focus {
+      border-color: #1391FF;
+      background-color: transparent;
+      box-shadow: none; }
   .login-main .form-group label {
     color: rgba(255, 255, 255, 0.7);
     font-weight: bold; }

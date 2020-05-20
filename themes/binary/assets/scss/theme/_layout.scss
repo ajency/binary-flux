@@ -584,9 +584,14 @@ body{
 				padding-bottom: 20px;
 			}
 			&-control{
-			    border: 1px solid #1391FF;
+			    border: 1px solid rgba(255, 255, 255, 0.3);
 			    background: transparent;
 			    border-radius: 0;
+			    &:active, &:focus{
+			    	border-color: #1391FF;
+			    	background-color: transparent;
+			    	box-shadow: none;
+			    }
 			}
 			&-group{
 				label{
