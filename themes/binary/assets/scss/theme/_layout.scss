@@ -533,10 +533,11 @@ body{
 			content: '';
 			position: absolute;
 			top: -70px;
-			background: url('../images/patterntop.png') no-repeat;
-			background-position: top center;
-		    width: 100%;
-		    height: 200px;
+			left: 30px;
+			background: url(../images/patterntop.png) no-repeat;
+			background-position: top left;
+			width: 100%;
+			height: 200px;
 		    @media(max-width: 767px){
 		    	background-image: url('../images/patterntopmobile.png');
 		    	background-position: top right;
