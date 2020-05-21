@@ -8253,7 +8253,8 @@ body {
     background: url(../images/patterntop.png) no-repeat;
     background-position: top left;
     width: 100%;
-    height: 200px; }
+    height: 200px;
+    opacity: 0.6; }
     @media (max-width: 767px) {
       .login-main:before {
         background-image: url("../images/patterntopmobile.png");
@@ -8267,7 +8268,8 @@ body {
     background: url("../images/patternbottom.png") no-repeat;
     background-position: bottom center;
     width: 100%;
-    height: 200px; }
+    height: 200px;
+    opacity: 0.4; }
     @media (max-width: 767px) {
       .login-main:after {
         background-image: url("../images/patternbottommobile.png");
@@ -8291,7 +8293,8 @@ body {
       .login-main .form-login {
         padding: 30px; } }
   .login-main .form-layout {
-    padding-top: 80px; }
+    padding-top: 80px;
+    z-index: 1; }
     @media (max-width: 767px) {
       .login-main .form-layout {
         padding-top: 20px; } }
@@ -8313,6 +8316,17 @@ body {
   .login-main .form-group label {
     color: rgba(255, 255, 255, 0.7);
     font-weight: bold; }
+
+.login-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 80px;
+  padding-right: 80px; }
+  @media (max-width: 1399px) {
+    .login-container {
+      max-width: 990px;
+      padding-right: 30px;
+      padding-right: 30px; } }
 
 ul, ol {
   padding-left: 10px; }
