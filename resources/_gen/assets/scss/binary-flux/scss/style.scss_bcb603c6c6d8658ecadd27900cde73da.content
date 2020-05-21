@@ -8287,12 +8287,21 @@ body {
       background-color: #1391FF;
       height: 40px;
       margin-top: 40px; }
+    @media (max-width: 767px) {
+      .login-main .form-login {
+        padding: 30px; } }
   .login-main .form-layout {
     padding-top: 80px; }
+    @media (max-width: 767px) {
+      .login-main .form-layout {
+        padding-top: 20px; } }
   .login-main .form-header {
     color: #1391FF;
     font-size: 40px;
     padding-bottom: 20px; }
+    @media (max-width: 767px) {
+      .login-main .form-header {
+        font-size: 30px; } }
   .login-main .form-control {
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: transparent;
