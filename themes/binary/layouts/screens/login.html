@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+
+<div class="login-main d-flex">
+    <div class="container fw-cont-mobile">
+        <div class="max-935">
+            <div class="row">
+                <div class="col-md-6 p-t-130 pb-lg-4 pr-lg-6 pr-md-2 mh-md-100">
+                    <div class="login-col">
+                        <div class="site-logo d-flex align-item-center mb-3 mb-lg-5">
+                            <img src="{{"images/logo_binary.svg" | relURL }}" width="48" alt="logo" class="mr-2 first-image">
+                            <img src="{{"images/text-logo.svg" | relURL }}" width="255" alt="logo" class="second-image">                
+                        </div>
+                        <div class="welcom-text">
+                            <h1 class="font-weight-light f-40 mb-2 max-300 text-white font-weight-lighter">Your data, like you <br>never knew it.</h1>
+                            <div class="f-18 text-white--5 font-weight-light line-height-30 mb-2 mb-lg-5 max-300 text-blue">
+                                Binary Flux enables IT Operations and Cyber Security Professionals to store, analyse and investigate their ecosystem data powered by deep learning & artificial neural networking.
+                            </div>
+                            <h5 class="f-18 font-weight-bold mb-3 mb-lg-2 text-blue">Dive deep, to know more.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pb-lg-4 pl-lg-2 pl-md-2 pb-3 mh-md-100 form-layout">
+                    <form class="form-login">
+                        <h2 class="form-header font-weight-light">Sign In</h2>
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" aria-describedby="Username" placeholder="Enter Your Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control mb-1" id="password" placeholder="Enter Your Password">
+                            <span class="text-white--5 text-center">Forgot Password</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block submit font-weight-bold">Sign In</button>
+                        <p class="text-white--5 pt-1 text-center"> Don't have an account? <a href="javascript(void)">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{ end }}

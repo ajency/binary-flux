@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Screens on Binary Flux</title>
@@ -6,10 +6,19 @@
     <description>Recent content in Screens on Binary Flux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Dec 2019 13:46:25 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 13:46:25 +0530</lastBuildDate>
     
 	<atom:link href="https://ajency.github.io/binary-flux/screens/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Login</title>
+      <link>https://ajency.github.io/binary-flux/screens/login/</link>
+      <pubDate>Wed, 20 May 2020 13:46:25 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/login/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Add data source</title>
