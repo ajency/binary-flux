@@ -8284,7 +8284,7 @@ body {
       border-radius: 0;
       background-color: #1391FF;
       color: #0A0C1B;
-      font-size: 15px;
+      font-size: 18px;
       border-radius: 4px;
       background-color: #1391FF;
       height: 40px;
@@ -8316,17 +8316,25 @@ body {
   .login-main .form-group label {
     color: rgba(255, 255, 255, 0.7);
     font-weight: bold; }
+  .login-main .form-group .icon .preview {
+    position: absolute;
+    right: 10px;
+    top: 12px; }
 
 .login-container {
-  max-width: 1440px;
-  margin: 0 auto;
+  max-width: 1160px;
+  margin: auto;
   padding-left: 80px;
   padding-right: 80px; }
   @media (max-width: 1399px) {
     .login-container {
       max-width: 990px;
-      padding-right: 30px;
-      padding-right: 30px; } }
+      padding-left: 45px;
+      padding-right: 45px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .login-col .site-logo img.second-image {
+    width: 215px; } }
 
 .header-section {
   background-color: #191A35;
@@ -8337,6 +8345,12 @@ body {
     .header-section .navbar-right .nav-tabs:after {
       content: '';
       border-bottom: 0; }
+    @media (max-width: 991px) {
+      .header-section .navbar-right {
+        left: 30%; } }
+    @media (max-width: 767px) {
+      .header-section .navbar-right {
+        display: none; } }
 
 .settings {
   background-color: #0F1226;
@@ -8345,45 +8359,45 @@ body {
     font-size: 20px;
     line-height: 27px; }
 
-.form-data {
-  background-color: #191a35;
-  padding: 20px;
-  border-radius: 6px;
-  margin: 0 30px;
-  width: 100%; }
-  .form-data .custom-control-label {
-    font-size: 14px;
-    line-height: 18px;
-    color: #93949E;
-    font-weight: bold;
-    padding-top: 4px; }
-    .form-data .custom-control-label:before {
-      border-radius: 3px;
+.setting-wrapper {
+  background-color: #0A0C1B; }
+  .setting-wrapper .form-data {
+    background-color: #191a35;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 0 30px;
+    width: 100%; }
+    .setting-wrapper .form-data .custom-control-label {
+      font-size: 14px;
+      line-height: 18px;
+      color: #93949E;
+      font-weight: bold;
+      padding-top: 4px; }
+      .setting-wrapper .form-data .custom-control-label:before {
+        border-radius: 3px;
+        border-width: 1px;
+        border-color: #93949E;
+        background-color: transparent; }
+    .setting-wrapper .form-data .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: transparent;
+      border: 1px solid #93949E; }
+    .setting-wrapper .form-data .options {
+      margin-left: 40px; }
+  .setting-wrapper .form-group {
+    margin: 2rem 0; }
+    .setting-wrapper .form-group .btn {
       border-width: 1px;
-      border-color: #93949E;
-      background-color: transparent; }
-  .form-data .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-    background-color: transparent;
-    border: 1px solid #93949E; }
-  .form-data .options {
-    margin-left: 40px; }
-
-.form-group {
-  margin: 2rem 0; }
-  .form-group .btn {
-    border-width: 1px;
-    padding: 6px 50px;
-    font-size: 12px;
-    display: flex;
-    align-items: center; }
-    .form-group .btn:hover {
-      background: transparent; }
-
-.form-control {
-  border: 1px solid #5D5E72;
-  border-radius: 2px;
-  background: transparent;
-  height: 36px; }
+      padding: 6px 50px;
+      font-size: 12px;
+      display: flex;
+      align-items: center; }
+      .setting-wrapper .form-group .btn:hover {
+        background: transparent; }
+  .setting-wrapper .form-control {
+    border: 1px solid #5D5E72;
+    border-radius: 2px;
+    background: transparent;
+    height: 36px; }
 
 ul, ol {
   padding-left: 10px; }
