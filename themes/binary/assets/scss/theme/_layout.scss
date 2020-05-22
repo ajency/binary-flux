@@ -647,7 +647,7 @@ body{
 	position: relative;
 	.navbar-right{
 		position: absolute;
-		left: 20%;
+		left: 25%;
 		.nav-tabs{
 			&:after{
 				content:'';
@@ -661,6 +661,13 @@ body{
 			display: none;
 		}
 	}
+	.user{
+		span{
+			img.notification{
+				margin-left: 15px;
+			}
+		}
+	}
 }
 .settings{
 	background-color: #0F1226;
@@ -668,6 +675,10 @@ body{
 	span{
 		font-size: 20px;
 		line-height: 27px;
+		font-weight: 600;
+		img.setting-icon{
+		    margin-right: -15px;
+		}
 	}
 }
 .setting-wrapper{
@@ -685,6 +696,7 @@ body{
 		    	color: #93949E;
 		    	font-weight: bold;
 	    	    padding-top: 4px;
+    	        padding-left: 10px;
 		    	&:before{
 				    border-radius: 3px;
 				    border-width: 1px;
@@ -712,12 +724,26 @@ body{
 	    			background: transparent;
 	    		}
 			}
+			.margin-bottom{
+				@media (max-width: 767px){
+					margin-bottom: 20px;
+				}
+			}
 		}
 		&-control{
 			border: 1px solid #5D5E72;
 			border-radius: 2px;
 			background: transparent;
 			height: 36px;
+			&:focus{
+				background: transparent;
+				box-shadow: none;
+			}
+		}
+	}
+	.action-block{
+		@media (max-width: 767px){
+			justify-content: center;
 		}
 	}
 }

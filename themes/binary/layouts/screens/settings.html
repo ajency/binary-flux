@@ -15,17 +15,17 @@
 					<a class="nav-link" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Organisation</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Setting</a>
+					<a class="nav-link active" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Settings</a>
 				</li>
 			</ul>
 		</div>
 		<div class="user">
-			<span class="text-white font-weight-bold">John Smith<img src="{{"images/ic_notifications_blue.svg" | relURL }}" width="20" height="20" alt="notification" class="ml-2"></span>
+			<span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
 		</div>
 	</div>
 </header>
 <div class="settings">
-	<span class="text-white font-weight-bold"><img src="{{"images/setting.svg" | relURL }}" alt="logo">Settings</span>
+	<span class="text-white"><img src="{{"images/setting.svg" | relURL }}" alt="setting" class="setting-icon">Settings</span>
 </div>
 <div class="page-wrapper setting-wrapper">
 	<div class="container-fluid">
@@ -49,7 +49,7 @@
 								<form>
 									<div class="form-group row">
 										<label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm pt-0">Name</label>
-										<div class="col-sm-5">
+										<div class="col-sm-5 margin-bottom">
 											<input type="text" class="form-control form-control-sm" id="firstname" placeholder="Fisrt Name">
 										</div>
 										<div class="col-sm-5">
@@ -68,9 +68,9 @@
 											<input type="text" class="form-control form-control-sm" id="role" placeholder="Enter Role">
 										</div>
 									</div>
-									<div class="form-group row">
+									<div class="form-group row action-block">
 										<div class="col-sm-2"></div>
-										<button type="button" class="btn btn-outline-primary ml-1 mr-2"><img src="{{"images/change-password.svg" | relURL }}" width="13" height="15" alt="change-password" class="mr-1">Change Password</button>
+										<button type="button" class="btn btn-outline-primary ml-md-1 mr-md-2 margin-bottom"><img src="{{"images/change-password.svg" | relURL }}" width="13" height="15" alt="change-password" class="mr-1">Change Password</button>
 										<button type="button" class="btn btn-outline-primary"><img src="{{"images/deactivate.svg" | relURL }}" width="13" height="15" alt="Deactivate Account" class="mr-1">Deactivate Account</button>
 									</div>
 								</form>
@@ -93,18 +93,18 @@
 				        <input type="checkbox" class="custom-control-input" id="email-notify" checked>
 				        <label class="custom-control-label" for="email-notify">Email Notifications</label>
 			      	</div>
-			      	<div class="d-flex align-items-center options mb-3">
+			      	<div class="d-md-flex align-items-center options mb-3">
 					 	<div class="custom-control custom-checkbox mr-sm-2">
 					        <input type="checkbox" class="custom-control-input" id="escallation">
-					        <label class="custom-control-label" for="escallation">Escallations</label>
+					        <label class="custom-control-label font-weight-light" for="escallation">Escallations</label>
 				      	</div>				 	
 				      	<div class="custom-control custom-checkbox mr-sm-2">
 					        <input type="checkbox" class="custom-control-input" id="user-update">
-					        <label class="custom-control-label" for="user-update">User Updates</label>
+					        <label class="custom-control-label font-weight-light" for="user-update">User Updates</label>
 				      	</div>				 	
 				      	<div class="custom-control custom-checkbox mr-sm-2">
 					        <input type="checkbox" class="custom-control-input" id="new-dashboard">
-					        <label class="custom-control-label" for="new-dashboard">New Dashboard</label>
+					        <label class="custom-control-label font-weight-light" for="new-dashboard">New Dashboard</label>
 				      	</div>
 			      	</div>
 					<div class="custom-control custom-checkbox mr-sm-2 mb-3">
