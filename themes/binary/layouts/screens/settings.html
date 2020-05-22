@@ -1,0 +1,121 @@
+{{ define "main" }}
+<header class="header-section">
+	<div class="d-flex justify-content-between align-items-center">
+		<div class="logo-wrap">			
+			<a href="#">
+				<img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+			</a>
+		</div>
+		<div class="navbar-right dropdown">
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Dashboard</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Organisation</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link active" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Setting</a>
+				</li>
+			</ul>
+		</div>
+		<div class="user">
+			<span class="text-white font-weight-bold">John Smith<img src="{{"images/ic_notifications_blue.svg" | relURL }}" width="20" height="20" alt="notification" class="ml-2"></span>
+		</div>
+	</div>
+</header>
+<div class="settings">
+	<span class="text-white font-weight-bold"><img src="{{"images/setting.svg" | relURL }}" alt="logo">Settings</span>
+</div>
+<div class="page-wrapper">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="form-data">
+			
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Profile</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Notifications</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">White Labelling</a>
+						</li>
+					</ul>
+				<div class="col-12 col-lg-8">
+					<div class="tab-content pt-1" id="myTabContent">
+						<div class="tab-pane fade show active" id="jd_edwards" role="tabpanel" aria-labelledby="jd_edwards-tab">
+							<div>
+								<form>
+									<div class="form-group row">
+										<label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm pt-0">Name</label>
+										<div class="col-sm-5">
+											<input type="text" class="form-control form-control-sm" id="firstname" placeholder="Fisrt Name">
+										</div>
+										<div class="col-sm-5">
+											<input type="text" class="form-control form-control-sm" id="lastname" placeholder="Last Name">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="colFormLabel" class="col-sm-2 col-form-label col-form-label-sm pt-0">Organisation</label>
+										<div class="col-sm-5">
+											<input type="text" class="form-control form-control-sm" id="organisation" placeholder="Enter Organisation">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label for="colFormLabelLg"class="col-sm-2 col-form-label col-form-label-sm pt-0">Role</label>
+										<div class="col-sm-5">
+											<input type="text" class="form-control form-control-sm" id="role" placeholder="Enter Role">
+										</div>
+									</div>
+									<div class="form-group row">
+										<div class="col-sm-2"></div>
+										<button type="button" class="btn btn-outline-primary ml-1 mr-2"><img src="{{"images/change-password.svg" | relURL }}" width="13" height="15" alt="change-password" class="mr-1">Change Password</button>
+										<button type="button" class="btn btn-outline-primary"><img src="{{"images/deactivate.svg" | relURL }}" width="13" height="15" alt="Deactivate Account" class="mr-1">Deactivate Account</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+					<hr class="grey">
+				<div class="col-12 col-lg-8">
+				 	<div class="custom-control custom-checkbox mr-sm-2 mt-3 mb-3">
+        				<input type="checkbox" class="custom-control-input" id="email-notification" checked>
+        				<label class="custom-control-label mb-1" for="email-notification">Email Notifications</label>
+						<div class="col-sm-7 d-flex">
+							<input type="email" class="form-control form-control-sm mr-2" id="email" placeholder="">		
+							<img src="{{"images/add.svg" | relURL }}" alt="logo" class="add
+							">
+						</div>
+					</div>
+				 	<div class="custom-control custom-checkbox mr-sm-2 mb-1">
+				        <input type="checkbox" class="custom-control-input" id="email-notify" checked>
+				        <label class="custom-control-label" for="email-notify">Email Notifications</label>
+			      	</div>
+			      	<div class="d-flex align-items-center options mb-3">
+					 	<div class="custom-control custom-checkbox mr-sm-2">
+					        <input type="checkbox" class="custom-control-input" id="escallation">
+					        <label class="custom-control-label" for="escallation">Escallations</label>
+				      	</div>				 	
+				      	<div class="custom-control custom-checkbox mr-sm-2">
+					        <input type="checkbox" class="custom-control-input" id="user-update">
+					        <label class="custom-control-label" for="user-update">User Updates</label>
+				      	</div>				 	
+				      	<div class="custom-control custom-checkbox mr-sm-2">
+					        <input type="checkbox" class="custom-control-input" id="new-dashboard">
+					        <label class="custom-control-label" for="new-dashboard">New Dashboard</label>
+				      	</div>
+			      	</div>
+					<div class="custom-control custom-checkbox mr-sm-2 mb-3">
+						<input type="checkbox" class="custom-control-input" id="dnd">
+						<label class="custom-control-label" for="dnd">Do Not Disturb</label>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{{ end }}
