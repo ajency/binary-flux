@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.55d71766f2027a1893bd93c818cdbda468f39f423ab3a99ae42ece90971d51c8.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.384758be18cd5578f0361b57bd450f6f2fe6ac4860235f6b9cdf51991f98cf75.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -32,34 +32,33 @@
 					<a class="nav-link" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Organisation</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Setting</a>
+					<a class="nav-link active" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Settings</a>
 				</li>
 			</ul>
 		</div>
 		<div class="user">
-			<span class="text-white font-weight-bold">John Smith<img src="/binary-flux/images/ic_notifications_blue.svg" width="20" height="20" alt="notification" class="ml-2"></span>
+			<span class="text-white font-weight-bold">John Smith<img src="/binary-flux/images/notifications-outline.svg" width="20" height="20" alt="notification" class="notification"></span>
 		</div>
 	</div>
 </header>
 <div class="settings">
-	<span class="text-white font-weight-bold"><img src="/binary-flux/images/setting.svg" alt="logo">Settings</span>
+	<span class="text-white"><img src="/binary-flux/images/setting.svg" alt="setting" class="setting-icon">Settings</span>
 </div>
-<div class="page-wrapper">
+<div class="page-wrapper setting-wrapper">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="form-data">
-			
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Profile</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Notifications</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">White Labelling</a>
-						</li>
-					</ul>
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item">
+						<a class="nav-link active" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Notifications</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">White Labelling</a>
+					</li>
+				</ul>
 				<div class="col-12 col-lg-8">
 					<div class="tab-content pt-1" id="myTabContent">
 						<div class="tab-pane fade show active" id="jd_edwards" role="tabpanel" aria-labelledby="jd_edwards-tab">
@@ -67,7 +66,7 @@
 								<form>
 									<div class="form-group row">
 										<label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm pt-0">Name</label>
-										<div class="col-sm-5">
+										<div class="col-sm-5 margin-bottom">
 											<input type="text" class="form-control form-control-sm" id="firstname" placeholder="Fisrt Name">
 										</div>
 										<div class="col-sm-5">
@@ -86,9 +85,9 @@
 											<input type="text" class="form-control form-control-sm" id="role" placeholder="Enter Role">
 										</div>
 									</div>
-									<div class="form-group row">
+									<div class="form-group row action-block">
 										<div class="col-sm-2"></div>
-										<button type="button" class="btn btn-outline-primary ml-1 mr-2"><img src="/binary-flux/images/change-password.svg" width="13" height="15" alt="change-password" class="mr-1">Change Password</button>
+										<button type="button" class="btn btn-outline-primary ml-md-1 mr-md-2 margin-bottom"><img src="/binary-flux/images/change-password.svg" width="13" height="15" alt="change-password" class="mr-1">Change Password</button>
 										<button type="button" class="btn btn-outline-primary"><img src="/binary-flux/images/deactivate.svg" width="13" height="15" alt="Deactivate Account" class="mr-1">Deactivate Account</button>
 									</div>
 								</form>
@@ -111,18 +110,18 @@
 				        <input type="checkbox" class="custom-control-input" id="email-notify" checked>
 				        <label class="custom-control-label" for="email-notify">Email Notifications</label>
 			      	</div>
-			      	<div class="d-flex align-items-center options mb-3">
+			      	<div class="d-md-flex align-items-center options mb-3">
 					 	<div class="custom-control custom-checkbox mr-sm-2">
 					        <input type="checkbox" class="custom-control-input" id="escallation">
-					        <label class="custom-control-label" for="escallation">Escallations</label>
+					        <label class="custom-control-label font-weight-light" for="escallation">Escallations</label>
 				      	</div>				 	
 				      	<div class="custom-control custom-checkbox mr-sm-2">
 					        <input type="checkbox" class="custom-control-input" id="user-update">
-					        <label class="custom-control-label" for="user-update">User Updates</label>
+					        <label class="custom-control-label font-weight-light" for="user-update">User Updates</label>
 				      	</div>				 	
 				      	<div class="custom-control custom-checkbox mr-sm-2">
 					        <input type="checkbox" class="custom-control-input" id="new-dashboard">
-					        <label class="custom-control-label" for="new-dashboard">New Dashboard</label>
+					        <label class="custom-control-label font-weight-light" for="new-dashboard">New Dashboard</label>
 				      	</div>
 			      	</div>
 					<div class="custom-control custom-checkbox mr-sm-2 mb-3">
