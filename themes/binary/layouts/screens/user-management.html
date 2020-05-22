@@ -1,0 +1,114 @@
+{{ define "main" }}
+<header class="header-section">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="logo-wrap">         
+            <a href="#">
+                <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+            </a>
+        </div>
+        <div class="navbar-right dropdown">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Organisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
+<div class="sub-header d-flex justify-content-between align-items-center">
+    <span class="text-white"><img src="{{"images/organisation.svg" | relURL }}" alt="Organisation" class="sub-header-icon">Organisation</span>
+    <div class="right-section">
+        <img src="{{"images/ic_search.svg" | relURL }}" alt="search" class="search mr-3">
+        <img src="{{"images/ic_filter_list.svg" | relURL }}" alt="filter" class="filter mr-3">
+        <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
+        <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/role.svg" | relURL }}" alt="Role" class="group">Role</button>
+        <button class="btn btn-small btn-outline-primary"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="group">User</button>
+
+    </div>
+</div>
+<div class="container-fluid p-0">
+	<div class="user-management list-view position-relative">
+        <table class="table">
+            <thead class="table-head">
+                <tr>
+                    <th>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="check1">
+                            <label class="custom-control-label" for="check1"></label>
+                        </div>
+                    </th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Group</th>
+                    <th>Roles</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                <tr>
+                     <th>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="check2">
+                            <label class="custom-control-label" for="check2"></label>
+                        </div>
+                    </th>
+                    <td>John Doe</td>
+                    <td>john@email.com</td>
+                    <td>Data Application</td>
+                    <td>Administration</td>
+                    <td class="active">Active</td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="check3">
+                            <label class="custom-control-label" for="check3"></label>
+                        </div>
+                    </th>
+                    <td>John Doe</td>
+                    <td>john@email.com</td>
+                    <td>Data Application</td>
+                    <td>Administration</td>
+                    <td class="in-active">InActive</td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="check4">
+                            <label class="custom-control-label" for="check4"></label>
+                        </div>
+                    </th>
+                    <td>John Doe</td>
+                    <td>john@email.com</td>
+                    <td>Data Application</td>
+                    <td>Administration</td>
+                    <td class="active">Active</td>
+                </tr>
+                <tr>
+                    <th>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="check5">
+                            <label class="custom-control-label" for="check5"></label>
+                        </div>
+                    </th>
+                    <td>John Doe</td>
+                    <td>john@email.com</td>
+                    <td>Data Application</td>
+                    <td>Administration</td>
+                    <td class="in-active">InActive</td>
+                </tr>
+            </tbody>
+        </table>
+		
+    </div>
+</div>
+{{ end }}
