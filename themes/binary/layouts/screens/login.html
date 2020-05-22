@@ -4,7 +4,7 @@
 <div class="login-main d-flex">
     <div class="login-container">
         <div class="row">
-            <div class="col-md-6 p-t-130 pb-lg-4 pr-lg-6 pr-md-2 mh-md-100">
+            <div class="col-md-5 p-t-130 pb-lg-4 pr-lg-6 pr-md-2">
                 <div class="login-col">
                     <div class="site-logo d-flex align-item-center mb-3 mb-lg-5">
                         <img src="{{"images/logo_binary.svg" | relURL }}" width="48" alt="logo" class="mr-2 first-image">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 pb-lg-4 pl-lg-2 pl-md-2 pb-3 mh-md-100 form-layout">
+            <div class="col-md-7 pb-lg-4 pl-lg-2 pl-md-2 pb-3 form-layout">
                 <form class="form-login">
                     <h2 class="form-header font-weight-light">Sign In</h2>
                     <div class="form-group">
@@ -28,11 +28,14 @@
                     </div>
                     <div class="form-group">
                         <label for="password">Password</label>
-                        <input type="password" class="form-control mb-1" id="password" placeholder="Enter Your Password">
-                        <span class="text-white--5 text-center">Forgot Password</span>
+                        <div class="icon position-relative">
+                            <img src="{{"images/eye-outline.svg" | relURL }}" width="22" height="15" alt="preview" class="preview">     
+                            <input type="password" class="form-control mb-1" id="password" placeholder="Enter Your Password">
+                        </div>
+                        <span class="text-white--7 text-center">Forgot Password</span>
                     </div>
                     <button type="submit" class="btn btn-primary btn-lg btn-block submit font-weight-bold">Sign In</button>
-                    <p class="text-white--5 pt-1 text-center"> Don't have an account? <a href="javascript(void)">Sign Up</a></p>
+                    <p class="text-white--5 pt-1 f-18 text-center font-weight-lighter"> Don't have an account? <a href="javascript(void)">Sign Up</a></p>
                 </form>
             </div>
         </div>
