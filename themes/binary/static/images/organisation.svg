@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="78px" viewBox="0 0 80 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>549A6EAC-3463-4DDA-A1A7-D816FDA88017</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <path d="M26.5,19 L26.5,13 L15.5,13 L15.5,8 L19,8 L19,0 L11,0 L11,8 L14.5,8 L14.5,13 L3.5,13 L3.5,19 L0,19 L0,27 L8,27 L8,19 L4.5,19 L4.5,14 L14.5,14 L14.5,19 L11,19 L11,27 L19,27 L19,19 L15.5,19 L15.5,14 L25.5,14 L25.5,19 L22,19 L22,27 L30,27 L30,19 L26.5,19 Z M12,1 L18,1 L18,7 L12,7 L12,1 Z M7,26 L1,26 L1,20 L7,20 L7,26 Z M18,26 L12,26 L12,20 L18,20 L18,26 Z M29,26 L23,26 L23,20 L29,20 L29,26 Z" id="path-1"></path>
+        <filter x="-130.8%" y="-138.0%" width="361.7%" height="390.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.75" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0745098039   0 0 0 0 0.568627451   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="New-updated_-screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="My-Organisation" transform="translate(-5.000000, -49.000000)" fill-rule="nonzero">
+            <g id="top">
+                <g id="heading-copy" transform="translate(30.000000, 70.000000)">
+                    <g id="head" transform="translate(0.000000, 2.000000)">
+                        <g id="Shape">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use stroke="#1391FF" stroke-width="1.5" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
