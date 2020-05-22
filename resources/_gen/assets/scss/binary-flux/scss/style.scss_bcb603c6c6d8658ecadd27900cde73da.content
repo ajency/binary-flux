@@ -8397,11 +8397,20 @@ body {
       font-size: 12px;
       display: flex;
       align-items: center; }
+      @media (max-width: 399px) {
+        .setting-wrapper .form-group .btn {
+          padding: 6px 15px; } }
       .setting-wrapper .form-group .btn:hover {
         background: transparent; }
     @media (max-width: 767px) {
       .setting-wrapper .form-group .margin-bottom {
         margin-bottom: 20px; } }
+    @media (max-width: 767px) {
+      .setting-wrapper .form-group .margin-left {
+        margin-left: 0px !important; } }
+    @media (max-width: 767px) {
+      .setting-wrapper .form-group .margin-right {
+        margin-right: 0px !important; } }
   .setting-wrapper .form-control {
     border: 1px solid #5D5E72;
     border-radius: 2px;
@@ -8412,7 +8421,8 @@ body {
       box-shadow: none; }
   @media (max-width: 767px) {
     .setting-wrapper .action-block {
-      justify-content: center; } }
+      flex-direction: column;
+      align-items: center; } }
 
 ul, ol {
   padding-left: 10px; }
