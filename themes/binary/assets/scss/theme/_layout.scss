@@ -720,6 +720,9 @@ body{
 	    		font-size: 12px;
 			    display: flex;
 	    		align-items: center;
+	    		@media (max-width: 399px){
+	    			padding: 6px 15px;
+	    		}
 	    		&:hover{
 	    			background: transparent;
 	    		}
@@ -727,6 +730,16 @@ body{
 			.margin-bottom{
 				@media (max-width: 767px){
 					margin-bottom: 20px;
+				}
+			}
+			.margin-left{
+				@media (max-width: 767px){
+					margin-left: 0px !important;
+				}
+			}
+			.margin-right{
+				@media (max-width: 767px){
+					margin-right: 0px !important ;
 				}
 			}
 		}
@@ -743,7 +756,8 @@ body{
 	}
 	.action-block{
 		@media (max-width: 767px){
-			justify-content: center;
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 }
