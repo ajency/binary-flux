@@ -1,0 +1,233 @@
+{{ define "main" }}
+<header class="header-section">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="logo-wrap">         
+            <a href="#">
+                <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+            </a>
+        </div>
+        <div class="navbar-right dropdown">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Organisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
+<div class="sub-header sub-header-o d-flex justify-content-between align-items-center">
+    <span class="text-white"><img src="{{"images/organisation.svg" | relURL }}" alt="Organisation" class="sub-header-icon">Organisation</span>
+    <div class="right-section">
+        <div class="icons">
+            <img src="{{"images/ic_search.svg" | relURL }}" alt="search" class="search mr-3">
+            <img src="{{"images/ic_filter_list.svg" | relURL }}" alt="filter" class="filter mr-3">
+        </div>
+        <div class="action-block">
+            <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
+            <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/role.svg" | relURL }}" alt="Role" class="group">Role</button>
+            <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="group">User</button>
+             <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/report.svg" | relURL }}" alt="Add User" class="group">Report</button>
+              <button class="btn btn-small btn-outline-primary mr-1 mt-1 mb-1"><img src="{{"images/delete.svg" | relURL }}" alt="Add User" class="group">Delete</button>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-0">
+	<div class="user-management list-view position-relative">
+        <div class="table-wrapper"  style="overflow-x: auto">
+            <table class="table">
+                <thead class="table-head">
+                    <tr>
+                        <th>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check1">
+                                <label class="custom-control-label" for="check1"></label>
+                            </div>
+                        </th>
+                        <th>Name<img src="{{"images/arrows.svg" | relURL }}"  width="12" height="12" alt="arrows" class="arrows ml-1"></th>
+                        <th>Email<img src="{{"images/arrows.svg" | relURL }}" width="12" height="12" alt="arrows" class="arrows ml-1"></th>
+                        <th>Group<img src="{{"images/arrows.svg" | relURL }}"  width="12" height="12" alt="arrows" class="arrows ml-1"></th>
+                        <th>Roles<img src="{{"images/arrows.svg" | relURL }}" width="12" height="12" alt="arrows" class="arrows ml-1"></th>
+                        <th>Status<img src="{{"images/arrows.svg" | relURL }}" width="12" height="12" alt="arrows" class="arrows ml-1"></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr>
+                         <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check2">
+                                <label class="custom-control-label" for="check2"></label>
+                            </div>
+                        </td>
+                        <td>John Doe</td>
+                        <td>john@email.com</td>
+                        <td>Cyber Security Account +2</td>
+                        <td>Administration</td>
+                        <td class="active">Active</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check3">
+                                <label class="custom-control-label" for="check3"></label>
+                            </div>
+                        </td>
+                        <td>Nina Aguilar</td>
+                        <td>nina@gmail.com</td>
+                        <td>Data Application</td>
+                        <td>Administration</td>
+                        <td class="in-active">InActive</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr class="selected">
+                        <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check4" checked>
+                                <label class="custom-control-label" for="check4"></label>
+                            </div>
+                        </td>
+                        <td>David Bow</td>
+                        <td>david@email.com</td>
+                        <td>Business Rules Engine Composer</td>
+                        <td>Management</td>
+                        <td class="active">Active</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr class="selected">
+                        <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check5" checked>
+                                <label class="custom-control-label" for="check5"></label>
+                            </div>
+                        </td>
+                        <td>Marc McGee</td>
+                        <td>marc@gmail.com</td>
+                        <td>ESB Exception Management</td>
+                        <td>Management</td>
+                        <td class="in-active">InActive</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check6">
+                                <label class="custom-control-label" for="check6"></label>
+                            </div>
+                        </td>
+                        <td>Russell Mathis</td>
+                        <td>Russell@gmail.com</td>
+                        <td>Data Application</td>
+                        <td>Administration</td>
+                        <td class="active">Active</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr class="selected">
+                         <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check7" checked>
+                                <label class="custom-control-label" for="check7"></label>
+                            </div>
+                        </td>
+                        <td>John Doe</td>
+                        <td>john@email.com</td>
+                        <td>Cyber Security Account +2</td>
+                        <td>Administration</td>
+                        <td class="in-active">InActive</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr>
+                         <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check8">
+                                <label class="custom-control-label" for="check8"></label>
+                            </div>
+                        </td>
+                        <td>John Doe</td>
+                        <td>john@email.com</td>
+                        <td>Cyber Security Account +2</td>
+                        <td>Administration</td>
+                        <td class="active">Active</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check9">
+                                <label class="custom-control-label" for="check9"></label>
+                            </div>
+                        </td>
+                        <td>Nina Aguilar</td>
+                        <td>nina@gmail.com</td>
+                        <td>Data Application</td>
+                        <td>Administration</td>
+                        <td class="in-active">InActive</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr class="selected">
+                        <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check10" checked>
+                                <label class="custom-control-label" for="check10"></label>
+                            </div>
+                        </td>
+                        <td>David Bow</td>
+                        <td>david@email.com</td>
+                        <td>Business Rules Engine Composer</td>
+                        <td>Management</td>
+                        <td class="active">Active</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr class="selected">
+                        <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check11" checked>
+                                <label class="custom-control-label" for="check11"></label>
+                            </div>
+                        </td>
+                        <td>Marc McGee</td>
+                        <td>marc@gmail.com</td>
+                        <td>ESB Exception Management</td>
+                        <td>Management</td>
+                        <td class="in-active">InActive</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                    <tr class="spacer"></tr>
+                    <tr>
+                        <td>
+                            <div class="custom-control custom-checkbox customized-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="check12">
+                                <label class="custom-control-label" for="check12"></label>
+                            </div>
+                        </td>
+                        <td>Russell Mathis</td>
+                        <td>Russell@gmail.com</td>
+                        <td>Data Application</td>
+                        <td>Administration</td>
+                        <td class="active">Active</td>
+                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+		</div>
+    </div>
+</div>
+{{ end }}
