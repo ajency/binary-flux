@@ -720,6 +720,31 @@ body{
 	    flex-direction: column;
         padding: 0 0 30px;
 	}
+	&.sub-header-o{
+		.right-section{
+			.icons{
+				@media (max-width: 991px){
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    padding-bottom: 10px;
+				}
+			}
+			.action-block{
+				&:last-child{
+					button{
+						@media (max-width: 425px){
+							margin-top: 0!important;
+						}
+					}
+				}
+			}
+			@media (max-width: 767px){
+			    display: block;
+    			text-align: center;
+			}
+		}
+	}
 }
 .setting-wrapper{
 	background-color: #0A0C1B;
@@ -864,6 +889,9 @@ body{
 				  	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.46);
 					&.spacer{
 						height: 6px;
+					}
+					&.selected{
+						background-color: #202854;
 					}
 				}
 				td{

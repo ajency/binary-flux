@@ -8395,6 +8395,19 @@ body {
     .sub-header {
       flex-direction: column;
       padding: 0 0 30px; } }
+  @media (max-width: 991px) {
+    .sub-header.sub-header-o .right-section .icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 10px; } }
+  @media (max-width: 425px) {
+    .sub-header.sub-header-o .right-section .action-block:last-child button {
+      margin-top: 0 !important; } }
+  @media (max-width: 767px) {
+    .sub-header.sub-header-o .right-section {
+      display: block;
+      text-align: center; } }
 
 .setting-wrapper {
   background-color: #0A0C1B; }
@@ -8505,6 +8518,8 @@ body {
       box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.46); }
       .user-management.list-view .table-body tr.spacer {
         height: 6px; }
+      .user-management.list-view .table-body tr.selected {
+        background-color: #202854; }
     .user-management.list-view .table-body td {
       border: 0;
       color: #fff;
