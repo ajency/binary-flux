@@ -81,12 +81,19 @@ select.custom-select-dropdown{
     background-image: url(../images/ic_chevron_left.svg);
     background-repeat: no-repeat;
     background-position: 98% 50%;
+    #status{
+        color: #40E240;
+        font-weight: bold;
+        letter-spacing: 0;
+    }
     option {
         display: block;
         padding: 15px;
-        background-color: transparent !important;
+        background-color: #191a35;
+        color: #fff;
+        border: 0;
         &:hover{
-            background-color: transparent;
+            background-color: #fff;
         }
     }
 }

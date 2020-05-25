@@ -7595,12 +7595,18 @@ select.custom-select-dropdown {
   background-image: url(../images/ic_chevron_left.svg);
   background-repeat: no-repeat;
   background-position: 98% 50%; }
+  select.custom-select-dropdown #status {
+    color: #40E240;
+    font-weight: bold;
+    letter-spacing: 0; }
   select.custom-select-dropdown option {
     display: block;
     padding: 15px;
-    background-color: transparent !important; }
+    background-color: #191a35;
+    color: #fff;
+    border: 0; }
     select.custom-select-dropdown option:hover {
-      background-color: transparent; }
+      background-color: #fff; }
 
 .workspace-header-bar {
   padding: 5px 15px 0;
@@ -8631,14 +8637,6 @@ body {
 .edit-user-modal form .form-control {
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px; }
-  .edit-user-modal form .form-control .active {
-    color: #40E240;
-    font-weight: bold;
-    letter-spacing: 0; }
-  .edit-user-modal form .form-control .in-active {
-    color: #F7594B;
-    font-weight: bold;
-    letter-spacing: 0; }
 
 ul, ol {
   padding-left: 10px; }
