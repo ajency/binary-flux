@@ -707,6 +707,9 @@ body{
 			}
 		}
 		.icons{
+			img{
+				cursor: pointer;
+			}
 			@media (max-width: 575px){
 				padding-bottom: 20px;
 			}
@@ -723,6 +726,9 @@ body{
 	&.sub-header-o{
 		.right-section{
 			.icons{
+				img{
+					cursor: pointer;
+				}
 				@media (max-width: 991px){
 				    display: flex;
 				    align-items: center;
@@ -922,6 +928,9 @@ body{
 						font-weight: bold;
 						letter-spacing: 0;
 					}
+					.icon-icon-dots-hr{
+						cursor: pointer;
+					}
 				    &:first-child{
 				    	border-top-left-radius: 2px;
 				    	border-bottom-left-radius: 2px;
@@ -949,7 +958,7 @@ body{
 	   	}
 	}
 }
-.add-user-modal{
+.user-modal{
     background-color: #191A35 !important;
   	box-shadow: 0 2px 20px 0 #0A0C1B;
 	.modal-header{
@@ -973,6 +982,7 @@ body{
 			.form-control{
 				background-color: transparent !important;
 				border-width: 1px;
+				font-weight: 100;
 				&:focus{
 					box-shadow: none;
 				}
@@ -983,6 +993,10 @@ body{
 				opacity: 0.4;
 				font-weight: 100;
 			    white-space: nowrap;
+			    margin-bottom: 0;
+			    @media (max-width: 575px){
+			    	margin-bottom: 10px;
+			    }
 			}
 			.icon{
 				img.preview{
@@ -999,3 +1013,21 @@ body{
 	}
 }
 
+.edit-user-modal{
+	form{
+		.form-control{
+			border-color: rgba(255,255,255,0.50);
+			border-width: 1px;
+	        .active{
+	            color: #40E240;
+	            font-weight: bold;
+	            letter-spacing: 0;
+	        }
+	        .in-active{
+	            color: #F7594B;
+	            font-weight: bold;
+	            letter-spacing: 0;
+	        }
+		}
+	}
+}

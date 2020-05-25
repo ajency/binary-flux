@@ -7588,6 +7588,20 @@ a.text-error:hover, a.text-error:focus {
     .fw-select .select2-container .select-out-dark-wrap .select2-selection__rendered {
       line-height: 33px; }
 
+select.custom-select-dropdown {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../images/ic_chevron_left.svg);
+  background-repeat: no-repeat;
+  background-position: 98% 50%; }
+  select.custom-select-dropdown option {
+    display: block;
+    padding: 15px;
+    background-color: transparent !important; }
+    select.custom-select-dropdown option:hover {
+      background-color: transparent; }
+
 .workspace-header-bar {
   padding: 5px 15px 0;
   background: #121425; }
@@ -8384,6 +8398,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center; } }
+    .sub-header .right-section .icons img {
+      cursor: pointer; }
     @media (max-width: 575px) {
       .sub-header .right-section .icons {
         padding-bottom: 20px; } }
@@ -8395,6 +8411,8 @@ body {
     .sub-header {
       flex-direction: column;
       padding: 0 0 30px; } }
+  .sub-header.sub-header-o .right-section .icons img {
+    cursor: pointer; }
   @media (max-width: 991px) {
     .sub-header.sub-header-o .right-section .icons {
       display: flex;
@@ -8549,6 +8567,8 @@ body {
         color: #F7594B;
         font-weight: bold;
         letter-spacing: 0; }
+      .user-management.list-view .table-body td .icon-icon-dots-hr {
+        cursor: pointer; }
       .user-management.list-view .table-body td:first-child {
         border-top-left-radius: 2px;
         border-bottom-left-radius: 2px; }
@@ -8568,40 +8588,57 @@ body {
   .modal-multiselect .modal-dialog {
     width: auto !important; } }
 
-.add-user-modal {
+.user-modal {
   background-color: #191A35 !important;
   box-shadow: 0 2px 20px 0 #0A0C1B; }
-  .add-user-modal .modal-header {
+  .user-modal .modal-header {
     padding: 18px 20px; }
-    .add-user-modal .modal-header .modal-title {
+    .user-modal .modal-header .modal-title {
       font-size: 15px; }
-      .add-user-modal .modal-header .modal-title .add {
+      .user-modal .modal-header .modal-title .add {
         width: 28px;
         height: 18px;
         margin-bottom: 4px;
         margin-right: 8px; }
-    .add-user-modal .modal-header .close {
+    .user-modal .modal-header .close {
       margin: auto 0; }
-  .add-user-modal .modal-body {
+  .user-modal .modal-body {
     padding: 30px 1.5rem 15px; }
-    .add-user-modal .modal-body form .form-control {
+    .user-modal .modal-body form .form-control {
       background-color: transparent !important;
-      border-width: 1px; }
-      .add-user-modal .modal-body form .form-control:focus {
+      border-width: 1px;
+      font-weight: 100; }
+      .user-modal .modal-body form .form-control:focus {
         box-shadow: none; }
-    .add-user-modal .modal-body form .tag {
+    .user-modal .modal-body form .tag {
       font-size: 11px;
       color: white;
       opacity: 0.4;
       font-weight: 100;
-      white-space: nowrap; }
-    .add-user-modal .modal-body form .icon img.preview {
+      white-space: nowrap;
+      margin-bottom: 0; }
+      @media (max-width: 575px) {
+        .user-modal .modal-body form .tag {
+          margin-bottom: 10px; } }
+    .user-modal .modal-body form .icon img.preview {
       position: absolute;
       right: 22px;
       top: 8px; }
-  .add-user-modal .add-btn {
+  .user-modal .add-btn {
     width: 100px;
     margin: auto; }
+
+.edit-user-modal form .form-control {
+  border-color: rgba(255, 255, 255, 0.5);
+  border-width: 1px; }
+  .edit-user-modal form .form-control .active {
+    color: #40E240;
+    font-weight: bold;
+    letter-spacing: 0; }
+  .edit-user-modal form .form-control .in-active {
+    color: #F7594B;
+    font-weight: bold;
+    letter-spacing: 0; }
 
 ul, ol {
   padding-left: 10px; }

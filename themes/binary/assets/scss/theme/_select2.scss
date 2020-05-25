@@ -72,3 +72,21 @@
         }
     }
 }
+
+
+select.custom-select-dropdown{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../images/ic_chevron_left.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+    option {
+        display: block;
+        padding: 15px;
+        background-color: transparent !important;
+        &:hover{
+            background-color: transparent;
+        }
+    }
+}

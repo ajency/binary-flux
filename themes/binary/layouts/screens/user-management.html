@@ -71,7 +71,7 @@
                         <td>Cyber Security Account +2</td>
                         <td>Administration</td>
                         <td class="active">Active</td>
-                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                        <td><button type="button" data-toggle="modal" data-target="#editUser" class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
                     </tr>
                     <tr class="spacer"></tr>
                     <tr>
@@ -146,7 +146,7 @@
                         <td>Cyber Security Account +2</td>
                         <td>Administration</td>
                         <td class="in-active">InActive</td>
-                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                        <td><button type="button" data-toggle="modal" data-target="#editUser" class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
                     </tr>
                     <tr class="spacer"></tr>
                     <tr>
@@ -161,7 +161,7 @@
                         <td>Cyber Security Account +2</td>
                         <td>Administration</td>
                         <td class="active">Active</td>
-                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                        <td><button type="button" data-toggle="modal" data-target="#editUser" class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
                     </tr>
                     <tr class="spacer"></tr>
                     <tr>
@@ -228,10 +228,10 @@
 		</div>
     </div>
 </div>
-<!-- Modal -->
+<!-- Add USer Modal -->
 <div class="modal fade modal-multiselect" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUser" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
-        <div class="modal-content add-user-modal">
+        <div class="modal-content user-modal">
             <div class="modal-header rounded-0">
                 <h5 class="modal-title text-uppercase font-weight-bold"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="add" width="22" height="15"> New User</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -346,6 +346,83 @@
         </div>
     </div>
 </div>
+
+
+<!-- Edit User Modal -->
+<div class="modal fade modal-multiselect" id="editUser" tabindex="-1" role="dialog" aria-labelledby="editUser" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
+        <div class="modal-content user-modal edit-user-modal">
+            <div class="modal-header rounded-0">
+                <h5 class="modal-title text-uppercase font-weight-bold">John Doe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="{{"images/cancel.svg" | relURL }}" width="14" height="14" alt="cancel" class="close" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <form class="w-100
+                    ">
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabelSm" class="col-form-label col-form-label-sm pt-0">Name</label>
+                                <p class="tag">Enter User Name</p>
+                            </div>
+                            <div class="col-sm-5 margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="firstname" placeholder="Fisrt Name" value="John">
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control form-control-sm" id="lastname" placeholder="Last Name" value="Doe">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Email ID</label>
+                                <p class="tag">Enter Official Email ID</p>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email" value="johndoe@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="role" class="col-sm-2 col-form-label col-form-label-sm pt-0">Role</label>
+                            <div class="icon position-relative col-sm-5">
+                                <select class="form-control form-control-sm custom-select-dropdown mb-1" id="role">
+                                    <option selected>Admin</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="group"class="col-sm-2 col-form-label col-form-label-sm pt-0">Group</label>
+                            <div class="col-sm-5">
+                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="group">
+                                    <option selected>C Suite, Managers + 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="status"class="col-sm-2 col-form-label col-form-label-sm pt-0">Status</label>
+                            <div class="col-sm-5">
+                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="status">
+                                    <option selected="selected" class="active">Active</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="btn-group btn-primary add-btn mr-2 my-2">
+                <button type="submit" class="btn btn-sm text-center">Save</button>                           
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript">
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
