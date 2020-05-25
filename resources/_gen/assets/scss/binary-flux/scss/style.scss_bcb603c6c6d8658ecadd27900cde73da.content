@@ -8494,11 +8494,12 @@ body {
 
 .customized-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   background-image: url(../images/checkmark-outline.svg) !important;
-  top: -0.22rem;
-  left: -1.9rem;
+  background: no-repeat 50% / 50% 40%;
+  top: 0rem;
+  left: -1.68rem;
   display: block;
-  width: 1.9rem;
-  height: 1.9rem; }
+  width: 1.4rem;
+  height: 1.4rem; }
 
 .user-management.list-view {
   padding: 20px;
