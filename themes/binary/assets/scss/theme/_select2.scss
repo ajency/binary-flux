@@ -85,6 +85,16 @@ select.custom-select-dropdown{
         color: #40E240;
         font-weight: bold;
         letter-spacing: 0;
+        .active{
+            color: #40E240;
+            font-weight: bold;
+            letter-spacing: 0;
+        }
+        .in-active{
+            color: #F7594B;
+            font-weight: bold;
+            letter-spacing: 0;
+        }
     }
     option {
         display: block;

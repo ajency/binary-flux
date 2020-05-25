@@ -1021,3 +1021,31 @@ body{
 		}
 	}
 }
+.new-role-modal{
+	form{
+		.form-group{
+			img.add-url{
+			    position: absolute;
+			    right: -20px;
+			    top: 6px;
+			}
+			.link{
+				@media(max-width: 767px){
+			    	width: 80%;
+		    	}
+				a{
+					@media(max-width: 767px){
+						overflow-wrap: break-word;
+					}
+		    	}
+			}
+			.remove-btn{
+				position: absolute;
+				right: 20px;
+			}
+			@media (max-width: 575px){
+				width: 100%;
+			}
+		}
+	}
+}

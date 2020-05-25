@@ -7599,6 +7599,14 @@ select.custom-select-dropdown {
     color: #40E240;
     font-weight: bold;
     letter-spacing: 0; }
+    select.custom-select-dropdown #status .active {
+      color: #40E240;
+      font-weight: bold;
+      letter-spacing: 0; }
+    select.custom-select-dropdown #status .in-active {
+      color: #F7594B;
+      font-weight: bold;
+      letter-spacing: 0; }
   select.custom-select-dropdown option {
     display: block;
     padding: 15px;
@@ -8637,6 +8645,27 @@ body {
 .edit-user-modal form .form-control {
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px; }
+
+.new-role-modal form .form-group img.add-url {
+  position: absolute;
+  right: -20px;
+  top: 6px; }
+
+@media (max-width: 767px) {
+  .new-role-modal form .form-group .link {
+    width: 80%; } }
+
+@media (max-width: 767px) {
+  .new-role-modal form .form-group .link a {
+    overflow-wrap: break-word; } }
+
+.new-role-modal form .form-group .remove-btn {
+  position: absolute;
+  right: 20px; }
+
+@media (max-width: 575px) {
+  .new-role-modal form .form-group {
+    width: 100%; } }
 
 ul, ol {
   padding-left: 10px; }
