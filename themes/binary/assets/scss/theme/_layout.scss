@@ -746,6 +746,21 @@ body{
 		}
 	}
 }
+.margin-bottom{
+	@media (max-width: 767px){
+		margin-bottom: 20px;
+	}
+}
+.margin-left{
+	@media (max-width: 767px){
+		margin-left: 0px !important;
+	}
+}
+.margin-right{
+	@media (max-width: 767px){
+		margin-right: 0px !important ;
+	}
+}
 .setting-wrapper{
 	background-color: #0A0C1B;
 	.form{
@@ -792,21 +807,6 @@ body{
 	    			background: transparent;
 	    		}
 			}
-			.margin-bottom{
-				@media (max-width: 767px){
-					margin-bottom: 20px;
-				}
-			}
-			.margin-left{
-				@media (max-width: 767px){
-					margin-left: 0px !important;
-				}
-			}
-			.margin-right{
-				@media (max-width: 767px){
-					margin-right: 0px !important ;
-				}
-			}
 		}
 		&-control{
 			border: 1px solid #5D5E72;
@@ -836,7 +836,7 @@ body{
         padding-left: 10px;
     	&:before{
 		    border-radius: 3px;
-		    border-width: 1px;
+		    border-width: 1px !important;
 		    border-color: #93949E !important;
 		    background-color: transparent !important;
     	}
@@ -844,6 +844,9 @@ body{
 	.customized-checkbox .custom-control-input:checked ~ .custom-control-label::before{
 		background-color: transparent !important;
 		border: 1px solid #93949E !important;
+	}
+	.custom-control-input:focus ~ .custom-control-label::before{
+		box-shadow: none !important;
 	}
 }
 .user-management{
@@ -874,6 +877,7 @@ body{
 					color: #fff;
 					font-size: 11px;
 				    text-transform: uppercase;
+				    white-space: nowrap;
 				    &:first-child{
 				    	border-top-left-radius: 2px;
 				    }
@@ -916,6 +920,7 @@ body{
 				    &:last-child{
 				    	border-top-right-radius: 2px;
 				    	border-bottom-right-radius: 2px;
+				    	white-space: nowrap;
 				    }
 				}
 			}
@@ -925,3 +930,63 @@ body{
 		}
 	}
 }
+.modal-multiselect{
+	.modal-dialog {
+	   	@media (max-width: 991px){
+	   		max-width: 800px !important;
+	   	}
+	   	@media (max-width: 525px){
+	   		width: auto !important;
+	   	}
+	}
+}
+.add-user-modal{
+    background-color: #191A35 !important;
+  	box-shadow: 0 2px 20px 0 #0A0C1B;
+	.modal-header{
+		padding: 18px 20px;
+		.modal-title{
+			font-size: 15px;
+			.add{
+			    width: 28px;
+			    height: 18px;
+			    margin-bottom: 4px;
+			    margin-right: 8px;
+			}
+		}
+		.close{
+		    margin: auto 0;
+		}
+	}
+	.modal-body{
+	    padding: 30px 1.5rem 15px;
+		form{
+			.form-control{
+				background-color: transparent !important;
+				border-width: 1px;
+				&:focus{
+					box-shadow: none;
+				}
+			}
+			.tag{
+				font-size: 11px;
+				color: white;
+				opacity: 0.4;
+				font-weight: 100;
+			    white-space: nowrap;
+			}
+			.icon{
+				img.preview{
+				    position: absolute;
+				    right: 22px;
+				    top: 8px;
+				}
+			}
+		}
+	}
+	.add-btn{
+		width: 100px;
+		margin: auto;
+	}
+}
+
