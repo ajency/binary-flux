@@ -34,7 +34,7 @@
         <div class="action-block">
             <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
             <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/role.svg" | relURL }}" alt="Role" class="group">Role</button>
-            <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="group">User</button>
+            <button type="button" data-toggle="modal" data-target="#addUser" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="add">User</button>
         </div>
     </div>
 </div>
@@ -228,4 +228,127 @@
 		</div>
     </div>
 </div>
+<!-- Modal -->
+<div class="modal fade modal-multiselect" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUser" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
+        <div class="modal-content add-user-modal">
+            <div class="modal-header rounded-0">
+                <h5 class="modal-title text-uppercase font-weight-bold"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="add" width="22" height="15"> New User</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="{{"images/cancel.svg" | relURL }}" width="14" height="14" alt="cancel" class="close" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <form class="w-100
+                    ">
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabelSm" class="col-form-label col-form-label-sm pt-0">Name</label>
+                                <p class="tag">Enter User Name</p>
+                            </div>
+                            <div class="col-sm-5 margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="firstname" placeholder="Fisrt Name">
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control form-control-sm" id="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Email ID</label>
+                                <p class="tag">Enter Official Email ID</p>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-sm-2 col-form-label col-form-label-sm pt-0">Password</label>
+                            <div class="icon position-relative col-sm-5">
+                                <img src="{{"images/eye-outline.svg" | relURL }}" width="22" height="15" alt="preview" class="preview">     
+                                <input type="password" class="form-control form-control-sm mb-1" id="password" placeholder="Enter Password">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabelLg"class="col-form-label col-form-label-sm pt-0">Assign Role</label>
+                                <p class="tag">Give Your User a Role</p>
+                            </div>
+                            <div class="col-sm-5">
+                                 <div class="multiselectDropdown">
+                                    <input type="text" class="form-control form-control-sm" id="role" placeholder="Enter Role" 
+                                    onclick="myFunction()">
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <div class="w-100 px-1">
+                                            <input type="text" placeholder="Search.." id="searchRoles" onkeyup="filterFunction()">
+                                        </div>
+                                        <div class="dataList">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="custom-control custom-checkbox customized-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check-all">
+                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                </div>
+                                                <span class="text-white">Clear</span>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-admin" checked>
+                                                <label class="custom-control-label" for="check-admin">Admin</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-manager" checked>
+                                                <label class="custom-control-label" for="check-manager">Manager</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-ceo">
+                                                <label class="custom-control-label" for="check-ceo">CEO</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-lead">
+                                                <label class="custom-control-label" for="check-lead">Project Lead</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-ceo1" checked>
+                                                <label class="custom-control-label" for="check-ceo1">CEO</label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-footer d-flex">
+                                            <span>3 of 10</span>
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                 <div class="btn-group btn-primary add-btn my-1">                     
+                                                    <button type="submit" class="btn btn-sm text-center">Done</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelLg"class="col-sm-2 col-form-label col-form-label-sm pt-0">Assign Group</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control form-control-sm" id="role" placeholder="Enter Group">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="btn-group btn-primary add-btn mr-2 my-2">
+                <button type="submit" class="btn btn-sm text-center">Save</button>                           
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+</script>
 {{ end }}
