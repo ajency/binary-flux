@@ -8493,15 +8493,12 @@ body {
   box-shadow: none !important; }
 
 .customized-checkbox .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: none !important;
-  display: inline-block;
-  transform: rotate(45deg);
-  height: 10px;
-  width: 4px;
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
-  top: 0.40rem;
-  left: -1.1rem; }
+  background-image: url(../images/checkmark-outline.svg) !important;
+  top: -0.22rem;
+  left: -1.9rem;
+  display: block;
+  width: 1.9rem;
+  height: 1.9rem; }
 
 .user-management.list-view {
   padding: 20px;
