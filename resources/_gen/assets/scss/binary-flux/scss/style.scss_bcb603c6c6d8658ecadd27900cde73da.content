@@ -8667,6 +8667,31 @@ body {
   .new-role-modal form .form-group {
     width: 100%; } }
 
+.add-group-modal form .form-group a {
+  text-decoration: none; }
+  .add-group-modal form .form-group a img.add-users {
+    position: absolute;
+    right: -20px;
+    top: 6px; }
+  .add-group-modal form .form-group a .upload-btn {
+    box-sizing: border-box;
+    border: 1px dashed #757585;
+    border-radius: 5.06px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .add-group-modal form .form-group a .upload-btn span {
+      color: #757585;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 22px;
+      padding-right: 15px; }
+
+@media (max-width: 575px) {
+  .add-group-modal form .form-group {
+    width: 100%; } }
+
 ul, ol {
   padding-left: 10px; }
 

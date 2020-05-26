@@ -32,7 +32,7 @@
             <img src="{{"images/ic_filter_list.svg" | relURL }}" alt="filter" class="filter mr-3">
         </div>
         <div class="action-block">
-            <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
+            <button type="button" data-toggle="modal" data-target="#addGroup" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
             <button type="button" data-toggle="modal" data-target="#addRole" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/role.svg" | relURL }}" alt="Role" class="group">Role</button>
             <button type="button" data-toggle="modal" data-target="#addUser" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="add">User</button>
         </div>
@@ -430,7 +430,7 @@
     </div>
 </div>
 
-<!-- Edit User Modal -->
+<!-- Add Role Modal -->
 <div class="modal fade modal-multiselect" id="addRole" tabindex="-1" role="dialog" aria-labelledby="addRole" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
         <div class="modal-content user-modal new-role-modal">
@@ -499,6 +499,94 @@
                             </div>
                             <div class="remove-btn">
                                 <img src="{{"images/remove.svg" | relURL }}" width="20" height="20" alt="add url" class="remove" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="btn-group btn-primary add-btn mr-2 my-2">
+                <button type="submit" class="btn btn-sm text-center">Save</button>                           
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Group Modal -->
+<div class="modal fade modal-multiselect" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="addGroup" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
+        <div class="modal-content user-modal add-group-modal">
+            <div class="modal-header rounded-0">
+                <h5 class="modal-title text-uppercase font-weight-bold"><img src="{{"images/group-add.svg" | relURL }}" alt="Add Group" class="add" width="22" height="15"> New Group</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="{{"images/cancel.svg" | relURL }}" width="14" height="14" alt="cancel" class="close" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <form class="w-100
+                    ">
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabelSm" class="col-form-label col-form-label-sm pt-0">Group Name</label>
+                                <p class="tag">Give Your Group a Name</p>
+                            </div>
+                            <div class="col-sm-5 margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="group-name" placeholder="Enter Group Name" value="Security Operations">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Email ID</label>
+                                <p class="tag">Enter Official Email ID</p>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email" value="security.operations@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-sm-3 col-form-label col-form-label-sm pt-0">Password</label>
+                            <div class="icon position-relative col-sm-5">
+                                <img src="{{"images/eye-outline.svg" | relURL }}" width="22" height="15" alt="preview" class="preview">     
+                                <input type="password" class="form-control form-control-sm mb-1" id="password" placeholder="Enter Password" value="*******">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="group"class="col-sm-3 col-form-label col-form-label-sm pt-0">Role</label>
+                            <div class="col-sm-5">
+                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="group">
+                                    <option selected>C Suite, Managers + 3</option>
+                                    <option>Data Application</option>
+                                    <option>Business Rules Engine Composer</option>
+                                    <option>ESB Exception Management</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Add User</label>
+                                <p class="tag">Searches & Add user</p>
+                            </div>
+                            <div class="col-sm-5 position-relative">
+                                <input type="url" class="form-control form-control-sm" id="url" placeholder="Enter URL" value="Lipika Biwas">
+                                <p>Rohan, Anish, Shivani.. + 32 <a href="#">More</a></p>
+                                <a href="#"><img src="{{"images/add.svg" | relURL }}" width="20" height="20" alt="add url" class="add-users" /></a>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2 mb-3">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative">
+                                <a href="#">
+                                    <div class="upload-btn">
+                                        <span>Bulk Upload</span>
+                                        <img src="{{"images/upload.svg" | relURL }}" width="30" height="30" alt="upload" class="upload" />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </form>
