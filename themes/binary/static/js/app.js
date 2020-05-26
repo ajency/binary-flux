@@ -70,8 +70,9 @@ $(document).ready(function(){
         infinite: false,
         speed: 300,
         slidesToShow: 3,
-        slidesToScroll: 3,
-        arrows: false,
+        slidesToScroll: 1,
+        arrows: true,
+        cssEase: 'linear', 
         prevArrow: '<button type="button" class="slick-prev"></button>',  
         nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [
