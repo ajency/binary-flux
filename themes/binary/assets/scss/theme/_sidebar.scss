@@ -67,3 +67,13 @@
     position: absolute;
     top:0;
 }
+
+//Dashboard Sidebar
+
+.custom-dashboard{
+    .sidear{
+        &-container{
+            background-color: #191a35;
+        }
+    }
+}

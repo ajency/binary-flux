@@ -1,0 +1,85 @@
+{{ define "main" }}
+<header class="header-section">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="logo-wrap">         
+            <a href="#">
+                <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+            </a>
+        </div>
+        <div class="navbar-right dropdown">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Organisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid p-0">
+    <div class="custom-dashboard position-relative">
+        <div class="sidebar p-0">
+            <div class="sidear-container mobile-slide-in p-2">
+               <div>New Dashbaord <img src="{{"images/cancel.svg" | relURL }}" alt="close" class="close" width="15" height="15"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header-section">
+                <img src="{{"images/icon_dashboard.svg" | relURL }}" width="98" height="82" alt="notification" class="notification">
+                <h3 class="title font-weight-light">Create a custom dashboard</h3>
+                <p class="sub-title">Configure and setup custom dashboards that suit your unique business requirements.</p>
+                <button class="btn btn-lg btn-primary btn-light-blue">Get Started</button>
+            </div>
+            <div class="library-display-section pt-6">
+                <h3 class="title font-weight-light">or choose from our dashboard library</h3>
+                <p class="sub-title">Dashboard across industries structured on the basis of the most reliable data worldwide. The Binary Flux presets are what set us apart.</p>
+                <div class="dashboard-slider">
+                    <div class="slide-item">
+                        <img src="{{"images/1.png" | relURL }}" alt="Banner" class="w-100">
+                        <div class="mt-2 mt-lg-3 max-470 text-center">
+                            <p class="font-weight-light">Application Support | <span class="text-white--5">Created by Anish Kumar</span></p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="{{"images/2.jpg" | relURL }}" alt="Banner" class="w-100">
+                        <div class="mt-2 mt-lg-3 max-470 text-center">
+                            <p class="font-weight-light">Application Support | <span class="text-white--5">Created by Anish Kumar</span></p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="{{"images/3.jpg" | relURL }}" alt="Banner" class="w-100">
+                        <div class="mt-2 mt-lg-3 max-470 text-center">
+                            <p class="font-weight-light">Application Support | <span class="text-white--5">Created by Anish Kumar</span></p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="{{"images/4.jpg" | relURL }}" alt="Banner" class="w-100">
+                        <div class="mt-2 mt-lg-3 max-470 text-center">
+                            <p class="font-weight-light">Application Support | <span class="text-white--5">Created by Anish Kumar</span></p>
+                        </div>
+                    </div>
+                    <div class="slide-item">
+                        <img src="{{"images/5.jpg" | relURL }}" alt="Banner" class="w-100">
+                        <div class="mt-2 mt-lg-3 max-470 text-center">
+                            <p class="font-weight-light">Application Support | <span class="text-white--5">Created by Anish Kumar</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    document.body.classList.add("blue_bg");
+</script>
+{{ end }}

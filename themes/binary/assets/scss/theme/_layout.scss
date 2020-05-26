@@ -1096,3 +1096,36 @@ body{
 		}
 	}
 }
+.custom-dashboard{
+	.sidebar{
+		background-color: #191a35;
+	}
+	.content{
+	    .title{
+	    	font-size: 26px;
+	    	text-align: center;
+	    }
+	    .sub-title{
+			opacity: 0.5;
+			color: #FFFFFF;
+			font-size: 12px;
+			letter-spacing: 0;
+			line-height: 16px;
+			text-align: center;
+			margin-bottom: 30px;
+	    }
+		.header-section{
+			padding-top: 70px;
+			padding-bottom: 50px;
+		    background: #121631;
+		    box-shadow: 0px 2px 0px 2px #121631;
+		    text-align: center;
+	    }
+	    .dashboard-slider{
+	    	padding: 60px;
+	    	.slide-item{
+	    		padding: 20px;
+	    	}
+	    }
+	}
+}
