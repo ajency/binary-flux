@@ -7539,6 +7539,9 @@ a.text-error:hover, a.text-error:focus {
   position: absolute;
   top: 0; }
 
+.custom-dashboard .sidear-container {
+  background-color: #191a35; }
+
 .select2-container {
   max-width: 140px !important;
   width: 140px !important; }
@@ -8704,6 +8707,63 @@ body {
   .add-group-modal form .form-group {
     width: 100%; } }
 
+.custom-dashboard .sidebar {
+  background-color: #191a35; }
+  .custom-dashboard .sidebar .menu-item {
+    position: relative; }
+    .custom-dashboard .sidebar .menu-item:before {
+      content: '';
+      width: 5px;
+      height: 5px;
+      background-color: #A3BAFF;
+      position: absolute;
+      left: -10px; }
+    .custom-dashboard .sidebar .menu-item:after {
+      content: '';
+      width: 2px;
+      height: 15px;
+      background-color: #1391FF;
+      position: absolute;
+      right: -18px; }
+
+.custom-dashboard .content .title {
+  font-size: 26px;
+  text-align: center; }
+
+.custom-dashboard .content .sub-title {
+  opacity: 0.5;
+  color: #FFFFFF;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 30px; }
+
+.custom-dashboard .content .header-section {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background: #121631;
+  box-shadow: 0px 2px 0px 2px #121631;
+  text-align: center; }
+
+.custom-dashboard .content .dashboard-slider {
+  padding: 30px; }
+  .custom-dashboard .content .dashboard-slider .slide-item {
+    padding: 20px; }
+  .custom-dashboard .content .dashboard-slider.slick-slider .slick-prev {
+    left: 10px;
+    border: 1px solid #3C92FF; }
+    @media (min-width: 1200px) {
+      .custom-dashboard .content .dashboard-slider.slick-slider .slick-prev {
+        top: 40%; } }
+  .custom-dashboard .content .dashboard-slider.slick-slider .slick-next {
+    right: 10px;
+    border: 1px solid #3C92FF; }
+    @media (min-width: 1200px) {
+      .custom-dashboard .content .dashboard-slider.slick-slider .slick-next {
+        top: 40%; } }
+
 ul, ol {
   padding-left: 10px; }
 
@@ -9332,6 +9392,17 @@ button:hover .n-image {
 
 button:hover .h-image {
   display: block; }
+
+button.btn-light-blue {
+  background: #1391FF;
+  height: 40px;
+  border-radius: 2px;
+  color: #0A0C1B;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 16px;
+  padding: 0 70px; }
 
 @media (min-width: 768px) {
   .border-blue-left-md {

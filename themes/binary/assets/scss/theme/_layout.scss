@@ -1096,3 +1096,72 @@ body{
 		}
 	}
 }
+.custom-dashboard{
+	.sidebar{
+		background-color: #191a35;
+		.menu-item{
+			position: relative;
+			&:before{
+				content: '';
+				width: 5px;
+				height: 5px;
+				background-color: #A3BAFF;
+				position: absolute;
+				left: -10px;
+			}
+			&:after{
+				content: '';
+			    width: 2px;
+			    height: 15px;
+			    background-color: #1391FF;
+			    position: absolute;
+			    right: -18px;
+			}
+		}
+	}
+	.content{
+	    .title{
+	    	font-size: 26px;
+	    	text-align: center;
+	    }
+	    .sub-title{
+			opacity: 0.5;
+			color: #FFFFFF;
+			font-size: 12px;
+			letter-spacing: 0;
+			line-height: 16px;
+			text-align: center;
+			margin-bottom: 30px;
+			padding: 0 30px;
+	    }
+		.header-section{
+			padding-top: 70px;
+			padding-bottom: 50px;
+		    background: #121631;
+		    box-shadow: 0px 2px 0px 2px #121631;
+		    text-align: center;
+	    }
+	    .dashboard-slider{
+	    	padding: 30px;
+	    	.slide-item{
+	    		padding: 20px;
+	    	}
+	    	&.slick-slider{
+    			.slick-prev{
+    				left: 10px;
+    				border: 1px solid #3C92FF;
+    				@media (min-width: 1200px){
+    					top: 40%;
+    				}
+    			}
+    			.slick-next{
+    				right: 10px;
+				    border: 1px solid #3C92FF;
+        			@media (min-width: 1200px){
+    					top: 40%;
+    				}
+    			}
+			} 
+	    }
+	}
+}

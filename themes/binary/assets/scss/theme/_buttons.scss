@@ -263,3 +263,16 @@ button{
 		} 
 	}
 }
+button{
+	&.btn-light-blue{
+		background: #1391FF;
+		height: 40px;
+		border-radius: 2px;
+		color: #0A0C1B;
+		font-size: 12px;
+		font-weight: bold;
+		letter-spacing: 0;
+		line-height: 16px;
+	    padding: 0 70px;
+	}
+}
