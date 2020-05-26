@@ -32,7 +32,7 @@
             <img src="{{"images/ic_filter_list.svg" | relURL }}" alt="filter" class="filter mr-3">
         </div>
         <div class="action-block">
-            <button type="button" data-toggle="modal" data-target="#addGroup" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
+            <button type="button" data-toggle="modal" data-target="#addGroups" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
             <button type="button" data-toggle="modal" data-target="#addRole" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/role.svg" | relURL }}" alt="Role" class="group">Role</button>
             <button type="button" data-toggle="modal" data-target="#addUser" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="add">User</button>
         </div>
@@ -391,32 +391,111 @@
                         <div class="form-group row">
                             <label for="role" class="col-sm-2 col-form-label col-form-label-sm pt-0">Role</label>
                             <div class="icon position-relative col-sm-5">
-                                <select class="form-control form-control-sm custom-select-dropdown mb-1" id="role">
-                                    <option selected>Admin</option>
-                                    <option>Manager</option>
-                                    <option>Project Lead</option>
-                                    <option>CEO</option>
-                                </select>
+                                <div class="multiselectDropdown">
+                                    <input type="text" class="form-control form-control-sm" id="roles" placeholder="Enter Role" 
+                                    onclick="myFunction()" value="Admin, Manager">
+                                    <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
+                                    <div id="myDropdownRoles" class="dropdown-content dropdown-role">
+                                        <div class="dataList optionList">
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-admin1" checked>
+                                                <label class="custom-control-label" for="check-admin1">Admin</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-manager2" checked>
+                                                <label class="custom-control-label" for="check-manager2">Manager</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-ceo3">
+                                                <label class="custom-control-label" for="check-ceo3">CEO</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-lead4">
+                                                <label class="custom-control-label" for="check-lead4">Project Lead</label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-footer d-flex justify-content-end">
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                 <div class="btn-group btn-primary add-btn my-1">                     
+                                                    <button type="submit" class="btn btn-sm text-center">Done</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="group"class="col-sm-2 col-form-label col-form-label-sm pt-0">Group</label>
                             <div class="col-sm-5">
-                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="group">
-                                    <option selected>C Suite, Managers + 3</option>
-                                    <option>Data Application</option>
-                                    <option>Business Rules Engine Composer</option>
-                                    <option>ESB Exception Management</option>
-                                </select>
+                                <div class="multiselectDropdown">
+                                    <input type="text" class="form-control form-control-sm" id="addGroup" placeholder="Enter Group" 
+                                    onclick="myFunct()" value="C Suite, Manager">
+                                    <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
+                                    <div id="myDropdownGroup" class="dropdown-content dropdown-role">
+                                        <div class="dataList optionList">
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-suite" checked>
+                                                <label class="custom-control-label" for="check-suite">C Suite</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-mng" checked>
+                                                <label class="custom-control-label" for="check-mng">Manager</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-app">
+                                                <label class="custom-control-label" for="check-app">Data Application</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-rules">
+                                                <label class="custom-control-label" for="check-rules">Business Rules Engine Composer</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-esb">
+                                                <label class="custom-control-label" for="check-esb">ESB Exception Management</label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-footer d-flex justify-content-end">
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                 <div class="btn-group btn-primary add-btn my-1">                     
+                                                    <button type="submit" class="btn btn-sm text-center">Done</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="status"class="col-sm-2 col-form-label col-form-label-sm pt-0">Status</label>
                             <div class="col-sm-5">
-                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="status" onchange="select.className = this.options[this.selectedIndex].className;">
-                                    <option selected="selected" class="active">Active</option>
-                                    <option class="in-active">InActive</option>
-                                </select>
+                                <div class="multiselectDropdown">
+                                    <input type="text" class="form-control form-control-sm" id="status" placeholder="Enter Group" 
+                                    onclick="myStatus()" value="Active">
+                                    <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
+                                    <div id="myDropdownStatus" class="dropdown-content dropdown-role">
+                                        <div class="dataList optionList statusList">
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="active" checked>
+                                                <label class="custom-control-label" for="active">Active</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="inactive">
+                                                <label class="custom-control-label" for="inactive">In Active</label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-footer d-flex justify-content-end">
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                 <div class="btn-group btn-primary add-btn my-1">                     
+                                                    <button type="submit" class="btn btn-sm text-center">Done</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -473,7 +552,7 @@
                                <a href="#">http://www.googleusercontent.com</a>
                             </div>
                             <div class="remove-btn">
-                                <img src="{{"images/remove.svg" | relURL }}" width="20" height="20" alt="add url" class="remove" />
+                                <img src="{{"images/remove.svg" | relURL }}" width="17" height="17" alt="remove url" class="remove" />
                             </div>
                         </div>
                          <div class="form-group row">
@@ -482,7 +561,7 @@
                                <a href="#">https://gist.github.com/demersdesigns/4442cd84c1cc6c5ccda9b19eac1ba52b/4442cd84</a>
                             </div>
                             <div class="remove-btn">
-                                <img src="{{"images/remove.svg" | relURL }}" width="20" height="20" alt="add url" class="remove" />
+                                <img src="{{"images/remove.svg" | relURL }}" width="17" height="17" alt="remove url" class="remove" />
                             </div>
                         </div>
                          <div class="form-group row align-items-center">
@@ -491,7 +570,7 @@
                                <a href="#">https://success.salesforce.com/answers?id=90630000000hJEXAA2</a>
                             </div>
                             <div class="remove-btn">
-                                <img src="{{"images/remove.svg" | relURL }}" width="20" height="20" alt="add url" class="remove" />
+                                <img src="{{"images/remove.svg" | relURL }}" width="17" height="17" alt="remove url" class="remove" />
                             </div>
                         </div>
                          <div class="form-group row">
@@ -500,7 +579,7 @@
                                <a href="#">https://en.wikipedia.org/wiki/List_of_most_popular_websites</a>
                             </div>
                             <div class="remove-btn">
-                                <img src="{{"images/remove.svg" | relURL }}" width="20" height="20" alt="add url" class="remove" />
+                                <img src="{{"images/remove.svg" | relURL }}" width="17" height="17" alt="remove url" class="remove" />
                             </div>
                         </div>
                     </form>
@@ -517,7 +596,7 @@
 </div>
 
 <!-- Add Group Modal -->
-<div class="modal fade modal-multiselect" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="addGroup" aria-hidden="true">
+<div class="modal fade modal-multiselect" id="addGroups" tabindex="-1" role="dialog" aria-labelledby="addGroup" aria-hidden="true">
        <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
         <div class="modal-content user-modal add-group-modal">
             <div class="modal-header rounded-0">
@@ -561,12 +640,39 @@
                         <div class="form-group row">
                             <label for="group"class="col-sm-3 col-form-label col-form-label-sm pt-0">Role</label>
                             <div class="col-sm-5">
-                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="group">
-                                    <option selected>C Suite, Managers + 3</option>
-                                    <option>Data Application</option>
-                                    <option>Business Rules Engine Composer</option>
-                                    <option>ESB Exception Management</option>
-                                </select>
+                                <div class="multiselectDropdown">
+                                    <input type="text" class="form-control form-control-sm" id="roles" placeholder="Enter Role" 
+                                    onclick="myFunction()" value="Admin, Manager">
+                                    <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
+                                    <div id="myDropdownRole" class="dropdown-content dropdown-role">
+                                        <div class="dataList optionList">
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-admin1" checked>
+                                                <label class="custom-control-label" for="check-admin1">Admin</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-manager2" checked>
+                                                <label class="custom-control-label" for="check-manager2">Manager</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-ceo3">
+                                                <label class="custom-control-label" for="check-ceo3">CEO</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-lead4">
+                                                <label class="custom-control-label" for="check-lead4">Project Lead</label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-footer d-flex justify-content-end">
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                 <div class="btn-group btn-primary add-btn my-1">                     
+                                                    <button type="submit" class="btn btn-sm text-center">Done</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -607,6 +713,14 @@
 <script type="text/javascript">
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myDropdownRole").classList.toggle("show");
+        document.getElementById("myDropdownRoles").classList.toggle("show");
+    }
+    function myFunct() {
+        document.getElementById("myDropdownGroup").classList.toggle("show-group");
+    }
+    function myStatus() {
+        document.getElementById("myDropdownStatus").classList.toggle("show-status");
     }
     document.body.classList.add("blue_bg");
 </script>
