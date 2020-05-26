@@ -8267,6 +8267,9 @@ body {
     font-size: 14px;
     line-height: 22px; } }
 
+.blue_bg {
+  background-color: #0a0c1b; }
+
 .login-main {
   min-height: 100vh;
   flex-wrap: wrap;
