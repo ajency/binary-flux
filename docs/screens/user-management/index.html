@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.4f39a868b4c684c22440c53971d2547b584387d7000ff535141a08bd5523ad8d.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.3889d1962b1427dfb2a0f5e5ca874f160c7b7967927740835d8b5b80fda312f0.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -49,8 +49,8 @@
             <img src="/binary-flux/images/ic_filter_list.svg" alt="filter" class="filter mr-3">
         </div>
         <div class="action-block">
-            <button class="btn btn-small btn-outline-primary mr-1"><img src="/binary-flux/images/group-add.svg" alt="group" class="group">Group</button>
-            <button class="btn btn-small btn-outline-primary mr-1"><img src="/binary-flux/images/role.svg" alt="Role" class="group">Role</button>
+            <button type="button" data-toggle="modal" data-target="#addGroup" class="btn btn-small btn-outline-primary mr-1"><img src="/binary-flux/images/group-add.svg" alt="group" class="group">Group</button>
+            <button type="button" data-toggle="modal" data-target="#addRole" class="btn btn-small btn-outline-primary mr-1"><img src="/binary-flux/images/role.svg" alt="Role" class="group">Role</button>
             <button type="button" data-toggle="modal" data-target="#addUser" class="btn btn-small btn-outline-primary mr-1"><img src="/binary-flux/images/add-user.svg" alt="Add User" class="add">User</button>
         </div>
     </div>
@@ -299,6 +299,7 @@
                                  <div class="multiselectDropdown">
                                     <input type="text" class="form-control form-control-sm" id="role" placeholder="Enter Role" 
                                     onclick="myFunction()">
+                                    <img src="/binary-flux/images/ic_chevron_left.svg" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
                                     <div id="myDropdown" class="dropdown-content">
                                         <div class="w-100 px-1">
                                             <input type="text" placeholder="Search.." id="searchRoles" onkeyup="filterFunction()">
@@ -348,7 +349,8 @@
                         <div class="form-group row">
                             <label for="colFormLabelLg"class="col-sm-2 col-form-label col-form-label-sm pt-0">Assign Group</label>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control form-control-sm" id="role" placeholder="Enter Group">
+                                <input type="text" class="form-control form-control-sm" id="role" placeholder="Select">
+                                <img src="/binary-flux/images/ic_chevron_left.svg" width="14" height="14" alt="dropdown" class="dropdown-arrow" />
                             </div>
                         </div>
                     </form>
@@ -428,10 +430,182 @@
                         <div class="form-group row">
                             <label for="status"class="col-sm-2 col-form-label col-form-label-sm pt-0">Status</label>
                             <div class="col-sm-5">
-                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="status">
-                                    <option selected="selected">Active</option>
-                                    <option>InActive</option>
+                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="status" onchange="select.className = this.options[this.selectedIndex].className;">
+                                    <option selected="selected" class="active">Active</option>
+                                    <option class="in-active">InActive</option>
                                 </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="btn-group btn-primary add-btn mr-2 my-2">
+                <button type="submit" class="btn btn-sm text-center">Save</button>                           
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modal-multiselect" id="addRole" tabindex="-1" role="dialog" aria-labelledby="addRole" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
+        <div class="modal-content user-modal new-role-modal">
+            <div class="modal-header rounded-0">
+                <h5 class="modal-title text-uppercase font-weight-bold"><img src="/binary-flux/images/role.svg" alt="Add User" class="add" width="22" height="15"> New Role</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="/binary-flux/images/cancel.svg" width="14" height="14" alt="cancel" class="close" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <form class="w-100">
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabelSm" class="col-form-label col-form-label-sm pt-0">Role Name</label>
+                                <p class="tag">Give Your Role an Identifier</p>
+                            </div>
+                            <div class="col-sm-5 margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="user-role" placeholder="Enter Role" value="Admin">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Access URL</label>
+                                <p class="tag">Specify URL Access</p>
+                            </div>
+                            <div class="col-sm-5 position-relative">
+                                <input type="url" class="form-control form-control-sm" id="url" placeholder="Enter URL" value="https://ajency.github.io/binary-flux/screens/user-management/">
+                                <img src="/binary-flux/images/add.svg" width="20" height="20" alt="add url" class="add-url" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative link">
+                               <a href="#">http://www.googleusercontent.com</a>
+                            </div>
+                            <div class="remove-btn">
+                                <img src="/binary-flux/images/remove.svg" width="20" height="20" alt="add url" class="remove" />
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative link">
+                               <a href="#">https://gist.github.com/demersdesigns/4442cd84c1cc6c5ccda9b19eac1ba52b/4442cd84</a>
+                            </div>
+                            <div class="remove-btn">
+                                <img src="/binary-flux/images/remove.svg" width="20" height="20" alt="add url" class="remove" />
+                            </div>
+                        </div>
+                         <div class="form-group row align-items-center">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative link">
+                               <a href="#">https://success.salesforce.com/answers?id=90630000000hJEXAA2</a>
+                            </div>
+                            <div class="remove-btn">
+                                <img src="/binary-flux/images/remove.svg" width="20" height="20" alt="add url" class="remove" />
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative link">
+                               <a href="#">https://en.wikipedia.org/wiki/List_of_most_popular_websites</a>
+                            </div>
+                            <div class="remove-btn">
+                                <img src="/binary-flux/images/remove.svg" width="20" height="20" alt="add url" class="remove" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="btn-group btn-primary add-btn mr-2 my-2">
+                <button type="submit" class="btn btn-sm text-center">Save</button>                           
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade modal-multiselect" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="addGroup" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
+        <div class="modal-content user-modal add-group-modal">
+            <div class="modal-header rounded-0">
+                <h5 class="modal-title text-uppercase font-weight-bold"><img src="/binary-flux/images/group-add.svg" alt="Add Group" class="add" width="22" height="15"> New Group</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="/binary-flux/images/cancel.svg" width="14" height="14" alt="cancel" class="close" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <form class="w-100
+                    ">
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabelSm" class="col-form-label col-form-label-sm pt-0">Group Name</label>
+                                <p class="tag">Give Your Group a Name</p>
+                            </div>
+                            <div class="col-sm-5 margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="group-name" placeholder="Enter Group Name" value="Security Operations">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Email ID</label>
+                                <p class="tag">Enter Official Email ID</p>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email" value="security.operations@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-sm-3 col-form-label col-form-label-sm pt-0">Password</label>
+                            <div class="icon position-relative col-sm-5">
+                                <img src="/binary-flux/images/eye-outline.svg" width="22" height="15" alt="preview" class="preview">     
+                                <input type="password" class="form-control form-control-sm mb-1" id="password" placeholder="Enter Password" value="*******">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="group"class="col-sm-3 col-form-label col-form-label-sm pt-0">Role</label>
+                            <div class="col-sm-5">
+                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="group">
+                                    <option selected>C Suite, Managers + 3</option>
+                                    <option>Data Application</option>
+                                    <option>Business Rules Engine Composer</option>
+                                    <option>ESB Exception Management</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Add User</label>
+                                <p class="tag">Searches & Add user</p>
+                            </div>
+                            <div class="col-sm-5 position-relative">
+                                <input type="url" class="form-control form-control-sm" id="url" placeholder="Enter URL" value="Lipika Biwas">
+                                <p>Rohan, Anish, Shivani.. + 32 <a href="#">More</a></p>
+                                <a href="#"><img src="/binary-flux/images/add.svg" width="20" height="20" alt="add url" class="add-users" /></a>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2 mb-3">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative">
+                                <a href="#">
+                                    <div class="upload-btn">
+                                        <span>Bulk Upload</span>
+                                        <img src="/binary-flux/images/upload.svg" width="30" height="30" alt="upload" class="upload" />
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </form>
