@@ -32,11 +32,11 @@
             <img src="{{"images/ic_filter_list.svg" | relURL }}" alt="filter" class="filter mr-3">
         </div>
         <div class="action-block">
-            <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
-            <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/role.svg" | relURL }}" alt="Role" class="group">Role</button>
-            <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="group">User</button>
-             <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/report.svg" | relURL }}" alt="Add User" class="group">Report</button>
-              <button class="btn btn-small btn-outline-primary mr-1 mt-1 mb-1"><img src="{{"images/delete.svg" | relURL }}" alt="Add User" class="group">Delete</button>
+            <button type="button" data-toggle="modal" data-target="#addGroup" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
+            <button type="button" data-toggle="modal" data-target="#addRole" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/role.svg" | relURL }}" alt="Role" class="group">Role</button>
+            <button type="button" data-toggle="modal" data-target="#addUser" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="add">User</button>
+            <button class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/report.svg" | relURL }}" alt="Add User" class="group">Report</button>
+            <button class="btn btn-small btn-outline-primary mr-1 mt-1 mb-1"><img src="{{"images/delete.svg" | relURL }}" alt="Add User" class="group">Delete</button>
         </div>
     </div>
 </div>
@@ -73,7 +73,7 @@
                         <td>Cyber Security Account +2</td>
                         <td>Administration</td>
                         <td class="active">Active</td>
-                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                        <td><button type="button" data-toggle="modal" data-target="#editUser" class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
                     </tr>
                     <tr class="spacer"></tr>
                     <tr>
@@ -148,7 +148,7 @@
                         <td>Cyber Security Account +2</td>
                         <td>Administration</td>
                         <td class="in-active">InActive</td>
-                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                        <td><button type="button" data-toggle="modal" data-target="#editUser" class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
                     </tr>
                     <tr class="spacer"></tr>
                     <tr>
@@ -163,7 +163,7 @@
                         <td>Cyber Security Account +2</td>
                         <td>Administration</td>
                         <td class="active">Active</td>
-                        <td><button class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
+                        <td><button type="button" data-toggle="modal" data-target="#editUser" class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
                     </tr>
                     <tr class="spacer"></tr>
                     <tr>
@@ -230,4 +230,382 @@
 		</div>
     </div>
 </div>
+
+
+<!-- Add USer Modal -->
+<div class="modal fade modal-multiselect" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUser" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
+        <div class="modal-content user-modal">
+            <div class="modal-header rounded-0">
+                <h5 class="modal-title text-uppercase font-weight-bold"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="add" width="22" height="15"> New User</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="{{"images/cancel.svg" | relURL }}" width="14" height="14" alt="cancel" class="close" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <form class="w-100
+                    ">
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabelSm" class="col-form-label col-form-label-sm pt-0">Name</label>
+                                <p class="tag">Enter User Name</p>
+                            </div>
+                            <div class="col-sm-5 margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="firstname" placeholder="Fisrt Name">
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control form-control-sm" id="lastname" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Email ID</label>
+                                <p class="tag">Enter Official Email ID</p>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-sm-2 col-form-label col-form-label-sm pt-0">Password</label>
+                            <div class="icon position-relative col-sm-5">
+                                <img src="{{"images/eye-outline.svg" | relURL }}" width="22" height="15" alt="preview" class="preview">     
+                                <input type="password" class="form-control form-control-sm mb-1" id="password" placeholder="Enter Password">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabelLg"class="col-form-label col-form-label-sm pt-0">Assign Role</label>
+                                <p class="tag">Give Your User a Role</p>
+                            </div>
+                            <div class="col-sm-5">
+                                 <div class="multiselectDropdown">
+                                    <input type="text" class="form-control form-control-sm" id="role" placeholder="Enter Role" 
+                                    onclick="myFunction()">
+                                    <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <div class="w-100 px-1">
+                                            <input type="text" placeholder="Search.." id="searchRoles" onkeyup="filterFunction()">
+                                        </div>
+                                        <div class="dataList">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="custom-control custom-checkbox customized-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check-all">
+                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                </div>
+                                                <span class="text-white">Clear</span>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-admin" checked>
+                                                <label class="custom-control-label" for="check-admin">Admin</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-manager" checked>
+                                                <label class="custom-control-label" for="check-manager">Manager</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-ceo">
+                                                <label class="custom-control-label" for="check-ceo">CEO</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-lead">
+                                                <label class="custom-control-label" for="check-lead">Project Lead</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox customized-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check-ceo1" checked>
+                                                <label class="custom-control-label" for="check-ceo1">CEO</label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-footer d-flex">
+                                            <span>3 of 10</span>
+                                            <div class="d-flex align-items-center">
+                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                 <div class="btn-group btn-primary add-btn my-1">                     
+                                                    <button type="submit" class="btn btn-sm text-center">Done</button> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabelLg"class="col-sm-2 col-form-label col-form-label-sm pt-0">Assign Group</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control form-control-sm" id="role" placeholder="Select">
+                                <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="btn-group btn-primary add-btn mr-2 my-2">
+                <button type="submit" class="btn btn-sm text-center">Save</button>                           
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Edit User Modal -->
+<div class="modal fade modal-multiselect" id="editUser" tabindex="-1" role="dialog" aria-labelledby="editUser" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
+        <div class="modal-content user-modal edit-user-modal">
+            <div class="modal-header rounded-0">
+                <h5 class="modal-title text-uppercase font-weight-bold">John Doe</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="{{"images/cancel.svg" | relURL }}" width="14" height="14" alt="cancel" class="close" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <form class="w-100
+                    ">
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabelSm" class="col-form-label col-form-label-sm pt-0">Name</label>
+                                <p class="tag">Enter User Name</p>
+                            </div>
+                            <div class="col-sm-5 margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="firstname" placeholder="Fisrt Name" value="John">
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control form-control-sm" id="lastname" placeholder="Last Name" value="Doe">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-2">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Email ID</label>
+                                <p class="tag">Enter Official Email ID</p>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email" value="johndoe@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="role" class="col-sm-2 col-form-label col-form-label-sm pt-0">Role</label>
+                            <div class="icon position-relative col-sm-5">
+                                <select class="form-control form-control-sm custom-select-dropdown mb-1" id="role">
+                                    <option selected>Admin</option>
+                                    <option>Manager</option>
+                                    <option>Project Lead</option>
+                                    <option>CEO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="group"class="col-sm-2 col-form-label col-form-label-sm pt-0">Group</label>
+                            <div class="col-sm-5">
+                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="group">
+                                    <option selected>C Suite, Managers + 3</option>
+                                    <option>Data Application</option>
+                                    <option>Business Rules Engine Composer</option>
+                                    <option>ESB Exception Management</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="status"class="col-sm-2 col-form-label col-form-label-sm pt-0">Status</label>
+                            <div class="col-sm-5">
+                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="status" onchange="select.className = this.options[this.selectedIndex].className;">
+                                    <option selected="selected" class="active">Active</option>
+                                    <option class="in-active">InActive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="btn-group btn-primary add-btn mr-2 my-2">
+                <button type="submit" class="btn btn-sm text-center">Save</button>                           
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Role Modal -->
+<div class="modal fade modal-multiselect" id="addRole" tabindex="-1" role="dialog" aria-labelledby="addRole" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
+        <div class="modal-content user-modal new-role-modal">
+            <div class="modal-header rounded-0">
+                <h5 class="modal-title text-uppercase font-weight-bold"><img src="{{"images/role.svg" | relURL }}" alt="Add User" class="add" width="22" height="15"> New Role</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="{{"images/cancel.svg" | relURL }}" width="14" height="14" alt="cancel" class="close" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <form class="w-100">
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabelSm" class="col-form-label col-form-label-sm pt-0">Role Name</label>
+                                <p class="tag">Give Your Role an Identifier</p>
+                            </div>
+                            <div class="col-sm-5 margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="user-role" placeholder="Enter Role" value="Admin">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Access URL</label>
+                                <p class="tag">Specify URL Access</p>
+                            </div>
+                            <div class="col-sm-5 position-relative">
+                                <input type="url" class="form-control form-control-sm" id="url" placeholder="Enter URL" value="https://ajency.github.io/binary-flux/screens/user-management/">
+                                <img src="{{"images/add.svg" | relURL }}" width="20" height="20" alt="add url" class="add-url" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative link">
+                               <a href="#">http://www.googleusercontent.com</a>
+                            </div>
+                            <div class="remove-btn">
+                                <img src="{{"images/remove.svg" | relURL }}" width="20" height="20" alt="add url" class="remove" />
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative link">
+                               <a href="#">https://gist.github.com/demersdesigns/4442cd84c1cc6c5ccda9b19eac1ba52b/4442cd84</a>
+                            </div>
+                            <div class="remove-btn">
+                                <img src="{{"images/remove.svg" | relURL }}" width="20" height="20" alt="add url" class="remove" />
+                            </div>
+                        </div>
+                         <div class="form-group row align-items-center">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative link">
+                               <a href="#">https://success.salesforce.com/answers?id=90630000000hJEXAA2</a>
+                            </div>
+                            <div class="remove-btn">
+                                <img src="{{"images/remove.svg" | relURL }}" width="20" height="20" alt="add url" class="remove" />
+                            </div>
+                        </div>
+                         <div class="form-group row">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative link">
+                               <a href="#">https://en.wikipedia.org/wiki/List_of_most_popular_websites</a>
+                            </div>
+                            <div class="remove-btn">
+                                <img src="{{"images/remove.svg" | relURL }}" width="20" height="20" alt="add url" class="remove" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="btn-group btn-primary add-btn mr-2 my-2">
+                <button type="submit" class="btn btn-sm text-center">Save</button>                           
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Group Modal -->
+<div class="modal fade modal-multiselect" id="addGroup" tabindex="-1" role="dialog" aria-labelledby="addGroup" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered modal-dialog-md" role="document">
+        <div class="modal-content user-modal add-group-modal">
+            <div class="modal-header rounded-0">
+                <h5 class="modal-title text-uppercase font-weight-bold"><img src="{{"images/group-add.svg" | relURL }}" alt="Add Group" class="add" width="22" height="15"> New Group</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <img src="{{"images/cancel.svg" | relURL }}" width="14" height="14" alt="cancel" class="close" />
+                </button>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="modal-body rounded-0">
+                <div class="row m-0">
+                    <form class="w-100
+                    ">
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabelSm" class="col-form-label col-form-label-sm pt-0">Group Name</label>
+                                <p class="tag">Give Your Group a Name</p>
+                            </div>
+                            <div class="col-sm-5 margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="group-name" placeholder="Enter Group Name" value="Security Operations">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Email ID</label>
+                                <p class="tag">Enter Official Email ID</p>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email" value="security.operations@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-sm-3 col-form-label col-form-label-sm pt-0">Password</label>
+                            <div class="icon position-relative col-sm-5">
+                                <img src="{{"images/eye-outline.svg" | relURL }}" width="22" height="15" alt="preview" class="preview">     
+                                <input type="password" class="form-control form-control-sm mb-1" id="password" placeholder="Enter Password" value="*******">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="group"class="col-sm-3 col-form-label col-form-label-sm pt-0">Role</label>
+                            <div class="col-sm-5">
+                                <select class="form-control form-control-sm mb-1 custom-select-dropdown" id="group">
+                                    <option selected>C Suite, Managers + 3</option>
+                                    <option>Data Application</option>
+                                    <option>Business Rules Engine Composer</option>
+                                    <option>ESB Exception Management</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
+                                <label for="colFormLabel" class="col-form-label col-form-label-sm pt-0">Add User</label>
+                                <p class="tag">Searches & Add user</p>
+                            </div>
+                            <div class="col-sm-5 position-relative">
+                                <input type="url" class="form-control form-control-sm" id="url" placeholder="Enter URL" value="Lipika Biwas">
+                                <p>Rohan, Anish, Shivani.. + 32 <a href="#">More</a></p>
+                                <a href="#"><img src="{{"images/add.svg" | relURL }}" width="20" height="20" alt="add url" class="add-users" /></a>
+                            </div>
+                        </div>
+                        <div class="form-group row mt-2 mb-3">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-5 position-relative">
+                                <a href="#">
+                                    <div class="upload-btn">
+                                        <span>Bulk Upload</span>
+                                        <img src="{{"images/upload.svg" | relURL }}" width="30" height="30" alt="upload" class="upload" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-divider">
+                <hr>
+            </div>
+            <div class="btn-group btn-primary add-btn mr-2 my-2">
+                <button type="submit" class="btn btn-sm text-center">Save</button>                           
+            </div>
+        </div>
+    </div>
+</div>
+
 {{ end }}
