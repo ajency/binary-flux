@@ -8485,7 +8485,7 @@ body {
     margin: 2rem 0; }
     .setting-wrapper .form-group .btn {
       border-width: 1px;
-      padding: 6px 50px;
+      padding: 6px 47px;
       font-size: 12px;
       display: flex;
       align-items: center; }
@@ -8597,13 +8597,14 @@ body {
     .user-management.list-view .table {
       margin-bottom: 0; } }
 
-@media (max-width: 991px) {
-  .modal-multiselect .modal-dialog {
-    max-width: 800px !important; } }
-
-@media (max-width: 525px) {
-  .modal-multiselect .modal-dialog {
-    width: auto !important; } }
+.modal-multiselect .modal-dialog {
+  max-width: 950px; }
+  @media (max-width: 991px) {
+    .modal-multiselect .modal-dialog {
+      max-width: 800px !important; } }
+  @media (max-width: 525px) {
+    .modal-multiselect .modal-dialog {
+      width: auto !important; } }
 
 .user-modal {
   background-color: #191A35 !important;
@@ -8652,6 +8653,10 @@ body {
 .edit-user-modal form .form-control {
   border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px; }
+
+.edit-user-modal form #status {
+  color: #40E240;
+  font-weight: 600; }
 
 .new-role-modal form .form-group img.add-url {
   position: absolute;
@@ -8917,6 +8922,10 @@ h1, .h1 {
         padding: 10px 24px; }
       .multiselectDropdown .dropdown-content .dataList::-webkit-scrollbar {
         display: none; }
+      .multiselectDropdown .dropdown-content .dataList.optionList {
+        box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.3); }
+      .multiselectDropdown .dropdown-content .dataList.statusList {
+        height: 84px; }
     .multiselectDropdown .dropdown-content .dropdown-footer {
       border-radius: 0 0 4px 4px;
       background-color: #20284C;
@@ -8924,8 +8933,10 @@ h1, .h1 {
       align-items: center;
       justify-content: space-between;
       padding: 0 15px; }
-    .multiselectDropdown .dropdown-content.show {
+    .multiselectDropdown .dropdown-content.show, .multiselectDropdown .dropdown-content.show-group, .multiselectDropdown .dropdown-content.show-status {
       display: block; }
+    .multiselectDropdown .dropdown-content.dropdown-role {
+      top: 32px; }
 
 .custom-control-label::before {
   background-color: #27283D;
