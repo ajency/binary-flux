@@ -275,4 +275,18 @@ button{
 		line-height: 16px;
 	    padding: 0 70px;
 	}
+	&.btn-ouline-light-blue{
+		display: block;
+		margin: 0 auto;
+		background: transparent;
+		height: 40px;
+		border-radius: 2px;
+		color: #1391FF;
+		border: 1px solid #008EFF;
+		font-size: 12px;
+		font-weight: bold;
+		letter-spacing: 0;
+		line-height: 16px;
+	    padding: 0 70px;
+	}
 }

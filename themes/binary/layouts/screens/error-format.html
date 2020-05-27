@@ -1,0 +1,50 @@
+{{ define "main" }}
+<header class="header-section">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="logo-wrap">         
+            <a href="#">
+                <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+            </a>
+        </div>
+        <div class="navbar-right dropdown">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Organisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid p-0">
+    <div class="custom-dashboard position-relative">
+        <div class="sidebar p-0">
+            <div class="sidear-container mobile-slide-in px-2 py-4">
+               <div class="d-flex align-items-center justify-content-between menu-item text-white">New Dashbaord <img src="{{"images/cancel.svg" | relURL }}" alt="close" class="close" width="12" height="12"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="header-section pb-2">
+                <img src="{{"images/ic_cubes.svg" | relURL }}" alt="enter query" class="enter">
+                <h3 class="title font-weight-light">Enter a query</h3>
+                <p class="sub-title">Stat typing your query and hit the go button to configure your widget.</p>
+                <textarea id="query-field" name="query-field" rows="3" cols="50" class="query-field scroll-bar" autocomplete="ON">FIND COUNT (employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && filesize > 100 && extension MATCHES('.pdf','.ppt') BUCKET-ONeventtime SORT-ON eventtime DESC TRANSFORM-TO LINECHART</textarea>
+                <span class="error-msg mt-2"><img src="{{"images/ic_report_problem.svg" | relURL }}" alt="close" class="warning" width="15" height="18">command=“input”, Invalid argument (“nothing.csv”). Expeted “add” or “remove” argument.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    document.body.classList.add("blue_bg");
+</script>
+{{ end }}
