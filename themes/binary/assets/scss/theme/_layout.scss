@@ -1128,6 +1128,7 @@ body{
 				background-color: #FFFFFF;
 				box-shadow: 0 0 35px 0 rgba(19,145,255,0.38);
 				border: 0;
+				width: 80%;
 		    }
 	    }
 	    .dashboard-slider{
@@ -1140,6 +1141,16 @@ body{
     			    border: 0.5px solid rgba(151, 151, 151, 0.22);
 				    border-radius: 6px;
 				    padding: 10px;
+	    		}
+	    		&-query{
+	    			margin-right: 30px;
+				    border: 0.5px solid rgba(151, 151, 151, 0.22);
+					border-radius: 6px;
+					padding: 0.5px;
+	    			.subText{
+	    				padding-bottom: 0;
+	    				margin-bottom: 0.5rem;
+	    			}
 	    		}
 	    	}
 	    	&.slick-slider{

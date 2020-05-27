@@ -8753,7 +8753,8 @@ body {
     border-radius: 4px;
     background-color: #FFFFFF;
     box-shadow: 0 0 35px 0 rgba(19, 145, 255, 0.38);
-    border: 0; }
+    border: 0;
+    width: 80%; }
 
 .custom-dashboard .content .dashboard-slider .slide-item {
   padding-right: 30px; }
@@ -8763,6 +8764,14 @@ body {
     border: 0.5px solid rgba(151, 151, 151, 0.22);
     border-radius: 6px;
     padding: 10px; }
+  .custom-dashboard .content .dashboard-slider .slide-item-query {
+    margin-right: 30px;
+    border: 0.5px solid rgba(151, 151, 151, 0.22);
+    border-radius: 6px;
+    padding: 0.5px; }
+    .custom-dashboard .content .dashboard-slider .slide-item-query .subText {
+      padding-bottom: 0;
+      margin-bottom: 0.5rem; }
 
 .custom-dashboard .content .dashboard-slider.slick-slider .slick-prev {
   display: none !important; }
