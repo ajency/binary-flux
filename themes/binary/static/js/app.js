@@ -66,42 +66,58 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"></button>'
     });
     
-    $('.dashboard-slider').slick({
-        infinite: false,
-        speed: 300,
+
+    var $carousel = $('.dashboard-slider');
+
+    var settings = {
+        dots: false,
+        arrows: false,
+        slide: '.slick-slideshow__slide',
         slidesToShow: 3,
-        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '30px',
         arrows: true,
+        infinite: true,
         cssEase: 'linear', 
-        prevArrow: '<button type="button" class="slick-prev"></button>',  
         nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+        {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
+        },
+        {
+            breakpoint: 991,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+        }
+    ]};
+
+    function setSlideVisibility() {
+        var visibleSlides = $carousel.find('.slick-slideshow__slide[aria-hidden="false"]');
+        $(visibleSlides).each(function() {
+            $(this).css('opacity', 1);
+        });
+        $(visibleSlides).first().prev().css('opacity', 1);
+    }
+
+    $carousel.slick(settings);
+    $carousel.slick('slickGoTo', 1);
+    setSlideVisibility();
+
+    $carousel.on('afterChange', function() {
+        setSlideVisibility();
     });
     // particlesJS("particles-js", {
     //     "particles": {
