@@ -1099,25 +1099,6 @@ body{
 .custom-dashboard{
 	.sidebar{
 		background-color: #191a35;
-		.menu-item{
-			position: relative;
-			&:before{
-				content: '';
-				width: 5px;
-				height: 5px;
-				background-color: #A3BAFF;
-				position: absolute;
-				left: -10px;
-			}
-			&:after{
-				content: '';
-			    width: 2px;
-			    height: 15px;
-			    background-color: #1391FF;
-			    position: absolute;
-			    right: -18px;
-			}
-		}
 	}
 	.content{
 	    .title{
@@ -1142,21 +1123,26 @@ body{
 		    text-align: center;
 	    }
 	    .dashboard-slider{
-	    	padding: 30px;
 	    	.slide-item{
-	    		padding: 20px;
+	    		padding-right: 30px;
+	    		.subText{
+	    			color: #667DC6;
+	    		}
+	    		img{
+    			    border: 0.5px solid rgba(151, 151, 151, 0.22);
+				    border-radius: 6px;
+				    padding: 10px;
+	    		}
 	    	}
 	    	&.slick-slider{
     			.slick-prev{
-    				left: 10px;
-    				border: 1px solid #3C92FF;
-    				@media (min-width: 1200px){
-    					top: 40%;
-    				}
+    				display: none !important;
     			}
     			.slick-next{
     				right: 10px;
 				    border: 1px solid #3C92FF;
+			        width: 25px;
+    				height: 25px;
         			@media (min-width: 1200px){
     					top: 40%;
     				}

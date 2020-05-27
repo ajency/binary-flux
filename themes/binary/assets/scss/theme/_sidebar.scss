@@ -74,6 +74,26 @@
     .sidear{
         &-container{
             background-color: #191a35;
+            .menu-item{
+                position: relative;
+                padding-left: 8px;
+                &:before{
+                    content: '';
+                    width: 6px;
+                    height: 6px;
+                    background-color: #A3BAFF;
+                    position: absolute;
+                    left: -10px;
+                }
+                &:after{
+                    content: '';
+                    width: 3px;
+                    height: 24px;
+                    background-color: #1391FF;
+                    position: absolute;
+                    right: -18px;
+                }
+            }
         }
     }
 }
