@@ -57,6 +57,24 @@
     </item>
     
     <item>
+      <title>Main Query Dashboard</title>
+      <link>https://ajency.github.io/binary-flux/screens/main-query-dashboard/</link>
+      <pubDate>Mon, 11 May 2020 13:46:25 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/main-query-dashboard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Error Message</title>
+      <link>https://ajency.github.io/binary-flux/screens/error-format/</link>
+      <pubDate>Sun, 12 Apr 2020 13:46:25 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/error-format/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Add data source</title>
       <link>https://ajency.github.io/binary-flux/screens/add-data-source-form/</link>
       <pubDate>Wed, 11 Dec 2019 13:46:25 +0530</pubDate>
