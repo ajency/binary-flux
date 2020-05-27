@@ -66,6 +66,59 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"></button>'
     });
     
+
+    var $carousel = $('.dashboard-slider');
+
+    var settings = {
+        dots: false,
+        arrows: false,
+        slide: '.slick-slideshow__slide',
+        slidesToShow: 3,
+        centerMode: true,
+        centerPadding: '30px',
+        arrows: true,
+        infinite: true,
+        cssEase: 'linear', 
+        nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            }
+        },
+        {
+            breakpoint: 991,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 575,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+        }
+    ]};
+
+    function setSlideVisibility() {
+        var visibleSlides = $carousel.find('.slick-slideshow__slide[aria-hidden="false"]');
+        $(visibleSlides).each(function() {
+            $(this).css('opacity', 1);
+        });
+        $(visibleSlides).first().prev().css('opacity', 1);
+    }
+
+    $carousel.slick(settings);
+    $carousel.slick('slickGoTo', 1);
+    setSlideVisibility();
+
+    $carousel.on('afterChange', function() {
+        setSlideVisibility();
+    });
     // particlesJS("particles-js", {
     //     "particles": {
     //         "number": {

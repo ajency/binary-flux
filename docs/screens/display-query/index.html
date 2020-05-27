@@ -1,9 +1,26 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html><head>
+
+	<title>Query Dashboard - Binary Flux</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="/binary-flux/images/favicon.ico" rel="shortcut icon">
+	
+		
+			
+			<link rel="stylesheet" href="/binary-flux/css/style.min.78d49c38a57f0250e8e1002f0307c9fea7abeb3dd7186cf333acafe1393ea02c.css">
+		
+		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
+		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head><body>
+        
+        <div id="content">
 <header class="header-section">
     <div class="d-flex justify-content-between align-items-center">
         <div class="logo-wrap">         
             <a href="#">
-                <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+                <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
             </a>
         </div>
         <div class="navbar-right dropdown">
@@ -20,7 +37,7 @@
             </ul>
         </div>
         <div class="user">
-            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+            <span class="text-white font-weight-bold">John Smith<img src="/binary-flux/images/notifications-outline.svg" width="20" height="20" alt="notification" class="notification"></span>
         </div>
     </div>
 </header>
@@ -29,12 +46,12 @@
     <div class="custom-dashboard position-relative">
         <div class="sidebar p-0">
             <div class="sidear-container mobile-slide-in px-2 py-4">
-               <div class="d-flex align-items-center justify-content-between menu-item text-white">New Dashbaord <img src="{{"images/cancel.svg" | relURL }}" alt="close" class="close" width="12" height="12"></div>
+               <div class="d-flex align-items-center justify-content-between menu-item text-white">New Dashbaord <img src="/binary-flux/images/cancel.svg" alt="close" class="close" width="12" height="12"></div>
             </div>
         </div>
         <div class="content">
             <div class="header-section">
-                <img src="{{"images/ic_cubes.svg" | relURL }}" alt="enter query" class="enter">
+                <img src="/binary-flux/images/ic_cubes.svg" width="98" height="82" alt="enter query" class="enter">
                 <h3 class="title font-weight-light">Enter a query</h3>
                 <p class="sub-title">Stat typing your query and hit the go button to configure your widget.</p>
                 <textarea id="w3review" name="query-field" rows="4" cols="50" class="query-field"> </textarea>
@@ -44,31 +61,31 @@
                 <p class="sub-title">Select a widget and customize to suit your data requirements.</p>
                 <div class="dashboard-slider">
                     <div class="slide-item-query slick-slideshow__slide">
-                        <img src="{{"images/1.png" | relURL }}" alt="Banner" class="w-100">
+                        <img src="/binary-flux/images/1.png" alt="Banner" class="w-100">
                         <div class="mt-1 max-470 text-center">
                             <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
                         </div>
                     </div>
                     <div class="slide-item-query slick-slideshow__slide">
-                        <img src="{{"images/2.jpg" | relURL }}" alt="Banner" class="w-100">
+                        <img src="/binary-flux/images/2.jpg" alt="Banner" class="w-100">
                         <div class="mt-1 max-470 text-center">
                             <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
                         </div>
                     </div>
                     <div class="slide-item-query slick-slideshow__slide">
-                        <img src="{{"images/3.jpg" | relURL }}" alt="Banner" class="w-100">
+                        <img src="/binary-flux/images/3.jpg" alt="Banner" class="w-100">
                         <div class="mt-1 max-470 text-center">
                             <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
                         </div>
                     </div>
                     <div class="slide-item-query slick-slideshow__slide">
-                        <img src="{{"images/4.jpg" | relURL }}" alt="Banner" class="w-100">
+                        <img src="/binary-flux/images/4.jpg" alt="Banner" class="w-100">
                         <div class="mt-1 max-470 text-center">
                             <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
                         </div>
                     </div>
                     <div class="slide-item-query slick-slideshow__slide">
-                        <img src="{{"images/5.jpg" | relURL }}" alt="Banner" class="w-100">
+                        <img src="/binary-flux/images/5.jpg" alt="Banner" class="w-100">
                         <div class="mt-1 max-470 text-center">
                             <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
                         </div>
@@ -82,4 +99,13 @@
 <script type="text/javascript">
     document.body.classList.add("blue_bg");
 </script>
-{{ end }}
+
+        </div><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="/binary-flux/js/app.js"></script></body>
+</html>

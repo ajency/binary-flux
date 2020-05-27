@@ -8760,10 +8760,6 @@ body {
   padding-right: 30px; }
   .custom-dashboard .content .dashboard-slider .slide-item .subText {
     color: #667DC6; }
-  .custom-dashboard .content .dashboard-slider .slide-item img {
-    border: 0.5px solid rgba(151, 151, 151, 0.22);
-    border-radius: 6px;
-    padding: 10px; }
   .custom-dashboard .content .dashboard-slider .slide-item-query {
     margin-right: 30px;
     border: 0.5px solid rgba(151, 151, 151, 0.22);
