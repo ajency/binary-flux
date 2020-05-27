@@ -102,6 +102,15 @@
     </item>
     
     <item>
+      <title>Display Query Dashboard</title>
+      <link>https://ajency.github.io/binary-flux/screens/display-query/</link>
+      <pubDate>Wed, 11 Dec 2019 13:46:25 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/display-query/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>End user all data source</title>
       <link>https://ajency.github.io/binary-flux/screens/end-user-all-data-source/</link>
       <pubDate>Wed, 11 Dec 2019 13:46:25 +0530</pubDate>
@@ -134,15 +143,6 @@
       <pubDate>Wed, 11 Dec 2019 13:46:25 +0530</pubDate>
       
       <guid>https://ajency.github.io/binary-flux/screens/landing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Query Dashboard</title>
-      <link>https://ajency.github.io/binary-flux/screens/display-query/</link>
-      <pubDate>Wed, 11 Dec 2019 13:46:25 +0530</pubDate>
-      
-      <guid>https://ajency.github.io/binary-flux/screens/display-query/</guid>
       <description></description>
     </item>
     

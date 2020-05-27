@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html><head>
 
-	<title>Query Dashboard - Binary Flux</title>
+	<title>Display Query Dashboard - Binary Flux</title>
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
 	<link type="image/x-icon" href="/binary-flux/images/favicon.ico" rel="shortcut icon">
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.78d49c38a57f0250e8e1002f0307c9fea7abeb3dd7186cf333acafe1393ea02c.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.06ca7d7bedf7c578c576968ca127f3aa1abd8ba6776d89d0d82c1dd871aecc9f.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -51,46 +51,11 @@
         </div>
         <div class="content">
             <div class="header-section">
-                <img src="/binary-flux/images/ic_cubes.svg" width="98" height="82" alt="enter query" class="enter">
+                <img src="/binary-flux/images/ic_cubes.svg" alt="enter query" class="enter">
                 <h3 class="title font-weight-light">Enter a query</h3>
                 <p class="sub-title">Stat typing your query and hit the go button to configure your widget.</p>
-                <textarea id="w3review" name="query-field" rows="4" cols="50" class="query-field"> </textarea>
-            </div>
-            <div class="library-display-section pt-6">
-                <h3 class="title font-weight-light">or browse our widget library</h3>
-                <p class="sub-title">Select a widget and customize to suit your data requirements.</p>
-                <div class="dashboard-slider">
-                    <div class="slide-item-query slick-slideshow__slide">
-                        <img src="/binary-flux/images/1.png" alt="Banner" class="w-100">
-                        <div class="mt-1 max-470 text-center">
-                            <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
-                        </div>
-                    </div>
-                    <div class="slide-item-query slick-slideshow__slide">
-                        <img src="/binary-flux/images/2.jpg" alt="Banner" class="w-100">
-                        <div class="mt-1 max-470 text-center">
-                            <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
-                        </div>
-                    </div>
-                    <div class="slide-item-query slick-slideshow__slide">
-                        <img src="/binary-flux/images/3.jpg" alt="Banner" class="w-100">
-                        <div class="mt-1 max-470 text-center">
-                            <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
-                        </div>
-                    </div>
-                    <div class="slide-item-query slick-slideshow__slide">
-                        <img src="/binary-flux/images/4.jpg" alt="Banner" class="w-100">
-                        <div class="mt-1 max-470 text-center">
-                            <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
-                        </div>
-                    </div>
-                    <div class="slide-item-query slick-slideshow__slide">
-                        <img src="/binary-flux/images/5.jpg" alt="Banner" class="w-100">
-                        <div class="mt-1 max-470 text-center">
-                            <p class="subText font-weight-bold">Application Support | <span class="font-weight-light">Created by Anish Kumar</span></p>
-                        </div>
-                    </div>
-                </div>
+                <textarea id="query-field" name="query-field" rows="3" cols="50" class="query-field scroll-bar">FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && filesize > 100 && extension MATCHES('.pdf','.ppt') BUCKET-ONeventtime SORT-ON eventtime DESC TRANSFORM-TO LINECHART ,  </textarea>
+                <button class="btn btn-lg btn-primary btn-ouline-light-blue mt-2">Generate Widget</button>
             </div>
         </div>
     </div>
