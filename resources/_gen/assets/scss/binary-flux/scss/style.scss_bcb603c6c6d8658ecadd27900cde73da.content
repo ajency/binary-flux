@@ -8426,10 +8426,16 @@ body {
         padding: 0 5px; }
       .sub-header .right-section .action-block button:hover {
         background: transparent;
-        color: #3D90F7; }
+        color: white;
+        border-color: white;
+        filter: brightness(0) invert(1); }
+      .sub-header .right-section .action-block button:focus {
+        box-shadow: none; }
       @media (max-width: 425px) {
         .sub-header .right-section .action-block button {
           margin-bottom: 10px; } }
+      .sub-header .right-section .action-block button.d-none {
+        display: none; }
     @media (max-width: 425px) {
       .sub-header .right-section .action-block {
         display: flex;
@@ -8513,7 +8519,9 @@ body {
         .setting-wrapper .form-group .btn {
           padding: 6px 15px; } }
       .setting-wrapper .form-group .btn:hover {
-        background: transparent; }
+        background: transparent;
+        border-color: white;
+        filter: brightness(0) invert(1); }
   .setting-wrapper .form-control {
     border: 1px solid #5D5E72;
     border-radius: 2px;
@@ -8521,7 +8529,8 @@ body {
     height: 36px; }
     .setting-wrapper .form-control:focus {
       background: transparent;
-      box-shadow: none; }
+      box-shadow: none;
+      border: 1px solid rgba(255, 255, 255, 0.6); }
   @media (max-width: 767px) {
     .setting-wrapper .action-block {
       flex-direction: column;
@@ -8671,7 +8680,6 @@ body {
     margin: auto; }
 
 .edit-user-modal form .form-control {
-  border-color: rgba(255, 255, 255, 0.5);
   border-width: 1px; }
 
 .edit-user-modal form #status {
@@ -9018,14 +9026,17 @@ h1, .h1 {
     .multiselectDropdown .dropdown-content .dataList {
       overflow-y: auto;
       height: 130px;
-      padding: 0 10px; }
+      padding: 0 15px; }
       .multiselectDropdown .dropdown-content .dataList .customized-checkbox .custom-control-label {
         font-size: 12px;
         color: rgba(255, 255, 255, 0.72);
         font-weight: 300; }
+      .multiselectDropdown .dropdown-content .dataList .customized-checkbox.no-boxshadow {
+        box-shadow: none !important; }
       .multiselectDropdown .dropdown-content .dataList .customized-checkbox:first-child {
         padding-top: 10px;
-        padding-bottom: 10px; }
+        padding-bottom: 10px;
+        box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.3); }
       .multiselectDropdown .dropdown-content .dataList .customized-checkbox:not(:first-child) {
         box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.3);
         padding: 10px 24px; }
@@ -9042,6 +9053,9 @@ h1, .h1 {
       align-items: center;
       justify-content: space-between;
       padding: 0 15px; }
+      .multiselectDropdown .dropdown-content .dropdown-footer a {
+        text-decoration: none;
+        color: #3D90F7; }
     .multiselectDropdown .dropdown-content.show, .multiselectDropdown .dropdown-content.show-group, .multiselectDropdown .dropdown-content.show-status {
       display: block; }
     .multiselectDropdown .dropdown-content.dropdown-role {

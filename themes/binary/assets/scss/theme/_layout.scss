@@ -698,10 +698,18 @@ body{
 				}
 	    		&:hover{
 	    			background: transparent;
-	    			color: #3D90F7;
+	    			color: white;
+	    			border-color: white;
+					filter: brightness(0) invert(1);
+	    		}
+	    		&:focus{
+	    			box-shadow: none;
 	    		}
 	    		@media (max-width: 425px){
 	    			margin-bottom: 10px;
+	    		}
+	    		&.d-none{
+	    			display: none;
 	    		}
 			}
 			@media (max-width: 425px){
@@ -815,6 +823,8 @@ body{
 	    		}
 	    		&:hover{
 	    			background: transparent;
+	    			border-color: white;
+					filter: brightness(0) invert(1);
 	    		}
 			}
 		}
@@ -826,6 +836,7 @@ body{
 			&:focus{
 				background: transparent;
 				box-shadow: none;
+				border: 1px solid rgba(255, 255, 255, 0.6);
 			}
 		}
 	}
@@ -1026,7 +1037,7 @@ body{
 .edit-user-modal{
 	form{
 		.form-control{
-			border-color: rgba(255,255,255,0.50);
+			//border-color: rgba(255,255,255,0.50);
 			border-width: 1px;
 		}
 		#status{

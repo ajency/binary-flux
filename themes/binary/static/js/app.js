@@ -119,6 +119,20 @@ $(document).ready(function(){
     $carousel.on('afterChange', function() {
         setSlideVisibility();
     });
+
+    $('input[type=checkbox]').on('change', function() {
+        var div = $(this).closest('tr');
+        $(this).is(":checked") ? div.addClass("selected") : div.removeClass("selected");
+    });
+
+    $('input[type=checkbox]').on('change', function() {
+       $(".btnBlock").toggleClass('d-none')
+    });
+
+    $('.modal-content').on('shown.bs.modal', function () {
+      $("#myDropdown").removeClass('show')
+    })
+
     // particlesJS("particles-js", {
     //     "particles": {
     //         "number": {
