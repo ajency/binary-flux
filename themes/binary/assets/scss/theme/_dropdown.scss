@@ -61,16 +61,20 @@
         .dataList{
             overflow-y: auto;
             height: 130px;
-            padding: 0 10px;
+            padding: 0 15px;
             .customized-checkbox{
                 .custom-control-label{
                     font-size: 12px;
                     color: rgba(255,255,255,0.72);
                     font-weight: 300;
                 }
+                &.no-boxshadow{
+                    box-shadow: none !important;
+                }
                 &:first-child{
                     padding-top: 10px;
                     padding-bottom: 10px;
+                    box-shadow: 0 2px 0px 0 rgba(0,0,0,0.3);
                 }
                 &:not(:first-child){
                     box-shadow: 0 2px 0px 0 rgba(0,0,0,0.3);
@@ -94,6 +98,10 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 15px;
+            a{
+                text-decoration: none;
+                color: #3D90F7;
+            }
         }
         &.show, &.show-group, &.show-status{
             display: block;

@@ -35,6 +35,8 @@
             <button type="button" data-toggle="modal" data-target="#addGroups" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/group-add.svg" | relURL }}" alt="group" class="group">Group</button>
             <button type="button" data-toggle="modal" data-target="#addRole" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/role.svg" | relURL }}" alt="Role" class="group">Role</button>
             <button type="button" data-toggle="modal" data-target="#addUser" class="btn btn-small btn-outline-primary mr-1"><img src="{{"images/add-user.svg" | relURL }}" alt="Add User" class="add">User</button>
+            <button class="btn btn-small btn-outline-primary mr-1 btnBlock d-none"><img src="{{"images/report.svg" | relURL }}" alt="Add User" class="group">Report</button>
+            <button class="btn btn-small btn-outline-primary btnBlock d-none mr-1 mt-1 mb-1"><img src="{{"images/delete.svg" | relURL }}" alt="Add User" class="group">Delete</button>
         </div>
     </div>
 </div>
@@ -89,10 +91,10 @@
                         <td><button type="button" data-toggle="modal" data-target="#editUser" class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
                     </tr>
                     <tr class="spacer"></tr>
-                    <tr class="selected">
+                    <tr>
                         <td>
                             <div class="custom-control custom-checkbox customized-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="check4" checked>
+                                <input type="checkbox" class="custom-control-input" id="check4">
                                 <label class="custom-control-label" for="check4"></label>
                             </div>
                         </td>
@@ -104,10 +106,10 @@
                         <td><button type="button" data-toggle="modal" data-target="#editUser" class="text-white ml-1 btn-edit"><span class="icon-edit"></span> Edit</button><i class="icon-icon-dots-hr ml-2"></i></td>
                     </tr>
                     <tr class="spacer"></tr>
-                    <tr class="selected">
+                    <tr>
                         <td>
                             <div class="custom-control custom-checkbox customized-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="check5" checked>
+                                <input type="checkbox" class="custom-control-input" id="check5">
                                 <label class="custom-control-label" for="check5"></label>
                             </div>
                         </td>
@@ -281,7 +283,7 @@
                             <div class="col-sm-5">
                                  <div class="multiselectDropdown">
                                     <input type="text" class="form-control form-control-sm" id="role" placeholder="Enter Role" 
-                                    onclick="myFunction()">
+                                    onclick="myFunction()" readonly>
                                     <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
                                     <div id="myDropdown" class="dropdown-content">
                                         <div class="w-100 px-1">
@@ -289,7 +291,7 @@
                                         </div>
                                         <div class="dataList">
                                             <div class="d-flex justify-content-between align-items-center">
-                                                <div class="custom-control custom-checkbox customized-checkbox">
+                                                <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
                                                     <input type="checkbox" class="custom-control-input" id="check-all">
                                                     <label class="custom-control-label" for="check-all">All</label>
                                                 </div>
@@ -319,7 +321,7 @@
                                         <div class="dropdown-footer d-flex">
                                             <span>3 of 10</span>
                                             <div class="d-flex align-items-center">
-                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                <a href="#" class="darkblue px-1"  onclick="myFunction()">Cancel</a>
                                                  <div class="btn-group btn-primary add-btn my-1">                     
                                                     <button type="submit" class="btn btn-sm text-center">Done</button> 
                                                 </div>
@@ -332,7 +334,7 @@
                         <div class="form-group row">
                             <label for="colFormLabelLg"class="col-sm-2 col-form-label col-form-label-sm pt-0">Assign Group</label>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control form-control-sm" id="role" placeholder="Select">
+                                <input type="text" class="form-control form-control-sm" id="role" placeholder="Select" readonly>
                                 <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" />
                             </div>
                         </div>
@@ -393,10 +395,17 @@
                             <div class="icon position-relative col-sm-5">
                                 <div class="multiselectDropdown">
                                     <input type="text" class="form-control form-control-sm" id="roles" placeholder="Enter Role" 
-                                    onclick="myFunction()" value="Admin, Manager">
+                                    onclick="myFunction()" value="Admin, Manager" readonly>
                                     <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
                                     <div id="myDropdownRoles" class="dropdown-content dropdown-role">
                                         <div class="dataList optionList">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
+                                                    <input type="checkbox" class="custom-control-input" id="check-all">
+                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                </div>
+                                                <span class="text-white">Clear</span>
+                                            </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-admin1" checked>
                                                 <label class="custom-control-label" for="check-admin1">Admin</label>
@@ -416,7 +425,7 @@
                                         </div>
                                         <div class="dropdown-footer d-flex justify-content-end">
                                             <div class="d-flex align-items-center">
-                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                <a href="#" class="darkblue px-1"  onclick="myFunction()">Cancel</a>
                                                  <div class="btn-group btn-primary add-btn my-1">                     
                                                     <button type="submit" class="btn btn-sm text-center">Done</button> 
                                                 </div>
@@ -431,10 +440,17 @@
                             <div class="col-sm-5">
                                 <div class="multiselectDropdown">
                                     <input type="text" class="form-control form-control-sm" id="addGroup" placeholder="Enter Group" 
-                                    onclick="myFunct()" value="C Suite, Manager">
+                                    onclick="myFunct()" value="C Suite, Manager" readonly>
                                     <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
                                     <div id="myDropdownGroup" class="dropdown-content dropdown-role">
                                         <div class="dataList optionList">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
+                                                    <input type="checkbox" class="custom-control-input" id="check-all">
+                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                </div>
+                                                <span class="text-white">Clear</span>
+                                            </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-suite" checked>
                                                 <label class="custom-control-label" for="check-suite">C Suite</label>
@@ -458,7 +474,7 @@
                                         </div>
                                         <div class="dropdown-footer d-flex justify-content-end">
                                             <div class="d-flex align-items-center">
-                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                <a href="#" class="darkblue px-1" onclick="myFunct()">Cancel</a>
                                                  <div class="btn-group btn-primary add-btn my-1">                     
                                                     <button type="submit" class="btn btn-sm text-center">Done</button> 
                                                 </div>
@@ -473,10 +489,17 @@
                             <div class="col-sm-5">
                                 <div class="multiselectDropdown">
                                     <input type="text" class="form-control form-control-sm" id="status" placeholder="Enter Group" 
-                                    onclick="myStatus()" value="Active">
+                                    onclick="myStatus()" value="Active" readonly>
                                     <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
                                     <div id="myDropdownStatus" class="dropdown-content dropdown-role">
                                         <div class="dataList optionList statusList">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
+                                                    <input type="checkbox" class="custom-control-input" id="check-all">
+                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                </div>
+                                                <span class="text-white">Clear</span>
+                                            </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="active" checked>
                                                 <label class="custom-control-label" for="active">Active</label>
@@ -488,7 +511,7 @@
                                         </div>
                                         <div class="dropdown-footer d-flex justify-content-end">
                                             <div class="d-flex align-items-center">
-                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                <a href="#" class="darkblue px-1"  onclick="myStatus()">Cancel</a>
                                                  <div class="btn-group btn-primary add-btn my-1">                     
                                                     <button type="submit" class="btn btn-sm text-center">Done</button> 
                                                 </div>
@@ -642,10 +665,17 @@
                             <div class="col-sm-5">
                                 <div class="multiselectDropdown">
                                     <input type="text" class="form-control form-control-sm" id="roles" placeholder="Enter Role" 
-                                    onclick="myFunction()" value="Admin, Manager">
+                                    onclick="myFunction()" value="Admin, Manager" readonly>
                                     <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
                                     <div id="myDropdownRole" class="dropdown-content dropdown-role">
                                         <div class="dataList optionList">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
+                                                    <input type="checkbox" class="custom-control-input" id="check-all">
+                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                </div>
+                                                <span class="text-white">Clear</span>
+                                            </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-admin1" checked>
                                                 <label class="custom-control-label" for="check-admin1">Admin</label>
@@ -665,7 +695,7 @@
                                         </div>
                                         <div class="dropdown-footer d-flex justify-content-end">
                                             <div class="d-flex align-items-center">
-                                                <a href="#" class="text-blue px-1">Cancel</a>
+                                                <a href="#" class="darkblue px-1" onclick="myFunction()">Cancel</a>
                                                  <div class="btn-group btn-primary add-btn my-1">                     
                                                     <button type="submit" class="btn btn-sm text-center">Done</button> 
                                                 </div>

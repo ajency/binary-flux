@@ -700,10 +700,16 @@ body{
 	    			background: transparent;
 	    			color: white;
 	    			border-color: white;
-	    			font-weight: 300;
+					filter: brightness(0) invert(1);
+	    		}
+	    		&:focus{
+	    			box-shadow: none;
 	    		}
 	    		@media (max-width: 425px){
 	    			margin-bottom: 10px;
+	    		}
+	    		&.d-none{
+	    			display: none;
 	    		}
 			}
 			@media (max-width: 425px){
@@ -818,6 +824,7 @@ body{
 	    		&:hover{
 	    			background: transparent;
 	    			border-color: white;
+					filter: brightness(0) invert(1);
 	    		}
 			}
 		}
@@ -1030,7 +1037,7 @@ body{
 .edit-user-modal{
 	form{
 		.form-control{
-			border-color: rgba(255,255,255,0.50);
+			//border-color: rgba(255,255,255,0.50);
 			border-width: 1px;
 		}
 		#status{
