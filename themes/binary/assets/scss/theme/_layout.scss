@@ -698,7 +698,9 @@ body{
 				}
 	    		&:hover{
 	    			background: transparent;
-	    			color: #3D90F7;
+	    			color: white;
+	    			border-color: white;
+	    			font-weight: 300;
 	    		}
 	    		@media (max-width: 425px){
 	    			margin-bottom: 10px;
@@ -815,6 +817,7 @@ body{
 	    		}
 	    		&:hover{
 	    			background: transparent;
+	    			border-color: white;
 	    		}
 			}
 		}
@@ -826,6 +829,7 @@ body{
 			&:focus{
 				background: transparent;
 				box-shadow: none;
+				border: 1px solid rgba(255, 255, 255, 0.6);
 			}
 		}
 	}

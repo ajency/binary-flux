@@ -8426,7 +8426,9 @@ body {
         padding: 0 5px; }
       .sub-header .right-section .action-block button:hover {
         background: transparent;
-        color: #3D90F7; }
+        color: white;
+        border-color: white;
+        font-weight: 300; }
       @media (max-width: 425px) {
         .sub-header .right-section .action-block button {
           margin-bottom: 10px; } }
@@ -8513,7 +8515,8 @@ body {
         .setting-wrapper .form-group .btn {
           padding: 6px 15px; } }
       .setting-wrapper .form-group .btn:hover {
-        background: transparent; }
+        background: transparent;
+        border-color: white; }
   .setting-wrapper .form-control {
     border: 1px solid #5D5E72;
     border-radius: 2px;
@@ -8521,7 +8524,8 @@ body {
     height: 36px; }
     .setting-wrapper .form-control:focus {
       background: transparent;
-      box-shadow: none; }
+      box-shadow: none;
+      border: 1px solid rgba(255, 255, 255, 0.6); }
   @media (max-width: 767px) {
     .setting-wrapper .action-block {
       flex-direction: column;

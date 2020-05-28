@@ -119,6 +119,11 @@ $(document).ready(function(){
     $carousel.on('afterChange', function() {
         setSlideVisibility();
     });
+
+    $('input[type=checkbox]').on('change', function() {
+        var div = $(this).closest('tr');
+        $(this).is(":checked") ? div.addClass("selected") : div.removeClass("selected");
+    });
     // particlesJS("particles-js", {
     //     "particles": {
     //         "number": {
