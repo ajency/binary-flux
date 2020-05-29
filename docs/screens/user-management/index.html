@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.e2a4deb3d4059d2199d3de6ffcc285595eff260f91e2d6d803e3aab238674828.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.de732e08b344c40d17986f3c7577a62189d40efe303f9002f8d94bb0ef802fe1.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -41,7 +41,7 @@
         </div>
     </div>
 </header>
-<div class="sub-header d-flex justify-content-between align-items-center">
+<div class="sub-header sub-header-o d-flex justify-content-between align-items-center">
     <span class="text-white"><img src="/binary-flux/images/organisation.svg" alt="Organisation" class="sub-header-icon">Organisation</span>
     <div class="right-section">
         <div class="icons">
@@ -316,11 +316,11 @@
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-admin" checked>
-                                                <label class="custom-control-label font-italic" for="check-admin">Admin</label>
+                                                <label class="custom-control-label" for="check-admin">Admin</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-manager" checked>
-                                                <label class="custom-control-label font-italic" for="check-manager">Manager</label>
+                                                <label class="custom-control-label" for="check-manager">Manager</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-ceo">
@@ -351,7 +351,7 @@
                         <div class="form-group row">
                             <label for="colFormLabelLg"class="col-sm-2 col-form-label col-form-label-sm pt-0">Assign Group</label>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control form-control-sm" id="role" placeholder="Select" readonly>
+                                <input type="text" class="form-control form-control-sm" id="groups" placeholder="Select" readonly>
                                 <img src="/binary-flux/images/ic_chevron_left.svg" width="14" height="14" alt="dropdown" class="dropdown-arrow" />
                             </div>
                         </div>
@@ -392,10 +392,10 @@
                                 <p class="tag">Enter User Name</p>
                             </div>
                             <div class="col-sm-5 margin-bottom">
-                                <input type="text" class="form-control form-control-sm" id="firstname" placeholder="First Name" value="John">
+                                <input type="text" class="form-control form-control-sm" id="firstnamee" placeholder="First Name" value="John">
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control form-control-sm" id="lastname" placeholder="Last Name" value="Doe">
+                                <input type="text" class="form-control form-control-sm" id="lastnamee" placeholder="Last Name" value="Doe">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -404,22 +404,22 @@
                                 <p class="tag">Enter Official Email ID</p>
                             </div>
                             <div class="col-sm-5">
-                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email" value="johndoe@gmail.com">
+                                <input type="email" class="form-control form-control-sm" id="organisation1" placeholder="Enter Email" value="johndoe@gmail.com">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="role" class="col-sm-2 col-form-label col-form-label-sm pt-0">Role</label>
                             <div class="icon position-relative col-sm-5">
                                 <div class="multiselectDropdown">
-                                    <input type="text" class="form-control form-control-sm" id="roles" placeholder="Enter Role" 
+                                    <input type="text" class="form-control form-control-sm" id="u-roles" placeholder="Enter Role" 
                                     onclick="myFunction()" value="Admin, Manager" readonly>
                                     <img src="/binary-flux/images/ic_chevron_left.svg" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
                                     <div id="myDropdownRoles" class="dropdown-content dropdown-role">
                                         <div class="dataList optionList">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
-                                                    <input type="checkbox" class="custom-control-input" id="check-all">
-                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                    <input type="checkbox" class="custom-control-input" id="checked-all">
+                                                    <label class="custom-control-label" for="checked-all">All</label>
                                                 </div>
                                                 <span class="text-white">Clear</span>
                                             </div>
@@ -428,8 +428,8 @@
                                                 <label class="custom-control-label" for="check-admin1">Admin</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="check-manager2" checked>
-                                                <label class="custom-control-label" for="check-manager2">Manager</label>
+                                                <input type="checkbox" class="custom-control-input" id="check-manager1" checked>
+                                                <label class="custom-control-label" for="check-manager1">Manager</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-ceo3">
@@ -463,8 +463,8 @@
                                         <div class="dataList optionList">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
-                                                    <input type="checkbox" class="custom-control-input" id="check-all">
-                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                    <input type="checkbox" class="custom-control-input" id="check-all-o">
+                                                    <label class="custom-control-label" for="check-all-o">All</label>
                                                 </div>
                                                 <span class="text-white">Clear</span>
                                             </div>
@@ -512,8 +512,8 @@
                                         <div class="dataList optionList statusList">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
-                                                    <input type="checkbox" class="custom-control-input" id="check-all">
-                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                    <input type="checkbox" class="custom-control-input" id="check-all-p">
+                                                    <label class="custom-control-label" for="check-all-p">All</label>
                                                 </div>
                                                 <span class="text-white">Clear</span>
                                             </div>
@@ -667,14 +667,14 @@
                                 <p class="tag">Enter Official Email ID</p>
                             </div>
                             <div class="col-sm-5">
-                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email" value="security.operations@gmail.com">
+                                <input type="email" class="form-control form-control-sm" id="organisation2" placeholder="Enter Email" value="security.operations@gmail.com">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="password" class="col-sm-3 col-form-label col-form-label-sm pt-0">Password</label>
+                            <label for="passwords" class="col-sm-3 col-form-label col-form-label-sm pt-0">Password</label>
                             <div class="icon position-relative col-sm-5">
                                 <img src="/binary-flux/images/eye-outline.svg" width="22" height="15" alt="preview" class="preview">     
-                                <input type="password" class="form-control form-control-sm mb-1" id="password" placeholder="Enter Password" value="*******">
+                                <input type="password" class="form-control form-control-sm mb-1" id="passwords" placeholder="Enter Password" value="*******">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -688,26 +688,26 @@
                                         <div class="dataList optionList">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
-                                                    <input type="checkbox" class="custom-control-input" id="check-all">
-                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                    <input type="checkbox" class="custom-control-input" id="check-all-t">
+                                                    <label class="custom-control-label" for="check-all-t">All</label>
                                                 </div>
                                                 <span class="text-white">Clear</span>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="check-admin1" checked>
-                                                <label class="custom-control-label font-italic" for="check-admin1">Admin</label>
+                                                <input type="checkbox" class="custom-control-input" id="check-admin2" checked>
+                                                <label class="custom-control-label" for="check-admin2">Admin</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-manager2" checked>
-                                                <label class="custom-control-label font-italic" for="check-manager2">Manager</label>
+                                                <label class="custom-control-label" for="check-manager2">Manager</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="check-ceo3">
-                                                <label class="custom-control-label" for="check-ceo3">CEO</label>
+                                                <input type="checkbox" class="custom-control-input" id="check-ceo2">
+                                                <label class="custom-control-label" for="check-ceo2">CEO</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="check-lead4">
-                                                <label class="custom-control-label" for="check-lead4">Project Lead</label>
+                                                <input type="checkbox" class="custom-control-input" id="check-lead2">
+                                                <label class="custom-control-label" for="check-lead2">Project Lead</label>
                                             </div>
                                         </div>
                                         <div class="dropdown-footer d-flex justify-content-end">
@@ -728,8 +728,8 @@
                                 <p class="tag">Searches & Add user</p>
                             </div>
                             <div class="col-sm-5 position-relative">
-                                <input type="url" class="form-control form-control-sm" id="url" placeholder="Enter URL" value="Lipika Biwas">
-                                <p>Rohan, Anish, Shivani.. + 32 <a href="#">More</a></p>
+                                <input type="url" class="form-control form-control-sm" id="urls" placeholder="Enter URL" value="Lipika Biwas">
+                                <p class="font-italic">Rohan, Anish, Shivani.. + 32 <a href="#">More</a></p>
                                 <a href="#"><img src="/binary-flux/images/add.svg" width="20" height="20" alt="add url" class="add-users" /></a>
                             </div>
                         </div>
@@ -779,5 +779,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="/binary-flux/js/app.js"></script></body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script>
+</body>
 </html>
