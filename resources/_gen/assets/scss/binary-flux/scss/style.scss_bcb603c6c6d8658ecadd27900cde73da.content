@@ -8413,6 +8413,9 @@ body {
     font-size: 20px;
     line-height: 27px;
     font-weight: 600; }
+    @media (min-width: 767px) and (max-width: 1024px) {
+      .sub-header span {
+        padding: 0 0 10px 20px; } }
     .sub-header span img.sub-header-icon {
       margin-right: -15px; }
   .sub-header .right-section {
