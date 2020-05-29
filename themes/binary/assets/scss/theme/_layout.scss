@@ -878,8 +878,8 @@ body{
 	.custom-control-input:checked ~ .custom-control-label::after{
 	    background-image: url(../images/checkmark-outline.svg) !important;
         background: no-repeat 50% / 50% 40%;
-	    top: 0rem;
-	    left: -1.68rem;
+		top: 1px;
+    	left: -1.62rem;
 	    display: block;
 	    width: 1.4rem;
 	    height: 1.4rem
