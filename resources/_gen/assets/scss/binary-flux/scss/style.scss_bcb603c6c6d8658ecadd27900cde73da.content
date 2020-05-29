@@ -8801,6 +8801,8 @@ body {
 
 .custom-dashboard .content .dashboard-slider .slide-item {
   padding-right: 30px; }
+  .custom-dashboard .content .dashboard-slider .slide-item img {
+    object-fit: contain; }
   .custom-dashboard .content .dashboard-slider .slide-item .subText {
     color: #667DC6; }
   .custom-dashboard .content .dashboard-slider .slide-item-query {
