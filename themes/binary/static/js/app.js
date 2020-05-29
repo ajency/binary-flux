@@ -73,7 +73,7 @@ $(document).ready(function(){
         dots: false,
         arrows: false,
         slide: '.slick-slideshow__slide',
-        slidesToShow: 3,
+        slidesToShow: 4,
         centerMode: true,
         centerPadding: '30px',
         arrows: true,
@@ -81,6 +81,13 @@ $(document).ready(function(){
         cssEase: 'linear', 
         nextArrow: '<button type="button" class="slick-next"></button>',
         responsive: [
+        {
+            breakpoint: 1290,
+            settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            }
+        },
         {
             breakpoint: 1024,
             settings: {
