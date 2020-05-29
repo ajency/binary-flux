@@ -8482,6 +8482,9 @@ body {
   .margin-right {
     margin-right: 0px !important; } }
 
+.font-italic {
+  font-style: italic; }
+
 .setting-wrapper {
   background-color: #0A0C1B; }
   .setting-wrapper .form-data {
@@ -8798,6 +8801,8 @@ body {
 
 .custom-dashboard .content .dashboard-slider .slide-item {
   padding-right: 30px; }
+  .custom-dashboard .content .dashboard-slider .slide-item img {
+    object-fit: contain; }
   .custom-dashboard .content .dashboard-slider .slide-item .subText {
     color: #667DC6; }
   .custom-dashboard .content .dashboard-slider .slide-item-query {

@@ -779,6 +779,9 @@ body{
 		margin-right: 0px !important ;
 	}
 }
+.font-italic{
+    font-style: italic;
+}
 .setting-wrapper{
 	background-color: #0A0C1B;
 	.form{
@@ -1187,6 +1190,9 @@ body{
 	    .dashboard-slider{
 	    	.slide-item{
 	    		padding-right: 30px;
+	    		img{
+	    			object-fit: contain;
+	    		}
 	    		.subText{
 	    			color: #667DC6;
 	    		}
