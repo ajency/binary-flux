@@ -8482,6 +8482,9 @@ body {
   .margin-right {
     margin-right: 0px !important; } }
 
+.font-italic {
+  font-style: italic; }
+
 .setting-wrapper {
   background-color: #0A0C1B; }
   .setting-wrapper .form-data {
