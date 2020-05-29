@@ -334,7 +334,7 @@
                         <div class="form-group row">
                             <label for="colFormLabelLg"class="col-sm-2 col-form-label col-form-label-sm pt-0">Assign Group</label>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control form-control-sm" id="role" placeholder="Select" readonly>
+                                <input type="text" class="form-control form-control-sm" id="groups" placeholder="Select" readonly>
                                 <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" />
                             </div>
                         </div>
@@ -375,10 +375,10 @@
                                 <p class="tag">Enter User Name</p>
                             </div>
                             <div class="col-sm-5 margin-bottom">
-                                <input type="text" class="form-control form-control-sm" id="firstname" placeholder="First Name" value="John">
+                                <input type="text" class="form-control form-control-sm" id="firstnamee" placeholder="First Name" value="John">
                             </div>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control form-control-sm" id="lastname" placeholder="Last Name" value="Doe">
+                                <input type="text" class="form-control form-control-sm" id="lastnamee" placeholder="Last Name" value="Doe">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -387,22 +387,22 @@
                                 <p class="tag">Enter Official Email ID</p>
                             </div>
                             <div class="col-sm-5">
-                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email" value="johndoe@gmail.com">
+                                <input type="email" class="form-control form-control-sm" id="organisation1" placeholder="Enter Email" value="johndoe@gmail.com">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="role" class="col-sm-2 col-form-label col-form-label-sm pt-0">Role</label>
                             <div class="icon position-relative col-sm-5">
                                 <div class="multiselectDropdown">
-                                    <input type="text" class="form-control form-control-sm" id="roles" placeholder="Enter Role" 
+                                    <input type="text" class="form-control form-control-sm" id="u-roles" placeholder="Enter Role" 
                                     onclick="myFunction()" value="Admin, Manager" readonly>
                                     <img src="{{"images/ic_chevron_left.svg" | relURL }}" width="14" height="14" alt="dropdown" class="dropdown-arrow" style="right: 8px;" />
                                     <div id="myDropdownRoles" class="dropdown-content dropdown-role">
                                         <div class="dataList optionList">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
-                                                    <input type="checkbox" class="custom-control-input" id="check-all">
-                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                    <input type="checkbox" class="custom-control-input" id="checked-all">
+                                                    <label class="custom-control-label" for="checked-all">All</label>
                                                 </div>
                                                 <span class="text-white">Clear</span>
                                             </div>
@@ -411,8 +411,8 @@
                                                 <label class="custom-control-label" for="check-admin1">Admin</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="check-manager2" checked>
-                                                <label class="custom-control-label" for="check-manager2">Manager</label>
+                                                <input type="checkbox" class="custom-control-input" id="check-manager1" checked>
+                                                <label class="custom-control-label" for="check-manager1">Manager</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-ceo3">
@@ -446,8 +446,8 @@
                                         <div class="dataList optionList">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
-                                                    <input type="checkbox" class="custom-control-input" id="check-all">
-                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                    <input type="checkbox" class="custom-control-input" id="check-all-o">
+                                                    <label class="custom-control-label" for="check-all-o">All</label>
                                                 </div>
                                                 <span class="text-white">Clear</span>
                                             </div>
@@ -495,8 +495,8 @@
                                         <div class="dataList optionList statusList">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
-                                                    <input type="checkbox" class="custom-control-input" id="check-all">
-                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                    <input type="checkbox" class="custom-control-input" id="check-all-p">
+                                                    <label class="custom-control-label" for="check-all-p">All</label>
                                                 </div>
                                                 <span class="text-white">Clear</span>
                                             </div>
@@ -650,14 +650,14 @@
                                 <p class="tag">Enter Official Email ID</p>
                             </div>
                             <div class="col-sm-5">
-                                <input type="email" class="form-control form-control-sm" id="organisation" placeholder="Enter Email" value="security.operations@gmail.com">
+                                <input type="email" class="form-control form-control-sm" id="organisation2" placeholder="Enter Email" value="security.operations@gmail.com">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="password" class="col-sm-3 col-form-label col-form-label-sm pt-0">Password</label>
+                            <label for="passwords" class="col-sm-3 col-form-label col-form-label-sm pt-0">Password</label>
                             <div class="icon position-relative col-sm-5">
                                 <img src="{{"images/eye-outline.svg" | relURL }}" width="22" height="15" alt="preview" class="preview">     
-                                <input type="password" class="form-control form-control-sm mb-1" id="password" placeholder="Enter Password" value="*******">
+                                <input type="password" class="form-control form-control-sm mb-1" id="passwords" placeholder="Enter Password" value="*******">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -671,26 +671,26 @@
                                         <div class="dataList optionList">
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <div class="custom-control custom-checkbox customized-checkbox no-boxshadow">
-                                                    <input type="checkbox" class="custom-control-input" id="check-all">
-                                                    <label class="custom-control-label" for="check-all">All</label>
+                                                    <input type="checkbox" class="custom-control-input" id="check-all-t">
+                                                    <label class="custom-control-label" for="check-all-t">All</label>
                                                 </div>
                                                 <span class="text-white">Clear</span>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="check-admin1" checked>
-                                                <label class="custom-control-label font-italic" for="check-admin1">Admin</label>
+                                                <input type="checkbox" class="custom-control-input" id="check-admin2" checked>
+                                                <label class="custom-control-label font-italic" for="check-admin2">Admin</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
                                                 <input type="checkbox" class="custom-control-input" id="check-manager2" checked>
                                                 <label class="custom-control-label font-italic" for="check-manager2">Manager</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="check-ceo3">
-                                                <label class="custom-control-label" for="check-ceo3">CEO</label>
+                                                <input type="checkbox" class="custom-control-input" id="check-ceo2">
+                                                <label class="custom-control-label" for="check-ceo2">CEO</label>
                                             </div>
                                             <div class="custom-control custom-checkbox customized-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="check-lead4">
-                                                <label class="custom-control-label" for="check-lead4">Project Lead</label>
+                                                <input type="checkbox" class="custom-control-input" id="check-lead2">
+                                                <label class="custom-control-label" for="check-lead2">Project Lead</label>
                                             </div>
                                         </div>
                                         <div class="dropdown-footer d-flex justify-content-end">
@@ -711,7 +711,7 @@
                                 <p class="tag">Searches & Add user</p>
                             </div>
                             <div class="col-sm-5 position-relative">
-                                <input type="url" class="form-control form-control-sm" id="url" placeholder="Enter URL" value="Lipika Biwas">
+                                <input type="url" class="form-control form-control-sm" id="urls" placeholder="Enter URL" value="Lipika Biwas">
                                 <p>Rohan, Anish, Shivani.. + 32 <a href="#">More</a></p>
                                 <a href="#"><img src="{{"images/add.svg" | relURL }}" width="20" height="20" alt="add url" class="add-users" /></a>
                             </div>

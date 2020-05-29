@@ -148,6 +148,7 @@ $(document).ready(function(){
         var dropdrown4 = document.getElementById("myDropdownStatus");
         var role = document.getElementById("role");
         var role1 = document.getElementById("roles");
+        var userrole = document.getElementById("u-roles");
         var addGroup = document.getElementById("addGroup");
         var status = document.getElementById("status");
         if (event.target != dropdrown && $(event.target).attr('id') != $(role).attr('id') && !dropdrown.contains(event.target)) {
@@ -156,7 +157,7 @@ $(document).ready(function(){
         if (event.target != dropdrown1 && $(event.target).attr('id') != $(role1).attr('id') && !dropdrown1.contains(event.target)) {
             $("#myDropdownRole").removeClass("show");
         }
-        if (event.target != dropdrown2 && $(event.target).attr('id') != $(role1).attr('id') && !dropdrown2.contains(event.target)) {
+        if (event.target != dropdrown2 && $(event.target).attr('id') != $(userrole).attr('id') && !dropdrown2.contains(event.target)) {
             $("#myDropdownRoles").removeClass("show");
         }
         if (event.target != dropdrown3 && $(event.target).attr('id') != $(addGroup).attr('id') && !dropdrown3.contains(event.target)) {
