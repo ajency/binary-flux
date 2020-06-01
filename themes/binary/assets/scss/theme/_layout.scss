@@ -1246,3 +1246,15 @@ body{
 	    overflow: hidden !important;
 	}
 }
+.cm-s-default .cm-keyword {
+    color: #1391FF !important;
+}
+.cm-s-default .cm-string{
+	 color: #000 !important;
+}
+.cm-s-default .cm-builtin {
+	color: #F7594B !important;
+}
+.cm-s-default .cm-atom {
+    color: #FF13C7 !important;
+}
