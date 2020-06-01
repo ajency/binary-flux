@@ -854,6 +854,8 @@ body{
 	}
 }
 .customized-checkbox{
+	display: block;
+  	margin-bottom: 15px;
     .custom-control-label{
     	font-size: 14px;
     	line-height: 18px;
@@ -1134,7 +1136,7 @@ body{
 		    font-weight: 300;
 	    }
 		.header-section{
-			padding-top: 70px;
+			padding-top: 60px;
 			padding-bottom: 50px;
 		    background: #121631;
 		    box-shadow: 0px 2px 0px 2px #121631;
@@ -1225,5 +1227,21 @@ body{
     			}
 			} 
 	    }
+	}
+}
+
+/* CodeMirror CSS */
+
+.CodeMirror{
+    height: auto !important;
+    width: 85%;
+    margin: auto;
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: 0px 0px 35px 0px rgba(19,145,255,0.38);
+    font-family: Courier !important;
+    padding: 20px 15px 0;
+    .CodeMirror-scroll {
+	    overflow: hidden !important;
 	}
 }
