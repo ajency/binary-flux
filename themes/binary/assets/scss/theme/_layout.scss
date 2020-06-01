@@ -1149,7 +1149,7 @@ body{
 				box-shadow: 0 0 35px 0 rgba(19,145,255,0.38);
 				border: 0;
 				width: 80%;
-				padding: 10px 30px; 
+				padding: 2px 30px; 
 			    font-family: Courier;
 				&.scroll-bar{
 					&::-webkit-scrollbar-track{
@@ -1213,6 +1213,7 @@ body{
 	    		}
 	    	}
 	    	&.slick-slider{
+    		    padding-bottom: 30px;
     			.slick-prev{
     				display: none !important;
     			}
