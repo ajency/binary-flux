@@ -54,8 +54,9 @@
                 <img src="/binary-flux/images/ic_cubes.svg" alt="enter query" class="enter">
                 <h3 class="title font-weight-light">Enter a query</h3>
                 <p class="sub-title">Stat typing your query and hit the go button to configure your widget.</p>
-                <textarea id="w3review" name="query-field" rows="2" cols="50" class="query-field"> </textarea>
-            </div>
+                <textarea id="query-field" name="query-field" rows="3" cols="50" class="query-field scroll-bar">
+FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && filesize > 100 && extension MATCHES('.pdf','.ppt') BUCKET-ONeventtime SORT-ON eventtime DESC TRANSFORM-TO LINECHART
+                </textarea>            </div>
             <div class="library-display-section pt-6">
                 <h3 class="title font-weight-light">or browse our widget library</h3>
                 <p class="sub-title">Select a widget and customize to suit your data requirements.</p>
@@ -95,9 +96,21 @@
         </div>
     </div>
 </div>
-
+<link rel="stylesheet" href="../../plugins/lib/codemirror.css">
+<script src="../../plugins/lib/codemirror.js"></script>
+<script src="../../plugins/mode/sql/sql.js"></script>
 <script type="text/javascript">
     document.body.classList.add("blue_bg");
+
+    var editableCodeMirror = CodeMirror.fromTextArea(document.getElementById('query-field'), {
+    mode: "text/x-mysql",
+    lineNumbers: false,
+    lineWrapping: true,
+    indentWithTabs: true,
+    smartIndent: true,
+    autofocus: true,
+    extraKeys: {"Ctrl-Space": "autocomplete"},
+});
 </script>
 
         </div><script
