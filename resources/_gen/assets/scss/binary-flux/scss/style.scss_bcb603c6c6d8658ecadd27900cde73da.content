@@ -8816,6 +8816,7 @@ body {
     .custom-dashboard .content .header-section.sub-header-o .select-options {
       padding: 30px 20px 0; }
       .custom-dashboard .content .header-section.sub-header-o .select-options .title {
+        padding-top: 14px;
         color: #FFFFFF;
         font-size: 15px;
         font-weight: bold;
