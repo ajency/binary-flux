@@ -8888,6 +8888,58 @@ body {
       .custom-dashboard .content .dashboard-slider.slick-slider .slick-next {
         top: 40%; } }
 
+.custom-dashboard .content .mapValue {
+  width: 85%;
+  padding: 0 20px; }
+  .custom-dashboard .content .mapValue .low {
+    position: relative; }
+    .custom-dashboard .content .mapValue .low:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 5px;
+      height: 5px;
+      border-radius: 10px;
+      background: #2279FF; }
+  .custom-dashboard .content .mapValue .high {
+    position: relative; }
+    .custom-dashboard .content .mapValue .high:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 5px;
+      height: 5px;
+      border-radius: 10px;
+      background: #FF5700; }
+
+.custom-dashboard .content .circle-25 {
+  background: #FF5700;
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  position: absolute;
+  top: 0; }
+
+.custom-dashboard .content .circle-15 {
+  background: #FF5700;
+  width: 15px;
+  height: 15px;
+  border-radius: 30px; }
+
+.custom-dashboard .content .circle-10 {
+  background: #FF5700;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px; }
+
+.custom-dashboard .content .circle-5 {
+  background: #2279FF;
+  width: 5px;
+  height: 5px;
+  border-radius: 30px; }
+
 /* CodeMirror CSS */
 .CodeMirror {
   height: auto !important;
@@ -8931,6 +8983,13 @@ body {
 .highcharts-color-0 {
   fill: #25264B !important;
   stroke: transparent !important; }
+
+.highcharts-point {
+  stroke-width: 0 !important;
+  fill: #FF5700; }
+
+.highcharts-markers:nth-child(2) {
+  background: #2279FF !important; }
 
 ul, ol {
   padding-left: 10px; }

@@ -77,7 +77,16 @@ FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && 
                 </div>
             </div>
             <h5 class="text-left px-2 pt-4 f-18 text-white"> Preview </h5>
-            <div id="container" style="height: 500px; max-width: 800px;"></div>
+            <div class="mapValue d-flex justify-content-between">
+                <div>
+                    <p class="value text-white">Admissions</p>
+                </div>
+                <div class="d-flex">
+                    <p class="px-1 low">Low</p>
+                    <p class="px-1 high">High</p>
+                </div>
+            </div>
+            <div id="container"></div>
         </div>
     </div>
 </div>
@@ -87,9 +96,8 @@ FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && 
 <script src="../../plugins/mode/sql/sql.js"></script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
-<script src="https://code.highcharts.com/maps/modules/data.js"></script>
-<script src="https://code.highcharts.com/maps/modules/data.js"></script>
 <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
 <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
@@ -106,55 +114,59 @@ FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && 
     autofocus: true,
     extraKeys: {"Ctrl-Space": "autocomplete"},
 });
-    Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population-density.json', function (data) {
-
-  // Prevent logarithmic errors in color calulcation
-  data.forEach(function (p) {
-    p.value = (p.value < 1 ? 1 : p.value);
-  });
-
-  // Initiate the chart
-  Highcharts.mapChart('container', {
+// Initiate the chart
+Highcharts.mapChart('container', {
 
     chart: {
-      map: 'custom/world'
+        map: 'custom/world'
     },
 
     title: {
-      text: 'Fixed tooltip with HTML'
+        text: 'Highmaps basic lat/lon demo'
     },
 
     mapNavigation: {
-      enabled: true,
-      buttonOptions: {
-        verticalAlign: 'bottom'
-      }
+        enabled: true
     },
 
     tooltip: {
-      backgroundColor: 'none',
-      borderWidth: 0,
-      shadow: false,
-      useHTML: true,
-      padding: 0,
-      pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
-        '</span></span> {point.name}<br>' +
-        '<span style="font-size:30px">{point.value}/km²</span>',
-      positioner: function () {
-        return { x: 0, y: 250 };
-      }
+        headerFormat: '',
+        pointFormat: '<b>{point.name}</b><br>Lat: {point.lat}, Lon: {point.lon}'
     },
 
     series: [{
-      data: data,
-      name: '',
-      states: {
-        hover: {
-          color: '#a4edba'
-        }
-      }
+        // Use the gb-all map with no data as a basemap
+        name: 'Basemap',
+        borderColor: '#FF5700',
+        nullColor: '#FF5700',
+        showInLegend: false
+    }, {
+        name: 'Separators',
+        type: 'mapline',
+        nullColor: '#FF5700',
+        showInLegend: false,
+        enableMouseTracking: false
+    }, {
+        // Specify points using lat/lon
+        type: 'mappoint',
+        name: 'Cities',
+        color: Highcharts.getOptions().colors[1],
+        data: [{
+            lat: 69.7069,
+            lon: -95.6043
+        }, {
+            lat: 62.7069,
+            lon: -49.6043
+        }, {
+            lat: 65.155,
+            lon: 220.4937,
+            dataLabels: {
+                align: 'left',
+                x: 8,
+                verticalAlign: 'middle'
+            }
+        }]
     }]
-  });
 });
 
 
