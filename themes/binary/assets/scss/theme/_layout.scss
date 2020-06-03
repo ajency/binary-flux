@@ -1228,6 +1228,14 @@ body{
 					}
 					.w-40{
 						width: 40%;
+						@media (max-width: 991px){
+							width: 100%;
+						}
+					}
+					.col-w2{
+						@media (max-width: 991px){
+							width: 100%;
+						}
 					}
 					input{
 						width: 100%;
@@ -1237,8 +1245,14 @@ body{
   						border-radius: 2px;
   						background: transparent;
 						&:focus{
-							border: 2px solid #afb5ba;
+							border: 1px solid #afb5ba;
+							box-shadow: none;
 						}
+					}
+					img.dropdown-arrow{
+						position: absolute;
+						right: 8px; 
+						top: 10px
 					}
 				}
 				.actions{
@@ -1324,13 +1338,14 @@ body{
 }
 
 //HighChart 
-.highcharts-exporting-group{
+.highcharts-exporting-group, .highcharts-map-navigation{
 	display: none;
 }
 .highcharts-title{
     fill: #fff;
     font-size: 20px;
     font-weight: bold;
+    display: none;
 }
 .highcharts-map-series .highcharts-point{
 	stroke: transparent !important;
