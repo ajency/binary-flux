@@ -1203,6 +1203,21 @@ body{
 					top: 70px;
 					left: 50px;
 				}
+				.widget-label{
+					color: #1391FF;
+					font-size: 14px;
+					.count{
+						height: 20px;
+						width: 20px;
+						background-color: #D44112;
+						border-radius: 20px;
+						margin-right: 10px;
+					    padding: 3px 8px;
+					    font-size: 12px;
+					    color: white;
+					    font-weight: bold;
+					}
+				}
 				.CodeMirror{
 					margin: 20px 20px 5px !important;
 				}
@@ -1255,14 +1270,19 @@ body{
 						top: 10px
 					}
 				}
-				.actions{
-					button{
-						@media (max-width: 475px){
-							margin: 0.7em !important
+				.action-block{
+					.actions{
+						button{
+							@media (max-width: 475px){
+								margin: 0.7em !important
+							}
+						}
+						@media (max-width: 575px){
+							flex-direction: column;
 						}
 					}
-					@media (max-width: 475px){
-						flex-direction: column;
+					@media (max-width: 575px){
+						justify-content: center !important;
 					}
 				}
 			}
@@ -1303,6 +1323,64 @@ body{
     			}
 			} 
 	    }
+	    .mapValue{
+	    	max-width: 800px;
+    	    padding: 0 20px;
+    	    .low{
+    	    	position: relative;
+    	    	&:before{
+    	    		content: '';
+    	    		position: absolute;
+    	    		left: 0;
+    	    		top: 7px;
+    	    		width: 5px;
+    	    		height: 5px;
+	    		    border-radius: 10px;
+    	    		background: #2279FF;
+    	    	}
+    	    }
+    	    .high{
+    	    	position: relative;
+    	    	&:before{
+    	    		content: '';
+    	    		position: absolute;
+    	    		left: 0;
+    	    		top: 7px;
+    	    		width: 5px;
+    	    		height: 5px;
+	    		    border-radius: 10px;
+    	    		background: #FF5700;
+    	    	}
+    	    }
+	    }
+	    .circle{
+	    	&-25{
+	    		background: #FF5700;
+	    		width: 25px;
+	    		height: 25px;
+	    		border-radius: 30px;
+	    		position: absolute;
+	    		top: 0;
+	    	}
+	    	&-15{
+	    		background: #FF5700;
+	    		width: 15px;
+	    		height: 15px;
+	    		border-radius: 30px;
+	    	}
+	    	&-10{
+	    		background: #FF5700;
+	    		width: 10px;
+	    		height: 10px;
+	    		border-radius: 30px;
+	    	}
+	    	&-5{
+	    		background: #2279FF;
+	    		width: 5px;
+	    		height: 5px;
+	    		border-radius: 30px;
+	    	}
+	    }
 	}
 }
 
@@ -1310,7 +1388,7 @@ body{
 
 .CodeMirror{
     height: auto !important;
-    width: 85%;
+    width: 96%;
     margin: auto;
     text-align: left;
     border-radius: 4px;
@@ -1353,4 +1431,32 @@ body{
 .highcharts-color-0{
     fill: #25264B !important;
     stroke: transparent !important;
+}
+.highcharts-point{
+    stroke:  #FF5700;
+    fill: #FF5700;
+    &-hover{
+    	 fill:  #FF5700 !important;
+    }
+}
+.highcharts-data-label {
+	text{
+	    color: #BAB9B9 !important;
+	    font-size: 10px !important;
+	    font-weight: bold !important;
+	    fill: #BAB9B9 !important;
+	    .highcharts-text-outline{
+	    	stroke-width: 0 !important;
+	    }
+    }
+}
+.highcharts-markers.highcharts-series-2.highcharts-mappoint-series.highcharts-tracker{
+		&:nth-child(3){
+			.highcharts-point{
+				stroke-width: 30px !important;
+			}
+		}
+}
+.highcharts-series-inactive, .highcharts-series-hover{
+	opacity: 1 !important;
 }
