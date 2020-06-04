@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.9f83e3dfb4ac1fac271cffa2b301e69792e980f17317e25bb5fd9f94b4a116c7.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.3d8f214e0d7ae763ec688aa4c49297ff88ca71a4fac5eb0b765a64735e9c1f27.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -56,9 +56,15 @@
                 <textarea id="query-field" name="query-field" rows="3" cols="50" class="query-field scroll-bar">
 FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && filesize > 100 && extension MATCHES('.pdf','.ppt') BUCKET-ONeventtime SORT-ON eventtime DESC TRANSFORM-TO LINECHART
                 </textarea>
-                <div class="d-flex align-items-center actions">
-                    <button class="btn btn-lg btn-primary btn-ouline-light-blue m-2">Generate Widget</button>
-                    <button class="btn btn-lg btn-primary btn-light-blue m-2">Save Widget</button>
+                <div class="d-flex justify-content-between align-items-center flex-wrap action-block">
+                    <div class="d-flex align-items-center actions">
+                        <button class="btn btn-lg btn-primary btn-ouline-light-blue m-2">Generate Widget</button>
+                        <button class="btn btn-lg btn-primary btn-light-blue m-2">Save Widget</button>
+                    </div>
+                    <div class="d-flex align-items-center actions pl-sm-2">
+                        <p class="blue-light widget-label my-2"><span class="count">2</span>Widgets saved to dashboard<i class="icon-arrow-down-sm icon ml-1"></i></p>
+                        <button class="btn btn-lg btn-primary btn-light-blue m-2">Go to dashboard</button>
+                    </div>
                 </div>
                 <div class="select-options d-flex justify-content-between flex-wrap">
                     <div class="col-w2 mr-1">
@@ -94,7 +100,17 @@ FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && 
                 </div>
             </div>
             <h5 class="text-left px-2 pt-4 f-18 text-white"> Preview </h5>
-            <div id="container" style="height: 500px; max-width: 800px;"></div>
+            <div class="mapValue d-flex justify-content-between">
+                <div>
+                    <p class="value text-white">Admissions</p>
+                </div>
+                <div class="d-flex">
+                    <p class="px-1 low">Low</p>
+                    <p class="px-1 high">High</p>
+                </div>
+            </div>
+            <div id="container" style="max-width: 800px; height: 500px; overflow: hidden"></div>
+            <div class="highlight"> </div>
         </div>
     </div>
 </div>
@@ -104,9 +120,8 @@ FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && 
 <script src="../../plugins/mode/sql/sql.js"></script>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
-<script src="https://code.highcharts.com/maps/modules/data.js"></script>
-<script src="https://code.highcharts.com/maps/modules/data.js"></script>
 <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
 <script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
@@ -123,55 +138,61 @@ FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && 
     autofocus: true,
     extraKeys: {"Ctrl-Space": "autocomplete"},
 });
-    Highcharts.getJSON('https://cdn.jsdelivr.net/gh/highcharts/highcharts@v7.0.0/samples/data/world-population-density.json', function (data) {
 
-  
-  data.forEach(function (p) {
-    p.value = (p.value < 1 ? 1 : p.value);
-  });
-
-  
-  Highcharts.mapChart('container', {
+Highcharts.mapChart('container', {
 
     chart: {
-      map: 'custom/world'
-    },
-
-    title: {
-      text: 'Fixed tooltip with HTML'
+        map: 'custom/world'
     },
 
     mapNavigation: {
-      enabled: true,
-      buttonOptions: {
-        verticalAlign: 'bottom'
-      }
+        enabled: true
     },
 
     tooltip: {
-      backgroundColor: 'none',
-      borderWidth: 0,
-      shadow: false,
-      useHTML: true,
-      padding: 0,
-      pointFormat: '<span class="f32"><span class="flag {point.properties.hc-key}">' +
-        '</span></span> {point.name}<br>' +
-        '<span style="font-size:30px">{point.value}/km²</span>',
-      positioner: function () {
-        return { x: 0, y: 250 };
-      }
+        enabled: false
     },
 
     series: [{
-      data: data,
-      name: '',
-      states: {
-        hover: {
-          color: '#a4edba'
-        }
-      }
-    }]
-  });
+        name: 'Basemap',
+        borderColor: '#FF5700',
+        nullColor: '#FF5700',
+        showInLegend: false
+    }, {
+        name: 'Separators',
+        type: 'mapline',
+        nullColor: '#FF5700',
+        showInLegend: false,
+        enableMouseTracking: false
+    }, {
+        
+        type: 'mappoint',
+        color: Highcharts.getOptions().colors[1],
+        data: [{
+            lat: 69.7069,
+            lon: -95.6043
+        }, {
+            name: '54,667',
+            lat: 62.7069,
+            lon: -49.6043,
+            color: '#FF5700',
+            dataLabels: {
+                align: 'left',
+                x: -25,
+                y: 40,
+                verticalAlign: 'middle',
+                className: 'highlight'
+            }
+        }, {
+            lat: 65.155,
+            lon: 220.4937,
+            
+            
+            
+            
+            
+        }],
+    }],
 });
 
 
