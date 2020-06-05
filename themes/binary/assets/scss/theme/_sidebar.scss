@@ -77,6 +77,8 @@
             .menu-item{
                 position: relative;
                 padding-left: 8px;
+                font-weight: 600;
+                margin-bottom: 10px;
                 &:before{
                     content: '';
                     width: 6px;
@@ -92,6 +94,46 @@
                     background-color: #1391FF;
                     position: absolute;
                     right: -18px;
+                }
+                &-one{
+                    &:before{
+                        background-color: #F7594B;
+                    }
+                }
+                &-two{
+                    &:before{
+                        background-color: #F76196;
+                    }
+                    &:after{
+                        display: none;
+                    }
+                }
+                &-three{
+                    &:before{
+                        background-color: #816DFD;
+                    }
+                    &:after{
+                        display: none;
+                    }
+                }
+                &-four{
+                    &:before{
+                        background-color: #85C685;
+                    }
+                    &:after{
+                        display: none;
+                    }
+                }
+                &-five{
+                    &:before{
+                        background-color: #97ACED;
+                    }
+                    &:after{
+                        display: none;
+                    }
+                }
+                &:not(:first-child){
+                    color: #9A9A9A;
                 }
             }
         }
