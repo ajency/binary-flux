@@ -1438,7 +1438,8 @@ body{
 			}
 			.graphical-area{
 				display: flex;
-				justify-content: flex-start;
+				justify-content:  space-between;
+				flex-wrap: wrap; 
 				.graph{
 				}
 				.visitor-count{
@@ -1641,4 +1642,29 @@ body{
 #bars .highcharts-color-0{
     fill: #00A8D9 !important;
     stroke: #00A8D9 !important;
+}
+.bar-title{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bar-content{
+	max-width: 30%;
+	@media (max-width: 991px){
+		max-width: 100%;
+	}
+}
+.radial{
+	max-width: 40%;
+	@media (max-width: 991px){
+		max-width: 100%;
+	}
+}
+.world-map{
+	max-width: 100%;
+	@media (max-width: 991px){
+		max-width: 100%;
+	}
 }
