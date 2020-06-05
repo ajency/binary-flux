@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>Main Query Dashboard - Binary Flux</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="/binary-flux/images/favicon.ico" rel="shortcut icon">
+	
+		
+			
+			<link rel="stylesheet" href="/binary-flux/css/style.min.e241a1df68782db827bd9936565c2487b4a347075791c86a3a03ddd38e37283f.css">
+		
+		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
+		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head><body>
+        
+        <div id="content">
+<header class="header-section">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="logo-wrap">         
+            <a href="#">
+                <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+            </a>
+        </div>
+        <div class="navbar-right dropdown">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">Organisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Settings</a>
+                </li>
+            </ul>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="/binary-flux/images/notifications-outline.svg" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid p-0">
+    <div class="custom-dashboard position-relative">
+        <div class="sidebar p-0">
+            <div class="sidear-container mobile-slide-in px-2 py-4">
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-one text-white">Emergency Dept. Stats</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-two">Data Access</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-three">Human Resources</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-four">Human Capital</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-five">Watext-greyste Management</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="headerContent">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div class="select-options pt-0 row">
+                        <div class="col-md-3 mr-1">
+                            <div class="title mb-1">Dashboard Title</div>
+                            <div class="margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="name" placeholder="Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6 mr-1">
+                            <div class="title mb-1">Add Description</div>
+                            <div class="margin-bottom">
+                                <input type="text" class="form-control form-control-sm" id="describe" placeholder="Type here">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="button btn-ouline-light-blue text-nowrap f-12">Add Widget</button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mt-4">
+                    <div class="datasource-actions text-left">
+                        <div class="btn-group btn-primary mb-1">
+                            <button type="button" class="btn btn-115 text-center">Save</button>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="subContent d-flex justify-content-between align-items-center mt-3">
+                    <div class="">                
+                        <p class="text-left pl-2 mb-0"> Created by: <span class="text-darkblue">Ed Smith</span> | 3 July 2020 </p>
+                    </div>
+                    <div class="d-flex justify-content-evenly">
+                        <div class="px-1  d-flex"><img src="/binary-flux/images/ic_toggle.svg" alt="toggle" class="mr-1" />Auto Refresh</div>
+                        <div class="px-1 d-flex"><img src="/binary-flux/images/icon_refresh.svg" alt="Refresh" class="mr-1"/>Last updated : 2 mins ago</div>
+                        <div class="px-1 text-darkblue  d-flex"><img src="/binary-flux/images/ic_calendar.svg" alt="calendar" class="mr-1"/>Last 1 month</div>
+                    </div>
+                </div>
+                <hr class="seperator">
+                <div class="graphical-area">
+                    <div class="graph">
+                        <figure class="highcharts-figure">
+                            <div id="graph" style="height: 300px; max-width: 1024px;"></div>
+                        </figure>
+                    </div>
+                    <div class="visitor-count">
+                        <div class="d-flex justify-content-around">
+                            <div class="count count1">
+                                <h5 class="heading">Total visitors today</h5>
+                                <span class="number">53,122</span>
+                                <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>25%</div>
+                            </div>
+                            <div class="count count2">
+                                <h5 class="heading">Users leaving emergency</h5>
+                                <span class="number">10,657</span>
+                                <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>30%</div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <div class="count count3">
+                                <h5 class="heading">Quarantine patients</h5>
+                                <span class="number">44,667</span>
+                                <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>25%</div>
+                            </div>
+                            <div class="count count4">
+                                <h5 class="heading">Critical Cases</h5>
+                                <span class="number">4,556</span>
+                                <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>30%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="bar-content" style="max-width: 34%">
+                    <div class="mapValue d-flex justify-content-between">
+                        <div>
+                            <p class="value text-white">Earning</p>
+                        </div>
+                        <div class="d-flex">
+                            <p class="px-1 low">This week</p>
+                            <p class="px-1 high">Previous Month</p>
+                        </div>
+                    </div>
+                    <figure class="highcharts-figure">
+                        <div id="bars" ></div>
+                    </figure>
+                </div>
+                <div class="radial" style="max-width: 25%">
+                    <div id="radial-progress-bar"></div>
+                </div>
+                <div class="world-map"  style="max-width: 38%">
+                    <h5 class="text-left px-2 pt-4 f-18 text-white"> Preview </h5>
+                    <div class="mapValue d-flex justify-content-between">
+                        <div>
+                            <p class="value text-white">Admissions</p>
+                        </div>
+                        <div class="d-flex">
+                            <p class="px-1 low">Low</p>
+                            <p class="px-1 high">High</p>
+                        </div>
+                    </div>
+                    <div id="container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+<script src="https://code.highcharts.com/mapdata/custom/world.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+
+<script type="text/javascript">
+    document.body.classList.add("blue_bg");
+
+Highcharts.mapChart('container', {
+
+    chart: {
+        map: 'custom/world'
+    },
+
+    mapNavigation: {
+        enabled: true
+    },
+
+    tooltip: {
+        enabled: false
+    },
+
+    series: [{
+        name: 'Basemap',
+        borderColor: '#FF5700',
+        nullColor: '#FF5700',
+        showInLegend: false
+    }, {
+        name: 'Separators',
+        type: 'mapline',
+        nullColor: '#FF5700',
+        showInLegend: false,
+        enableMouseTracking: false
+    }, {
+        
+        type: 'mappoint',
+        color: Highcharts.getOptions().colors[1],
+        data: [{
+            lat: 69.7069,
+            lon: -95.6043
+        }, {
+            name: '54,667',
+            lat: 62.7069,
+            lon: -49.6043,
+            color: '#FF5700',
+            dataLabels: {
+                align: 'left',
+                x: -25,
+                y: 40,
+                verticalAlign: 'middle',
+                className: 'highlight'
+            }
+        }, {
+            lat: 65.155,
+            lon: 220.4937,
+            
+            
+            
+            
+            
+        }],
+    }],
+});
+
+
+Highcharts.chart('graph', {
+    chart: {
+        type: 'area'
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'left',
+        verticalAlign: 'top',
+        x: 100,
+        y: 60,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
+    },
+    xAxis: {
+        categories: [8 , 9, 10, 11, 12, 13, 14, 15, 16, 17 , 18]
+    },
+    yAxis: {
+        title: {
+            text: 'Walk in Volume'
+        },
+        labels: {
+            formatter: function () {
+                return this.value * 10 ;
+            }
+        }
+    },
+    plotOptions: {
+        area: {
+            fillOpacity: 0.5
+        }
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: 'John',
+        data: [2 , 1, 3,2, 1.5, 3, 2 ,5, 2, 2.5, 3.5, 2, 3, 2]
+    }]
+});
+
+Highcharts.chart('bars', {
+    chart: {
+        type: 'bar'
+    },
+    xAxis: {
+        categories: ['W1', 'W2', 'W3', 'W4'],
+    },
+    yAxis: { 
+         title: {
+            text: ''
+        },
+        labels: {
+             enabled: false
+        }
+    },
+    tooltip: {
+        enabled: false
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        floating: true,
+        borderWidth: 1,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        data: [107, 31, 635, 20]
+    }, {
+        data: [1216, 1001, 4436, 738]
+    }]
+});
+
+Highcharts.chart('radial-progress-bar', {
+    chart: {
+        type: 'column',
+        inverted: true,
+        polar: true,
+        marginTop: 25
+    },
+    title: {
+        text: 'Custom start and end angles of pane'
+    },
+
+    pane: {
+        startAngle: 45,
+        endAngle: 315
+    },
+    xAxis: {
+        tickInterval: 3,
+        labels: {
+            allowOverlap: false,
+            y: -5
+        }
+    },
+    yAxis: {
+        max: 220,
+        showLastLabel: false
+    },
+    plotOptions: {
+        series: {
+            pointPadding: 0,
+            groupPadding: 0,
+            dataLabels: {
+                enabled: true,
+                inside: true,
+                allowOverlap: false
+            }
+        }
+    },
+    series: [{
+        colorByPoint: true,
+        data: [29, 71, 106]
+    }]
+});
+</script>
+
+        </div><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script>
+</body>
+</html>
