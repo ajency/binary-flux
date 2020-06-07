@@ -137,5 +137,18 @@
                 }
             }
         }
+        &-block{
+            .heading{
+                color: #5873C5;
+                font-size: 14px;
+                letter-spacing: 0;
+                line-height: 19px;
+                text-align: center;
+            }
+            .btn-ouline-light-blue{
+                padding: 0 40px;
+                height: 32px;
+            }
+        }
     }
 }

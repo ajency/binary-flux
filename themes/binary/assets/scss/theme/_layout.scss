@@ -1353,133 +1353,149 @@ body{
     	    	}
     	    }
 	    }
-	    .circle{
-	    	&-25{
-	    		background: #FF5700;
-	    		width: 25px;
-	    		height: 25px;
-	    		border-radius: 30px;
-	    		position: absolute;
-	    		top: 0;
-	    	}
-	    	&-15{
-	    		background: #FF5700;
-	    		width: 15px;
-	    		height: 15px;
-	    		border-radius: 30px;
-	    	}
-	    	&-10{
-	    		background: #FF5700;
-	    		width: 10px;
-	    		height: 10px;
-	    		border-radius: 30px;
-	    	}
-	    	&-5{
-	    		background: #2279FF;
-	    		width: 5px;
-	    		height: 5px;
-	    		border-radius: 30px;
-	    	}
-	    }
 	    .headerContent{
 	    	padding: 20px;
-	    	.select-options{
-	    		padding: 30px 20px 0;
-	    		flex-basis: 70%;
-				.title{
-				    padding-top: 14px;
-					color: #FFFFFF;
-					font-size: 15px;
-					font-weight: bold;
-					letter-spacing: 0;
-					line-height: 28px;
-					text-align: left;
-				}
-				.desc{
-					opacity: 0.4;
-					color: #FFFFFF;
-					font-size: 12px;
-					letter-spacing: 0;
-					line-height: 16px;
-					text-align: left;
-					padding-top: 5px;
-				}
-				.w-40{
-					width: 40%;
-					@media (max-width: 991px){
+			.add-widget{
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+		    	.select-options{
+		    		padding: 30px 15px 0;
+		    		display: flex;
+	    		    flex-basis: 60%;
+					.title{
+					    padding-top: 14px;
+						color: #FFFFFF;
+						font-size: 15px;
+						font-weight: bold;
+						letter-spacing: 0;
+						line-height: 28px;
+						text-align: left;
+					    white-space: nowrap;
+					    @media (max-width: 425px){
+					    	padding-top: 0;
+					    }
+					}
+					input{
 						width: 100%;
+						height: 35px;
+						padding: 0 5px;
+					 	border: 1px solid #5D5E72;
+						border-radius: 2px;
+						background: transparent;
+						&:focus{
+							border: 1px solid #afb5ba;
+							box-shadow: none;
+						}
 					}
-				}
-				.col-w2{
-					@media (max-width: 991px){
-						width: 100%;
+					.w-40{
+						width: 40%;
+						@media (max-width: 425px){
+							width: 100%;
+						}
 					}
-				}
-				input{
-					width: 100%;
-					height: 35px;
-					padding: 0 5px;
-				 	border: 1px solid #5D5E72;
-					border-radius: 2px;
-					background: transparent;
-					&:focus{
-						border: 1px solid #afb5ba;
-						box-shadow: none;
+					@media (max-width: 1200px){
+						flex-basis: 75%;
 					}
+					@media (max-width: 425px){
+						display: block;
+					}
+		    	}
+				.btn-ouline-light-blue{
+					padding: 0;
+					height: 32px;
 				}
-	    	}
-			.seperator{
-				background: #2A3269;
-				border-width: 1px;
-				margin: 50px 20px;
+				@media (max-width: 575px){
+					display: inline;
+				}
 			}
 			.datasource-actions{
-				margin-left: 5px;
-			}
-			.graphical-area{
-				display: flex;
-				justify-content:  space-between;
-				flex-wrap: wrap; 
-				.graph{
+				text-align: left;
+				@media (max-width: 575px){
+					text-align: center;
 				}
-				.visitor-count{
-					.count{
-					    padding: 10px 0;
-					    width: 200px;
-						.heading{
-							color: #FFFFFF;
-							font-size: 12px;
-							font-weight: bold;
-							letter-spacing: 0;
-							line-height: 16px;
-						    margin-bottom: 28px;
-						}
-						.number{
-							 color: #848484;
-							font-size: 45px;
-							font-weight: 300;
-							letter-spacing: 0;
-							line-height: 20px;
-						}
-						.percentage{
-						  	color: #FFFFFF;
-							font-size: 12px;
-							font-weight: bold;
-							letter-spacing: 0;
-							line-height: 16px;
-						    margin-top: 18px;
-						}
-						&.count3{
-							.heading{
-								color: #FF5700;
-							}
-							.number{
-								color: #FF5700;
-								font-weight: bold;
-							}
+			}
+	    }
+	    .subContent{
+	    	padding: 0 15px;
+	    	@media (max-width: 575px){
+	    		flex-direction: column;
+	    	}
+	    }
+	    .divider{
+	    	border-top: 1px solid #2A3269;
+	    	margin: 60px 0;
+	    }
+	    .graphical-area{
+	    	flex-wrap: wrap;
+	    	.graph-figure{
+	    		padding: 0 30px;
+	    		width: 65%;
+	    		.highlight{
+		  			color: #FFFFFF;
+					font-size: 18px;
+					font-weight: 300;
+					letter-spacing: 0;
+					line-height: 20px;
+	    		}
+	    		@media (max-width: 1099px){
+	    			width: 100%;
+	    		}
+	    	}
+			.visitor-count{
+				width: 35%;
+				.count{
+				    padding: 10px 0;
+				    width: 100%;
+					.heading{
+						color: #FFFFFF;
+						font-size: 12px;
+						font-weight: bold;
+						letter-spacing: 0;
+						line-height: 16px;
+					    margin-bottom: 28px;
+				        white-space: nowrap;
+    					@media (max-width: 525px){
+							font-size: 10px;
 						}
 					}
+					.number{
+						 color: #848484;
+						font-size: 45px;
+						font-weight: 300;
+						letter-spacing: 0;
+						line-height: 20px;
+						@media (max-width: 525px){
+							font-size: 28px;
+						}
+					}
+					.percentage{
+					  	color: #FFFFFF;
+						font-size: 12px;
+						font-weight: bold;
+						letter-spacing: 0;
+						line-height: 16px;
+					    margin-top: 18px;
+					}
+					&.count3{
+						.heading{
+							color: #FF5700;
+						}
+						.number{
+							color: #FF5700;
+							font-weight: bold;
+						}
+					}
+					@media (max-width: 1099px){
+						padding: 10px 40px;
+					}
+					@media (max-width: 525px){
+						padding: 10px 15px;
+					}
 				}
+	    		@media (max-width: 1099px){
+	    			width: 100%;
+	    		}
 			}
 	    }
 	}
@@ -1529,11 +1545,11 @@ body{
 .highcharts-map-series .highcharts-point{
 	stroke: transparent !important;
 }
-.highcharts-color-0{
+#container .highcharts-color-0{
     fill: #25264B !important;
     stroke: transparent !important;
 }
-.highcharts-point{
+#container .highcharts-point{
     stroke:  #FF5700;
     fill: #FF5700;
     &-hover{
@@ -1569,7 +1585,7 @@ body{
 }
 
 #graph {
-    height: 450px;
+    height: 300px;
 }
 
 #graph .highcharts-data-table table {
@@ -1609,13 +1625,12 @@ body{
 }
 
 #bars .highcharts-data-table table {
-	font-family: Verdana, sans-serif;
 	border-collapse: collapse;
 	border: 1px solid #EBEBEB;
 	margin: 10px auto;
 	text-align: center;
 	width: 100%;
-	max-width: 500px;
+	max-width: 700px;
 }
 #bars .highcharts-data-table caption {
     padding: 1em 0;
@@ -1629,19 +1644,9 @@ body{
 #bars .highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
     padding: 0.5em;
 }
-#bars .highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
-	background: linear-gradient(270deg, #53A8E2 0%, #76DDFB 100%);
-}
-#bars .highcharts-data-table tr:hover {
-	background: linear-gradient(270deg, #105482 0%, #00A8D9 100%);
-}
-#bars .highcharts-color-1{
-    fill: #76DDFB !important;
-    stroke: #76DDFB !important;
-}
-#bars .highcharts-color-0{
-    fill: #00A8D9 !important;
-    stroke: #00A8D9 !important;
+#bars .highcharts-point{
+	stroke-width: 0 !important;
+    width: 15px;
 }
 .bar-title{
     position: absolute;

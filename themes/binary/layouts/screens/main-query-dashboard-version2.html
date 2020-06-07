@@ -24,29 +24,38 @@
         </div>
     </div>
 </header>
-
 <div class="container-fluid p-0">
     <div class="custom-dashboard position-relative">
         <div class="sidebar p-0">
-            <div class="sidear-container mobile-slide-in px-2 py-4">
+            <div class="icons d-flex justify-content-between">
+                <img src="{{"images/ic_search.svg" | relURL }}" alt="search" class="search my-2 mx-3">
+                <img src="{{"images/ic_filter_list.svg" | relURL }}" alt="filter" class="filter mr-3">
+            </div>
+            <div class="sidear-container mobile-slide-in px-2 py-2">
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-one text-white">Emergency Dept. Stats</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-two">Data Access</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-three">Human Resources</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-four">Human Capital</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-five">Watext-greyste Management</div>
+                <hr class="seperator">
+                <div class="sidear-block text-center">
+                    <img src="{{"images/blocks.svg" | relURL }}" alt="custom-dashboard" class="blocks">
+                    <h6 class="heading py-1 px-3">Create your own dashboard</h6>
+                    <button class="button btn-ouline-light-blue text-nowrap f-12">Get Started</button>
+                </div>
             </div>
         </div>
         <div class="content">
             <div class="headerContent">
-                <div class="d-flex justify-content-between align-items-start">
-                    <div class="select-options pt-0 row">
-                        <div class="col-md-3 mr-1">
+                <div class="add-widget">
+                    <div class="select-options pt-0">
+                        <div class=" w-40 mr-1">
                             <div class="title mb-1">Dashboard Title</div>
                             <div class="margin-bottom">
                                 <input type="text" class="form-control form-control-sm" id="name" placeholder="Name">
                             </div>
                         </div>
-                        <div class="col-md-6 mr-1">
+                        <div class="w-100 mr-1">
                             <div class="title mb-1">Add Description</div>
                             <div class="margin-bottom">
                                 <input type="text" class="form-control form-control-sm" id="describe" placeholder="Type here">
@@ -54,62 +63,72 @@
                         </div>
                     </div>
                     <div>
-                        <button class="button btn-ouline-light-blue text-nowrap f-12">Add Widget</button>
+                        <button class="button btn-ouline-light-blue btn-115 text-nowrap f-12">Add Widget</button>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mt-4">
-                    <div class="datasource-actions text-left">
+                <div class="col-12 col-lg-4 mt-2">
+                    <div class="datasource-actions">
                         <div class="btn-group btn-primary mb-1">
                             <button type="button" class="btn btn-115 text-center">Save</button>                           
                         </div>
                     </div>
                 </div>
-                <div class="subContent d-flex justify-content-between align-items-center mt-3">
-                    <div class="">                
-                        <p class="text-left pl-2 mb-0"> Created by: <span class="text-darkblue">Ed Smith</span> | 3 July 2020 </p>
+            </div>
+            <div class="subContent d-flex justify-content-between align-items-center">
+                <div class="pt-2">                
+                    <p class="text-left pl-2 mb-0"> Created by: <span class="text-darkblue">Ed Smith</span> | 3 July 2020 </p>
+                </div>
+                <div class="d-flex justify-content-evenly align-items-center pt-2">
+                    <div class="px-1  d-flex"><img src="/binary-flux/images/ic_toggle.svg" alt="toggle" class="mr-1" />Auto Refresh</div>
+                    <div class="px-1 d-flex"><img src="/binary-flux/images/icon_refresh.svg" alt="Refresh" class="mr-1"/>Last updated : 2 mins ago</div>
+                    <div class="px-1 text-darkblue  d-flex"><img src="/binary-flux/images/ic_calendar.svg" alt="calendar" class="mr-1"/>Last 1 month</div>
+                </div>
+            </div>
+            <div class="pl-3 pr-2">
+                <hr class="divider w-100">
+            </div>
+            <div class="graphical-area d-flex">
+                <div class="graph-figure">
+                    <div class="d-flex justify-content-between">
+                        <span>Walk in Volume</span>
+                        <span>Walk-ins</span>
                     </div>
-                    <div class="d-flex justify-content-evenly">
-                        <div class="px-1  d-flex"><img src="/binary-flux/images/ic_toggle.svg" alt="toggle" class="mr-1" />Auto Refresh</div>
-                        <div class="px-1 d-flex"><img src="/binary-flux/images/icon_refresh.svg" alt="Refresh" class="mr-1"/>Last updated : 2 mins ago</div>
-                        <div class="px-1 text-darkblue  d-flex"><img src="/binary-flux/images/ic_calendar.svg" alt="calendar" class="mr-1"/>Last 1 month</div>
+                    <figure class="highcharts-figure">
+                        <div id="graph"></div>
+                    </figure>
+                    <div class="d-flex">
+                        <span>Max Visitors <span class="highlight font-weight-bold pl-1">50k</span></span>
+                        <span class="pl-3">Time<span class="highlight pl-1">14:00 - 15:00</span></span>
                     </div>
                 </div>
-                <hr class="seperator">
-                <div class="graphical-area">
-                    <div class="graph">
-                        <figure class="highcharts-figure">
-                            <div id="graph"></div>
-                        </figure>
-                    </div>
-                    <div class="visitor-count">
-                        <div class="d-flex justify-content-around">
-                            <div class="count count1">
-                                <h5 class="heading">Total visitors today</h5>
-                                <span class="number">53,122</span>
-                                <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>25%</div>
-                            </div>
-                            <div class="count count2">
-                                <h5 class="heading">Users leaving emergency</h5>
-                                <span class="number">10,657</span>
-                                <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>30%</div>
-                            </div>
+                <div class="visitor-count">
+                    <div class="d-flex justify-content-around">
+                        <div class="count count1">
+                            <h5 class="heading">Total visitors today</h5>
+                            <span class="number">53,122</span>
+                            <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>25%</div>
                         </div>
-                        <div class="d-flex justify-content-around">
-                            <div class="count count3">
-                                <h5 class="heading">Quarantine patients</h5>
-                                <span class="number">44,667</span>
-                                <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>25%</div>
-                            </div>
-                            <div class="count count4">
-                                <h5 class="heading">Critical Cases</h5>
-                                <span class="number">4,556</span>
-                                <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>30%</div>
-                            </div>
+                        <div class="count count2">
+                            <h5 class="heading">Users leaving emergency</h5>
+                            <span class="number">10,657</span>
+                            <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>30%</div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <div class="count count3">
+                            <h5 class="heading">Quarantine patients</h5>
+                            <span class="number">44,667</span>
+                            <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>25%</div>
+                        </div>
+                        <div class="count count4">
+                            <h5 class="heading">Critical Cases</h5>
+                            <span class="number">4,556</span>
+                            <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>30%</div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="">
+            <div class="mt-5">
                 <div class="bar-content">
                     <div class="mapValue d-flex justify-content-between">
                         <div>
@@ -146,6 +165,7 @@
 </div>
 
 
+<!-- Links -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.6/proj4.js"></script>
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
@@ -156,65 +176,7 @@
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
 
-
 <script type="text/javascript">
-    document.body.classList.add("blue_bg");
-// Initiate the chart
-Highcharts.mapChart('container', {
-
-    chart: {
-        map: 'custom/world'
-    },
-
-    mapNavigation: {
-        enabled: true
-    },
-
-    tooltip: {
-        enabled: false
-    },
-
-    series: [{
-        name: 'Basemap',
-        borderColor: '#FF5700',
-        nullColor: '#FF5700',
-        showInLegend: false
-    }, {
-        name: 'Separators',
-        type: 'mapline',
-        nullColor: '#FF5700',
-        showInLegend: false,
-        enableMouseTracking: false
-    }, {
-        // Specify points using lat/lon
-        type: 'mappoint',
-        color: Highcharts.getOptions().colors[1],
-        data: [{
-            lat: 69.7069,
-            lon: -95.6043
-        }, {
-            name: '54,667',
-            lat: 62.7069,
-            lon: -49.6043,
-            color: '#FF5700',
-            dataLabels: {
-                align: 'left',
-                x: -25,
-                y: 40,
-                verticalAlign: 'middle',
-                className: 'highlight'
-            }
-        }, {
-            lat: 65.155,
-            lon: 220.4937,
-            // dataLabels: {
-            //     align: 'left',
-            //     x: 0,
-            //     verticalAlign: 'middle'
-            // }
-        }],
-    }],
-});
 Highcharts.chart('graph', {
     chart: {
         type: 'area'
@@ -231,6 +193,9 @@ Highcharts.chart('graph', {
         backgroundColor:
             Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
     },
+    tooltip: {
+        enabled: false
+    },
     xAxis: {
         categories: [8 , 9, 10, 11, 12, 13, 14, 15, 16, 17 , 18],
     },
@@ -241,21 +206,42 @@ Highcharts.chart('graph', {
         },
         labels: {
             formatter: function () {
-                return this.value * 10 ;
+                return this.value * 1 ;
             }
         }
     },
     plotOptions: {
         area: {
-            fillOpacity: 0.5
+            fillColor: {
+                linearGradient: {
+                    x1: 0.1,
+                    y1: 1,
+                    x2: 0.1,
+                    y2: 0
+                },
+                stops: [
+                    [0, '#27293D'],
+                    [1, '#455B99'],
+                    [2, '#3D94D9'],
+                ]
+            },
+            marker: {
+                radius: 2
+            },
+            lineWidth: 1,
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            threshold: null
         }
     },
     credits: {
         enabled: false
     },
     series: [{
-        name: 'John',
-        data: [0, 2 , 1, 3,2, 1.5, 3, 2 ,5, 2, 2.5, 3.5, 2, 3, 2]
+        data: [10, 12, 18, 19, 12, 18, 30, 15, 20, 15, 46, 30, 34, 20, 22, 6, 18, 32, 18, 22, 15]
     }]
 });
 Highcharts.chart('bars', {
@@ -279,7 +265,7 @@ Highcharts.chart('bars', {
     plotOptions: {
         bar: {
             dataLabels: {
-                enabled: true
+                enabled: false
             }
         }
     },
@@ -297,18 +283,37 @@ Highcharts.chart('bars', {
         enabled: false
     },
     series: [{
-        data: [107, 31, 635, 20]
+        data: [5436, 8436, 3800, 3800],
+        color: {
+            linearGradient: {
+                x1: 0,
+                x2: 0,
+                y1: 0,
+                y2: 1
+            },
+            stops: [
+            [0, '#76DDFB'],
+            [1, '#53A8E2']
+        ]}
     }, {
-        data: [1216, 1001, 4436, 738]
+        data: [3800, 6436, 5600, 5600],
+        color: {
+            linearGradient: {
+                x1: 0,
+                x2: 0,
+                y1: 0,
+                y2: 1
+            },
+            stops: [
+            [0, '#00A8D9'],
+            [1, '#105482']
+        ]}
     }]
 });
 Highcharts.chart("radial-progress-bar", {
-
   chart: {
     type: 'solidgauge',
-
   },
-
   pane: {
     startAngle: 0,
     endAngle: 270,
@@ -361,7 +366,17 @@ Highcharts.chart("radial-progress-bar", {
     }]
   }, {
     data: [{
-      color: Highcharts.getOptions().colors[1],
+    color: {
+        linearGradient: {
+            x1: 0,
+            x2: 0,
+            y1: 0,
+            y2: 1
+        },
+        stops: [
+        [0, '#76DDFB'],
+        [1, '#53A8E2']
+    ]},
       radius: '62%',
       innerRadius: '50%',
       y: 78,
@@ -375,6 +390,6 @@ Highcharts.chart("radial-progress-bar", {
     }]
   }]
 });
-
 </script>
-{{ end }}
+
+{{ end }}  
