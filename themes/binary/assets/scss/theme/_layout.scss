@@ -1463,6 +1463,7 @@ body{
 				width: 35%;
 				.count{
 				    padding: 10px 0;
+				    width: 50%;
 					.heading{
 						color: #FFFFFF;
 						font-size: 12px;
@@ -1491,7 +1492,7 @@ body{
 						font-weight: bold;
 						letter-spacing: 0;
 						line-height: 16px;
-					    margin-top: 18px;
+					    margin-top: 10px;
 					    padding-left: 20px;
 					    position: relative;
 					    .caret-down{
@@ -1602,7 +1603,7 @@ body{
 .highcharts-map-series .highcharts-point{
 	stroke: transparent !important;
 }
-.highcharts-color-0{
+#container .highcharts-color-0{
     fill: #25264B !important;
     stroke: transparent !important;
 	.highcharts-point{
@@ -1615,9 +1616,7 @@ body{
 .highcharts-point{
 	stroke-width: 0px !important;
 }
-.highcharts-point-hover{
-	fill: #FF5700 !important;
-}
+
 .highcharts-series-inactive, .highcharts-series-hover{
 	opacity: 1 !important;
 }
@@ -1740,6 +1739,9 @@ body{
 		    }
 	    }
 	}
+	.highcharts-plot-band, .highcharts-pane{
+	    fill: #ffffff !important;
+	}
 	@media (max-width: 767){
 		max-width: 100%;
 	}
@@ -1752,8 +1754,11 @@ body{
 		letter-spacing: 0;
 		line-height: 20px;
 		position: absolute;
-	    top: 50%;
+	    top: 40%;
 	    left: 150px;
+	    @media (max-width: 1024px){
+	    	top: 50%;
+	    }
 	}
 }
 .world-map{
