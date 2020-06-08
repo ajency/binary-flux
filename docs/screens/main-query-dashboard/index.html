@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.e241a1df68782db827bd9936565c2487b4a347075791c86a3a03ddd38e37283f.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.a56d5deb8b153ed9dd4273da49869ba1df413a3e9f8123e8df57d0e58293dce7.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -152,7 +152,6 @@ Highcharts.mapChart('container', {
     tooltip: {
         enabled: false
     },
-
     series: [{
         name: 'Basemap',
         borderColor: '#FF5700',
@@ -167,15 +166,19 @@ Highcharts.mapChart('container', {
     }, {
         
         type: 'mappoint',
-        color: Highcharts.getOptions().colors[1],
         data: [{
+            colorIndex: 99,
+            color: '#FF5700',
+            marker:{radius:8,symbol:'circle'},
             lat: 69.7069,
             lon: -95.6043
         }, {
             name: '54,667',
             lat: 62.7069,
             lon: -49.6043,
+            colorIndex: 99,
             color: '#FF5700',
+            marker:{radius:15,symbol:'circle'},
             dataLabels: {
                 align: 'left',
                 x: -25,
@@ -184,13 +187,18 @@ Highcharts.mapChart('container', {
                 className: 'highlight'
             }
         }, {
+            colorIndex: 99,
+            color: '#FF5700',
+            marker:{radius:5,symbol:'circle'},
             lat: 65.155,
             lon: 220.4937,
-            
-            
-            
-            
-            
+        },
+        {
+            colorIndex: 99,
+            color: '#2279FF',
+            marker:{radius:3,symbol:'circle'},
+            lat: 68.7069,
+            lon: -60.6043,
         }],
     }],
 });
