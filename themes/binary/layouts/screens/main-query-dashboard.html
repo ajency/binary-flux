@@ -135,6 +135,17 @@ Highcharts.mapChart('container', {
     tooltip: {
         enabled: false
     },
+    plotOptions: {
+        series: {
+            marker: {
+                states: {
+                    hover: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
     series: [{
         name: 'Basemap',
         borderColor: '#FF5700',
@@ -179,7 +190,12 @@ Highcharts.mapChart('container', {
         {
             colorIndex: 99,
             color: '#2279FF',
-            marker:{radius:3,symbol:'circle'},
+            marker:{radius:3,symbol:'circle',            
+            states: {
+                hover: {
+                    fillColor: '#2279FF',
+                }
+            }},
             lat: 68.7069,
             lon: -60.6043,
         }],

@@ -9063,7 +9063,8 @@ body {
   .custom-dashboard .content .graphical-area .visitor-count {
     width: 35%; }
     .custom-dashboard .content .graphical-area .visitor-count .count {
-      padding: 10px 0; }
+      padding: 10px 0;
+      width: 50%; }
       .custom-dashboard .content .graphical-area .visitor-count .count .heading {
         color: #FFFFFF;
         font-size: 12px;
@@ -9090,7 +9091,7 @@ body {
         font-weight: bold;
         letter-spacing: 0;
         line-height: 16px;
-        margin-top: 18px;
+        margin-top: 10px;
         padding-left: 20px;
         position: relative; }
         .custom-dashboard .content .graphical-area .visitor-count .count .percentage .caret-down {
@@ -9182,19 +9183,16 @@ body {
 .highcharts-map-series .highcharts-point {
   stroke: transparent !important; }
 
-.highcharts-color-0 {
+#container .highcharts-color-0 {
   fill: #25264B !important;
   stroke: transparent !important; }
-  .highcharts-color-0 .highcharts-point {
+  #container .highcharts-color-0 .highcharts-point {
     stroke-width: 0 !important; }
-    .highcharts-color-0 .highcharts-point-hover {
+    #container .highcharts-color-0 .highcharts-point-hover {
       fill: #FF5700 !important; }
 
 .highcharts-point {
   stroke-width: 0px !important; }
-
-.highcharts-point-hover {
-  fill: #FF5700 !important; }
 
 .highcharts-series-inactive, .highcharts-series-hover {
   opacity: 1 !important; }
@@ -9285,6 +9283,8 @@ body {
     fill: #BFBFBF !important; }
     #radial-progress-bar .highcharts-data-label text .highcharts-text-outline {
       stroke-width: 0 !important; }
+  #radial-progress-bar .highcharts-plot-band, #radial-progress-bar .highcharts-pane {
+    fill: #ffffff !important; }
   @media (max-width: 767) {
     #radial-progress-bar {
       max-width: 100%; } }
@@ -9296,8 +9296,11 @@ body {
   letter-spacing: 0;
   line-height: 20px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 150px; }
+  @media (max-width: 1024px) {
+    .radial .bar-value {
+      top: 50%; } }
 
 .world-map #container {
   max-width: 450px; }
