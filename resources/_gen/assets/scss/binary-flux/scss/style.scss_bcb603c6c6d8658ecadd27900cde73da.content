@@ -9190,6 +9190,12 @@ body {
     .highcharts-color-0 .highcharts-point-hover {
       fill: #FF5700 !important; }
 
+.highcharts-point {
+  stroke-width: 0px !important; }
+
+.highcharts-point-hover {
+  fill: #FF5700 !important; }
+
 .highcharts-series-inactive, .highcharts-series-hover {
   opacity: 1 !important; }
 
@@ -9203,6 +9209,9 @@ body {
 
 #container .highcharts-markers.highcharts-series-2.highcharts-mappoint-series.highcharts-tracker:nth-child(3) .highcharts-point {
   stroke-width: 30px !important; }
+
+#container g.highcharts-series, #container .highcharts-point, #container .highcharts-markers, #container .highcharts-data-labels {
+  opacity: 1; }
 
 #container .highcharts-figure, #container .highcharts-data-table table {
   max-width: 100%;

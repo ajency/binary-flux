@@ -1612,6 +1612,12 @@ body{
 	    }
 	}
 }
+.highcharts-point{
+	stroke-width: 0px !important;
+}
+.highcharts-point-hover{
+	fill: #FF5700 !important;
+}
 .highcharts-series-inactive, .highcharts-series-hover{
 	opacity: 1 !important;
 }
@@ -1634,6 +1640,9 @@ body{
 				stroke-width: 30px !important;
 			}
 		}
+	}
+	g.highcharts-series, .highcharts-point, .highcharts-markers, .highcharts-data-labels{
+		opacity: 1;
 	}
 	.highcharts-figure, .highcharts-data-table table {
 	    max-width: 100%;
