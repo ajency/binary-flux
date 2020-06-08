@@ -182,7 +182,7 @@
 document.body.classList.add("blue_bg");
 Highcharts.chart('graph', {
     chart: {
-        type: 'area'
+        type: 'area',
     },
 
     legend: {
@@ -197,13 +197,21 @@ Highcharts.chart('graph', {
             Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF'
     },
     tooltip: {
-        enabled: false
+        enabled: false,
     },
     xAxis: {
         categories: [8 , 9, 10, 11, 12, 13, 14, 15, 16, 17 , 18],
+        crosshair: {
+            width: 2,
+            interpolate: true, 
+            color :'red',
+            dashStyle: 'Dash',
+            zIndex: 3,
+        }
     },
     yAxis: {
         min: 0,
+        gridLineColor: '#197F07',
         title: {
             text: ''
         },
@@ -229,13 +237,14 @@ Highcharts.chart('graph', {
                 ]
             },
             marker: {
-                radius: 2,
-            },
-            lineWidth: 1,
-            states: {
-                hover: {
-                    lineWidth: 1,
-                    enabled: false
+                enabled: false,
+                symbol: 'circle',
+                radius: 3,
+                stroke: 0,
+                states: {
+                    hover: {
+                        enabled: true
+                    }
                 }
             },
             threshold: null
@@ -245,7 +254,8 @@ Highcharts.chart('graph', {
         enabled: false
     },
     series: [{
-        data: [10, 12, 18, 19, 12, 18, 30, 15, 20, 15, 46, 30, 34, 20, 22, 6, 18, 32, 18, 22, 15]
+        data: [10, 12, 18, 19, 12, 18, 30, 15, 20, 15, 46, 30, 34, 20, 22, 6, 18, 32, 18, 22, 15],
+        color: '#2279FF'
     }]
 });
 Highcharts.chart('bars', {
@@ -327,17 +337,17 @@ Highcharts.chart("radial-progress-bar", {
         startAngle: 0,
         endAngle: 270,
         background: [{
-            outerRadius: '112%',
+            outerRadius: '108%',
             innerRadius: '100%',
             borderWidth: 0,
             shape: 'arc',
         }, {
-            outerRadius: '62%',
+            outerRadius: '58%',
             innerRadius: '50%',
             borderWidth: 0,
             shape: 'arc',
         }, {
-            outerRadius: '88%',
+            outerRadius: '84%',
             innerRadius: '76%',
             borderWidth: 0,
             shape: 'arc',
@@ -374,12 +384,12 @@ Highcharts.chart("radial-progress-bar", {
             [0, '#A1FDA9'],
             [1, '#279AD3']
         ]},
-        radius: '112%',
+        radius: '108%',
         innerRadius: '100%',
         y: 78,
         dataLabels: {
             x: -80,
-            y: -165,
+            y: -162,
             format: 'Medical Tasks {y}%',
             borderWidth: 0,
             style: {
@@ -402,12 +412,12 @@ Highcharts.chart("radial-progress-bar", {
         [0, '#FAD961'],
         [1, '#F76B1C']
     ]},
-        radius: '88%',
+        radius: '84%',
         innerRadius: '76%',
         y: 70,
         dataLabels: {
             x: -80,
-            y: -130,
+            y: -128,
             format: 'Administrative 55%',
             borderWidth: 0,
             style: {
@@ -430,12 +440,12 @@ Highcharts.chart("radial-progress-bar", {
         [0, '#9E93FB'],
         [1, '#4543DD']
     ]},
-        radius: '62%',
+        radius: '58%',
         innerRadius: '50%',
         y: 50,
         dataLabels: {
             x: -80,
-            y: -94,
+            y: -92,
             format: 'Housekeeping {y}%',
             borderWidth: 0,
             style: {
