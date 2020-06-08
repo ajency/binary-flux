@@ -89,9 +89,9 @@
             </div>
             <div class="graphical-area d-flex">
                 <div class="graph-figure">
-                    <div class="d-flex justify-content-between">
-                        <span>Walk in Volume</span>
-                        <span>Walk-ins</span>
+                    <div class="d-flex justify-content-between align-items-center pl-2 pr-4">
+                        <span class="text-white font-weight-bold">Walk in Volume</span>
+                        <span class="value">Walk-ins</span>
                     </div>
                     <figure class="highcharts-figure">
                         <div id="graph"></div>
@@ -106,24 +106,24 @@
                         <div class="count count1">
                             <h5 class="heading">Total visitors today</h5>
                             <span class="number">53,122</span>
-                            <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>25%</div>
+                            <div class="percentage"><span class="caret-down"></span>25%</div>
                         </div>
                         <div class="count count2">
                             <h5 class="heading">Users leaving emergency</h5>
                             <span class="number">10,657</span>
-                            <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>30%</div>
+                            <div class="percentage"><span class="caret-down"></span>30%</div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-around">
                         <div class="count count3">
                             <h5 class="heading">Quarantine patients</h5>
                             <span class="number">44,667</span>
-                            <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>25%</div>
+                            <div class="percentage"><span class="caret-down"></span>25%</div>
                         </div>
                         <div class="count count4">
                             <h5 class="heading">Critical Cases</h5>
                             <span class="number">4,556</span>
-                            <div class="percentage"><i class="icon-arrow-down-lg mr-1"></i>30%</div>
+                            <div class="percentage"><span class="caret-down"></span>30%</div>
                         </div>
                     </div>
                 </div>
@@ -132,26 +132,27 @@
                 <div class="bar-content">
                     <div class="mapValue d-flex justify-content-between">
                         <div>
-                            <p class="value text-white">Earning</p>
+                            <p class="text-white font-weight-bold">Earning</p>
                         </div>
                         <div class="d-flex">
-                            <p class="px-1 low">This week</p>
-                            <p class="px-1 high">Previous Month</p>
+                            <p class="px-1 week">This week</p>
+                            <p class="px-1 month">Previous Month</p>
                         </div>
                     </div>
                     <figure class="highcharts-figure">
-                        <div id="bars" ></div>
+                        <div id="bars"></div>
                     </figure>
                 </div>
                 <div class="radial position-relative">
-                    <div class="title">Daily Task Management</div>
+                    <div class="text-white font-weight-bold pl-3">Daily Task Management</div>
                     <div id="radial-progress-bar"></div>
+                    <div class="bar-value"> 50% </div>
                 </div>
                 <div class="world-map">
                     <h5 class="text-left px-2 pt-4 f-18 text-white"> Preview </h5>
                     <div class="mapValue d-flex justify-content-between">
                         <div>
-                            <p class="value text-white">Admissions</p>
+                            <p class="text-white font-weight-bold">Admissions</p>
                         </div>
                         <div class="d-flex">
                             <p class="px-1 low">Low</p>
@@ -380,7 +381,7 @@ tooltip: {
       y: 78,
       dataLabels: {
         x: -80,
-        y: -186,
+        y: -165,
         format: 'Medical Tasks {y}%',
         borderWidth: 0,
         style: {
@@ -408,7 +409,7 @@ tooltip: {
       y: 70,
       dataLabels: {
         x: -80,
-        y: -148,
+        y: -130,
         format: 'Administrative 55%',
         borderWidth: 0,
         style: {
@@ -436,7 +437,7 @@ tooltip: {
       y: 50,
       dataLabels: {
         x: -80,
-        y: -104,
+        y: -94,
         format: 'Housekeeping {y}%',
         borderWidth: 0,
         style: {
@@ -476,7 +477,7 @@ Highcharts.mapChart('container', {
         data: [{
             colorIndex: 99,
             color: '#FF5700',
-            marker:{radius:8,symbol:'circle'},
+            marker:{radius:6,symbol:'circle'},
             lat: 69.7069,
             lon: -95.6043
         }, {
@@ -485,7 +486,7 @@ Highcharts.mapChart('container', {
             lon: -49.6043,
             colorIndex: 99,
             color: '#FF5700',
-            marker:{radius:15,symbol:'circle'},
+            marker:{radius:10,symbol:'circle'},
             dataLabels: {
                 align: 'left',
                 x: -25,
@@ -496,7 +497,7 @@ Highcharts.mapChart('container', {
         }, {
             colorIndex: 99,
             color: '#FF5700',
-            marker:{radius:5,symbol:'circle'},
+            marker:{radius:4,symbol:'circle'},
             lat: 65.155,
             lon: 220.4937,
         },
