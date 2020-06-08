@@ -1659,6 +1659,9 @@ body{
 		text-align: center;
 		width: 100%;
 		max-width: 500px;
+		@media (max-width: 767){
+			max-width: 100%;
+		}
 	}
 	.highcharts-data-table caption {
 	    padding: 1em 0;
@@ -1719,6 +1722,9 @@ body{
 	.highcharts-axis-line {
 	    stroke: #0a0c1b !important;
 	}
+	@media (max-width: 767){
+		max-width: 100%;
+	}
 }
 
 #radial-progress-bar{
@@ -1733,6 +1739,9 @@ body{
 		    	stroke-width: 0 !important;
 		    }
 	    }
+	}
+	@media (max-width: 767){
+		max-width: 100%;
 	}
 }
 .radial{
@@ -1750,5 +1759,21 @@ body{
 .world-map{
 	#container{
 		max-width: 450px;
+		@media (max-width: 767){
+			max-width: 100%;
+		}
 	}
+}
+
+.abc{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    width: auto;
+    .bar-content, .radial, .world-map{
+	    flex: 0 0 33%;
+	    @media (max-width: 1024px){
+	    	flex:  0 0 100%;
+	    }
+    }
 }

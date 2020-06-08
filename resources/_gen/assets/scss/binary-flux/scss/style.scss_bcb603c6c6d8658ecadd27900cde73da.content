@@ -9226,6 +9226,9 @@ body {
     text-align: center;
     width: 100%;
     max-width: 500px; }
+    @media (max-width: 767) {
+      #graph .highcharts-data-table table {
+        max-width: 100%; } }
   #graph .highcharts-data-table caption {
     padding: 1em 0;
     font-size: 1.2em;
@@ -9269,6 +9272,9 @@ body {
     width: 15px; }
   #bars .highcharts-axis-line {
     stroke: #0a0c1b !important; }
+  @media (max-width: 767) {
+    #bars {
+      max-width: 100%; } }
 
 #radial-progress-bar {
   max-width: 350px; }
@@ -9279,6 +9285,9 @@ body {
     fill: #BFBFBF !important; }
     #radial-progress-bar .highcharts-data-label text .highcharts-text-outline {
       stroke-width: 0 !important; }
+  @media (max-width: 767) {
+    #radial-progress-bar {
+      max-width: 100%; } }
 
 .radial .bar-value {
   color: #FFFFFF;
@@ -9292,6 +9301,20 @@ body {
 
 .world-map #container {
   max-width: 450px; }
+  @media (max-width: 767) {
+    .world-map #container {
+      max-width: 100%; } }
+
+.abc {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: auto; }
+  .abc .bar-content, .abc .radial, .abc .world-map {
+    flex: 0 0 33%; }
+    @media (max-width: 1024px) {
+      .abc .bar-content, .abc .radial, .abc .world-map {
+        flex: 0 0 100%; } }
 
 ul, ol {
   padding-left: 10px; }
