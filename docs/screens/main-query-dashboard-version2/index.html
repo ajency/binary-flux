@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.564299f60764b0cca8379af80bb24ad4f7eb7fa9994a2b1c4e1835d139b01952.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.90bd0dc8f2843b548225ce794e5b2e4c8aee5dcc07c87b7367422bdbb119a7cb.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -246,12 +246,13 @@ Highcharts.chart('graph', {
                 ]
             },
             marker: {
-                radius: 2
+                radius: 2,
             },
             lineWidth: 1,
             states: {
                 hover: {
-                    lineWidth: 1
+                    lineWidth: 1,
+                    enabled: false
                 }
             },
             threshold: null
@@ -287,7 +288,7 @@ Highcharts.chart('bars', {
             dataLabels: {
                 enabled: false
             }
-        }
+        },
     },
     legend: {
         layout: 'vertical',
@@ -304,6 +305,7 @@ Highcharts.chart('bars', {
     },
     series: [{
         data: [5436, 8436, 3800, 3800],
+        states: { hover: { enabled: false } }, 
         color: {
             linearGradient: {
                 x1: 0,
@@ -317,6 +319,7 @@ Highcharts.chart('bars', {
         ]}
     }, {
         data: [3800, 6436, 5600, 5600],
+        states: { hover: { enabled: false } }, 
         color: {
             linearGradient: {
                 x1: 0,
@@ -334,80 +337,75 @@ Highcharts.chart("radial-progress-bar", {
   chart: {
     type: 'solidgauge',
   },
-tooltip: {
-    enabled: false
-},
-  pane: {
-    startAngle: 0,
-    endAngle: 270,
-    background: [{
-      outerRadius: '112%',
-      innerRadius: '100%',
-      borderWidth: 0,
-       shape: 'arc',
-       backgroundColor: 'grey'
-    }, {
-      outerRadius: '62%',
-      innerRadius: '50%',
-      borderWidth: 0,
-    shape: 'arc',
-    backgroundColor: 'grey'
+    tooltip: {
+        enabled: false
+    },
+    pane: {
+        startAngle: 0,
+        endAngle: 270,
+        background: [{
+            outerRadius: '112%',
+            innerRadius: '100%',
+            borderWidth: 0,
+            shape: 'arc',
+        }, {
+            outerRadius: '62%',
+            innerRadius: '50%',
+            borderWidth: 0,
+            shape: 'arc',
+        }, {
+            outerRadius: '88%',
+            innerRadius: '76%',
+            borderWidth: 0,
+            shape: 'arc',
+        }]
+    },
+    yAxis: {
+        min: 0,
+        max: 100,
+        lineWidth: 0,
+        tickPositions: []
+    },
+    plotOptions: {
+        solidgauge: {
+          dataLabels: {
+            enabled: true,
+            verticalAlign: 'start'
+          },
+          linecap: 'round',
+          rounded: true
+        }
+    },
+
+    series: [{
+        data: [{
+        colorIndex: 99,
+        color: {
+            linearGradient: {
+                x1: 0,
+                x2: 0,
+                y1: 0,
+                y2: 1
+            },
+            stops: [
+            [0, '#A1FDA9'],
+            [1, '#279AD3']
+        ]},
+        radius: '112%',
+        innerRadius: '100%',
+        y: 78,
+        dataLabels: {
+            x: -80,
+            y: -165,
+            format: 'Medical Tasks {y}%',
+            borderWidth: 0,
+            style: {
+              fontSize: '15px'
+            }
+        }
+    }]
     },
     {
-        outerRadius: '88%',
-      innerRadius: '76%',
-      borderWidth: 0,
-    shape: 'arc',
-    backgroundColor: 'grey'
-    }]
-  },
-
-  yAxis: {
-    min: 0,
-    max: 100,
-    lineWidth: 0,
-    tickPositions: []
-  },
-
-  plotOptions: {
-    solidgauge: {
-      dataLabels: {
-        enabled: true,
-        verticalAlign: 'start'
-      },
-      rounded: true
-    }
-  },
-
-  series: [{
-    data: [{
-    colorIndex: 99,
-    color: {
-        linearGradient: {
-            x1: 0,
-            x2: 0,
-            y1: 0,
-            y2: 1
-        },
-        stops: [
-        [0, '#A1FDA9'],
-        [1, '#279AD3']
-    ]},
-      radius: '112%',
-      innerRadius: '100%',
-      y: 78,
-      dataLabels: {
-        x: -80,
-        y: -165,
-        format: 'Medical Tasks {y}%',
-        borderWidth: 0,
-        style: {
-          fontSize: '15px'
-        }
-      }
-    }]
-  },
-  {
     data: [{
     colorIndex: 99,
     color: {
@@ -421,21 +419,21 @@ tooltip: {
         [0, '#FAD961'],
         [1, '#F76B1C']
     ]},
-      radius: '88%',
-      innerRadius: '76%',
-      y: 70,
-      dataLabels: {
-        x: -80,
-        y: -130,
-        format: 'Administrative 55%',
-        borderWidth: 0,
-        style: {
-          fontSize: '15px'
+        radius: '88%',
+        innerRadius: '76%',
+        y: 70,
+        dataLabels: {
+            x: -80,
+            y: -130,
+            format: 'Administrative 55%',
+            borderWidth: 0,
+            style: {
+                fontSize: '15px'
+            }
         }
-      }
-    }]
-  },
-   {
+        }]
+    },
+    {
     data: [{
     colorIndex: 99,
     color: {
@@ -449,20 +447,20 @@ tooltip: {
         [0, '#9E93FB'],
         [1, '#4543DD']
     ]},
-      radius: '62%',
-      innerRadius: '50%',
-      y: 50,
-      dataLabels: {
-        x: -80,
-        y: -94,
-        format: 'Housekeeping {y}%',
-        borderWidth: 0,
-        style: {
-          fontSize: '15px'
+        radius: '62%',
+        innerRadius: '50%',
+        y: 50,
+        dataLabels: {
+            x: -80,
+            y: -94,
+            format: 'Housekeeping {y}%',
+            borderWidth: 0,
+            style: {
+                fontSize: '15px'
+            }
         }
-      }
     }]
-  }]
+    }]
 });
 Highcharts.mapChart('container', {
 
@@ -476,6 +474,17 @@ Highcharts.mapChart('container', {
 
     tooltip: {
         enabled: false
+    },
+    plotOptions: {
+        series: {
+            marker: {
+                states: {
+                    hover: {
+                        enabled: false
+                    }
+                }
+            }
+        }
     },
     series: [{
         name: 'Basemap',
