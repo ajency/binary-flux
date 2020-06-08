@@ -1706,6 +1706,10 @@ body{
 		stroke-width: 0 !important;
 	    width: 15px;
 	}
+	.highcharts-grid-line{
+		stroke: #5D5E72 !important;
+	    opacity: 0.5;
+	}
 	.highcharts-axis-line {
 	    stroke: #0a0c1b !important;
 	}
