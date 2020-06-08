@@ -1550,8 +1550,7 @@ body{
     stroke: transparent !important;
 }
 #container .highcharts-point{
-    stroke:  #FF5700;
-    fill: #FF5700;
+    stroke-width: 0!important;
     &-hover{
     	 fill:  #FF5700 !important;
     }

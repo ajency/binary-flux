@@ -144,6 +144,7 @@
                     </figure>
                 </div>
                 <div class="radial position-relative">
+                    <div class="title">Daily Task Management</div>
                     <div id="radial-progress-bar"></div>
                 </div>
                 <div class="world-map">
@@ -177,6 +178,7 @@
 <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
 
 <script type="text/javascript">
+document.body.classList.add("blue_bg");
 Highcharts.chart('graph', {
     chart: {
         type: 'area'
@@ -314,6 +316,9 @@ Highcharts.chart("radial-progress-bar", {
   chart: {
     type: 'solidgauge',
   },
+tooltip: {
+    enabled: false
+},
   pane: {
     startAngle: 0,
     endAngle: 270,
@@ -326,6 +331,13 @@ Highcharts.chart("radial-progress-bar", {
     }, {
       outerRadius: '62%',
       innerRadius: '50%',
+      borderWidth: 0,
+    shape: 'arc',
+    backgroundColor: 'grey'
+    },
+    {
+        outerRadius: '88%',
+      innerRadius: '76%',
       borderWidth: 0,
     shape: 'arc',
     backgroundColor: 'grey'
@@ -343,7 +355,7 @@ Highcharts.chart("radial-progress-bar", {
     solidgauge: {
       dataLabels: {
         enabled: true,
-        verticalAlign: 'middle'
+        verticalAlign: 'start'
       },
       rounded: true
     }
@@ -351,21 +363,7 @@ Highcharts.chart("radial-progress-bar", {
 
   series: [{
     data: [{
-      color: Highcharts.getOptions().colors[1],
-      radius: '112%',
-      innerRadius: '100%',
-      y: 80,
-      dataLabels: {
-        y: -70,
-        format: '{y}%',
-        borderWidth: 0,
-        style: {
-          fontSize: '15px'
-        }
-      }
-    }]
-  }, {
-    data: [{
+    colorIndex: 99,
     color: {
         linearGradient: {
             x1: 0,
@@ -374,14 +372,72 @@ Highcharts.chart("radial-progress-bar", {
             y2: 1
         },
         stops: [
-        [0, '#76DDFB'],
-        [1, '#53A8E2']
+        [0, '#A1FDA9'],
+        [1, '#279AD3']
+    ]},
+      radius: '112%',
+      innerRadius: '100%',
+      y: 78,
+      dataLabels: {
+        x: -80,
+        y: -186,
+        format: 'Medical Tasks {y}%',
+        borderWidth: 0,
+        style: {
+          fontSize: '15px'
+        }
+      }
+    }]
+  },
+  {
+    data: [{
+    colorIndex: 99,
+    color: {
+        linearGradient: {
+            x1: 0,
+            x2: 0,
+            y1: 0,
+            y2: 1
+        },
+        stops: [
+        [0, '#FAD961'],
+        [1, '#F76B1C']
+    ]},
+      radius: '88%',
+      innerRadius: '76%',
+      y: 70,
+      dataLabels: {
+        x: -80,
+        y: -148,
+        format: 'Administrative 55%',
+        borderWidth: 0,
+        style: {
+          fontSize: '15px'
+        }
+      }
+    }]
+  },
+   {
+    data: [{
+    colorIndex: 99,
+    color: {
+        linearGradient: {
+            x1: 0,
+            x2: 0,
+            y1: 0,
+            y2: 1
+        },
+        stops: [
+        [0, '#9E93FB'],
+        [1, '#4543DD']
     ]},
       radius: '62%',
       innerRadius: '50%',
-      y: 78,
+      y: 50,
       dataLabels: {
-        format: '{y}%',
+        x: -80,
+        y: -104,
+        format: 'Housekeeping {y}%',
         borderWidth: 0,
         style: {
           fontSize: '15px'
@@ -389,6 +445,69 @@ Highcharts.chart("radial-progress-bar", {
       }
     }]
   }]
+});
+Highcharts.mapChart('container', {
+
+    chart: {
+        map: 'custom/world'
+    },
+
+    mapNavigation: {
+        enabled: true
+    },
+
+    tooltip: {
+        enabled: false
+    },
+    series: [{
+        name: 'Basemap',
+        borderColor: '#FF5700',
+        nullColor: '#FF5700',
+        showInLegend: false
+    }, {
+        name: 'Separators',
+        type: 'mapline',
+        nullColor: '#FF5700',
+        showInLegend: false,
+        enableMouseTracking: false
+    }, {
+        // Specify points using lat/lon
+        type: 'mappoint',
+        data: [{
+            colorIndex: 99,
+            color: '#FF5700',
+            marker:{radius:8,symbol:'circle'},
+            lat: 69.7069,
+            lon: -95.6043
+        }, {
+            name: '54,667',
+            lat: 62.7069,
+            lon: -49.6043,
+            colorIndex: 99,
+            color: '#FF5700',
+            marker:{radius:15,symbol:'circle'},
+            dataLabels: {
+                align: 'left',
+                x: -25,
+                y: 40,
+                verticalAlign: 'middle',
+                className: 'highlight'
+            }
+        }, {
+            colorIndex: 99,
+            color: '#FF5700',
+            marker:{radius:5,symbol:'circle'},
+            lat: 65.155,
+            lon: 220.4937,
+        },
+        {
+            colorIndex: 99,
+            color: '#2279FF',
+            marker:{radius:3,symbol:'circle'},
+            lat: 68.7069,
+            lon: -60.6043,
+        }],
+    }],
 });
 </script>
 
