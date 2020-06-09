@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.60831902a9cf582b4f80879435db58e8bf651a3c1c7431c7af0f47f2ba70e6bb.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.9c72523006751c6e28ddc49da69af6e4beb1246222c5a6a75c6d9cbfff500af6.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -145,8 +145,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-5 abc">
-                <div class="bar-content">
+            <div class="mt-5 sectionContent row m-0">
+                <div class="bar-content col-xl-4 col-12 column-div">
                     <div class="mapValue d-flex justify-content-between">
                         <div>
                             <p class="text-white font-weight-bold">Earning</p>
@@ -160,13 +160,12 @@
                         <div id="bars"></div>
                     </figure>
                 </div>
-                <div class="radial position-relative">
+                <div class="radial position-relative col-xl-4 col-12 column-div">
                     <div class="text-white font-weight-bold pl-3">Daily Task Management</div>
                     <div id="radial-progress-bar"></div>
-                    <div class="bar-value"> 50% </div>
+                    
                 </div>
-                <div class="world-map">
-                    <h5 class="text-left px-2 pt-4 f-18 text-white"> Preview </h5>
+                <div class="world-map col-xl-4 col-12 column-div">
                     <div class="mapValue d-flex justify-content-between">
                         <div>
                             <p class="text-white font-weight-bold">Admissions</p>
@@ -217,11 +216,10 @@ Highcharts.chart('graph', {
         enabled: false,
     },
     xAxis: {
+        min: 0.5,
         categories: [8 , 9, 10, 11, 12, 13, 14, 15, 16, 17 , 18],
         crosshair: {
             width: 2,
-            interpolate: true, 
-            color :'red',
             dashStyle: 'Dash',
             zIndex: 3,
         }
@@ -258,20 +256,34 @@ Highcharts.chart('graph', {
                 symbol: 'circle',
                 radius: 3,
                 stroke: 0,
+                allowOverlap: false,
                 states: {
                     hover: {
-                        enabled: true
+                        enabled: true,
+                        halo: {
+                            enabled: false
+                        }
                     }
                 }
             },
             threshold: null
+        },
+        series: {
+            states: {
+                hover: {
+                    enabled: true,
+                    halo: {
+                        size: 0
+                    }
+                }
+            }
         }
     },
     credits: {
         enabled: false
     },
     series: [{
-        data: [10, 12, 18, 19, 12, 18, 30, 15, 20, 15, 46, 30, 34, 20, 22, 6, 18, 32, 18, 22, 15],
+        data: [10, 12, 16, 16.5, 12, 18, 30, 15, 20, 15, 46, 30, 34, 20, 22, 6, 18, 32, 18, 22, 15],
         color: '#2279FF'
     }]
 });
@@ -374,7 +386,12 @@ Highcharts.chart("radial-progress-bar", {
         min: 0,
         max: 100,
         lineWidth: 0,
-        tickPositions: []
+        tickPositions: [],
+        title: {
+            text: '50%',
+            x: 0,
+            y: 60,
+        },
     },
     plotOptions: {
         solidgauge: {
@@ -406,7 +423,7 @@ Highcharts.chart("radial-progress-bar", {
         y: 78,
         dataLabels: {
             x: -80,
-            y: -162,
+            y: -140,
             format: 'Medical Tasks {y}%',
             borderWidth: 0,
             style: {
@@ -434,7 +451,7 @@ Highcharts.chart("radial-progress-bar", {
         y: 70,
         dataLabels: {
             x: -80,
-            y: -128,
+            y: -112,
             format: 'Administrative 55%',
             borderWidth: 0,
             style: {
@@ -462,7 +479,7 @@ Highcharts.chart("radial-progress-bar", {
         y: 50,
         dataLabels: {
             x: -80,
-            y: -92,
+            y: -80,
             format: 'Housekeeping {y}%',
             borderWidth: 0,
             style: {
