@@ -9171,9 +9171,17 @@ body {
 .cm-s-default .cm-atom {
   color: #FF13C7 !important; }
 
+@media (max-width: 1299px) and (min-width: 1200px) {
+  .sectionContent .column-div {
+    flex: 0 0 33.33333333%;
+    max-width: 33.33333333%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px; } }
+
 .sectionContent .world-map #container {
   max-width: 400px; }
-  @media (max-width: 1099px) {
+  @media (max-width: 1199px) {
     .sectionContent .world-map #container {
       max-width: 100%; } }
 
@@ -10081,7 +10089,7 @@ button.btn-ouline-light-blue {
     opacity: 0.5; }
   #bars .highcharts-axis-line {
     stroke: #0a0c1b !important; }
-  @media (max-width: 1099px) {
+  @media (max-width: 1199px) {
     #bars {
       max-width: 100%; } }
 
@@ -10089,7 +10097,7 @@ button.btn-ouline-light-blue {
   max-width: 300px; }
   #radial-progress-bar .highcharts-data-label text {
     color: #BFBFBF !important;
-    font-size: 12px !important;
+    font-size: 11px !important;
     font-weight: 300 !important;
     fill: #BFBFBF !important; }
     #radial-progress-bar .highcharts-data-label text .highcharts-text-outline {
@@ -10102,9 +10110,9 @@ button.btn-ouline-light-blue {
     font-weight: bold;
     letter-spacing: 0;
     line-height: 20px; }
-  @media (max-width: 1099px) {
+  @media (max-width: 1199px) {
     #radial-progress-bar {
-      max-width: 100%; } }
+      margin: auto; } }
 
 hr {
   border-top: 2px solid #34364A; }

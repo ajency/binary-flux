@@ -1591,22 +1591,23 @@ body{
 }
 
 .sectionContent{
-	.bar-content{
-
+	.column-div{
+		@media (max-width: 1299px) and (min-width: 1200px){
+	    	flex: 0 0 33.33333333%;
+    		max-width: 33.33333333%;
+		    width: 100%;
+    		padding-right: 15px;
+    		padding-left: 15px;
+		}
 	}
     .world-map{
-
 		#container{
 			max-width: 400px;
-			@media (max-width: 1099px){
+			@media (max-width: 1199px){
 				max-width: 100%;
 			}
 		}
-	
     }
- 	.radial{
-
- 	}
  	@media (max-width: 1099px){
  		flex-flow: column;
  	}
