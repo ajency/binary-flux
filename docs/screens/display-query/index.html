@@ -66,7 +66,9 @@ FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && 
 <link rel="stylesheet" href="../../plugins/lib/codemirror.css">
 <script src="../../plugins/lib/codemirror.js"></script>
 <script src="../../plugins/mode/sql/sql.js"></script>
-
+<script src="../../plugins/addon/hint/show-hint.js"></script>
+<script src="../../plugins/addon/hint/sql-hint.js"></script>
+<link rel="stylesheet" type="text/css" href="../../plugins/addon/hint/show-hint.css">
 
 <script type="text/javascript">
     document.body.classList.add("blue_bg");
@@ -77,7 +79,13 @@ FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && 
     indentWithTabs: true,
     smartIndent: true,
     autofocus: true,
-    extraKeys: {"Ctrl-Space": "autocomplete"},
+    extraKeys: {"Ctrl-Space": "autocomplete"}
+});
+editableCodeMirror.on("keyup", function (cm, event) {
+var inp = String.fromCharCode(event.keyCode);
+if (/[a-zA-Z]/.test(inp) && !cm.state.completionActive && event.keyCode != 13) {     
+        cm.showHint({completeSingle: false});
+    }
 });
 </script>
 
