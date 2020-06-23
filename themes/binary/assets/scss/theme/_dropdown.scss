@@ -112,3 +112,32 @@
         }
     }
 }
+
+.autosuggest-dropdown{
+    background: white;
+    width: 75%;
+    border-radius: 2px;
+    border: 1px solid #B8B0B0;
+    padding: 10px 18px;
+    position: absolute;
+    left: 46px;
+    display: none;
+    .option{
+        display: flex;
+        justify-content: space-between;
+        color: #57585E;
+        font-family: Courier;
+        font-size: 11px;
+        .value{
+            text-align: left;
+        }
+        .label{
+            text-align: right;
+            opacity: 0.54;
+            color: #57585E;
+        }
+    }
+    &.show{
+        display: block;
+    }
+}
