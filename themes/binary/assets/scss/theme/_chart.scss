@@ -45,7 +45,7 @@
 .highcharts-map-series .highcharts-point{
     stroke: transparent !important;
 }
-#container .highcharts-color-0{
+#container .highcharts-color-0, #container1 .highcharts-color-0{
     fill: #25264B !important;
     stroke: transparent !important;
     .highcharts-point{
@@ -63,7 +63,7 @@
     opacity: 1 !important;
 }
 
-#container{
+#container, #container1{
     .highcharts-data-label {
         text{
             color: #BAB9B9 !important;
@@ -126,7 +126,7 @@
     }
 }
 
-#bars {
+#bars, #bars1 {
     height: 350px;
     max-width: 400px;
     .highcharts-data-table table {
@@ -164,7 +164,7 @@
     }
 }
 
-#radial-progress-bar{
+#radial-progress-bar, #radial-progress-bar1{
     max-width: 300px;
     .highcharts-data-label {
         text{
@@ -189,5 +189,11 @@
     }
     @media (max-width: 1199px){
         margin: auto;
+    }
+}
+#line-graph{
+    .highcharts-grid-line{
+        stroke: #5D5E72 !important;
+        opacity: 0.5;
     }
 }

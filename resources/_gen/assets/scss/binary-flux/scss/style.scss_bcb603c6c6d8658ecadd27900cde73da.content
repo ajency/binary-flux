@@ -9010,6 +9010,10 @@ body {
       @media (max-width: 425px) {
         .custom-dashboard .content .headerContent .add-widget .select-options {
           display: block; } }
+    .custom-dashboard .content .headerContent .add-widget .details {
+      padding-left: 15px; }
+      .custom-dashboard .content .headerContent .add-widget .details .subText {
+        margin-bottom: 0.5rem; }
     .custom-dashboard .content .headerContent .add-widget .btn-ouline-light-blue {
       padding: 0;
       height: 32px; }
@@ -9142,6 +9146,110 @@ body {
     height: 5px;
     border-radius: 10px;
     background: #0783B3; }
+
+.custom-dashboard .content.dashboardInteraction .divider {
+  margin: 40px 0; }
+
+@media (max-width: 1440px) {
+  .custom-dashboard .content.dashboardInteraction .details p {
+    width: 80%; } }
+
+.custom-dashboard .content.dashboardInteraction .graphical-area .graphical-section .graph-figure {
+  width: 100%; }
+  @media (min-width: 1441px) {
+    .custom-dashboard .content.dashboardInteraction .graphical-area .graphical-section .graph-figure {
+      width: 50%; } }
+
+@media (min-width: 1441px) {
+  .custom-dashboard .content.dashboardInteraction .graphical-area .graphical-section {
+    display: flex;
+    justify-content: space-between; } }
+
+@media (max-width: 1440px) {
+  .custom-dashboard .content.dashboardInteraction .graphical-area .graphical-section {
+    width: 65%; } }
+
+.custom-dashboard .content.dashboardInteraction .graphical-area .visitor-count {
+  width: 35%; }
+  @media (min-width: 1441px) {
+    .custom-dashboard .content.dashboardInteraction .graphical-area .visitor-count .count {
+      padding-right: 4rem; } }
+  @media (min-width: 1441px) {
+    .custom-dashboard .content.dashboardInteraction .graphical-area .visitor-count {
+      padding: 0  3rem 3rem;
+      width: 66%;
+      display: flex; } }
+
+.custom-dashboard .content.dashboardInteraction .graphical-area .world-map, .custom-dashboard .content.dashboardInteraction .graphical-area .radial {
+  display: block; }
+  @media (max-width: 1440px) {
+    .custom-dashboard .content.dashboardInteraction .graphical-area .world-map, .custom-dashboard .content.dashboardInteraction .graphical-area .radial {
+      display: none; } }
+
+@media (min-width: 1441px) {
+  .custom-dashboard .content.dashboardInteraction .graphical-area {
+    flex-direction: column; } }
+
+.custom-dashboard .content.dashboardInteraction .world-map {
+  width: 25%; }
+  .custom-dashboard .content.dashboardInteraction .world-map #container {
+    max-width: 400px; }
+
+.custom-dashboard .content.dashboardInteraction .bar-content #bars .highcharts-yaxis .highcharts-axis-line {
+  stroke: #BFBFBF !important;
+  stroke-width: 0.5;
+  opacity: 0.5; }
+
+@media (min-width: 1441px) {
+  .custom-dashboard .content.dashboardInteraction .radial {
+    width: 20%; } }
+
+@media (min-width: 1441px) {
+  .custom-dashboard .content.dashboardInteraction .radial #radial-progress-bar {
+    max-width: 250px; } }
+
+.custom-dashboard .content.dashboardInteraction .line-graph .lineGraphValue {
+  width: 90%; }
+
+.custom-dashboard .content.dashboardInteraction .line-graph .critical {
+  position: relative; }
+  .custom-dashboard .content.dashboardInteraction .line-graph .critical:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background: #9476FB; }
+
+.custom-dashboard .content.dashboardInteraction .line-graph .non-critical {
+  position: relative; }
+  .custom-dashboard .content.dashboardInteraction .line-graph .non-critical:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    background: #DE7251; }
+
+@media (min-width: 1441px) {
+  .custom-dashboard .content.dashboardInteraction .line-graph {
+    width: 70%; } }
+
+@media (min-width: 1441px) {
+  .custom-dashboard .content.dashboardInteraction .sectionContent1 {
+    flex-wrap: nowrap;
+    display: none; } }
+
+.custom-dashboard .content.dashboardInteraction .sectionContent2 {
+  display: none; }
+  @media (min-width: 1441px) {
+    .custom-dashboard .content.dashboardInteraction .sectionContent2 {
+      flex-wrap: nowrap;
+      display: flex; } }
 
 /* CodeMirror CSS */
 .CodeMirror {
@@ -9431,6 +9539,30 @@ h1, .h1 {
       display: block; }
     .multiselectDropdown .dropdown-content.dropdown-role {
       top: 32px; }
+
+.autosuggest-dropdown {
+  background: white;
+  width: 75%;
+  border-radius: 2px;
+  border: 1px solid #B8B0B0;
+  padding: 10px 18px;
+  position: absolute;
+  left: 46px;
+  display: none; }
+  .autosuggest-dropdown .option {
+    display: flex;
+    justify-content: space-between;
+    color: #57585E;
+    font-family: Courier;
+    font-size: 11px; }
+    .autosuggest-dropdown .option .value {
+      text-align: left; }
+    .autosuggest-dropdown .option .label {
+      text-align: right;
+      opacity: 0.54;
+      color: #57585E; }
+  .autosuggest-dropdown.show {
+    display: block; }
 
 .custom-control-label::before {
   background-color: #27283D;
@@ -10003,12 +10135,12 @@ button.btn-ouline-light-blue {
 .highcharts-map-series .highcharts-point {
   stroke: transparent !important; }
 
-#container .highcharts-color-0 {
+#container .highcharts-color-0, #container1 .highcharts-color-0 {
   fill: #25264B !important;
   stroke: transparent !important; }
-  #container .highcharts-color-0 .highcharts-point {
+  #container .highcharts-color-0 .highcharts-point, #container1 .highcharts-color-0 .highcharts-point {
     stroke-width: 0 !important; }
-    #container .highcharts-color-0 .highcharts-point-hover {
+    #container .highcharts-color-0 .highcharts-point-hover, #container1 .highcharts-color-0 .highcharts-point-hover {
       fill: #FF5700 !important; }
 
 .highcharts-point {
@@ -10017,21 +10149,21 @@ button.btn-ouline-light-blue {
 .highcharts-series-inactive, .highcharts-series-hover {
   opacity: 1 !important; }
 
-#container .highcharts-data-label text {
+#container .highcharts-data-label text, #container1 .highcharts-data-label text {
   color: #BAB9B9 !important;
   font-size: 10px !important;
   font-weight: bold !important;
   fill: #BAB9B9 !important; }
-  #container .highcharts-data-label text .highcharts-text-outline {
+  #container .highcharts-data-label text .highcharts-text-outline, #container1 .highcharts-data-label text .highcharts-text-outline {
     stroke-width: 0 !important; }
 
-#container .highcharts-markers.highcharts-series-2.highcharts-mappoint-series.highcharts-tracker:nth-child(3) .highcharts-point {
+#container .highcharts-markers.highcharts-series-2.highcharts-mappoint-series.highcharts-tracker:nth-child(3) .highcharts-point, #container1 .highcharts-markers.highcharts-series-2.highcharts-mappoint-series.highcharts-tracker:nth-child(3) .highcharts-point {
   stroke-width: 30px !important; }
 
-#container g.highcharts-series, #container .highcharts-point, #container .highcharts-markers, #container .highcharts-data-labels {
+#container g.highcharts-series, #container .highcharts-point, #container .highcharts-markers, #container .highcharts-data-labels, #container1 g.highcharts-series, #container1 .highcharts-point, #container1 .highcharts-markers, #container1 .highcharts-data-labels {
   opacity: 1; }
 
-#container .highcharts-figure, #container .highcharts-data-table table {
+#container .highcharts-figure, #container .highcharts-data-table table, #container1 .highcharts-figure, #container1 .highcharts-data-table table {
   max-width: 100%;
   margin: 1em auto; }
 
@@ -10063,56 +10195,60 @@ button.btn-ouline-light-blue {
     stroke-width: 0.5;
     opacity: 0.5; }
 
-#bars {
+#bars, #bars1 {
   height: 350px;
   max-width: 400px; }
-  #bars .highcharts-data-table table {
+  #bars .highcharts-data-table table, #bars1 .highcharts-data-table table {
     border-collapse: collapse;
     border: 1px solid #EBEBEB;
     margin: 10px auto;
     text-align: center;
     width: 100%; }
-  #bars .highcharts-data-table caption {
+  #bars .highcharts-data-table caption, #bars1 .highcharts-data-table caption {
     padding: 1em 0;
     font-size: 1.2em;
     color: #555; }
-  #bars .highcharts-data-table th {
+  #bars .highcharts-data-table th, #bars1 .highcharts-data-table th {
     font-weight: 600;
     padding: 0.5em; }
-  #bars .highcharts-data-table td, #bars .highcharts-data-table th, #bars .highcharts-data-table caption {
+  #bars .highcharts-data-table td, #bars .highcharts-data-table th, #bars .highcharts-data-table caption, #bars1 .highcharts-data-table td, #bars1 .highcharts-data-table th, #bars1 .highcharts-data-table caption {
     padding: 0.5em; }
-  #bars .highcharts-point {
+  #bars .highcharts-point, #bars1 .highcharts-point {
     stroke-width: 0 !important;
     width: 15px; }
-  #bars .highcharts-grid-line {
+  #bars .highcharts-grid-line, #bars1 .highcharts-grid-line {
     stroke: #5D5E72 !important;
     opacity: 0.5; }
-  #bars .highcharts-axis-line {
+  #bars .highcharts-axis-line, #bars1 .highcharts-axis-line {
     stroke: #0a0c1b !important; }
   @media (max-width: 1199px) {
-    #bars {
+    #bars, #bars1 {
       max-width: 100%; } }
 
-#radial-progress-bar {
+#radial-progress-bar, #radial-progress-bar1 {
   max-width: 300px; }
-  #radial-progress-bar .highcharts-data-label text {
+  #radial-progress-bar .highcharts-data-label text, #radial-progress-bar1 .highcharts-data-label text {
     color: #BFBFBF !important;
     font-size: 11px !important;
     font-weight: 300 !important;
     fill: #BFBFBF !important; }
-    #radial-progress-bar .highcharts-data-label text .highcharts-text-outline {
+    #radial-progress-bar .highcharts-data-label text .highcharts-text-outline, #radial-progress-bar1 .highcharts-data-label text .highcharts-text-outline {
       stroke-width: 0 !important; }
-  #radial-progress-bar .highcharts-plot-band, #radial-progress-bar .highcharts-pane {
+  #radial-progress-bar .highcharts-plot-band, #radial-progress-bar .highcharts-pane, #radial-progress-bar1 .highcharts-plot-band, #radial-progress-bar1 .highcharts-pane {
     fill: #ffffff !important; }
-  #radial-progress-bar .highcharts-axis-title {
+  #radial-progress-bar .highcharts-axis-title, #radial-progress-bar1 .highcharts-axis-title {
     fill: #FFFFFF !important;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 0;
     line-height: 20px; }
   @media (max-width: 1199px) {
-    #radial-progress-bar {
+    #radial-progress-bar, #radial-progress-bar1 {
       margin: auto; } }
+
+#line-graph .highcharts-grid-line {
+  stroke: #5D5E72 !important;
+  opacity: 0.5; }
 
 hr {
   border-top: 2px solid #34364A; }

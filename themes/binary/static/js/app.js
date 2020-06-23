@@ -50,6 +50,9 @@ $(document).ready(function(){
           $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
         }
     });
+    $('.CodeMirror').click(function () {
+        $(".autosuggest-dropdown").toggleClass('show');
+    });
 
     $('.front-slider').slick({
         slidesToScroll: 1,
