@@ -9563,6 +9563,11 @@ h1, .h1 {
       color: #57585E; }
   .autosuggest-dropdown.show {
     display: block; }
+    @media (max-width: 767px) {
+      .autosuggest-dropdown.show {
+        width: 91%;
+        margin: auto;
+        position: initial; } }
 
 .custom-control-label::before {
   background-color: #27283D;
