@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.9c72523006751c6e28ddc49da69af6e4beb1246222c5a6a75c6d9cbfff500af6.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.7e18757037751d55dd600d9ddb5f386205bc71b7b32f2c6da7b76f3f4fd19f3c.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -57,6 +57,20 @@
                 <textarea id="query-field" name="query-field" rows="3" cols="50" class="query-field scroll-bar">
 FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && filesize > 100 && extension MATCHES('.pdf','.ppt') BUCKET-ONeventtime SORT-ON eventtime DESC TRANSFORM-TO LINECHART
                 </textarea>
+                <div class="autosuggest-dropdown">
+                    <div class="option">
+                        <span class="value">Find Count<strong>(employeeid)*</strong></span>
+                        <span class="label">Matching Search</span>
+                    </div>
+                    <div class="option">
+                        <span class="value">Find Count<strong>(employeeid)*</strong> <span style="color:#F7594B;">OR</span> FIND COUNT<strong>(employeeid=909)</strong></span>
+                        <span class="label">Matching Search</span>
+                    </div>
+                    <div class="option">
+                        <span class="value">Find Count<strong> 670</strong></span>
+                        <span class="label">Matching Search</span>
+                    </div>
+                </div>
                 <button class="btn btn-lg btn-primary btn-ouline-light-blue mt-2">Generate Widget</button>
             </div>
         </div>
@@ -69,7 +83,6 @@ FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && 
 <script src="../../plugins/addon/hint/show-hint.js"></script>
 <script src="../../plugins/addon/hint/sql-hint.js"></script>
 <link rel="stylesheet" type="text/css" href="../../plugins/addon/hint/show-hint.css">
-
 <script type="text/javascript">
     document.body.classList.add("blue_bg");
     var editableCodeMirror = CodeMirror.fromTextArea(document.getElementById('query-field'), {
