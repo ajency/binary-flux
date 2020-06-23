@@ -139,5 +139,10 @@
     }
     &.show{
         display: block;
+        @media (max-width: 767px){
+            width: 91%;
+            margin: auto;
+            position: initial;
+        }
     }
 }
