@@ -8778,7 +8778,17 @@ body {
     width: 100%; } }
 
 .custom-dashboard .sidebar {
-  background-color: #191a35; }
+  background-color: #191a35;
+  width: 200px;
+  z-index: 9; }
+
+@media (max-width: 767px) {
+  .custom-dashboard .icons {
+    display: none !important; } }
+
+@media (min-width: 768px) {
+  .custom-dashboard .content {
+    padding-left: 200px; } }
 
 .custom-dashboard .content .title {
   font-size: 26px;
@@ -9203,11 +9213,13 @@ body {
       opacity: 0.46;
       background-color: #0D0F21;
       position: absolute;
-      top: 60px;
-      width: 80%;
+      top: 72px;
+      left: 0;
+      right: 0;
+      width: 100%;
       max-width: 100%;
       height: 100%;
-      z-index: 9; }
+      z-index: 3; }
   .custom-dashboard .content.dashboardInteraction .details {
     position: relative; }
     .custom-dashboard .content.dashboardInteraction .details .contextual-options {
@@ -9218,7 +9230,7 @@ body {
       display: none;
       position: absolute;
       left: 190px;
-      z-index: 99;
+      z-index: 9999;
       padding: 5px 0 10px; }
       .custom-dashboard .content.dashboardInteraction .details .contextual-options .select {
         box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3);
@@ -9403,14 +9415,20 @@ body {
     .custom-dashboard .content.dashboardInteraction .sectionContent1 {
       flex-wrap: nowrap;
       display: none; } }
-  @media (max-width: 1440px) {
-    .custom-dashboard .content.dashboardInteraction .sectionContent2 .bar-content {
-      display: none; } }
+  .custom-dashboard .content.dashboardInteraction .sectionContent2 .line-graph {
+    max-width: 70%; }
+    @media (max-width: 1440px) {
+      .custom-dashboard .content.dashboardInteraction .sectionContent2 .line-graph {
+        max-width: 100%; } }
+  .custom-dashboard .content.dashboardInteraction .sectionContent2 .bar-content {
+    max-width: 30%; }
+    @media (max-width: 1440px) {
+      .custom-dashboard .content.dashboardInteraction .sectionContent2 .bar-content {
+        display: none; } }
   @media (min-width: 1441px) {
     .custom-dashboard .content.dashboardInteraction .sectionContent2 {
       flex-wrap: nowrap;
-      display: flex;
-      max-width: 95%; } }
+      display: flex; } }
 
 /* CodeMirror CSS */
 .CodeMirror {
@@ -10412,9 +10430,11 @@ button.btn-ouline-light-blue {
     #radial-progress-bar, #radial-progress-bar1 {
       margin: auto; } }
 
-#line-graph .highcharts-grid-line {
-  stroke: #5D5E72 !important;
-  opacity: 0.5; }
+#line-graph {
+  width: 100%; }
+  #line-graph .highcharts-grid-line {
+    stroke: #5D5E72 !important;
+    opacity: 0.5; }
 
 hr {
   border-top: 2px solid #34364A; }

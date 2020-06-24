@@ -36,7 +36,7 @@
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-two">Data Access</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-three">Human Resources</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-four">Human Capital</div>
-                <div class="d-flex align-items-center justify-content-between menu-item menu-item-five">Watext-greyste Management</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-five">Waste Management</div>
                 <hr class="seperator">
                 <div class="sidear-block text-center">
                     <img src="{{"images/blocks.svg" | relURL }}" alt="custom-dashboard" class="blocks">
@@ -209,7 +209,7 @@
                 </div>
             </div>
             <div class="mt-5 sectionContent sectionContent2 row m-0 pl-md-4 pl-2">
-                <div class="line-graph">
+                <div class="line-graph col-12 column-div ">
                     <div class="lineGraphValue d-flex justify-content-between">
                         <div>
                             <p class="text-white font-weight-bold">Day to Day Case Trend</p>
@@ -223,7 +223,7 @@
                         <div id="line-graph"></div>
                     </figure>
                 </div>
-                <div class="bar-content col-xl-4 col-12 column-div">
+                <div class="bar-content  col-12 column-div">
                     <div class="mapValue d-flex justify-content-between">
                         <div>
                             <p class="text-white font-weight-bold">Earning</p>
@@ -632,65 +632,6 @@ Highcharts.mapChart('container', {
         enabled: false
     }
 });
-Highcharts.chart('line-graph', {
-    title: {
-        text: ''
-    },
-
-    xAxis: {
-        categories: [27, 28, 1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 11, 12, 13, 14, 15, 16, 17 , 18, 19, 20],
-        gridLinesDistance: 20
-    },
-
-    yAxis: {
-        min: 0,
-        gridLineColor: '#197F07',
-        title: {
-            text: ''
-        },
-        tickPositions: [0, 100, 200, 300, 400, 500],
-    },
-
-    tooltip: {
-        enabled: false
-    },
-
-    credits: {
-        enabled: false
-    },
-
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle'
-    },
-
-    plotOptions: {
-        series: {
-            label: {
-                connectorAllowed: false
-            },
-            marker: {
-                states: {
-                    hover: {
-                        enabled: false
-                    }
-                }
-            }
-        }
-    },
-
-
-    series: [{
-        color:"#DE7251",
-        marker:{radius:5,symbol:'circle'},
-        data: [104, 100, 220, 320, 210, 300, 160, 400, 340, 330, 330, 210, 280, 250, 160, 130, 220, 270, 300, 250, 210, 230]
-    }, {
-        color: "#9476FB",
-        marker:{radius:5,symbol:'circle'},
-        data: [50, 10, 30, 90, 60, 40, 310, 120, 200, 280, 200, 130, 90, 100, 70, 80, 50, 100, 140, 390, 130, 130 ]
-    }]
-});
 Highcharts.chart('bars1', {
     chart: {
         type: 'bar'
@@ -975,6 +916,58 @@ Highcharts.mapChart('container1', {
     credits: {
         enabled: false
     }
+});
+Highcharts.chart('line-graph', {
+    title: {
+        text: ''
+    },
+
+    xAxis: {
+        categories: [27, 28, 1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 11, 12, 13, 14, 15, 16, 17 , 18, 19, 20],
+        gridLinesDistance: 20
+    },
+
+    yAxis: {
+        min: 0,
+        gridLineColor: '#197F07',
+        title: {
+            text: ''
+        },
+        tickPositions: [0, 100, 200, 300, 400, 500],
+    },
+
+    tooltip: {
+        enabled: false
+    },
+
+    credits: {
+        enabled: false
+    },
+
+   
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            marker: {
+                states: {
+                    hover: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+    series: [{
+        color:"#DE7251",
+        marker:{radius:5,symbol:'circle'},
+        data: [104, 100, 220, 320, 210, 300, 160, 400, 340, 330, 330, 210, 280, 250, 160, 130, 220, 270, 300, 250, 210, 230]
+    }, {
+        color: "#9476FB",
+        marker:{radius:5,symbol:'circle'},
+        data: [50, 10, 30, 90, 60, 40, 310, 120, 200, 280, 200, 130, 90, 100, 70, 80, 50, 100, 140, 390, 130, 130 ]
+    }]
 });
 </script>
 
