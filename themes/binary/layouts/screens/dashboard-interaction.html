@@ -36,7 +36,7 @@
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-two">Data Access</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-three">Human Resources</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-four">Human Capital</div>
-                <div class="d-flex align-items-center justify-content-between menu-item menu-item-five">Watext-greyste Management</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-five">Waste Management</div>
                 <hr class="seperator">
                 <div class="sidear-block text-center">
                     <img src="{{"images/blocks.svg" | relURL }}" alt="custom-dashboard" class="blocks">
@@ -46,10 +46,55 @@
             </div>
         </div>
         <div class="content dashboardInteraction">
+            <div class="overlay"></div>
             <div class="headerContent pb-0 pt-4">
                 <div class="add-widget">
                     <div class="details">
                         <h6 class="text-white">Emergency Dept. Stats<img src="/binary-flux/images/ic_chevron_left.svg" width="10" height="10" alt="dropdown" class="dropdown-arrow ml-1"></h6>
+                        <div class="contextual-options">
+                            <div class="select">
+                                <span><img src="{{"images/ic_chevron_left.svg" | relURL }}" width="9" height="12" alt="arrow-down" class="arrow">Assign Color</span>
+                                <span class="color"></span>
+                            </div>
+                            <div class="color-pallet">
+                                <div class="box box1"></div>
+                                <div class="box box2"></div>
+                                <div class="box box3"></div>
+                                <div class="box box4"></div>
+                                <div class="box box5"></div>
+                                <div class="box box6"></div>
+                                <div class="box box7"></div>
+                                <div class="box box8"></div>
+                                <div class="box box9"></div>
+                                <div class="box box10"></div>
+                                <div class="box box11"></div>
+                                <div class="box box12"></div>
+                                <div class="box box13"></div>
+                                <div class="box box14"></div>
+                                <div class="box box15"></div>
+                                <div class="box box16"></div>
+                                <div class="box box17"></div>
+                                <div class="box box18"></div>
+                            </div>
+                            <div class="select">
+                                <span><i class="icon-edit"></i>Edit Title & Description</span>
+                            </div>
+                            <div class="select">
+                                <span><img src="{{"images/duplicate.svg" | relURL }}" width="20" height="20" alt="duplicate" class="duplicate">Duplicate</span>
+                            </div>
+                            <div class="select">
+                                <span><img src="{{"images/ic_link.svg" | relURL }}" width="18" height="8" alt="link" class="link">Copy Link</span>
+                            </div>
+                            <div class="select">
+                                <span><img src="{{"images/ic_save.svg" | relURL }}" width="11" height="13" alt="save" class="save">Save</span>
+                            </div>
+                            <div class="select">
+                                <span><img src="{{"images/ic_export.svg" | relURL }}" width="15" height="16" alt="export" class="export">Export</span>
+                            </div>
+                            <div class="select">
+                                <span><img src="{{"images/ic_import.svg" | relURL }}" width="15" height="16" alt="import" class="import">Import</span>
+                            </div>
+                        </div>
                         <p class="subText text-white--5">Insider threat is a malicious threat to an organization that comes from people within the organization, such as employees.</p>
                     </div>
                     <div>
@@ -59,12 +104,13 @@
             </div>
             <div class="subContent d-flex justify-content-between align-items-center">
                 <div class="mt-1 mb-1">                
-                    <p class="text-left pl-2 mb-0 text-white--5"> Created by: <span class="text-darkblue">Ed Smith</span> | 3 July 2020 </p>
+                    <p class="text-left pl-2 mb-0 text-white--5"> Created by: <span class="text-darkblue font-weight-bold">Ed Smith</span> | 3 July 2020 </p>
                 </div>
-                <div class="d-flex justify-content-evenly align-items-center">
-                    <div class="px-1  d-flex"><img src="/binary-flux/images/ic_toggle.svg" alt="toggle" class="mr-1" />Auto Refresh</div>
-                    <div class="px-1 d-flex"><img src="/binary-flux/images/icon_refresh.svg" alt="Refresh" class="mr-1"/>Last updated : 2 mins ago</div>
-                    <div class="px-1 text-darkblue  d-flex"><img src="/binary-flux/images/ic_calendar.svg" alt="calendar" class="mr-1"/>Last 1 month</div>
+                <div class="d-flex justify-content-evenly align-items-center data">
+                    <div class="px-1  d-flex"><label class="switch top-7"><input type="checkbox" name="toggle" id="toggle"> <span class="slider round"></span></label>Auto Refresh</div>
+                    <div class="px-1 refresh"><img src="/binary-flux/images/icon_refresh.svg" alt="Refresh" class="mr-1"/>Last updated : 2 mins ago</div>
+                    <div class="px-1 updated">Updated : 2 mins ago</div>
+                    <div class="px-1 text-darkblue font-weight-bold d-flex"><img src="/binary-flux/images/ic_calendar.svg" alt="calendar" class="mr-1"/>Last 1 month</div>
                 </div>
             </div>
             <div class="pl-3 pr-2">
@@ -163,7 +209,7 @@
                 </div>
             </div>
             <div class="mt-5 sectionContent sectionContent2 row m-0 pl-md-4 pl-2">
-                <div class="line-graph">
+                <div class="line-graph col-12 column-div ">
                     <div class="lineGraphValue d-flex justify-content-between">
                         <div>
                             <p class="text-white font-weight-bold">Day to Day Case Trend</p>
@@ -177,7 +223,7 @@
                         <div id="line-graph"></div>
                     </figure>
                 </div>
-                <div class="bar-content col-xl-4 col-12 column-div">
+                <div class="bar-content  col-12 column-div">
                     <div class="mapValue d-flex justify-content-between">
                         <div>
                             <p class="text-white font-weight-bold">Earning</p>
@@ -586,79 +632,6 @@ Highcharts.mapChart('container', {
         enabled: false
     }
 });
-Highcharts.chart('line-graph', {
-    title: {
-        text: ''
-    },
-
-    xAxis: {
-        categories: [27, 28, 1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 11, 12, 13, 14, 15, 16, 17 , 18, 19, 20],
-        gridLinesDistance: 20
-    },
-
-    yAxis: {
-        min: 0,
-        gridLineColor: '#197F07',
-        title: {
-            text: ''
-        },
-        tickPositions: [0, 100, 200, 300, 400, 500],
-    },
-
-    tooltip: {
-        enabled: false
-    },
-
-    credits: {
-        enabled: false
-    },
-
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'middle'
-    },
-
-    plotOptions: {
-        series: {
-            label: {
-                connectorAllowed: false
-            },
-            marker: {
-                states: {
-                    hover: {
-                        enabled: false
-                    }
-                }
-            }
-        }
-    },
-
-    series: [{
-        color:"#DE7251",
-        marker:{radius:5,symbol:'circle'},
-        data: [104, 100, 220, 320, 210, 300, 160, 400, 340, 330, 330, 210, 280, 250, 160, 130, 220, 270, 300, 250, 210, 230]
-    }, {
-        color: "#9476FB",
-        marker:{radius:5,symbol:'circle'},
-        data: [50, 10, 30, 90, 60, 40, 310, 120, 200, 280, 200, 130, 90, 100, 70, 80, 50, 100, 140, 390, 130, 130 ]
-    }],
-
-    responsive: {
-        rules: [{
-            condition: {
-                maxWidth: 1000
-            },
-            chartOptions: {
-                legend: {
-                    layout: 'horizontal',
-                    align: 'center',
-                    verticalAlign: 'bottom'
-                }
-            }
-        }]
-    }
-});
 Highcharts.chart('bars1', {
     chart: {
         type: 'bar'
@@ -943,6 +916,58 @@ Highcharts.mapChart('container1', {
     credits: {
         enabled: false
     }
+});
+Highcharts.chart('line-graph', {
+    title: {
+        text: ''
+    },
+
+    xAxis: {
+        categories: [27, 28, 1, 2, 3, 4, 5, 6, 7, 8 , 9, 10, 11, 12, 13, 14, 15, 16, 17 , 18, 19, 20],
+        gridLinesDistance: 20
+    },
+
+    yAxis: {
+        min: 0,
+        gridLineColor: '#197F07',
+        title: {
+            text: ''
+        },
+        tickPositions: [0, 100, 200, 300, 400, 500],
+    },
+
+    tooltip: {
+        enabled: false
+    },
+
+    credits: {
+        enabled: false
+    },
+
+   
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            marker: {
+                states: {
+                    hover: {
+                        enabled: false
+                    }
+                }
+            }
+        }
+    },
+    series: [{
+        color:"#DE7251",
+        marker:{radius:5,symbol:'circle'},
+        data: [104, 100, 220, 320, 210, 300, 160, 400, 340, 330, 330, 210, 280, 250, 160, 130, 220, 270, 300, 250, 210, 230]
+    }, {
+        color: "#9476FB",
+        marker:{radius:5,symbol:'circle'},
+        data: [50, 10, 30, 90, 60, 40, 310, 120, 200, 280, 200, 130, 90, 100, 70, 80, 50, 100, 140, 390, 130, 130 ]
+    }]
 });
 </script>
 
