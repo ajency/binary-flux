@@ -54,6 +54,20 @@ $(document).ready(function(){
         $(".autosuggest-dropdown").toggleClass('show');
     });
 
+    $('.dropdown-arrow').click(function () {
+        $(".contextual-options").toggleClass('show');
+        $(".overlay").toggleClass('show');
+    });
+
+    $('.arrow').click(function () {
+        $(this).toggleClass("rotate");
+        $(".color-pallet").toggleClass('show-pallet');
+    });
+    $('input[name="toggle"]').on('change',function(){
+        $(".refresh").toggleClass('show-refresh');
+         $(".updated").toggleClass('show-updated');
+    });
+
     $('.front-slider').slick({
         slidesToScroll: 1,
         arrows: true,
