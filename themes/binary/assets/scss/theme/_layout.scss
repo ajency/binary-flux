@@ -1118,11 +1118,51 @@ body{
 		}
 	}
 }
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 .custom-dashboard{
 	.sidebar{
 		background-color: #191a35;
 		width: 200px;
 	    z-index: 9;
+	    transition: all 0.2s ease;
+		.hide-sidebar{
+			display: block;
+		}
+		.small-sidebar{
+			display: none;
+		}
+    	
 	}
 	.icons {
 		@media (max-width: 767px){
@@ -1334,7 +1374,7 @@ body{
 			} 
 	    }
 	    .mapValue{
-	    	max-width: 420px;
+	    	max-width: 100%;
     	    padding: 0 20px;
     	    .low{
     	    	position: relative;
@@ -1867,6 +1907,7 @@ body{
 	    		}
 	    	}
 	    	.radial{
+	    		margin: auto;
 	    		@media (min-width: 1441px){
 	    			width: 20%;
     			}
@@ -1906,6 +1947,7 @@ body{
 	    	    }
 	    	}
 	    	.sectionContent1{
+	    		margin-top: 100px !important;
 	    		@media (min-width: 1441px){
 	    			flex-wrap: nowrap;
 		    		display: none;
@@ -1930,7 +1972,232 @@ body{
     			}
 	    	}
 	    }
+	    &.reisze-widget{
+	    	.sectionContent{
+	    		margin-top: 100px !important;
+	    		.resize-mode{
+	    			border: 2px solid #1391FF;
+  					background-color: #191A35;
+  					box-shadow: 0 2px 25px 0 rgba(0,0,0,0.5);
+  					position: relative;
+					padding: 50px 0;
+				    margin-top: -50px;
+				    height: fit-content;
+  					.radial-calendar{
+					    position: absolute;
+					    right: 16px;
+					    top: 14px;
+  					}
+  					.square1{
+						height: 10.28px;
+						width: 10.43px;
+						background-color: #1391FF;
+						position: absolute;
+					    top: -6px;
+    					left: -5px;
+  					}
+  					.square2{
+						height: 10.28px;
+						width: 10.43px;
+						background-color: #1391FF;
+						position: absolute;
+					    top: -6px;
+					    left: 0;
+					    right: 0;
+					    margin: auto;
+  					}
+  					.square3{
+						height: 10.28px;
+						width: 10.43px;
+						background-color: #1391FF;
+						position: absolute;
+					    top: -6px;
+    					right: -6px;
+  					}
+  					.square4{
+						height: 10.28px;
+						width: 10.43px;
+						background-color: #1391FF;
+						position: absolute;
+					    top: 50%;
+    					left: -6px;
+  					}
+  					.square5{
+						height: 10.28px;
+						width: 10.43px;
+						background-color: #1391FF;
+						position: absolute;
+					    top: 50%;
+    					right: -6px;
+  					}
+  					.square6{
+						height: 10.28px;
+						width: 10.43px;
+						background-color: #1391FF;
+						position: absolute;
+					    top: 50%;
+    					right: -6px;
+  					}
+  					.square7{
+						height: 10.28px;
+						width: 10.43px;
+						background-color: #1391FF;
+						position: absolute;
+					    bottom: -6px;
+    					left: -6px;
+  					}
+  					.square8{
+						height: 10.28px;
+						width: 10.43px;
+						background-color: #1391FF;
+						position: absolute;
+					    bottom: 0;
+    					left: 0;
+    					right: 0;
+    					margin: auto;
+  					}
+  					.square9{
+						height: 10.28px;
+						width: 10.43px;
+						background-color: #1391FF;
+						position: absolute;
+					    bottom: -6px;
+    					right: -6px;
+  					}
+  					@media (max-width: 1199px){
+  						margin-top: 0;
+					    margin-bottom: 40px;
+  					}
+	    		}
+	    		.radial{
+	    			@media (min-width: 425px) and (max-width: 1199px){
+			   	 		max-width: 75%;
+    					margin: auto;
+					}
+    				@media (max-width: 424px){
+				    	max-width: 90%;
+				    	margin: auto;
+					}
+	    		}
+	    		.line-graph{
+	    			max-width: 100%;
+	    		}
+	    		.create-widget{
+	    			&-outline{
+						height: 320px;
+						width: 100%;
+						border: 2px dashed #1391FF;
+						box-shadow: 0 2px 25px 0 rgba(0,0,0,0.5);
+						position: relative;
+  						.square1{
+							height: 10.28px;
+							width: 10.43px;
+							background-color: #1391FF;
+							position: absolute;
+						    top: -6px;
+	    					left: -5px;
+	  					}
+	  					.square2{
+							height: 10.28px;
+							width: 10.43px;
+							background-color: #1391FF;
+							position: absolute;
+						    top: -6px;
+						    left: 0;
+						    right: 0;
+						    margin: auto;
+	  					}
+	  					.square3{
+							height: 10.28px;
+							width: 10.43px;
+							background-color: #1391FF;
+							position: absolute;
+						    top: -6px;
+	    					right: -6px;
+	  					}
+	  					.square4{
+							height: 10.28px;
+							width: 10.43px;
+							background-color: #1391FF;
+							position: absolute;
+						    top: 50%;
+	    					left: -6px;
+	  					}
+	  					.square5{
+							height: 10.28px;
+							width: 10.43px;
+							background-color: #1391FF;
+							position: absolute;
+						    top: 50%;
+	    					right: -6px;
+	  					}
+	  					.square6{
+							height: 10.28px;
+							width: 10.43px;
+							background-color: #1391FF;
+							position: absolute;
+						    top: 50%;
+	    					right: -6px;
+	  					}
+	  					.square7{
+							height: 10.28px;
+							width: 10.43px;
+							background-color: #1391FF;
+							position: absolute;
+						    bottom: -6px;
+	    					left: -6px;
+	  					}
+	  					.square8{
+							height: 10.28px;
+							width: 10.43px;
+							background-color: #1391FF;
+							position: absolute;
+						    bottom: -6px;
+	    					left: 0;
+	    					right: 0;
+	    					margin: auto;
+	  					}
+	  					.square9{
+							height: 10.28px;
+							width: 10.43px;
+							background-color: #1391FF;
+							position: absolute;
+						    bottom: -6px;
+	    					right: -6px;
+	  					}
+	  					.add-widget{
+  						  	color: #1391FF;
+							font-size: 12px;
+							font-weight: bold;
+							letter-spacing: 0;
+							line-height: 16px;
+							position: absolute;
+						    top: 50%;
+						    right: 50%;
+						    transform: translate(50%,-50%);
+	  					}
+	    			}
+	    			@media (max-width: 1199px){
+    				    margin-top: 50px;
+	    			}
+	    		}
+	    	}
+	    }
 	}
+}
+
+
+.collapse-sidebar {
+	position: absolute;
+	border: none;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	box-shadow: 0px 1px 4px 1px rgba(0 ,0, 0, .3);
+	left: 100%;
+	top: 2rem;
+	transform: translateX(-50%);
+	cursor: pointer;
 }
 
 /* CodeMirror CSS */
