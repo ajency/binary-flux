@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
 
-	<title>Dashboard Interaction - Binary Flux</title>
+	<title>Create Widget - Binary Flux</title>
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
 	<link type="image/x-icon" href="/binary-flux/images/favicon.ico" rel="shortcut icon">
@@ -45,10 +45,11 @@
     <div class="custom-dashboard position-relative">
         <div class="sidebar p-0">
             <div class="icons d-flex justify-content-between">
-                <img src="/binary-flux/images/ic_search.svg" alt="search" class="search my-2 mx-3">
-                <img src="/binary-flux/images/ic_filter_list.svg" alt="filter" class="filter mr-3">
+                <img src="/binary-flux/images/ic_search.svg" alt="search" class="search my-2">
+                <img src="/binary-flux/images/ic_filter_list.svg" alt="filter" class="filter mr-2">
             </div>
-            <div class="sidear-container mobile-slide-in px-2 py-2">
+            <button class="collapse-sidebar"><img src="/binary-flux/images/ic_chevron_left_bg.svg" alt="binary flux" class="binary flux"></button>
+            <div class="sidear-container mobile-slide-in hide-sidebar px-2 py-2">
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-one text-white">Emergency Dept. Stats</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-two">Data Access</div>
                 <div class="d-flex align-items-center justify-content-between menu-item menu-item-three">Human Resources</div>
@@ -61,58 +62,21 @@
                     <button class="button btn-ouline-light-blue text-nowrap f-12">Get Started</button>
                 </div>
             </div>
+            <div class="sidear-container mobile-slide-in small-sidebar px-2 py-2">
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-one text-white">ED</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-two">DA</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-three">HR</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-four">HC</div>
+                <div class="d-flex align-items-center justify-content-between menu-item menu-item-five">WM</div>
+            </div>
         </div>
-        <div class="content dashboardInteraction">
+        <div class="content reisze-widget">
             <div class="overlay"></div>
             <div class="headerContent pb-0 pt-4">
                 <div class="add-widget">
                     <div class="details">
                         <h6 class="text-white">Emergency Dept. Stats<img src="/binary-flux/images/ic_chevron_left.svg" width="10" height="10" alt="dropdown" class="dropdown-arrow ml-1"></h6>
-                        <div class="contextual-options">
-                            <div class="select">
-                                <span><img src="/binary-flux/images/ic_chevron_left.svg" width="9" height="12" alt="arrow-down" class="arrow">Assign Color</span>
-                                <span class="color"></span>
-                            </div>
-                            <div class="color-pallet">
-                                <div class="box box1"></div>
-                                <div class="box box2"></div>
-                                <div class="box box3"></div>
-                                <div class="box box4"></div>
-                                <div class="box box5"></div>
-                                <div class="box box6"></div>
-                                <div class="box box7"></div>
-                                <div class="box box8"></div>
-                                <div class="box box9"></div>
-                                <div class="box box10"></div>
-                                <div class="box box11"></div>
-                                <div class="box box12"></div>
-                                <div class="box box13"></div>
-                                <div class="box box14"></div>
-                                <div class="box box15"></div>
-                                <div class="box box16"></div>
-                                <div class="box box17"></div>
-                                <div class="box box18"></div>
-                            </div>
-                            <div class="select">
-                                <span><i class="icon-edit"></i>Edit Title & Description</span>
-                            </div>
-                            <div class="select">
-                                <span><img src="/binary-flux/images/duplicate.svg" width="20" height="20" alt="duplicate" class="duplicate">Duplicate</span>
-                            </div>
-                            <div class="select">
-                                <span><img src="/binary-flux/images/ic_link.svg" width="18" height="8" alt="link" class="link">Copy Link</span>
-                            </div>
-                            <div class="select">
-                                <span><img src="/binary-flux/images/ic_save.svg" width="11" height="13" alt="save" class="save">Save</span>
-                            </div>
-                            <div class="select">
-                                <span><img src="/binary-flux/images/ic_export.svg" width="15" height="16" alt="export" class="export">Export</span>
-                            </div>
-                            <div class="select">
-                                <span><img src="/binary-flux/images/ic_import.svg" width="15" height="16" alt="import" class="import">Import</span>
-                            </div>
-                        </div>
-                        <p class="subText text-white--5 mt-1 mb-0">Insider threat is a malicious threat to an organization that comes from people within the organization, such as employees.</p>
+                        <p class="subText text-white--5">Insider threat is a malicious threat to an organization that comes from people within the organization, such as employees.</p>
                     </div>
                     <div>
                         <button class="button btn-ouline-light-blue btn-115 text-nowrap f-12">Add Widget</button>
@@ -133,40 +97,22 @@
             <div class="pl-3 pr-2">
                 <hr class="divider w-100">
             </div>
-            <div class="graphical-area  d-flex">
-                <div class="graphical-section">
-                    <div class="graph-figure">
-                        <div class="d-flex justify-content-between align-items-center pl-2 pr-4">
-                            <span class="text-white font-weight-bold">Walk in Volume</span>
-                            <span class="value">Walk-ins</span>
-                        </div>
-                        <figure class="highcharts-figure">
-                            <div id="graph"></div>
-                        </figure>
-                        <div class="d-flex pl-4">
-                            <span>Max Visitors <span class="highlight font-weight-bold pl-1">50k</span></span>
-                            <span class="pl-3">Time<span class="highlight pl-1">14:00 - 15:00</span></span>
-                        </div>
+            <div class="graphical-area d-flex">
+                <div class="graph-figure">
+                    <div class="d-flex justify-content-between align-items-center pl-2 pr-4">
+                        <span class="text-white font-weight-bold">Walk in Volume</span>
+                        <span class="value">Walk-ins</span>
                     </div>
-                    <div class="world-map column-div">
-                        <div class="mapValue d-flex justify-content-between">
-                            <div>
-                                <p class="text-white font-weight-bold">Admissions</p>
-                            </div>
-                            <div class="d-flex">
-                                <p class="px-1 low">Low</p>
-                                <p class="px-1 high">High</p>
-                            </div>
-                        </div>
-                        <div id="container"></div>
-                    </div>
-                    <div class="radial position-relative column-div">
-                        <div class="text-white font-weight-bold pl-3">Daily Task Management</div>
-                        <div id="radial-progress-bar"></div>
+                    <figure class="highcharts-figure">
+                        <div id="graph"></div>
+                    </figure>
+                    <div class="d-flex">
+                        <span>Max Visitors <span class="highlight font-weight-bold pl-1">50k</span></span>
+                        <span class="pl-3">Time<span class="highlight pl-1">14:00 - 15:00</span></span>
                     </div>
                 </div>
                 <div class="visitor-count">
-                    <div class="d-flex layer1">
+                    <div class="d-flex justify-content-around">
                         <div class="count count1">
                             <h5 class="heading">Total visitors today</h5>
                             <span class="number">53,122</span>
@@ -174,14 +120,14 @@
                         </div>
                         <div class="count count2">
                             <h5 class="heading">Users leaving emergency</h5>
-                            <span class="number">44,667</span>
+                            <span class="number">10,657</span>
                             <div class="percentage"><span class="caret-down"></span>30%</div>
                         </div>
                     </div>
-                    <div class="d-flex layer2">
+                    <div class="d-flex justify-content-around">
                         <div class="count count3">
                             <h5 class="heading">Quarantine patients</h5>
-                            <span class="number">10,657</span>
+                            <span class="number">44,667</span>
                             <div class="percentage"><span class="caret-down"></span>25%</div>
                         </div>
                         <div class="count count4">
@@ -192,7 +138,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-5 sectionContent sectionContent1  row m-0">
+            <div class="sectionContent  row m-0">
                 <div class="bar-content col-xl-4 col-12 column-div">
                     <div class="mapValue d-flex justify-content-between">
                         <div>
@@ -204,28 +150,29 @@
                         </div>
                     </div>
                     <figure class="highcharts-figure">
-                        <div id="bars1"></div>
+                        <div id="bars"></div>
                     </figure>
                 </div>
                 <div class="radial position-relative col-xl-4 col-12 column-div">
                     <div class="text-white font-weight-bold pl-3">Daily Task Management</div>
-                    <div id="radial-progress-bar1"></div>
-                    
+                    <div id="radial-progress-bar"></div>
                 </div>
-                <div class="world-map col-xl-4 col-12 column-div">
-                    <div class="mapValue d-flex justify-content-between">
-                        <div>
-                            <p class="text-white font-weight-bold">Admissions</p>
-                        </div>
-                        <div class="d-flex">
-                            <p class="px-1 low">Low</p>
-                            <p class="px-1 high">High</p>
-                        </div>
-                    </div>
-                    <div id="container1"></div>
+                <div class="create-widget col-xl-4 col-12 column-div px-3">
+                   <div class="create-widget-outline">
+                        <div class="square1"></div>
+                        <div class="square2"></div>
+                        <div class="square3"></div>
+                        <div class="square4"></div>
+                        <div class="square5"></div>
+                        <div class="square6"></div>
+                        <div class="square7"></div>
+                        <div class="square8"></div>
+                        <div class="square9"></div>
+                        <p class="add-widget">Add Widget</p>
+                   </div>
                 </div>
             </div>
-            <div class="mt-5 sectionContent sectionContent2 row m-0 pl-md-4 pl-2">
+            <div class="mt-5 sectionContent row m-0 pl-2">
                 <div class="line-graph col-12 column-div ">
                     <div class="lineGraphValue d-flex justify-content-between">
                         <div>
@@ -238,20 +185,6 @@
                     </div>
                     <figure class="highcharts-figure">
                         <div id="line-graph"></div>
-                    </figure>
-                </div>
-                <div class="bar-content  col-12 column-div">
-                    <div class="mapValue d-flex justify-content-between">
-                        <div>
-                            <p class="text-white font-weight-bold">Earning</p>
-                        </div>
-                        <div class="d-flex">
-                            <p class="px-1 week">This week</p>
-                            <p class="px-1 month">Previous Month</p>
-                        </div>
-                    </div>
-                    <figure class="highcharts-figure">
-                        <div id="bars"></div>
                     </figure>
                 </div>
             </div>
@@ -573,379 +506,6 @@ Highcharts.chart("radial-progress-bar", {
             }
         }
     }]
-    }],
-    credits: {
-        enabled: false
-    }
-});
-Highcharts.mapChart('container', {
-
-    chart: {
-        map: 'custom/world'
-    },
-
-    mapNavigation: {
-        enabled: true
-    },
-
-    tooltip: {
-        enabled: false
-    },
-    plotOptions: {
-        series: {
-            marker: {
-                states: {
-                    hover: {
-                        enabled: false
-                    }
-                }
-            }
-        }
-    },
-    series: [{
-        name: 'Basemap',
-        borderColor: '#FF5700',
-        nullColor: '#FF5700',
-        showInLegend: false
-    }, {
-        name: 'Separators',
-        type: 'mapline',
-        nullColor: '#FF5700',
-        showInLegend: false,
-        enableMouseTracking: false
-    }, {
-        
-        type: 'mappoint',
-        data: [{
-            colorIndex: 99,
-            color: '#FF5700',
-            marker:{radius:6,symbol:'circle'},
-            lat: 69.7069,
-            lon: -95.6043
-        }, {
-            name: '54,667',
-            lat: 62.7069,
-            lon: -49.6043,
-            colorIndex: 99,
-            color: '#FF5700',
-            marker:{radius:10,symbol:'circle'},
-            dataLabels: {
-                align: 'left',
-                x: -25,
-                y: 40,
-                verticalAlign: 'middle',
-                className: 'highlight'
-            }
-        }, {
-            colorIndex: 99,
-            color: '#FF5700',
-            marker:{radius:4,symbol:'circle'},
-            lat: 65.155,
-            lon: 220.4937,
-        },
-        {
-            colorIndex: 99,
-            color: '#2279FF',
-            marker:{radius:3,symbol:'circle'},
-            lat: 68.7069,
-            lon: -60.6043,
-        }],
-    }],
-    credits: {
-        enabled: false
-    }
-});
-Highcharts.chart('bars1', {
-    chart: {
-        type: 'bar'
-    },
-    xAxis: {
-        categories: ['W1', 'W2', 'W3', 'W4'],
-    },
-    yAxis: { 
-         title: {
-            text: ''
-        },
-        gridLineColor: '#197F07',
-        labels: {
-            formatter: function () {
-                return this.value / 200 + 'k';
-            }
-        }
-    },
-    tooltip: {
-        enabled: false
-    },
-    plotOptions: {
-        bar: {
-            dataLabels: {
-                enabled: false
-            }
-        },
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'top',
-        floating: true,
-        borderWidth: 1,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
-        shadow: true
-    },
-    credits: {
-        enabled: false
-    },
-    series: [{
-        data: [5436, 8436, 3800, 3800],
-        states: { hover: { enabled: false } }, 
-        color: {
-            linearGradient: {
-                x1: 0,
-                x2: 0,
-                y1: 0,
-                y2: 1
-            },
-            stops: [
-            [0, '#76DDFB'],
-            [1, '#53A8E2']
-        ]}
-    }, {
-        data: [3800, 6436, 5600, 5600],
-        states: { hover: { enabled: false } }, 
-        color: {
-            linearGradient: {
-                x1: 0,
-                x2: 0,
-                y1: 0,
-                y2: 1
-            },
-            stops: [
-            [0, '#00A8D9'],
-            [1, '#105482']
-        ]}
-    }]
-});
-Highcharts.chart("radial-progress-bar1", {
-    chart: {
-        type: 'solidgauge',
-        margin: [0,0,0,0],
-        spacingTop: 0,
-        spacingBottom: 0,
-        spacingLeft: 0,
-        spacingRight: 0,
-        height:'100%'
-    },
-    tooltip: {
-        enabled: false
-    },
-        legend: {
-        verticalAlign: 'top',
-        x: 0,
-        y: 300
-    },
-    pane: {
-        startAngle: 0,
-        endAngle: 270,
-        background: [{
-            outerRadius: '108%',
-            innerRadius: '100%',
-            borderWidth: 0,
-            shape: 'arc',
-        }, {
-            outerRadius: '58%',
-            innerRadius: '50%',
-            borderWidth: 0,
-            shape: 'arc',
-        }, {
-            outerRadius: '84%',
-            innerRadius: '76%',
-            borderWidth: 0,
-            shape: 'arc',
-        }]
-    },
-    yAxis: {
-        min: 0,
-        max: 100,
-        lineWidth: 0,
-        tickPositions: [],
-        title: {
-            text: '50%',
-            x: 0,
-            y: 60,
-        },
-    },
-    plotOptions: {
-        solidgauge: {
-          dataLabels: {
-            enabled: true,
-            verticalAlign: 'start'
-          },
-          linecap: 'round',
-          rounded: true
-        }
-    },
-
-    series: [{
-        data: [{
-        colorIndex: 99,
-        color: {
-            linearGradient: {
-                x1: 0,
-                x2: 0,
-                y1: 0,
-                y2: 1
-            },
-            stops: [
-            [0, '#A1FDA9'],
-            [1, '#279AD3']
-        ]},
-        radius: '108%',
-        innerRadius: '100%',
-        y: 78,
-        dataLabels: {
-            x: -80,
-            y: -140,
-            format: 'Medical Tasks {y}%',
-            borderWidth: 0,
-            style: {
-              fontSize: '15px'
-            }
-        }
-    }]
-    },
-    {
-    data: [{
-    colorIndex: 99,
-    color: {
-        linearGradient: {
-            x1: 0,
-            x2: 0,
-            y1: 0,
-            y2: 1
-        },
-        stops: [
-        [0, '#FAD961'],
-        [1, '#F76B1C']
-    ]},
-        radius: '84%',
-        innerRadius: '76%',
-        y: 70,
-        dataLabels: {
-            x: -80,
-            y: -112,
-            format: 'Administrative 55%',
-            borderWidth: 0,
-            style: {
-                fontSize: '15px'
-            }
-        }
-        }]
-    },
-    {
-    data: [{
-    colorIndex: 99,
-    color: {
-        linearGradient: {
-            x1: 0,
-            x2: 0,
-            y1: 0,
-            y2: 1
-        },
-        stops: [
-        [0, '#9E93FB'],
-        [1, '#4543DD']
-    ]},
-        radius: '58%',
-        innerRadius: '50%',
-        y: 50,
-        dataLabels: {
-            x: -80,
-            y: -80,
-            format: 'Housekeeping {y}%',
-            borderWidth: 0,
-            style: {
-                fontSize: '15px'
-            }
-        }
-    }]
-    }],
-    credits: {
-        enabled: false
-    }
-});
-Highcharts.mapChart('container1', {
-
-    chart: {
-        map: 'custom/world'
-    },
-
-    mapNavigation: {
-        enabled: true
-    },
-
-    tooltip: {
-        enabled: false
-    },
-    plotOptions: {
-        series: {
-            marker: {
-                states: {
-                    hover: {
-                        enabled: false
-                    }
-                }
-            }
-        }
-    },
-    series: [{
-        name: 'Basemap',
-        borderColor: '#FF5700',
-        nullColor: '#FF5700',
-        showInLegend: false
-    }, {
-        name: 'Separators',
-        type: 'mapline',
-        nullColor: '#FF5700',
-        showInLegend: false,
-        enableMouseTracking: false
-    }, {
-        
-        type: 'mappoint',
-        data: [{
-            colorIndex: 99,
-            color: '#FF5700',
-            marker:{radius:6,symbol:'circle'},
-            lat: 69.7069,
-            lon: -95.6043
-        }, {
-            name: '54,667',
-            lat: 62.7069,
-            lon: -49.6043,
-            colorIndex: 99,
-            color: '#FF5700',
-            marker:{radius:10,symbol:'circle'},
-            dataLabels: {
-                align: 'left',
-                x: -25,
-                y: 40,
-                verticalAlign: 'middle',
-                className: 'highlight'
-            }
-        }, {
-            colorIndex: 99,
-            color: '#FF5700',
-            marker:{radius:4,symbol:'circle'},
-            lat: 65.155,
-            lon: 220.4937,
-        },
-        {
-            colorIndex: 99,
-            color: '#2279FF',
-            marker:{radius:3,symbol:'circle'},
-            lat: 68.7069,
-            lon: -60.6043,
-        }],
     }],
     credits: {
         enabled: false

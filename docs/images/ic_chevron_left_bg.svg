@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>B61BB28B-C4DE-4D16-87AD-2956838485DB</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="20" height="20" rx="10"></rect>
+        <filter x="-65.0%" y="-55.0%" width="230.0%" height="230.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0392156863   0 0 0 0 0.0470588235   0 0 0 0 0.105882353  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="New-updated_-screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Custom-Dashboard---Side-Bar" transform="translate(-34.000000, -70.000000)">
+            <g id="side-bar_wide-range-button" transform="translate(0.000000, 40.000000)">
+                <g id="wide-range-button" transform="translate(50.000000, 48.000000) rotate(-90.000000) translate(-50.000000, -48.000000) translate(40.000000, 38.000000)">
+                    <g id="arrow">
+                        <g id="ic_chevron_left-copy" transform="translate(10.000000, 10.000000) scale(-1, 1) translate(-10.000000, -10.000000) ">
+                            <g id="Rectangle">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                <use fill="#1391FF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            </g>
+                            <polygon id="Icon" fill="#FFFFFF" transform="translate(10.000000, 10.800000) rotate(-90.000000) translate(-10.000000, -10.800000) " points="13 7.128 11.8582996 6 7 10.8 11.8582996 15.6 13 14.472 9.29149798 10.8"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
