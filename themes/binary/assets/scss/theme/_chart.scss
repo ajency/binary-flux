@@ -64,6 +64,8 @@
 }
 
 #container, #container1{
+    max-width: 100%;
+    margin: auto;
     .highcharts-data-label {
         text{
             color: #BAB9B9 !important;
@@ -128,7 +130,8 @@
 
 #bars, #bars1 {
     height: 350px;
-    max-width: 400px;
+    max-width: 100%;
+    margin: auto;
     .highcharts-data-table table {
         border-collapse: collapse;
         border: 1px solid #EBEBEB;
@@ -166,6 +169,7 @@
 
 #radial-progress-bar, #radial-progress-bar1{
     max-width: 300px;
+    margin: auto;
     .highcharts-data-label {
         text{
             color: #BFBFBF !important;
