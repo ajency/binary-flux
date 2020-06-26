@@ -73,15 +73,18 @@ $(document).ready(function(){
         if($(".hide-sidebar").is(':visible')){
             // collapsed
             $(".sidebar").css({width: '50px'});
+            $(".content").css({paddingLeft: '50px',  transition: '0.2s ease'});
             $(".hide-sidebar").hide();
             $(".small-sidebar").show();
+            $(".filter").hide();
         }
         else{
             // expanded
+            $(".content").css({paddingLeft: '200px', transition: '0.2s ease'});
             $(".sidebar").css({width: '200px'});
             $(".small-sidebar").hide();
             $(".hide-sidebar").fadeIn(1000);
-            
+            $(".filter").show();            
         }
         //sidebar.classList.toggle('sidebar_small');
 

@@ -1156,13 +1156,38 @@ body{
 		width: 200px;
 	    z-index: 9;
 	    transition: all 0.2s ease;
+	    .search{
+	    	margin: 0 15px;
+	    }
 		.hide-sidebar{
 			display: block;
 		}
+		.sidear-container{
+			margin-top: 5px;
+		}
 		.small-sidebar{
 			display: none;
+			.menu-item{
+		    	padding-left: 0px;
+		    	&:before{
+		    		content: '';
+    		    	left: -14px;
+		    	}
+		    	&:after{
+		    		content: '';
+		    		height: 16px;
+		    	}
+			}
 		}
-    	
+		.collapse-sidebar {
+			background: transparent;
+			border: 0;
+			position: absolute;
+			left: 100%;
+			top: 2rem;
+			transform: translateX(-50%);
+			cursor: pointer;
+		}
 	}
 	.icons {
 		@media (max-width: 767px){
@@ -2186,19 +2211,6 @@ body{
 	}
 }
 
-
-.collapse-sidebar {
-	position: absolute;
-	border: none;
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
-	box-shadow: 0px 1px 4px 1px rgba(0 ,0, 0, .3);
-	left: 100%;
-	top: 2rem;
-	transform: translateX(-50%);
-	cursor: pointer;
-}
 
 /* CodeMirror CSS */
 

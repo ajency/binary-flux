@@ -8809,10 +8809,30 @@ body {
   width: 200px;
   z-index: 9;
   transition: all 0.2s ease; }
+  .custom-dashboard .sidebar .search {
+    margin: 0 15px; }
   .custom-dashboard .sidebar .hide-sidebar {
     display: block; }
+  .custom-dashboard .sidebar .sidear-container {
+    margin-top: 5px; }
   .custom-dashboard .sidebar .small-sidebar {
     display: none; }
+    .custom-dashboard .sidebar .small-sidebar .menu-item {
+      padding-left: 0px; }
+      .custom-dashboard .sidebar .small-sidebar .menu-item:before {
+        content: '';
+        left: -14px; }
+      .custom-dashboard .sidebar .small-sidebar .menu-item:after {
+        content: '';
+        height: 16px; }
+  .custom-dashboard .sidebar .collapse-sidebar {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    left: 100%;
+    top: 2rem;
+    transform: translateX(-50%);
+    cursor: pointer; }
 
 @media (max-width: 767px) {
   .custom-dashboard .icons {
@@ -9647,18 +9667,6 @@ body {
   @media (max-width: 1199px) {
     .custom-dashboard .content.reisze-widget .sectionContent .create-widget {
       margin-top: 50px; } }
-
-.collapse-sidebar {
-  position: absolute;
-  border: none;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  box-shadow: 0px 1px 4px 1px rgba(0, 0, 0, 0.3);
-  left: 100%;
-  top: 2rem;
-  transform: translateX(-50%);
-  cursor: pointer; }
 
 /* CodeMirror CSS */
 .CodeMirror {
