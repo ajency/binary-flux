@@ -8833,6 +8833,9 @@ body {
     top: 2rem;
     transform: translateX(-50%);
     cursor: pointer; }
+    @media (max-width: 767px) {
+      .custom-dashboard .sidebar .collapse-sidebar {
+        display: none; } }
 
 @media (max-width: 767px) {
   .custom-dashboard .icons {
@@ -9076,6 +9079,9 @@ body {
       padding-left: 15px; }
       .custom-dashboard .content .headerContent .add-widget .details .subText {
         margin-bottom: 0.5rem; }
+        @media (max-width: 575px) {
+          .custom-dashboard .content .headerContent .add-widget .details .subText {
+            margin-bottom: 1rem !important; } }
     .custom-dashboard .content .headerContent .add-widget .btn-ouline-light-blue {
       padding: 0;
       height: 32px; }
@@ -9434,7 +9440,7 @@ body {
     stroke-width: 0.5;
     opacity: 0.5; }
   .custom-dashboard .content.dashboardInteraction .radial {
-    margin: auto; }
+    margin: 0 auto; }
     @media (min-width: 1441px) {
       .custom-dashboard .content.dashboardInteraction .radial {
         width: 20%; } }
@@ -9471,6 +9477,9 @@ body {
       .custom-dashboard .content.dashboardInteraction .sectionContent1 {
         flex-wrap: nowrap;
         display: none; } }
+    @media (max-width: 1199px) {
+      .custom-dashboard .content.dashboardInteraction .sectionContent1 {
+        margin-top: 40px !important; } }
   .custom-dashboard .content.dashboardInteraction .sectionContent2 .line-graph {
     max-width: 70%; }
     @media (max-width: 1440px) {
@@ -9485,6 +9494,10 @@ body {
     .custom-dashboard .content.dashboardInteraction .sectionContent2 {
       flex-wrap: nowrap;
       display: flex; } }
+
+@media (max-width: 525px) {
+  .custom-dashboard .content.reisze-widget .visitor-count {
+    padding-left: 20px; } }
 
 .custom-dashboard .content.reisze-widget .sectionContent {
   margin-top: 100px !important; }
@@ -9667,6 +9680,9 @@ body {
   @media (max-width: 1199px) {
     .custom-dashboard .content.reisze-widget .sectionContent .create-widget {
       margin-top: 50px; } }
+  @media (max-width: 1199px) {
+    .custom-dashboard .content.reisze-widget .sectionContent {
+      margin-top: 40px !important; } }
 
 /* CodeMirror CSS */
 .CodeMirror {
