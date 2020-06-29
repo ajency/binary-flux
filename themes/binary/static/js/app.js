@@ -54,13 +54,13 @@ $(document).ready(function(){
         $(".autosuggest-dropdown").toggleClass('show');
     });
 
-    $('.dropdown-arrow').click(function () {
+    $('.options-popup').click(function () {
         $(".contextual-options").toggleClass('show');
         $(".overlay").toggleClass('show');
     });
 
-    $('.arrow').click(function () {
-        $(this).toggleClass("rotate");
+    $('.assign-color').click(function () {
+        $('.arrow').toggleClass("rotate");
         $(".color-pallet").toggleClass('show-pallet');
     });
     $('input[name="toggle"]').on('change',function(){
@@ -87,7 +87,6 @@ $(document).ready(function(){
             $(".filter").show();            
         }
         //sidebar.classList.toggle('sidebar_small');
-
     }
 
     $('.front-slider').slick({

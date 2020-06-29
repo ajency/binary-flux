@@ -1724,6 +1724,10 @@ body{
 	    	}
 	    	.details{
 	    		position: relative;
+				.options-popup{
+					width: fit-content;
+					cursor: pointer;
+				}
 	    		.contextual-options{
 					border-radius: 4px;
 					background-color: #20284C;
@@ -1763,6 +1767,9 @@ body{
 				  			&.rotate{
 				  				transform: rotate(180deg);
 				  			}
+				  		}
+				  		&.assign-color{
+				  			cursor: pointer;
 				  		}
 				  	}
 			  		.color-pallet{

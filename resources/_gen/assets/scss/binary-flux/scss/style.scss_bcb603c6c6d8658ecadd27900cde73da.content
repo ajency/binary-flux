@@ -9280,6 +9280,9 @@ body {
       z-index: 3; }
   .custom-dashboard .content.dashboardInteraction .details {
     position: relative; }
+    .custom-dashboard .content.dashboardInteraction .details .options-popup {
+      width: fit-content;
+      cursor: pointer; }
     .custom-dashboard .content.dashboardInteraction .details .contextual-options {
       border-radius: 4px;
       background-color: #20284C;
@@ -9314,6 +9317,8 @@ body {
             opacity: 0.72; }
         .custom-dashboard .content.dashboardInteraction .details .contextual-options .select .arrow.rotate {
           transform: rotate(180deg); }
+        .custom-dashboard .content.dashboardInteraction .details .contextual-options .select.assign-color {
+          cursor: pointer; }
       .custom-dashboard .content.dashboardInteraction .details .contextual-options .color-pallet {
         display: none; }
         .custom-dashboard .content.dashboardInteraction .details .contextual-options .color-pallet .box {
