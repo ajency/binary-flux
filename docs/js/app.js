@@ -54,13 +54,13 @@ $(document).ready(function(){
         $(".autosuggest-dropdown").toggleClass('show');
     });
 
-    $('.dropdown-arrow').click(function () {
+    $('.options-popup').click(function () {
         $(".contextual-options").toggleClass('show');
         $(".overlay").toggleClass('show');
     });
 
-    $('.arrow').click(function () {
-        $(this).toggleClass("rotate");
+    $('.assign-color').click(function () {
+        $('.arrow').toggleClass("rotate");
         $(".color-pallet").toggleClass('show-pallet');
     });
     $('input[name="toggle"]').on('change',function(){
@@ -68,27 +68,21 @@ $(document).ready(function(){
         $(".updated").toggleClass('show-updated');
     });
 
-    //const sidebar = document.querySelector('.sidebar');
-    document.querySelector('button').onclick = function () {
-        if($(".hide-sidebar").is(':visible')){
+    $('.sidebar').mouseenter(function(){
             // collapsed
-            $(".sidebar").css({width: '50px'});
-            $(".content").css({paddingLeft: '50px',  transition: '0.2s ease'});
-            $(".hide-sidebar").hide();
-            $(".small-sidebar").show();
-            $(".filter").hide();
-        }
-        else{
-            // expanded
-            $(".content").css({paddingLeft: '200px', transition: '0.2s ease'});
-            $(".sidebar").css({width: '200px'});
+            $(".sidebar").stop(true,true).css({width: '200px'});
+            $(".content").stop(true,true).css({paddingLeft: '210px',  transition: '0.2s ease-in'});
             $(".small-sidebar").hide();
             $(".hide-sidebar").fadeIn(1000);
-            $(".filter").show();            
-        }
-        //sidebar.classList.toggle('sidebar_small');
+    });
+    $('.sidebar').mouseleave(function(){
+            // collapsed
+            $(".sidebar").stop(true,true).css({width: '50px'});
+            $(".content").stop(true,true).css({paddingLeft: '60px', transition: '0.2s ease-in'});
+            $(".hide-sidebar").hide();
+            $(".small-sidebar").show();
+    });
 
-    }
 
     $('.front-slider').slick({
         slidesToScroll: 1,
