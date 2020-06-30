@@ -68,14 +68,14 @@ $(document).ready(function(){
         $(".updated").toggleClass('show-updated');
     });
 
-    $('.sidebar').mouseenter(function(){
+    $('.xs-sidebar').mouseenter(function(){
             // collapsed
             $(".sidebar").stop(true,true).css({width: '200px'});
             $(".content").stop(true,true).css({paddingLeft: '210px',  transition: '0.2s ease-in'});
             $(".small-sidebar").hide();
             $(".hide-sidebar").fadeIn(1000);
     });
-    $('.sidebar').mouseleave(function(){
+    $('.xs-sidebar').mouseleave(function(){
             // collapsed
             $(".sidebar").stop(true,true).css({width: '50px'});
             $(".content").stop(true,true).css({paddingLeft: '60px', transition: '0.2s ease-in'});
