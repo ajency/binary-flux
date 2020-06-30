@@ -9151,7 +9151,7 @@ body {
 .custom-dashboard .content .graphical-area {
   flex-wrap: wrap; }
   .custom-dashboard .content .graphical-area .graph-figure {
-    padding: 0 30px;
+    padding: 0 30px 0 20px;
     width: 65%; }
     .custom-dashboard .content .graphical-area .graph-figure .highlight {
       color: #FFFFFF;
@@ -9500,194 +9500,195 @@ body {
       display: flex; } }
 
 .custom-dashboard .content.resize-widget {
-  padding-left: 50px; }
+  padding-left: 60px; }
   @media (max-width: 525px) {
     .custom-dashboard .content.resize-widget .visitor-count {
       padding-left: 20px; } }
-  .custom-dashboard .content.resize-widget .sectionContent {
-    margin-top: 100px !important; }
-    .custom-dashboard .content.resize-widget .sectionContent .resize-mode {
-      border: 2px solid #1391FF;
+  @media (min-width: 425px) and (max-width: 1199px) {
+    .custom-dashboard .content.resize-widget .sectionContent .radial {
+      max-width: 75%;
+      margin: auto; } }
+  @media (max-width: 424px) {
+    .custom-dashboard .content.resize-widget .sectionContent .radial {
+      max-width: 90%;
+      margin: auto; } }
+  .custom-dashboard .content.resize-widget .sectionContent .line-graph {
+    max-width: 100%; }
+  .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline {
+    height: 320px;
+    width: 100%;
+    border: 2px dashed #1391FF;
+    box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.5);
+    position: relative; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square1 {
+      height: 10.28px;
+      width: 10.43px;
+      background-color: #1391FF;
+      position: absolute;
+      top: -6px;
+      left: -5px; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square2 {
+      height: 10.28px;
+      width: 10.43px;
+      background-color: #1391FF;
+      position: absolute;
+      top: -6px;
+      left: 0;
+      right: 0;
+      margin: auto; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square3 {
+      height: 10.28px;
+      width: 10.43px;
+      background-color: #1391FF;
+      position: absolute;
+      top: -6px;
+      right: -6px; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square4 {
+      height: 10.28px;
+      width: 10.43px;
+      background-color: #1391FF;
+      position: absolute;
+      top: 50%;
+      left: -6px; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square5 {
+      height: 10.28px;
+      width: 10.43px;
+      background-color: #1391FF;
+      position: absolute;
+      top: 50%;
+      right: -6px; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square6 {
+      height: 10.28px;
+      width: 10.43px;
+      background-color: #1391FF;
+      position: absolute;
+      top: 50%;
+      right: -6px; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square7 {
+      height: 10.28px;
+      width: 10.43px;
+      background-color: #1391FF;
+      position: absolute;
+      bottom: -6px;
+      left: -6px; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square8 {
+      height: 10.28px;
+      width: 10.43px;
+      background-color: #1391FF;
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      right: 0;
+      margin: auto; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square9 {
+      height: 10.28px;
+      width: 10.43px;
+      background-color: #1391FF;
+      position: absolute;
+      bottom: -6px;
+      right: -6px; }
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .add-widget {
+      color: #1391FF;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 16px;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(50%, -50%); }
+  @media (max-width: 1199px) {
+    .custom-dashboard .content.resize-widget .sectionContent .create-widget {
+      margin-top: 50px; } }
+  @media (max-width: 1199px) {
+    .custom-dashboard .content.resize-widget .sectionContent {
+      margin-top: 40px !important; } }
+  .custom-dashboard .content.resize-widget .resize-mode {
+    height: auto;
+    padding: 30px 20px; }
+    .custom-dashboard .content.resize-widget .resize-mode .radial-calendar {
+      display: none; }
+    .custom-dashboard .content.resize-widget .resize-mode:hover {
+      border: 2px solid rgba(19, 145, 255, 0.33);
       background-color: #191A35;
       box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.5);
-      position: relative;
-      padding: 50px 0;
-      margin-top: -50px;
-      height: fit-content; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .radial-calendar {
+      position: relative; }
+      .custom-dashboard .content.resize-widget .resize-mode:hover .radial-calendar {
+        display: block;
         position: absolute;
         right: 16px;
         top: 14px; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .square1 {
+      .custom-dashboard .content.resize-widget .resize-mode:hover .square1 {
         height: 10.28px;
         width: 10.43px;
-        background-color: #1391FF;
+        background-color: #174178;
         position: absolute;
         top: -6px;
         left: -5px; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .square2 {
+      .custom-dashboard .content.resize-widget .resize-mode:hover .square2 {
         height: 10.28px;
         width: 10.43px;
-        background-color: #1391FF;
+        background-color: #174178;
         position: absolute;
         top: -6px;
         left: 0;
         right: 0;
         margin: auto; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .square3 {
+      .custom-dashboard .content.resize-widget .resize-mode:hover .square3 {
         height: 10.28px;
         width: 10.43px;
-        background-color: #1391FF;
+        background-color: #174178;
         position: absolute;
         top: -6px;
         right: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .square4 {
+      .custom-dashboard .content.resize-widget .resize-mode:hover .square4 {
         height: 10.28px;
         width: 10.43px;
-        background-color: #1391FF;
+        background-color: rgba(19, 145, 255, 0.33);
         position: absolute;
         top: 50%;
         left: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .square5 {
+      .custom-dashboard .content.resize-widget .resize-mode:hover .square5 {
         height: 10.28px;
         width: 10.43px;
-        background-color: #1391FF;
+        background-color: #174178;
         position: absolute;
         top: 50%;
         right: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .square6 {
+      .custom-dashboard .content.resize-widget .resize-mode:hover .square6 {
         height: 10.28px;
         width: 10.43px;
-        background-color: #1391FF;
+        background-color: #174178;
         position: absolute;
         top: 50%;
         right: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .square7 {
+      .custom-dashboard .content.resize-widget .resize-mode:hover .square7 {
         height: 10.28px;
         width: 10.43px;
-        background-color: #1391FF;
+        background-color: #174178;
         position: absolute;
         bottom: -6px;
         left: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .square8 {
+      .custom-dashboard .content.resize-widget .resize-mode:hover .square8 {
         height: 10.28px;
         width: 10.43px;
-        background-color: #1391FF;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        margin: auto; }
-      .custom-dashboard .content.resize-widget .sectionContent .resize-mode .square9 {
-        height: 10.28px;
-        width: 10.43px;
-        background-color: #1391FF;
-        position: absolute;
-        bottom: -6px;
-        right: -6px; }
-      @media (max-width: 1199px) {
-        .custom-dashboard .content.resize-widget .sectionContent .resize-mode {
-          margin-top: 0;
-          margin-bottom: 40px; } }
-    @media (min-width: 425px) and (max-width: 1199px) {
-      .custom-dashboard .content.resize-widget .sectionContent .radial {
-        max-width: 75%;
-        margin: auto; } }
-    @media (max-width: 424px) {
-      .custom-dashboard .content.resize-widget .sectionContent .radial {
-        max-width: 90%;
-        margin: auto; } }
-    .custom-dashboard .content.resize-widget .sectionContent .line-graph {
-      max-width: 100%; }
-    .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline {
-      height: 320px;
-      width: 100%;
-      border: 2px dashed #1391FF;
-      box-shadow: 0 2px 25px 0 rgba(0, 0, 0, 0.5);
-      position: relative; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square1 {
-        height: 10.28px;
-        width: 10.43px;
-        background-color: #1391FF;
-        position: absolute;
-        top: -6px;
-        left: -5px; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square2 {
-        height: 10.28px;
-        width: 10.43px;
-        background-color: #1391FF;
-        position: absolute;
-        top: -6px;
-        left: 0;
-        right: 0;
-        margin: auto; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square3 {
-        height: 10.28px;
-        width: 10.43px;
-        background-color: #1391FF;
-        position: absolute;
-        top: -6px;
-        right: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square4 {
-        height: 10.28px;
-        width: 10.43px;
-        background-color: #1391FF;
-        position: absolute;
-        top: 50%;
-        left: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square5 {
-        height: 10.28px;
-        width: 10.43px;
-        background-color: #1391FF;
-        position: absolute;
-        top: 50%;
-        right: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square6 {
-        height: 10.28px;
-        width: 10.43px;
-        background-color: #1391FF;
-        position: absolute;
-        top: 50%;
-        right: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square7 {
-        height: 10.28px;
-        width: 10.43px;
-        background-color: #1391FF;
-        position: absolute;
-        bottom: -6px;
-        left: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square8 {
-        height: 10.28px;
-        width: 10.43px;
-        background-color: #1391FF;
+        background-color: #174178;
         position: absolute;
         bottom: -6px;
         left: 0;
         right: 0;
         margin: auto; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .square9 {
+      .custom-dashboard .content.resize-widget .resize-mode:hover .square9 {
         height: 10.28px;
         width: 10.43px;
-        background-color: #1391FF;
+        background-color: #174178;
         position: absolute;
         bottom: -6px;
         right: -6px; }
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget-outline .add-widget {
-        color: #1391FF;
-        font-size: 12px;
-        font-weight: bold;
-        letter-spacing: 0;
-        line-height: 16px;
-        position: absolute;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%, -50%); }
     @media (max-width: 1199px) {
-      .custom-dashboard .content.resize-widget .sectionContent .create-widget {
-        margin-top: 50px; } }
-    @media (max-width: 1199px) {
-      .custom-dashboard .content.resize-widget .sectionContent {
-        margin-top: 40px !important; } }
+      .custom-dashboard .content.resize-widget .resize-mode {
+        margin-top: 0;
+        margin-bottom: 40px; } }
 
 /* CodeMirror CSS */
 .CodeMirror {

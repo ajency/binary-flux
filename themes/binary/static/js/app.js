@@ -71,14 +71,14 @@ $(document).ready(function(){
     $('.sidebar').mouseenter(function(){
             // collapsed
             $(".sidebar").stop(true,true).css({width: '200px'});
-            $(".content").stop(true,true).css({paddingLeft: '200px',  transition: '0.2s ease-in'});
+            $(".content").stop(true,true).css({paddingLeft: '210px',  transition: '0.2s ease-in'});
             $(".small-sidebar").hide();
             $(".hide-sidebar").fadeIn(1000);
     });
     $('.sidebar').mouseleave(function(){
             // collapsed
             $(".sidebar").stop(true,true).css({width: '50px'});
-            $(".content").stop(true,true).css({paddingLeft: '50px', transition: '0.2s ease-in'});
+            $(".content").stop(true,true).css({paddingLeft: '60px', transition: '0.2s ease-in'});
             $(".hide-sidebar").hide();
             $(".small-sidebar").show();
     });
