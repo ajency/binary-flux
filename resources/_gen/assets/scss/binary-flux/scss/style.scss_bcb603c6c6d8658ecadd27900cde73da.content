@@ -8804,7 +8804,7 @@ body {
   transition: all 0.2s ease; }
   .custom-dashboard .sidebar.xs-sidebar {
     width: 50px;
-    transition: all 0.3s ease; }
+    transition: all 0.5s ease; }
     .custom-dashboard .sidebar.xs-sidebar .hide-sidebar {
       display: none; }
     .custom-dashboard .sidebar.xs-sidebar .filter {
