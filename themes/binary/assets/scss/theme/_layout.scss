@@ -1150,7 +1150,7 @@ body{
 	    transition: all 0.2s ease;
 		&.xs-sidebar{
 			width: 50px;
-		 	transition: all 0.3s ease;
+		 	transition: all 0.5s ease;
 			.hide-sidebar{
 				display: none;
 			}
@@ -1172,9 +1172,17 @@ body{
 				}
 			}
 			&:hover{
+				.hide-sidebar{
+					display: block;
+					animation: fadein 3s;
+					-webkit-animation: fadein 3s;
+				}
 				.filter{
 					opacity: 1;
 				}
+			}
+			@media (max-width: 767px){
+				display: none;
 			}
 		}
 		.collapse-sidebar {
@@ -2238,6 +2246,9 @@ body{
 					margin-top: 0;
 			    	margin-bottom: 40px;
 				}
+    		}
+    		@media (max-width: 767px){
+    			padding-left: 0;
     		}
 	    }
 	}
