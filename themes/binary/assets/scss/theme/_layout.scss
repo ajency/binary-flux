@@ -1142,41 +1142,39 @@ body{
         opacity:1;
     }
 }
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 .custom-dashboard{
 	.sidebar{
 		background-color: #191a35;
 		width: 200px;
 	    z-index: 9;
 	    transition: all 0.2s ease;
-	    .search{
-	    	margin: 0 15px;
-	    }
-		.hide-sidebar{
-			display: block;
-		}
-		.sidear-container{
-			margin-top: 5px;
-		}
-		.small-sidebar{
-			display: none;
-			.menu-item{
-		    	padding-left: 0px;
-		    	&:before{
-		    		content: '';
-    		    	left: -14px;
-		    	}
-		    	&:after{
-		    		content: '';
-		    		height: 16px;
-		    	}
+		&.xs-sidebar{
+			width: 50px;
+		 	transition: all 0.3s ease;
+			.hide-sidebar{
+				display: none;
+			}
+			.filter{
+				opacity: 0;
+			}
+			.small-sidebar{
+				display: block;
+				.menu-item{
+			    	padding-left: 0px;
+			    	&:before{
+			    		content: '';
+	    		    	left: -14px;
+			    	}
+			    	&:after{
+			    		content: '';
+			    		height: 16px;
+			    	}
+				}
+			}
+			&:hover{
+				.filter{
+					opacity: 1;
+				}
 			}
 		}
 		.collapse-sidebar {
@@ -1186,10 +1184,15 @@ body{
 			left: 100%;
 			top: 2rem;
 			transform: translateX(-50%);
-			cursor: pointer;
 			@media (max-width: 767px){
 				display: none;
 			}
+		}
+	    .search{
+	    	margin: 0 15px;
+	    }
+		.sidear-container{
+			margin-top: 5px;
 		}
 	}
 	.icons {
@@ -2013,7 +2016,8 @@ body{
     			}
 	    	}
 	    }
-	    &.reisze-widget{
+	    &.resize-widget{
+	    	padding-left: 50px;
     		.visitor-count{
 				@media (max-width: 525px){
 					padding-left: 20px;
