@@ -7,7 +7,8 @@ $link-hover-color: lighten(theme-color("primary"), 20%);
 $font-family-base: 'Nunito Sans', Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: 'Nunito Sans', serif, -apple-system;
 
-$body-bg: #27283D;
+$body-bg: #0A0C1B;
+$body-bg1: #27283D;
 $text: #BBBDC3;
 
 $white-6: #b0b0b7;
@@ -46,10 +47,14 @@ $black2: #121425;
 $black3: #27293D;
 
 $bg-blue: #121425;
+$bg-blue-2: #121631;
+$bg-dark-blue: #191A35;
 $light-blue: #3B92FF;
+$light-blue-2: #1391FF;
 $light-blue-5: #4D6A8C;
 
 $text-white-05: rgba(#ffffff, 0.5);
+$text-white-03: rgba(#ffffff, 0.3);
 
 $input-bg: $body-bg;
 $input-border-color: $grey2;
