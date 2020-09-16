@@ -1,12 +1,35 @@
 {{ define "main" }}
 <div class="">
-    <ul class="nav nav-tabs no-border pl-md-3 pr-md-3 blue-bg" id="myTab" role="tablist">
-        <li class="nav-item">
-            <a class="nav-link text-uppercase font-weight-bold pt-1 active pl-0" id="getstarted-tab" data-toggle="tab" href="#getstarted" role="tab" aria-controls="getstarted" aria-selected="true">Get Started</a>
-        </li>
-    </ul>
+    <header class="header-section pb-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="wrap d-flex">
+                <div class="logo-wrap">         
+                    <a href="#">
+                        <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+                    </a>
+                </div>
+                <ul class="nav nav-tabs no-border pl-md-3 pr-md-3 blue-bg" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab" href="#configure" role="tab" aria-controls="configure" aria-selected="true">Configure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab" href="#dashboards" role="tab" aria-controls="dashboards" aria-selected="true">Dashboards</a>
+                    </li>
+                  <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="organisation" aria-selected="true">Organisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="true">Settings</a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="user">
+                <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+            </div>
+        </div>
+    </header>
     <div class="tab-content pl-md-3 pr-md-3" id="myTabContent">
-        <div class="tab-pane fade show active" id="getstarted" role="tabpanel" aria-labelledby="getstarted-tab">
+        <div class="tab-pane fade show active" id="getstarted" role="tabpanel" aria-labelledby="configure-tab">
             <div class="container fw-cont-mobile">
                 <div class="max-935">
                     <div class="row">
@@ -31,7 +54,7 @@
                                             </div>
                                             <div class="text-col">
                                                 <h5 class="section-title mt-0 mb-0">Add your data source</h5>
-                                                <p class="mb-0 text-white--5">Simply select all configured data sources and add them directly to the dashboard.</p>
+                                                <p class="mb-0 text-white--5 font-weight-light">Simply select all configured data sources and add them directly to the dashboard.</p>
                                             </div>
                                         </div>
                                         <div class="d-flex align-items-start three-col mt-3 mb-3">
@@ -43,7 +66,7 @@
                                             </div>
                                             <div class="text-col">
                                                 <h5 class="section-title mt-0 mb-0">Analyze your data</h5>
-                                                <p class="mb-0 text-white--5">Search, sort and manage all data sources and events in one page.</p>
+                                                <p class="mb-0 text-white--5 font-weight-light">Search, sort and manage all data sources and events in one page.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -59,7 +82,7 @@
                             </div>
                         </div>
                         <div class="col-md-6 p-t-140 pb-lg-4 pl-lg-6 pl-md-2 pb-3 border-blue-left-md mh-md-100">
-                            <p class="text-white--5 mb-1 text-uppercase font-weight-bolder">Quick Links</p>
+                            <p class="text-white--5 mb-1 text-uppercase font-weight-semibold">Quick Links</p>
                             <a href="#" class="block-link d-flex align-items-center justify-content-between text-break">Setup Data Sources<i class="icon-arrow-left-light icon-wrap rotate-180"></i></a>
                             <a href="#" class="block-link d-flex align-items-center justify-content-between text-break">Add/ Setup users<i class="icon-arrow-left-light icon-wrap rotate-180"></i></a>
                             <a href="#" class="block-link d-flex align-items-center justify-content-between text-break">Workflows<i class="icon-arrow-left-light icon-wrap rotate-180"></i></a>
@@ -72,7 +95,5 @@
         </div>
     </div>
 </div>
-
-
 {{- partial "footer.html" . -}}
 {{ end }}

@@ -11,12 +11,16 @@ header{
 }
 
 .logo {
-	display: block;
-	max-width: 160px;
-	height: 32px;
-	width: 100%;	
+	margin: 4px 0;
+    vertical-align: middle;
+    display: flex;
+    max-width: 160px;
+    height: 28px;
+    width: 100%;
 
 	&-wrap {
-		padding-left: 10px;
+		@media (min-width: 767px){
+			padding-left: 10px;
+		}
 	}
 }

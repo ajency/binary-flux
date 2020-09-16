@@ -36,16 +36,18 @@
 a.block-link{
     display: block;
     padding: 17px 15px;
-    background-color: #2D3046;
+    /*background-color: #2D3046;*/
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
-    border: 1px solid $grey7;
-    border-radius: 2px;
+    /*border: 1px solid $grey7;*/
+    border-radius: 4px;
     margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(18, 22, 49, 0.3);
     &:hover{
         color: #fff;
-        background-color: #5A5B6B;
+        background-color: #2D3046;
         border-color: #5A5B6B;
     }
 }
