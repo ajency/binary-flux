@@ -53,6 +53,7 @@
 
 .form-control{
 	font-weight: 300;
+    border-color: #2d2f3a;
 	&:focus{
 		background-color: $body-bg;
 		color: white;

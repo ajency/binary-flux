@@ -10079,7 +10079,8 @@ a {
     box-shadow: 0px 0px 0px 0.2rem rgba(61, 144, 247, 0.25); }
 
 .form-control {
-  font-weight: 300; }
+  font-weight: 300;
+  border-color: #2d2f3a; }
   .form-control:focus {
     background-color: #0A0C1B;
     color: white; }
