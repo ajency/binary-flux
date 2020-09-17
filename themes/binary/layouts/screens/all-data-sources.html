@@ -1,13 +1,41 @@
 {{ define "main" }}
 <div class="">
+    <header class="header-section pb-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="wrap d-flex">
+                <div class="logo-wrap">         
+                    <a href="#">
+                        <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+                    </a>
+                </div>
+                <ul class="nav nav-tabs no-border pl-md-3 pr-md-3 blue-bg" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab" href="#configure" role="tab" aria-controls="configure" aria-selected="true">Configure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab" href="#dashboards" role="tab" aria-controls="dashboards" aria-selected="true">Dashboards</a>
+                    </li>
+                  <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="organisation" aria-selected="true">Organisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="true">Settings</a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="user">
+                <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+            </div>
+        </div>
+    </header>
     <div class="container-fluid">
         <div class="custom-container">
             <div class="breadcrumb-wrap d-flex align-items-center pt-3 pb-7">
-                <img src="/binary-flux/images/arrow-left.svg" alt="Arrow left" class="d-inline-block"> <p class="m-0 ml-2 d-inline-block text-uppercase font-weight-bold text-white--05">All Data Sources</p>
+                <img src="/binary-flux/images/arrow-left.svg" alt="Arrow left" class="d-inline-block"> <p class="m-0 ml-2 d-inline-block text-uppercase font-weight-bolder text-white--5">All Data Sources</p>
             </div>
             <div class="">
                 <h5 class="section-title text-uppercase mt-0 mb-05">ADD INPUTS</h5>
-                <p class="mb-0 mb-15 font-weight-bold">Select a data source to integrate with Alooma:</p>
+                <p class="mb-0 mb-15 font-weight-bolder text-white--8">Select a data source to integrate with Alooma:</p>
             </div>
             <div class="item-wrapper mb-4">
                 <div class="item">
@@ -21,8 +49,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Force Point</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Force Point</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
                     </div>
                 </div>
                 <div class="item">
@@ -36,8 +64,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Symantec</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Symantec</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
                     </div>
                 </div>
                 <div class="item">
@@ -51,8 +79,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Sophos</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Sophos</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
                     </div>
                 </div>
                 <div class="item">
@@ -66,8 +94,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Paloalto</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Paloalto</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
                     </div>
                 </div>
                 <div class="item">
@@ -81,8 +109,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Fire Eye</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Fire Eye</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
                     </div>
                 </div>
                 <div class="item">
@@ -97,8 +125,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Microsoft</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Microsoft</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
                     </div>
                 </div>
                 <div class="item">
@@ -112,8 +140,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Win Events</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insightt</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Win Events</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insightt</p>
                     </div>
                 </div>
                 <div class="item">
@@ -127,8 +155,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Carbon Black</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Carbon Black</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
                     </div>
                 </div>
                 <div class="item">
@@ -142,8 +170,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Qradar</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Qradar</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
                     </div>
                 </div>
                 <div class="item">
@@ -157,8 +185,8 @@
                         </div>
                     </div>
                     <div class="item-content">
-                        <h5 class="section-title m-0 text-light-blue font-weight-bold">Splunk</h5>
-                        <p class="text-white-5 m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Splunk</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
                     </div>
                 </div>
             </div>

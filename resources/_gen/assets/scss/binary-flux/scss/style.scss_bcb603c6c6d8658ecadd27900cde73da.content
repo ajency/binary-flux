@@ -10329,7 +10329,8 @@ input:checked + .slider:before {
     background: transparent;
     padding: 0;
     box-shadow: none;
-    color: #9c9da4; }
+    color: #9c9da4;
+    font-size: 10px; }
     .btn-edit__test img {
       position: relative;
       top: -2px; }
@@ -10539,7 +10540,8 @@ button.btn-ouline-light-blue {
   .item-content p {
     width: 255px; }
   .item:hover {
-    border: 2px solid #3B92FF; }
+    border: 2px solid #1391FF;
+    background-color: #191A35; }
   @media (min-width: 576px) {
     .item {
       flex-basis: 49.1%;
@@ -10562,14 +10564,18 @@ button.btn-ouline-light-blue {
     transition: all 0.3s ease-in;
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none;
-    font-weight: 300; }
+    font-weight: 300;
+    font-size: 10px; }
     .pagination ul li a.active, .pagination ul li a.last {
-      border: 1px solid #3B92FF;
+      border: 1px solid #1391FF;
       color: #3B92FF;
-      font-weight: 900; }
+      font-weight: 900;
+      font-size: 12px; }
+    .pagination ul li a.last {
+      opacity: 0.6; }
     .pagination ul li a:hover {
-      border: 1px solid #3B92FF;
-      color: #3B92FF;
+      border: 1px solid #1391FF;
+      color: #1391FF;
       font-weight: 900; }
 
 .highcharts-background {
@@ -10809,6 +10815,9 @@ hr {
 
 .text-light-blue {
   color: #659CC8; }
+
+.text-light-blue-2 {
+  color: #1391FF; }
 
 .text-yellow {
   color: #FFA400; }
