@@ -10586,7 +10586,7 @@ button.btn-ouline-light-blue {
       font-weight: 900;
       font-size: 12px; }
     .pagination ul li a.last {
-      opacity: 0.6; }
+      border: 1px solid #0d3c6d; }
     .pagination ul li a:hover {
       border: 1px solid #1391FF;
       color: #1391FF;

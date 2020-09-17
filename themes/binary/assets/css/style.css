@@ -14679,7 +14679,7 @@ button.btn-ouline-light-blue {
 }
 
 .pagination ul li a.last {
-  opacity: 0.6;
+  border: 1px solid #0d3c6d;
 }
 
 .pagination ul li a:hover {
