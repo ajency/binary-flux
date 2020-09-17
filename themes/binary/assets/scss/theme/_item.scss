@@ -23,7 +23,8 @@
         }
     }
     &:hover{
-        border: 2px solid $light-blue;
+        border: 2px solid $light-blue-2;
+        background-color: $bg-dark-blue;
     }
     @media (min-width: 576px) {
         flex-basis: 49.1%;

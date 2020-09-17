@@ -15,14 +15,19 @@
                 color: $text-white-05;
                 text-decoration: none;
                 font-weight: 300;
+                font-size: 10px;
                 &.active, &.last{
-                    border: 1px solid $light-blue;
+                    border: 1px solid $light-blue-2;
                     color: $light-blue;
                     font-weight: 900;
+                    font-size: 12px;
+                }
+                &.last{
+                    opacity: 0.6;
                 }
                 &:hover{
-                    border: 1px solid $light-blue;
-                    color: $light-blue;
+                    border: 1px solid $light-blue-2;
+                    color: $light-blue-2;
                     font-weight: 900;
                 }
             }
