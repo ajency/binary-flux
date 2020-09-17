@@ -9650,7 +9650,8 @@ a.text-error:hover, a.text-error:focus {
 
 .icon-arrow-left-light:before {
   content: "\e90c";
-  color: #fff;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
 }
 
 .icon-wrap {
@@ -13732,7 +13733,7 @@ body {
 .section-title {
   color: white;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 900;
   line-height: 20px;
 }
 
@@ -13929,7 +13930,7 @@ a {
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
-  border: 2px solid #3D90F7;
+  border: 2px solid #1391FF;
   background-color: #0A0C1B;
 }
 
@@ -13938,6 +13939,20 @@ a {
   color: white;
   line-height: 2;
   font-weight: 300;
+}
+
+.custom-control-label:before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  top: 5px;
+}
+
+.custom-control-label:after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  top: 5px;
 }
 
 .custom-checkbox-dark .custom-control-label {
@@ -13950,6 +13965,10 @@ a {
 
 .custom-checkbox-dark .custom-control-label:hover::before {
   box-shadow: 0px 0px 0px 0.2rem rgba(61, 144, 247, 0.25);
+}
+
+.form-control {
+  font-weight: 300;
 }
 
 .form-control:focus {
@@ -14178,12 +14197,14 @@ input:checked + .slider:before {
 }
 
 .btn {
-  padding: 2px 40px;
+  padding: 5px 40px;
   min-width: 116px;
 }
 
 .btn-primary {
   color: #0A0C1B;
+  background-color: #1391FF;
+  border-color: #1391FF;
 }
 
 .btn-primary .btn {
@@ -14224,7 +14245,10 @@ input:checked + .slider:before {
 }
 
 .btn-outline-dark {
-  color: #93949E;
+  color: #1391FF;
+  border-color: #008EFF;
+  border-width: 1px;
+  padding: 6px 40px;
 }
 
 .btn-outline-dark .btn {
@@ -14265,6 +14289,11 @@ input:checked + .slider:before {
 
 .btn-outline-dark__bl2 .btn {
   border-right: 2px solid #9c9da4 !important;
+}
+
+.btn-outline-dark:hover {
+  background-color: #187bf5;
+  border-color: #0c74f5;
 }
 
 .btn-icon {
@@ -14993,6 +15022,10 @@ hr.grey {
 
 .text-white--5 {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.text-white--6 {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .text-white--7 {

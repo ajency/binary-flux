@@ -14,7 +14,7 @@
 	background-color: $primary;
 }
 .custom-control-input:checked ~ .custom-control-label::before{
-	border: 2px solid $primary;
+	border: 2px solid $light-blue-2;
 	background-color: $body-bg;
 }
 
@@ -23,6 +23,18 @@
 	color: white;
 	line-height: 2;
 	font-weight: 300;
+	&:before{
+		content: '';
+		width: 13px;
+		height: 13px;
+	    top: 5px;
+	}
+	&:after{
+		content: '';
+		width: 13px;
+		height: 13px;
+	    top: 5px;
+	}
 }
 
 .custom-checkbox-dark {
@@ -40,6 +52,7 @@
 }
 
 .form-control{
+	font-weight: 300;
 	&:focus{
 		background-color: $body-bg;
 		color: white;
