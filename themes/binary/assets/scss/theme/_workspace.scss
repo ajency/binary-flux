@@ -114,7 +114,7 @@
 
     &.active {
         color: #fff;
-        border-bottom: 3px solid $primary;
+        border-bottom: 3px solid $light-blue-2;
         font-weight: 900;
     }
     &-close {
@@ -126,7 +126,10 @@
         i {
             font-size: 9px;
             &::before{
-                color: #fff;
+                color: #1391FF;
+                font-weight: normal;
+                font-size: 9px;
+                opacity: 0.6;
             }
         }
     }
@@ -147,7 +150,13 @@
         &-add {
             margin-right: 15px;
         }
-
+        &-more{
+            i{
+                &:before{
+                    color: rgba(255, 255, 255, 0.5);
+                }
+            }
+        }
         &-add,
         &-more {
             padding: 0;
@@ -220,12 +229,20 @@
                     }
                 }
             }
+        }
+        .select2-outline-dark{
+            background: #2a2c41;
+            border-color: #2a2c41;
+            font-size: 15px;
+            font-weight: 600; 
+            color: white;
         }  
     }
     &-input{
         .form-control{
             padding-left: 115px;
             height: 31px;
+            border: 1px solid #342a3f;
         }
     }
 }

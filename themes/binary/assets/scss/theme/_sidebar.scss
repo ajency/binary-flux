@@ -1,6 +1,6 @@
 .sidear {
     &-container {
-        background: $grey9;
+        background: $bg-dark-blue;
         box-shadow: 0 16px 20px 3px rgba(16,17,35,0.6), 0 6px 20px 5px rgba(40,41,62,0.3), 0 8px 5px 0 rgba(0,0,0,0.33);
         &.mobile-slide-in{
             @media (max-width: 767px) {
