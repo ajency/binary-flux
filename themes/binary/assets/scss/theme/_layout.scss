@@ -25,7 +25,7 @@ body{
 }
 
 .tab-inner-ontent{
-	border-bottom: 2px solid #342a3f;
+	border-bottom: 1px solid #342a3f;
 	.tab-body{
 		.table-bordered{
 			th, td{
@@ -36,9 +36,9 @@ body{
 					height: 35px;
 					padding: 0 5px;
 					border: 0;
-					border: 2px solid transparent;
+					border: 1px solid transparent;
 					&:focus{
-						border: 2px solid #afb5ba;
+						border: 1px solid #afb5ba;
 					}
 				}
 			}
