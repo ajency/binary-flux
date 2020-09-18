@@ -7689,7 +7689,7 @@ select.custom-select-dropdown {
 
 .workspace-header-bar {
   padding: 5px 15px 0;
-  background: #121425; }
+  background: #161A34; }
   @media (max-width: 767px) {
     .workspace-header-bar {
       padding: 5px 15px 5px; } }
@@ -7973,7 +7973,7 @@ body {
     max-width: 17px; }
 
 .tab-inner-ontent {
-  border-bottom: 2px solid #342a3f; }
+  border-bottom: 1px solid #342a3f; }
   .tab-inner-ontent .tab-body .table-bordered th, .tab-inner-ontent .tab-body .table-bordered td {
     border: 1px solid #342a3f;
     padding: 5px; }
@@ -7982,9 +7982,9 @@ body {
       height: 35px;
       padding: 0 5px;
       border: 0;
-      border: 2px solid transparent; }
+      border: 1px solid transparent; }
       .tab-inner-ontent .tab-body .table-bordered th input:focus, .tab-inner-ontent .tab-body .table-bordered td input:focus {
-        border: 2px solid #afb5ba; }
+        border: 1px solid #afb5ba; }
   .tab-inner-ontent .tab-body .table-bordered tr:last-child {
     border-bottom: 2px solid #342a3f; }
   .tab-inner-ontent .tab-body .table-bordered th {
