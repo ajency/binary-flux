@@ -10841,7 +10841,7 @@ body {
 }
 
 .tab-inner-ontent .tab-body .table-bordered tr:last-child {
-  border-bottom: 2px solid #342a3f;
+  border-bottom: 1px solid #342a3f;
 }
 
 .tab-inner-ontent .tab-body .table-bordered th {

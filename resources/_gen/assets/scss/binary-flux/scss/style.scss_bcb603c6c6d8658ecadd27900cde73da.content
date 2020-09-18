@@ -7989,7 +7989,7 @@ body {
       .tab-inner-ontent .tab-body .table-bordered th input:focus, .tab-inner-ontent .tab-body .table-bordered td input:focus {
         border: 1px solid #afb5ba; }
   .tab-inner-ontent .tab-body .table-bordered tr:last-child {
-    border-bottom: 2px solid #342a3f; }
+    border-bottom: 1px solid #342a3f; }
   .tab-inner-ontent .tab-body .table-bordered th {
     padding: 11px 12px;
     color: #8B8DA5;
