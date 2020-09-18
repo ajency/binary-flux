@@ -10564,6 +10564,12 @@ select.custom-select-dropdown option:hover {
   opacity: 0.6;
 }
 
+@media (max-width: 767px) {
+  .tab-close {
+    right: -9px;
+  }
+}
+
 .tab-list {
   display: flex;
 }

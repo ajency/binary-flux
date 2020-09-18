@@ -7794,6 +7794,9 @@ select.custom-select-dropdown {
         font-weight: normal;
         font-size: 9px;
         opacity: 0.6; }
+    @media (max-width: 767px) {
+      .tab-close {
+        right: -9px; } }
   .tab-list {
     display: flex; }
     .tab-list-action {

@@ -132,6 +132,9 @@
                 opacity: 0.6;
             }
         }
+        @media (max-width: 767px){
+            right: -9px;
+        }
     }
     &-list {
         display: flex;
