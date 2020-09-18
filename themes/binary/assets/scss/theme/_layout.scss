@@ -25,11 +25,11 @@ body{
 }
 
 .tab-inner-ontent{
-	border-bottom: 2px solid #44475A;
+	border-bottom: 2px solid #342a3f;
 	.tab-body{
 		.table-bordered{
 			th, td{
-				border: 1px solid $white-7;
+				border: 1px solid #342a3f;
 				padding: 5px;
 				input{
 					width: 100%;
@@ -44,7 +44,7 @@ body{
 			}
 			tr{
 				&:last-child{
-					border-bottom: 2px solid #44475A;	
+					border-bottom: 2px solid #342a3f;	
 				}
 			}
 			th{
@@ -2313,4 +2313,20 @@ a.block-link{
  	@media (max-width: 1099px){
  		flex-flow: column;
  	}
+}
+.select2-outline-dark{
+	border: 2px solid #5D5E72;
+    border-radius: 2px;
+    background: transparent;
+ 	height: 31px; 
+    padding: 0px 10px;
+    opacity: 0.6;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 16px;
+    option{
+    	color: black;
+    }
 }

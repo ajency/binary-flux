@@ -1,5 +1,18 @@
 {{ define "main" }}
-
+<header class="header-section pb-0">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="wrap d-flex">
+            <div class="logo-wrap">         
+                <a href="#">
+                    <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+                </a>
+            </div>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
 <div class="container-fluid p-0">
 	<div class="add-interface-web p-0 position-relative">
 		<div class="sidebar p-0">
@@ -30,7 +43,7 @@
 											</div>
 											<div class="list-item-label">
 												<label class="request-label d-block mb-0">Swagger Pet Store</label>
-												<label class="request-count d-block mb-0">3 requests</label>
+												<label class="request-count d-block mb-0 text-white--6">3 requests</label>
 											</div>
 											<div class="d-flex nav-icons">
 											 	<span class="icon-border"><img src="/binary-flux/images/start-arrow.svg" width="8" height="9" alt="arrow"></span>
@@ -111,7 +124,7 @@
 						<div class="tab-btn tab active pl-0"><span class="text-yellow text-uppercase small mr-1 f-7 font-weight-bolder">Post</span>Create Pets <a href="#" class="tab-close"><i class="icon-close"></i></a></div>
 					</div>
 					<div class="tab-list-action">
-						<button class="tab-btn tab-btn-add"><i class="icon-add"></i></button>
+						<button class="tab-btn tab-btn-add"><img src="{{"images/ic-add.svg" | relURL }}" alt></button>
 						<button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
 					</div>
 				</div>
@@ -119,7 +132,7 @@
 					<div class="workspace-actiions green-select d-flex align-items-center">
 						<div class="workspace-environment mr-1">
 							<select class="select2-outline-dark" data-placeholder="No Environment">
-								<option></option>	
+								<option>No Environment</option>	
 								<option>Environment 1</option>	
 								<option>Environment 2</option>	
 							</select>
@@ -137,7 +150,7 @@
 							<div class="col-12 col-lg-8">
 								<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase d-flex align-items-center"><span>Create Pets</span></h6>
 								<div class="d-flex align-items-baseline">
-									<h6 class="workspace-name text-white--5 f-12 fw-300">Post request form to collect pet information from the end user</h6>
+									<h6 class="workspace-name text-white--7 f-12 fw-100">Post request form to collect pet information from the end user</h6>
 									<button class="text-white ml-1 btn-edit text-nowrap"><span class="icon-edit"></span> Edit</button>
 								</div>
 							</div>
@@ -261,7 +274,7 @@
 								<img src="{{"images/illiustraion.svg" | relURL }}" alt="logo" class="img-fluid">
 							</div>
 							<div class="mt-25 font-weight-bolder">
-								Hit Send (↵) <span class="text-light-blue">to get a response</span>
+								Hit Send (↵) <span class="text-darkblue2">to get a response</span>
 							</div>
 						</div>
 					</div>

@@ -185,7 +185,9 @@
 		}
 	}
 	&.button-border{
-		border-color: #347cd6;
+		border-color: $light-blue-2;
+	    padding: 5px 15px;
+	    font-weight: 900;
 	}
 	&-outline-primary{
 		&:hover{
