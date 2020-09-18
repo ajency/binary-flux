@@ -314,11 +314,11 @@
         }
     }
     &-wrap{
-        border-bottom: 1px solid $white-7;
+        border-bottom: 1px solid #342a3f;
         padding-right: 15px;
         .horizontal-scroll{
             @media (max-width: 991px) {
-                border-bottom: 1px solid $white-7;
+                border-bottom: 1px solid #342a3f;
             }
         }
         @media (max-width: 991px) {

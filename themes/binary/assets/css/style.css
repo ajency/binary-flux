@@ -9982,13 +9982,13 @@ a.text-error:hover, a.text-error:focus {
 }
 
 .nav-wrap {
-  border-bottom: 1px solid #5F6069;
+  border-bottom: 1px solid #342a3f;
   padding-right: 15px;
 }
 
 @media (max-width: 991px) {
   .nav-wrap .horizontal-scroll {
-    border-bottom: 1px solid #5F6069;
+    border-bottom: 1px solid #342a3f;
   }
 }
 
