@@ -1,5 +1,18 @@
 {{ define "main" }}
-
+<header class="header-section pb-0">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="wrap d-flex">
+            <div class="logo-wrap">         
+                <a href="#">
+                    <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+                </a>
+            </div>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
 <div class="container-fluid p-0">
 	<div class="admin-interface-add-fields position-relative">
 		<div class="sidebar p-0">
@@ -79,7 +92,7 @@
 					<div class="workspace-actiions green-select d-flex align-items-center">
 						<div class="workspace-environment mr-1">
 							<select class="select2-outline-dark" data-placeholder="No Environment">
-								<option></option>	
+								<option>No Environment</option>	
 								<option>Environment 1</option>	
 								<option>Environment 2</option>	
 							</select>
@@ -118,9 +131,9 @@
 									<a class="dropdown-item" href="#">Something else here</a>
 								</div>
 							</div>
-							<div class="btn-group btn-outline-dark">
-								<button type="button" class="btn">Preview</button>
-								<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="btn-group btn-outline-dark p-0">
+								<button type="button" class="btn btn-outline-dark">Preview</button>
+								<button type="button" class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								</button>
 								<div class="dropdown-menu">
 									<a class="dropdown-item" href="#">Action</a>
@@ -250,7 +263,7 @@
 			<div class="modal-header rounded-0">
 				<h5 class="modal-title section-title text-uppercase" id="addfieldsmodal">Add New Field</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<img src="{{"images/ic_close.svg" | relURL }}" />
+						<img src="{{"images/close.svg" | relURL }}" width="14" height="14" />
 				</button>
 			</div>
 			<div class="modal-body rounded-0 p-0 navpills">
@@ -259,7 +272,7 @@
 							<div class="search-wrap p-15">
 								<div class="position-relative">
 									<img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc" width="17" height="17" />
-									<input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
+									<input class="form-control bg-transparent input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
 								</div>
 							</div>
 							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">								
@@ -270,22 +283,22 @@
 								</a>
 								<a class="nav-link text-white--8" id="v-pills-toggles-tab" data-toggle="pill" href="#v-pills-toggles" role="tab" aria-controls="v-pills-toggles" aria-selected="false">
 									<img src="{{"images/toggle_dark.svg" | relURL }}"class="mr-1 n-image" /> 
-									<img src="{{"images/toggle.svg" | relURL }}"class="mr-1 h-image" />
+									<img src="{{"images/toggle_light.svg" | relURL }}"class="mr-1 h-image" />
 									Toggles
 								</a>
 								<a class="nav-link text-white--8" id="v-pills-checkboxes-tab" data-toggle="pill" href="#v-pills-checkboxes" role="tab" aria-controls="v-pills-checkboxes" aria-selected="false">
 									<img src="{{"images/checkbox_dark.svg" | relURL }}" class="mr-1 n-image"/>
-									<img src="{{"images/check_box.svg" | relURL }}" class="mr-1 h-image"/> 
+									<img src="{{"images/check-box-outline.svg" | relURL }}" class="mr-1 h-image"/> 
 									Checkboxes
 								</a>
 								<a class="nav-link text-white--8" id="v-pills-radio-tab" data-toggle="pill" href="#v-pills-radio" role="tab" aria-controls="v-pills-radio" aria-selected="false">
 									<img src="{{"images/radio-icon-dark.svg" | relURL }}" class="mr-1 n-image"/>
-									<img src="{{"images/radio-icon.svg" | relURL }}" class="mr-1 h-image"/> 
+									<img src="{{"images/radio_button_checked.svg" | relURL }}" class="mr-1 h-image"/> 
 									Radio Buttons
 								</a>
 								<a class="nav-link text-white--8" id="v-pills-customcodetab" data-toggle="pill" href="#v-pills-customcode" role="tab" aria-controls="v-pills-customcode" aria-selected="false">
 									<img src="{{"images/code-dark.svg" | relURL }}"class="mr-1 n-image" />
-									<img src="{{"images/code-white.svg" | relURL }}"class="mr-1 h-image" /> 
+									<img src="{{"images/code-light.svg" | relURL }}"class="mr-1 h-image" /> 
 									Custom Code
 								</a>
 							</div>
@@ -305,7 +318,7 @@
 												<h5 class="section-title text-uppercase mt-0 mb-0">Text Boxes</h5>
 											</div>
 											<div class="tab-content">
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="abcdefghijklmnopqrstuvwxyz" disabled>                            
@@ -319,7 +332,7 @@
 														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="0123456789" disabled>                            
@@ -333,7 +346,7 @@
 														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="0a1bcd2efg3ghtu344dku5d126s7s…" disabled>                            
@@ -347,7 +360,7 @@
 														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="***********************" disabled>                            
@@ -361,7 +374,7 @@
 														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="0a1bc#@3gh344!%@dku5d126#!@" disabled>                            
@@ -522,5 +535,5 @@
 	</div>
 </div>
 
-{{- partial "footer.html" . -}}
+{{- partial "custom-footer.html" . -}}
 {{ end }}

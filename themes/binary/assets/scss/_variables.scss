@@ -34,7 +34,7 @@ $grey9: #35374F;
 $grey10: #434755;
 $grey11: #8B8DA5;
 $grey12: #afb5ba;
-$grey13: #342a3f;
+$grey13: rgba(#979797, 0.15);;
 $lightgrey: #dddddd;
 $lightgrey2: #ededed;
 
@@ -58,6 +58,7 @@ $light-blue-5: #4D6A8C;
 $text-white-05: rgba(#ffffff, 0.5);
 $text-white-06: rgba(#ffffff, 0.6);
 $text-white-03: rgba(#ffffff, 0.3);
+$text-white-08: rgba(#ffffff, 0.8);
 
 $input-bg: $body-bg;
 $input-border-color: $grey2;
@@ -70,3 +71,5 @@ $input-color: white;
 
 $btn-font-size: 15px;
 $btn-border-width: 2px;
+
+$search-input-type: #3f5b7e;

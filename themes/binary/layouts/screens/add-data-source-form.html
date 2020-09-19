@@ -1,5 +1,18 @@
 {{ define "main" }}
-
+<header class="header-section pb-0">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="wrap d-flex">
+            <div class="logo-wrap">         
+                <a href="#">
+                    <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+                </a>
+            </div>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
 <div class="container-fluid p-0">
     <div class="add-data-source-form p-0 position-relative">
         <div class="sidebar p-0 sidebar-320">
@@ -293,5 +306,5 @@
     </div>
 </div>
 
-{{- partial "footer.html" . -}}
+{{- partial "custom-footer.html" . -}}
 {{ end }}

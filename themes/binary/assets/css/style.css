@@ -9796,11 +9796,11 @@ a.text-error:hover, a.text-error:focus {
 }
 
 .nav-lists > li {
-  border-top: 2px solid #342a3f;
+  border-top: 2px solid rgba(151, 151, 151, 0.15);
 }
 
 .nav-lists > li:last-child {
-  border-bottom: 2px solid #342a3f;
+  border-bottom: 2px solid rgba(151, 151, 151, 0.15);
 }
 
 .nav-lists .sub-ul {
@@ -10011,7 +10011,7 @@ a.text-error:hover, a.text-error:focus {
   padding-left: 43px;
   border-radius: 0;
   font-weight: 300;
-  border-top: 1px solid rgba(93, 94, 114, 0.5);
+  border-top: 1px solid rgba(151, 151, 151, 0.15);
   position: relative;
 }
 
@@ -10031,10 +10031,10 @@ a.text-error:hover, a.text-error:focus {
 }
 
 .nav-pills .nav-link.active {
-  background-color: #3C92FF;
+  background-color: #1391FF;
   color: #27293D;
   font-weight: 900;
-  border-top: 1px solid #3C92FF;
+  border-top: 1px solid #1391FF;
 }
 
 .nav-pills .nav-link.active .n-image {
@@ -10051,6 +10051,10 @@ a.text-error:hover, a.text-error:focus {
 
 .nav-pills .nav-link:hover {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.nav-pills .nav-link:last-child {
+  border-bottom: 2px solid rgba(151, 151, 151, 0.15);
 }
 
 @media (max-width: 767px) {
@@ -10079,7 +10083,7 @@ a.text-error:hover, a.text-error:focus {
 
 @media (min-width: 768px) {
   .navpills .card .tab-content {
-    min-height: 553px;
+    min-height: 500px;
   }
 }
 
@@ -13968,6 +13972,15 @@ a {
   }
 }
 
+input::placeholder {
+  font-weight: 900;
+}
+
+input[type="text"]::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+}
+
 .custom-control-label::before {
   background-color: #0A0C1B;
   border: white solid 2px;
@@ -14033,7 +14046,7 @@ a {
 }
 
 .form-control-dark {
-  border-color: #44475A;
+  border-color: rgba(151, 151, 151, 0.15);
 }
 
 .form-control.input-small {
@@ -14044,7 +14057,7 @@ a {
 .form-control.input-search {
   border: 0;
   outline: 0;
-  border: 2px solid #4D6A8C;
+  border: 1px solid #3f5b7e;
   border-radius: 17.5px;
   color: #fff;
 }
@@ -14060,24 +14073,24 @@ a {
 }
 
 .form-control.input-search::-webkit-input-placeholder {
-  color: #4D6A8C;
+  color: #659CC8;
   font-weight: 700;
 }
 
 .form-control.input-search:-moz-placeholder {
   /* Firefox 18- */
-  color: #4D6A8C;
+  color: #659CC8;
   font-weight: 700;
 }
 
 .form-control.input-search::-moz-placeholder {
   /* Firefox 19+ */
-  color: #4D6A8C;
+  color: #659CC8;
   font-weight: 700;
 }
 
 .form-control.input-search:-ms-input-placeholder {
-  color: #4D6A8C;
+  color: #659CC8;
   font-weight: 700;
 }
 
@@ -14309,11 +14322,11 @@ input:checked + .slider:before {
 
 .btn-outline-dark .btn {
   font-weight: 900;
-  padding: 2px 10px;
+  padding: 3px 10px;
   min-width: inherit;
-  border: 2px solid #9c9da4;
+  border: 2px solid #1391FF;
   text-align: left;
-  color: #9c9da4;
+  color: #1391FF;
 }
 
 .btn-outline-dark .btn:not(.dropdown-toggle) {
@@ -14325,8 +14338,8 @@ input:checked + .slider:before {
 
 .btn-outline-dark .btn.dropdown-toggle {
   padding: 0 11px;
-  border: 2px solid #9c9da4;
-  border-left: 1px solid #9c9da4;
+  border: 2px solid #1391FF;
+  border-left: 1px solid #1391FF;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
@@ -14341,6 +14354,7 @@ input:checked + .slider:before {
 
 .btn-outline-dark .btn:hover {
   color: #fff;
+  border-radius: 4px;
 }
 
 .btn-outline-dark__bl2 .btn {
@@ -14350,6 +14364,8 @@ input:checked + .slider:before {
 .btn-outline-dark:hover {
   background-color: #187bf5;
   border-color: #0c74f5;
+  color: white;
+  border-radius: 4px;
 }
 
 .btn-icon {
@@ -14423,8 +14439,8 @@ input:checked + .slider:before {
 }
 
 .btn-add {
-  font-weight: 700;
-  border-radius: 2px;
+  font-weight: bold;
+  border-radius: 4px;
   font-size: 12px;
 }
 
@@ -14596,6 +14612,10 @@ button.btn-ouline-light-blue {
   border-top: 1px solid rgba(93, 94, 114, 0.5);
 }
 
+.border-top-light-blue {
+  border-top: 1px solid rgba(151, 151, 151, 0.25);
+}
+
 .border-bottom-white-1 {
   border-bottom: 1px solid #5F6069;
 }
@@ -14610,19 +14630,20 @@ button.btn-ouline-light-blue {
 }
 
 .modal-content {
-  background-color: #27293D;
+  background-color: #191A35;
   box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px 0 rgba(0, 0, 0, 0.2);
   border: 0;
 }
 
 .modal-header {
   border: 0;
-  border-bottom: 1px solid rgba(93, 94, 114, 0);
-  padding: 30px 20px 15px;
+  border-bottom: 1px solid #39394e;
+  padding: 20px 5px 15px;
+  margin: 0 20px;
 }
 
 .modal-header .modal-title {
-  font-size: 22px;
+  font-size: 15px;
   color: #fff;
 }
 
