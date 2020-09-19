@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="12px" viewBox="0 0 18 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>55F805BF-6100-4ED0-B919-2E8178723E79</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6_End-User_Swagger" transform="translate(-240.000000, -99.000000)">
+            <g id="search-bar" transform="translate(25.000000, 90.000000)">
+                <g id="ic_filter_list" transform="translate(212.000000, 3.000000)">
+                    <polygon id="Bounds" points="0 0 24 0 24 24 0 24"></polygon>
+                    <path d="M10,18 L14,18 L14,16 L10,16 L10,18 L10,18 Z M3,6 L3,8 L21,8 L21,6 L3,6 L3,6 Z M6,13 L18,13 L18,11 L6,11 L6,13 L6,13 Z" id="Icon" fill="#659CC8"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

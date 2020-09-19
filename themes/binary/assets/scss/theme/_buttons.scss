@@ -89,6 +89,27 @@
 		    border-radius: 4px;
 		}
 	}
+	&-outline-dark-blue{
+		color: $light-blue-2;
+		border:1px solid #008EFF;
+	 	border-radius: 4px;
+		padding: 0;
+		.btn {
+			font-weight: 900;
+			min-width: inherit;
+			color: $light-blue-2;
+			&:hover{
+				color: white;
+				img{
+					filter: brightness(0) invert(1);
+				}
+			}
+		}
+		&:hover{
+			background: $light-blue-2;
+			color: white;
+		}
+	}
 	&-icon {
 		padding: 2px 10px;
 		vertical-align: middle;
@@ -242,14 +263,24 @@ button{
 	}
 }
 .test-btn{
-	border: 1px solid #fff;
-	color: #fff !important;
+	border: 1px solid $darkblue1;
+	color: $darkblue1 !important;
 	padding: 0.25rem 0.5rem;
+    i{
+    	&:before{
+    		color: $darkblue1 !important;
+		}
+    }
 	&:hover{
-		border: 1px solid #3C92FF;
-		color: #3C92FF !important;
-		background: transparent;
+		border: 1px solid $darkblue1;
+		color: #fff !important;
+		background: $darkblue1;
 	    border-radius: 0.25rem;
+	    i{
+	    	&:before{
+	    		color: white !important;
+    		}
+	    }
 	}
 }
 
