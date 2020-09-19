@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.d1e9ca2be645929a17c9c76b18aa24c8f90d66ce78b6dd7a2ca57603f2ad1448.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.5f0c8d38eed0abecc98fa36afe4a351a25c201acd2392d7df5c20847ef81cbd4.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -16,7 +16,20 @@
 </head><body>
         
         <div id="content">
-
+<header class="header-section pb-0">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="wrap d-flex">
+            <div class="logo-wrap">         
+                <a href="#">
+                    <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="/binary-flux/images/notifications-outline.svg" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
 <div class="container-fluid p-0">
 	<div class="admin-interface-add-fields position-relative">
 		<div class="sidebar p-0">
@@ -96,7 +109,7 @@
 					<div class="workspace-actiions green-select d-flex align-items-center">
 						<div class="workspace-environment mr-1">
 							<select class="select2-outline-dark" data-placeholder="No Environment">
-								<option></option>	
+								<option>No Environment</option>	
 								<option>Environment 1</option>	
 								<option>Environment 2</option>	
 							</select>
@@ -135,9 +148,9 @@
 									<a class="dropdown-item" href="#">Something else here</a>
 								</div>
 							</div>
-							<div class="btn-group btn-outline-dark">
-								<button type="button" class="btn">Preview</button>
-								<button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<div class="btn-group btn-outline-dark p-0">
+								<button type="button" class="btn btn-outline-dark">Preview</button>
+								<button type="button" class="btn btn-outline-dark dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								</button>
 								<div class="dropdown-menu">
 									<a class="dropdown-item" href="#">Action</a>
@@ -267,7 +280,7 @@
 			<div class="modal-header rounded-0">
 				<h5 class="modal-title section-title text-uppercase" id="addfieldsmodal">Add New Field</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<img src="/binary-flux/images/ic_close.svg" />
+						<img src="/binary-flux/images/close.svg" width="14" height="14" />
 				</button>
 			</div>
 			<div class="modal-body rounded-0 p-0 navpills">
@@ -276,7 +289,7 @@
 							<div class="search-wrap p-15">
 								<div class="position-relative">
 									<img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
-									<input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
+									<input class="form-control bg-transparent input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
 								</div>
 							</div>
 							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">								
@@ -287,22 +300,22 @@
 								</a>
 								<a class="nav-link text-white--8" id="v-pills-toggles-tab" data-toggle="pill" href="#v-pills-toggles" role="tab" aria-controls="v-pills-toggles" aria-selected="false">
 									<img src="/binary-flux/images/toggle_dark.svg"class="mr-1 n-image" /> 
-									<img src="/binary-flux/images/toggle.svg"class="mr-1 h-image" />
+									<img src="/binary-flux/images/toggle_light.svg"class="mr-1 h-image" />
 									Toggles
 								</a>
 								<a class="nav-link text-white--8" id="v-pills-checkboxes-tab" data-toggle="pill" href="#v-pills-checkboxes" role="tab" aria-controls="v-pills-checkboxes" aria-selected="false">
 									<img src="/binary-flux/images/checkbox_dark.svg" class="mr-1 n-image"/>
-									<img src="/binary-flux/images/check_box.svg" class="mr-1 h-image"/> 
+									<img src="/binary-flux/images/check-box-outline.svg" class="mr-1 h-image"/> 
 									Checkboxes
 								</a>
 								<a class="nav-link text-white--8" id="v-pills-radio-tab" data-toggle="pill" href="#v-pills-radio" role="tab" aria-controls="v-pills-radio" aria-selected="false">
 									<img src="/binary-flux/images/radio-icon-dark.svg" class="mr-1 n-image"/>
-									<img src="/binary-flux/images/radio-icon.svg" class="mr-1 h-image"/> 
+									<img src="/binary-flux/images/radio_button_checked.svg" class="mr-1 h-image"/> 
 									Radio Buttons
 								</a>
 								<a class="nav-link text-white--8" id="v-pills-customcodetab" data-toggle="pill" href="#v-pills-customcode" role="tab" aria-controls="v-pills-customcode" aria-selected="false">
 									<img src="/binary-flux/images/code-dark.svg"class="mr-1 n-image" />
-									<img src="/binary-flux/images/code-white.svg"class="mr-1 h-image" /> 
+									<img src="/binary-flux/images/code-light.svg"class="mr-1 h-image" /> 
 									Custom Code
 								</a>
 							</div>
@@ -322,7 +335,7 @@
 												<h5 class="section-title text-uppercase mt-0 mb-0">Text Boxes</h5>
 											</div>
 											<div class="tab-content">
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="abcdefghijklmnopqrstuvwxyz" disabled>                            
@@ -336,7 +349,7 @@
 														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="0123456789" disabled>                            
@@ -350,7 +363,7 @@
 														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="0a1bcd2efg3ghtu344dku5d126s7s…" disabled>                            
@@ -364,7 +377,7 @@
 														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="***********************" disabled>                            
@@ -378,7 +391,7 @@
 														<button type="button" class="btn btn-primary btn-add">Add</button>
 													</div>
 												</div>
-												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-grey pt-3 pb-4 pr-2 pl-2">
+												<div class="field-row d-flex align-items-center justify-content-between flex-wrap border-top-light-blue pt-3 pb-3 pr-2 pl-2">
 													<div class="d-flex align-items-center flex-wrap">
 														<div class="form-field mb-0 mt-0 mt-md-0 mr-0 mr-md-1">
 															<input class="form-control form-control-dark w-260 text-center" type="text" placeholder="0a1bc#@3gh344!%@dku5d126#!@" disabled>                            
@@ -537,51 +550,16 @@
 			</div>
 		</div>
 	</div>
-</div><footer class="footer">
-  <div class="footer-row">
-    <div class="footer-col d-lg-flex align-items-center">
-      <div class="footer-logo pr-2  mb-2 mb-lg-0">
-        <img src="/binary-flux/images/footer_logo.png" alt="logo">
-      </div>
-      <div class="footer-address pr-2 text-blue position-relative pl-2  mb-2 mb-lg-0">
-          <div class="footer-address-icon p-abs">
-            <img src="/binary-flux/images/address_icon.svg" alt="address">
-          </div>
-          <div class="footer-address-text">
-              3 Pemimpin Drive, 4-01, Industrial Building, Singapore, 576147
-          </div>
-      </div>
-      <div class="footer-phone position-relative pl-2 mb-2 mb-lg-0">
-        <div class="footer-phone-icon p-abs">
-          <img src="/binary-flux/images/phone_icon.svg" alt="phone">
-        </div>
-        <div class="footer-phone-text">
-          <a href="tel:+12023908669">+1(202)390-8669</a>
-        </div>
-      </div>
-      <div class="footer-email-text pl-1 mb-2 mb-lg-0">
-        <a href="https://www.binaryflux.xyz" target="_blank"><span class="">•</span>www.binaryflux.xyz</a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <div class="footer-copyright text-blue">
-         © Copyright Binaryflux
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script
+</div><script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
 <script src="/binary-flux/js/app.js"></script>
+
         </div><script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
