@@ -7224,7 +7224,7 @@ a.text-error:hover, a.text-error:focus {
     .nav-tabs-left .nav-item a {
       padding-left: 0; }
   .nav-tabs .nav-link {
-    color: rgba(255, 255, 255, 0.34);
+    color: rgba(255, 255, 255, 0.44);
     line-height: 16px;
     font-weight: 300 !important;
     border-radius: 0;
