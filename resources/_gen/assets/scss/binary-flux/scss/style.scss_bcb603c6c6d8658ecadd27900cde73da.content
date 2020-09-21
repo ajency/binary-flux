@@ -10872,6 +10872,24 @@ button.btn-ouline-light-blue {
     stroke-width: 0.5;
     opacity: 0.5; }
 
+#end-user-data .highcharts-grid-line {
+  stroke: #5D5E72 !important;
+  opacity: 0.5; }
+
+#end-user-data .highcharts-point.highcharts-point-hover {
+  fill: #76DDFB; }
+
+.marker-round {
+  height: 14px;
+  width: 14px;
+  border: 2.62px solid #3C92FF;
+  background-color: #FFE1CE;
+  box-shadow: 0 2px 4px 0 #0A0C1B;
+  border-radius: 20px;
+  position: absolute;
+  left: -7px;
+  top: 0; }
+
 hr {
   border-top: 2px solid #34364A; }
   hr.grey {
