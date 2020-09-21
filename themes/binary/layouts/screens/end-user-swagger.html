@@ -789,11 +789,11 @@ document.addEventListener('DOMContentLoaded', function () {
             crosshair: {
                 width: 2,
                 dashStyle: 'Dash',
-                zIndex: 3
+                zIndex: 3,
             }
         },
 		tooltip: {
-			headerFormat: '<div class="" style="background: #1391FF; padding:5px;position:relative;"><div class="arrow-down"></div>',
+			headerFormat: '<div class="" style="background: #1391FF; padding:5px;position:relative;"><div class="arrow-down"><div class="marker-round" style="top: 6px"></div></div>',
 			pointFormat: '<div class="text-white" style="font-size: 9px;">{point.x} AM</div><div class="text-white" style="font-size: 10px;font-weight: 900;">{point.y}</div>',
 			footerFormat: '</div>',
             backgroundColor: null,
@@ -806,7 +806,7 @@ document.addEventListener('DOMContentLoaded', function () {
         plotOptions: {
             area: {
                 pointStart: 0,
-                color: '#ffffff00',
+                color: '#ffffff',
                 fillColor: {
                     linearGradient: { x1: 0, x2: 1, y1: 0, y2: 1 },
                     stops: [
@@ -819,13 +819,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     enabled: false,
                     states: {
                         hover: {
-                            enabled: true,
-                            lineWidth: 2,
-                            width: 30,
-                            height: 30,
-                            fillColor: '#ffffff',
-                            lineColor: '#799CFF',
-                            zIndex: 9,
+                            enabled: false,
                         }
                     }
                 }
@@ -834,7 +828,8 @@ document.addEventListener('DOMContentLoaded', function () {
         series: [{            
             name: '',
             data: [100, 120, 175, 180, 130, 215, 285, 175, 150, 205, 140, 450, 310, 335, 200, 210, 25, 200, 160, 310, 175, 210, 225, 165,],
-            color: '#2279FF'
+            color: '#2279FF',
+            zIndex: 99,
         }]
 	});
 });
