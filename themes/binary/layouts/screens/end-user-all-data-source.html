@@ -1,5 +1,32 @@
 {{ define "main" }}
-
+<header class="header-section pb-0">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="wrap d-flex">
+            <div class="logo-wrap">         
+                <a href="#">
+                    <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav nav-tabs no-border pl-md-4 pr-md-3 blue-bg" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab" href="#configure" role="tab" aria-controls="configure" aria-selected="true">Configure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab" href="#dashboards" role="tab" aria-controls="dashboards" aria-selected="true">Dashboards</a>
+                </li>
+              <li class="nav-item">
+                    <a class="nav-link font-weight-bold pt-1" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="organisation" aria-selected="true">Organisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold pt-1" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="true">Settings</a>
+                </li>  
+            </ul>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
 <div class="container-fluid p-0">
 	<div class="end-user-swagger position-relative">
 		<div class="sidebar p-0 sidebar-320">
@@ -704,6 +731,8 @@
 	</div>
 </div>
 
+<!-- Links -->
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
 		Highcharts.chart('container', {
@@ -839,5 +868,5 @@
 	});
 </script>
 
-{{- partial "footer.html" . -}}
+{{- partial "custom-footer.html" . -}}
 {{ end }}

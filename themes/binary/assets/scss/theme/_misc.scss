@@ -82,6 +82,9 @@ hr{
 .text {
 	&-white {
 		color: #ffffff;
+		&--3 {
+			color: rgba(#ffffff, 0.3);
+		}
 		&--5 {
 			color: rgba(#ffffff, 0.5);
 		}
@@ -335,7 +338,7 @@ hr{
 	height: 0; 
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
-	border-top: 8px solid #3a678b;
+	border-top: 8px solid $darkblue1;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -367,4 +370,10 @@ hr{
 
 #content{
 	position: relative;
+}
+
+.d-small-none{
+	@media(max-width: 767px){
+		display: none;
+	}
 }

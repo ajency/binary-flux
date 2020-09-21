@@ -65,6 +65,7 @@ input[type="text"]{
 .form-control{
 	font-weight: 300;
     border-color: #2d2f3a;
+    padding: 8px 10px;
 	&:focus{
 		background-color: $body-bg;
 		color: white;
@@ -74,7 +75,10 @@ input[type="text"]{
 	}
 	&.input-small{
 		height: 30px;
-		padding: 5px 10px;
+		padding: 5px 36px 5px 0px;
+		@media (max-width: 475px){
+			padding: 5px 15px 5px 0;
+		}
 	}
 	&.input-search{
 		border: 0;
@@ -197,8 +201,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 input:checked + .slider {
-	background-color: #ccc;
-    border: 2px solid #3A4C67;
+	background-color: transparent;
+    border: 2px solid $darkblue1;
 }
 
 input:focus + .slider {
@@ -221,6 +225,9 @@ input:checked + .slider:before {
 	border-radius: 50%;
 }
 
+input:checked + .slider.round:before{
+	background: $darkblue1;
+}
 
 /*** Switch styles ends ***/
 
