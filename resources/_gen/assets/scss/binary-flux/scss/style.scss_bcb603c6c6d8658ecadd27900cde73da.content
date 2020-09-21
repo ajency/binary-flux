@@ -10877,7 +10877,8 @@ button.btn-ouline-light-blue {
   opacity: 0.5; }
 
 #end-user-data .highcharts-point.highcharts-point-hover {
-  fill: #76DDFB; }
+  fill: #76DDFB;
+  fill-opacity: 1; }
 
 .marker-round {
   height: 14px;
