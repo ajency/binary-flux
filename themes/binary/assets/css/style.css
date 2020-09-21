@@ -10967,7 +10967,7 @@ body {
   background: black;
   width: 100%;
   border-bottom: 1px solid #5F6069;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .event .table-wrapper table tr {
@@ -10979,7 +10979,7 @@ body {
 }
 
 .event .table-wrapper table tr .pump-loop {
-  color: #007bff;
+  color: #3C92FF;
 }
 
 @media (max-width: 767px) {
@@ -11017,12 +11017,6 @@ body {
   }
 }
 
-@media (min-width: 1345px) and (max-width: 1367px) {
-  .event .table-wrapper table tr:hover td .next:after {
-    height: 36px;
-  }
-}
-
 .event .table-wrapper table tr:hover td .next1:after {
   content: '';
   background: url("../images/ic_chevron_right.svg") no-repeat;
@@ -11048,6 +11042,7 @@ body {
   border-bottom: 1px solid rgba(93, 94, 114, 0.5);
   padding: 10px 0.75rem;
   position: relative;
+  font-family: Courier;
 }
 
 @media (max-width: 1228px) {
