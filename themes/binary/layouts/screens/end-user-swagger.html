@@ -793,7 +793,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         },
 		tooltip: {
-			headerFormat: '<div class="" style="background: #3a678b; padding:5px;position:relative;"><div class="arrow-down"></div>',
+			headerFormat: '<div class="" style="background: #1391FF; padding:5px;position:relative;"><div class="arrow-down"></div>',
 			pointFormat: '<div class="text-white" style="font-size: 9px;">{point.x} AM</div><div class="text-white" style="font-size: 10px;font-weight: 900;">{point.y}</div>',
 			footerFormat: '</div>',
             backgroundColor: null,
@@ -801,14 +801,14 @@ document.addEventListener('DOMContentLoaded', function () {
             borderRadius: 6,
             shadow: false,
             outside: true,
-            useHTML: true
+            useHTML: true,
 		},
         plotOptions: {
             area: {
                 pointStart: 0,
                 color: '#ffffff00',
                 fillColor: {
-                    linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
+                    linearGradient: { x1: 0, x2: 1, y1: 0, y2: 1 },
                     stops: [
                         [0, '#27293D'],
                         [1, '#455B99'],

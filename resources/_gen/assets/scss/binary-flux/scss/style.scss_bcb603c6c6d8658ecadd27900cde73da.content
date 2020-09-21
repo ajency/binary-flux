@@ -8097,6 +8097,9 @@ body {
             @media (max-width: 1368px) {
               .event .table-wrapper table tr:hover td .next:after {
                 height: 50px; } }
+            @media (min-width: 1345px) and (max-width: 1367px) {
+              .event .table-wrapper table tr:hover td .next:after {
+                height: 36px; } }
           .event .table-wrapper table tr:hover td .next1:after {
             content: '';
             background: url("../images/ic_chevron_right.svg") no-repeat;
@@ -11124,7 +11127,7 @@ hr {
   height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid #3a678b;
+  border-top: 8px solid #1391FF;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
