@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.d1e9ca2be645929a17c9c76b18aa24c8f90d66ce78b6dd7a2ca57603f2ad1448.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.d060db217537c6baee0a11a73d959681c153804d874e9a69d73e773ef5eb0f88.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -16,7 +16,34 @@
 </head><body>
         
         <div id="content">
-
+<header class="header-section pb-0">
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="wrap d-flex">
+            <div class="logo-wrap">         
+                <a href="#">
+                    <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav nav-tabs no-border pl-md-4 pr-md-3 blue-bg" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab" href="#configure" role="tab" aria-controls="configure" aria-selected="true">Configure</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab" href="#dashboards" role="tab" aria-controls="dashboards" aria-selected="true">Dashboards</a>
+                </li>
+              <li class="nav-item">
+                    <a class="nav-link font-weight-bold pt-1" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="organisation" aria-selected="true">Organisation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link font-weight-bold pt-1" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="true">Settings</a>
+                </li>  
+            </ul>
+        </div>
+        <div class="user">
+            <span class="text-white font-weight-bold">John Smith<img src="/binary-flux/images/notifications-outline.svg" width="20" height="20" alt="notification" class="notification"></span>
+        </div>
+    </div>
+</header>
 <div class="container-fluid p-0">
 	<div class="end-user-swagger position-relative">
 		<div class="sidebar p-0 sidebar-320">
@@ -26,7 +53,7 @@
                 </button>
                 <div class="data-wrap d-flex align-items-center justify-content-between pl-3 pr-15 pt-1 pb-1">
                     <h5 class="section-title text-uppercase m-0 f-12">Data sources</h5>
-                    <button class="btn btn-add-icon test-btn f-12"><i class="icon-add mr-1 f-9"></i>Add New</button>
+                    <button class="btn btn-add-icon text-blue test-btn f-12"><i class="icon-add mr-1 f-9"></i>Add New</button>
                 </div>     
                 <div class="pr-2 pb-1 pl-3 pt-0 d-flex align-items-center justify-content-between">
 					<div class="search-wrap">
@@ -36,8 +63,8 @@
 						</div>
 					</div> 
 					<div class="sort d-flex">
-						<button class="reset"><img src="/binary-flux/images/ic_filter_list.svg" class="mx-2"/></button>
-						<button class="reset"><img src="/binary-flux/images/ic_sort.svg" class="mx-1"/></button>
+                        <button class="reset"><img src="/binary-flux/images/ic_filter_lists.svg" class="mx-2"/></button>
+                        <button class="reset"><img src="/binary-flux/images/ic_sort_icon.svg" class="mx-1"/></button>
 					</div>
 				</div>   
 				<div class="nav-list-items">
@@ -74,12 +101,12 @@
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -113,17 +140,17 @@
                                             <div class="start-col swagger-item">
                                                 <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
                                                 <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
+                                                <span class="text-white--3 font-weight-bold">Start</span>
                                             </div>
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -131,7 +158,7 @@
                             </a>
                         </li>
                         <li class="list-item">
-                            <a href="#" class="list-item-a">
+                            <a href="#" class="list-item-a error">
                                 <div class="list-item-wrap">
                                     <div class="list-item-logo">
                                         <img src="/binary-flux/images/logo_aws.svg" alt="">
@@ -157,17 +184,17 @@
                                             <div class="start-col swagger-item">
                                                 <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
                                                 <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
+                                                <span class="text-white--3 font-weight-bold">Start</span>
                                             </div>
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -201,17 +228,17 @@
                                             <div class="start-col swagger-item">
                                                 <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
                                                 <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
+                                                <span class="text-white--3 font-weight-bold">Start</span>
                                             </div>
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -245,17 +272,17 @@
                                             <div class="start-col swagger-item">
                                                 <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
                                                 <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
+                                                <span class="text-white--3 font-weight-bold">Start</span>
                                             </div>
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -289,17 +316,17 @@
                                             <div class="start-col swagger-item">
                                                 <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
                                                 <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
+                                                <span class="text-white--3 font-weight-bold">Start</span>
                                             </div>
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -333,17 +360,17 @@
                                             <div class="start-col swagger-item">
                                                 <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
                                                 <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
+                                                <span class="text-white--3 font-weight-bold">Start</span>
                                             </div>
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -377,17 +404,17 @@
                                             <div class="start-col swagger-item">
                                                 <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
                                                 <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
+                                                <span class="text-white--3 font-weight-bold">Start</span>
                                             </div>
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -421,17 +448,17 @@
                                             <div class="start-col swagger-item">
                                                 <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
                                                 <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
+                                                <span class="text-white--3 font-weight-bold">Start</span>
                                             </div>
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold "> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -465,17 +492,17 @@
                                             <div class="start-col swagger-item">
                                                 <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
                                                 <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
+                                                <span class="text-white--3 font-weight-bold">Start</span>
                                             </div>
                                             <div class="stop-col swagger-item">
                                                 <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
                                                 <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5">Stop</span>
+                                                <span class="text-white--3 font-weight-bold">Stop</span>
                                             </div>
                                             <div class="fail-col swagger-item">
                                                 <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
                                                 <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--5 "> Schedule </span>
+                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
                                             </div>
                                         </div>
                                     </div>
@@ -495,13 +522,13 @@
 						<span></span>
 					</div>
 					<div class="tab-list">
-						<div class="tab-btn tab pl-lg-4 pl-md-2 font-weight-bolder">Get Started</div>
+						<div class="tab-btn tab pl-md-2 font-weight-semibold">Get Started</div>
 						<div class="tab-btn tab active pl-3">
-							<img src="/binary-flux/images/logo_aws.svg" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close pr-1"><i class="icon-close"></i></a>
+							<img src="/binary-flux/images/logo_aws.svg" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close pr-1"><img src="/binary-flux/images/close-icon.svg"></a>
 						</div>
 					</div>
 					<div class="tab-list-action">
-						<button class="tab-btn tab-btn-add"><i class="icon-add"></i></button>
+						<button class="tab-btn tab-btn-add"><img src="/binary-flux/images/ic-add.svg"></button>
 						<button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
 					</div>
 				</div>
@@ -521,30 +548,28 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12 col-lg-7">
-								<div class="workspace-actions pr-0">
-									<div class="btn-group btn-primary mr-1 mt-0 custom-btn">
-										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                            <div class="col-12 col-lg-7">
+                                <div class="workspace-actions pr-0 pl-0">
+                                    <div class="btn-group btn-primary mr-1 mt-0 custom-btn">
+                                        <button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
                                             <img src="/binary-flux/images/play-icon.svg" alt="" width="8" class="mr-1">
                                              Start
                                         </button>          
-									</div>
-									<div class="btn-group btn-outline-dark btn-outline-dark__bl2 mr-1">
-										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
-                                            <img src="/binary-flux/images/stop.svg" alt="" width="10" class="mr-1 n-image"> 
-                                            <img src="/binary-flux/images/stop_blue.svg" alt="" width="10" class="mr-1 h-image"> 
+                                    </div>
+                                    <div class="btn-group btn-outline-dark-blue mr-1">
+                                        <button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                                            <img src="/binary-flux/images/stop_blue.svg" alt="" width="10" class="mr-1"> 
                                             Stop
                                         </button>
-									</div>
-									<div class="btn-group btn-outline-dark btn-outline-dark__bl2">
-										<button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
-                                            <img src="/binary-flux/images/ic_av_timer.svg" alt="" width="15" class="mr-1 n-image"> 
-                                            <img src="/binary-flux/images/ic_av_timer_blue.svg" alt="" width="15" class="mr-1 h-image"> 
+                                    </div>
+                                    <div class="btn-group btn-outline-dark-blue">
+                                        <button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                                            <img src="/binary-flux/images/ic_av_timer_blue.svg" alt="" width="15" class="mr-1"> 
                                             Schedule
                                         </button>
-									</div>
-								</div>
-							</div>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
 						<div class="d-flex action-btns mt-1 mt-lg-0">
 							<div class="col-12 text-right">
@@ -562,12 +587,12 @@
 							<div class="d-flex colum-row ipad pt-15 pb-15">
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Total Number of Lines</p>
-									<h6 class="m-0 mb-05 text-light-blue text-capitalize font-weight-bold f-18">72.47 M</h6>
+									<h6 class="m-0 mb-05 text-darkblue text-capitalize font-weight-bold f-18">72.47 M</h6>
 									<p class="m-0 text-white--5 d-flex align-items-center f-10"><img class="mr-05" src="/binary-flux/images/ic_av_timer.svg" alt> 12:42 am (4 hours ago)</p>
 								</div>
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Lines Parsed Successfully</p>
-									<h6 class="m-0 text-light-blue text-capitalize font-weight-bold f-18">60.47 M</h6>
+									<h6 class="m-0 text-darkblue text-capitalize font-weight-bold f-18">60.47 M</h6>
 								</div>
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Lines Failed to Parse</p>
@@ -576,9 +601,9 @@
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Top Data Sources</p>
 									<div class="d-flex align-items-center">
-										<img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-1">12</span>
-										<img src="/binary-flux/images/microsoft.svg" alt="" width="47" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-1">12</span>
-										<img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="42" class="ml-15"><span class="m-0 text-light-blue text-capitalize font-weight-bold f-18 ml-1">12</span>
+										<img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-darkblue text-capitalize font-weight-bold f-18 ml-1">12</span>
+										<img src="/binary-flux/images/microsoft.svg" alt="" width="47" class="ml-15"><span class="m-0 text-darkblue text-capitalize font-weight-bold f-18 ml-1">12</span>
+										<img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="42" class="ml-15"><span class="m-0 text-darkblue text-capitalize font-weight-bold f-18 ml-1">12</span>
 									</div>
 								</div>
 							</div>
@@ -591,27 +616,27 @@
 								</div>
 								<div class="col-md-8 text-md-right pl-md-0">
 									<div class="radio d-inline-block">
-										<span class="mr-1">Show Real Time Data</span>
+										<span class="mr-1 text-white--5 font-weight-light">Show Real Time Data</span>
 										<label class="switch top-7">
 											<input type="checkbox">
 											<span class="slider round"></span>
 										</label>
 									</div>
-									<div class="d-inline-block ml-lg-2 ml-md-1 ml-2">
-										<select class="select2-outline-dark select2-hidden-accessible form-control form-control-dark" tabindex="-1" aria-hidden="true">
-											<option value="option1" >Option1</option>
-											<option value="option2" >Option2</option>
-											<option value="option3" >Option3</option>
-											<option value="option4" selected="">Today (8 Nov, 2019)</option>
-										</select>
-									</div>
+                                    <div class="d-inline-block ml-lg-2 ml-md-1 ml-2">
+                                        <select class="form-control form-control-dark text-white--5" tabindex="-1" aria-hidden="true">
+                                            <option value="option1" >Option1</option>
+                                            <option value="option2" >Option2</option>
+                                            <option value="option3" >Option3</option>
+                                            <option value="option4" selected="">Today (8 Nov, 2019)</option>
+                                        </select>
+                                    </div>
 								</div>
 							</div>
 						</div>
 
 						<div class="graph bar-graph p-15 pb-0 mb-0">
 							<figure class="highcharts-figure mb-0">
-								<div id="container"></div>
+								<div id="end-user-data"></div>
 							</figure>
 						</div>
 
@@ -719,9 +744,11 @@
 	</div>
 </div>
 
+
+<script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
-		Highcharts.chart('container', {
+		Highcharts.chart('end-user-data', {
 			chart: {
 				type: 'column',
 				height: 250,
@@ -806,7 +833,7 @@
 				crosshair: false
 			},
 			tooltip: {
-				headerFormat: '<div class="test1"  style="background: #3a678b; padding:5px;position-relative;border-radius:3px;"><div class="arrow-down"></div>',
+				headerFormat: '<div class="test1"  style="background: #1391FF; padding:5px;position-relative;border-radius:3px;"><div class="arrow-down"><div class="marker-round"></div></div>',
 				pointFormat: '<div class="d-flex align-items-center"><img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span><img src="/binary-flux/images/microsoft-logo.svg" alt="" width="14" class="ml-15"><span class="m-0 text-white f-10">Microsoft</span><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span><img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="37" class="ml-15"><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span></div>',
                 footerFormat: '</div>',
                 backgroundColor: null,
@@ -826,22 +853,12 @@
 					color: {
 						linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
                         stops: [
-                            [0, '#455B99'],    
-                            [1, '#72C2B3']
+                            [0, '#00A8D9'],    
+                            [1, '#105482']
                         ]
 					},
                     marker: {
                         enabled: true,
-                        states: {
-                            hover: {
-                                enabled: true,
-                                lineWidth: 2,
-                                width: 30,
-                                height: 30,
-                                fillColor: '#ffffff',
-                                lineColor: '#799CFF',
-                            }
-                        }
                     }
 				}
 			},
@@ -852,51 +869,16 @@
 			}]
 		});
 	});
-</script><footer class="footer">
-  <div class="footer-row">
-    <div class="footer-col d-lg-flex align-items-center">
-      <div class="footer-logo pr-2  mb-2 mb-lg-0">
-        <img src="/binary-flux/images/footer_logo.png" alt="logo">
-      </div>
-      <div class="footer-address pr-2 text-blue position-relative pl-2  mb-2 mb-lg-0">
-          <div class="footer-address-icon p-abs">
-            <img src="/binary-flux/images/address_icon.svg" alt="address">
-          </div>
-          <div class="footer-address-text">
-              3 Pemimpin Drive, 4-01, Industrial Building, Singapore, 576147
-          </div>
-      </div>
-      <div class="footer-phone position-relative pl-2 mb-2 mb-lg-0">
-        <div class="footer-phone-icon p-abs">
-          <img src="/binary-flux/images/phone_icon.svg" alt="phone">
-        </div>
-        <div class="footer-phone-text">
-          <a href="tel:+12023908669">+1(202)390-8669</a>
-        </div>
-      </div>
-      <div class="footer-email-text pl-1 mb-2 mb-lg-0">
-        <a href="https://www.binaryflux.xyz" target="_blank"><span class="">•</span>www.binaryflux.xyz</a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <div class="footer-copyright text-blue">
-         © Copyright Binaryflux
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script
+</script><script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
 <script src="/binary-flux/js/app.js"></script>
+
         </div><script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
