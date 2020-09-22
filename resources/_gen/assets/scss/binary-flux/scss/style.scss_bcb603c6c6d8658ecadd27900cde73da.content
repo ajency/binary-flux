@@ -7224,7 +7224,7 @@ a.text-error:hover, a.text-error:focus {
     .nav-tabs-left .nav-item a {
       padding-left: 0; }
   .nav-tabs .nav-link {
-    color: rgba(255, 255, 255, 0.44);
+    color: rgba(255, 255, 255, 0.5);
     line-height: 16px;
     font-weight: 300 !important;
     border-radius: 0;
@@ -8096,7 +8096,7 @@ body {
             top: 0; }
             @media (max-width: 1368px) {
               .event .table-wrapper table tr:hover td .next:after {
-                height: 50px; } }
+                height: 52px; } }
           .event .table-wrapper table tr:hover td .next1:after {
             content: '';
             background: url("../images/ic_chevron_right.svg") no-repeat;

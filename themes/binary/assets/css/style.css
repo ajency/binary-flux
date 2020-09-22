@@ -9706,7 +9706,7 @@ a.text-error:hover, a.text-error:focus {
 }
 
 .nav-tabs .nav-link {
-  color: rgba(255, 255, 255, 0.44);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 16px;
   font-weight: 300 !important;
   border-radius: 0;
@@ -11013,7 +11013,7 @@ body {
 
 @media (max-width: 1368px) {
   .event .table-wrapper table tr:hover td .next:after {
-    height: 50px;
+    height: 52px;
   }
 }
 
