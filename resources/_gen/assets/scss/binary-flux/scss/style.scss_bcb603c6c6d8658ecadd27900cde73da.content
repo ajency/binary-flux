@@ -8111,7 +8111,7 @@ body {
             top: 0; }
             @media (max-width: 1368px) {
               .event .table-wrapper table tr:hover td .next1:after {
-                height: 60px; } }
+                height: 62px; } }
       .event .table-wrapper table td {
         border-top: 0;
         border-bottom: 1px solid rgba(93, 94, 114, 0.5);
