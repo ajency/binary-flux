@@ -5,3 +5,111 @@
         }
     }
 }
+
+.event{
+    &.pb-3{
+        .event-header{
+            h6.mr-t7{
+                margin-top: 7px;
+            }
+            .mr-l25{
+                margin-left: 25px;
+            }
+        }
+    }
+    .table-wrapper{
+        table{
+            tbody{
+                tr{
+                    td{
+                        line-height: 12px;
+                        padding: 10px 4px;
+                        color: #ffffff;
+                        &.dates{
+                            opacity: 0.7;
+                            min-width: 110px;
+                            // color: #ffffff;                   
+                            // padding: 10px;
+                        }
+                        &.data-src{
+                            opacity: 0.7;
+                            min-width: 117px;
+                        }
+                        &.jojo-pump{
+                            color: #D36E2E !important;
+                            min-width: 123px;                 
+                        }
+                        &.url-logs{
+                            min-width: 715px;
+                            opacity: 0.7;
+                        }
+                        span{
+                            &.event-logs{
+                                color: #FFDB00;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidear-container{
+    .pd-space{
+        padding: 20px 15px 20px 30px;
+        .btn-wd{
+            padding: 6px 8px;
+        }
+    }
+    .search-wd{
+        width: 190px;
+    }
+    .pos-shift{
+        right: 18px;
+    }
+}
+
+.header-section{
+    .wrap{
+        .mr-l35{
+            margin-left: 35px;
+        }
+    }
+}
+
+#siderbar-content{
+    .button-center{
+        width: 100%;
+        padding: 3px 15px;
+    }
+}
+
+#web_api-tab,#custom_api-tab{
+    padding-left: 16px;
+}
+
+.workspace-tab-header{
+    .colum-row{
+        .colum-1{
+            p.top-data{
+                opacity: 0.5;
+                color: #FFFFFF;
+                font-family: "Avenir";
+                font-size: 12px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 16px;
+                margin-bottom: 5px;
+            }
+            .drpdwn-cont{
+                display: flex;
+                border: 1px solid #1391FF;
+                border-radius: 2px;
+                p{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}

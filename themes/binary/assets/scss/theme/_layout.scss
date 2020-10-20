@@ -151,7 +151,7 @@ body{
 				background: black;
 				width: 100%;
 				border-bottom: 	1px solid $white-7;
-				font-size: 11px;
+				font-size: 10px;
 			}
 			tr{
 				position: relative;
@@ -169,7 +169,7 @@ body{
 					box-shadow: 0 16px 20px 3px rgba(0, 0, 0, 0.77);
 					td{
 						&:last-child{
-							padding-right: 1.8rem;
+							// padding-right: 1.8rem;
 						}
 						.next{
 							&:after{
@@ -206,7 +206,25 @@ body{
 							    	height: 62px;
 							    }
 							}
-						}		
+						}
+						.next2{
+							&:after{
+								content: '';
+								background: url('../images/ic_chevron_right.svg') no-repeat;
+								width: 22px;
+							    height: 44px;
+							    display: table-cell;
+							    background-color: #3B92FF;
+							    background-position-x: center;
+							    background-position-y: center;
+							    position: absolute;
+							    right: 0px;
+							    top:0;
+							    @media (max-width: 1368px){
+							    	height: 44px;
+							    }
+							}
+						}	
 					}
 				}
 			}
