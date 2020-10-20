@@ -11170,4 +11170,21 @@ hr {
 #web_api-tab, #custom_api-tab {
   padding-left: 16px; }
 
+.workspace-tab-header .colum-row .colum-1 p.top-data {
+  opacity: 0.5;
+  color: #FFFFFF;
+  font-family: "Avenir";
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-bottom: 5px; }
+
+.workspace-tab-header .colum-row .colum-1 .drpdwn-cont {
+  display: flex;
+  border: 1px solid #1391FF;
+  border-radius: 2px; }
+  .workspace-tab-header .colum-row .colum-1 .drpdwn-cont p {
+    margin-bottom: 0px; }
+
 /*# sourceMappingURL=style.css.map */
