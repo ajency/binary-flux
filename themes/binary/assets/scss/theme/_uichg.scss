@@ -5,3 +5,43 @@
         }
     }
 }
+
+.event{
+    &.pb-3{
+        .event-header{
+            h6.mr-t7{
+                margin-top: 7px;
+            }
+            .mr-l25{
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+.sidear-container{
+    .pd-space{
+        padding: 20px 15px 20px 30px;
+        .btn-wd{
+            padding: 6px 8px;
+        }
+    }
+    .search-wd{
+        width: 190px;
+    }
+}
+
+.header-section{
+    .wrap{
+        .mr-l35{
+            margin-left: 35px;
+        }
+    }
+}
+
+#siderbar-content{
+    .button-center{
+        width: 100%;
+        padding: 3px 15px;
+    }
+}
