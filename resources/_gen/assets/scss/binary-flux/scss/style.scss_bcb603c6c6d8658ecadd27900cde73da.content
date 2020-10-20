@@ -11125,11 +11125,17 @@ hr {
 .sidear-container .search-wd {
   width: 190px; }
 
+.sidear-container .pos-shift {
+  right: 18px; }
+
 .header-section .wrap .mr-l35 {
   margin-left: 35px; }
 
 #siderbar-content .button-center {
   width: 100%;
   padding: 3px 15px; }
+
+#web_api-tab, #custom_api-tab {
+  padding-left: 16px; }
 
 /*# sourceMappingURL=style.css.map */

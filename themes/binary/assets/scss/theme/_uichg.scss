@@ -29,6 +29,9 @@
     .search-wd{
         width: 190px;
     }
+    .pos-shift{
+        right: 18px;
+    }
 }
 
 .header-section{
@@ -44,4 +47,8 @@
         width: 100%;
         padding: 3px 15px;
     }
+}
+
+#web_api-tab,#custom_api-tab{
+    padding-left: 16px;
 }
