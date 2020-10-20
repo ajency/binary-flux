@@ -8030,7 +8030,7 @@ body {
         background: black;
         width: 100%;
         border-bottom: 1px solid #5F6069;
-        font-size: 11px; }
+        font-size: 10px; }
       .event .table-wrapper table tr {
         position: relative; }
         .event .table-wrapper table tr .jojo {
@@ -8043,8 +8043,6 @@ body {
         .event .table-wrapper table tr:hover {
           background-color: #191A35;
           box-shadow: 0 16px 20px 3px rgba(0, 0, 0, 0.77); }
-          .event .table-wrapper table tr:hover td:last-child {
-            padding-right: 1.8rem; }
           .event .table-wrapper table tr:hover td .next:after {
             content: '';
             background: url("../images/ic_chevron_right.svg") no-repeat;
@@ -8075,6 +8073,21 @@ body {
             @media (max-width: 1368px) {
               .event .table-wrapper table tr:hover td .next1:after {
                 height: 62px; } }
+          .event .table-wrapper table tr:hover td .next2:after {
+            content: '';
+            background: url("../images/ic_chevron_right.svg") no-repeat;
+            width: 22px;
+            height: 44px;
+            display: table-cell;
+            background-color: #3B92FF;
+            background-position-x: center;
+            background-position-y: center;
+            position: absolute;
+            right: 0px;
+            top: 0; }
+            @media (max-width: 1368px) {
+              .event .table-wrapper table tr:hover td .next2:after {
+                height: 44px; } }
       .event .table-wrapper table td {
         border-top: 0;
         border-bottom: 1px solid rgba(93, 94, 114, 0.5);
@@ -11116,6 +11129,25 @@ hr {
 
 .event.pb-3 .event-header .mr-l25 {
   margin-left: 25px; }
+
+.event .table-wrapper table tbody tr td {
+  line-height: 12px;
+  padding: 10px 4px;
+  color: #ffffff; }
+  .event .table-wrapper table tbody tr td.dates {
+    opacity: 0.7;
+    min-width: 110px; }
+  .event .table-wrapper table tbody tr td.data-src {
+    opacity: 0.7;
+    min-width: 117px; }
+  .event .table-wrapper table tbody tr td.jojo-pump {
+    color: #D36E2E !important;
+    min-width: 123px; }
+  .event .table-wrapper table tbody tr td.url-logs {
+    min-width: 715px;
+    opacity: 0.7; }
+  .event .table-wrapper table tbody tr td span.event-logs {
+    color: #FFDB00; }
 
 .sidear-container .pd-space {
   padding: 20px 15px 20px 30px; }
