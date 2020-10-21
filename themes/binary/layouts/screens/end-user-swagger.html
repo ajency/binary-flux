@@ -929,13 +929,11 @@ document.addEventListener('DOMContentLoaded', function () {
         $('.drop-display').on("click", function () {
             if($(this).hasClass('shown')){
             $(this).removeClass('shown');
-            $(this).parent().find('.drop-list').removeClass('show');
-            console.log("remove");  
+            $(this).parent().find('.drop-list').removeClass('show');  
             }
             else{
                 $(this).addClass('shown');
                 $(this).parent().find('.drop-list').addClass('show');
-                console.log("add"); 
             }      
 
         });

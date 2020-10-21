@@ -8,7 +8,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.920e2bd71651123539b0bdca0c19abc5494bf3a30457216e876fbe66f5938e5f.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.910892b79fa217a7787bfe7740a1a189bd85d8ee822cbcae1e97ae0298a55341.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -24,7 +24,7 @@
                     <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
                 </a>
             </div>
-            <ul class="nav nav-tabs no-border pl-md-4 pr-md-3 blue-bg" id="myTab" role="tablist">
+            <ul class="nav nav-tabs no-border pl-md-4 pr-md-3 blue-bg mr-l35" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab" href="#configure" role="tab" aria-controls="configure" aria-selected="true">Configure</a>
                 </li>
@@ -51,19 +51,19 @@
                 <button type="button" class="close d-block d-md-none">
                     <i class="icon-close"></i>
                 </button>
-                <div class="data-wrap d-flex align-items-center justify-content-between  pl-3 pr-15 pt-1 pb-1">
+                <div class="data-wrap d-flex align-items-center justify-content-between pd-space">
                     <h5 class="section-title text-uppercase m-0 f-12">Data sources</h5>
-                    <button class="btn btn-add-icon text-blue test-btn f-12"><i class="icon-add mr-1 f-9"></i>Add New </button>
+                    <button class="btn btn-add-icon text-blue test-btn f-12 btn-wd"><i class="icon-add mr-1 f-9"></i>Add New </button>
 				</div>    
-				<div class="pr-2 pb-1 pl-3 pt-0 d-flex align-items-center justify-content-between">
-					<div class="search-wrap">
+				<div class="pr-2 pb-2 pl-3 pt-0 d-flex align-items-center justify-content-between">
+					<div class="search-wrap search-wd">
 						<div class="position-relative">
 							<img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
-							<input class="form-control input-search input-small pl-3 pr-md-0 bg-transparent" type="search" q="googlesearch" placeholder="Search">
+							<input class="form-control input-search input-small pl-3 pr-md-0 bg-transparent" type="search" q="googlesearch" placeholder="Search Data Sources">
 						</div>
 					</div> 
-					<div class="sort d-flex">
-						<button class="reset"><img src="/binary-flux/images/ic_filter_lists.svg" class="mx-2"/></button>
+					<div class="sort d-flex pos-shift">
+						<button class="reset"><img src="/binary-flux/images/filter-ic.png" class="mx-1"/></button>
 						<button class="reset"><img src="/binary-flux/images/ic_sort_icon.svg" class="mx-1"/></button>
 					</div>
 				</div> 
@@ -645,6 +645,40 @@
 									<h6 class="m-0 text-orange text-capitalize font-weight-bold f-18">12 M</h6>
                                 </div>
                                 <div class="colum-1">
+                                    <p class="top-data">Top Data Sources</p>
+                                    <div class="drpdwn-cont">
+                                        <div class="drop-display">
+                                            <div class="left">
+                                                <img src="/binary-flux/images/aws.png" class="capt-img"/>
+                                                <p class="capt-txt">12</p>
+                                            </div>
+                                            <div class="right">
+                                                <img src="/binary-flux/images/drop-down.svg" class="drop-down" />
+                                                <img src="/binary-flux/images/drop-up.svg" class="drop-up" />
+                                            </div>
+                                            
+                                        </div>
+                                        <ul class="drop-list">
+                                            <li>
+                                                <div class="left">
+                                                    <img src="/binary-flux/images/aws.png" class="capt-img"/>
+                                                    <p class="capt-txt">12</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="left">
+                                                    <img src="/binary-flux/images/microsoft-v-logo.svg" class="capt-img"/>
+                                                    <p class="capt-txt">12</p>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="left">
+                                                    <img src="/binary-flux/images/splunk-logo.svg" class="capt-img"/>
+                                                    <p class="capt-txt">12</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
 								</div>
 							</div>
 						</div>
@@ -682,9 +716,9 @@
 					</div>
 				</div>
 				<div class="event pb-3">
-					<div class="event-header d-flex justify-content-between align-items-center pt-1">
-						<h6 class="event-name text-white f-12 fw-900 mb-0 text-capitalize">Event Logs</h6>
-		                <div class="search-wrap p-15 pt-0 pr-0">
+					<div class="event-header d-flex align-items-start pt-1">
+						<h6 class="event-name text-white f-12 fw-900 mb-0 text-capitalize mr-t7">Event Logs</h6>
+		                <div class="search-wrap p-15 pt-0 pr-0 mr-l25">
 		                    <div class="position-relative">
 		                        <img src="/binary-flux/images/ic_search.svg" class="pa-lc no-bg" width="17" height="17" />
 		                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search Event Logs">
@@ -694,60 +728,105 @@
 	                <div class="table-wrapper" style="overflow-x: auto;">
 	                 	<table class="table table-striped event-body">
 						    <tbody>
-						      	<tr>
-							        <td class="text-white--7">Aug 19 16:43:54</td>
-							        <td class="text-white"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></td>
-							        <td class="text-white--7">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</td>
-							        <td class="text-white--5 text-right">2016-08-10T11 : 14 : 16 . 615<div class="next"></div></td>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
 						      	</tr>
                                 <tr>
-                                    <td class="text-white--7">Aug 19 16:43:54</td>
-                                    <td class="text-white"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></td>
-                                    <td class="text-white--7">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</td>
-                                    <td class="text-white--5 text-right">2016-08-10T11 : 14 : 16 . 615<div class="next"></div></td>        
-                                </tr>
-                                <tr>
-                                    <td class="text-white--7">Aug 19 16:43:54</td>
-                                    <td class="text-white"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></td>
-                                    <td class="text-white--7">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</td>
-                                    <td class="text-white--5 text-right">2016-08-10T11 : 14 : 16 . 615<div class="next"></div></td>        
-                                </tr>
-						      	<tr>
-							        <td class="text-white--7">Aug 19 16:43:54</td>
-							        <td class="text-white"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></td>
-							        <td class="text-white--7">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</td>
-							        <td class="text-white--5 text-right">2016-08-10T11 : 14 : 16 . 615<div class="next"></div></td>        
-						      	</tr>
-								<tr>
-							        <td class="text-white--7">Aug 19 16:43:54</td>
-							        <td class="text-white"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></td>
-							        <td class="text-white--7">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</td>
-							        <td class="text-white--5 position-relative text-right">2016-08-10T11 : 14 : 16 . 615<div class="next"></div></td>        
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
 						      	</tr>
                                 <tr>
-                                    <td class="text-white--7">Aug 19 16:43:54</td>
-                                    <td class="text-white"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></td>
-                                    <td class="text-white--7">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</td>
-                                    <td class="text-white--5 text-right">2016-08-10T11 : 14 : 16 . 615<div class="next"></div></td>        
-                                </tr>
-                                <tr>
-                                    <td class="text-white--7">Aug 19 16:43:54</td>
-                                    <td class="text-white"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></td>
-                                    <td class="text-white--7">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</td>
-                                    <td class="text-white--5 text-right">2016-08-10T11 : 14 : 16 . 615<div class="next"></div></td>        
-                                </tr>
-                                <tr>
-                                    <td class="text-white--7">Aug 19 16:43:54</td>
-                                    <td class="text-white"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></td>
-                                    <td class="text-white--7">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</td>
-                                    <td class="text-white--5 text-right">2016-08-10T11 : 14 : 16 . 615<div class="next"></div></td>        
-                                </tr>
-								<tr>
-							        <td class="text-white--7">Aug 19 16:43:54</td>
-							        <td class="text-white"><span class="jojo"> jojo </span> <span class="pump-loop">pump-loop.log:</span></td>
-							        <td class="text-white--7">{‘event’:”web_client_event”,”properties”,”properties’.{‘Sos’:”Android”’$browser’:”Chrome”,$current_url”:http//m.facbook.com/',</td>
-							        <td class="text-white--5 text-right">2016-08-10T11 : 14 : 16 . 615<div class="next"></div></td>        
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
 						      	</tr>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
+						      	</tr>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
+						      	</tr>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
+						      	</tr>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
+						      	</tr>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
+						      	</tr>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
+						      	</tr>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
+						      	</tr>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
+						      	</tr>
+                                <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>							        
+						      	</tr>
+
+						      	
+                                
 						    </tbody>
 						</table>
 					</div>
@@ -759,6 +838,7 @@
 
 
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -850,6 +930,30 @@ document.addEventListener('DOMContentLoaded', function () {
         }]
 	});
 });
+</script>
+
+
+<script>
+    $(document).ready(function () {
+
+        var droplist = $('.drop-list');
+
+        $('.drop-display').on("click", function () {
+            if($(this).hasClass('shown')){
+            $(this).removeClass('shown');
+            $(this).parent().find('.drop-list').removeClass('show');  
+            }
+            else{
+                $(this).addClass('shown');
+                $(this).parent().find('.drop-list').addClass('show');
+            }      
+
+        });
+
+
+    });
+
+
 </script><script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

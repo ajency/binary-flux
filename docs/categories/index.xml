@@ -5,10 +5,6 @@
     <link>https://ajency.github.io/binary-flux/categories/</link>
     <description>Recent content in Categories on Binary Flux</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://ajency.github.io/binary-flux/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://ajency.github.io/binary-flux/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
