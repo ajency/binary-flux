@@ -48,7 +48,11 @@
                                 color: #FFDB00;
                             }
                         }
+                        &:first-child{
+                            padding: 10px 4px 10px 7px;
+                        }
                     }
+                    
                 }
             }
         }
@@ -138,6 +142,11 @@
                     }
                     &.shown{
                         border: 1px solid #1391FF;
+                        .left{
+                            .capt-txt{
+                                color: #3C92FF;
+                            }
+                        }
                         .right{
                             .drop-down{
                                 display: none;
@@ -152,8 +161,9 @@
                     list-style-type: none;
                     padding: 0px;
                     margin: 0px;
-                    border: 1px solid #1391FF;
+                    border: 1px solid rgba(19,145,255,0.54);
                     position: absolute;
+                    top: 31px;
                     width: 140px;
                     display: none;
                     cursor: pointer;
@@ -171,15 +181,25 @@
                             p{
                                 margin: 0px;
                                 font-size: 18px;
+                                // color: #3C92FF;
                             }
                             .capt-img{
                                 max-width: 47px;
-                                max-height: 12px;
+                                max-height: 12px;                                
                             }
                         }
                         &:hover{
-                            background-color: #1391FF;
-                            // opacity: 0.14;
+                            background-color: rgba(19,145,255, 1);
+                        }
+                        &:first-child{
+                            position: relative;
+                            img.top-arrw{
+                                position: absolute;
+                                top: -7px;
+                                right: 8px;
+                                width: 16px;
+
+                            }
                         }
                     }
                     // &.hide{
