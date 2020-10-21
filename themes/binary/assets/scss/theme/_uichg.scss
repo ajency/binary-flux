@@ -161,8 +161,9 @@
                     list-style-type: none;
                     padding: 0px;
                     margin: 0px;
-                    border: 1px solid #1391FF;
+                    border: 1px solid rgba(19,145,255,0.54);
                     position: absolute;
+                    top: 31px;
                     width: 140px;
                     display: none;
                     cursor: pointer;
@@ -189,6 +190,16 @@
                         }
                         &:hover{
                             background-color: rgba(19,145,255, 1);
+                        }
+                        &:first-child{
+                            position: relative;
+                            img.top-arrw{
+                                position: absolute;
+                                top: -7px;
+                                right: 8px;
+                                width: 16px;
+
+                            }
                         }
                     }
                     // &.hide{

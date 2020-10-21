@@ -11220,8 +11220,9 @@ hr {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    border: 1px solid #1391FF;
+    border: 1px solid rgba(19, 145, 255, 0.54);
     position: absolute;
+    top: 31px;
     width: 140px;
     display: none;
     cursor: pointer; }
@@ -11244,6 +11245,13 @@ hr {
           max-height: 12px; }
       .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list li:hover {
         background-color: #1391ff; }
+      .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list li:first-child {
+        position: relative; }
+        .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list li:first-child img.top-arrw {
+          position: absolute;
+          top: -7px;
+          right: 8px;
+          width: 16px; }
     .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list.show {
       display: block !important;
       z-index: 5; }
