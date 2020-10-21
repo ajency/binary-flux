@@ -37,7 +37,7 @@
                         }
                         &.jojo-pump{
                             color: #D36E2E !important;
-                            min-width: 123px;                 
+                            min-width: 129px;                 
                         }
                         &.url-logs{
                             min-width: 715px;
@@ -106,7 +106,8 @@
                 position: relative;
                 .drop-display{
                     display: flex;
-                    border: 1px solid #1391FF;
+                    // border: 1px solid #1391FF;
+                    border: 1px solid #5D5E72;
                     border-radius: 2px;
                     justify-content: space-between;
                     align-items: center;
@@ -136,6 +137,7 @@
                         }
                     }
                     &.shown{
+                        border: 1px solid #1391FF;
                         .right{
                             .drop-down{
                                 display: none;
