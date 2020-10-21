@@ -425,5 +425,19 @@ $(document).ready(function(){
     //     "retina_detect": true
     // });
 
+    //Added by Ankit
+
+    // var droplist = $('.drop-list');
+
+    // $('.drop-display').on("click", function () {
+    //     if($(this).hasClass('shown')){
+    //       $(this).removeClass('shown');  
+    //     }
+    //     else{
+    //         $(this).addClass('shown');
+    //     }      
+
+    // });
+
 });
 

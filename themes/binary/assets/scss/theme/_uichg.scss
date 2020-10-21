@@ -103,11 +103,90 @@
                 margin-bottom: 5px;
             }
             .drpdwn-cont{
-                display: flex;
-                border: 1px solid #1391FF;
-                border-radius: 2px;
-                p{
-                    margin-bottom: 0px;
+                position: relative;
+                .drop-display{
+                    display: flex;
+                    border: 1px solid #1391FF;
+                    border-radius: 2px;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 2px 10px;
+                    width: 140px;
+                    cursor: pointer;
+                    .left{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 74px;
+                        p{
+                            margin-bottom: 0px;
+                            font-size: 18px;
+                        }
+                        .capt-img{
+                            max-width: 47px;
+                            max-height: 12px;
+                        }
+                    }
+                    .right{
+                        .drop-up{
+                            display: none;
+                        }
+                        .drop-down{
+                            display: block;
+                        }
+                    }
+                    &.shown{
+                        .right{
+                            .drop-down{
+                                display: none;
+                            }
+                            .drop-up{
+                                display: block;
+                            }
+                        }
+                    }                 
+                }
+                .drop-list{
+                    list-style-type: none;
+                    padding: 0px;
+                    margin: 0px;
+                    border: 1px solid #1391FF;
+                    position: absolute;
+                    width: 140px;
+                    display: none;
+                    cursor: pointer;
+                    li{
+                        list-style-type: none;
+                        display: flex;
+                        padding: 2px 10px;
+                        border-bottom: 1px solid #979797;
+                        background-color: #191A35;                        
+                        .left{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            width: 74px;
+                            p{
+                                margin: 0px;
+                                font-size: 18px;
+                            }
+                            .capt-img{
+                                max-width: 47px;
+                                max-height: 12px;
+                            }
+                        }
+                        &:hover{
+                            background-color: #1391FF;
+                            // opacity: 0.14;
+                        }
+                    }
+                    // &.hide{
+                    //     display: none !important;
+                    // }
+                    &.show{
+                        display: block !important;
+                        z-index: 5;
+                    }
                 }
             }
         }

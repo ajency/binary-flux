@@ -11181,10 +11181,65 @@ hr {
   margin-bottom: 5px; }
 
 .workspace-tab-header .colum-row .colum-1 .drpdwn-cont {
-  display: flex;
-  border: 1px solid #1391FF;
-  border-radius: 2px; }
-  .workspace-tab-header .colum-row .colum-1 .drpdwn-cont p {
-    margin-bottom: 0px; }
+  position: relative; }
+  .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-display {
+    display: flex;
+    border: 1px solid #1391FF;
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 10px;
+    width: 140px;
+    cursor: pointer; }
+    .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-display .left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 74px; }
+      .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-display .left p {
+        margin-bottom: 0px;
+        font-size: 18px; }
+      .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-display .left .capt-img {
+        max-width: 47px;
+        max-height: 12px; }
+    .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-display .right .drop-up {
+      display: none; }
+    .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-display .right .drop-down {
+      display: block; }
+    .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-display.shown .right .drop-down {
+      display: none; }
+    .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-display.shown .right .drop-up {
+      display: block; }
+  .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #1391FF;
+    position: absolute;
+    width: 140px;
+    display: none;
+    cursor: pointer; }
+    .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list li {
+      list-style-type: none;
+      display: flex;
+      padding: 2px 10px;
+      border-bottom: 1px solid #979797;
+      background-color: #191A35; }
+      .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list li .left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 74px; }
+        .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list li .left p {
+          margin: 0px;
+          font-size: 18px; }
+        .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list li .left .capt-img {
+          max-width: 47px;
+          max-height: 12px; }
+      .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list li:hover {
+        background-color: #1391FF; }
+    .workspace-tab-header .colum-row .colum-1 .drpdwn-cont .drop-list.show {
+      display: block !important;
+      z-index: 5; }
 
 /*# sourceMappingURL=style.css.map */
