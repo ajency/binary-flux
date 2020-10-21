@@ -11122,7 +11122,11 @@ hr {
     display: none; } }
 
 .content .workspace-header-bar.head-space {
-  height: 55px; }
+  height: 60px;
+  align-items: center; }
+
+.content .workspace-header-bar .workspace-bar-tabs.fl-end {
+  margin-top: 16px; }
 
 .event.pb-3 .event-header h6.mr-t7 {
   margin-top: 7px; }
@@ -11162,6 +11166,15 @@ hr {
 .sidear-container .pos-shift {
   right: 18px; }
 
+.sidear-container .nav-list-items ul li a.lft-nav {
+  height: 53px; }
+  .sidear-container .nav-list-items ul li a.lft-nav .nav-icons .ic-no-border {
+    border: none; }
+
+.sidear-container .nav-list-items ul li .sub-ul .pets {
+  height: 40px;
+  display: flex; }
+
 .header-section .wrap .mr-l35 {
   margin-left: 35px; }
 
@@ -11170,7 +11183,7 @@ hr {
   padding: 3px 15px; }
 
 #web_api-tab, #custom_api-tab {
-  padding-left: 16px; }
+  padding: 15px 10px 12px 16px; }
 
 .workspace-tab-header .colum-row .colum-1 p.top-data {
   opacity: 0.5;

@@ -1,7 +1,14 @@
 .content{
     .workspace-header-bar{
         &.head-space{
-            height: 55px;
+            height: 60px;
+            align-items: center;
+        }
+        .workspace-bar-tabs{
+            &.fl-end{
+                // align-items: flex-end;
+                margin-top: 16px;
+            }
         }
     }
 }
@@ -71,6 +78,26 @@
     }
     .pos-shift{
         right: 18px;
+    }
+    .nav-list-items{
+        ul{
+            li{
+                a.lft-nav{
+                    height: 53px;
+                    .nav-icons{
+                        .ic-no-border{
+                            border: none;
+                        }
+                    }
+                }
+                .sub-ul{
+                    .pets{
+                        height: 40px;
+                        display: flex;
+                    }
+                }
+            }
+        }
     }
 }
 
