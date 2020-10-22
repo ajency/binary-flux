@@ -592,7 +592,7 @@
                                         </button>
                                     </div>
                                     <div class="btn-group btn-outline-dark-blue">
-                                        <button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                                        <button type="button" data-toggle="modal" data-target="#schedulemodal" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
                                             <img src="/binary-flux/images/ic_av_timer_blue.svg" alt="" width="15" class="mr-1"> 
                                             Schedule
                                         </button>
@@ -839,9 +839,126 @@
 	</div>
 </div>
 
+
+<!-- Schedule Task Modal -->
+<div id="schedulemodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="left">
+            <h4 class="modal-title">TASK SCHEDULE ON</h4>
+            <div class="drpdwn-dtsrc">
+                <div class="drop-display">
+                    <div class="left">
+                        <!-- <img src="{{"images/aws.png" | relURL }}" class="capt-img"/> -->
+                        <img src="/binary-flux/images/logo_aws.svg" class="capt-img"/>
+                        <p class="capt-txt">Amazon Web Service</p>
+                    </div>
+                    <div class="right">
+                        <img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
+                        <img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
+                    </div>
+                    
+                </div>
+                <ul class="drop-list">
+                    <li>
+                        <div class="left">
+                            <img src="/binary-flux/images/logo_aws.svg" class="capt-img"/>
+                            <p class="capt-txt">Amazon Web Service</p>
+                        </div>
+                        <img src="/binary-flux/images/uparrow.png" class="top-arrw" />
+                    </li>
+                    <li>
+                        <div class="left">
+                            <img src="/binary-flux/images/microsoft.svg" class="capt-img"/>
+                            <p class="capt-txt">Amazon Web Service</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">
+                            <img src="/binary-flux/images/splunk-vector-logo.svg" class="capt-img"/>
+                            <p class="capt-txt">Amazon Web Service</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+          </div>          
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            <ul class="nav nav-tabs task-tab" id="reportsTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link " data-toggle="tab" role="tab" href="#onetime">ONE-TIME REPORT RUN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" role="tab" href="#recurring">RECURRING REPORTS RUN</a>
+                </li>
+                
+            </ul>
+              
+            <div class="tab-content">
+                <div class="tab-pane" id="onetime" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="onetime-report">
+                        <div class="s-row">
+                            <div class="lside">
+                                <p>Schedule on</p>
+                            </div>
+                            <div class="rside">
+                                <div class="fist">
+                                    <p>Date</p>                                    
+                                    <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                                        <input class="form-control" type="text" readonly />
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    </div>
+                                </div>
+                                <!-- <div class="fist">
+                                    <p>Time</p>                                    
+                                    <div class="md-form md-outline input-with-post-icon timepicker" darktheme="true">
+                                        <input type="text" id="set-dark-theme" class="form-control" placeholder="Select time">
+                                        <label for="set-dark-theme">Dark version</label>
+                                        <i class="fas fa-envelope  input-prefix"></i>
+                                    </div>
+                                </div> -->
+                            </div>
+                    </div>
+                </div>
+                <div class="tab-pane active" id="recurring" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="recur-report">                    
+                        <div class="s-row">
+                            <div class="l-side">
+                                <p>Frequency</p>
+
+                            </div>
+                            <div class="r-side">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+
 <!-- Links -->
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> -->
+
 
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
@@ -999,11 +1116,35 @@
             $('.drop-list').removeClass('show');
         });
 
+        $('#reportsTab a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+        });
+
+        
+
+        
 
     });
 
 
 </script>
+
+<script>
+    var $j = jQuery.noConflict();
+    $j( function() {
+        $j( "#datepicker1" ).datepicker();
+    } );
+</script>
+
+<!-- <script>
+    var $k = jQuery.noConflict();
+    $k( function() {    
+        $k('.timepicker').timepicker({});
+    } );
+</script> -->
+
+
 
 {{- partial "custom-footer.html" . -}}
 {{ end }}

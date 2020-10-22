@@ -11269,4 +11269,179 @@ hr {
       display: block !important;
       z-index: 5; }
 
+@media screen and (min-width: 768px) {
+  #schedulemodal .modal-dialog {
+    max-width: 838px; } }
+
+#schedulemodal .modal-dialog .modal-content .modal-header .left {
+  display: flex;
+  align-items: center; }
+  #schedulemodal .modal-dialog .modal-content .modal-header .left h4 {
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin-right: 52px; }
+  #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc {
+    position: relative; }
+    #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display {
+      display: flex;
+      border: 1px solid #5D5E72;
+      border-radius: 2px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2px 10px;
+      width: 264px;
+      cursor: pointer; }
+      #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left p {
+          margin-bottom: 0px;
+          margin-left: 20px;
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: 0;
+          line-height: 20px;
+          font-family: "Avenir";
+          color: #FFFFFF; }
+        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left .capt-img {
+          max-width: 47px;
+          max-height: 12px; }
+      #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .right .drop-up {
+        display: none; }
+      #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .right .drop-down {
+        display: block; }
+      #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown {
+        border: 1px solid #1391FF; }
+        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown .left .capt-txt {
+          color: #3C92FF; }
+        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown .right .drop-down {
+          display: none; }
+        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown .right .drop-up {
+          display: block; }
+    #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list {
+      list-style-type: none;
+      padding: 0px;
+      margin: 0px;
+      border: 1px solid rgba(19, 145, 255, 0.54);
+      position: absolute;
+      top: 31px;
+      width: 264px;
+      display: none;
+      cursor: pointer; }
+      #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li {
+        list-style-type: none;
+        display: flex;
+        padding: 2px 10px;
+        border-bottom: 1px solid #979797;
+        background-color: #191A35; }
+        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left {
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left p {
+            margin: 0 0 0 20px;
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 0;
+            line-height: 20px;
+            font-family: "Avenir";
+            color: #FFFFFF; }
+          #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left .capt-img {
+            max-width: 47px;
+            max-height: 12px; }
+        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li:hover {
+          background-color: #1391ff; }
+        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li:first-child {
+          position: relative; }
+          #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li:first-child img.top-arrw {
+            position: absolute;
+            top: -7px;
+            right: 8px;
+            width: 16px; }
+      #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list.show {
+        display: block !important;
+        z-index: 5; }
+
+#schedulemodal .modal-dialog .modal-content .modal-body {
+  padding: 16px; }
+  #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item {
+    margin-right: 0px;
+    padding-right: 31px;
+    border-right: 1px solid #FFFFFF;
+    opacity: 0.5; }
+    #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link {
+      padding: 0px; }
+  #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row {
+    display: flex;
+    align-items: center; }
+    #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside {
+      display: flex; }
+      #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist p {
+        margin: 0 0 6px; }
+      #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group {
+        width: 204px; }
+  #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report {
+    padding: 30px 0; }
+
+.test-toast {
+  border: 0.7px solid rgba(121, 181, 107, 0.53);
+  border-radius: 2px;
+  background-color: #1F212C;
+  box-shadow: 28px 28px 28px 3px rgba(0, 0, 0, 0.68);
+  box-sizing: border-box;
+  height: 60.7px;
+  width: 435.7px;
+  position: absolute;
+  bottom: -91px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 501; }
+  .test-toast .toast-body .toast-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .test-toast .toast-body .toast-wrap .toast-img {
+      height: 30px;
+      width: 30px;
+      border: 1.5px solid #79B56B;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .test-toast .toast-body .toast-wrap .toast-img img {
+        vertical-align: middle; }
+    .test-toast .toast-body .toast-wrap .toast-msg {
+      text-align: left;
+      margin-left: 15px; }
+      .test-toast .toast-body .toast-wrap .toast-msg h3 {
+        color: #FFFFFF;
+        font-family: "Avenir";
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin: 0 0 4px; }
+      .test-toast .toast-body .toast-wrap .toast-msg p {
+        opacity: 0.8;
+        color: #FFFFFF;
+        font-family: "Avenir";
+        font-size: 12px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 16px;
+        margin: 0px; }
+  .test-toast.error {
+    top: 152px; }
+    .test-toast.error .toast-body .toast-wrap .toast-img {
+      border: 1.5px solid #D36E2E; }
+  .test-toast.wait {
+    top: 243px; }
+    .test-toast.wait .toast-body .toast-wrap .toast-img {
+      border: 1.5px solid #FFDB00; }
+
 /*# sourceMappingURL=style.css.map */

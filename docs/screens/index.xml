@@ -6,7 +6,16 @@
     <description>Recent content in Screens on Binary Flux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 13 Jun 2020 13:46:25 +0530</lastBuildDate><atom:link href="https://ajency.github.io/binary-flux/screens/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Oct 2020 11:47:54 +0530</lastBuildDate><atom:link href="https://ajency.github.io/binary-flux/screens/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hub Management</title>
+      <link>https://ajency.github.io/binary-flux/screens/hub-management/</link>
+      <pubDate>Thu, 22 Oct 2020 11:47:54 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/hub-management/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Create Widget</title>
       <link>https://ajency.github.io/binary-flux/screens/create-widget/</link>
