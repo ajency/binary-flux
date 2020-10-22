@@ -1,0 +1,78 @@
+.test-toast{
+    border: 0.7px solid rgba(121,181,107,0.53);
+    border-radius: 2px;
+    background-color: #1F212C;
+    box-shadow: 28px 28px 28px 3px rgba(0,0,0,0.68);
+    box-sizing: border-box;
+    height: 60.7px;
+    width: 435.7px;
+    position: absolute;
+    bottom: -91px;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 501;
+    .toast-body{
+        .toast-wrap{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .toast-img{
+                height: 30px;
+                width: 30px;
+                border: 1.5px solid #79B56B;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    vertical-align: middle;
+                }
+            }
+            .toast-msg{
+                text-align: left;
+                margin-left: 15px;
+                h3{         
+                    // height: 20px;
+                    // width: 107px;
+                    color: #FFFFFF;
+                    font-family: "Avenir";
+                    font-size: 15px;
+                    font-weight: 900;
+                    letter-spacing: 0;
+                    line-height: 20px;
+                    margin: 0 0 4px;
+                }
+                p{
+                    opacity: 0.8;
+                    color: #FFFFFF;
+                    font-family: "Avenir";
+                    font-size: 12px;
+                    font-weight: 300;
+                    letter-spacing: 0;
+                    line-height: 16px;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+    &.error{
+        top: 152px;
+        .toast-body{
+            .toast-wrap{
+                .toast-img{
+                    border: 1.5px solid #D36E2E;
+                }
+            }
+        }
+    }
+    &.wait{
+        top: 243px;
+        .toast-body{
+            .toast-wrap{
+                .toast-img{
+                    border: 1.5px solid #FFDB00;
+                }
+            }
+        }
+    }
+}

@@ -18,7 +18,47 @@
         </div>
         <div class="user">
             <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
-        </div>
+		</div>
+		<!-- Toasts Included -->
+		<div class="toast test-toast">			
+			<div class="toast-body">
+				<div class="toast-wrap">
+					<div class="toast-img">
+						<img src="/binary-flux/images/tick-toasts.png" />
+					</div>
+					<div class="toast-msg">
+						<h3>Test Successful</h3>
+						<p>You successfully showed this notification.</p>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div class="toast test-toast error">			
+			<div class="toast-body">
+				<div class="toast-wrap">
+					<div class="toast-img">
+						<img src="/binary-flux/images/tick-toasts.png" />
+					</div>
+					<div class="toast-msg">
+						<h3>Test Failed</h3>
+						<p>You couldn't show this notification.</p>
+					</div>
+				</div>			
+			</div>
+		</div>
+		<div class="toast test-toast wait">			
+			<div class="toast-body">
+				<div class="toast-wrap">
+					<div class="toast-img">
+						<img src="/binary-flux/images/tick-toasts.png" />
+					</div>
+					<div class="toast-msg">
+						<h3>Test Wait</h3>
+						<p>Please wait to show this notification.</p>
+					</div>
+				</div>			
+			</div>
+		</div>
     </div>
 </header>
 <div class="container-fluid p-0">
@@ -39,7 +79,9 @@
 				<div class="tab-content pt-1" id="siderbar-content">
 					<div class="tab-pane fade show active" id="web_api" role="tabpanel" aria-labelledby="web_api-tab">
 						<div class="pl-1 pr-1 pt-1 pb-2 pb-md-3">
-							<button class="btn btn-small btn-outline-primary button-border button-center"><i class="icon icon-add"></i>New Collection</button>
+							<button class="btn btn-small btn-outline-primary button-border button-center btn-toast"><i class="icon icon-add"></i>New Collection</button>
+							
+						
 						</div>
 						<div class="nav-list-items">
 							<ul class="nav-lists">
@@ -291,6 +333,17 @@
 		</div>
 	</div>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$(".btn-toast").click(function(){
+			$('.toast').toast('show');
+		});
+	});
+
+</script>
 
 
 {{- partial "custom-footer.html" . -}}
