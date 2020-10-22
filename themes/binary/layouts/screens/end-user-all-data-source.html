@@ -592,7 +592,7 @@
                                         </button>
                                     </div>
                                     <div class="btn-group btn-outline-dark-blue">
-                                        <button type="button" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                                        <button type="button" data-toggle="modal" data-target="#schedulemodal" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
                                             <img src="/binary-flux/images/ic_av_timer_blue.svg" alt="" width="15" class="mr-1"> 
                                             Schedule
                                         </button>
@@ -839,6 +839,83 @@
 	</div>
 </div>
 
+<!-- Schedule Task Modal -->
+<div id="schedulemodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="left">
+            <h4 class="modal-title">TASK SCHEDULE ON</h4>
+            <div class="drpdwn-dtsrc">
+                <div class="drop-display">
+                    <div class="left">
+                        <!-- <img src="{{"images/aws.png" | relURL }}" class="capt-img"/> -->
+                        <img src="/binary-flux/images/logo_aws.svg" class="capt-img"/>
+                        <p class="capt-txt">Amazon Web Service</p>
+                    </div>
+                    <div class="right">
+                        <img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
+                        <img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
+                    </div>
+                    
+                </div>
+                <ul class="drop-list">
+                    <li>
+                        <div class="left">
+                            <img src="/binary-flux/images/logo_aws.svg" class="capt-img"/>
+                            <p class="capt-txt">Amazon Web Service</p>
+                        </div>
+                        <img src="/binary-flux/images/uparrow.png" class="top-arrw" />
+                    </li>
+                    <li>
+                        <div class="left">
+                            <img src="/binary-flux/images/microsoft.svg" class="capt-img"/>
+                            <p class="capt-txt">Amazon Web Service</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="left">
+                            <img src="/binary-flux/images/splunk-vector-logo.svg" class="capt-img"/>
+                            <p class="capt-txt">Amazon Web Service</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </div>          
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            <ul class="nav nav-tabs task-tab" id="reportsTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#onetime">ONE-TIME REPORT RUN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#recurring">RECURRING REPORTS RUN</a>
+                </li>
+                
+              </ul>
+              
+              <div class="tab-content">
+                <div class="tab-pane active" id="onetime" role="tabpanel" aria-labelledby="home-tab">HELLO1</div>
+                <div class="tab-pane" id="recurring" role="tabpanel" aria-labelledby="profile-tab">HELLO2</div>
+                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+
 <!-- Links -->
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -997,6 +1074,11 @@
 
             $('.drop-display').removeClass('shown');
             $('.drop-list').removeClass('show');
+        });
+
+        $('#reportsTab a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
         });
 
 
