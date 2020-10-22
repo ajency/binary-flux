@@ -11369,13 +11369,24 @@ hr {
 
 #schedulemodal .modal-dialog .modal-content .modal-body {
   padding: 16px; }
-  #schedulemodal .modal-dialog .modal-content .modal-body .task-tab .nav-item {
+  #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item {
     margin-right: 0px;
     padding-right: 31px;
     border-right: 1px solid #FFFFFF;
     opacity: 0.5; }
-    #schedulemodal .modal-dialog .modal-content .modal-body .task-tab .nav-item .nav-link {
+    #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link {
       padding: 0px; }
+  #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row {
+    display: flex;
+    align-items: center; }
+    #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside {
+      display: flex; }
+      #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist p {
+        margin: 0 0 6px; }
+      #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group {
+        width: 204px; }
+  #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report {
+    padding: 30px 0; }
 
 .test-toast {
   border: 0.7px solid rgba(121, 181, 107, 0.53);

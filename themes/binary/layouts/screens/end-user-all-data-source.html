@@ -839,6 +839,7 @@
 	</div>
 </div>
 
+
 <!-- Schedule Task Modal -->
 <div id="schedulemodal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -883,6 +884,7 @@
                     </li>
                 </ul>
             </div>
+
           </div>          
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
@@ -890,20 +892,55 @@
         <div class="modal-body">
             <ul class="nav nav-tabs task-tab" id="reportsTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" href="#onetime">ONE-TIME REPORT RUN</a>
+                  <a class="nav-link " data-toggle="tab" role="tab" href="#onetime">ONE-TIME REPORT RUN</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#recurring">RECURRING REPORTS RUN</a>
+                  <a class="nav-link active" data-toggle="tab" role="tab" href="#recurring">RECURRING REPORTS RUN</a>
                 </li>
                 
-              </ul>
+            </ul>
               
-              <div class="tab-content">
-                <div class="tab-pane active" id="onetime" role="tabpanel" aria-labelledby="home-tab">HELLO1</div>
-                <div class="tab-pane" id="recurring" role="tabpanel" aria-labelledby="profile-tab">HELLO2</div>
-                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
-                <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
-              </div>
+            <div class="tab-content">
+                <div class="tab-pane" id="onetime" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="onetime-report">
+                        <div class="s-row">
+                            <div class="lside">
+                                <p>Schedule on</p>
+                            </div>
+                            <div class="rside">
+                                <div class="fist">
+                                    <p>Date</p>                                    
+                                    <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                                        <input class="form-control" type="text" readonly />
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    </div>
+                                </div>
+                                <!-- <div class="fist">
+                                    <p>Time</p>                                    
+                                    <div class="md-form md-outline input-with-post-icon timepicker" darktheme="true">
+                                        <input type="text" id="set-dark-theme" class="form-control" placeholder="Select time">
+                                        <label for="set-dark-theme">Dark version</label>
+                                        <i class="fas fa-envelope  input-prefix"></i>
+                                    </div>
+                                </div> -->
+                            </div>
+                    </div>
+                </div>
+                <div class="tab-pane active" id="recurring" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="recur-report">                    
+                        <div class="s-row">
+                            <div class="l-side">
+                                <p>Frequency</p>
+
+                            </div>
+                            <div class="r-side">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
 
         </div>
         <div class="modal-footer">
@@ -919,6 +956,9 @@
 <!-- Links -->
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> -->
+
 
 <script>
 	document.addEventListener('DOMContentLoaded', function () {
@@ -1081,11 +1121,30 @@
             $(this).tab('show')
         });
 
+        
+
+        
 
     });
 
 
 </script>
+
+<script>
+    var $j = jQuery.noConflict();
+    $j( function() {
+        $j( "#datepicker1" ).datepicker();
+    } );
+</script>
+
+<!-- <script>
+    var $k = jQuery.noConflict();
+    $k( function() {    
+        $k('.timepicker').timepicker({});
+    } );
+</script> -->
+
+
 
 {{- partial "custom-footer.html" . -}}
 {{ end }}

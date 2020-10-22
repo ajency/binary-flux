@@ -382,7 +382,7 @@
             }
             .modal-body{
                 padding: 16px;
-                .task-tab{
+                ul.task-tab{
                     .nav-item{
                         margin-right: 0px;
                         padding-right: 31px;
@@ -390,6 +390,33 @@
                         opacity: 0.5;
                         .nav-link{
                             padding: 0px;
+                        }
+                    }
+                }
+                .tab-content{
+                    .tab-pane{
+                        .onetime-report{
+                            .s-row{
+                                display: flex;
+                                align-items: center;
+                                .lside{
+
+                                }
+                                .rside{
+                                    display: flex;
+                                    .fist{
+                                        p{
+                                            margin: 0 0 6px;
+                                        }
+                                        .input-group{
+                                            width: 204px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .recur-report{
+                            padding: 30px 0;
                         }
                     }
                 }
