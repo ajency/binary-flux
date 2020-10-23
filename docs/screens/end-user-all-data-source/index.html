@@ -11,7 +11,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.9ebb560ae1973a42ac552d048a85d54914371a56e33e1ed3c715ede9735f9b24.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.109b33e6f53df7ad0ea6f727d8466eec8572ced41d7ec1fb00ea412f0293c06f.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -896,16 +896,16 @@
         <div class="modal-body">
             <ul class="nav nav-tabs task-tab" id="reportsTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" role="tab" href="#onetime">ONE-TIME REPORT RUN</a>
+                  <a class="nav-link " data-toggle="tab" role="tab" href="#onetime">ONE-TIME REPORT RUN</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " data-toggle="tab" role="tab" href="#recurring">RECURRING REPORTS RUN</a>
+                  <a class="nav-link active" data-toggle="tab" role="tab" href="#recurring">RECURRING REPORTS RUN</a>
                 </li>
                 
             </ul>
               
             <div class="tab-content">
-                <div class="tab-pane active" id="onetime" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-pane " id="onetime" role="tabpanel" aria-labelledby="home-tab">
                     <form action="/">
                         <div class="onetime-report">
                             <div class="s-row">
@@ -916,37 +916,179 @@
                                     <div class="fist">
                                         <p>Date</p>                                    
                                         <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                                            <input class="form-control date-pick1" type="text" readonly />
+                                            <input class="form-control date-pick1" type="text" readonly value="23-Oct, 2020"/>
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                                         </div>
-                                    </div>
-                                    
+                                    </div>                                    
                                     <div class="fist">
                                         <p>Time</p>                                    
-                                        <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
-                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
-                                                <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
-                                            </div>
+                                        <div class="input-group date" id="timepicker1" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input date-pick1" data-toggle="datetimepicker" data-target="#timepicker1" value="10:10 AM"/>
+                                            
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
+
                 </div>
-                <div class="tab-pane " id="recurring" role="tabpanel" aria-labelledby="profile-tab">
-                    <div class="recur-report">                    
-                        <div class="s-row">
-                            <div class="l-side">
-                                <p>Frequency</p>
+                <div class="tab-pane active" id="recurring" role="tabpanel" aria-labelledby="profile-tab">
+                    <form action="/">
+                        <div class="recur-report"> 
+                            <div class="uppr-mode">
+                                <div class="s-row">
+                                    <div class="l-side">
+                                        <p class="topik">Frequency</p>
+                                        
+                                        <div class="drpdwn-dtsrc" id="day-sett">
+                                            <div class="drop-display">
+                                                <div class="left">                                                
+                                                    <p class="capt-txt">Daily</p>
+                                                </div>
+                                                <div class="right">
+                                                    <img src="/binary-flux/images/drop-down.svg" class="drop-down" />
+                                                    <img src="/binary-flux/images/drop-up.svg" class="drop-up" />
+                                                </div>
+                                                
+                                            </div>
+                                            <ul class="drop-list">
+                                                <li>
+                                                    <div class="left">                                              
+                                                        <p class="capt-txt" id="d1" >Daily</p>
+                                                    </div>
+                                                    <img src="/binary-flux/images/uparrow.png" class="top-arrw" />
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                               
+                                                        <p class="capt-txt" id="d2">Weekly</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                         
+                                                        <p class="capt-txt" id="d3">Monthly</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                         
+                                                        <p class="capt-txt" id="d4">Hourly</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                         
+                                                        <p class="capt-txt" id="d5">Minutes</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                         
+                                                        <p class="capt-txt" id="d6">Seconds</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="l-side">
+                                        
+                                        <label for="repeat-days" class="col-form-label topik">Repeats Every</label>                                                                      
+                                        <div class="inp-valu">
+                                            <input class="form-control" type="number" value="2" id="repeat-days">
+                                            <div class="unit-fixer" id="day-val-changer">
+                                                Days
+                                            </div>
+                                        </div>                              
+                                    </div>
+                                </div>
+                                <div class="weekly-show" id="weekly-show">
+                                    <p>Repeats on</p>
+                                    <div class="days">
+                                        <div class="weekday">
+                                            <input type="checkbox" id="sunday" checked/>
+                                            <label for="sunday">Sun</label>
+                                        </div>
+                                        <div class="weekday">
+                                            <input type="checkbox" id="monday" checked/>
+                                            <label for="monday">Mon</label>
+                                        </div>
+                                        <div class="weekday">
+                                            <input type="checkbox" id="tuesday" checked/>
+                                            <label for="tuesday">Tue</label>
+                                        </div>
+                                        <div class="weekday">
+                                            <input type="checkbox" id="wedday" checked/>
+                                            <label for="wedday">Wed</label>
+                                        </div>
+                                        <div class="weekday">
+                                            <input type="checkbox" id="thursday" checked/>
+                                            <label for="thursday">Thur</label>
+                                        </div>
+                                        <div class="weekday">
+                                            <input type="checkbox" id="friday" checked/>
+                                            <label for="friday">Fri</label>
+                                        </div>
+                                        <div class="weekday">
+                                            <input type="checkbox" id="satday" checked/>
+                                            <label for="satday">Sat</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="monthly-show" id="monthly-show">
+                                    <p>Repeats on</p>
+                                    <div class="inp-valu">
+                                        <input class="form-control" type="number" value="2" id="repeat-days2">
+                                        
+                                        <p class="dmonth">Day of Month</p>
+                                    </div>
+                                </div>
+                                <div class="s-row">
+                                    <div class="l-side">
+                                        <p class="topik">Starts After</p>                                   
+                                        <div class="fist">
+                                            <p>Date</p>                                    
+                                            <div id="datepicker2" class="input-group date" data-date-format="mm-dd-yyyy">
+                                                <input class="form-control date-pick1" type="text" readonly value="23-Oct, 2020"/>
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="l-side">                                
+                                        <label for="" class="col-form-label topik mw-79"></label>                                                                      
+                                        <div class="fist">
+                                            <p>Time</p>                                    
+                                            <div class="input-group date" id="timepicker2" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input date-pick1" data-toggle="datetimepicker" data-target="#timepicker2" value="10:10 AM"/>
+                                                
+                                            </div>
+                                        </div>                             
+                                    </div>
+                                </div>
+                            </div>                   
+                            <div class="lower-mode">
+                                <h3>Ends on</h3>
+                                <div class="time-mode">
+                                    <div class="inp-row">
+                                        <input type="radio" class="" value="never" id="never" name="grp1" checked />
+                                        <label for="never" class="time-line">Never</label>
+                                    </div>
+                                    <div class="inp-row">
+                                        <div class="fix-date">
+                                            <input type="radio" class="" value="fixeddate" id="fixeddate" name="grp1"/>
+                                            <label for="fixeddate" class="time-line">Fixed Date</label>
+                                        </div>
+                                        <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
+                                            <input class="form-control date-pick1" type="text" readonly value="23-Oct, 2020"/>
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                        </div>                                        
+                                    </div>
+                                    <div class="inp-row">
+                                        <input type="radio" class="" value="fixedno" id="fixedno" name="grp1"/>
+                                        <label for="fixedno" class="time-line">Fixed no of Occurences</label>
+                                    </div>
 
+                                </div>
                             </div>
-                            <div class="r-side">
 
-                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                
             </div>
@@ -1132,6 +1274,35 @@
             $(this).tab('show')
         });
 
+        
+        $('#day-sett .drop-list li').on("click", function () {
+            var idcatch = $(this).children('.left').children('.capt-txt').attr('id');
+
+            $('#weekly-show').removeClass('active');
+            $('#monthly-show').removeClass('active');
+
+            if(idcatch == 'd1'){
+                console.log('d1 clicked');
+                $('#day-val-changer').html('Days');
+            }else if(idcatch == 'd2') {
+                $('#weekly-show').addClass('active');
+                $('#day-val-changer').html('Week');
+            }else if(idcatch == 'd3') {
+                $('#monthly-show').addClass('active');
+                $('#day-val-changer').html('Months');
+            }else if(idcatch == 'd4') {
+                $('#day-val-changer').html('Hours');
+            }else if(idcatch == 'd5') {
+                $('#day-val-changer').html('Minutes');
+            }else if(idcatch == 'd6') { 
+                $('#day-val-changer').html('Seconds');
+            }
+            else{
+                console.log('Nothing to display');
+            }
+            
+        });
+
                 
 
     });
@@ -1146,15 +1317,23 @@
             format: 'd-M, yyyy'
         });
 
-        $j('#datetimepicker3').datetimepicker({
+        $j( "#datepicker2" ).datepicker({
+            format: 'd-M, yyyy'
+        });
+
+        $j( "#datepicker3" ).datepicker({
+            format: 'd-M, yyyy'
+        });
+
+        $j('#timepicker1').datetimepicker({
+            format: 'LT'
+        });
+
+        $j('#timepicker2').datetimepicker({
             format: 'LT'
         });
     } );
-</script>
-
-
-
-<script
+</script><script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
