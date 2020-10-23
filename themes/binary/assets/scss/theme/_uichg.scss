@@ -587,6 +587,31 @@
                                         display: flex;
                                     }
                                 }
+                                .monthly-show{
+                                    display: none;
+                                    align-items: center;
+                                    margin-bottom: 20px;
+                                    p{
+                                        margin: 0px;
+                                        min-width: 66px;
+                                        margin: 0 25px 0 0;
+                                    }
+                                    .inp-valu{
+                                        // min-width: 118px;
+                                        display: flex;
+                                        align-items: center;
+                                        input{
+                                            width: 118px;
+                                            background-color: #191A35;
+                                        }
+                                        .dmonth{
+                                            margin-left: 15px;
+                                        }
+                                    }
+                                    &.active{
+                                        display: flex;
+                                    }
+                                }
                             }
                             .lower-mode{
                                 padding: 21px 0 0;

@@ -953,33 +953,33 @@
                                             <ul class="drop-list">
                                                 <li>
                                                     <div class="left">                                              
-                                                        <p class="capt-txt">Daily</p>
+                                                        <p class="capt-txt" id="d1" >Daily</p>
                                                     </div>
                                                     <img src="/binary-flux/images/uparrow.png" class="top-arrw" />
                                                 </li>
                                                 <li>
                                                     <div class="left">                                               
-                                                        <p class="capt-txt">Weekly</p>
+                                                        <p class="capt-txt" id="d2">Weekly</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="left">                                         
-                                                        <p class="capt-txt">Monthly</p>
+                                                        <p class="capt-txt" id="d3">Monthly</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="left">                                         
-                                                        <p class="capt-txt">Hourly</p>
+                                                        <p class="capt-txt" id="d4">Hourly</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="left">                                         
-                                                        <p class="capt-txt">Minutes</p>
+                                                        <p class="capt-txt" id="d5">Minutes</p>
                                                     </div>
                                                 </li>
                                                 <li>
                                                     <div class="left">                                         
-                                                        <p class="capt-txt">Seconds</p>
+                                                        <p class="capt-txt" id="d6">Seconds</p>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -990,7 +990,7 @@
                                         <label for="repeat-days" class="col-form-label topik">Repeats Every</label>                                                                      
                                         <div class="inp-valu">
                                             <input class="form-control" type="number" value="2" id="repeat-days">
-                                            <div class="unit-fixer">
+                                            <div class="unit-fixer" id="day-val-changer">
                                                 Days
                                             </div>
                                         </div>                              
@@ -1031,8 +1031,13 @@
                                 </div>
                                 <div class="monthly-show" id="monthly-show">
                                     <p>Repeats on</p>
-                                    
-
+                                    <div class="inp-valu">
+                                        <input class="form-control" type="number" value="2" id="repeat-days2">
+                                        <!-- <div class="unit-fixer">
+                                            Days
+                                        </div> -->
+                                        <p class="dmonth">Day of Month</p>
+                                    </div>
                                 </div>
                                 <div class="s-row">
                                     <div class="l-side">
@@ -1046,7 +1051,7 @@
                                         </div>
                                     </div>
                                     <div class="l-side">                                
-                                        <label for="repeat-days" class="col-form-label topik mw-79"></label>                                                                      
+                                        <label for="" class="col-form-label topik mw-79"></label>                                                                      
                                         <div class="fist">
                                             <p>Time</p>                                    
                                             <div class="input-group date" id="timepicker2" data-target-input="nearest">
@@ -1269,6 +1274,35 @@
         $('#reportsTab a').on('click', function (e) {
             e.preventDefault()
             $(this).tab('show')
+        });
+
+        // Task scheduler modal screen change effects
+        $('#day-sett .drop-list li').on("click", function () {
+            var idcatch = $(this).children('.left').children('.capt-txt').attr('id');
+
+            $('#weekly-show').removeClass('active');
+            $('#monthly-show').removeClass('active');
+
+            if(idcatch == 'd1'){
+                console.log('d1 clicked');
+                $('#day-val-changer').html('Days');
+            }else if(idcatch == 'd2') {
+                $('#weekly-show').addClass('active');
+                $('#day-val-changer').html('Week');
+            }else if(idcatch == 'd3') {
+                $('#monthly-show').addClass('active');
+                $('#day-val-changer').html('Months');
+            }else if(idcatch == 'd4') {
+                $('#day-val-changer').html('Hours');
+            }else if(idcatch == 'd5') {
+                $('#day-val-changer').html('Minutes');
+            }else if(idcatch == 'd6') { 
+                $('#day-val-changer').html('Seconds');
+            }
+            else{
+                console.log('Nothing to display');
+            }
+            
         });
 
                 

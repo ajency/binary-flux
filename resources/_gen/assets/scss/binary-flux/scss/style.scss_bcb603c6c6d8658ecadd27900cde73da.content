@@ -11520,6 +11520,24 @@ hr {
                 opacity: 0.5; }
           #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show.active {
             display: flex; }
+        #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show {
+          display: none;
+          align-items: center;
+          margin-bottom: 20px; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show p {
+            margin: 0px;
+            min-width: 66px;
+            margin: 0 25px 0 0; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show .inp-valu {
+            display: flex;
+            align-items: center; }
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show .inp-valu input {
+              width: 118px;
+              background-color: #191A35; }
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show .inp-valu .dmonth {
+              margin-left: 15px; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show.active {
+            display: flex; }
       #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode {
         padding: 21px 0 0; }
         #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode h3 {
