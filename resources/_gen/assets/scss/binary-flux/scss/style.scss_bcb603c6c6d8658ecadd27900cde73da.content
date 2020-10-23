@@ -11466,6 +11466,9 @@ hr {
       align-items: center; }
       .test-toast .toast-body .toast-wrap .toast-img img {
         vertical-align: middle; }
+      .test-toast .toast-body .toast-wrap .toast-img i.tick {
+        color: #79B56B;
+        font-size: 14px; }
     .test-toast .toast-body .toast-wrap .toast-msg {
       text-align: left;
       margin-left: 15px; }
