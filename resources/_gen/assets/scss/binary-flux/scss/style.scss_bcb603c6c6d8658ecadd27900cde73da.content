@@ -11379,11 +11379,15 @@ hr {
     padding: 16px; }
     #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item {
       margin-right: 0px;
-      padding-right: 31px;
-      border-right: 1px solid #FFFFFF;
-      opacity: 0.5; }
+      padding-bottom: 10px; }
       #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link {
-        padding: 0px; }
+        padding: 0px;
+        border-right: 1px solid #FFFFFF;
+        padding-right: 31px;
+        opacity: 0.5; }
+        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link.active {
+          border-bottom: 0px;
+          opacity: 1; }
     #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report {
       padding: 30px 0; }
       #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row {

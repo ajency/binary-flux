@@ -392,12 +392,18 @@
                 padding: 16px;
                 ul.task-tab{
                     .nav-item{
-                        margin-right: 0px;
-                        padding-right: 31px;
-                        border-right: 1px solid #FFFFFF;
-                        opacity: 0.5;
+                        margin-right: 0px;                        
+                        padding-bottom: 10px;
+                        
                         .nav-link{
                             padding: 0px;
+                            border-right: 1px solid #FFFFFF;
+                            padding-right: 31px;
+                            opacity: 0.5;
+                            &.active{
+                                border-bottom: 0px;
+                                opacity: 1;
+                            }
                         }
                     }
                 }
