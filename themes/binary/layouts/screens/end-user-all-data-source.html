@@ -902,37 +902,40 @@
               
             <div class="tab-content">
                 <div class="tab-pane active" id="onetime" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="onetime-report">
-                        <div class="s-row">
-                            <div class="lside">
-                                <p>Schedule on</p>
-                            </div>
-                            <div class="rside">
-                                <div class="fist">
-                                    <p>Date</p>                                    
-                                    <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                                        <input class="form-control date-pick1" type="text" readonly />
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    <form action="/">
+                        <div class="onetime-report">
+                            <div class="s-row">
+                                <div class="lside">
+                                    <p>Schedule on</p>
+                                </div>
+                                <div class="rside">
+                                    <div class="fist">
+                                        <p>Date</p>                                    
+                                        <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                                            <input class="form-control date-pick1" type="text" readonly />
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="fist">
+                                        <p>Date</p>                                    
+                                        <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                                            <input class="form-control date-pick1" type="text" readonly />
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                        </div>
+                                    </div> -->
+                                    <div class="fist">
+                                        <p>Time</p>                                    
+                                        <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="fist">
-                                    <p>Date</p>                                    
-                                    <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                                        <input class="form-control date-pick1" type="text" readonly />
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    </div>
-                                </div>
-                                <!-- <div class="fist">
-                                    <p>Time</p>                                    
-                                    <div class="md-form md-outline input-with-post-icon timepicker" darktheme="true">
-                                        <input type="text" id="set-dark-theme" class="form-control" placeholder="Select time">
-                                        <label for="set-dark-theme">Dark version</label>
-                                        <i class="fas fa-envelope  input-prefix"></i>
-                                    </div>
-                                </div> -->
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="tab-pane " id="recurring" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="recur-report">                    
@@ -964,8 +967,10 @@
 <!-- Links -->
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha512-2JBCbWoMJPH+Uj7Wq5OLub8E5edWHlTM4ar/YJkZh3plwB2INhhOC3eDoqHm1Za/ZOSksrLlURLoyXVdfQXqwg==" crossorigin="anonymous"></script>
+
 
 
 <script>
@@ -1129,9 +1134,7 @@
             $(this).tab('show')
         });
 
-        
-
-        
+                
 
     });
 
@@ -1141,9 +1144,24 @@
 <script>
     var $j = jQuery.noConflict();
     $j( function() {
-        $j( "#datepicker1" ).datepicker();
+        $j( "#datepicker1" ).datepicker({
+            format: 'd-M, yyyy'
+        });
+
+        $j('#datetimepicker3').datetimepicker({
+            format: 'LT'
+        });
     } );
 </script>
+
+<!-- <script>
+    var $jq = jQuery.noConflict();
+    $jq( function() {
+        $jq('#datetimepicker3').datetimepicker({
+            format: 'LT'
+        });
+    } );
+</script> -->
 
 <!-- <script>
     var $k = jQuery.noConflict();

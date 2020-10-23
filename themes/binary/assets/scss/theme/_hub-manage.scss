@@ -57,20 +57,31 @@
     }
     &.error{
         top: 152px;
+        border: 0.7px solid rgba(211, 110, 46, 0.53);
         .toast-body{
             .toast-wrap{
                 .toast-img{
                     border: 1.5px solid #D36E2E;
+                    i.exclam{
+                        color:  #D36E2E;
+                        font-size: 14px;
+                    }
                 }
             }
         }
     }
     &.wait{
         top: 243px;
+        border: 0.7px solid rgba(255, 219, 0, 0.53);
         .toast-body{
             .toast-wrap{
                 .toast-img{
-                    border: 1.5px solid #FFDB00;
+                    // border: 1.5px solid #FFDB00;
+                    border: none;
+                    i.clock-ic{
+                        color:  #FFDB00;
+                        font-size: 30px;
+                    }
                 }
             }
         }

@@ -11376,18 +11376,25 @@ hr {
       color: #1391FF;
       text-shadow: none; }
   #schedulemodal .modal-dialog .modal-content .modal-body {
-    padding: 16px; }
-    #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item {
-      margin-right: 0px;
-      padding-bottom: 10px; }
-      #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link {
-        padding: 0px;
-        border-right: 1px solid #FFFFFF;
-        padding-right: 31px;
-        opacity: 0.5; }
-        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link.active {
-          border-bottom: 0px;
-          opacity: 1; }
+    padding: 0px; }
+    #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab {
+      padding-top: 24px; }
+      #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item {
+        margin-right: 0px;
+        padding-bottom: 10px; }
+        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link {
+          padding: 0px;
+          border-right: 1px solid;
+          border-right-color: rgba(255, 255, 255, 0.5);
+          padding-right: 31px;
+          opacity: 0.5; }
+          #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link.active {
+            border-bottom: 0px;
+            opacity: 1; }
+        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item:last-child .nav-link {
+          padding-left: 30px;
+          border-right: none;
+          padding-right: none; }
     #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report {
       padding: 30px 0; }
       #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row {
@@ -11395,6 +11402,14 @@ hr {
         align-items: center; }
         #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .lside {
           width: 170px; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .lside p {
+            color: #FFFFFF;
+            font-family: "Avenir";
+            margin: 20px 0 0;
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 0;
+            line-height: 20px; }
         #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside {
           display: flex; }
           #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist p {
@@ -11410,7 +11425,8 @@ hr {
       padding: 30px 0; }
   #schedulemodal .modal-dialog .modal-content .modal-footer {
     border-top: 1px solid;
-    border-top-color: rgba(151, 151, 151, 0.25); }
+    border-top-color: rgba(151, 151, 151, 0.25);
+    padding-bottom: 0px; }
     #schedulemodal .modal-dialog .modal-content .modal-footer .modal-ok {
       background-color: #1391FF;
       border-radius: 2px;
@@ -11471,12 +11487,20 @@ hr {
         line-height: 16px;
         margin: 0px; }
   .test-toast.error {
-    top: 152px; }
+    top: 152px;
+    border: 0.7px solid rgba(211, 110, 46, 0.53); }
     .test-toast.error .toast-body .toast-wrap .toast-img {
       border: 1.5px solid #D36E2E; }
+      .test-toast.error .toast-body .toast-wrap .toast-img i.exclam {
+        color: #D36E2E;
+        font-size: 14px; }
   .test-toast.wait {
-    top: 243px; }
+    top: 243px;
+    border: 0.7px solid rgba(255, 219, 0, 0.53); }
     .test-toast.wait .toast-body .toast-wrap .toast-img {
-      border: 1.5px solid #FFDB00; }
+      border: none; }
+      .test-toast.wait .toast-body .toast-wrap .toast-img i.clock-ic {
+        color: #FFDB00;
+        font-size: 30px; }
 
 /*# sourceMappingURL=style.css.map */
