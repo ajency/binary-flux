@@ -912,14 +912,14 @@
                                     <div class="fist">
                                         <p>Date</p>                                    
                                         <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                                            <input class="form-control date-pick1" type="text" readonly />
+                                            <input class="form-control date-pick1" type="text" readonly value="23-Oct, 2020"/>
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                                         </div>
                                     </div>                                    
                                     <div class="fist">
                                         <p>Time</p>                                    
                                         <div class="input-group date" id="timepicker1" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input date-pick1" data-toggle="datetimepicker" data-target="#timepicker1"/>
+                                            <input type="text" class="form-control datetimepicker-input date-pick1" data-toggle="datetimepicker" data-target="#timepicker1" value="10:10 AM"/>
                                             <!-- <div class="input-group-append"  >
                                                 <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
                                             </div> -->
@@ -933,93 +933,118 @@
                 </div>
                 <div class="tab-pane active" id="recurring" role="tabpanel" aria-labelledby="profile-tab">
                     <form action="/">
-                        <div class="recur-report">                    
-                            <div class="s-row">
-                                <div class="l-side">
-                                    <p class="topik">Frequency</p>
-                                    <!-- <label for="day-sett" class="col-form-label topik">Frequency</label> -->
-                                    <div class="drpdwn-dtsrc" id="day-sett">
-                                        <div class="drop-display">
-                                            <div class="left">                                                
-                                                <p class="capt-txt">Daily</p>
-                                            </div>
-                                            <div class="right">
-                                                <img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
-                                                <img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
-                                            </div>
-                                            
-                                        </div>
-                                        <ul class="drop-list">
-                                            <li>
-                                                <div class="left">                                              
+                        <div class="recur-report"> 
+                            <div class="uppr-mode">
+                                <div class="s-row">
+                                    <div class="l-side">
+                                        <p class="topik">Frequency</p>
+                                        <!-- <label for="day-sett" class="col-form-label topik">Frequency</label> -->
+                                        <div class="drpdwn-dtsrc" id="day-sett">
+                                            <div class="drop-display">
+                                                <div class="left">                                                
                                                     <p class="capt-txt">Daily</p>
                                                 </div>
-                                                <img src="/binary-flux/images/uparrow.png" class="top-arrw" />
-                                            </li>
-                                            <li>
-                                                <div class="left">                                               
-                                                    <p class="capt-txt">Weekly</p>
+                                                <div class="right">
+                                                    <img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
+                                                    <img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
                                                 </div>
-                                            </li>
-                                            <li>
-                                                <div class="left">                                         
-                                                    <p class="capt-txt">Monthly</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="left">                                         
-                                                    <p class="capt-txt">Hourly</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="left">                                         
-                                                    <p class="capt-txt">Minutes</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="left">                                         
-                                                    <p class="capt-txt">Seconds</p>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                
+                                            </div>
+                                            <ul class="drop-list">
+                                                <li>
+                                                    <div class="left">                                              
+                                                        <p class="capt-txt">Daily</p>
+                                                    </div>
+                                                    <img src="/binary-flux/images/uparrow.png" class="top-arrw" />
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                               
+                                                        <p class="capt-txt">Weekly</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                         
+                                                        <p class="capt-txt">Monthly</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                         
+                                                        <p class="capt-txt">Hourly</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                         
+                                                        <p class="capt-txt">Minutes</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                         
+                                                        <p class="capt-txt">Seconds</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="l-side">
+                                        <!-- <p class="topik">Repeats Every</p> -->
+                                        <label for="repeat-days" class="col-form-label topik">Repeats Every</label>                                                                      
+                                        <div class="inp-valu">
+                                            <input class="form-control" type="number" value="2" id="repeat-days">
+                                            <div class="unit-fixer">
+                                                Days
+                                            </div>
+                                        </div>                              
                                     </div>
                                 </div>
-                                <div class="l-side">
-                                    <!-- <p class="topik">Repeats Every</p> -->
-                                    <label for="repeat-days" class="col-form-label topik">Repeats Every</label>                                                                      
-                                    <div class="inp-valu">
-                                        <input class="form-control" type="number" value="2" id="repeat-days">
-                                        <div class="unit-fixer">
-                                            Days
+                                <div class="s-row">
+                                    <div class="l-side">
+                                        <p class="topik">Starts After</p>                                   
+                                        <div class="fist">
+                                            <p>Date</p>                                    
+                                            <div id="datepicker2" class="input-group date" data-date-format="mm-dd-yyyy">
+                                                <input class="form-control date-pick1" type="text" readonly value="23-Oct, 2020"/>
+                                                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                            </div>
                                         </div>
-                                    </div>                              
+                                    </div>
+                                    <div class="l-side">                                
+                                        <label for="repeat-days" class="col-form-label topik mw-79"></label>                                                                      
+                                        <div class="fist">
+                                            <p>Time</p>                                    
+                                            <div class="input-group date" id="timepicker2" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input date-pick1" data-toggle="datetimepicker" data-target="#timepicker2" value="10:10 AM"/>
+                                                <!-- <div class="input-group-append"  >
+                                                    <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                                </div> -->
+                                            </div>
+                                        </div>                             
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="s-row">
-                                <div class="l-side">
-                                    <p class="topik">Starts After</p>                                   
-                                    <div class="fist">
-                                        <p>Date</p>                                    
-                                        <div id="datepicker2" class="input-group date" data-date-format="mm-dd-yyyy">
-                                            <input class="form-control date-pick1" type="text" readonly />
+                            </div>                   
+                            <div class="lower-mode">
+                                <h3>Ends on</h3>
+                                <div class="time-mode">
+                                    <div class="inp-row">
+                                        <input type="radio" class="" value="never" id="never" name="grp1" checked />
+                                        <label for="never" class="time-line">Never</label>
+                                    </div>
+                                    <div class="inp-row">
+                                        <div class="fix-date">
+                                            <input type="radio" class="" value="fixeddate" id="fixeddate" name="grp1"/>
+                                            <label for="fixeddate" class="time-line">Fixed Date</label>
+                                        </div>
+                                        <div id="datepicker3" class="input-group date" data-date-format="mm-dd-yyyy">
+                                            <input class="form-control date-pick1" type="text" readonly value="23-Oct, 2020"/>
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                        </div>
+                                        </div>                                        
                                     </div>
-                                </div>
-                                <div class="l-side">                                
-                                    <label for="repeat-days" class="col-form-label topik mw-79"></label>                                                                      
-                                    <div class="fist">
-                                        <p>Time</p>                                    
-                                        <div class="input-group date" id="timepicker2" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input date-pick1" data-toggle="datetimepicker" data-target="#timepicker2"/>
-                                            <!-- <div class="input-group-append"  >
-                                                <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
-                                            </div> -->
-                                        </div>
-                                    </div>                             
+                                    <div class="inp-row">
+                                        <input type="radio" class="" value="fixedno" id="fixedno" name="grp1"/>
+                                        <label for="fixedno" class="time-line">Fixed no of Occurences</label>
+                                    </div>
+
                                 </div>
                             </div>
-
 
                         </div>
                     </form>
@@ -1223,6 +1248,10 @@
         });
 
         $j( "#datepicker2" ).datepicker({
+            format: 'd-M, yyyy'
+        });
+
+        $j( "#datepicker3" ).datepicker({
             format: 'd-M, yyyy'
         });
 

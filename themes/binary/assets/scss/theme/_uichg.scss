@@ -252,7 +252,7 @@
         }
         .modal-content{
             padding: 20px;
-            height: 616px;
+            min-height: 616px;
             .modal-header{
                 margin: 0px;
                 padding: 0 0 16px;
@@ -456,64 +456,52 @@
                         }
                         .recur-report{
                             padding: 30px 0;
-                            .s-row{
-                                display: flex;
-                                margin-bottom: 30px;
-                                // justify-content: space-between;
-                                .l-side{
+                            .uppr-mode{
+                                padding-bottom: 50px;
+                                border-bottom: 1px solid;
+                                border-bottom-color: rgba(151,151,151, 0.25);
+                                .s-row{
                                     display: flex;
-                                    align-items: center;
-                                    margin-right: 60px;
-                                    .topik{
-                                        margin: 0 25px 0 0;
-                                        min-width: 66px;                                        
-                                    }
-                                    .mw-79{
-                                        min-width: 79px;
-                                    }
-                                    label.topik{
-                                        cursor: pointer;
-                                    }
-                                    .inp-valu{
+                                    margin-bottom: 30px;
+                                    // justify-content: space-between;
+                                    .l-side{
                                         display: flex;
-                                        input{
-                                            width: 123px;
+                                        align-items: center;
+                                        margin-right: 60px;
+                                        .topik{
+                                            margin: 0 25px 0 0;
+                                            min-width: 66px;                                        
                                         }
-                                        .unit-fixer{
-                                            width: 81px;
-                                            background-color: #35374F;                                           
-                                            opacity: 0.75;
-                                            border-radius: 0 2px 2px 0;
+                                        .mw-79{
+                                            min-width: 79px;
+                                        }
+                                        label.topik{
+                                            cursor: pointer;
+                                        }
+                                        .inp-valu{
                                             display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            font-size: 12px;
-                                            font-weight: 900;
-                                            color: #FFFFFF;
-                                            font-family: "Avenir";
-                                            letter-spacing: 0;
-                                            line-height: 16px;
-                                        }
-                                    }                                    
-                                    .drpdwn-dtsrc{
-                                        .drop-display{
-                                            width: 203px;
-                                            .left{
-                                                .capt-txt{
-                                                    margin-left: 0px;
-                                                    color: #FFFFFF;
-                                                    font-family: "Avenir";
-                                                    font-size: 12px;
-                                                    font-weight: 300;
-                                                    letter-spacing: 0;
-                                                    line-height: 16px;
-                                                }
+                                            input{
+                                                width: 123px;
                                             }
-                                        }
-                                        .drop-list{
-                                            width: 203px;
-                                            li{
-                                                padding: 5px 10px;
+                                            .unit-fixer{
+                                                width: 81px;
+                                                background-color: #35374F;                                           
+                                                opacity: 0.75;
+                                                border-radius: 0 2px 2px 0;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                font-size: 12px;
+                                                font-weight: 900;
+                                                color: #FFFFFF;
+                                                font-family: "Avenir";
+                                                letter-spacing: 0;
+                                                line-height: 16px;
+                                            }
+                                        }                                    
+                                        .drpdwn-dtsrc{
+                                            .drop-display{
+                                                width: 203px;
                                                 .left{
                                                     .capt-txt{
                                                         margin-left: 0px;
@@ -525,27 +513,90 @@
                                                         line-height: 16px;
                                                     }
                                                 }
-                                                &:hover{
-                                                    background-color: rgba(19,145,255,0.14);
+                                            }
+                                            .drop-list{
+                                                width: 203px;
+                                                li{
+                                                    padding: 5px 10px;
+                                                    .left{
+                                                        .capt-txt{
+                                                            margin-left: 0px;
+                                                            color: #FFFFFF;
+                                                            font-family: "Avenir";
+                                                            font-size: 12px;
+                                                            font-weight: 300;
+                                                            letter-spacing: 0;
+                                                            line-height: 16px;
+                                                        }
+                                                    }
+                                                    &:hover{
+                                                        background-color: rgba(19,145,255,0.14);
+                                                    }
                                                 }
                                             }
                                         }
-                                    }
-                                    &:last-child{
-                                        margin-right: 0px;
-                                    }
-                                    .fist{
-                                        p{
-                                            margin: 0 0 6px;
+                                        &:last-child{
+                                            margin-right: 0px;
                                         }
-                                        .input-group{
-                                            width: 204px;
-                                            .date-pick1{
-                                                background-color: #191A35;                                                                                                
-                                            }                                            
+                                        .fist{
+                                            p{
+                                                margin: 0 0 6px;
+                                            }
+                                            .input-group{
+                                                width: 204px;
+                                                .date-pick1{
+                                                    background-color: #191A35;                                                                                                
+                                                }                                            
+                                            }
+                                            &:last-child{
+                                                margin-right: 0px;                                                                                       
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .lower-mode{
+                                padding: 21px 0 0;
+                                h3{
+                                    color: #FFFFFF;
+                                    font-family: "Avenir";
+                                    font-size: 15px;
+                                    font-weight: 900;
+                                    letter-spacing: 0;
+                                    line-height: 20px;
+                                }
+                                .time-mode{
+                                    .inp-row{
+                                        display: flex;
+                                        align-items: center;
+                                        margin-bottom: 21px;
+                                        .time-line{
+                                            margin: 0px;
+                                            margin-left: 10px;
+                                            cursor: pointer;
+                                            color: #FFFFFF;
+                                            opacity: 0.5;
+                                            font-family: "Avenir";
+                                            font-size: 12px;
+                                            font-weight: 900;
+                                            letter-spacing: 0;
+                                            line-height: 16px;
                                         }
                                         &:last-child{
-                                            margin-right: 0px;                                                                                       
+                                            margin-bottom: 0px;
+                                        }
+                                        .fix-date{
+                                            display: flex;
+                                            align-items: center;
+                                            min-width: 184px;
+                                            margin-right: 10px;
+                                            // margin-bottom: 21px;                                            
+                                        }
+                                        .input-group{
+                                            width: 203px;
+                                            .date-pick1{
+                                                background-color: #191A35;                                                                                                
+                                            }
                                         }
                                     }
                                 }
