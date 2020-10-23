@@ -11445,14 +11445,15 @@ hr {
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .inp-valu {
               display: flex; }
               #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .inp-valu input {
-                width: 123px; }
+                width: 123px;
+                background-color: #191A35; }
               #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .inp-valu .unit-fixer {
                 width: 81px;
                 background-color: #35374F;
                 opacity: 0.75;
                 border-radius: 0 2px 2px 0;
                 display: flex;
-                justify-content: center;
+                padding: 10px;
                 align-items: center;
                 font-size: 12px;
                 font-weight: 900;
@@ -11494,6 +11495,31 @@ hr {
                 background-color: #191A35; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist:last-child {
               margin-right: 0px; }
+        #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show {
+          display: none;
+          align-items: center;
+          margin-bottom: 25px; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show p {
+            margin: 0px;
+            min-width: 66px; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days {
+            display: flex;
+            align-items: center;
+            margin-left: 42px; }
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday {
+              margin-right: 40px; }
+              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday label {
+                margin: 0 0 0 8px;
+                cursor: pointer;
+                color: #FFFFFF;
+                font-family: "Avenir";
+                font-size: 15px;
+                font-weight: 300;
+                letter-spacing: 0;
+                line-height: 20px;
+                opacity: 0.5; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show.active {
+            display: flex; }
       #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode {
         padding: 21px 0 0; }
         #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode h3 {

@@ -482,6 +482,7 @@
                                             display: flex;
                                             input{
                                                 width: 123px;
+                                                background-color: #191A35;
                                             }
                                             .unit-fixer{
                                                 width: 81px;
@@ -489,7 +490,7 @@
                                                 opacity: 0.75;
                                                 border-radius: 0 2px 2px 0;
                                                 display: flex;
-                                                justify-content: center;
+                                                padding: 10px;
                                                 align-items: center;
                                                 font-size: 12px;
                                                 font-weight: 900;
@@ -552,6 +553,38 @@
                                                 margin-right: 0px;                                                                                       
                                             }
                                         }
+                                    }
+                                }
+                                .weekly-show{
+                                    // display: flex;
+                                    display: none;
+                                    align-items: center;
+                                    margin-bottom: 25px;
+                                    p{
+                                        margin: 0px;
+                                        min-width: 66px;
+                                    }
+                                    .days{
+                                        display: flex;
+                                        align-items: center;
+                                        margin-left: 42px;
+                                        .weekday{
+                                            margin-right: 40px;
+                                            label{
+                                                margin: 0 0 0 8px;
+                                                cursor: pointer;
+                                                color: #FFFFFF;
+                                                font-family: "Avenir";
+                                                font-size: 15px;
+                                                font-weight: 300;
+                                                letter-spacing: 0;
+                                                line-height: 20px;
+                                                opacity: 0.5;
+                                            }
+                                        }
+                                    }
+                                    &.active{
+                                        display: flex;
                                     }
                                 }
                             }
