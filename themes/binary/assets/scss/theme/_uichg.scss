@@ -251,7 +251,11 @@
             max-width: 838px;
         }
         .modal-content{
+            padding: 20px;
+            height: 616px;
             .modal-header{
+                margin: 0px;
+                padding: 0 0 16px;
                 .left{
                     display: flex;
                     align-items: center;
@@ -272,7 +276,7 @@
                             border-radius: 2px;
                             justify-content: space-between;
                             align-items: center;
-                            padding: 2px 10px;
+                            padding: 7px 10px;
                             width: 264px;
                             cursor: pointer;
                             .left{
@@ -378,7 +382,11 @@
                             }
                         }
                     }
-                }                
+                }
+                .close{
+                    color: #1391FF;
+                    text-shadow: none;
+                }               
             }
             .modal-body{
                 padding: 16px;
@@ -396,11 +404,12 @@
                 .tab-content{
                     .tab-pane{
                         .onetime-report{
+                            padding: 30px 0;
                             .s-row{
                                 display: flex;
                                 align-items: center;
                                 .lside{
-
+                                    width: 170px;
                                 }
                                 .rside{
                                     display: flex;
@@ -410,6 +419,13 @@
                                         }
                                         .input-group{
                                             width: 204px;
+                                            .date-pick1{
+                                                background-color: #191A35;
+                                                margin-right: 28px;
+                                                &:last-child{
+                                                    margin-right: 0px;
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -420,7 +436,23 @@
                         }
                     }
                 }
-            }           
+            }
+            .modal-footer{
+                border-top: 1px solid;
+                border-top-color: rgba(151, 151, 151, 0.25);
+                .modal-ok{
+                    background-color: #1391FF;
+                    border-radius: 2px;
+                    width: 120px;
+                    height: 30px;
+                    color: #0A0C1B;
+                    font-family: "Avenir";
+                    font-size: 12px;
+                    font-weight: 900;
+                    letter-spacing: 0;
+                    line-height: 16px;
+                }
+            }      
         }
     }
 }
