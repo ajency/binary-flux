@@ -5,12 +5,13 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
 	<link type="image/x-icon" href="/binary-flux/images/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha512-PMjWzHVtwxdq7m7GIxBot5vdxUY+5aKP9wpKtvnNBZrVv1srI8tU6xvFMzG8crLNcMj/8Xl/WWmo/oAP/40p1g==" crossorigin="anonymous" />
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.c5d2fea7304612dcd9f448400ec63cd0d30d25e5d9634ceb5e9bc2ba1265c9f1.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.9ebb560ae1973a42ac552d048a85d54914371a56e33e1ed3c715ede9735f9b24.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -905,30 +906,34 @@
               
             <div class="tab-content">
                 <div class="tab-pane active" id="onetime" role="tabpanel" aria-labelledby="home-tab">
-                    <div class="onetime-report">
-                        <div class="s-row">
-                            <div class="lside">
-                                <p>Schedule on</p>
-                            </div>
-                            <div class="rside">
-                                <div class="fist">
-                                    <p>Date</p>                                    
-                                    <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                                        <input class="form-control date-pick1" type="text" readonly />
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                    <form action="/">
+                        <div class="onetime-report">
+                            <div class="s-row">
+                                <div class="lside">
+                                    <p>Schedule on</p>
+                                </div>
+                                <div class="rside">
+                                    <div class="fist">
+                                        <p>Date</p>                                    
+                                        <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                                            <input class="form-control date-pick1" type="text" readonly />
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="fist">
+                                        <p>Time</p>                                    
+                                        <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
+                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                                <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="fist">
-                                    <p>Date</p>                                    
-                                    <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                                        <input class="form-control date-pick1" type="text" readonly />
-                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                    </div>
-                                </div>
-                                
                             </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="tab-pane " id="recurring" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="recur-report">                    
@@ -960,7 +965,9 @@
 
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js" integrity="sha512-2JBCbWoMJPH+Uj7Wq5OLub8E5edWHlTM4ar/YJkZh3plwB2INhhOC3eDoqHm1Za/ZOSksrLlURLoyXVdfQXqwg==" crossorigin="anonymous"></script>
 
 
 
@@ -1125,9 +1132,7 @@
             $(this).tab('show')
         });
 
-        
-
-        
+                
 
     });
 
@@ -1137,9 +1142,17 @@
 <script>
     var $j = jQuery.noConflict();
     $j( function() {
-        $j( "#datepicker1" ).datepicker();
+        $j( "#datepicker1" ).datepicker({
+            format: 'd-M, yyyy'
+        });
+
+        $j('#datetimepicker3').datetimepicker({
+            format: 'LT'
+        });
     } );
 </script>
+
+
 
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
