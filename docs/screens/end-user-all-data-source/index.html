@@ -10,7 +10,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.3ae3267a1fd5a57294149312b3a986578dac0b026167dcf2fdd473273abc3b11.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.c5d2fea7304612dcd9f448400ec63cd0d30d25e5d9634ceb5e9bc2ba1265c9f1.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -895,16 +895,16 @@
         <div class="modal-body">
             <ul class="nav nav-tabs task-tab" id="reportsTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link " data-toggle="tab" role="tab" href="#onetime">ONE-TIME REPORT RUN</a>
+                  <a class="nav-link active" data-toggle="tab" role="tab" href="#onetime">ONE-TIME REPORT RUN</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" role="tab" href="#recurring">RECURRING REPORTS RUN</a>
+                  <a class="nav-link " data-toggle="tab" role="tab" href="#recurring">RECURRING REPORTS RUN</a>
                 </li>
                 
             </ul>
               
             <div class="tab-content">
-                <div class="tab-pane" id="onetime" role="tabpanel" aria-labelledby="home-tab">
+                <div class="tab-pane active" id="onetime" role="tabpanel" aria-labelledby="home-tab">
                     <div class="onetime-report">
                         <div class="s-row">
                             <div class="lside">
@@ -914,15 +914,23 @@
                                 <div class="fist">
                                     <p>Date</p>                                    
                                     <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                                        <input class="form-control" type="text" readonly />
+                                        <input class="form-control date-pick1" type="text" readonly />
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                    </div>
+                                </div>
+                                <div class="fist">
+                                    <p>Date</p>                                    
+                                    <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
+                                        <input class="form-control date-pick1" type="text" readonly />
                                         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                                     </div>
                                 </div>
                                 
                             </div>
+                        </div>
                     </div>
                 </div>
-                <div class="tab-pane active" id="recurring" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-pane " id="recurring" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="recur-report">                    
                         <div class="s-row">
                             <div class="l-side">
@@ -940,7 +948,7 @@
 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-default modal-ok" data-dismiss="modal">OK</button>
         </div>
       </div>
   
