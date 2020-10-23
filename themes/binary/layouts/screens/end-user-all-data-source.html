@@ -915,27 +915,21 @@
                                             <input class="form-control date-pick1" type="text" readonly />
                                             <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                                         </div>
-                                    </div>
-                                    <!-- <div class="fist">
-                                        <p>Date</p>                                    
-                                        <div id="datepicker1" class="input-group date" data-date-format="mm-dd-yyyy">
-                                            <input class="form-control date-pick1" type="text" readonly />
-                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-                                        </div>
-                                    </div> -->
+                                    </div>                                    
                                     <div class="fist">
                                         <p>Time</p>                                    
-                                        <div class="input-group date" id="datetimepicker3" data-target-input="nearest">
-                                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker3"/>
-                                            <div class="input-group-append" data-target="#datetimepicker3" data-toggle="datetimepicker">
+                                        <div class="input-group date" id="timepicker1" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input date-pick1" data-toggle="datetimepicker" data-target="#timepicker1"/>
+                                            <!-- <div class="input-group-append"  >
                                                 <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </form>
+
                 </div>
                 <div class="tab-pane " id="recurring" role="tabpanel" aria-labelledby="profile-tab">
                     <div class="recur-report">                    
@@ -1148,7 +1142,7 @@
             format: 'd-M, yyyy'
         });
 
-        $j('#datetimepicker3').datetimepicker({
+        $j('#timepicker1').datetimepicker({
             format: 'LT'
         });
     } );

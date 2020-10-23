@@ -11412,15 +11412,16 @@ hr {
             line-height: 20px; }
         #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside {
           display: flex; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist p {
-            margin: 0 0 6px; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group {
-            width: 204px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .date-pick1 {
-              background-color: #191A35;
-              margin-right: 28px; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .date-pick1:last-child {
-                margin-right: 0px; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist {
+            margin-right: 28px; }
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist p {
+              margin: 0 0 6px; }
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group {
+              width: 204px; }
+              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .date-pick1 {
+                background-color: #191A35; }
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist:last-child {
+              margin-right: 0px; }
     #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report {
       padding: 30px 0; }
   #schedulemodal .modal-dialog .modal-content .modal-footer {
