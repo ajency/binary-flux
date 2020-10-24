@@ -413,6 +413,9 @@
                                 padding-right: none;
                             }
                         }
+                        &.active{
+                            border-bottom: 3px solid #1391FF;
+                        }
                     }
                 }
                 .tab-content{

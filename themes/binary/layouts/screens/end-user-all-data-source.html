@@ -873,13 +873,13 @@
                     <li>
                         <div class="left">
                             <img src="/binary-flux/images/microsoft.svg" class="capt-img"/>
-                            <p class="capt-txt">Amazon Web Service</p>
+                            <p class="capt-txt">Microsoft</p>
                         </div>
                     </li>
                     <li>
                         <div class="left">
                             <img src="/binary-flux/images/splunk-vector-logo.svg" class="capt-img"/>
-                            <p class="capt-txt">Amazon Web Service</p>
+                            <p class="capt-txt">Splunk</p>
                         </div>
                     </li>
                 </ul>
@@ -894,7 +894,7 @@
                 <li class="nav-item">
                   <a class="nav-link " data-toggle="tab" role="tab" href="#onetime">ONE-TIME REPORT RUN</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link active" data-toggle="tab" role="tab" href="#recurring">RECURRING REPORTS RUN</a>
                 </li>
                 
@@ -1303,8 +1303,14 @@
 
 
         $('#reportsTab a').on('click', function (e) {
-            e.preventDefault()
-            $(this).tab('show')
+            e.preventDefault();
+            $(this).tab('show');
+        });
+
+        $('#reportsTab li').on('click', function () {
+            // e.preventDefault();
+            $('#reportsTab li').removeClass('active');
+            $(this).addClass('active');
         });
 
         // Task scheduler modal screen change effects
