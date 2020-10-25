@@ -11808,6 +11808,8 @@ hr {
         .content .hub-info-cont .container .h-row .nam img {
           display: inline-block;
           margin-right: 6px; }
+        .content .hub-info-cont .container .h-row .nam .row-chkbox {
+          margin-right: 8px; }
         .content .hub-info-cont .container .h-row .nam p {
           margin: 0px;
           color: #FFFFFF;
@@ -11824,12 +11826,16 @@ hr {
         border-radius: 2px 2px 2px 0;
         height: 40px;
         margin-bottom: 0px; }
-        .content .hub-info-cont .container .h-row.hdr p {
+        .content .hub-info-cont .container .h-row.hdr .name p {
           color: #FFFFFF;
           font-family: "Nunito Sans";
           font-size: 11px;
           font-weight: bold;
           letter-spacing: 0;
           line-height: 15px; }
+        .content .hub-info-cont .container .h-row.hdr .name .row-chkbox {
+          margin-right: 20px; }
+  .content .hub-info-cont.channel .h-row {
+    padding: 16px 15px 16px 15px; }
 
 /*# sourceMappingURL=style.css.map */

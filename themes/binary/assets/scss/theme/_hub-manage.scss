@@ -159,9 +159,13 @@
                 .nam{
                     display: flex;
                     align-items: center;
+                    // margin-right: auto;
                     img{
                         display: inline-block;
                         margin-right: 6px;
+                    }
+                    .row-chkbox{
+                        margin-right: 8px;
                     }
                     p{
                         margin: 0px;
@@ -174,6 +178,9 @@
                             font-weight: bold;
                         }
                     }
+                    &:last-child{
+                        // margin-right: 0%;
+                    }
                 }
                 &.hdr{
                     box-shadow: 0 2px 40px 2px rgba(0,0,0,0.24);
@@ -182,15 +189,25 @@
                     border-radius: 2px 2px 2px 0;
                     height: 40px;
                     margin-bottom: 0px;
-                    p{
-                        color: #FFFFFF;
-                        font-family: "Nunito Sans";
-                        font-size: 11px;
-                        font-weight: bold;
-                        letter-spacing: 0;
-                        line-height: 15px;
-                    }
+                    .name{
+                        p{
+                            color: #FFFFFF;
+                            font-family: "Nunito Sans";
+                            font-size: 11px;
+                            font-weight: bold;
+                            letter-spacing: 0;
+                            line-height: 15px;
+                        }
+                        .row-chkbox{
+                            margin-right: 20px;
+                        }
+                    }                    
                 }
+            }
+        }
+        &.channel{
+            .h-row{
+                padding: 16px 15px 16px 15px;
             }
         }
     }
