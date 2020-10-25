@@ -20,7 +20,7 @@
             <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
 		</div>
 		<!-- Toasts Included -->
-		<div class="toast test-toast">			
+		<!-- <div class="toast test-toast">			
 			<div class="toast-body">
 				<div class="toast-wrap">
 					<div class="toast-img">
@@ -32,8 +32,8 @@
 					</div>
 				</div>			
 			</div>
-		</div>
-		<div class="toast test-toast error">			
+		</div> -->
+		<!-- <div class="toast test-toast error">			
 			<div class="toast-body">
 				<div class="toast-wrap">
 					<div class="toast-img">	
@@ -58,7 +58,7 @@
 					</div>
 				</div>			
 			</div>
-		</div>
+		</div> -->
     </div>
 </header>
 <div class="container-fluid p-0">
@@ -199,7 +199,7 @@
 					<div class="hubs-add">
 						<h3>HUB MANAGEMENT</h3>
 						<div class="addrem-hub">
-							<a href="#!" class="hubs-btn"><i class="icon-add-hub"></i>Add Hub</a>
+							<a href="#!" class="hubs-btn" data-toggle="modal" data-target="#addhubmodal" ><i class="icon-add-hub"></i>Add Hub</a>
 							<a href="#!" class="hubs-btn"><i class="icon-rem-hub"></i>Remove Hub</a>
 						</div>
 					</div>
@@ -220,7 +220,7 @@
 							<div class="h-row">
 								<div class="nam">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow2"/>
-									<img class="hub-editic" src="/binary-flux/images/edit-icon.svg" />
+									<a href="#"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
 									<label for="hrow2" class="hub-lavel">Hub 1</label>
 								</div>
 								<div class="nam">
@@ -233,7 +233,7 @@
 							<div class="h-row">
 								<div class="nam">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow3"/>
-									<img class="hub-editic" src="/binary-flux/images/edit-icon.svg" />
+									<a href="#"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
 									<label for="hrow3" class="hub-lavel">Hub 1</label>
 								</div>
 								<div class="nam">
@@ -246,7 +246,7 @@
 							<div class="h-row">
 								<div class="nam">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow4"/>
-									<img class="hub-editic" src="/binary-flux/images/edit-icon.svg" />
+									<a href="#"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
 									<label for="hrow4" class="hub-lavel">Hub 1</label>
 								</div>
 								<div class="nam">
@@ -259,7 +259,7 @@
 							<div class="h-row">
 								<div class="nam">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow5"/>
-									<img class="hub-editic" src="/binary-flux/images/edit-icon.svg" />
+									<a href="#"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
 									<label for="hrow5" class="hub-lavel">Hub 1</label>
 								</div>
 								<div class="nam">
@@ -284,8 +284,8 @@
 						<div class="container">
 							<div class="h-row hdr">
 								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox"/>
-									<p>NAME</p>
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow11"/>
+									<label for="hrow11" class="hub-lavel">NAME</label>
 								</div>
 								<div class="nam">
 									<p>AVG. MESSAGE SIZE</p>
@@ -299,9 +299,9 @@
 							</div>
 							<div class="h-row">
 								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox"/>
-									<img class="hub-editic" src="/binary-flux/images/edit-icon.svg" />
-									<p class="hub">Channel 1</p>
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
+									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
+									<label for="hrow6" class="hub-lavel">Channel 1</label>
 								</div>
 								<div class="nam">
 									<p>75 KB</p>
@@ -315,9 +315,9 @@
 							</div>
 							<div class="h-row">
 								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox"/>
-									<img class="hub-editic" src="/binary-flux/images/edit-icon.svg" />
-									<p class="hub">Channel 1</p>
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow7" />
+									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
+									<label for="hrow7" class="hub-lavel">Channel 1</label>
 								</div>
 								<div class="nam">
 									<p>75 KB</p>
@@ -331,9 +331,9 @@
 							</div>
 							<div class="h-row">
 								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox"/>
-									<img class="hub-editic" src="/binary-flux/images/edit-icon.svg" />
-									<p class="hub">Channel 1</p>
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow8" />
+									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
+									<label for="hrow8" class="hub-lavel">Channel 1</label>
 								</div>
 								<div class="nam">
 									<p>75 KB</p>
@@ -347,9 +347,9 @@
 							</div>
 							<div class="h-row">
 								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox"/>
-									<img class="hub-editic" src="/binary-flux/images/edit-icon.svg" />
-									<p class="hub">Channel 1</p>
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow9" />
+									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
+									<label for="hrow9" class="hub-lavel">Channel 1</label>
 								</div>
 								<div class="nam">
 									<p>75 KB</p>
@@ -363,9 +363,9 @@
 							</div>
 							<div class="h-row">
 								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox"/>
-									<img class="hub-editic" src="/binary-flux/images/edit-icon.svg" />
-									<p class="hub">Channel 1</p>
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow10" />
+									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
+									<label for="hrow10" class="hub-lavel">Channel 1</label>
 								</div>
 								<div class="nam">
 									<p>75 KB</p>
@@ -387,6 +387,102 @@
 		</div>
 	</div>
 </div>
+
+
+<!-- Add Hub Modal -->
+<div id="addhubmodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="left">
+            <h4 class="modal-title">ADD HUB</h4>
+		</div>          
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+			<form action="/">
+				<div class="add-hub-cont">
+					<div class="particular">
+						<p>Name*</p>
+						<input type="text" class="part-inp" value="" />
+					</div>
+				</div>
+				<div class="add-hub-cont">
+					<div class="particular">
+						<p>Address</p>
+						<input type="text" class="part-inp" value="" />
+					</div>
+				</div>
+				<div class="add-hub-cont">
+					<div class="particular">
+						<p>Port</p>
+						<input type="text" class="part-inp" value="" />
+					</div>
+				</div>
+
+			</form> 
+       
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default modal-ok" data-dismiss="modal">Done</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
+  <!-- Add Channel Modal -->
+<div id="addchannelmodal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="left">
+            <h4 class="modal-title">ADD HUB</h4>
+		</div>          
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <div class="modal-body">
+			<form action="/">
+				<div class="add-hub-cont">
+					<div class="particular">
+						<p>Name*</p>
+						<input type="text" class="part-inp" value="" />
+					</div>
+				</div>
+				<div class="add-hub-cont">
+					<div class="particular">
+						<p>Address</p>
+						<input type="text" class="part-inp" value="" />
+					</div>
+				</div>
+				<div class="add-hub-cont">
+					<div class="particular">
+						<p>Port</p>
+						<input type="text" class="part-inp" value="" />
+					</div>
+				</div>
+
+			</form> 
+       
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default modal-ok" data-dismiss="modal">Done</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
