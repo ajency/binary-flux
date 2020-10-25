@@ -1,3 +1,4 @@
+//Toast Styling
 .test-toast{
     border: 0.7px solid rgba(121,181,107,0.53);
     border-radius: 2px;
@@ -85,6 +86,109 @@
                     i.clock-ic{
                         color:  #FFDB00;
                         font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Hub management styling start
+
+.content{
+    .hub-mngmnt-cont{
+        .hub-upper{
+            .hubs-add{
+                padding: 20px;
+                background-color: #0F1226;
+                box-shadow: 0 2px 40px 2px rgba(0,0,0,0.24);
+                h3{
+                    color: #FFFFFF;
+                    font-family: "Nunito Sans";
+                    font-size: 12px;
+                    font-weight: 800;
+                    letter-spacing: 0;
+                    line-height: 16px;
+                }
+                .addrem-hub{
+                    display: flex;                    
+                    .hubs-btn{
+                        width: 116px;
+                        height: 30px;
+                        border: 1px solid #1391FF;
+                        border-radius: 2px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 20px;
+                        cursor: pointer;
+                        padding: 10px;
+                        i.icon-add-hub{
+                            margin-right: 5px;
+                        }
+                        i.icon-rem-hub{
+                            margin-right: 5px;
+                        }
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hub-info-cont{
+        padding: 10px 20px;
+        .container{
+            width: 100%;
+            max-width: 1100px;
+            padding: 0px;
+            margin-left: 0px;
+            .h-row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 16px 45.90% 16px 15px;
+                background-color: #151B39;
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.46);
+                border-radius: 2px;
+                opacity: 0.77;
+                margin-bottom: 6px;
+                height: 50px;
+                .nam{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        display: inline-block;
+                        margin-right: 6px;
+                    }
+                    p{
+                        margin: 0px;
+                        color: #FFFFFF;
+                        font-family: "Nunito Sans";
+                        font-size: 12px;                        
+                        letter-spacing: 0;
+                        line-height: 16px;
+                        &.hub{
+                            font-weight: bold;
+                        }
+                    }
+                }
+                &.hdr{
+                    box-shadow: 0 2px 40px 2px rgba(0,0,0,0.24);
+                    background-color: #20284C;
+                    opacity: 0.65;
+                    border-radius: 2px 2px 2px 0;
+                    height: 40px;
+                    margin-bottom: 0px;
+                    p{
+                        color: #FFFFFF;
+                        font-family: "Nunito Sans";
+                        font-size: 11px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 15px;
                     }
                 }
             }
