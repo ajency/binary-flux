@@ -159,13 +159,19 @@
                 .nam{
                     display: flex;
                     align-items: center;
+                    position: relative;
                     // margin-right: auto;
                     img{
                         display: inline-block;
-                        margin-right: 6px;
+                        // margin-right: 6px;
+                        position: absolute;
+                        left: 23px;
                     }
                     .row-chkbox{
                         margin-right: 8px;
+                        opacity: 0;
+                        position: absolute;
+                        left: -9999px;
                     }
                     p{
                         margin: 0px;
@@ -173,10 +179,57 @@
                         font-family: "Nunito Sans";
                         font-size: 12px;                        
                         letter-spacing: 0;
-                        line-height: 16px;
+                        line-height: 16px;                                               
                         &.hub{
                             font-weight: bold;
+                            position: relative;
+                            cursor: pointer;
+                            padding-left: 38px; 
+                            &:before{
+                                content: ' ';
+                                position: absolute;
+                                width: 17px;
+                                height: 17px;
+                                left: -1px;
+                                border: 1px solid #F0F0F0;
+                                border-radius: 2px;
+                            }
+                        }                        
+                    }
+                    input[type="checkbox"]:checked ~ label::after{
+                        transform: rotate(-45deg) scale(1);
+                    }
+                    label.hub-lavel{
+                        margin: 0px;
+                        color: #FFFFFF;
+                        font-family: "Nunito Sans";
+                        font-size: 12px;                        
+                        letter-spacing: 0;
+                        line-height: 16px;
+                        font-weight: bold;
+                        position: relative;
+                        cursor: pointer;
+                        padding-left: 38px;                            
+                        &::before{
+                            content: ' ';
+                            position: absolute;
+                            width: 17px;
+                            height: 17px;
+                            left: -1px;
+                            border: 1px solid #F0F0F0;
+                            border-radius: 2px;
                         }
+                        &::after{
+                            content: ' ';
+                            position: absolute;
+                            left: 3px;
+                            top: 4px;
+                            transform: rotate(-45deg) scale(0);
+                            width: 10px;
+                            height: 5px;
+                            border-left: 1px solid #FFFFFF;
+                            border-bottom: 1px solid #FFFFFF;
+                        }        
                     }
                     &:last-child{
                         // margin-right: 0%;
@@ -189,7 +242,7 @@
                     border-radius: 2px 2px 2px 0;
                     height: 40px;
                     margin-bottom: 0px;
-                    .name{
+                    .nam{
                         p{
                             color: #FFFFFF;
                             font-family: "Nunito Sans";
