@@ -11624,12 +11624,12 @@ hr {
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line::after {
               content: ' ';
               position: absolute;
-              left: 3px;
-              top: 3px;
+              left: 4px;
+              top: 3.5px;
               transform: scale(0);
               border-radius: 50%;
-              width: 8.5px;
-              height: 8.5px;
+              width: 7.5px;
+              height: 7.5px;
               background-color: #1391FF; }
           #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label::before {
             border: 2px solid #1391FF; }
