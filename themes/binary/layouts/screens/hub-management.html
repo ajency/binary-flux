@@ -9,10 +9,10 @@
 			</div>
 			<ul class="nav nav-tabs no-border pl-md-4 pr-md-3 blue-bg mr-l35" id="myTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab" href="#configureapi" role="tab" aria-controls="configure" aria-selected="true">Configure Web API</a>
+                    <a class="nav-link font-weight-bold pt-1 " id="configure-tab" data-toggle="tab" href="#configureapi" role="tab" aria-controls="configure" aria-selected="true">Configure Web API</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab" href="#hubmanage" role="tab" aria-controls="hubmanage" aria-selected="true">Hub management</a>
+                    <a class="nav-link font-weight-bold pt-1 active" id="getstarted-tab" data-toggle="tab" href="#hubmanage" role="tab" aria-controls="hubmanage" aria-selected="true">Hub management</a>
                 </li>
             </ul>
         </div>
@@ -20,7 +20,7 @@
             <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
 		</div>
 		<!-- Toasts Included -->
-		<!-- <div class="toast test-toast">			
+		<div class="toast test-toast">			
 			<div class="toast-body">
 				<div class="toast-wrap">
 					<div class="toast-img">
@@ -32,8 +32,8 @@
 					</div>
 				</div>			
 			</div>
-		</div> -->
-		<!-- <div class="toast test-toast error">			
+		</div>
+		<div class="toast test-toast error">			
 			<div class="toast-body">
 				<div class="toast-wrap">
 					<div class="toast-img">	
@@ -58,7 +58,7 @@
 					</div>
 				</div>			
 			</div>
-		</div> -->
+		</div>
     </div>
 </header>
 <div class="container-fluid p-0">
@@ -206,66 +206,66 @@
 					<div class="hub-info-cont">
 						<div class="container">
 							<div class="h-row hdr">
-								<div class="nam">
+								<div class="nam col1">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow1"/>
 									<label for="hrow1" class="hub-lavel">NAME</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>ADDRESS</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>PORT</p>
 								</div>
 							</div>
 							<div class="h-row">
-								<div class="nam">
+								<div class="nam col1">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow2"/>
 									<a href="#"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
 									<label for="hrow2" class="hub-lavel">Hub 1</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>192.168.20.2</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>tcp6</p>
 								</div>
 							</div>
 							<div class="h-row">
-								<div class="nam">
+								<div class="nam col1">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow3"/>
 									<a href="#"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
 									<label for="hrow3" class="hub-lavel">Hub 1</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>192.168.20.2</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>tcp6</p>
 								</div>
 							</div>
 							<div class="h-row">
-								<div class="nam">
+								<div class="nam col1">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow4"/>
 									<a href="#"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
 									<label for="hrow4" class="hub-lavel">Hub 1</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>192.168.20.2</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>tcp6</p>
 								</div>
 							</div>
 							<div class="h-row">
-								<div class="nam">
+								<div class="nam col1">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow5"/>
 									<a href="#"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
 									<label for="hrow5" class="hub-lavel">Hub 1</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>192.168.20.2</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>tcp6</p>
 								</div>
 							</div>
@@ -273,7 +273,7 @@
 					</div>
 				</div>
 				<div class="hub-upper ">
-					<div class="hubs-add">
+					<div class="hubs-add bg-remove">
 						<h3>CHANNEL MANAGEMENT</h3>
 						<div class="addrem-hub">
 							<a href="#!" class="hubs-btn" data-target="#addchannelmodal" data-toggle="modal" ><i class="icon-add-hub"></i>Add Hub</a>
@@ -283,100 +283,102 @@
 					<div class="hub-info-cont channel">
 						<div class="container">
 							<div class="h-row hdr">
-								<div class="nam">
+								<div class="nam col1">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow11"/>
 									<label for="hrow11" class="hub-lavel">NAME</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>AVG. MESSAGE SIZE</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>SEND/ RECEIVER BUFFER SIZE</p>
 								</div>
-								<div class="nam">
+								<div class="nam col4">
 									<p>HUBS ATTACHED</p>
 								</div>
 							</div>
 							<div class="h-row">
-								<div class="nam">
+								<div class="nam col1">
 									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
 									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
 									<label for="hrow6" class="hub-lavel">Channel 1</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>75 KB</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>32768 bytes</p>
 								</div>
-								<div class="nam">
+								<div class="nam col4">
 									<p>Hub1, Hub2, Hub3</p>
 								</div>
 							</div>
 							<div class="h-row">
-								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox" id="hrow7" />
+								<div class="nam col1">
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
 									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
-									<label for="hrow7" class="hub-lavel">Channel 1</label>
+									<label for="hrow6" class="hub-lavel">Channel 1</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>75 KB</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>32768 bytes</p>
 								</div>
-								<div class="nam">
+								<div class="nam col4">
 									<p>Hub1, Hub2, Hub3</p>
 								</div>
 							</div>
 							<div class="h-row">
-								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox" id="hrow8" />
+								<div class="nam col1">
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
 									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
-									<label for="hrow8" class="hub-lavel">Channel 1</label>
+									<label for="hrow6" class="hub-lavel">Channel 1</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>75 KB</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>32768 bytes</p>
 								</div>
-								<div class="nam">
+								<div class="nam col4">
 									<p>Hub1, Hub2, Hub3</p>
 								</div>
 							</div>
 							<div class="h-row">
-								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox" id="hrow9" />
+								<div class="nam col1">
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
 									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
-									<label for="hrow9" class="hub-lavel">Channel 1</label>
+									<label for="hrow6" class="hub-lavel">Channel 1</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>75 KB</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>32768 bytes</p>
 								</div>
-								<div class="nam">
+								<div class="nam col4">
 									<p>Hub1, Hub2, Hub3</p>
 								</div>
 							</div>
 							<div class="h-row">
-								<div class="nam">
-									<input type="checkbox" value="name" class="row-chkbox" id="hrow10" />
+								<div class="nam col1">
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
 									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
-									<label for="hrow10" class="hub-lavel">Channel 1</label>
+									<label for="hrow6" class="hub-lavel">Channel 1</label>
 								</div>
-								<div class="nam">
+								<div class="nam col2">
 									<p>75 KB</p>
 								</div>
-								<div class="nam">
+								<div class="nam col3">
 									<p>32768 bytes</p>
 								</div>
-								<div class="nam">
+								<div class="nam col4">
 									<p>Hub1, Hub2, Hub3</p>
 								</div>
 							</div>
+
+							
 
 							
 						</div>
@@ -466,6 +468,12 @@
 				<div class="add-hub-cont">
 					<div class="particular">
 						<p>Send/ Receiver buffer size</p>
+						<input type="text" class="part-inp" value="" />
+					</div>
+				</div>
+				<div class="add-hub-cont">
+					<div class="particular">
+						<p>Hubs Attached*</p>
 						<input type="text" class="part-inp" value="" />
 					</div>
 				</div>

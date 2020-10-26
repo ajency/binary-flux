@@ -893,9 +893,11 @@
             <ul class="nav nav-tabs task-tab" id="reportsTab" role="tablist">
                 <li class="nav-item">
                   <a class="nav-link " data-toggle="tab" role="tab" href="#onetime">ONE-TIME REPORT RUN</a>
+                  <div class="brdr-rt"></div>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link active" data-toggle="tab" role="tab" href="#recurring">RECURRING REPORTS RUN</a>
+                  <div class="brdr-rt"></div>
                 </li>
                 
             </ul>
@@ -1082,8 +1084,12 @@
                                         </div>                                        
                                     </div>
                                     <div class="inp-row">
-                                        <input type="radio" class="time-inp" value="fixedno" id="fixedno" name="grp1"/>
-                                        <label for="fixedno" class="time-line">Fixed no of Occurences</label>
+                                        <div class="fix-date">
+                                            <input type="radio" class="time-inp" value="fixedno" id="fixedno" name="grp1"/>
+                                            <label for="fixedno" class="time-line">Fixed no of Occurences</label>
+                                        </div>
+                                        
+                                        <input class="form-control qty-times" type="text" value="10 times"/>
                                     </div>
 
                                 </div>

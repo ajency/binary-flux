@@ -9,7 +9,8 @@
     width: 435.7px;
     position: absolute;
     bottom: -91px;
-    left: 50%;
+    // left: 50%;
+    left: -999px;
     transform: translate(-50%,0);
     z-index: 501;
     .toast-body{
@@ -91,6 +92,9 @@
             }
         }
     }
+    &.show{
+        left: 50%;
+    }
 }
 
 
@@ -135,6 +139,9 @@
                         }
                     }
                 }
+                &.bg-remove{
+                    background-color: transparent;
+                }
             }
         }
     }
@@ -149,7 +156,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 16px 45.90% 16px 15px;
+                padding: 16px 20% 16px 15px;
                 background-color: #151B39;
                 box-shadow: 0 2px 4px 0 rgba(0,0,0,0.46);
                 border-radius: 2px;
@@ -182,7 +189,9 @@
                         font-family: "Nunito Sans";
                         font-size: 12px;                        
                         letter-spacing: 0;
-                        line-height: 16px;                                               
+                        line-height: 16px;
+                        width: 100%;
+                        text-align: left;                                              
                         &.hub{
                             font-weight: bold;
                             position: relative;
@@ -236,6 +245,18 @@
                     }
                     &:last-child{
                         // margin-right: 0%;
+                    }
+                    &.col1{
+                        min-width: 94px;
+                    }
+                    &.col2{
+                        min-width: 108px;
+                    }
+                    &.col3{
+                        min-width: 161px;
+                    }
+                    &.col4{
+                        min-width: 102px;
                     }
                 }
                 &.hdr{
