@@ -347,7 +347,7 @@
                             li{
                                 list-style-type: none;
                                 display: flex;
-                                padding: 2px 10px;
+                                padding: 7px 10px;
                                 border-bottom: 1px solid #979797;
                                 background-color: #191A35;                        
                                 .left{
@@ -470,7 +470,19 @@
                                             width: 204px;
                                             .date-pick1{
                                                 background-color: #191A35;                                                                                                
-                                            }                                            
+                                            }
+                                            .tim-clock{
+                                                position: absolute;
+                                                font-size: 18px;
+                                                right: 8px;
+                                                top: 8px;
+                                            }
+                                            .da-calen{
+                                                position: absolute;
+                                                font-size: 17px;
+                                                right: 8px;
+                                                top: 8px;
+                                            }                                      
                                         }
                                         &:last-child{
                                             margin-right: 0px;                                                                                       
@@ -567,7 +579,7 @@
                                                         }
                                                     }
                                                     &:hover{
-                                                        background-color: rgba(19,145,255,0.14);
+                                                        background-color: rgba(19,145,255,1);
                                                     }
                                                 }
                                             }
@@ -583,7 +595,19 @@
                                                 width: 204px;
                                                 .date-pick1{
                                                     background-color: #191A35;                                                                                                
-                                                }                                            
+                                                }
+                                                .tim-clock{
+                                                    position: absolute;
+                                                    font-size: 18px;
+                                                    right: 8px;
+                                                    top: 8px;
+                                                }
+                                                .da-calen{
+                                                    position: absolute;
+                                                    font-size: 17px;
+                                                    right: 8px;
+                                                    top: 8px;
+                                                }                                 
                                             }
                                             &:last-child{
                                                 margin-right: 0px;                                                                                       
@@ -765,6 +789,12 @@
                                             width: 203px;
                                             .date-pick1{
                                                 background-color: #191A35;                                                                                                
+                                            }
+                                            .da-calen{
+                                                position: absolute;
+                                                font-size: 17px;
+                                                right: 8px;
+                                                top: 8px;
                                             }
                                         }
                                     }

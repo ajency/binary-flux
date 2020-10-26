@@ -11364,7 +11364,7 @@ hr {
           #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li {
             list-style-type: none;
             display: flex;
-            padding: 2px 10px;
+            padding: 7px 10px;
             border-bottom: 1px solid #979797;
             background-color: #191A35; }
             #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left {
@@ -11452,6 +11452,16 @@ hr {
               width: 204px; }
               #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .date-pick1 {
                 background-color: #191A35; }
+              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .tim-clock {
+                position: absolute;
+                font-size: 18px;
+                right: 8px;
+                top: 8px; }
+              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .da-calen {
+                position: absolute;
+                font-size: 17px;
+                right: 8px;
+                top: 8px; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist:last-child {
               margin-right: 0px; }
     #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report {
@@ -11527,7 +11537,7 @@ hr {
                   letter-spacing: 0;
                   line-height: 16px; }
                 #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list li:hover {
-                  background-color: rgba(19, 145, 255, 0.14); }
+                  background-color: #1391ff; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side:last-child {
               margin-right: 0px; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist p {
@@ -11536,6 +11546,16 @@ hr {
               width: 204px; }
               #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group .date-pick1 {
                 background-color: #191A35; }
+              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group .tim-clock {
+                position: absolute;
+                font-size: 18px;
+                right: 8px;
+                top: 8px; }
+              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group .da-calen {
+                position: absolute;
+                font-size: 17px;
+                right: 8px;
+                top: 8px; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist:last-child {
               margin-right: 0px; }
         #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show {
@@ -11679,6 +11699,11 @@ hr {
             width: 203px; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .input-group .date-pick1 {
               background-color: #191A35; }
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .input-group .da-calen {
+              position: absolute;
+              font-size: 17px;
+              right: 8px;
+              top: 8px; }
   #schedulemodal .modal-dialog .modal-content .modal-footer {
     border-top: 1px solid;
     border-top-color: rgba(151, 151, 151, 0.25);
