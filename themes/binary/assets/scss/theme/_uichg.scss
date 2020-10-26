@@ -585,16 +585,45 @@
                                         margin-left: 42px;
                                         .weekday{
                                             margin-right: 40px;
-                                            label{
-                                                margin: 0 0 0 8px;
+                                            position: relative;
+                                            label.wk-day-labl{
+                                                margin: 0px;
                                                 cursor: pointer;
                                                 color: #FFFFFF;
                                                 font-family: "Avenir";
                                                 font-size: 15px;
                                                 font-weight: 300;
+                                                padding-left: 25px;
                                                 letter-spacing: 0;
                                                 line-height: 20px;
-                                                opacity: 0.5;
+                                                opacity: 1;
+                                                &::before{
+                                                    content: ' ';
+                                                    position: absolute;
+                                                    left: 0px;
+                                                    width: 18px;
+                                                    height: 18px;                                                    
+                                                    background-color: #1391FF;
+                                                }
+                                                &::after{
+                                                    content: ' ';
+                                                    position: absolute;
+                                                    top: 6px;
+                                                    left: 3px;
+                                                    transform: rotate(-45deg) scale(0);
+                                                    width: 12px;
+                                                    height: 5px;
+                                                    border-left: 2px solid black;
+                                                    border-bottom: 2px solid black;
+                                                }
+                                            }
+                                            .wk-day{
+                                                position: absolute;
+                                                left: -9990px;
+                                                opacity: 0;
+                                            }
+                                            .wk-day:checked ~ label::after{
+                                                transform: rotate(-45deg) scale(1);
                                             }
                                         }
                                     }
