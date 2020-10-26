@@ -1294,8 +1294,8 @@
             dropdisplayimg2.attr('src', imgsrc2);
             dropdisplaytxt2.html(text2);
 
-            $('.drop-display').removeClass('shown');
-            $('.drop-list').removeClass('show');
+            $('#schedle-mod-drp .drop-display').removeClass('shown');
+            $('#schedle-mod-drp .drop-list').removeClass('show');
         });
 
         // Task scheduler modal frequency Dropdown Value Changer
@@ -1311,6 +1311,16 @@
 
             $('#day-sett .drop-display').removeClass('shown');
             $('#day-sett .drop-list').removeClass('show');
+        });
+
+        //Dropdown force closure on popup Close
+        $('#schedulemodal').on('show.bs.modal', function(e){
+            $('#day-sett .drop-display').removeClass('shown');
+            $('#day-sett .drop-list').removeClass('show');
+
+            $('#schedle-mod-drp .drop-display').removeClass('shown');
+            $('#schedle-mod-drp .drop-list').removeClass('show');
+
         });
 
 
