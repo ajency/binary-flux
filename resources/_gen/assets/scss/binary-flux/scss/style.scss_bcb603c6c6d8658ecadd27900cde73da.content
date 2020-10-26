@@ -11294,6 +11294,10 @@ hr {
     #schedulemodal .modal-dialog .modal-content .modal-header .left {
       display: flex;
       align-items: center; }
+      @media screen and (max-width: 768px) {
+        #schedulemodal .modal-dialog .modal-content .modal-header .left {
+          flex-direction: column;
+          align-items: flex-start; } }
       #schedulemodal .modal-dialog .modal-content .modal-header .left h4 {
         color: #FFFFFF;
         font-family: "Nunito Sans";
@@ -11302,6 +11306,9 @@ hr {
         letter-spacing: 0;
         line-height: 20px;
         margin-right: 52px; }
+        @media screen and (max-width: 768px) {
+          #schedulemodal .modal-dialog .modal-content .modal-header .left h4 {
+            margin-bottom: 10px; } }
       #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc {
         position: relative; }
         #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display {
@@ -11317,6 +11324,9 @@ hr {
             display: flex;
             justify-content: space-between;
             align-items: center; }
+            @media screen and (max-width: 768px) {
+              #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left {
+                flex-direction: row; } }
             #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left p {
               margin-bottom: 0px;
               margin-left: 20px;
@@ -11361,6 +11371,9 @@ hr {
               display: flex;
               justify-content: space-between;
               align-items: center; }
+              @media screen and (max-width: 768px) {
+                #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left {
+                  flex-direction: row; } }
               #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left p {
                 margin: 0 0 0 20px;
                 font-size: 15px;
@@ -11450,13 +11463,22 @@ hr {
         #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row {
           display: flex;
           margin-bottom: 30px; }
+          @media screen and (max-width: 768px) {
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row {
+              flex-direction: column; } }
           #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side {
             display: flex;
             align-items: center;
             margin-right: 60px; }
+            @media screen and (max-width: 768px) {
+              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side {
+                margin-right: 0px; } }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik {
               margin: 0 25px 0 0;
               min-width: 66px; }
+              @media screen and (max-width: 768px) {
+                #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik {
+                  min-width: 79px; } }
               #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik.mr-a23 {
                 margin-top: 23px; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .mw-79 {
@@ -11527,9 +11549,15 @@ hr {
             display: flex;
             align-items: center;
             margin-left: 42px; }
+            @media screen and (max-width: 768px) {
+              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days {
+                flex-wrap: wrap; } }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday {
               margin-right: 40px;
               position: relative; }
+              @media screen and (max-width: 768px) {
+                #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday {
+                  min-width: 54px; } }
               #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday label.wk-day-labl {
                 margin: 0px;
                 cursor: pointer;

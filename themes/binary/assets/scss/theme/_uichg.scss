@@ -259,6 +259,10 @@
                 .left{
                     display: flex;
                     align-items: center;
+                    @media screen and (max-width:768px) {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
                     h4{
                         color: #FFFFFF;
                         font-family: "Nunito Sans";
@@ -267,6 +271,9 @@
                         letter-spacing: 0;
                         line-height: 20px;
                         margin-right: 52px;
+                        @media screen and (max-width:768px) {
+                            margin-bottom: 10px;
+                        }
                     }
                     .drpdwn-dtsrc{
                         position: relative;
@@ -284,6 +291,9 @@
                                 justify-content: space-between;
                                 align-items: center;
                                 // width: 74px;
+                                @media screen and (max-width:768px) {
+                                    flex-direction: row;
+                                }
                                 p{
                                     margin-bottom: 0px;
                                     margin-left: 20px;
@@ -345,6 +355,9 @@
                                     justify-content: space-between;
                                     align-items: center;
                                     // width: 74px;
+                                    @media screen and (max-width:768px) {
+                                        flex-direction: row;
+                                    }
                                     p{
                                         margin: 0 0 0 20px;
                                         font-size: 15px;
@@ -474,15 +487,23 @@
                                 border-bottom-color: rgba(151,151,151, 0.25);
                                 .s-row{
                                     display: flex;
-                                    margin-bottom: 30px;
-                                    // justify-content: space-between;
+                                    margin-bottom: 30px;                                   
+                                    @media screen and (max-width:768px) {
+                                        flex-direction: column;
+                                    }
                                     .l-side{
                                         display: flex;
                                         align-items: center;
                                         margin-right: 60px;
+                                        @media screen and (max-width:768px) {
+                                            margin-right: 0px;
+                                        }
                                         .topik{
                                             margin: 0 25px 0 0;
                                             min-width: 66px;
+                                            @media screen and (max-width:768px) {
+                                                min-width: 79px;
+                                            }
                                             &.mr-a23{
                                                 margin-top: 23px;
                                             }                                  
@@ -491,7 +512,7 @@
                                             min-width: 79px;
                                         }
                                         label.topik{
-                                            cursor: pointer;
+                                            cursor: pointer;                                            
                                         }
                                         .inp-valu{
                                             display: flex;
@@ -583,9 +604,15 @@
                                         display: flex;
                                         align-items: center;
                                         margin-left: 42px;
+                                        @media screen and (max-width:768px) {
+                                            flex-wrap: wrap;
+                                        }
                                         .weekday{
                                             margin-right: 40px;
                                             position: relative;
+                                            @media screen and (max-width:768px) {
+                                                min-width: 54px;
+                                            }
                                             label.wk-day-labl{
                                                 margin: 0px;
                                                 cursor: pointer;
