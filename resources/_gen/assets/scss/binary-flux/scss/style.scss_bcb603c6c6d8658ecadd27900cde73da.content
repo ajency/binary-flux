@@ -7177,6 +7177,18 @@ a.text-error:hover, a.text-error:focus {
     .icon-hamburger span:last-child {
       margin-bottom: 0; }
 
+.icon-add-hub {
+  background: url("/binary-flux/images/plus.png") no-repeat;
+  background-size: 100%;
+  height: 13px;
+  width: 15px; }
+
+.icon-rem-hub {
+  background: url("/binary-flux/images/delete-hub.svg") no-repeat;
+  background-size: 100%;
+  height: 13.5px;
+  width: 10.5px; }
+
 .nav-tabs {
   border-bottom: 0;
   position: relative; }
@@ -11381,20 +11393,27 @@ hr {
       padding-top: 24px; }
       #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item {
         margin-right: 0px;
-        padding-bottom: 10px; }
+        display: flex;
+        align-items: flex-start; }
         #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link {
           padding: 0px;
-          border-right: 1px solid;
-          border-right-color: rgba(255, 255, 255, 0.5);
-          padding-right: 31px;
+          padding-bottom: 10px;
           opacity: 0.5; }
           #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link.active {
             border-bottom: 0px;
-            opacity: 1; }
+            opacity: 1;
+            border-bottom: 3px solid #1391FF; }
+        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .brdr-rt {
+          width: 31px;
+          height: 16px;
+          border-right: 1px solid rgba(255, 255, 255, 0.5);
+          margin-top: 3px; }
         #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item:last-child .nav-link {
-          padding-left: 30px;
+          margin-left: 30px;
           border-right: none;
           padding-right: none; }
+        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item:last-child .brdr-rt {
+          border-right: none; }
     #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report {
       padding: 30px 0; }
       #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row {
@@ -11438,6 +11457,8 @@ hr {
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik {
               margin: 0 25px 0 0;
               min-width: 66px; }
+              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik.mr-a23 {
+                margin-top: 23px; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .mw-79 {
               min-width: 79px; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side label.topik {
@@ -11550,10 +11571,14 @@ hr {
         #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row {
           display: flex;
           align-items: center;
-          margin-bottom: 21px; }
+          margin-bottom: 21px;
+          position: relative; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-inp {
+            opacity: 0;
+            position: absolute; }
           #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line {
             margin: 0px;
-            margin-left: 10px;
+            padding-left: 25px;
             cursor: pointer;
             color: #FFFFFF;
             opacity: 0.5;
@@ -11561,9 +11586,37 @@ hr {
             font-size: 12px;
             font-weight: 900;
             letter-spacing: 0;
-            line-height: 16px; }
+            line-height: 16px;
+            position: relative; }
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line::before {
+              content: ' ';
+              position: absolute;
+              left: 0px;
+              border-radius: 50%;
+              width: 15px;
+              height: 15px;
+              border: 2px solid #ffffff; }
+            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line::after {
+              content: ' ';
+              position: absolute;
+              left: 3px;
+              top: 3px;
+              transform: scale(0);
+              border-radius: 50%;
+              width: 8.5px;
+              height: 8.5px;
+              background-color: #1391FF; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label::before {
+            border: 2px solid #1391FF; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label::after {
+            transform: scale(1); }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label {
+            opacity: 1; }
           #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row:last-child {
             margin-bottom: 0px; }
+          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .qty-times {
+            width: 204px;
+            background-color: #191A35; }
           #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .fix-date {
             display: flex;
             align-items: center;
@@ -11682,7 +11735,7 @@ hr {
   width: 435.7px;
   position: absolute;
   bottom: -91px;
-  left: 50%;
+  left: -999px;
   transform: translate(-50%, 0);
   z-index: 501; }
   .test-toast .toast-body .toast-wrap {
@@ -11738,5 +11791,283 @@ hr {
       .test-toast.wait .toast-body .toast-wrap .toast-img i.clock-ic {
         color: #FFDB00;
         font-size: 30px; }
+  .test-toast.show {
+    left: 50%; }
+
+.content .hub-mngmnt-cont .hub-upper .hubs-add {
+  padding: 20px;
+  background-color: #0F1226;
+  box-shadow: 0 2px 40px 2px rgba(0, 0, 0, 0.24); }
+  .content .hub-mngmnt-cont .hub-upper .hubs-add h3 {
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 16px; }
+  .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub {
+    display: flex; }
+    .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn {
+      width: 116px;
+      height: 30px;
+      border: 1px solid #1391FF;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      cursor: pointer;
+      padding: 10px; }
+      .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn i.icon-add-hub {
+        margin-right: 5px; }
+      .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn i.icon-rem-hub {
+        margin-right: 5px; }
+      .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn:last-child {
+        margin-right: 0px; }
+  .content .hub-mngmnt-cont .hub-upper .hubs-add.bg-remove {
+    background-color: transparent; }
+
+.content .hub-info-cont {
+  padding: 10px 20px; }
+  .content .hub-info-cont .container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0px;
+    margin-left: 0px; }
+    .content .hub-info-cont .container .h-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20% 16px 15px;
+      background-color: #151B39;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.46);
+      border-radius: 2px;
+      opacity: 0.77;
+      margin-bottom: 6px;
+      height: 50px; }
+      .content .hub-info-cont .container .h-row .nam {
+        display: flex;
+        align-items: center;
+        position: relative; }
+        .content .hub-info-cont .container .h-row .nam a {
+          position: absolute;
+          left: 23px;
+          z-index: 100; }
+          .content .hub-info-cont .container .h-row .nam a img {
+            display: inline-block; }
+        .content .hub-info-cont .container .h-row .nam .row-chkbox {
+          margin-right: 8px;
+          opacity: 0;
+          position: absolute;
+          left: -9999px; }
+        .content .hub-info-cont .container .h-row .nam p {
+          margin: 0px;
+          color: #FFFFFF;
+          font-family: "Nunito Sans";
+          font-size: 12px;
+          letter-spacing: 0;
+          line-height: 16px;
+          width: 100%;
+          text-align: left; }
+          .content .hub-info-cont .container .h-row .nam p.hub {
+            font-weight: bold;
+            position: relative;
+            cursor: pointer;
+            padding-left: 38px; }
+            .content .hub-info-cont .container .h-row .nam p.hub:before {
+              content: ' ';
+              position: absolute;
+              width: 17px;
+              height: 17px;
+              left: -1px;
+              border: 1px solid #F0F0F0;
+              border-radius: 2px; }
+        .content .hub-info-cont .container .h-row .nam input[type="checkbox"]:checked ~ label::after {
+          transform: rotate(-45deg) scale(1); }
+        .content .hub-info-cont .container .h-row .nam label.hub-lavel {
+          margin: 0px;
+          color: #FFFFFF;
+          font-family: "Nunito Sans";
+          font-size: 12px;
+          letter-spacing: 0;
+          line-height: 16px;
+          font-weight: bold;
+          position: relative;
+          cursor: pointer;
+          padding-left: 38px; }
+          .content .hub-info-cont .container .h-row .nam label.hub-lavel::before {
+            content: ' ';
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            left: -1px;
+            border: 1px solid #F0F0F0;
+            border-radius: 2px; }
+          .content .hub-info-cont .container .h-row .nam label.hub-lavel::after {
+            content: ' ';
+            position: absolute;
+            left: 3px;
+            top: 4px;
+            transform: rotate(-45deg) scale(0);
+            width: 10px;
+            height: 5px;
+            border-left: 1px solid #FFFFFF;
+            border-bottom: 1px solid #FFFFFF; }
+        .content .hub-info-cont .container .h-row .nam.col1 {
+          min-width: 94px; }
+        .content .hub-info-cont .container .h-row .nam.col2 {
+          min-width: 108px; }
+        .content .hub-info-cont .container .h-row .nam.col3 {
+          min-width: 161px; }
+        .content .hub-info-cont .container .h-row .nam.col4 {
+          min-width: 102px; }
+      .content .hub-info-cont .container .h-row.hdr {
+        box-shadow: 0 2px 40px 2px rgba(0, 0, 0, 0.24);
+        background-color: #20284C;
+        opacity: 0.65;
+        border-radius: 2px 2px 2px 0;
+        height: 40px;
+        margin-bottom: 0px; }
+        .content .hub-info-cont .container .h-row.hdr .nam p {
+          color: #FFFFFF;
+          font-family: "Nunito Sans";
+          font-size: 11px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 15px; }
+        .content .hub-info-cont .container .h-row.hdr .nam .row-chkbox {
+          margin-right: 20px; }
+  .content .hub-info-cont.channel .h-row {
+    padding: 16px 15px 16px 15px; }
+
+@media screen and (min-width: 768px) {
+  #addhubmodal .modal-dialog {
+    max-width: 838px; } }
+
+#addhubmodal .modal-dialog .modal-content {
+  padding: 20px;
+  min-height: 557px; }
+  #addhubmodal .modal-dialog .modal-content .modal-header {
+    margin: 0px;
+    padding: 0 0 16px; }
+    #addhubmodal .modal-dialog .modal-content .modal-header .left {
+      display: flex;
+      align-items: center; }
+      #addhubmodal .modal-dialog .modal-content .modal-header .left h4 {
+        color: #FFFFFF;
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-right: 52px; }
+    #addhubmodal .modal-dialog .modal-content .modal-header .close {
+      color: #1391FF;
+      text-shadow: none; }
+  #addhubmodal .modal-dialog .modal-content .modal-body {
+    padding: 40px 0 0; }
+    #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont {
+      margin-bottom: 30px; }
+      #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular {
+        display: flex;
+        align-items: center; }
+        #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular p {
+          margin: 0 48px 0 0;
+          min-width: 58px;
+          opacity: 0.7;
+          color: #FFFFFF;
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 20px; }
+        #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .part-inp {
+          border: 1px solid #5D5E72;
+          border-radius: 2px;
+          background-color: #191A35;
+          width: 300px;
+          height: 40px; }
+      #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont:last-child {
+        margin-bottom: 0px; }
+  #addhubmodal .modal-dialog .modal-content .modal-footer {
+    border-top: 1px solid;
+    border-top-color: rgba(151, 151, 151, 0.25);
+    padding-bottom: 0px; }
+    #addhubmodal .modal-dialog .modal-content .modal-footer .modal-ok {
+      background-color: #1391FF;
+      border-radius: 2px;
+      width: 120px;
+      height: 30px;
+      color: #0A0C1B;
+      font-family: "Avenir";
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: 16px; }
+
+@media screen and (min-width: 768px) {
+  #addchannelmodal .modal-dialog {
+    max-width: 838px; } }
+
+#addchannelmodal .modal-dialog .modal-content {
+  padding: 20px;
+  min-height: 557px; }
+  #addchannelmodal .modal-dialog .modal-content .modal-header {
+    margin: 0px;
+    padding: 0 0 16px; }
+    #addchannelmodal .modal-dialog .modal-content .modal-header .left {
+      display: flex;
+      align-items: center; }
+      #addchannelmodal .modal-dialog .modal-content .modal-header .left h4 {
+        color: #FFFFFF;
+        font-family: "Nunito Sans";
+        font-size: 15px;
+        font-weight: 900;
+        letter-spacing: 0;
+        line-height: 20px;
+        margin-right: 52px; }
+    #addchannelmodal .modal-dialog .modal-content .modal-header .close {
+      color: #1391FF;
+      text-shadow: none; }
+  #addchannelmodal .modal-dialog .modal-content .modal-body {
+    padding: 40px 0 0; }
+    #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont {
+      margin-bottom: 30px; }
+      #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular {
+        display: flex;
+        align-items: center; }
+        #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular p {
+          margin: 0 25px 0 0;
+          min-width: 181px;
+          opacity: 0.7;
+          color: #FFFFFF;
+          font-family: "Nunito Sans";
+          font-size: 15px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 20px; }
+        #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .part-inp {
+          border: 1px solid #5D5E72;
+          border-radius: 2px;
+          background-color: #191A35;
+          width: 300px;
+          height: 40px; }
+      #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont:last-child {
+        margin-bottom: 0px; }
+  #addchannelmodal .modal-dialog .modal-content .modal-footer {
+    border-top: 1px solid;
+    border-top-color: rgba(151, 151, 151, 0.25);
+    padding-bottom: 0px; }
+    #addchannelmodal .modal-dialog .modal-content .modal-footer .modal-ok {
+      background-color: #1391FF;
+      border-radius: 2px;
+      width: 120px;
+      height: 30px;
+      color: #0A0C1B;
+      font-family: "Avenir";
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0;
+      line-height: 16px; }
 
 /*# sourceMappingURL=style.css.map */

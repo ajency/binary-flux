@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="9px" viewBox="0 0 9 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 63.1 (101010) - https://sketch.com -->
+    <title>4084DD0C-B709-4F59-BE1F-28760D9669E4</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2_HubList-view" transform="translate(-317.000000, -365.000000)">
+            <g id="Group-8" transform="translate(275.000000, 136.000000)">
+                <g id="hub-copy" transform="translate(0.000000, 208.000000)">
+                    <g id="Group-8">
+                        <g id="row">
+                            <g id="ic_mode_edit">
+                                <g transform="translate(40.000000, 21.000000)">
+                                    <polygon id="Bounds" points="0 0 12 0 12 12 0 12"></polygon>
+                                    <path d="M2,7.12625 L2,9.00125 L3.875,9.00125 L9.405,3.47125 L7.53,1.59625 L2,7.12625 L2,7.12625 Z M10.855,2.02125 C11.05,1.82625 11.05,1.51125 10.855,1.31625 L9.685,0.14625 C9.49,-0.04875 9.175,-0.04875 8.98,0.14625 L8.065,1.06125 L9.94,2.93625 L10.855,2.02125 L10.855,2.02125 Z" id="Icon" fill="#1391FF"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -134,25 +134,39 @@
   font-size: 12px;
 }
 
-  .icon {
-      &-wrap {
-        padding: 0 8px;
-      }
-  }
+.icon {
+    &-wrap {
+      padding: 0 8px;
+    }
+}
 
-  .icon-hamburger {
-    padding: 5px;
-    margin-right: 10px;
-    cursor: pointer;
-    
-    span {
-      background: $white-5;
-      width: 22px;
-      height: 2px;
-      margin-bottom: 4px;
-      display: block;
-      &:last-child {
-        margin-bottom: 0;
-      }
+.icon-hamburger {
+  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  
+  span {
+    background: $white-5;
+    width: 22px;
+    height: 2px;
+    margin-bottom: 4px;
+    display: block;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
+}
+
+.icon-add-hub{
+  background: url("/binary-flux/images/plus.png") no-repeat;
+  background-size: 100%;
+  height: 13px;
+  width: 15px;
+}
+
+.icon-rem-hub{
+  background: url("/binary-flux/images/delete-hub.svg") no-repeat;
+  background-size: 100%;
+  height: 13.5px;
+  width: 10.5px;
+}
