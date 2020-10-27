@@ -12015,6 +12015,8 @@ hr {
           line-height: 15px; }
         .content .hub-info-cont .container .h-row.hdr .nam .row-chkbox {
           margin-right: 20px; }
+      .content .hub-info-cont .container .h-row.selected {
+        background-color: #202854; }
   .content .hub-info-cont.channel .h-row {
     padding: 16px 15px 16px 15px; }
 

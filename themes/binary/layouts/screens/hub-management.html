@@ -315,9 +315,9 @@
 							</div>
 							<div class="h-row">
 								<div class="nam col1">
-									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow7" />
 									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
-									<label for="hrow6" class="hub-lavel">Channel 1</label>
+									<label for="hrow7" class="hub-lavel">Channel 1</label>
 								</div>
 								<div class="nam col2">
 									<p>75 KB</p>
@@ -331,9 +331,9 @@
 							</div>
 							<div class="h-row">
 								<div class="nam col1">
-									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow8" />
 									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
-									<label for="hrow6" class="hub-lavel">Channel 1</label>
+									<label for="hrow8" class="hub-lavel">Channel 1</label>
 								</div>
 								<div class="nam col2">
 									<p>75 KB</p>
@@ -347,9 +347,9 @@
 							</div>
 							<div class="h-row">
 								<div class="nam col1">
-									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow9" />
 									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
-									<label for="hrow6" class="hub-lavel">Channel 1</label>
+									<label for="hrow9" class="hub-lavel">Channel 1</label>
 								</div>
 								<div class="nam col2">
 									<p>75 KB</p>
@@ -363,9 +363,9 @@
 							</div>
 							<div class="h-row">
 								<div class="nam col1">
-									<input type="checkbox" value="name" class="row-chkbox" id="hrow6" />
+									<input type="checkbox" value="name" class="row-chkbox" id="hrow10" />
 									<a href="#!"><img class="hub-editic" src="/binary-flux/images/edit-icon.svg" /></a>
-									<label for="hrow6" class="hub-lavel">Channel 1</label>
+									<label for="hrow10" class="hub-lavel">Channel 1</label>
 								</div>
 								<div class="nam col2">
 									<p>75 KB</p>
@@ -500,6 +500,38 @@
 		$(".btn-toast").click(function(){
 			$('.toast').toast('show');
 		});
+
+		$('.hub-info-cont .h-row .col1 .hub-lavel').on("click", function () {
+			var inputbox = $(this).parent().find('.row-chkbox');
+			var parntrow = $(this).parent().parent();
+			var inpcheck = inputbox.prop('checked');
+			
+			if (inpcheck == false) {
+				parntrow.addClass('selected');
+			}
+			else if(inpcheck) {
+				parntrow.removeClass('selected');
+			}
+		});
+
+
+		$('.hub-info-cont .h-row.hdr .col1 .hub-lavel').on("click", function () {
+			var sibinputs = $(this).parent().parent().siblings('.h-row');
+			var inputchking = sibinputs.children('.col1').children('.row-chkbox');
+			var hdrinp = $(this).siblings('.row-chkbox');
+			var hdrvalu = hdrinp.prop('checked');
+
+			if(hdrvalu == false) {
+				inputchking.prop('checked', true);
+				sibinputs.addClass('selected');
+			}
+			else if(hdrvalu == true) {
+				inputchking.prop('checked', false);
+				sibinputs.removeClass('selected');
+			}
+			
+		});
+
 	});
 
 </script>

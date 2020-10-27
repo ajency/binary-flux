@@ -280,6 +280,9 @@
                         }
                     }                    
                 }
+                &.selected{
+                    background-color: #202854;
+                }
             }
         }
         &.channel{
