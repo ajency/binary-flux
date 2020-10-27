@@ -11906,7 +11906,8 @@ hr {
     background-color: transparent; }
 
 .content .hub-info-cont {
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  overflow-x: auto; }
   .content .hub-info-cont .container {
     width: 100%;
     max-width: 1100px;
@@ -11916,13 +11917,14 @@ hr {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 16px 20% 16px 15px;
+      padding: 16px 28% 16px 15px;
       background-color: #151B39;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.46);
       border-radius: 2px;
       opacity: 0.77;
       margin-bottom: 6px;
-      height: 50px; }
+      height: 50px;
+      min-width: 631px; }
       .content .hub-info-cont .container .h-row .nam {
         display: flex;
         align-items: center;
@@ -12066,7 +12068,9 @@ hr {
           border-radius: 2px;
           background-color: #191A35;
           width: 300px;
-          height: 40px; }
+          height: 40px;
+          color: #FFFFFF;
+          padding: 2px 8px; }
       #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont:last-child {
         margin-bottom: 0px; }
   #addhubmodal .modal-dialog .modal-content .modal-footer {
@@ -12131,7 +12135,9 @@ hr {
           border-radius: 2px;
           background-color: #191A35;
           width: 300px;
-          height: 40px; }
+          height: 40px;
+          color: #FFFFFF;
+          padding: 2px 8px; }
       #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont:last-child {
         margin-bottom: 0px; }
   #addchannelmodal .modal-dialog .modal-content .modal-footer {
