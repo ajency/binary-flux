@@ -12063,6 +12063,10 @@ hr {
       #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular {
         display: flex;
         align-items: center; }
+        @media screen and (max-width: 768px) {
+          #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular {
+            flex-direction: column;
+            align-items: flex-start; } }
         #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular p {
           margin: 0 48px 0 0;
           min-width: 58px;
@@ -12072,7 +12076,8 @@ hr {
           font-size: 15px;
           font-weight: bold;
           letter-spacing: 0;
-          line-height: 20px; }
+          line-height: 20px;
+          margin-bottom: 8px; }
         #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .part-inp {
           border: 1px solid #5D5E72;
           border-radius: 2px;
@@ -12081,12 +12086,15 @@ hr {
           height: 40px;
           color: #FFFFFF;
           padding: 2px 8px; }
+          @media screen and (max-width: 340px) {
+            #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .part-inp {
+              width: 270px !important; } }
       #addhubmodal .modal-dialog .modal-content .modal-body .add-hub-cont:last-child {
         margin-bottom: 0px; }
   #addhubmodal .modal-dialog .modal-content .modal-footer {
     border-top: 1px solid;
     border-top-color: rgba(151, 151, 151, 0.25);
-    padding-bottom: 0px; }
+    padding: 16px 0 0 0px; }
     #addhubmodal .modal-dialog .modal-content .modal-footer .modal-ok {
       background-color: #1391FF;
       border-radius: 2px;
@@ -12143,7 +12151,8 @@ hr {
           font-size: 15px;
           font-weight: bold;
           letter-spacing: 0;
-          line-height: 20px; }
+          line-height: 20px;
+          margin-bottom: 8px; }
         #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .part-inp {
           border: 1px solid #5D5E72;
           border-radius: 2px;
@@ -12246,7 +12255,7 @@ hr {
   #addchannelmodal .modal-dialog .modal-content .modal-footer {
     border-top: 1px solid;
     border-top-color: rgba(151, 151, 151, 0.25);
-    padding-bottom: 0px; }
+    padding: 16px 0 0 0px; }
     #addchannelmodal .modal-dialog .modal-content .modal-footer .modal-ok {
       background-color: #1391FF;
       border-radius: 2px;
