@@ -11196,9 +11196,14 @@ hr {
 .sidear-container .nav-list-items ul li .sub-ul .pets {
   height: 40px;
   display: flex; }
+  .sidear-container .nav-list-items ul li .sub-ul .pets .list-item-wrap {
+    width: 100%; }
 
 .header-section .wrap .mr-l35 {
   margin-left: 35px; }
+
+.header-section .wrap .nav-tabs .nav-item {
+  margin-right: 30px; }
 
 #siderbar-content .button-center {
   width: 100%;
@@ -11210,7 +11215,7 @@ hr {
 .workspace-tab-header .colum-row .colum-1 p.top-data {
   opacity: 0.5;
   color: #FFFFFF;
-  font-family: "Avenir";
+  font-family: "Nunito Sans";
   font-size: 12px;
   font-weight: 300;
   letter-spacing: 0;
@@ -11344,7 +11349,7 @@ hr {
               font-weight: 900;
               letter-spacing: 0;
               line-height: 20px;
-              font-family: "Avenir";
+              font-family: "Nunito Sans";
               color: #FFFFFF; }
             #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left .capt-img {
               max-width: 47px;
@@ -11390,7 +11395,7 @@ hr {
                 font-weight: 900;
                 letter-spacing: 0;
                 line-height: 20px;
-                font-family: "Avenir";
+                font-family: "Nunito Sans";
                 color: #FFFFFF; }
               #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left .capt-img {
                 max-width: 47px;
@@ -11446,7 +11451,7 @@ hr {
           width: 170px; }
           #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .lside p {
             color: #FFFFFF;
-            font-family: "Avenir";
+            font-family: "Nunito Sans";
             margin: 20px 0 0;
             font-size: 15px;
             font-weight: 900;
@@ -11521,7 +11526,7 @@ hr {
                 font-size: 12px;
                 font-weight: 900;
                 color: #FFFFFF;
-                font-family: "Avenir";
+                font-family: "Nunito Sans";
                 letter-spacing: 0;
                 line-height: 16px; }
             #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-display {
@@ -11529,7 +11534,7 @@ hr {
               #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-display .left .capt-txt {
                 margin-left: 0px;
                 color: #FFFFFF;
-                font-family: "Avenir";
+                font-family: "Nunito Sans";
                 font-size: 12px;
                 font-weight: 300;
                 letter-spacing: 0;
@@ -11541,7 +11546,7 @@ hr {
                 #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list li .left .capt-txt {
                   margin-left: 0px;
                   color: #FFFFFF;
-                  font-family: "Avenir";
+                  font-family: "Nunito Sans";
                   font-size: 12px;
                   font-weight: 300;
                   letter-spacing: 0;
@@ -11592,7 +11597,7 @@ hr {
                 margin: 0px;
                 cursor: pointer;
                 color: #FFFFFF;
-                font-family: "Avenir";
+                font-family: "Nunito Sans";
                 font-size: 15px;
                 font-weight: 300;
                 padding-left: 25px;
@@ -11646,7 +11651,7 @@ hr {
         padding: 21px 0 0; }
         #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode h3 {
           color: #FFFFFF;
-          font-family: "Avenir";
+          font-family: "Nunito Sans";
           font-size: 15px;
           font-weight: 900;
           letter-spacing: 0;
@@ -11665,7 +11670,7 @@ hr {
             cursor: pointer;
             color: #FFFFFF;
             opacity: 0.5;
-            font-family: "Avenir";
+            font-family: "Nunito Sans";
             font-size: 12px;
             font-weight: 900;
             letter-spacing: 0;
@@ -11724,7 +11729,7 @@ hr {
       width: 120px;
       height: 30px;
       color: #0A0C1B;
-      font-family: "Avenir";
+      font-family: "Nunito Sans";
       font-size: 12px;
       font-weight: 900;
       letter-spacing: 0;
@@ -11752,7 +11757,7 @@ hr {
         font-weight: 900;
         letter-spacing: 0;
         line-height: 20px;
-        font-family: "Avenir";
+        font-family: "Nunito Sans";
         color: #FFFFFF; }
       .drpdwn-dtsrc .drop-display .left .capt-img {
         max-width: 47px;
@@ -11795,7 +11800,7 @@ hr {
           font-weight: 900;
           letter-spacing: 0;
           line-height: 20px;
-          font-family: "Avenir";
+          font-family: "Nunito Sans";
           color: #FFFFFF; }
         .drpdwn-dtsrc .drop-list li .left .capt-img {
           max-width: 47px;
@@ -11848,7 +11853,7 @@ hr {
       margin-left: 15px; }
       .test-toast .toast-body .toast-wrap .toast-msg h3 {
         color: #FFFFFF;
-        font-family: "Avenir";
+        font-family: "Nunito Sans";
         font-size: 15px;
         font-weight: 900;
         letter-spacing: 0;
@@ -11857,7 +11862,7 @@ hr {
       .test-toast .toast-body .toast-wrap .toast-msg p {
         opacity: 0.8;
         color: #FFFFFF;
-        font-family: "Avenir";
+        font-family: "Nunito Sans";
         font-size: 12px;
         font-weight: 300;
         letter-spacing: 0;
@@ -11928,10 +11933,9 @@ hr {
       align-items: center;
       justify-content: space-between;
       padding: 16px 28% 16px 15px;
-      background-color: #151B39;
+      background-color: rgba(21, 27, 57, 0.77);
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.46);
       border-radius: 2px;
-      opacity: 0.77;
       margin-bottom: 6px;
       height: 50px;
       min-width: 631px; }
@@ -12013,8 +12017,7 @@ hr {
           min-width: 102px; }
       .content .hub-info-cont .container .h-row.hdr {
         box-shadow: 0 2px 40px 2px rgba(0, 0, 0, 0.24);
-        background-color: #20284C;
-        opacity: 0.65;
+        background-color: rgba(32, 40, 76, 0.65);
         border-radius: 2px 2px 2px 0;
         height: 40px;
         margin-bottom: 0px; }
@@ -12101,7 +12104,7 @@ hr {
       width: 120px;
       height: 30px;
       color: #0A0C1B;
-      font-family: "Avenir";
+      font-family: "Nunito Sans";
       font-size: 12px;
       font-weight: 900;
       letter-spacing: 0;
@@ -12262,7 +12265,7 @@ hr {
       width: 120px;
       height: 30px;
       color: #0A0C1B;
-      font-family: "Avenir";
+      font-family: "Nunito Sans";
       font-size: 12px;
       font-weight: 900;
       letter-spacing: 0;
