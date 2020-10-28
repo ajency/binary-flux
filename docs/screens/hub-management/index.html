@@ -12,7 +12,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.c3740a2d1d055ea9ab7a5dde28d0b1e799b1d2176e9b09ae4e25f276ffea9b53.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.54b0125945874d9c7e25c2a5e85ceb1ee232080355bf670bbd0be15d0be08ddf.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -467,14 +467,22 @@
 				<div class="add-hub-cont">
 					<div class="particular">
 						<p>Hubs Attached*</p>
+						<div class="selec2-drpdwn" id="selec2-additem">
+							<select class="js-example-basic-single form-control chanel-select2" multiple="multiple">
+								<option selected="selected">String (GUID)</option>
+								<option selected="selected">Script</option>								
+								<option selected="selected">Number</option>
+							</select>
+							<div class="add-new" id="add-new-item">
+								<i class="icon-add-item"></i>	
+								<p> Add </p>
+							</div>
+						</div>
 						
-						
-						<input type="text" class="part-inp" value="" />
 					</div>
 				</div>
 
-			</form> 
-       
+			</form>        
 
         </div>
         <div class="modal-footer">
@@ -524,9 +532,15 @@
 			else if(hdrvalu == true) {
 				inputchking.prop('checked', false);
 				sibinputs.removeClass('selected');
-			}
+			}			
+		});	
+
+		$('#add-new-item').on("click", function () {			
+
+			$k('.chanel-select2').select2('open');
 			
-		});		
+		});
+
 
 	});
 
@@ -535,7 +549,11 @@
 <script>
 
 	var $k = jQuery.noConflict();
-	$k('.js-example-basic-single').select2();
+	$k('.chanel-select2').select2({
+		dropdownAutoWidth: true,
+		tags: true
+		
+	});
 
 </script><script
   src="https://code.jquery.com/jquery-3.4.1.min.js"

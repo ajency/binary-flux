@@ -440,6 +440,91 @@
                             color: #FFFFFF;
                             padding: 2px 8px;
                         }
+                        .selec2-drpdwn{
+                            width: 369px;
+                            position: relative;
+                            .select2-container{
+                                max-width: 369px !important;
+                                @media screen and (max-width:991px) and (min-width:768px) {
+                                    width: 369px !important;
+                                }
+                                .select2-selection--multiple{
+                                    background-color: #191A35;
+                                    min-height: 41px;
+                                    border: 1px solid #5D5E72;
+                                    .select2-selection__rendered{
+                                        .select2-selection__choice{
+                                            background-color: #191A35;
+                                            flex-direction: row-reverse;
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 5px 7.5px;
+                                            border: 1px solid #1391FF;
+                                            border-radius: 2px;
+                                            .select2-selection__choice__remove{
+                                                border-right: none;
+                                                color: #1391FF;
+                                                height: 12px;
+                                                width: 12px;
+                                                padding: 0px;
+                                                margin-right: 0px;
+                                                span{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    font-size: 21px;
+                                                    width: 12px;
+                                                    height: 12px;
+                                                }
+                                                &:hover{
+                                                    background-color: transparent;
+                                                }
+                                            }
+                                            .select2-selection__choice__display{
+                                                color: #44A8FF;
+                                                font-family: "Nunito Sans";
+                                                font-size: 12px;
+                                                letter-spacing: 0;
+                                                line-height: 16px;
+                                            }
+                                        }
+                                    }
+                                    .select2-search--inline{
+                                        float: none;
+                                        display: none;
+                                        .select2-search__field{
+                                            border: none;
+                                            outline: none;
+                                        }
+                                    }
+                                }
+                                .select2-results{
+                                    background-color: #191A35;
+                                }
+                            }
+                            .add-new{
+                                display: flex;
+                                align-items: center;
+                                position: absolute;
+                                cursor: pointer;
+                                top: 11px;
+                                right: 0px;
+                                i.icon-add-item{
+                                    margin-right: 6px;
+                                }
+                                p{
+                                    color: #1391FF;
+                                    font-family: "Nunito Sans";
+                                    font-size: 12px;
+                                    font-weight: bold;
+                                    letter-spacing: 0;
+                                    line-height: 16px;
+                                    margin-right: 0px;
+                                    max-width: 40px;
+                                    min-width: 40px;
+                                }
+                            }
+                        }
                     }
                     &:last-child{
                         margin-bottom: 0px;
@@ -462,6 +547,18 @@
                     letter-spacing: 0;
                     line-height: 16px;
                 }
+            }
+        }
+    }
+}
+
+
+.select2-container{
+    .select2-results{
+        background-color: #191A35;
+        ul{
+            li.select2-results__option--selected{
+                background-color: #5D5E72;
             }
         }
     }

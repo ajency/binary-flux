@@ -7189,6 +7189,12 @@ a.text-error:hover, a.text-error:focus {
   height: 13.5px;
   width: 10.5px; }
 
+.icon-add-item {
+  background: url("/binary-flux/images/add-item.png") no-repeat;
+  background-size: 100%;
+  height: 20px;
+  width: 20px; }
+
 .nav-tabs {
   border-bottom: 0;
   position: relative; }
@@ -12146,6 +12152,75 @@ hr {
           height: 40px;
           color: #FFFFFF;
           padding: 2px 8px; }
+        #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn {
+          width: 369px;
+          position: relative; }
+          #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container {
+            max-width: 369px !important; }
+            @media screen and (max-width: 991px) and (min-width: 768px) {
+              #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container {
+                width: 369px !important; } }
+            #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple {
+              background-color: #191A35;
+              min-height: 41px;
+              border: 1px solid #5D5E72; }
+              #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+                background-color: #191A35;
+                flex-direction: row-reverse;
+                display: flex;
+                align-items: center;
+                padding: 5px 7.5px;
+                border: 1px solid #1391FF;
+                border-radius: 2px; }
+                #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+                  border-right: none;
+                  color: #1391FF;
+                  height: 12px;
+                  width: 12px;
+                  padding: 0px;
+                  margin-right: 0px; }
+                  #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 21px;
+                    width: 12px;
+                    height: 12px; }
+                  #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove:hover {
+                    background-color: transparent; }
+                #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__display {
+                  color: #44A8FF;
+                  font-family: "Nunito Sans";
+                  font-size: 12px;
+                  letter-spacing: 0;
+                  line-height: 16px; }
+              #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-search--inline {
+                float: none;
+                display: none; }
+                #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-search--inline .select2-search__field {
+                  border: none;
+                  outline: none; }
+            #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-results {
+              background-color: #191A35; }
+          #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .add-new {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            cursor: pointer;
+            top: 11px;
+            right: 0px; }
+            #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .add-new i.icon-add-item {
+              margin-right: 6px; }
+            #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .add-new p {
+              color: #1391FF;
+              font-family: "Nunito Sans";
+              font-size: 12px;
+              font-weight: bold;
+              letter-spacing: 0;
+              line-height: 16px;
+              margin-right: 0px;
+              max-width: 40px;
+              min-width: 40px; }
       #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont:last-child {
         margin-bottom: 0px; }
   #addchannelmodal .modal-dialog .modal-content .modal-footer {
@@ -12163,5 +12238,10 @@ hr {
       font-weight: 900;
       letter-spacing: 0;
       line-height: 16px; }
+
+.select2-container .select2-results {
+  background-color: #191A35; }
+  .select2-container .select2-results ul li.select2-results__option--selected {
+    background-color: #5D5E72; }
 
 /*# sourceMappingURL=style.css.map */

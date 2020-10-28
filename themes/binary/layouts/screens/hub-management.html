@@ -474,23 +474,22 @@
 				<div class="add-hub-cont">
 					<div class="particular">
 						<p>Hubs Attached*</p>
-						<!-- <select class="js-example-basic-single form-control" multiple="multiple">
-							<option selected="selected">orange</option>
-							<option>white</option>
-							<option selected="selected">purple</option>
-						</select> -->
-						<!-- <select class="js-example-basic-single" name="state">
-							<option value="AL">Alabama</option>
-							<option value="AL">Amar</option>
-							<option value="AL">Ankit</option>							
-							<option value="WY">Wyoming</option>
-						</select> -->
-						<input type="text" class="part-inp" value="" />
+						<div class="selec2-drpdwn" id="selec2-additem">
+							<select class="js-example-basic-single form-control chanel-select2" multiple="multiple">
+								<option selected="selected">String (GUID)</option>
+								<option selected="selected">Script</option>								
+								<option selected="selected">Number</option>
+							</select>
+							<div class="add-new" id="add-new-item">
+								<i class="icon-add-item"></i>	
+								<p> Add </p>
+							</div>
+						</div>
+						<!-- <input type="text" class="part-inp" value="" /> -->
 					</div>
 				</div>
 
-			</form> 
-       
+			</form>        
 
         </div>
         <div class="modal-footer">
@@ -540,9 +539,15 @@
 			else if(hdrvalu == true) {
 				inputchking.prop('checked', false);
 				sibinputs.removeClass('selected');
-			}
+			}			
+		});	
+
+		$('#add-new-item').on("click", function () {			
+
+			$k('.chanel-select2').select2('open');
 			
-		});		
+		});
+
 
 	});
 
@@ -551,7 +556,11 @@
 <script>
 
 	var $k = jQuery.noConflict();
-	$k('.js-example-basic-single').select2();
+	$k('.chanel-select2').select2({
+		dropdownAutoWidth: true,
+		tags: true
+		// width: '100%'
+	});
 
 </script>
 
