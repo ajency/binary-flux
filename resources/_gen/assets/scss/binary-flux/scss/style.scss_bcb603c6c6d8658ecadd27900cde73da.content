@@ -12152,48 +12152,68 @@ hr {
           height: 40px;
           color: #FFFFFF;
           padding: 2px 8px; }
+          @media screen and (max-width: 340px) {
+            #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .part-inp {
+              width: 270px !important; } }
         #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn {
           width: 369px;
           position: relative; }
+          @media screen and (max-width: 440px) {
+            #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn {
+              width: 300px !important; } }
+          @media screen and (max-width: 340px) {
+            #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn {
+              width: 270px !important; } }
           #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container {
             max-width: 369px !important; }
-            @media screen and (max-width: 991px) and (min-width: 768px) {
+            @media screen and (min-width: 768px) {
               #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container {
                 width: 369px !important; } }
+            @media screen and (max-width: 768px) {
+              #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container {
+                width: 369px !important; } }
+            @media screen and (max-width: 440px) {
+              #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container {
+                width: 300px !important; } }
+            @media screen and (max-width: 340px) {
+              #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container {
+                width: 270px !important; } }
             #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple {
               background-color: #191A35;
               min-height: 41px;
               border: 1px solid #5D5E72; }
-              #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
-                background-color: #191A35;
-                flex-direction: row-reverse;
-                display: flex;
-                align-items: center;
-                padding: 5px 7.5px;
-                border: 1px solid #1391FF;
-                border-radius: 2px; }
-                #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
-                  border-right: none;
-                  color: #1391FF;
-                  height: 12px;
-                  width: 12px;
-                  padding: 0px;
-                  margin-right: 0px; }
-                  #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove span {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 21px;
+              #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered {
+                padding-right: 66px; }
+                #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice {
+                  background-color: #191A35;
+                  flex-direction: row-reverse;
+                  display: flex;
+                  align-items: center;
+                  padding: 5px 7.5px;
+                  border: 1px solid #1391FF;
+                  border-radius: 2px; }
+                  #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
+                    border-right: none;
+                    color: #1391FF;
+                    height: 12px;
                     width: 12px;
-                    height: 12px; }
-                  #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove:hover {
-                    background-color: transparent; }
-                #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__display {
-                  color: #44A8FF;
-                  font-family: "Nunito Sans";
-                  font-size: 12px;
-                  letter-spacing: 0;
-                  line-height: 16px; }
+                    padding: 0px;
+                    margin-right: 0px; }
+                    #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove span {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      font-size: 21px;
+                      width: 12px;
+                      height: 12px; }
+                    #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove:hover {
+                      background-color: transparent; }
+                  #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__display {
+                    color: #44A8FF;
+                    font-family: "Nunito Sans";
+                    font-size: 12px;
+                    letter-spacing: 0;
+                    line-height: 16px; }
               #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular .selec2-drpdwn .select2-container .select2-selection--multiple .select2-search--inline {
                 float: none;
                 display: none; }
