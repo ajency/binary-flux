@@ -11948,6 +11948,8 @@ hr {
         .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn:hover i.icon-rem-hov {
           display: inline;
           margin-right: 5px; }
+      .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn:focus {
+        box-shadow: 0 0 0 0.2rem rgba(61, 144, 247, 0.5); }
   .content .hub-mngmnt-cont .hub-upper .hubs-add.bg-remove {
     background-color: transparent; }
 
