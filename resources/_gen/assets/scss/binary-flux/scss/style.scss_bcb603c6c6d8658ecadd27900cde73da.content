@@ -11136,7 +11136,11 @@ hr {
 .content .workspace-header-bar.head-space {
   height: 60px;
   align-items: center; }
-
+  @media screen and (max-width: 576px) {
+    .content .workspace-header-bar.head-space {
+      min-height: 60px;
+      height: initial;
+      padding-bottom: 0px; } }
 .content .workspace-header-bar .workspace-bar-tabs.fl-end {
   margin-top: 16px; }
 
@@ -12120,6 +12124,10 @@ hr {
       #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular {
         display: flex;
         align-items: center; }
+        @media screen and (max-width: 768px) {
+          #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular {
+            flex-direction: column;
+            align-items: flex-start; } }
         #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont .particular p {
           margin: 0 25px 0 0;
           min-width: 181px;

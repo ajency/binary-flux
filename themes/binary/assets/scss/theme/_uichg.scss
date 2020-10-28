@@ -3,6 +3,11 @@
         &.head-space{
             height: 60px;
             align-items: center;
+            @media screen and (max-width:576px) {
+                min-height: 60px;
+                height: initial;
+                padding-bottom: 0px;
+            }
         }
         .workspace-bar-tabs{
             &.fl-end{
