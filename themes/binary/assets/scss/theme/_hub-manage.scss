@@ -416,6 +416,10 @@
                     .particular{
                         display: flex;
                         align-items: center;
+                        @media screen and (max-width:768px) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
                         p{
                             margin: 0 25px 0 0;
                             min-width: 181px;
