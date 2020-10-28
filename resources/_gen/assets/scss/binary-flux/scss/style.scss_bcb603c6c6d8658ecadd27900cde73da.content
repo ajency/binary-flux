@@ -7189,6 +7189,12 @@ a.text-error:hover, a.text-error:focus {
   height: 13.5px;
   width: 10.5px; }
 
+.icon-rem-hov {
+  background: url("/binary-flux/images/remove-hub.svg") no-repeat;
+  background-size: 100%;
+  height: 13.5px;
+  width: 10.5px; }
+
 .icon-add-item {
   background: url("/binary-flux/images/add-item.png") no-repeat;
   background-size: 100%;
@@ -11910,13 +11916,38 @@ hr {
       justify-content: center;
       margin-right: 20px;
       cursor: pointer;
-      padding: 10px; }
+      padding: 0px;
+      text-decoration: none;
+      transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
       .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn i.icon-add-hub {
         margin-right: 5px; }
+      .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn i.icon-add {
+        margin-right: 5px;
+        font-size: 9px;
+        padding: 1px;
+        height: 12px; }
+        .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn i.icon-add::before {
+          font-size: 7px;
+          border: 1px solid #1391FF;
+          border-radius: 50%;
+          padding: 2px; }
       .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn i.icon-rem-hub {
         margin-right: 5px; }
+      .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn i.icon-rem-hov {
+        display: none; }
       .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn:last-child {
         margin-right: 0px; }
+      .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn:hover {
+        color: #FFFFFF;
+        background-color: #1391FF; }
+        .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn:hover i.icon-add::before {
+          color: #fffffF;
+          border: 1px solid #fffffF; }
+        .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn:hover i.icon-rem-hub {
+          display: none; }
+        .content .hub-mngmnt-cont .hub-upper .hubs-add .addrem-hub .hubs-btn:hover i.icon-rem-hov {
+          display: inline;
+          margin-right: 5px; }
   .content .hub-mngmnt-cont .hub-upper .hubs-add.bg-remove {
     background-color: transparent; }
 

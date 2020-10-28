@@ -116,7 +116,7 @@
                     line-height: 16px;
                 }
                 .addrem-hub{
-                    display: flex;                    
+                    display: flex;                                    
                     .hubs-btn{
                         width: 116px;
                         height: 30px;
@@ -127,15 +127,52 @@
                         justify-content: center;
                         margin-right: 20px;
                         cursor: pointer;
-                        padding: 10px;
+                        padding: 0px;
+                        text-decoration: none;
+                        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
                         i.icon-add-hub{
                             margin-right: 5px;
+                        }
+                        i.icon-add{
+                            margin-right: 5px;
+                            // border: 1px solid #1391FF;
+                            // border-radius: 50%;
+                            font-size: 9px;
+                            padding: 1px;
+                            height: 12px;
+                            &::before{
+                                font-size: 7px;
+                                border: 1px solid #1391FF;
+                                border-radius: 50%;
+                                padding: 2px;
+                            }
                         }
                         i.icon-rem-hub{
                             margin-right: 5px;
                         }
+                        i.icon-rem-hov{
+                            display: none;
+                            // margin-right: 5px;
+                        }
                         &:last-child{
                             margin-right: 0px;
+                        }
+                        &:hover{
+                            color: #FFFFFF;
+                            background-color: #1391FF;
+                            i.icon-add{                                
+                                &::before{
+                                    color: #fffffF;
+                                    border: 1px solid #fffffF;
+                                }
+                            }
+                            i.icon-rem-hub{
+                                display: none;
+                            }
+                            i.icon-rem-hov{
+                                display: inline;
+                                margin-right: 5px;
+                            }
                         }
                     }
                 }
