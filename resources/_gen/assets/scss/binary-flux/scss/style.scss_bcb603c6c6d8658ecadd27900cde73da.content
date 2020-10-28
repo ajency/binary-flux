@@ -12250,7 +12250,7 @@ hr {
               font-weight: bold;
               letter-spacing: 0;
               line-height: 16px;
-              margin-right: 0px;
+              margin: 0px;
               max-width: 40px;
               min-width: 40px; }
       #addchannelmodal .modal-dialog .modal-content .modal-body .add-hub-cont:last-child {
