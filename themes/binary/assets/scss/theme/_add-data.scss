@@ -1,0 +1,32 @@
+.item-wrapper{
+    .item{
+        .item-header{
+            .item-edit{
+                display: flex;
+                align-items: center;
+                .btn-edit{
+                    margin-right: 10px;
+                    opacity: 0.8;
+                    i.icon-adall-remove{
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    i.icon-adall-copy{
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    &.pdl-7{
+                        padding-left: 7px;
+                        height: 10px;
+                        line-height: 10px;
+                        border-left: 0.5px solid;
+                        border-left-color: rgba(255, 255, 255, 0.3);
+                        img{
+                            top: -1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
