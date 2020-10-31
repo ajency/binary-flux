@@ -1,0 +1,234 @@
+{{ define "main" }}
+<div class="">
+    <header class="header-section pb-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="wrap d-flex">
+                <div class="logo-wrap">         
+                    <a href="#">
+                        <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
+                    </a>
+                </div>
+                <ul class="nav nav-tabs no-border pl-md-3 pr-md-3 blue-bg" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab" href="#configure" role="tab" aria-controls="configure" aria-selected="true">Configure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab" href="#dashboards" role="tab" aria-controls="dashboards" aria-selected="true">Dashboards</a>
+                    </li>
+                  <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="organisation" aria-selected="true">Organisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="true">Settings</a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="user">
+                <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="custom-container alldatacont">
+            <div class="breadcrumb-wrap d-flex align-items-center pt-3 pb-7 pl-1">
+                <img src="/binary-flux/images/arrow-left.svg" alt="Arrow left" class="d-inline-block"> <p class="m-0 ml-2 d-inline-block text-uppercase font-weight-bolder text-white--5">All Data Sources</p>
+            </div>
+            <div class="add-datasrcs">
+                <div class="aad-input">
+                    <h5 class="section-title text-uppercase mt-0 mb-05">ADD INPUTS</h5>
+                    <p class="mb-0 mb-15 font-weight-bolder text-white--8">Select a data source to integrate with Alooma:</p>
+                </div>
+                <button class="btn btn-newsrc"><i class="icon-add"></i>Add New Data Source</button>
+            </div>
+            
+            <div class="item-wrapper mb-4">
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                            <img src="/binary-flux/images/forcepoint-logo.svg" alt="Force Point" class="d-inline-block"> <img src="/binary-flux/images/forcepoint-text.svg" alt="Force Point" class="d-inline-block">
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Force Point</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                            <img src="/binary-flux/images/symantec-logo.svg" alt="Symantec" class="d-inline-block w-p25"> <img src="/binary-flux/images/symantec.svg" alt="Symantec" class="d-inline-block">
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Symantec</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                            <img src="/binary-flux/images/sophos-text.svg" alt="Sophos" class="d-inline-block">
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Sophos</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                            <img src="/binary-flux/images/paloalto-text.svg" alt="Paloalto" class="d-inline-block">
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Paloalto</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                            <img src="/binary-flux/images/fireeye.svg" alt="Fire Eye" class="d-inline-block">
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Fire Eye</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                            <img src="/binary-flux/images/microsoft-logo.svg" alt="Microsoft" class="d-inline-block">
+                            <img src="/binary-flux/images/microsoft-text.svg" alt="Microsoft" class="d-inline-block">
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Microsoft</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                         <!--    <img src="/binary-flux/images/carbonblack.svg" alt="" class="d-inline-block"> <img src="/binary-flux/images/forcepoint-text.svg" alt="" class="d-inline-block"> -->
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Win Events</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insightt</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                            <img src="/binary-flux/images/carbonblack.svg" alt="Carbon Black" class="d-inline-block">
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Carbon Black</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                            <img src="/binary-flux/images/radar-text.svg" alt="Radar" class="d-inline-block">
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Qradar</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header d-flex align-items-center justify-content-between mb-4">
+                        <div class="item-logo">
+                            <img src="/binary-flux/images/splunk-vector-logo.svg" alt="Splunk" class="d-inline-block">
+                        </div>
+                        <div class="item-edit">
+                            <button class="text-white-5 btn-edit"><span class="icon-edit"></span> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-remove"></i> </button>
+                            <button class="text-white-5 btn-edit"><i class="icon-adall-copy"></i> </button>
+                            <button class="text-white-5 pdl-7 btn-edit btn-edit__test"> <img src="/binary-flux/images/ic_test.svg" alt="" class="d-inline-block"> Test</button>
+                        </div>
+                    </div>
+                    <div class="item-content">
+                        <h5 class="section-title m-0 text-light-blue-2 font-weight-bold">Splunk</h5>
+                        <p class="text-white--8 font-weight-light m-0 f-10">Import data from an Azure Blob Storage, or from Microsoft Application Insight</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination mb-10">
+                <ul class="nav">
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#" class="last"><img src="/binary-flux/images/arrow-pagination.svg" alt="" class="d-inline-block"></a></li>
+                    <li><a href="#" class="last"><img src="/binary-flux/images/arrow-pagination.svg" alt="" class="d-inline-block"><img src="/binary-flux/images/arrow-pagination.svg" alt="" class="d-inline-block"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{- partial "footer.html" . -}}
+{{ end }}
