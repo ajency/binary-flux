@@ -1,28 +1,75 @@
-.item-wrapper{
-    .item{
-        .item-header{
-            .item-edit{
-                display: flex;
-                align-items: center;
-                .btn-edit{
-                    margin-right: 10px;
-                    opacity: 0.8;
-                    i.icon-adall-remove{
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
-                    i.icon-adall-copy{
-                        display: inline-block;
-                        vertical-align: middle;
-                    }
-                    &.pdl-7{
-                        padding-left: 7px;
-                        height: 10px;
-                        line-height: 10px;
-                        border-left: 0.5px solid;
-                        border-left-color: rgba(255, 255, 255, 0.3);
-                        img{
-                            top: -1px;
+.alldatacont{
+    .add-datasrcs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .aad-input{
+
+        }
+        .btn-newsrc{
+            color: #1391FF;
+            font-family: "Nunito Sans";
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 16px;
+            border: 1px solid #1391FF;
+            border-radius: 2px;
+            width: 186px;
+            height: 31px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            padding: 5px 19px;
+            i.icon-add{
+                margin-right: 11px;                
+                &::before{                   
+                    font-size: 10px;
+                }                
+            }
+            &:hover{
+                color: #ffffff;
+                background-color: #1391FF;
+                i.icon-add{
+                    &::before{
+                        color: #ffffff;
+                    }                    
+                }               
+            }
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(61, 144, 247, 0.5);
+            }
+        }
+    }
+    .item-wrapper{
+        .item{
+            @media screen and (min-width:768px) {
+                flex-basis: 32.8%;
+            }
+            .item-header{
+                .item-edit{
+                    display: flex;
+                    align-items: center;
+                    .btn-edit{
+                        margin-right: 10px;
+                        opacity: 0.8;
+                        i.icon-adall-remove{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        i.icon-adall-copy{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        &.pdl-7{
+                            padding-left: 7px;
+                            height: 10px;
+                            line-height: 10px;
+                            border-left: 0.5px solid;
+                            border-left-color: rgba(255, 255, 255, 0.3);
+                            img{
+                                top: -1px;
+                            }
                         }
                     }
                 }
