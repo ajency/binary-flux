@@ -12383,4 +12383,49 @@ hr {
       .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.pdl-7 img {
         top: -1px; }
 
+.alldataemcont {
+  text-align: center; }
+  .alldataemcont .img-holder {
+    margin-top: 203px; }
+  .alldataemcont .setup h1 {
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 48px;
+    max-width: 301px;
+    margin: 80px auto 0px; }
+  .alldataemcont .exist-tmp h4 {
+    color: #CCDEFE;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 30.94px;
+    margin: 16px auto 41px;
+    max-width: 301px; }
+  .alldataemcont .btn-datasourc {
+    border-radius: 4px;
+    background-color: #1391FF;
+    height: 50px;
+    width: 350px;
+    color: #0A0C1B;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin: 0 0 40px; }
+    .alldataemcont .btn-datasourc i.icon-add {
+      margin-right: 15px; }
+      .alldataemcont .btn-datasourc i.icon-add::before {
+        color: #0A0C1B;
+        font-size: 15px; }
+
+.back-sett {
+  background: url("/binary-flux/images/bg-sett.png") no-repeat;
+  background-size: 100%;
+  height: 230px; }
+
 /*# sourceMappingURL=style.css.map */
