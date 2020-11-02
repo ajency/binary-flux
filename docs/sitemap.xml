@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ajency.github.io/binary-flux/</loc>
-    <lastmod>2020-10-22T11:47:54+05:30</lastmod>
+    <loc>https://ajency.github.io/binary-flux/screens/all-data-sources-empty/</loc>
+    <lastmod>2020-11-01T05:07:00+05:30</lastmod>
   </url>
   
   <url>
-    <loc>https://ajency.github.io/binary-flux/screens/hub-management/</loc>
-    <lastmod>2020-10-22T11:47:54+05:30</lastmod>
+    <loc>https://ajency.github.io/binary-flux/</loc>
+    <lastmod>2020-11-01T05:07:00+05:30</lastmod>
   </url>
   
   <url>
     <loc>https://ajency.github.io/binary-flux/screens/</loc>
+    <lastmod>2020-11-01T05:07:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/binary-flux/screens/hub-management/</loc>
     <lastmod>2020-10-22T11:47:54+05:30</lastmod>
   </url>
   
