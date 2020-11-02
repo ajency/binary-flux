@@ -12387,6 +12387,8 @@ hr {
   text-align: center; }
   .alldataemcont .img-holder {
     margin-top: 203px; }
+    .alldataemcont .img-holder img {
+      max-width: 100%; }
   .alldataemcont .setup h1 {
     color: #FFFFFF;
     font-family: "Nunito Sans";
@@ -12396,6 +12398,9 @@ hr {
     line-height: 48px;
     max-width: 301px;
     margin: 80px auto 0px; }
+    @media screen and (max-width: 390px) {
+      .alldataemcont .setup h1 {
+        font-size: 35px; } }
   .alldataemcont .exist-tmp h4 {
     color: #CCDEFE;
     font-family: "Nunito Sans";
@@ -12418,6 +12423,9 @@ hr {
     line-height: 24px;
     margin: 0 0 40px;
     transition: color 0.2s ease-in; }
+    @media screen and (max-width: 440px) {
+      .alldataemcont .btn-datasourc {
+        width: 300px; } }
     .alldataemcont .btn-datasourc i.icon-add {
       margin-right: 15px; }
       .alldataemcont .btn-datasourc i.icon-add::before {

@@ -83,6 +83,9 @@
     text-align: center;
     .img-holder{
         margin-top: 203px;
+        img{
+            max-width: 100%;
+        }
     }
     .setup{
         h1{
@@ -95,6 +98,9 @@
             max-width: 301px;
             // text-align: center;
             margin: 80px auto 0px;
+            @media screen and (max-width:390px) {
+               font-size: 35px;
+            }
         }
     }
     .exist-tmp{
@@ -123,6 +129,9 @@
         line-height: 24px;
         margin: 0 0 40px;
         transition: color 0.2s ease-in;
+        @media screen and (max-width:440px) {
+            width: 300px;
+        }
         i.icon-add{
             margin-right: 15px;           
             &::before{
