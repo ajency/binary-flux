@@ -122,12 +122,25 @@
         letter-spacing: 0;
         line-height: 24px;
         margin: 0 0 40px;
+        transition: color 0.2s ease-in;
         i.icon-add{
-            margin-right: 15px;
+            margin-right: 15px;           
             &::before{
                 color: #0A0C1B;
                 font-size: 15px;
+                transition: color 0.2s ease-in;
             }
+        }
+        &:hover{
+            color: #ffffff;
+            i.icon-add{
+                &::before{
+                    color: #ffffff;
+                }
+            }
+        }
+        &:focus{
+            box-shadow: 0 0 0 0.2rem rgba(61, 144, 247, 0.5);
         }
     }
     
