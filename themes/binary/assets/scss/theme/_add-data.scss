@@ -1,0 +1,140 @@
+.alldatacont{
+    .add-datasrcs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .aad-input{
+
+        }
+        .btn-newsrc{
+            color: #1391FF;
+            font-family: "Nunito Sans";
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 16px;
+            border: 1px solid #1391FF;
+            border-radius: 2px;
+            width: 186px;
+            height: 31px;
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            padding: 5px 19px;
+            i.icon-add{
+                margin-right: 11px;                
+                &::before{                   
+                    font-size: 10px;
+                }                
+            }
+            &:hover{
+                color: #ffffff;
+                background-color: #1391FF;
+                i.icon-add{
+                    &::before{
+                        color: #ffffff;
+                    }                    
+                }               
+            }
+            &:focus {
+                box-shadow: 0 0 0 0.2rem rgba(61, 144, 247, 0.5);
+            }
+        }
+    }
+    .item-wrapper{
+        .item{
+            @media screen and (min-width:768px) {
+                flex-basis: 32.8%;
+            }
+            .item-header{
+                .item-edit{
+                    display: flex;
+                    align-items: center;
+                    .btn-edit{
+                        margin-right: 10px;
+                        opacity: 0.8;
+                        i.icon-adall-remove{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        i.icon-adall-copy{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        &.pdl-7{
+                            padding-left: 7px;
+                            height: 10px;
+                            line-height: 10px;
+                            border-left: 0.5px solid;
+                            border-left-color: rgba(255, 255, 255, 0.3);
+                            img{
+                                top: -1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.alldataemcont{
+    // display: flex;
+    text-align: center;
+    .img-holder{
+        margin-top: 203px;
+    }
+    .setup{
+        h1{
+            color: #FFFFFF;
+            font-family: "Nunito Sans";
+            font-size: 40px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 48px;
+            max-width: 301px;
+            // text-align: center;
+            margin: 80px auto 0px;
+        }
+    }
+    .exist-tmp{
+        h4{
+            color: #CCDEFE;
+            font-family: "Nunito Sans";
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0;
+            line-height: 30.94px;
+            margin: 16px auto 41px;
+            max-width: 301px;
+            //   text-align: center;
+        }
+    }
+    .btn-datasourc{
+        border-radius: 4px;
+        background-color: #1391FF;
+        height: 50px;
+        width: 350px;
+        color: #0A0C1B;
+        font-family: "Nunito Sans";
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 24px;
+        margin: 0 0 40px;
+        i.icon-add{
+            margin-right: 15px;
+            &::before{
+                color: #0A0C1B;
+                font-size: 15px;
+            }
+        }
+    }
+    
+}
+
+.back-sett{
+    background: url("/binary-flux/images/bg-sett.png") no-repeat;
+    background-size: 100%;
+    height: 230px;
+}

@@ -6,7 +6,16 @@
     <description>Recent content on Binary Flux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Oct 2020 11:47:54 +0530</lastBuildDate><atom:link href="https://ajency.github.io/binary-flux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Nov 2020 05:07:00 +0530</lastBuildDate><atom:link href="https://ajency.github.io/binary-flux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>All Data Sources Empty</title>
+      <link>https://ajency.github.io/binary-flux/screens/all-data-sources-empty/</link>
+      <pubDate>Sun, 01 Nov 2020 05:07:00 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/all-data-sources-empty/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Hub Management</title>
       <link>https://ajency.github.io/binary-flux/screens/hub-management/</link>
