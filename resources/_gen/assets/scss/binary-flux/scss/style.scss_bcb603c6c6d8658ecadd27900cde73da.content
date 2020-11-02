@@ -12387,9 +12387,16 @@ hr {
       border-left-color: rgba(255, 255, 255, 0.3); }
       .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.pdl-7 img {
         top: -1px; }
+    .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem i.icon-rem-hov {
+      display: none; }
+    .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-rem-hov {
+      display: inline-block; }
+    .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-adall-remove {
+      display: none; }
 
 .alldataemcont {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
   .alldataemcont .img-holder {
     margin-top: 203px; }
     .alldataemcont .img-holder img {
@@ -12447,6 +12454,9 @@ hr {
 .back-sett {
   background: url("/binary-flux/images/bg-sett.png") no-repeat;
   background-size: 100%;
-  height: 230px; }
+  min-height: 400px; }
+  @media screen and (max-width: 768px) {
+    .back-sett {
+      min-height: 230px; } }
 
 /*# sourceMappingURL=style.css.map */
