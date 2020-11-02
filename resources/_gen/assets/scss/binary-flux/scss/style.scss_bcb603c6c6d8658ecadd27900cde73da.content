@@ -12331,6 +12331,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  @media screen and (max-width: 576px) {
+    .alldatacont .add-datasrcs {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 15px; } }
   .alldatacont .add-datasrcs .btn-newsrc {
     color: #1391FF;
     font-family: "Nunito Sans";
