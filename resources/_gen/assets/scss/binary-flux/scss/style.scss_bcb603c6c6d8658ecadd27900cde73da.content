@@ -12416,12 +12416,20 @@ hr {
     font-weight: bold;
     letter-spacing: 0;
     line-height: 24px;
-    margin: 0 0 40px; }
+    margin: 0 0 40px;
+    transition: color 0.2s ease-in; }
     .alldataemcont .btn-datasourc i.icon-add {
       margin-right: 15px; }
       .alldataemcont .btn-datasourc i.icon-add::before {
         color: #0A0C1B;
-        font-size: 15px; }
+        font-size: 15px;
+        transition: color 0.2s ease-in; }
+    .alldataemcont .btn-datasourc:hover {
+      color: #ffffff; }
+      .alldataemcont .btn-datasourc:hover i.icon-add::before {
+        color: #ffffff; }
+    .alldataemcont .btn-datasourc:focus {
+      box-shadow: 0 0 0 0.2rem rgba(61, 144, 247, 0.5); }
 
 .back-sett {
   background: url("/binary-flux/images/bg-sett.png") no-repeat;
