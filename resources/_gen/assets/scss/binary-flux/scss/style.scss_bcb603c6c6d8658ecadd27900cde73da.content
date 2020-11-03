@@ -12424,23 +12424,25 @@ hr {
         margin-right: 2px; }
       .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem i.icon-addall-cpyw {
         display: none; }
-      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-addall-rem {
-        display: inline-block; }
-      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-adall-remove {
-        display: none; }
-      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover .icon-edit {
-        display: none; }
-      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-adall-edit {
-        display: inline-block; }
-      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover img {
-        display: none !important; }
-      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover .icon-adall-test {
-        display: inline-block;
-        margin-right: 2px; }
-      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-adall-copy {
-        display: none; }
-      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-addall-cpyw {
-        display: inline-block; }
+      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover {
+        opacity: 1; }
+        .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-addall-rem {
+          display: inline-block; }
+        .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-adall-remove {
+          display: none; }
+        .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover .icon-edit {
+          display: none; }
+        .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-adall-edit {
+          display: inline-block; }
+        .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover img {
+          display: none !important; }
+        .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover .icon-adall-test {
+          display: inline-block;
+          margin-right: 2px; }
+        .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-adall-copy {
+          display: none; }
+        .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-addall-cpyw {
+          display: inline-block; }
 
 .alldataemcont {
   text-align: center;

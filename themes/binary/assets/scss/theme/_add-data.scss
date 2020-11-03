@@ -82,6 +82,7 @@
                         &.btn-ic-rem{
                             display: flex;
                             align-items: center;
+                            
                             i.icon-addall-rem{
                                 display: none;                                
                             }
@@ -98,6 +99,7 @@
                                 display: none;
                             }
                             &:hover{
+                                opacity: 1;
                                 i.icon-addall-rem{
                                     display: inline-block;                                    
                                 }
