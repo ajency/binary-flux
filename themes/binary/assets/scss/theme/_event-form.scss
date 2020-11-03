@@ -1,69 +1,93 @@
-#event-frm-drp{
-    .drop-display {
-        width: 275px;
-        .left{
-            .capt-txt{
-                opacity: 0.7;
-                color: #FFFFFF;
-                font-family: "Nunito Sans";
-                font-size: 12px;
-                font-weight: 900;
-                letter-spacing: 0;
-                line-height: 16px;
+.slcttmp{
+    opacity: 0.5;
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 20px;
+    margin: 14px 0 5px;
+}
+
+.form-drop-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 19px;
+    #event-frm-drp{
+        .drop-display {
+            width: 275px;
+            .left{
+                .capt-txt{
+                    opacity: 0.7;
+                    color: #FFFFFF;
+                    font-family: "Nunito Sans";
+                    font-size: 12px;
+                    font-weight: 900;
+                    letter-spacing: 0;
+                    line-height: 16px;
+                }
             }
         }
-    }
-    .drop-list{
-        width: 275px;
-        li{
-            padding: 7px 10px;
-            .left{
-                img{
-                    max-width: 64px;
-                    max-height: 14px;
-                    width: 64px;
-                }
-                .txt-wrapp{
-                    p{
-                        opacity: 0.5;
-                        color: #FFFFFF;
-                        font-family: "Nunito Sans";
-                        font-size: 10px;
-                        font-weight: 300;
-                        letter-spacing: 0;
-                        line-height: 14px;
-                        margin-left: 10px;
-                    }
-                    .capt-txt{
-                        opacity: 0.7;
-                        color: #FFFFFF;
-                        font-family: "Nunito Sans";
-                        font-size: 12px;
-                        font-weight: 900;
-                        letter-spacing: 0;
-                        line-height: 16px;
-                    }
-                }
-            }
-            &:hover{
+        .drop-list{
+            width: 275px;
+            li{
+                padding: 7px 10px;
                 .left{
+                    img{
+                        max-width: 64px;
+                        max-height: 14px;
+                        width: 64px;
+                    }
                     .txt-wrapp{
+                        p{
+                            opacity: 0.5;
+                            color: #FFFFFF;
+                            font-family: "Nunito Sans";
+                            font-size: 10px;
+                            font-weight: 300;
+                            letter-spacing: 0;
+                            line-height: 14px;
+                            margin-left: 10px;
+                        }
                         .capt-txt{
-                            opacity: 1;
+                            opacity: 0.7;
+                            color: #FFFFFF;
+                            font-family: "Nunito Sans";
+                            font-size: 12px;
+                            font-weight: 900;
+                            letter-spacing: 0;
+                            line-height: 16px;
                         }
                     }
                 }
-                
+                &:hover{
+                    .left{
+                        .txt-wrapp{
+                            .capt-txt{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    
+                }
             }
         }
     }
+    .savbtn-cont{
+
+    }
 }
+
+
 
 .change-cont{
     .point-disp{
         display: none;
+        transition: display 3.8s ease-in;
         &.show{
             display: block;
+            transition: display 3.8s ease-in;
         }
     }
 }
