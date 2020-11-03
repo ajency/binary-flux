@@ -94,11 +94,12 @@
                             img{
                                 margin-right: 2px;
                             }
+                            i.icon-addall-cpyw{
+                                display: none;
+                            }
                             &:hover{
                                 i.icon-addall-rem{
-                                    display: inline-block;
-                                    // height: 15px;
-                                    // width: 10px;
+                                    display: inline-block;                                    
                                 }
                                 i.icon-adall-remove{
                                     display: none;
@@ -115,6 +116,12 @@
                                 .icon-adall-test{
                                     display: inline-block;
                                     margin-right: 2px;
+                                }
+                                i.icon-adall-copy{
+                                    display: none;
+                                }
+                                i.icon-addall-cpyw{
+                                    display: inline-block;
                                 }
                             }
                         }

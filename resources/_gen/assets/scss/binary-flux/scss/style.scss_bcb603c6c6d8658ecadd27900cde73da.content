@@ -7235,7 +7235,13 @@ a.text-error:hover, a.text-error:focus {
   background: url("/binary-flux/images/remove-hub.svg") no-repeat;
   background-size: 100%;
   height: 15px;
-  width: 10.5px; }
+  width: 10px; }
+
+.icon-addall-cpyw {
+  background: url("/binary-flux/images/copy-addall.svg") no-repeat;
+  background-size: 100%;
+  height: 14px;
+  width: 10px; }
 
 .nav-tabs {
   border-bottom: 0;
@@ -12416,6 +12422,8 @@ hr {
         display: none; }
       .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem img {
         margin-right: 2px; }
+      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem i.icon-addall-cpyw {
+        display: none; }
       .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-addall-rem {
         display: inline-block; }
       .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-adall-remove {
@@ -12429,6 +12437,10 @@ hr {
       .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover .icon-adall-test {
         display: inline-block;
         margin-right: 2px; }
+      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-adall-copy {
+        display: none; }
+      .alldatacont .item-wrapper .item .item-header .item-edit .btn-edit.btn-ic-rem:hover i.icon-addall-cpyw {
+        display: inline-block; }
 
 .alldataemcont {
   text-align: center;
