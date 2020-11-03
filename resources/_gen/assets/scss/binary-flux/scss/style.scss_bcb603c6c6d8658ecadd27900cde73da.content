@@ -12518,11 +12518,32 @@ hr {
   line-height: 20px;
   margin: 14px 0 5px; }
 
+.evnt-form .btn-data-sources {
+  display: block;
+  margin: 0 0 10px 30px; }
+  @media screen and (max-width: 768px) {
+    .evnt-form .btn-data-sources {
+      margin: 0 0 10px 10px; } }
+  .evnt-form .btn-data-sources i.icon-arrow-left-light {
+    vertical-align: middle; }
+
+.evnt-form .container {
+  margin-left: 100px; }
+  @media screen and (max-width: 940px) {
+    .evnt-form .container {
+      margin: 0 auto; } }
 .form-drop-cont {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 19px; }
+  @media screen and (max-width: 576px) {
+    .form-drop-cont {
+      flex-direction: column;
+      align-items: flex-start; } }
+  @media screen and (max-width: 576px) {
+    .form-drop-cont #event-frm-drp {
+      margin-bottom: 12px; } }
   .form-drop-cont #event-frm-drp .drop-display {
     width: 275px; }
     .form-drop-cont #event-frm-drp .drop-display .left .capt-txt {
