@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>ic edit@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.800000012">
+        <g id="Artboard" transform="translate(-44.000000, -46.000000)">
+            <g id="ic-edit" transform="translate(40.000000, 43.000000)">
+                <g id="ic_mode_edit">
+                    <polygon id="Bounds" points="0 0 15 0 15 15 0 15"></polygon>
+                    <path d="M4,9.33356478 L4,11 L5.66643522,11 L10.5813082,6.08512707 L8.91487293,4.41869185 L4,9.33356478 L4,9.33356478 Z M11.8700181,4.79641716 C12.0433273,4.6231079 12.0433273,4.34314679 11.8700181,4.16983752 L10.8301625,3.12998195 C10.6568532,2.95667268 10.3768921,2.95667268 10.2035828,3.12998195 L9.39036245,3.94320233 L11.0567977,5.60963755 L11.8700181,4.79641716 L11.8700181,4.79641716 Z" id="Icon" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -80,19 +80,48 @@
                             }
                         }
                         &.btn-ic-rem{
-                            i.icon-rem-hov{
+                            display: flex;
+                            align-items: center;
+                            i.icon-addall-rem{
+                                display: none;                                
+                            }
+                            .icon-adall-edit{
                                 display: none;
-                                // height: 15px;
-                                // width: 10px;
+                            }
+                            .icon-adall-test{
+                                display: none;
+                            }
+                            img{
+                                margin-right: 2px;
+                            }
+                            i.icon-addall-cpyw{
+                                display: none;
                             }
                             &:hover{
-                                i.icon-rem-hov{
-                                    display: inline-block;
-                                    // height: 15px;
-                                    // width: 10px;
+                                i.icon-addall-rem{
+                                    display: inline-block;                                    
                                 }
                                 i.icon-adall-remove{
                                     display: none;
+                                }
+                                .icon-edit{
+                                    display: none;
+                                }
+                                i.icon-adall-edit{
+                                    display: inline-block;
+                                }
+                                img{
+                                    display: none !important;
+                                }
+                                .icon-adall-test{
+                                    display: inline-block;
+                                    margin-right: 2px;
+                                }
+                                i.icon-adall-copy{
+                                    display: none;
+                                }
+                                i.icon-addall-cpyw{
+                                    display: inline-block;
                                 }
                             }
                         }

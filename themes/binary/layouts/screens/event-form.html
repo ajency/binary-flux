@@ -39,54 +39,65 @@
 			<div class="col-12 col-lg-8">
 				<h5 class="section-title text-uppercase mt-0">Add a New Source</h5>
 				<hr class="grey my-0">
-				<!-- Adding dropdown -->
-				<div class="drpdwn-dtsrc" id="event-frm-drp">
-					<div class="drop-display">
-						<div class="left">
-							<!-- <img src="{{"images/aws.png" | relURL }}" class="capt-img"/> -->
-							<img src="" class="capt-img"/>
-							<p class="capt-txt">Select</p>
+				<p class="slcttmp">Select Template</p>
+				<div class="form-drop-cont">
+					
+					<!-- Adding dropdown -->
+					<div class="drpdwn-dtsrc" id="event-frm-drp">
+						<div class="drop-display">
+							<div class="left">
+								<!-- <img src="{{"images/aws.png" | relURL }}" class="capt-img"/> -->
+								<img src="" class="capt-img"/>
+								<p class="capt-txt">Select</p>
+							</div>
+							<div class="right">
+								<img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
+								<img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
+							</div>
+							
 						</div>
-						<div class="right">
-							<img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
-							<img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
-						</div>
-						
+						<ul class="drop-list">
+							<li id="micros">
+								<div class="left">
+									<img src="/binary-flux/images/event-micro.png" class="capt-img"/>								
+									<div class="txt-wrapp">
+										<p class="capt-txt">MICROSOFT</p>
+										<p>Microsoft Database for Pet Management</p>
+									</div>								
+								</div>
+								<img src="/binary-flux/images/uparrow.png" class="top-arrw" />
+							</li>
+							<li id="splun">
+								<div class="left">
+									<img src="/binary-flux/images/splunk-vector-logo.svg" class="capt-img"/>								
+									<div class="txt-wrapp">
+										<p class="capt-txt">SPLUNK</p>
+										<p>Splunk Database for Pet Management</p>
+									</div>
+								</div>
+							</li>
+							<li id="amzn">
+								<div class="left">
+									<img src="/binary-flux/images/logo_aws.svg" class="capt-img"/>								
+									<div class="txt-wrapp">
+										<p class="capt-txt">AMAZON WEB SERVICES</p>
+										<p>AWS Database for Pet Management</p>
+									</div>
+								</div>
+							</li>
+						</ul>
 					</div>
-					<ul class="drop-list">
-						<li id="micros">
-							<div class="left">
-								<img src="/binary-flux/images/event-micro.png" class="capt-img"/>								
-								<div class="txt-wrapp">
-									<p class="capt-txt">MICROSOFT</p>
-									<p>Microsoft Database for Pet Management</p>
-								</div>								
-							</div>
-							<img src="/binary-flux/images/uparrow.png" class="top-arrw" />
-						</li>
-						<li id="splun">
-							<div class="left">
-								<img src="/binary-flux/images/splunk-vector-logo.svg" class="capt-img"/>								
-								<div class="txt-wrapp">
-									<p class="capt-txt">SPLUNK</p>
-									<p>Splunk Database for Pet Management</p>
-								</div>
-							</div>
-						</li>
-						<li id="amzn">
-							<div class="left">
-								<img src="/binary-flux/images/logo_aws.svg" class="capt-img"/>								
-								<div class="txt-wrapp">
-									<p class="capt-txt">AMAZON WEB SERVICES</p>
-									<p>AWS Database for Pet Management</p>
-								</div>
-							</div>
-						</li>
-					</ul>
+					<div class="savbtn-cont">
+						<button class="btn btn-primary mr-1 font-weight-bolder f-12">Save</button>
+						<button class="btn btn-outline-dark font-weight-bolder f-12">Test</button>
+					</div>
+
 				</div>
 
+				
 
-				<div class="d-flex justify-content-between align-items-center aws-config mt-1 flex-wrap">
+
+				<!-- <div class="d-flex justify-content-between align-items-center aws-config mt-1 flex-wrap">
 					<div class="col-12 col-lg-6 p-0">
 						<h5 class="section-title text-uppercase mt-0 mb-05">AWS Config</h5>
 						<p class="mb-0 text-white--5 text-break font-weight-light">AWS Database for Pet Management</p>
@@ -97,7 +108,7 @@
 							<button class="btn btn-outline-dark font-weight-bolder f-12">Test</button>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<hr class="grey mt-1 my-0">
 				<div class="change-cont">
 					<div class="point-disp" id="amazaon">			
