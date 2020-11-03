@@ -12460,6 +12460,14 @@ hr {
       min-height: 230px; } }
 #event-frm-drp .drop-display {
   width: 275px; }
+  #event-frm-drp .drop-display .left .capt-txt {
+    opacity: 0.7;
+    color: #FFFFFF;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 0;
+    line-height: 16px; }
 
 #event-frm-drp .drop-list {
   width: 275px; }
@@ -12486,6 +12494,8 @@ hr {
       font-weight: 900;
       letter-spacing: 0;
       line-height: 16px; }
+    #event-frm-drp .drop-list li:hover .left .txt-wrapp .capt-txt {
+      opacity: 1; }
 
 .change-cont .point-disp {
   display: none; }
