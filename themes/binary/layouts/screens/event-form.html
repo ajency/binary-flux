@@ -30,15 +30,62 @@
 <div class="page-wrapper">
 	<div class="container fw-cont-mobile text-break">
 		<div class="row">
-			<div class="col-12 col-lg-2 padding-md-0">
+			<!-- <div class="col-12 col-lg-2 padding-md-0">
 				<a href="#" class="btn-data-sources text-white--5 text-uppercase text-decoration-none font-weight-bold"><i class="icon-arrow-left-light icon-wrap mr-1 text-white--5"></i>  All Data Sources</a>
 				<div class="text-lg-center mt-2 mb-3">
 					<img src="{{"images/logo_aws.svg" | relURL }}" class="logo-data-source img-fluid">
 				</div>
-			</div>
+			</div> -->
 			<div class="col-12 col-lg-8">
 				<h5 class="section-title text-uppercase mt-0">Add a New Source</h5>
 				<hr class="grey my-0">
+				<!-- Adding dropdown -->
+				<div class="drpdwn-dtsrc" id="event-frm-drp">
+					<div class="drop-display">
+						<div class="left">
+							<!-- <img src="{{"images/aws.png" | relURL }}" class="capt-img"/> -->
+							<img src="" class="capt-img"/>
+							<p class="capt-txt">Select</p>
+						</div>
+						<div class="right">
+							<img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
+							<img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
+						</div>
+						
+					</div>
+					<ul class="drop-list">
+						<li id="micros">
+							<div class="left">
+								<img src="/binary-flux/images/event-micro.png" class="capt-img"/>								
+								<div class="txt-wrapp">
+									<p class="capt-txt">MICROSOFT</p>
+									<p>Microsoft Database for Pet Management</p>
+								</div>								
+							</div>
+							<img src="/binary-flux/images/uparrow.png" class="top-arrw" />
+						</li>
+						<li id="splun">
+							<div class="left">
+								<img src="/binary-flux/images/splunk-vector-logo.svg" class="capt-img"/>								
+								<div class="txt-wrapp">
+									<p class="capt-txt">SPLUNK</p>
+									<p>Splunk Database for Pet Management</p>
+								</div>
+							</div>
+						</li>
+						<li id="amzn">
+							<div class="left">
+								<img src="/binary-flux/images/logo_aws.svg" class="capt-img"/>								
+								<div class="txt-wrapp">
+									<p class="capt-txt">AMAZON WEB SERVICES</p>
+									<p>AWS Database for Pet Management</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
 				<div class="d-flex justify-content-between align-items-center aws-config mt-1 flex-wrap">
 					<div class="col-12 col-lg-6 p-0">
 						<h5 class="section-title text-uppercase mt-0 mb-05">AWS Config</h5>
@@ -52,112 +99,174 @@
 					</div>
 				</div>
 				<hr class="grey mt-1 my-0">
-				<div>			
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Header <i class="icon-checked icon-check-circle"></i></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link active" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">JD EDWARDS</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Documentation</a>
-						</li>
-					</ul>
-					<div class="tab-content pt-1" id="myTabContent">
-						<div class="tab-pane fade show active" id="jd_edwards" role="tabpanel" aria-labelledby="jd_edwards-tab">
-							<h5 class="section-title mt-0 mb-05">Import events from files on Amazon S3</h5>
-							<p class="mb-05 text-white--8 font-weight-light">Alooma can import files from an Amazon S3 Bucket</p>
-							<hr class="grey mt-1 mb-1">
-							<ul class="text-break pl-15">
-								<li class="text-white--8">The content of the files on S3 must include one events per line</li>
-								<li class="text-white--8">Events maybe in any text format JSON, csv, syslog, etc (Use a transform function in the Code Engine to parse the events into JSON format)</li>
-								<li class="text-white--8">Files may be packaged and compressed with Tar & Gzip</li>
-								<li class="text-white--8">You may choose to import all files from the bucket , or only new files created from now on</li>
-							</ul>
-							<hr class="grey mt-1 mb-1">
-							<p class="mb-1 font-weight-bold text-break text-white--8">To begin importing events from S3, Configure the following details.</p>
-							<div>
-								<form>
-									<div class="form-field">
-										<label class="form-label">
-											<span class="form-label-content">AWS Access Key ID</span>
-										</label>
-										<input class="form-control" type="text">                            
-									</div>
-									<div class="form-field">
-										<label class="form-label">
-											<span class="form-label-content">AWS Secret Access Key</span>
-										</label>
-										<input class="form-control" type="text">                            
-									</div>
-									<div class="form-field">
-										<label class="form-label">
-											<span class="form-label-content">Bucket Name</span>
-										</label>
-										<input class="form-control" type="text">                            
-									</div>
-									<div class="form-field">
-										<label class="form-label">
-											<span class="form-label-content">File perfix (optional)</span>
-										</label>
-										<input class="form-control" type="text">                            
-									</div>
-									<div class="form-field">
-										<label class="form-label">
-											<span class="form-label-content">File will be imported from</span>
-										</label>
-										<div class="position-relative cursor-pointer">
-											<img src="{{"images/upload.png" | relURL }}" class="file-iocn" width="15" height="15">
-											<div id="noFile" class="">No file chosen...</div>
-											<input class="file-input form-control" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" value="s3://alooma-qa/s3-slurper-tests/test_inputs/">                        
+				<div class="change-cont">
+					<div class="point-disp" id="amazaon">			
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link" id="header-tab" data-toggle="tab" href="#header" role="tab" aria-controls="header" aria-selected="true">Header <i class="icon-checked icon-check-circle"></i></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link active" id="jd_edwards-tab" data-toggle="tab" href="#jd_edwards" role="tab" aria-controls="jd_edwards" aria-selected="false">JD EDWARDS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="documentation-tab" data-toggle="tab" href="#documentation" role="tab" aria-controls="documentation" aria-selected="false">Documentation</a>
+							</li>
+						</ul>
+						<div class="tab-content pt-1" id="myTabContent">
+							<div class="tab-pane fade show active" id="jd_edwards" role="tabpanel" aria-labelledby="jd_edwards-tab">
+								<h5 class="section-title mt-0 mb-05">Import events from files on Amazon S3</h5>
+								<p class="mb-05 text-white--8 font-weight-light">Alooma can import files from an Amazon S3 Bucket</p>
+								<hr class="grey mt-1 mb-1">
+								<ul class="text-break pl-15">
+									<li class="text-white--8">The content of the files on S3 must include one events per line</li>
+									<li class="text-white--8">Events maybe in any text format JSON, csv, syslog, etc (Use a transform function in the Code Engine to parse the events into JSON format)</li>
+									<li class="text-white--8">Files may be packaged and compressed with Tar & Gzip</li>
+									<li class="text-white--8">You may choose to import all files from the bucket , or only new files created from now on</li>
+								</ul>
+								<hr class="grey mt-1 mb-1">
+								<p class="mb-1 font-weight-bold text-break text-white--8">To begin importing events from S3, Configure the following details.</p>
+								<div>
+									<form>
+										<div class="form-field">
+											<label class="form-label">
+												<span class="form-label-content">AWS Access Key ID</span>
+											</label>
+											<input class="form-control" type="text">                            
 										</div>
-									</div>
-									<div class="form-field form-radio-group">
-										<label class="form-label">
-											<span class="form-label-content">Select which files to import</span>
-										</label>
-										<div class="custom-control custom-radio">
-											<input type="radio" id="fonly_new" name="fileimport" class="custom-control-input" checked="">
-											<label class="custom-control-label" for="fonly_new">Only New</label>
+										<div class="form-field">
+											<label class="form-label">
+												<span class="form-label-content">AWS Secret Access Key</span>
+											</label>
+											<input class="form-control" type="text">                            
 										</div>
-										<div class="custom-control custom-radio">
-											<input type="radio" id="fall" name="fileimport" class="custom-control-input" checked="">
-											<label class="custom-control-label" for="fall">All</label>
+										<div class="form-field">
+											<label class="form-label">
+												<span class="form-label-content">Bucket Name</span>
+											</label>
+											<input class="form-control" type="text">                            
 										</div>
-									</div>
-									<div class="form-field form-radio-group mb-0">
-										<label class="form-label">
-											<span class="form-label-content">File Format</span>
-										</label>
-										<div class="custom-control custom-radio">
-											<input type="radio" id="ff_json" name="fileformat" class="custom-control-input" checked="">
-											<label class="custom-control-label" for="ff_json">JSON lines</label>
+										<div class="form-field">
+											<label class="form-label">
+												<span class="form-label-content">File perfix (optional)</span>
+											</label>
+											<input class="form-control" type="text">                            
 										</div>
-										<div class="custom-control custom-radio">
-											<input type="radio" id="ff_del" name="fileformat" class="custom-control-input" checked="">
-											<label class="custom-control-label" for="ff_del">Delimited with header (CSV/TSV)</label>
+										<div class="form-field">
+											<label class="form-label">
+												<span class="form-label-content">File will be imported from</span>
+											</label>
+											<div class="position-relative cursor-pointer">
+												<img src="{{"images/upload.png" | relURL }}" class="file-iocn" width="15" height="15">
+												<div id="noFile" class="">No file chosen...</div>
+												<input class="file-input form-control" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" value="s3://alooma-qa/s3-slurper-tests/test_inputs/">                        
+											</div>
 										</div>
-										<div class="custom-control custom-radio">
-											<input type="radio" id="ff_other" name="fileformat" class="custom-control-input" checked="">
-											<label class="custom-control-label" for="ff_other">Other(Delimited without header, Syslog, XML, other)</label>
+										<div class="form-field form-radio-group">
+											<label class="form-label">
+												<span class="form-label-content">Select which files to import</span>
+											</label>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="fonly_new" name="fileimport" class="custom-control-input" checked="">
+												<label class="custom-control-label" for="fonly_new">Only New</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="fall" name="fileimport" class="custom-control-input" checked="">
+												<label class="custom-control-label" for="fall">All</label>
+											</div>
 										</div>
-									</div>
-								</form>
+										<div class="form-field form-radio-group mb-0">
+											<label class="form-label">
+												<span class="form-label-content">File Format</span>
+											</label>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="ff_json" name="fileformat" class="custom-control-input" checked="">
+												<label class="custom-control-label" for="ff_json">JSON lines</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="ff_del" name="fileformat" class="custom-control-input" checked="">
+												<label class="custom-control-label" for="ff_del">Delimited with header (CSV/TSV)</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="ff_other" name="fileformat" class="custom-control-input" checked="">
+												<label class="custom-control-label" for="ff_other">Other(Delimited without header, Syslog, XML, other)</label>
+											</div>
+										</div>
+									</form>
+								</div>
 							</div>
 						</div>
+						<div class="navigation-navs mt-2">
+							<ul>
+								<li class="prev-nav"><a href="#" class="text-decoration-none" target="_self"><i class="icon-arrow-left-light icon-wrap mr-1 text-white--5"></i> Previous</a></li>
+								<li class="next-nav"><a href="#" class="text-decoration-none" target="_self">Next <i class="icon-arrow-left-light icon-wrap ml-1 rotate-180 text-white--5"></i></a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="navigation-navs mt-2">
-						<ul>
-							<li class="prev-nav"><a href="#" class="text-decoration-none" target="_self"><i class="icon-arrow-left-light icon-wrap mr-1 text-white--5"></i> Previous</a></li>
-							<li class="next-nav"><a href="#" class="text-decoration-none" target="_self">Next <i class="icon-arrow-left-light icon-wrap ml-1 rotate-180 text-white--5"></i></a></li>
-						</ul>
-					</div>
+					<div class="point-disp" id="microsoft"></div>
+					<div class="point-disp" id="splunkk"></div>
 				</div>
+				
 			</div>
 		</div>
 	</div>
 </div>
 
-{{- partial "footer.html" . -}}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+	$(document).ready(function () {
+		//Drop down creation
+		$('.drop-display').on("click", function () {
+			if($(this).hasClass('shown')){
+			$(this).removeClass('shown');
+			$(this).parent().find('.drop-list').removeClass('show');  
+			}
+			else{
+				$(this).addClass('shown');
+				$(this).parent().find('.drop-list').addClass('show');
+			}     
+		});
+
+		// Dropdown Value Changer
+        $('#event-frm-drp .drop-list li').on("click", function () {
+            var dropdisplayimg2 = $('#event-frm-drp .drop-display .left .capt-img');
+            var dropdisplaytxt2 = $('#event-frm-drp .drop-display .left .capt-txt');
+
+            var imgsrc2 = $(this).find('.capt-img').attr('src');
+            var text2 = $(this).find('.capt-txt').html();
+
+            dropdisplayimg2.attr('src', imgsrc2);
+            dropdisplaytxt2.html(text2);
+
+			var drpamazn = $(this).attr('id');
+			console.log(drpamazn);
+
+			$('.point-disp').removeClass('show');
+
+			if (drpamazn == 'amzn') {
+				$('#amazaon').addClass('show');
+			}
+			else if (drpamazn == 'micros') {
+				$('#microsoft').addClass('show');
+			}
+			else if (drpamazn == 'splun') {
+				$('#splunkk').addClass('show');
+			}
+			
+            $('#event-frm-drp .drop-display').removeClass('shown');
+            $('#event-frm-drp .drop-list').removeClass('show');
+        });
+
+
+		// $('#amzn').on("click", function () {
+
+
+		// });
+
+	});
+
+</script>
+
+<!-- {{- partial "footer.html" . -}} -->
 {{ end }}
