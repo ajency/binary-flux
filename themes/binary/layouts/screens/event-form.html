@@ -37,7 +37,7 @@
 					<img src="{{"images/logo_aws.svg" | relURL }}" class="logo-data-source img-fluid">
 				</div>
 			</div> -->
-			<div class="col-12 col-lg-8">
+			<div class="col-12 col-lg-8 ">
 				
 				<h5 class="section-title text-uppercase mt-0">Add a New Source</h5>
 				<hr class="grey my-0">
@@ -111,7 +111,7 @@
 						</div>
 					</div>
 				</div> -->
-				<hr class="grey mt-1 my-0">
+				<!-- <hr class="grey mt-1 my-0"> -->
 				<div class="change-cont">
 					<div class="point-disp" id="amazaon">			
 						<ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -218,10 +218,24 @@
 					<div class="point-disp" id="microsoft"></div>
 					<div class="point-disp" id="splunkk"></div>
 				</div>
+
+				<!-- <div class="no-tmplate">
+					<h2>No Template Selected</h2>
+					<img src="/binary-flux/images/notmplate.svg" alt="" />
+				</div> -->
 				
 			</div>
 		</div>
 	</div>
+
+	<div class="no-tmplate">
+		<h2>No Template Selected</h2>
+		<img src="/binary-flux/images/notmplate.svg" alt="" />
+		<div class="bg-setter">
+			
+		</div>
+	</div>
+
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -266,17 +280,19 @@
 			else if (drpamazn == 'splun') {
 				$('#splunkk').addClass('show');
 			}
+
+			$('.form-drop-cont').addClass('brdrbtm');
+
+			$('.no-tmplate').addClass('hide');
+
+			$('.savbtn-cont').addClass('show');
 			
             $('#event-frm-drp .drop-display').removeClass('shown');
             $('#event-frm-drp .drop-list').removeClass('show');
         });
 
 
-		// $('#amzn').on("click", function () {
-
-
-		// });
-
+		
 	});
 
 </script>
