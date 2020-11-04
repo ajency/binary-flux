@@ -12589,19 +12589,6 @@ hr {
     .evnt-form .container .form-drop-cont.brdrbtm {
       border-bottom: 2px solid;
       border-bottom-color: rgba(68, 71, 90, 0.5); }
-  .evnt-form .container .no-tmplate {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 166px; }
-    .evnt-form .container .no-tmplate h2 {
-      color: #FFFFFF;
-      font-family: "Nunito Sans";
-      font-size: 26px;
-      font-weight: 300;
-      letter-spacing: 0;
-      line-height: 36px; }
 
 .evnt-form .no-tmplate {
   display: flex;
@@ -12612,10 +12599,11 @@ hr {
   .evnt-form .no-tmplate h2 {
     color: #FFFFFF;
     font-family: "Nunito Sans";
-    font-size: 26px;
+    font-size: 40px;
     font-weight: 300;
     letter-spacing: 0;
-    line-height: 36px; }
+    line-height: 48px;
+    margin-bottom: 70px; }
   .evnt-form .no-tmplate .bg-setter {
     height: 444px;
     background: url("/binary-flux/images/bg-setter.png") no-repeat;
