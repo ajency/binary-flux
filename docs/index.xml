@@ -6,7 +6,16 @@
     <description>Recent content on Binary Flux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Nov 2020 05:07:00 +0530</lastBuildDate><atom:link href="https://ajency.github.io/binary-flux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 14 Dec 2020 12:24:51 +0530</lastBuildDate><atom:link href="https://ajency.github.io/binary-flux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Search Query</title>
+      <link>https://ajency.github.io/binary-flux/screens/search-query/</link>
+      <pubDate>Mon, 14 Dec 2020 12:24:51 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/search-query/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>All Data Sources Empty</title>
       <link>https://ajency.github.io/binary-flux/screens/all-data-sources-empty/</link>
