@@ -839,50 +839,63 @@
     </div>
     
     <!-- Search Query Bar -->
-    <div class="search-bar">
-        <div class="search-bar__srch">
-            <i class="fa fa-caret-up" aria-hidden="true"></i>
-            Search Query
-        </div>
-        <div class="search-bar__input">
-            <input name="searches" type="text" class="search-bar__input--text">
-            <div class="drpdwn-dtsrc" id="schedle-mod-drps">
-                <div class="drop-display">
-                    <div class="left">
-                        Last 1 month                        
-                    </div>
-                    <div class="right">
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
-                    </div>
-                    
+    <div class="search-bar active">
+        <div class="search-bar__upper">
+            <div class="search-bar__top">
+                <div class="search-bar__srch">
+                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    Search Query
                 </div>
-                <ul class="drop-list">
-                    <li>
-                        <div class="left">                            
-                            Last day
-                        </div>                        
-                    </li>
-                    <li>
-                        <div class="left">                            
-                            Last 1 week
+                <div class="search-bar__input">
+                    <input name="searches" type="text" class="search-bar__input--text" id="searchrun" placeholder="Enter a query">
+                    <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                        <div class="drop-display">
+                            <div class="left">
+                                Last 1 month                        
+                            </div>
+                            <div class="right">
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                            </div>
+                            
                         </div>
-                    </li>
-                    <li>
-                        <div class="left">                            
-                            Last year
-                        </div>
-                    </li>
-                </ul>
+                        <ul class="drop-list">
+                            <li>
+                                <div class="left">                            
+                                    Last day
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="left">                            
+                                    Last 1 week
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">                            
+                                    Last year
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-bar__buttons">
+                    <button class="search-bar__run search-button--exe" id="submitquery" >Run</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-repeat" aria-hidden="true"></i>Reset</button>
+                </div>
             </div>
+    
+            <div class="search-bar__bottom">
+                <a href="#!" class="search-bottom__link"><i class="fa fa-external-link" aria-hidden="true"></i>Open Saved Query</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-search" aria-hidden="true"></i>Easy Search</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-th-large" aria-hidden="true"></i>Create a Widget</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-play" aria-hidden="true"></i>Run a Playbook</a>
+            </div> 
         </div>
-        <div class="search-bar__buttons">
-            <button class="search-bar__run search-button--exe">Run</button>
-            <button class="search-bar__run search-bar--option"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
-            <button class="search-bar__run search-bar--option"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
-            <button class="search-bar__run search-bar--option"><i class="fa fa-repeat" aria-hidden="true"></i>Reset</button>
-        </div>
-        
+        <div class="search-bar__lower"></div>
+                       
     </div>
+
 
 </div>
 
@@ -1327,6 +1340,45 @@
         dropdisplay[i].addEventListener('click', dropshow);
         
     }
+
+
+    // var droplist = document.getElementsByClassName('drop-list');
+    // // var droplilist = droplist.children();
+    // console.log(droplist);
+
+    // Enabling Search Query Darwer to open and close based on Input element and Run button press
+    function searchdraw () {
+        var searchbar = this.closest('.search-bar');
+        console.log(searchbar);
+        if(searchbar.classList.contains("active")){
+            // searchbar.classList.remove("active");
+            console.log('active state');
+        }
+        else{
+            searchbar.classList.add("active");
+        }
+    }
+
+    function closer () {
+        var searchbar = this.closest('.search-bar');
+        if(searchbar.classList.contains("active")){
+            searchbar.classList.remove("active");
+            // console.log('active state');
+        }
+        else{
+            // searchbar.classList.add("active");
+            console.log('Inactive state');
+        }
+    }
+
+    var searchinput = document.getElementById("searchrun");
+    console.log(searchinput);
+    searchinput.addEventListener("focus", searchdraw);
+
+
+    var submitquery = document.getElementById("submitquery");
+    submitquery.addEventListener("click", closer);
+    // Enabling Search Query Darwer to open and close based on Input element and Run button press
     
 
 </script>
