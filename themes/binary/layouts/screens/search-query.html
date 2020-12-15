@@ -845,7 +845,7 @@
             Search Query
         </div>
         <div class="search-bar__input">
-            <input name="searches" type="search" class="search-bar__input--text">
+            <input name="searches" type="text" class="search-bar__input--text">
             <div class="drpdwn-dtsrc" id="schedle-mod-drps">
                 <div class="drop-display">
                     <div class="left">
@@ -1300,20 +1300,57 @@
 </script>
 
 <!-- Added by Ankit -->
+ 
+<!-- Drop Down in Vanilla JS -->
 <script>
+
+    var dropdisplay = document.getElementsByClassName("drop-display");
+
+    function dropshow () {
+        if(this.classList.contains("shown")) {
+            this.classList.remove("shown");
+            var closest = this.parentNode.querySelectorAll('.drop-list');
+            for (var i=0; i < closest.length; i++) {
+                closest[i].classList.remove("show");
+            }
+        }
+        else{
+            this.classList.add("shown");
+            var closest = this.parentNode.querySelectorAll('.drop-list');
+            for (var i=0; i < closest.length; i++) {
+                closest[i].classList.add("show");
+            }
+        }
+    }
+    
+    for (var i=0; i < dropdisplay.length; i++) {
+        dropdisplay[i].addEventListener('click', dropshow);
+        
+    }
+    
+
+</script>
+
+<script>
+
+    
+
+
     $(document).ready(function () {
 
+        
+
         //Drop down creation
-        $('.drop-display').on("click", function () {
-            if($(this).hasClass('shown')){
-            $(this).removeClass('shown');
-            $(this).parent().find('.drop-list').removeClass('show');  
-            }
-            else{
-                $(this).addClass('shown');
-                $(this).parent().find('.drop-list').addClass('show');
-            }     
-        });
+        // $('.drop-display').on("click", function () {
+        //     if($(this).hasClass('shown')){
+        //     // $(this).removeClass('shown');
+        //     $(this).parent().find('.drop-list').removeClass('show');  
+        //     }
+        //     else{
+        //         $(this).addClass('shown');
+        //         $(this).parent().find('.drop-list').addClass('show');
+        //     }     
+        // });
 
         // data-source Dropdown Value Changer
         $('#data-src-drp .drop-list li').on("click", function () {
