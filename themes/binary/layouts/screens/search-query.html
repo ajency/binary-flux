@@ -839,7 +839,7 @@
     </div>
     
     <!-- Search Query Bar -->
-    <div class="search-bar active">
+    <div class="search-bar">
         <div class="search-bar__upper">
             <div class="search-bar__top">
                 <div class="search-bar__srch">
@@ -1314,10 +1314,10 @@
 
 <!-- Added by Ankit -->
  
-<!-- Drop Down in Vanilla JS -->
-<script>
 
-    var dropdisplay = document.getElementsByClassName("drop-display");
+<script>
+    //  Drop Down in Vanilla JS
+    var dropdisplay = document.getElementsByClassName("drop-display");   
 
     function dropshow () {
         if(this.classList.contains("shown")) {
@@ -1340,11 +1340,23 @@
         dropdisplay[i].addEventListener('click', dropshow);
         
     }
+    //  Drop Down in Vanilla JS
 
+    
+
+
+    // function closelist () {
+    //     this.parentNode.classList.remove("show");
+    // }
 
     // var droplist = document.getElementsByClassName('drop-list');
+    var droplist = document.querySelectorAll('.drop-list li');
     // // var droplilist = droplist.children();
-    // console.log(droplist);
+
+    // droplist.addEventListener("click", closelist);
+    console.log(droplist);
+
+
 
     // Enabling Search Query Darwer to open and close based on Input element and Run button press
     function searchdraw () {
@@ -1363,21 +1375,36 @@
         var searchbar = this.closest('.search-bar');
         if(searchbar.classList.contains("active")){
             searchbar.classList.remove("active");
-            // console.log('active state');
         }
         else{
-            // searchbar.classList.add("active");
             console.log('Inactive state');
         }
     }
 
+    function searchbtns () {
+        var searchbar = this.closest('.search-bar');
+        console.log(searchbar);
+        if(searchbar.classList.contains("active")){
+            searchbar.classList.remove("active");
+        }
+        else{
+            searchbar.classList.add("active");
+        }
+    }
+
     var searchinput = document.getElementById("searchrun");
-    console.log(searchinput);
+
     searchinput.addEventListener("focus", searchdraw);
 
 
     var submitquery = document.getElementById("submitquery");
     submitquery.addEventListener("click", closer);
+
+    var searchbuton = document.getElementsByClassName("search-bar__srch");
+    console.log(searchbuton);
+    for (var i=0; i < searchbuton.length; i++) {
+        searchbuton[i].addEventListener('click', searchbtns);        
+    }
     // Enabling Search Query Darwer to open and close based on Input element and Run button press
     
 
