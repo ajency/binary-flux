@@ -12,7 +12,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.a289107ac2fc78f2d3471fa4f8f39588ff0b9b18b060404d63aed00c598c8b6e.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.d5e7294f23c2fa4e29656ea21f5b9ce5cb9d10cc39b4d4fbe3dde197ce7fd716.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -845,49 +845,62 @@
     
     
     <div class="search-bar">
-        <div class="search-bar__srch">
-            <i class="fa fa-caret-up" aria-hidden="true"></i>
-            Search Query
-        </div>
-        <div class="search-bar__input">
-            <input name="searches" type="search" class="search-bar__input--text">
-            <div class="drpdwn-dtsrc" id="schedle-mod-drps">
-                <div class="drop-display">
-                    <div class="left">
-                        Last 1 month                        
-                    </div>
-                    <div class="right">
-                        <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
-                    </div>
-                    
+        <div class="search-bar__upper">
+            <div class="search-bar__top">
+                <div class="search-bar__srch">
+                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    Search Query
                 </div>
-                <ul class="drop-list">
-                    <li>
-                        <div class="left">                            
-                            Last day
-                        </div>                        
-                    </li>
-                    <li>
-                        <div class="left">                            
-                            Last 1 week
+                <div class="search-bar__input">
+                    <input name="searches" type="text" class="search-bar__input--text" id="searchrun" placeholder="Enter a query">
+                    <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                        <div class="drop-display">
+                            <div class="left">
+                                Last 1 month                        
+                            </div>
+                            <div class="right">
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                            </div>
+                            
                         </div>
-                    </li>
-                    <li>
-                        <div class="left">                            
-                            Last year
-                        </div>
-                    </li>
-                </ul>
+                        <ul class="drop-list">
+                            <li>
+                                <div class="left">                            
+                                    Last day
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="left">                            
+                                    Last 1 week
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">                            
+                                    Last year
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-bar__buttons">
+                    <button class="search-bar__run search-button--exe" id="submitquery" >Run</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-repeat" aria-hidden="true"></i>Reset</button>
+                </div>
             </div>
+    
+            <div class="search-bar__bottom">
+                <a href="#!" class="search-bottom__link"><i class="fa fa-external-link" aria-hidden="true"></i>Open Saved Query</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-search" aria-hidden="true"></i>Easy Search</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-th-large" aria-hidden="true"></i>Create a Widget</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-play" aria-hidden="true"></i>Run a Playbook</a>
+            </div> 
         </div>
-        <div class="search-bar__buttons">
-            <button class="search-bar__run search-button--exe">Run</button>
-            <button class="search-bar__run search-bar--option"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
-            <button class="search-bar__run search-bar--option"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
-            <button class="search-bar__run search-bar--option"><i class="fa fa-repeat" aria-hidden="true"></i>Reset</button>
-        </div>
-        
+        <div class="search-bar__lower"></div>
+                       
     </div>
+
 
 </div>
 
@@ -1299,20 +1312,123 @@
 </script>
 
 
+ 
+
 <script>
+    
+    var dropdisplay = document.getElementsByClassName("drop-display");   
+
+    function dropshow () {
+        if(this.classList.contains("shown")) {
+            this.classList.remove("shown");
+            var closest = this.parentNode.querySelectorAll('.drop-list');
+            for (var i=0; i < closest.length; i++) {
+                closest[i].classList.remove("show");
+            }
+        }
+        else{
+            this.classList.add("shown");
+            var closest = this.parentNode.querySelectorAll('.drop-list');
+            for (var i=0; i < closest.length; i++) {
+                closest[i].classList.add("show");
+            }
+        }
+    }
+    
+    for (var i=0; i < dropdisplay.length; i++) {
+        dropdisplay[i].addEventListener('click', dropshow);
+        
+    }
+    
+
+    
+
+
+    
+    
+    
+
+    
+    var droplist = document.querySelectorAll('.drop-list li');
+    
+
+    
+    console.log(droplist);
+
+
+
+    
+    function searchdraw () {
+        var searchbar = this.closest('.search-bar');
+        console.log(searchbar);
+        if(searchbar.classList.contains("active")){
+            
+            console.log('active state');
+        }
+        else{
+            searchbar.classList.add("active");
+        }
+    }
+
+    function closer () {
+        var searchbar = this.closest('.search-bar');
+        if(searchbar.classList.contains("active")){
+            searchbar.classList.remove("active");
+        }
+        else{
+            console.log('Inactive state');
+        }
+    }
+
+    function searchbtns () {
+        var searchbar = this.closest('.search-bar');
+        console.log(searchbar);
+        if(searchbar.classList.contains("active")){
+            searchbar.classList.remove("active");
+        }
+        else{
+            searchbar.classList.add("active");
+        }
+    }
+
+    var searchinput = document.getElementById("searchrun");
+
+    searchinput.addEventListener("focus", searchdraw);
+
+
+    var submitquery = document.getElementById("submitquery");
+    submitquery.addEventListener("click", closer);
+
+    var searchbuton = document.getElementsByClassName("search-bar__srch");
+    console.log(searchbuton);
+    for (var i=0; i < searchbuton.length; i++) {
+        searchbuton[i].addEventListener('click', searchbtns);        
+    }
+    
+    
+
+</script>
+
+<script>
+
+    
+
+
     $(document).ready(function () {
 
         
-        $('.drop-display').on("click", function () {
-            if($(this).hasClass('shown')){
-            $(this).removeClass('shown');
-            $(this).parent().find('.drop-list').removeClass('show');  
-            }
-            else{
-                $(this).addClass('shown');
-                $(this).parent().find('.drop-list').addClass('show');
-            }     
-        });
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         
         $('#data-src-drp .drop-list li').on("click", function () {
