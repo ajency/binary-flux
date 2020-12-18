@@ -12764,24 +12764,31 @@ hr {
     .search-bar.active .search-bar__lower {
       display: block; }
 
-.searchquery-tbl .header-bg {
-  background-color: #20284C; }
-
-.searchquery-tbl th, .searchquery-tbl td {
-  border: none !important; }
-
-.searchquery-tbl tbody {
-  background-color: #11152F; }
-
-.searchquery-tbl th {
-  color: #659CC8;
-  text-transform: uppercase; }
-
-.searchquery-tbl td {
-  color: #FFFFFF; }
-
-.searchquery-tbl .drpdwn-dtsrc .drop-display, .searchquery-tbl .drpdwn-dtsrc .drop-list {
-  width: 140px; }
+.search-query__modal .modal-content .modal-body .table__cont {
+  width: 100%;
+  overflow: scroll; }
+  .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl {
+    width: 100%;
+    min-width: 1200px; }
+    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl .header-bg {
+      background-color: #20284C; }
+    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl th, .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl td {
+      border: none !important;
+      vertical-align: middle; }
+    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl tbody {
+      background-color: #11152F; }
+      .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl tbody tr td.icons {
+        color: #1391FF;
+        vertical-align: middle; }
+        .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl tbody tr td.icons i {
+          font-size: 15px; }
+    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl th {
+      color: #659CC8;
+      text-transform: uppercase; }
+    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl td {
+      color: #FFFFFF; }
+    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl .drpdwn-dtsrc .drop-display, .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl .drpdwn-dtsrc .drop-list {
+      width: 140px; }
 
 .savedquery .modal-body .form-group {
   padding-right: 90px; }
