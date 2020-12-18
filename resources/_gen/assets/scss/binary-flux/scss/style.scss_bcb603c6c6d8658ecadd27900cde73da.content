@@ -12783,12 +12783,24 @@ hr {
 .searchquery-tbl .drpdwn-dtsrc .drop-display, .searchquery-tbl .drpdwn-dtsrc .drop-list {
   width: 140px; }
 
+.savedquery .modal-body .form-group {
+  padding-right: 90px; }
+  .savedquery .modal-body .form-group .drpdwn-dtsrc.save__pop--dpdown .drop-list {
+    width: 100%; }
+  .savedquery .modal-body .form-group .textarea--query {
+    height: 100px;
+    resize: none; }
+
+.savedquery .modal-footer {
+  opacity: 0.47; }
+
 .savedquery label {
   font-size: 15px;
   line-height: 20px;
   text-align: left;
   color: #FFFFFF;
-  opacity: 70%; }
+  opacity: 70%;
+  cursor: pointer; }
 
 .savedquery ::placeholder {
   font-size: 14px;

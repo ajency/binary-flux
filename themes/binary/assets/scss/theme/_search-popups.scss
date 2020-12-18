@@ -24,12 +24,32 @@
     } 
 }
 .savedquery{
+    .modal-body{
+        .form-group{
+            padding-right: 90px;
+            .drpdwn-dtsrc{
+                &.save__pop--dpdown{
+                    .drop-list{
+                        width: 100%;
+                    }
+                }
+            } 
+            .textarea--query{
+                height: 100px;
+                resize: none;
+            }           
+        }
+    }
+    .modal-footer{
+        opacity: 0.47;
+    }
     label{
         font-size: 15px;
         line-height: 20px;
         text-align: left;
         color: #FFFFFF;
         opacity: 70%;
+        cursor: pointer;
     }
     ::placeholder{
         font-size: 14px;
