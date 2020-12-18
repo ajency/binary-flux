@@ -12764,4 +12764,54 @@ hr {
     .search-bar.active .search-bar__lower {
       display: block; }
 
+.searchquery-tbl .header-bg {
+  background-color: #20284C; }
+
+.searchquery-tbl th, .searchquery-tbl td {
+  border: none !important; }
+
+.searchquery-tbl tbody {
+  background-color: #11152F; }
+
+.searchquery-tbl th {
+  color: #659CC8;
+  text-transform: uppercase; }
+
+.searchquery-tbl td {
+  color: #FFFFFF; }
+
+.searchquery-tbl .drpdwn-dtsrc .drop-display, .searchquery-tbl .drpdwn-dtsrc .drop-list {
+  width: 140px; }
+
+.savedquery label {
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+  color: #FFFFFF;
+  opacity: 70%; }
+
+.savedquery ::placeholder {
+  font-size: 14px;
+  text-align: left;
+  color: #FFFFFF;
+  opacity: 20%; }
+
+.savedquery .form-control {
+  background-color: #191A35;
+  border-color: #5D5E72;
+  height: 40px; }
+
+.savedquery .drop-display {
+  width: auto;
+  border-width: 2px; }
+
+.savedquery .drop-list {
+  width: 246px; }
+
+.savedquery .drpdwn-dtsrc {
+  font-size: 14px; }
+
+.savedquery textarea.form-control {
+  height: auto; }
+
 /*# sourceMappingURL=style.css.map */
