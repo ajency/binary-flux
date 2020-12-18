@@ -1,0 +1,211 @@
+{{ define "main" }}
+
+        
+<div id="content">
+<div class="">
+    <header class="header-section pb-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="wrap d-flex">
+                <div class="logo-wrap">         
+                    <a href="#">
+                        <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+                    </a>
+                </div>
+                <ul class="nav nav-tabs no-border pl-md-3 pr-md-3 blue-bg" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab" href="#configure" role="tab" aria-controls="configure" aria-selected="true">Configure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab" href="#dashboards" role="tab" aria-controls="dashboards" aria-selected="true">Dashboards</a>
+                    </li>
+                  <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="organisation" aria-selected="true">Organisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="true">Settings</a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="user">
+                <span class="text-white font-weight-bold">John Smith<img src="/binary-flux/images/notifications-outline.svg" width="20" height="20" alt="notification" class="notification"></span>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+      <div class="btn-group btn-outline-dark-blue mt-5">
+        <button type="button" data-toggle="modal" data-target="#searchquery" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+          Search Query
+        </button>
+      </div>
+      <div id="searchquery" class="modal fade px-2" role="dialog">
+        <div class="modal-dialog mw-100">
+      
+          
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="left">
+                <h4 class="modal-title">SAVED QUERIES</h4>
+              </div>          
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <div class="modal-body">
+                <table class="table table-striped table-responsive searchquery-tbl">
+                  <thead>
+                    <tr class="header-bg">
+                      <th>Search Name</th>
+                      <th>RSS Feed</th>
+                      <th>Schedule Time</th>
+                      <th>Display View</th>
+                      <th>Owner</th>
+                      <th>App</th>
+                      <th>Alert</th>
+                      <th>Shairing</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Error on 19 oct</td>
+                      <td>-</td>
+                      <td>12:00 am 24 June 2020</td>
+                      <td>Flash Time View</td>
+                      <td>Admin</td>
+                      <td>Search</td>
+                      <td>2</td>
+                      <td>
+                        <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                          <div class="drop-display">
+                              <div class="left">Private</div>
+                              <div class="right">
+                                  <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                              </div>
+                              
+                          </div>
+                          <ul class="drop-list">
+                              <li>
+                                  <div class="left">                            
+                                    Private1                                  </div>                        
+                              </li>
+                              <li>
+                                  <div class="left">                            
+                                    Private2                                  </div>
+                              </li>
+                              <li>
+                                  <div class="left">                            
+                                    Private3                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                      </td>
+                      <td>
+                        <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                          <div class="drop-display">
+                              <div class="left">Enable</div>
+                              <div class="right">
+                                  <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                              </div>
+                              
+                          </div>
+                          <ul class="drop-list">
+                              <li>
+                                  <div class="left">                            
+                                    Enable1                                  </div>                        
+                              </li>
+                              <li>
+                                  <div class="left">                            
+                                    Enable2                                  </div>
+                              </li>
+                              <li>
+                                  <div class="left">                            
+                                    Enable3                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                      </td>
+                      <td><img src="/binary-flux/images/Path-1@3x.svg" class="pr-1" alt="logo"><img src="/binary-flux/images/file_copy-24px@3x.svg"  class="pr-1" alt="logo"><img src="/binary-flux/images/delete@3x.svg"  class="pr-1" alt="logo"><img src="/binary-flux/images/share-24px@3x.svg"  class="pr-1" alt="logo"></td>
+
+                    </tr>
+                   </tbody>
+                </table>
+            </div>
+    
+            </div>
+            
+          </div>
+      
+        </div>
+      </div>
+    </div>
+</div>
+
+<script>
+    
+  var dropdisplay = document.getElementsByClassName("drop-display");   
+
+  function dropshow () {
+      if(this.classList.contains("shown")) {
+          this.classList.remove("shown");
+          var closest = this.parentNode.querySelectorAll('.drop-list');
+          for (var i=0; i < closest.length; i++) {
+              closest[i].classList.remove("show");
+          }
+      }
+      else{
+          this.classList.add("shown");
+          var closest = this.parentNode.querySelectorAll('.drop-list');
+          for (var i=0; i < closest.length; i++) {
+              closest[i].classList.add("show");
+          }
+      }
+  }
+  
+  for (var i=0; i < dropdisplay.length; i++) {
+      dropdisplay[i].addEventListener('click', dropshow);
+      
+  }
+  
+
+  
+
+
+  
+  // var droplist = document.querySelectorAll('.drop-list li');
+  
+
+  
+  // console.log(droplist);
+
+
+
+  
+  
+  
+
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script>
+        </div><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script>
+
+
+{{- partial "custom-footer.html" . -}}
+{{ end }}

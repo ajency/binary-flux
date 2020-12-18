@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>Save Popup - Binary Flux</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="/binary-flux/images/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha512-PMjWzHVtwxdq7m7GIxBot5vdxUY+5aKP9wpKtvnNBZrVv1srI8tU6xvFMzG8crLNcMj/8Xl/WWmo/oAP/40p1g==" crossorigin="anonymous" />
+	
+		
+			
+			<link rel="stylesheet" href="/binary-flux/css/style.min.d19696e352a1028cd6d6f551053274866eadcdf56379e6dd6e441e7b7c33c277.css">
+		
+		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
+		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head><body>
+        
+        <div id="content">
+
+        
+<div id="content">
+<div class="">
+    <header class="header-section pb-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="wrap d-flex">
+                <div class="logo-wrap">         
+                    <a href="#">
+                        <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+                    </a>
+                </div>
+                <ul class="nav nav-tabs no-border pl-md-3 pr-md-3 blue-bg" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab" href="#configure" role="tab" aria-controls="configure" aria-selected="true">Configure</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab" href="#dashboards" role="tab" aria-controls="dashboards" aria-selected="true">Dashboards</a>
+                    </li>
+                  <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="organisation-tab" data-toggle="tab" href="#organisation" role="tab" aria-controls="organisation" aria-selected="true">Organisation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold pt-1" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="true">Settings</a>
+                    </li>  
+                </ul>
+            </div>
+            <div class="user">
+                <span class="text-white font-weight-bold">John Smith<img src="/binary-flux/images/notifications-outline.svg" width="20" height="20" alt="notification" class="notification"></span>
+            </div>
+        </div>
+    </header>
+    <div class="container-fluid">
+      <div class="btn-group btn-outline-dark-blue mt-5">
+        <button type="button" data-toggle="modal" data-target="#schedulemodal" class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+          Save Query
+        </button>
+      </div>
+      <div id="schedulemodal" class="modal fade savedquery" role="dialog">
+        <div class="modal-dialog">
+      
+          
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="left">
+                <h4 class="modal-title">SAVE QUERY</h4>
+              </div>          
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <div class="modal-body pt-4">
+                <form>
+                    <div class="form-group row">
+                      <label for="name" class="col-sm-3 col-form-label">Name</label>
+                      <div class="col-sm-9">
+                        <input class="form-control" id="name" type="text" placeholder="First Name">
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="textareabox" class="col-sm-3 col-form-label">Query</label>
+                      <div class="col-sm-9">
+                        <textarea class="form-control textarea--query" id="textareabox">fail*Password</textarea>
+                    </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Time Range</label>
+                        <div class="col-sm-4">
+                            <div class="drpdwn-dtsrc save__pop--dpdown" id="schedle-mod-drps">
+                                <div class="drop-display">
+                                    <div class="left">Time Range</div>
+                                    <div class="right">
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                                    </div>
+                                    
+                                </div>
+                                <ul class="drop-list">
+                                    <li>
+                                        <div class="left">                            
+                                            Last 1 month                                  </div>                        
+                                    </li>
+                                    <li>
+                                        <div class="left">                            
+                                            Last 1 month                                  </div>
+                                    </li>
+                                    <li>
+                                        <div class="left">                            
+                                            Last 1 month                                  </div>
+                                    </li>
+                                </ul>
+                            </div>                      </div>
+                      <label for="datedurtn" class="col-sm-1 col-form-label">To</label>
+                      <div class="col-sm-4">
+                        <input class="form-control" id="datedurtn" type="text" placeholder="">
+                    </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="" class="col-sm-3 col-form-label">Share Permission</label>
+                        <div class="col-sm-5">
+                            <div class="drpdwn-dtsrc save__pop--dpdown" id="schedle-mod-drps">
+                                <div class="drop-display">
+                                    <div class="left">Select</div>
+                                    <div class="right">
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                                    </div>
+                                    
+                                </div>
+                                <ul class="drop-list">
+                                    <li>
+                                        <div class="left">                            
+                                            Select 1                                  </div>                        
+                                    </li>
+                                    <li>
+                                        <div class="left">                            
+                                            Select 2                                  </div>
+                                    </li>
+                                    <li>
+                                        <div class="left">                            
+                                            Select 3                                  </div>
+                                    </li>
+                                </ul>
+                            </div>                      </div>
+                      </div>
+                  </form>
+    
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default modal-ok" data-dismiss="modal">Save</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<script>
+    
+  var dropdisplay = document.getElementsByClassName("drop-display");   
+
+  function dropshow () {
+      if(this.classList.contains("shown")) {
+          this.classList.remove("shown");
+          var closest = this.parentNode.querySelectorAll('.drop-list');
+          for (var i=0; i < closest.length; i++) {
+              closest[i].classList.remove("show");
+          }
+      }
+      else{
+          this.classList.add("shown");
+          var closest = this.parentNode.querySelectorAll('.drop-list');
+          for (var i=0; i < closest.length; i++) {
+              closest[i].classList.add("show");
+          }
+      }
+  }
+  
+  for (var i=0; i < dropdisplay.length; i++) {
+      dropdisplay[i].addEventListener('click', dropshow);
+      
+  }
+  
+
+  
+
+
+  
+  
+  
+
+  
+  var droplist = document.querySelectorAll('.drop-list li');
+  
+
+  
+  console.log(droplist);
+
+
+
+  
+  
+  
+
+</script>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script>
+        </div><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script>
+
+        </div><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script>
+</body>
+</html>
