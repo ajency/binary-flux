@@ -1,31 +1,10 @@
-<!DOCTYPE html>
-<html><head>
-
-	<title>End user all data source - Binary Flux</title>
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
-	<link type="image/x-icon" href="/binary-flux/images/favicon.ico" rel="shortcut icon">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
-	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha512-PMjWzHVtwxdq7m7GIxBot5vdxUY+5aKP9wpKtvnNBZrVv1srI8tU6xvFMzG8crLNcMj/8Xl/WWmo/oAP/40p1g==" crossorigin="anonymous" />
-	
-		
-			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.d5e7294f23c2fa4e29656ea21f5b9ce5cb9d10cc39b4d4fbe3dde197ce7fd716.css">
-		
-		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
-		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
-		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-</head><body>
-        
-        <div id="content">
+{{ define "main" }}
 <header class="header-section pb-0">
     <div class="d-flex justify-content-between align-items-center">
         <div class="wrap d-flex">
             <div class="logo-wrap">         
                 <a href="#">
-                    <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+                    <img src="{{"images/logo.svg" | relURL }}" alt="logo" class="logo">
                 </a>
             </div>
             <ul class="nav nav-tabs no-border pl-md-4 pr-md-3 blue-bg mr-l35" id="myTab" role="tablist">
@@ -44,7 +23,7 @@
             </ul>
         </div>
         <div class="user">
-            <span class="text-white font-weight-bold">John Smith<img src="/binary-flux/images/notifications-outline.svg" width="20" height="20" alt="notification" class="notification"></span>
+            <span class="text-white font-weight-bold">John Smith<img src="{{"images/notifications-outline.svg" | relURL }}" width="20" height="20" alt="notification" class="notification"></span>
         </div>
     </div>
 </header>
@@ -62,13 +41,13 @@
                 <div class="pr-2 pb-2 pl-3 pt-0 d-flex align-items-center justify-content-between">
 					<div class="search-wrap search-wd">
 						<div class="position-relative">
-							<img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
+							<img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc" width="17" height="17" />
 							<input class="form-control input-search input-small pl-3 pr-md-0 bg-transparent" type="search" q="googlesearch" placeholder="Search Data Sources">
 						</div>
 					</div> 
 					<div class="sort d-flex pos-shift">
-                        <button class="reset"><img src="/binary-flux/images/filter-ic.png" class="mx-1"/></button>
-                        <button class="reset"><img src="/binary-flux/images/ic_sort_icon.svg" class="mx-1"/></button>
+                        <button class="reset"><img src="{{"images/filter-ic.png" | relURL }}" class="mx-1"/></button>
+                        <button class="reset"><img src="{{"images/ic_sort_icon.svg" | relURL }}" class="mx-1"/></button>
 					</div>
 				</div>   
 				<div class="nav-list-items">
@@ -572,11 +551,11 @@
 					<div class="tab-list">
 						<div class="tab-btn tab pl-md-2 font-weight-semibold">Get Started</div>
 						<div class="tab-btn tab active pl-3">
-							<img src="/binary-flux/images/logo_aws.svg" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close pr-1"><img src="/binary-flux/images/close-icon.svg"></a>
+							<img src="{{"images/logo_aws.svg" | relURL }}" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close pr-1"><img src="{{"images/close-icon.svg" | relURL }}"></a>
 						</div>
 					</div>
 					<div class="tab-list-action">
-						<button class="tab-btn tab-btn-add"><img src="/binary-flux/images/ic-add.svg"></button>
+						<button class="tab-btn tab-btn-add"><img src="{{"images/ic-add.svg" | relURL }}"></button>
 						<button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
 					</div>
 				</div>
@@ -589,7 +568,9 @@
 						<div class="d-flex flex-wrap mt-2">
 							<div class="col-12 col-lg-5">
 								<div class="d-flex">
-									
+									<!-- <div class="icon d-inline-block mr-2">
+										<img src="/binary-flux/images/logo_aws.svg" alt="" width="24">
+									</div> -->
 									<div class="d-inline-block ">
 										<h6 class="workspace-name text-white f-12 fw-900 mb-0 text-uppercase mb-05">ALL DATA SOURCES</h6>
 										<h6 class="workspace-name text-white--5 f-10 fw-300">Post request form to collect pet information from the end user</h6>
@@ -622,12 +603,12 @@
 						<div class="d-flex action-btns mt-1 mt-lg-0">
 							<div class="col-12 text-right">
 								<a href="" class="d-inline-block">
-									<img src="/binary-flux/images/icon_refresh.svg" alt></a>
+									<img src="{{"images/icon_refresh.svg" | relURL }}" alt></a>
 								<a href="" class="d-inline-block ml-3">
-									<img src="/binary-flux/images/icon_print.svg" alt>
+									<img src="{{"images/icon_print.svg" | relURL }}" alt>
 								</a>
 								<a href="" class="d-inline-block ml-3">
-									<img src="/binary-flux/images/icon_more.svg" alt>
+									<img src="{{"images/icon_more.svg" | relURL }}" alt>
 								</a>
 							</div>
 						</div>
@@ -636,7 +617,7 @@
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Total Number of Lines</p>
 									<h6 class="m-0 mb-05 text-darkblue text-capitalize font-weight-bold f-18">72.47 M</h6>
-									<p class="m-0 text-white--5 d-flex align-items-center f-10"><img class="mr-05" src="/binary-flux/images/ic_av_timer.svg" alt> 12:42 am (4 hours ago)</p>
+									<p class="m-0 text-white--5 d-flex align-items-center f-10"><img class="mr-05" src="{{"images/ic_av_timer.svg" | relURL }}" alt> 12:42 am (4 hours ago)</p>
 								</div>
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Lines Parsed Successfully</p>
@@ -648,17 +629,21 @@
 								</div>
 								<div class="colum-1">
 									<p class="m-0 mb-05 text-white--5">Top Data Sources</p>
-									
+									<!-- <div class="d-flex align-items-center">
+										<img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-darkblue text-capitalize font-weight-bold f-18 ml-1">12</span>
+										<img src="/binary-flux/images/microsoft.svg" alt="" width="47" class="ml-15"><span class="m-0 text-darkblue text-capitalize font-weight-bold f-18 ml-1">12</span>
+										<img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="42" class="ml-15"><span class="m-0 text-darkblue text-capitalize font-weight-bold f-18 ml-1">12</span>
+                                    </div> -->
                                     <div class="drpdwn-cont" id="data-src-drp">
                                         <div class="drop-display">
                                             <div class="left">
-                                                
+                                                <!-- <img src="{{"images/aws.png" | relURL }}" class="capt-img"/> -->
                                                 <img src="/binary-flux/images/logo_aws.svg" class="capt-img"/>
                                                 <p class="capt-txt">12</p>
                                             </div>
                                             <div class="right">
-                                                <img src="/binary-flux/images/drop-down.svg" class="drop-down" />
-                                                <img src="/binary-flux/images/drop-up.svg" class="drop-up" />
+                                                <img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
+                                                <img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
                                             </div>
                                             
                                         </div>
@@ -727,7 +712,7 @@
 						<h6 class="event-name text-white f-12 fw-900 mb-0 text-capitalize mr-t7">Event Logs</h6>
 		                <div class="search-wrap p-15 pt-0 pr-0 mr-l25">
 		                    <div class="position-relative">
-		                        <img src="/binary-flux/images/ic_search.svg" class="pa-lc no-bg" width="17" height="17" />
+		                        <img src="{{"images/ic_search.svg" | relURL }}" class="pa-lc no-bg" width="17" height="17" />
 		                        <input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search Event Logs">
 		                    </div>
 		                </div>
@@ -735,7 +720,17 @@
 	                <div class="table-wrapper" style="overflow-x: auto;">
 	                 	<table class="table table-striped event-body">
 						    <tbody>
-						      	
+						      	<!-- <tr>
+							        <td class="text-white--8 dates">Aug 19 16:43:54
+                                   <div class="d-flex align-items-center"><img src="/binary-flux/images/logo_aws.svg" alt="" width="14"><label class="f-8 d-block mb-0 ml-1">AWS</label> </div>
+                                    </td>
+							        <td class="text-white data-src"> amazon-web-service </td>
+							        <td class="text-white jojo-pump"> jojo pump-loop.log: </td>
+                                    <td class="text-white--8 url-logs next">{‘<span class="event-logs">event</span>’:”web_client_event”,”properties”,”<span class="event-logs">properties</span>’.{‘Sos’:”Android”’$<span class="event-logs">browser</span>’:”Chrome”,$current_url”:http//m.facbook.com/', ”Chrome”,$current_url”:http//m.facbook.com/'
+                                    <div class="next2"></div>
+                                    </td>
+							        <td class="text-white--5 text-right">2016-08-10T11 : 14 : 16 . 615<div class="next1"></td>        
+                                </tr> -->
                                   					      	
                                 <tr>
 							        <td class="text-white--8 dates">Aug 19 16:43:54 </td>
@@ -841,15 +836,75 @@
 				</div>
 			</div>
 		</div>
-	</div>
+    </div>
+    
+    <!-- Search Query Bar -->
+    <div class="search-bar">
+        <div class="search-bar__upper">
+            <div class="search-bar__top">
+                <div class="search-bar__srch">
+                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    Search Query
+                </div>
+                <div class="search-bar__input">
+                    <input name="searches" type="text" class="search-bar__input--text" id="searchrun" placeholder="Enter a query">
+                    <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                        <div class="drop-display">
+                            <div class="left">
+                                Last 1 month                        
+                            </div>
+                            <div class="right">
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                            </div>
+                            
+                        </div>
+                        <ul class="drop-list">
+                            <li>
+                                <div class="left">                            
+                                    Last day
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="left">                            
+                                    Last 1 week
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">                            
+                                    Last year
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-bar__buttons">
+                    <button class="search-bar__run search-button--exe" id="submitquery" >Run</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-repeat" aria-hidden="true"></i>Reset</button>
+                </div>
+            </div>
+    
+            <div class="search-bar__bottom">
+                <a href="#!" class="search-bottom__link"><i class="fa fa-external-link" aria-hidden="true"></i>Open Saved Query</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-search" aria-hidden="true"></i>Easy Search</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-th-large" aria-hidden="true"></i>Create a Widget</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-play" aria-hidden="true"></i>Run a Playbook</a>
+            </div> 
+        </div>
+        <div class="search-bar__lower"></div>
+                       
+    </div>
+
+
 </div>
 
 
-
+<!-- Schedule Task Modal -->
 <div id="schedulemodal" class="modal fade" role="dialog">
     <div class="modal-dialog">
   
-      
+      <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <div class="left">
@@ -857,13 +912,13 @@
             <div class="drpdwn-dtsrc" id="schedle-mod-drp">
                 <div class="drop-display">
                     <div class="left">
-                        
+                        <!-- <img src="{{"images/aws.png" | relURL }}" class="capt-img"/> -->
                         <img src="/binary-flux/images/logo_aws.svg" class="capt-img"/>
                         <p class="capt-txt">Amazon Web Service</p>
                     </div>
                     <div class="right">
-                        <img src="/binary-flux/images/drop-down.svg" class="drop-down" />
-                        <img src="/binary-flux/images/drop-up.svg" class="drop-up" />
+                        <img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
+                        <img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
                     </div>
                     
                 </div>
@@ -929,7 +984,9 @@
                                         <div class="input-group date" id="timepicker1" data-target-input="nearest">
                                             <input type="text" class="form-control datetimepicker-input date-pick1" data-toggle="datetimepicker" data-target="#timepicker1" value="10:10 AM"/>
                                             <i class="far fa-clock tim-clock"></i>
-                                            
+                                            <!-- <div class="input-group-append"  >
+                                                <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -945,15 +1002,15 @@
                                 <div class="s-row">
                                     <div class="l-side">
                                         <p class="topik">Frequency</p>
-                                        
+                                        <!-- <label for="day-sett" class="col-form-label topik">Frequency</label> -->
                                         <div class="drpdwn-dtsrc" id="day-sett">
                                             <div class="drop-display">
                                                 <div class="left">                                                
                                                     <p class="capt-txt">Daily</p>
                                                 </div>
                                                 <div class="right">
-                                                    <img src="/binary-flux/images/drop-down.svg" class="drop-down" />
-                                                    <img src="/binary-flux/images/drop-up.svg" class="drop-up" />
+                                                    <img src="{{"images/drop-down.svg" | relURL }}" class="drop-down" />
+                                                    <img src="{{"images/drop-up.svg" | relURL }}" class="drop-up" />
                                                 </div>
                                                 
                                             </div>
@@ -993,7 +1050,7 @@
                                         </div>
                                     </div>
                                     <div class="l-side">
-                                        
+                                        <!-- <p class="topik">Repeats Every</p> -->
                                         <label for="repeat-days" class="col-form-label topik">Repeats Every</label>                                                                      
                                         <div class="inp-valu">
                                             <input class="form-control" type="number" value="2" id="repeat-days">
@@ -1040,7 +1097,9 @@
                                     <p>Repeats on</p>
                                     <div class="inp-valu">
                                         <input class="form-control" type="number" value="2" id="repeat-days2">
-                                        
+                                        <!-- <div class="unit-fixer">
+                                            Days
+                                        </div> -->
                                         <p class="dmonth">Day of Month</p>
                                     </div>
                                 </div>
@@ -1063,7 +1122,9 @@
                                             <div class="input-group date" id="timepicker2" data-target-input="nearest">
                                                 <input type="text" class="form-control datetimepicker-input date-pick1" data-toggle="datetimepicker" data-target="#timepicker2" value="10:10 AM"/>
                                                 <i class="far fa-clock tim-clock"></i>
-                                                
+                                                <!-- <div class="input-group-append"  >
+                                                    <div class="input-group-text"><i class="fa fa-clock-o"></i></div>
+                                                </div> -->
                                             </div>
                                         </div>                             
                                     </div>
@@ -1116,7 +1177,7 @@
 
 
 
-
+<!-- Links -->
 <script src="https://code.highcharts.com/maps/highmaps.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
@@ -1150,7 +1211,7 @@
 				tickInterval: 100,
 				labels: {
 					formatter: function () {
-						return this.value; 
+						return this.value; // clean, unformatted number for year
 					}
 				}
 			},
@@ -1251,23 +1312,126 @@
 	});
 </script>
 
+<!-- Added by Ankit -->
+ 
 
 <script>
+    //  Drop Down in Vanilla JS
+    var dropdisplay = document.getElementsByClassName("drop-display");   
+
+    function dropshow () {
+        if(this.classList.contains("shown")) {
+            this.classList.remove("shown");
+            var closest = this.parentNode.querySelectorAll('.drop-list');
+            for (var i=0; i < closest.length; i++) {
+                closest[i].classList.remove("show");
+            }
+        }
+        else{
+            this.classList.add("shown");
+            var closest = this.parentNode.querySelectorAll('.drop-list');
+            for (var i=0; i < closest.length; i++) {
+                closest[i].classList.add("show");
+            }
+        }
+    }
+    
+    for (var i=0; i < dropdisplay.length; i++) {
+        dropdisplay[i].addEventListener('click', dropshow);
+        
+    }
+    //  Drop Down in Vanilla JS
+
+    
+
+
+    // function closelist () {
+    //     this.parentNode.classList.remove("show");
+    // }
+
+    // var droplist = document.getElementsByClassName('drop-list');
+    var droplist = document.querySelectorAll('.drop-list li');
+    // // var droplilist = droplist.children();
+
+    // droplist.addEventListener("click", closelist);
+    console.log(droplist);
+
+
+
+    // Enabling Search Query Darwer to open and close based on Input element and Run button press
+    function searchdraw () {
+        var searchbar = this.closest('.search-bar');
+        console.log(searchbar);
+        if(searchbar.classList.contains("active")){
+            // searchbar.classList.remove("active");
+            console.log('active state');
+        }
+        else{
+            searchbar.classList.add("active");
+        }
+    }
+
+    function closer () {
+        var searchbar = this.closest('.search-bar');
+        if(searchbar.classList.contains("active")){
+            searchbar.classList.remove("active");
+        }
+        else{
+            console.log('Inactive state');
+        }
+    }
+
+    function searchbtns () {
+        var searchbar = this.closest('.search-bar');
+        console.log(searchbar);
+        if(searchbar.classList.contains("active")){
+            searchbar.classList.remove("active");
+        }
+        else{
+            searchbar.classList.add("active");
+        }
+    }
+
+    var searchinput = document.getElementById("searchrun");
+
+    searchinput.addEventListener("focus", searchdraw);
+
+
+    var submitquery = document.getElementById("submitquery");
+    submitquery.addEventListener("click", closer);
+
+    var searchbuton = document.getElementsByClassName("search-bar__srch");
+    console.log(searchbuton);
+    for (var i=0; i < searchbuton.length; i++) {
+        searchbuton[i].addEventListener('click', searchbtns);        
+    }
+    // Enabling Search Query Darwer to open and close based on Input element and Run button press
+    
+
+</script>
+
+<script>
+
+    
+
+
     $(document).ready(function () {
 
         
-        $('.drop-display').on("click", function () {
-            if($(this).hasClass('shown')){
-            $(this).removeClass('shown');
-            $(this).parent().find('.drop-list').removeClass('show');  
-            }
-            else{
-                $(this).addClass('shown');
-                $(this).parent().find('.drop-list').addClass('show');
-            }     
-        });
 
-        
+        //Drop down creation
+        // $('.drop-display').on("click", function () {
+        //     if($(this).hasClass('shown')){
+        //     // $(this).removeClass('shown');
+        //     $(this).parent().find('.drop-list').removeClass('show');  
+        //     }
+        //     else{
+        //         $(this).addClass('shown');
+        //         $(this).parent().find('.drop-list').addClass('show');
+        //     }     
+        // });
+
+        // data-source Dropdown Value Changer
         $('#data-src-drp .drop-list li').on("click", function () {
             var dropdisplayimg1 = $('#data-src-drp .drop-display .left .capt-img');
             var dropdisplaytxt1 = $('#data-src-drp .drop-display .left .capt-txt');
@@ -1282,7 +1446,7 @@
             $('#data-src-drp .drop-list').removeClass('show');
         });
 
-        
+        // Task scheduler modal Dropdown Value Changer
         $('#schedle-mod-drp .drop-list li').on("click", function () {
             var dropdisplayimg2 = $('#schedle-mod-drp .drop-display .left .capt-img');
             var dropdisplaytxt2 = $('#schedle-mod-drp .drop-display .left .capt-txt');
@@ -1297,22 +1461,22 @@
             $('#schedle-mod-drp .drop-list').removeClass('show');
         });
 
-        
+        // Task scheduler modal frequency Dropdown Value Changer
         $('#day-sett .drop-list li').on("click", function () {
             var dropdisplayimg3 = $('#day-sett .drop-display .left .capt-img');
             var dropdisplaytxt3 = $('#day-sett .drop-display .left .capt-txt');
 
-            
+            // var imgsrc3 = $(this).find('.capt-img').attr('src');
             var text3 = $(this).find('.capt-txt').html();
 
-            
+            // dropdisplayimg3.attr('src', imgsrc3);
             dropdisplaytxt3.html(text3);
 
             $('#day-sett .drop-display').removeClass('shown');
             $('#day-sett .drop-list').removeClass('show');
         });
 
-        
+        //Dropdown force closure on popup Close
         $('#schedulemodal').on('show.bs.modal', function(e){
             $('#day-sett .drop-display').removeClass('shown');
             $('#day-sett .drop-list').removeClass('show');
@@ -1329,12 +1493,12 @@
         });
 
         $('#reportsTab li').on('click', function () {
-            
+            // e.preventDefault();
             $('#reportsTab li').removeClass('active');
             $(this).addClass('active');
         });
 
-        
+        // Task scheduler modal screen change effects
         $('#day-sett .drop-list li').on("click", function () {
             var idcatch = $(this).children('.left').children('.capt-txt').attr('id');
 
@@ -1393,24 +1557,10 @@
             format: 'LT'
         });
     } );
-</script><script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
-<script src="/binary-flux/js/app.js"></script>
+</script>
 
-        </div><script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
-<script src="/binary-flux/js/app.js"></script>
-</body>
-</html>
+
+
+
+{{- partial "custom-footer.html" . -}}
+{{ end }}
