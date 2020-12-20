@@ -1,0 +1,127 @@
+// body{
+//     background-color: yellow !important;
+// }
+
+
+.search-bar{
+    .search-bar__upper{
+        // position: relative;
+        .search-bar__input{
+            position: relative;
+            .search-bar__suggestn{
+                display: none;
+                // padding: 20px;
+                top: 40px;
+                position: absolute;
+                z-index: 501;
+                // width: calc(100% - 110px);
+                width: 100%;
+                border-radius: 2px;
+                background-color: #191A35;
+                box-shadow: 0 2px 30px 0 #0A0C1B;
+                min-width: 800px;
+                
+                @media screen and (min-width:768px) {
+                    min-width: 630px; 
+                }
+                @media screen and (min-width:850px) {
+                    min-width: 700px; 
+                }
+                @media screen and (min-width:992px) {
+                    min-width: 800px; 
+                }
+                .search-suggestn__left{
+                    // opacity: 0.65;
+                    border-radius: 2px 0 0 2px;
+                    background-color: rgba(32,40,76,0.65);
+                    box-shadow: 0 2px 40px 2px rgba(0,0,0,0.24);
+                    padding: 20px 10px 20px 20px;
+                    // width: 299px;
+                    flex: 0 0 30%;
+                    .search-suggestn__left__top{
+                        h2{
+                            color: #FFFFFF;
+                            font-family: "Nunito Sans";
+                            font-size: 14px;
+                            font-weight: 800;
+                            letter-spacing: 0;
+                            line-height: 19px;
+                            margin-bottom: 17px;
+                        }
+                        .sugg__left__optn{
+                            padding: 0 0 10px;
+                            border-bottom: 1px solid;
+                            border-bottom-color: rgba(151,151,151, 0.25);
+                            li{
+                                color: #3C92FF;
+                                font-family: "Roboto", sans-serif;
+                                font-size: 12px;
+                                font-weight: 500;
+                                letter-spacing: 0;
+                                line-height: 14px;
+                                list-style-type: none;
+                                margin-bottom: 13px;
+                            }
+                            
+                        }
+                        &:last-child{
+                            .sugg__left__optn{
+                                border-bottom: none;
+                            }                    
+                        }
+                    }
+                }
+                .search-suggestn__right{
+                    padding: 20px 17px 20px 20px;
+                    width: calc(100% - 300px);
+                    flex: 0 0 70%;
+                    .search-suggestn__right__com{
+                        padding: 10px 13px 10px 0;
+                        border-bottom: 1px solid;
+                        border-bottom-color: rgba(151,151,151, 0.25);
+                        h2{
+                            color: #659CC8;
+                            font-family: "Nunito Sans";
+                            font-size: 14px;
+                            font-weight: 800;
+                            letter-spacing: 0;
+                            line-height: 19px;
+                        }
+                        .sugg__right__status{
+                            display: flex;
+                            p:first-child{
+                                width: 164px;
+                            }
+                            p{
+                                width: calc(100% - 164px);
+                                margin-bottom: 5px;
+                            }
+                        }
+                        &:first-child{
+                            padding-top: 0px;
+                        }
+                        &:last-child{
+                            border-bottom: none;
+                        }
+                        p{
+                            opacity: 0.5;
+                            color: #FFFFFF;
+                            font-family: "Nunito Sans";
+                            font-size: 12px;
+                            letter-spacing: 0;
+                            margin-bottom: 15px;
+                            line-height: 16px;
+                            &.text--big14{
+                                font-size: 14px;
+                                line-height: 19px;
+                            }
+                        }
+                    }
+                }
+                &.active{
+                    display: flex;
+                }
+            }
+        }        
+    }    
+}
