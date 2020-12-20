@@ -12764,31 +12764,33 @@ hr {
     .search-bar.active .search-bar__lower {
       display: block; }
 
-.search-query__modal .modal-content .modal-body .table__cont {
-  width: 100%;
-  overflow: scroll; }
-  .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl {
+.search-query__modal .modal-content {
+  height: 635px; }
+  .search-query__modal .modal-content .modal-body .table__cont {
     width: 100%;
-    min-width: 1200px; }
-    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl .header-bg {
-      background-color: #20284C; }
-    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl th, .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl td {
-      border: none !important;
-      vertical-align: middle; }
-    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl tbody {
-      background-color: #11152F; }
-      .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl tbody tr td.icons {
-        color: #1391FF;
+    overflow: scroll; }
+    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl {
+      width: 100%;
+      min-width: 1200px; }
+      .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl .header-bg {
+        background-color: #20284C; }
+      .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl th, .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl td {
+        border: none !important;
         vertical-align: middle; }
-        .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl tbody tr td.icons i {
-          font-size: 15px; }
-    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl th {
-      color: #659CC8;
-      text-transform: uppercase; }
-    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl td {
-      color: #FFFFFF; }
-    .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl .drpdwn-dtsrc .drop-display, .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl .drpdwn-dtsrc .drop-list {
-      width: 140px; }
+      .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl tbody {
+        background-color: #11152F; }
+        .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl tbody tr td.icons {
+          color: #1391FF;
+          vertical-align: middle; }
+          .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl tbody tr td.icons i {
+            font-size: 15px; }
+      .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl th {
+        color: #659CC8;
+        text-transform: uppercase; }
+      .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl td {
+        color: #FFFFFF; }
+      .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl .drpdwn-dtsrc .drop-display, .search-query__modal .modal-content .modal-body .table__cont .searchquery-tbl .drpdwn-dtsrc .drop-list {
+        width: 140px; }
 
 .savedquery .modal-body .form-group {
   padding-right: 90px; }
@@ -12832,5 +12834,35 @@ hr {
 
 .savedquery textarea.form-control {
   height: auto; }
+
+@media screen and (min-width: 768px) {
+  .addfield .modal-dialog {
+    max-width: 680px !important;
+    top: 10%; } }
+
+.addfield .modal-dialog .modal-content {
+  min-height: 465px !important; }
+
+.addfield input[type=checkbox] {
+  height: 16px;
+  width: 16px; }
+
+.addfield label input[type=checkbox]::before {
+  border: 1px solid #F0F0F0;
+  content: "\00a0";
+  display: inline-block;
+  font: 16px/1em sans-serif;
+  height: 16px;
+  margin: 0 .25em 0 0;
+  padding: 0;
+  vertical-align: top;
+  width: 16px;
+  background-color: #191a35; }
+
+.addfield label input[type=checkbox]:checked::before {
+  background: 191a35;
+  color: #fff;
+  content: "\2713";
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
