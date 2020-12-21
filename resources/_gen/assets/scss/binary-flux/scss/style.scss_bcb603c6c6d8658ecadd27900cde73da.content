@@ -12835,6 +12835,48 @@ hr {
 .savedquery textarea.form-control {
   height: auto; }
 
+.savedquery .modal-content .modal-body .easy-search {
+  display: flex;
+  gap: 58px;
+  justify-content: space-between; }
+  .savedquery .modal-content .modal-body .easy-search .easy-search__log {
+    display: flex;
+    align-items: center;
+    width: 25%; }
+    .savedquery .modal-content .modal-body .easy-search .easy-search__log:first-child {
+      margin-left: 0px; }
+    .savedquery .modal-content .modal-body .easy-search .easy-search__log.fb-33 {
+      width: 345px; }
+      .savedquery .modal-content .modal-body .easy-search .easy-search__log.fb-33 .drpdwn-dtsrc {
+        width: 200px;
+        margin-left: 15px; }
+        .savedquery .modal-content .modal-body .easy-search .easy-search__log.fb-33 .drpdwn-dtsrc ul {
+          width: 100%; }
+    .savedquery .modal-content .modal-body .easy-search .easy-search__log.fb-28 {
+      width: 290px; }
+      .savedquery .modal-content .modal-body .easy-search .easy-search__log.fb-28 .contein {
+        width: 220px;
+        margin-left: 15px; }
+    .savedquery .modal-content .modal-body .easy-search .easy-search__log.fb-22 {
+      width: 230px; }
+      .savedquery .modal-content .modal-body .easy-search .easy-search__log.fb-22 .drpdwn-dtsrc {
+        margin-left: 15px;
+        width: 153px; }
+        .savedquery .modal-content .modal-body .easy-search .easy-search__log.fb-22 .drpdwn-dtsrc ul {
+          width: 100%; }
+    .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld {
+      width: 130px; }
+      .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld i {
+        margin-right: 11px;
+        font-size: 20px;
+        color: #1391FF; }
+      .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld a {
+        color: #FFFFFF;
+        font-family: "Nunito Sans";
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 19px; }
+
 @media screen and (min-width: 768px) {
   .addfield .modal-dialog {
     max-width: 680px !important;
