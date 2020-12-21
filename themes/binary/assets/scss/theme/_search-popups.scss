@@ -103,3 +103,73 @@
         height: auto;
     }
 }
+
+
+//Easy Search popup page
+
+.savedquery{
+    .modal-content{
+        .modal-body{
+            .easy-search {
+                display: flex;
+                gap: 58px;
+                justify-content: space-between;
+                .easy-search__log{
+                    display: flex;
+                    align-items: center;
+                    width: 25%;
+                    
+                    &:first-child{
+                        margin-left: 0px;
+                    }
+                    &.fb-33{
+                        // flex: 0 0 33%;
+                        width: 345px;
+                        .drpdwn-dtsrc {
+                            width: 200px;
+                            margin-left: 15px;
+                            ul{
+                                width: 100%;
+                            }
+                        }
+                        
+                    }
+                    &.fb-28{
+                        // flex: 0 0 28%;
+                        width: 290px;
+                        .contein{
+                            width: 220px;
+                            margin-left: 15px;
+                        }
+                    }
+                    &.fb-22{
+                        // flex: 0 0 22%;
+                        width: 230px;
+                        .drpdwn-dtsrc{
+                            margin-left: 15px;
+                            width: 153px;
+                            ul{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &.data-feld{
+                        width: 130px;
+                        i{
+                            margin-right: 11px;
+                            font-size: 20px;
+                            color: #1391FF;
+                        }
+                        a{
+                            color: #FFFFFF;
+                            font-family: "Nunito Sans";
+                            font-size: 14px;
+                            letter-spacing: 0;
+                            line-height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

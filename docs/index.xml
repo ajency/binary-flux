@@ -6,7 +6,25 @@
     <description>Recent content on Binary Flux</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 20 Dec 2020 10:03:47 +0530</lastBuildDate><atom:link href="https://ajency.github.io/binary-flux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 21 Dec 2020 17:00:04 +0530</lastBuildDate><atom:link href="https://ajency.github.io/binary-flux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Big Dropdown</title>
+      <link>https://ajency.github.io/binary-flux/screens/big-dropdown/</link>
+      <pubDate>Mon, 21 Dec 2020 17:00:04 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/big-dropdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Easy Search Popup</title>
+      <link>https://ajency.github.io/binary-flux/screens/easy-search-popup/</link>
+      <pubDate>Mon, 21 Dec 2020 12:30:04 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/binary-flux/screens/easy-search-popup/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Add Field Pop</title>
       <link>https://ajency.github.io/binary-flux/screens/add-field-popup/</link>
