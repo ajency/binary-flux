@@ -1,0 +1,482 @@
+{{ define "main" }}
+
+    <div id="content">
+        <header class="header-section pb-0">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="wrap d-flex">
+                    <div class="logo-wrap">
+                        <a href="#">
+                            <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+                        </a>
+                    </div>
+                    <ul class="nav nav-tabs no-border pl-md-4 pr-md-3 blue-bg mr-l35" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab"
+                                href="#configure" role="tab" aria-controls="configure"
+                                aria-selected="true">Configure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab"
+                                href="#dashboards" role="tab" aria-controls="dashboards"
+                                aria-selected="true">Dashboards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold pt-1" id="organisation-tab" data-toggle="tab"
+                                href="#organisation" role="tab" aria-controls="organisation"
+                                aria-selected="true">Organisation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold pt-1" id="settings-tab" data-toggle="tab"
+                                href="#settings" role="tab" aria-controls="settings" aria-selected="true">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user">
+                    <span class="text-white font-weight-bold">John Smith<img
+                            src="/binary-flux/images/notifications-outline.svg" width="20" height="20"
+                            alt="notification" class="notification"></span>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid p-0 data-source-filter">
+            <div class="end-user-swagger position-relative">
+                <div class="sidebar p-0 sidebar-320">
+                    <div class="sidear-container mobile-slide-in px-0">
+                        <button type="button" class="close d-block d-md-none">
+                            <i class="icon-close"></i>
+                        </button>
+                        <div class="data-wrap d-flex align-items-center justify-content-between pd-space">
+                            <h5 class="section-title text-uppercase m-0 f-12">Data sources</h5>
+                            <button class="btn btn-add-icon text-blue test-btn f-12 btn-wd"><i
+                                    class="icon-add mr-1 f-9"></i>Add New</button>
+                        </div>
+                        <div class="pr-2 pb-2 pl-3 pt-0 d-flex align-items-center justify-content-between">
+                            <div class="search-wrap search-wd">
+                                <div class="position-relative">
+                                    <img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
+                                    <input class="form-control input-search input-small pl-3 pr-md-0 bg-transparent"
+                                        type="search" q="googlesearch" placeholder="Search Data Sources">
+                                </div>
+                            </div>
+                            <div class="sort d-flex pos-shift">
+                                <button class="reset filters-dropdown drpdwn-dtsrc" id="filter1" onclick="myFunction()">
+                                    <div class="drop-display">
+                                        <img src="/binary-flux/images/filter-ic.png" class="mx-1" />
+
+                                    </div>
+                                    <div class="drop-list text-left" id="">
+                                        <span class="pb-2">FILTERS</span>
+                                        <hr>
+                                        <span class="">Scheduled</span>
+                                        <form class="mt-2 mb-2">
+                                            <label class="checkbox-inline mr-5">
+                                                <input type="checkbox" value="">All
+                                            </label>
+                                            <label class="checkbox-inline mr-5">
+                                                <input type="checkbox" value="">Scheduled
+                                            </label>
+                                            <label class="checkbox-inline mr-5">
+                                                <input type="checkbox" value="">Not Scan
+                                            </label>
+                                        </form>
+                                        <span class="">Status</span>
+                                        <form class="mt-2">
+                                            <label class="checkbox-inline mr-5">
+                                                <input type="checkbox" value="">All
+                                            </label>
+                                            <label class="checkbox-inline mr-5">
+                                                <input type="checkbox" value="">Failed
+                                            </label>
+                                            <label class="checkbox-inline mr-5 ml-3">
+                                                <input type="checkbox" value="">In Progress
+                                            </label>
+                                        </form>
+                                        <div class="text-center mb-3">
+                                            <small class="text-center">Sorted max to low</small>
+                                            <hr>
+                                        </div>
+                                        <div class="text-right">
+                                            <div class="btn-group btn-outline-dark-blue text-right">
+                                                <div class="btn btn-115 d-flex">CLEAR ALL
+    
+                                                </div>
+                                            </div>
+                                            <div class="btn-group btn-outline-dark-blue text-right">
+                                                <div class="btn btn-115 d-flex btn-done ">Done
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                       
+
+                                    </div>
+                                </button>
+                                <button class="reset drpdwn-dtsrc" id="schedle-mod-drps">
+                                    <div class="drop-display">
+                                        <img src="/binary-flux/images/ic_sort_icon.svg" class="mx-1" />
+                                    </div>
+                                    <ul class="drop-list" id="myDIV">
+                                        <li>
+                                            <div class="left">
+                                                Latest</div>
+                                        </li>
+                                        <li>
+                                            <div class="left">
+                                                Status</div>
+                                        </li>
+                                        <li>
+                                            <div class="left">
+                                                Alphabetical</div>
+                                        </li>
+                                        <li>
+                                            <div class="left">
+                                                Type</div>
+                                        </li>
+                                    </ul>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content p-320">
+                    <div class="d-flex justify-content-between workspace-header-bar flex-wrap head-space">
+                        <div class="workspace-bar-tabs responsive-tabs w-sm-100">
+                            <div class="side-menu-toggle icon-hamburger d-md-none">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="tab-list">
+                                <div class="tab-btn tab pl-md-2 font-weight-semibold">Get Started</div>
+                                <div class="tab-btn tab active pl-3">
+                                    <img src="/binary-flux/images/logo_aws.svg" alt="" class="mr-05" width="17"> Swagger
+                                    australia <a href="#" class="tab-close pr-1"><img
+                                            src="/binary-flux/images/close-icon.svg"></a>
+                                </div>
+                            </div>
+                            <div class="tab-list-action">
+                                <button class="tab-btn tab-btn-add"><img src="/binary-flux/images/ic-add.svg"></button>
+                                <button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"
+            integrity="sha512-2JBCbWoMJPH+Uj7Wq5OLub8E5edWHlTM4ar/YJkZh3plwB2INhhOC3eDoqHm1Za/ZOSksrLlURLoyXVdfQXqwg=="
+            crossorigin="anonymous"></script>
+
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                Highcharts.chart('end-user-data', {
+                    chart: {
+                        type: 'column',
+                        height: 250,
+                    },
+                    title: {
+                        text: ''
+                    },
+                    subtitle: {
+                        text: ''
+                    },
+                    credits: {
+                        enabled: false
+                    },
+                    yAxis: {
+                        min: 0,
+                        title: {
+                            text: ''
+                        },
+                        tickInterval: 100,
+                        labels: {
+                            formatter: function () {
+                                return this.value;
+                            }
+                        }
+                    },
+                    xAxis: {
+                        tickInterval: 1,
+                        min: 0,
+                        categories: [
+                            '0',
+                            '1',
+                            '2',
+                            '3',
+                            '4',
+                            '5',
+                            '6',
+                            '7',
+                            '8',
+                            '9',
+                            '10',
+                            '11',
+                            '12',
+                            '13',
+                            '14',
+                            '15',
+                            '16',
+                            '17',
+                            '18',
+                            '19',
+                            '20',
+                            '21',
+                            '22',
+                            '23',
+                            '24',
+                            '25',
+                            '26',
+                            '27',
+                            '28',
+                            '29',
+                            '30',
+                            '31',
+                            '32',
+                            '33',
+                            '34',
+                            '35',
+                            '37',
+                            '38',
+                            '39',
+                            '40',
+                            '40',
+                            '41',
+                            '42',
+                            '43',
+                            '44',
+                            '45',
+                            '46',
+                            '47',
+                            '48',
+                            '49',
+                            '50',
+                        ],
+                        crosshair: false
+                    },
+                    tooltip: {
+                        headerFormat: '<div class="test1"  style="background: #1391FF; padding:5px;position-relative;border-radius:3px;"><div class="arrow-down"><div class="marker-round"></div></div>',
+                        pointFormat: '<div class="d-flex align-items-center"><img src="/binary-flux/images/logo_aws.svg" alt="" width="21"><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span><img src="/binary-flux/images/microsoft-logo.svg" alt="" width="14" class="ml-15"><span class="m-0 text-white f-10">Microsoft</span><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span><img src="/binary-flux/images/splunk-vector-logo.svg" alt="" width="37" class="ml-15"><span class="m-0 text-white text-capitalize font-weight-bold f-12 ml-15">{point.x}</span></div>',
+                        footerFormat: '</div>',
+                        backgroundColor: null,
+                        borderWidth: null,
+                        borderRadius: 6,
+                        shadow: false,
+                        outside: true,
+                        useHTML: true
+                    },
+                    plotOptions: {
+                        column: {
+                            pointWidth: 10,
+                            pointPadding: 0,
+                            borderWidth: 0,
+                            borderColor: '#000',
+                            shadow: false,
+                            color: {
+                                linearGradient: { x1: 0, x2: 0, y1: 0, y2: 1 },
+                                stops: [
+                                    [0, '#00A8D9'],
+                                    [1, '#105482']
+                                ]
+                            },
+                            marker: {
+                                enabled: true,
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Time',
+                        data: [120, 130, 115, 175, 180, 170, 150, 500, 200, 390, 95.6, 170, 120, 130, 115, 480, 180, 170, 480, 190, 200, 210, 95.6, 170, 190, 200, 210, 95.6, 170, 120, 130, 115, 175, 180, 170, 150, 190, 200, 475, 95.6, 170, 190, 410, 210, 95.6, 490, 120, 130, 115, 175, 196]
+
+                    }]
+                });
+            });
+        </script>
+
+<script>
+    function myFunction() {
+   var element = document.getElementById("myDIV");
+   element.classList.toggle("display-visibility");
+}
+</script>
+        <script>
+            $(document).ready(function () {
+
+
+                $('.drop-display').on("click", function () {
+                    if ($(this).hasClass('shown')) {
+                        $(this).removeClass('shown');
+                        $(this).parent().find('.drop-list').removeClass('show');
+                    }
+                    else {
+                        $(this).addClass('shown');
+                        $(this).parent().find('.drop-list').addClass('show');
+                    }
+                });
+
+
+                $('#data-src-drp .drop-list li').on("click", function () {
+                    var dropdisplayimg1 = $('#data-src-drp .drop-display .left .capt-img');
+                    var dropdisplaytxt1 = $('#data-src-drp .drop-display .left .capt-txt');
+
+                    var imgsrc1 = $(this).find('.capt-img').attr('src');
+                    var text1 = $(this).find('.capt-txt').html();
+
+                    dropdisplayimg1.attr('src', imgsrc1);
+                    dropdisplaytxt1.html(text1);
+
+                    $('#data-src-drp .drop-display').removeClass('shown');
+                    $('#data-src-drp .drop-list').removeClass('show');
+                });
+
+
+                $('#schedle-mod-drp .drop-list li').on("click", function () {
+                    var dropdisplayimg2 = $('#schedle-mod-drp .drop-display .left .capt-img');
+                    var dropdisplaytxt2 = $('#schedle-mod-drp .drop-display .left .capt-txt');
+
+                    var imgsrc2 = $(this).find('.capt-img').attr('src');
+                    var text2 = $(this).find('.capt-txt').html();
+
+                    dropdisplayimg2.attr('src', imgsrc2);
+                    dropdisplaytxt2.html(text2);
+
+                    $('#schedle-mod-drp .drop-display').removeClass('shown');
+                    $('#schedle-mod-drp .drop-list').removeClass('show');
+                });
+
+
+                $('#day-sett .drop-list li').on("click", function () {
+                    var dropdisplayimg3 = $('#day-sett .drop-display .left .capt-img');
+                    var dropdisplaytxt3 = $('#day-sett .drop-display .left .capt-txt');
+
+
+                    var text3 = $(this).find('.capt-txt').html();
+
+
+                    dropdisplaytxt3.html(text3);
+
+                    $('#day-sett .drop-display').removeClass('shown');
+                    $('#day-sett .drop-list').removeClass('show');
+                });
+
+
+                $('#schedulemodal').on('show.bs.modal', function (e) {
+                    $('#day-sett .drop-display').removeClass('shown');
+                    $('#day-sett .drop-list').removeClass('show');
+
+                    $('#schedle-mod-drp .drop-display').removeClass('shown');
+                    $('#schedle-mod-drp .drop-list').removeClass('show');
+
+                });
+
+
+                $('#reportsTab a').on('click', function (e) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                });
+
+                $('#reportsTab li').on('click', function () {
+
+                    $('#reportsTab li').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+
+                $('#day-sett .drop-list li').on("click", function () {
+                    var idcatch = $(this).children('.left').children('.capt-txt').attr('id');
+
+                    $('#weekly-show').removeClass('active');
+                    $('#monthly-show').removeClass('active');
+
+                    if (idcatch == 'd1') {
+                        console.log('d1 clicked');
+                        $('#day-val-changer').html('Days');
+                    } else if (idcatch == 'd2') {
+                        $('#weekly-show').addClass('active');
+                        $('#day-val-changer').html('Week');
+                    } else if (idcatch == 'd3') {
+                        $('#monthly-show').addClass('active');
+                        $('#day-val-changer').html('Months');
+                    } else if (idcatch == 'd4') {
+                        $('#day-val-changer').html('Hours');
+                    } else if (idcatch == 'd5') {
+                        $('#day-val-changer').html('Minutes');
+                    } else if (idcatch == 'd6') {
+                        $('#day-val-changer').html('Seconds');
+                    }
+                    else {
+                        console.log('Nothing to display');
+                    }
+
+                });
+
+
+
+            });
+
+
+        </script>
+
+        <script>
+            var $j = jQuery.noConflict();
+            $j(function () {
+                $j("#datepicker1").datepicker({
+                    format: 'd-M, yyyy'
+                });
+
+                $j("#datepicker2").datepicker({
+                    format: 'd-M, yyyy'
+                });
+
+                $j("#datepicker3").datepicker({
+                    format: 'd-M, yyyy'
+                });
+
+                $j('#timepicker1').datetimepicker({
+                    format: 'LT'
+                });
+
+                $j('#timepicker2').datetimepicker({
+                    format: 'LT'
+                });
+            });
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+        <script src="/binary-flux/js/app.js"></script>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+    <script src="/binary-flux/js/app.js"></script>
+
+{{- partial "custom-footer.html" . -}}
+{{ end }}

@@ -1,0 +1,102 @@
+.data-source-filter {
+    .drpdwn-dtsrc {
+        .drop-display {
+            width: auto;
+            padding: 0;
+            border: 0;
+        }
+        .drop-list {
+            //transform: scaleX(-1);
+
+            background-color: #20284c;
+            box-shadow: 1px 7px 40px 2px rgba(0, 0, 0, 0.6);
+            width: 160px;
+            border: none;
+            li {
+                color: #ffffff;
+                opacity: 72%;
+                font-size: 13px;
+                padding: 10px 0 10px 10px;
+                border-bottom: 1px solid #979797;
+            }
+        }
+        .drop-list::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 14%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #20284c transparent;
+        }
+    }
+}
+.filters-dropdown{
+    .drop-list{
+        padding: 25px;
+        width: 550px !important;
+        border-radius: 10px;
+    }
+    span{
+        font-size: 14px;
+        line-height: 20px;
+        color: #ffffff;
+        text-align: left;
+        font-weight: 700;
+       // border-bottom: 1px solid #979797;
+    }
+    input[type=checkbox]{
+        height: 20px;
+        width: 20px;
+        border-radius: 2px;
+        position: relative;
+        vertical-align: middle;
+        margin-right: 25px;
+        margin-top: -5px;
+    }
+    input[type=checkbox]:nth-child(2){
+       margin-right: 35px;
+    }
+    label {
+        color:#ffffff;
+        font-weight: 400;
+        input[type=checkbox]::before{
+            border: 1px solid rgba(255, 255, 255,0.7);
+            content: "\00a0";
+            display: inline-block;
+            font: 16px/1em sans-serif;
+            height: 20px;
+            margin: 0 .25em 0 0;
+            padding: 0;
+            vertical-align: top;
+            width: 20px;
+            background-color:#20284c;
+            border-radius: 2px;
+        }
+    }
+   
+   label input[type=checkbox]:checked::before{
+    background: #1391FF;
+    color: #20284c;
+    content: "\2713";
+    text-align: center;
+    border-color: #1391FF;
+   }
+   small{
+       color:#ffffff;
+       opacity: 50%;
+   }
+   hr{
+       border-color: #979797;
+       opacity: 25%;
+   }
+  .btn-outline-dark-blue{
+      .btn:hover{
+          color: #20284c !important;
+      }
+  }
+  .btn-done{
+      padding: 5px 65px;
+  }
+}
