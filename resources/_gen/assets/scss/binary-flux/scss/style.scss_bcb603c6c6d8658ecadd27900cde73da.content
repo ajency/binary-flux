@@ -13005,22 +13005,34 @@ hr {
 .data-source-filter .drpdwn-dtsrc .drop-list {
   background-color: #20284c;
   box-shadow: 1px 7px 40px 2px rgba(0, 0, 0, 0.6);
-  width: 160px;
+  width: 130px;
   border: none; }
   .data-source-filter .drpdwn-dtsrc .drop-list li {
     color: #ffffff;
     opacity: 72%;
     font-size: 13px;
-    padding: 10px 0 10px 10px;
+    padding: 12px 0 12px 12px;
     border-bottom: 1px solid #979797; }
+  .data-source-filter .drpdwn-dtsrc .drop-list li:last-child {
+    border: none; }
 
-.data-source-filter .drpdwn-dtsrc .drop-list::after {
+.data-source-filter .drpdwn-dtsrc .drop-arrow::after {
   content: "";
   position: absolute;
   bottom: 100%;
-  left: 14%;
+  left: 12%;
   margin-left: -5px;
-  border-width: 5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #20284c transparent; }
+
+.data-source-filter .drpdwn-dtsrc .filter-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 8.5%;
+  margin-left: -5px;
+  border-width: 15px;
   border-style: solid;
   border-color: transparent transparent #20284c transparent; }
 
@@ -13028,6 +13040,11 @@ hr {
   padding: 25px;
   width: 550px !important;
   border-radius: 10px; }
+
+.filters-dropdown .filter-arrow {
+  position: absolute;
+  left: -100%;
+  margin-top: 10px; }
 
 .filters-dropdown span {
   font-size: 14px;
@@ -13073,7 +13090,8 @@ hr {
 
 .filters-dropdown small {
   color: #ffffff;
-  opacity: 50%; }
+  opacity: 50%;
+  font-size: 12px; }
 
 .filters-dropdown hr {
   border-color: #979797;
