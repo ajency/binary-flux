@@ -12,7 +12,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.de26cbcfa51d0e2eb8699c2f5a29b33c3d5b8031fa8ee6f015690378061fa03f.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.6bb887158a5b64f8d4227174ba48e575f687fb50fc6bd1aaf7a55ccc05421760.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -84,9 +84,9 @@
 
                             <div class="modal-body">
                                 <form>
-                                    <div class="form-group row pt-4 px-2">
-                                        <label for="name" class="col-form-label">Search Log where</label>
-                                        <div class="col-sm-3">
+                                    <div class="form-group pt-4 px-2 easy-search">
+                                        <div class="easy-search__log fb-33">
+                                            <label for="dummy1" class="col-form-label">Search Log where</label>
                                             <div class="drpdwn-dtsrc" id="schedle-mod-drps">
                                                 <div class="drop-display">
                                                     <div class="left">Mac Address(Origin)</div>
@@ -111,11 +111,17 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <label for="name" class="col-form-label">Contains</label>
-                                        <div class="col-sm-3">
+                                        
+                                        <div class="easy-search__log fb-28">
+                                            <label for="log2" class="col-form-label">Contains</label>
+                                            <input placeholder="Log message" type="search" id="log2" class="form-control contein">
+                                        </div>                                      
+
+                                        <div class="easy-search__log fb-22">
+                                            <label for="name" class="col-form-label">In</label>
                                             <div class="drpdwn-dtsrc" id="schedle-mod-drps">
                                                 <div class="drop-display">
-                                                    <div class="left">Select</div>
+                                                    <div class="left">Last 1 month</div>
                                                     <div class="right">
                                                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                                     </div>
@@ -136,35 +142,14 @@
                                                     </li>
                                                 </ul>
                                             </div>
+                                        </div>                                       
+                                            
+                                        <div class="easy-search__log data-feld">
+                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                            <a href="#!">Add Data Feild</a>
                                         </div>
-                                        <label for="name" class="col-form-label">In</label>
-                                        <div class="col-sm-2">
-                                            <div class="drpdwn-dtsrc" id="schedle-mod-drps">
-                                                <div class="drop-display">
-                                                    <div class="left">Select</div>
-                                                    <div class="right">
-                                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                                    </div>
-
-                                                </div>
-                                                <ul class="drop-list">
-                                                    <li>
-                                                        <div class="left">
-                                                            Select 1 </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="left">
-                                                            Select 2 </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="left">
-                                                            Select 3 </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <img src="/binary-flux/images/add.svg" alt="address">
-                                        <label for="name" class="col-sm-2 col-form-label">Add Data Feild</label>
+                                        
+                                        
 
 
                                     </div>
