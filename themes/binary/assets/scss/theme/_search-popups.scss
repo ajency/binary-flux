@@ -136,50 +136,59 @@ color: #1391FF;
         .modal-body{
             .easy-search {
                 display: flex;
+                @media screen and (max-width:991px) {
+                    flex-direction: column;
+                }
                 // gap: 58px;
-                flex-wrap: wrap;
-                justify-content: space-between;
+                // flex-wrap: wrap;
+                // justify-content: space-between;
                 .easy-search__log{
                     display: flex;
                     align-items: center;
-                    width: 25%;
-                    margin-left: 15px;
-                    &:first-child{
-                        margin-left: 0px;
+                    margin-right: 40px;
+                    @media screen and (max-width:991px) {
+                        margin-right: 0;
+                        margin-bottom: 10px;
                     }
-                    &.fb-33{
-                        // flex: 0 0 33%;
-                        width: 345px;
-                        .drpdwn-dtsrc {
-                            width: 200px;
-                            margin-left: 15px;
-                            ul{
-                                width: 100%;
-                            }
-                        }
+                    // width: 25%;
+                    // margin-left: 15px;
+                    // &:first-child{
+                    //     margin-left: 0px;
+                    // }
+                    // &.fb-33{
+                    //     // flex: 0 0 33%;
+                    //     width: 345px;
+                    //     .drpdwn-dtsrc {
+                    //         width: 200px;
+                    //         margin-left: 15px;
+                    //         ul{
+                    //             width: 100%;
+                    //         }
+                    //     }
                         
-                    }
-                    &.fb-28{
-                        // flex: 0 0 28%;
-                        width: 290px;
-                        .contein{
-                            width: 220px;
-                            margin-left: 15px;
-                        }
-                    }
+                    // }
+                    // &.fb-28{
+                    //     // flex: 0 0 28%;
+                    //     width: 290px;
+                    //     .contein{
+                    //         width: 220px;
+                    //         margin-left: 15px;
+                    //     }
+                    // }
                     &.fb-22{
                         // flex: 0 0 22%;
-                        width: 230px;
+                        // width: 230px;
                         .drpdwn-dtsrc{
-                            margin-left: 15px;
-                            width: 153px;
+                            // margin-left: 15px;
+                            // width: 153px;
                             ul{
                                 width: 100%;
                             }
                         }
                     }
                     &.data-feld{
-                        width: 130px;                        
+                        width: 180px !important;
+                        margin-right: 0;                      
                         a{
                             color: #FFFFFF;
                             font-family: "Nunito Sans";
@@ -202,6 +211,15 @@ color: #1391FF;
                         }
                     }
                 }
+                label{
+                    margin-right: 20px;
+                    @media screen and (max-width:991px) {
+                        width: 150px;
+                    }
+                }
+            }
+            .drpdwn-dtsrc{
+                width:210px;
             }
             .easy-search__selector{
                 background-color: #12122B;

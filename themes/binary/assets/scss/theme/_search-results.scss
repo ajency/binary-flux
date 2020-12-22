@@ -1,0 +1,183 @@
+.search-result{
+    .result__right{
+        h4{
+            color: #FFFFFF;
+            font-family: "Nunito Sans";
+            font-size: 14px;
+            letter-spacing: 0;
+            line-height: 19px;
+        }
+        .result__right__tabel{
+            .tabel__head{
+                opacity: 0.65;
+                border-radius: 2px 2px 2px 0;
+                background-color: #20284C;
+                box-shadow: 0 2px 40px 2px rgba(0,0,0,0.24);
+                display: flex;
+                padding: 11px 0 11px 20px;
+                position: relative;
+                .tabel__head__chkbox{
+                    input{
+                        cursor: pointer;
+                        position: absolute;
+                        left: -999px;
+                    }
+                    input[type="checkbox"]:checked + label {
+                        &::after{
+                            content: " ";
+                            width: 6px;
+                            height: 10px;
+                            position: absolute;
+                            transform: rotate(45deg);
+                            border-bottom: 1px solid #fff;
+                            border-right: 1px solid #fff;
+                            position: absolute;
+                            top: 3px;
+                            left: 5px;
+                        }
+                    }
+                    .labl-chk{
+                        cursor: pointer;
+                        position: relative;
+                        padding-left: 37px;
+                        color: #659CC8;
+                        font-family: "Nunito Sans";
+                        font-size: 12px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 16px;
+                        margin-bottom: 0px;
+                        &::before{
+                            content: " ";
+                            width: 17px;
+                            height: 17px;
+                            position: absolute;
+                            top: 2px;
+                            left: 0;
+                            // background-color: #fff;
+                            border: 1px solid #F0F0F0;
+                        }
+                        // &::after{
+                        //     content: " ";
+                        //     width: 6px;
+                        //     height: 10px;
+                        //     position: absolute;
+                        //     transform: rotate(45deg);
+                        //     border-bottom: 1px solid #fff;
+                        //     border-right: 1px solid #fff;
+                        //     position: absolute;
+                        //     top: 3px;
+                        //     left: 5px;
+                        // }
+                    }
+                }               
+                p{
+                    color: #659CC8;
+                    font-family: "Nunito Sans";
+                    font-size: 12px;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                    line-height: 16px;
+                    margin-bottom: 0px;
+                    margin-left: 20px;
+                }
+            }
+            .tabel_-body{
+                border-radius: 2px;
+                background-color: #11152F;
+                box-shadow: 0 2px 4px 0 rgba(0,0,0,0.46);
+                .top{
+                    padding: 11px 0 11px 20px;
+                    display: flex;
+                    border-bottom: 1px solid #979797;
+                    border-bottom-color: rgba(151, 151, 151, 0.15);
+                    .tabel__body__chkbox{
+                        input{
+                            cursor: pointer;
+                            position: absolute;
+                            left: -999px;
+                        }
+                        input[type="checkbox"]:checked + label {
+                            &::after{
+                                content: " ";
+                                width: 6px;
+                                height: 10px;
+                                position: absolute;
+                                transform: rotate(45deg);
+                                border-bottom: 1px solid #fff;
+                                border-right: 1px solid #fff;
+                                position: absolute;
+                                top: 3px;
+                                left: 5px;
+                            }
+                        }
+                        .labl-chk{
+                            cursor: pointer;
+                            position: relative;
+                            padding-left: 37px;                            
+                            letter-spacing: 0;                           
+                            &::before{
+                                content: " ";
+                                width: 17px;
+                                height: 17px;
+                                position: absolute;
+                                top: 2px;
+                                left: 0;
+                                // background-color: #fff;
+                                border: 1px solid #F0F0F0;
+                            }
+                            // &::after{
+                            //     content: " ";
+                            //     width: 6px;
+                            //     height: 10px;
+                            //     position: absolute;
+                            //     transform: rotate(45deg);
+                            //     border-bottom: 1px solid #fff;
+                            //     border-right: 1px solid #fff;
+                            //     position: absolute;
+                            //     top: 3px;
+                            //     left: 5px;
+                            // }
+                        }
+                    }
+                    .top__user{
+                        margin-right: 100px;
+                        p{
+                            opacity: 0.7;
+                            color: #ffffff;
+                            font-family: Courier;
+                            font-size: 12px;
+                            letter-spacing: 0;
+                            line-height: 14px;
+                            margin-bottom: 0px;
+                            span{
+                                color: #FFDB00;
+                            }
+                        }
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                    }
+                    .top__logon{
+
+                    }
+                }
+                .bottom{
+                    padding: 15px 0 15px 57px;
+                    p{
+                        opacity: 0.7;
+                        color: #ffffff;
+                        font-family: Courier;
+                        font-size: 12px;
+                        letter-spacing: 0;
+                        line-height: 14px;
+                        margin-bottom: 0px;
+                        span{
+                            color: #FFDB00;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
