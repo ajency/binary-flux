@@ -1,10 +1,14 @@
 .search-result{
     display: flex;
     align-items: flex-start;
-    padding: 45px 20px 0 20px;
+    padding: 0px 20px 20px 20px;
+    @media screen and (max-width:991px) {
+        flex-direction: column;
+    }
     .result__left{
         width: 330px;
         margin-right: 30px;
+        margin-bottom: 20px;
         h4{
             color: #FFFFFF;
             font-family: "Nunito Sans";
@@ -29,18 +33,21 @@
                 list-style-type: none;
                 height: 111px;
                 overflow-y: auto;
+                margin-bottom: 0px;
                 li{
                     background-color: #11152F;
-                    color: #1391FF;
-                    font-family: "Nunito Sans";
-                    font-size: 12px;
-                    letter-spacing: 0;
-                    line-height: 16px;
-                    padding: 10px;
+                    
+                    padding: 9px 10px;
                     border-bottom: 1px solid;
                     border-bottom-color: rgba(151,151,151,0.15);
                     a{
                         text-decoration: none;
+                        width: 100%;
+                        color: #1391FF;
+                        font-family: "Nunito Sans";
+                        font-size: 12px;
+                        letter-spacing: 0;
+                        line-height: 16px;
                     }
                     &:last-child{
                         border-bottom: none;
@@ -51,6 +58,9 @@
     }
     .result__right{
         width: calc(100% - 360px);
+        @media screen and (max-width:991px) {
+            width: 100%;
+        }
         h4{
             color: #FFFFFF;
             font-family: "Nunito Sans";
@@ -178,27 +188,42 @@
                             // }
                         }
                     }
-                    .top__user{
-                        margin-right: 100px;
-                        p{
-                            opacity: 0.7;
-                            color: #ffffff;
-                            font-family: Courier;
-                            font-size: 12px;
-                            letter-spacing: 0;
-                            line-height: 14px;
-                            margin-bottom: 0px;
-                            span{
-                                color: #FFDB00;
+                    .top__logon{
+                        display: flex;
+                        width: calc(100% - 37px);
+                        @media screen and (max-width:640px) {
+                            flex-direction: column;
+                        }
+                        .top__user{
+                            margin-right: 100px;
+                            @media screen and (max-width:640px) {
+                                margin-right: 0px;
+                                margin-bottom: 10px;
+                            }
+                            p{
+                                opacity: 0.7;
+                                color: #ffffff;
+                                font-family: Courier;
+                                font-size: 12px;
+                                letter-spacing: 0;
+                                line-height: 14px;
+                                margin-bottom: 0px;
+                                span{
+                                    color: #FFDB00;
+                                }
+                            }
+                            &:last-child{
+                                margin-right: 0px;
+                                @media screen and (max-width:640px) {
+                                    margin-bottom: 0px;
+                                }
                             }
                         }
-                        &:last-child{
-                            margin-right: 0px;
-                        }
-                    }                    
+                    }
+                                       
                 }
                 .bottom{
-                    padding: 15px 0 15px 57px;
+                    padding: 15px 10px 15px 57px;
                     p{
                         opacity: 0.7;
                         color: #ffffff;
@@ -207,6 +232,8 @@
                         letter-spacing: 0;
                         line-height: 14px;
                         margin-bottom: 10px;
+                        white-space: pre-wrap;
+                        word-break: break-word;
                         span{
                             color: #FFDB00;
                         }
