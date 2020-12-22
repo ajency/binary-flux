@@ -1,10 +1,11 @@
 .search-query__modal{
     .modal-content{
-        height: 635px;
         .modal-body{
+            padding-top: 20px;
             .table__cont{
                 width: 100%;
-                overflow: scroll;
+                // overflow: auto;
+                height:460px;
                 .searchquery-tbl{
                     width: 100%;
                     min-width: 1200px;
@@ -35,6 +36,7 @@
                     }
                     td{
                         color: #FFFFFF;
+                        border-bottom: 1px solid rgba(93,94,114,.5) !important;
                 
                     }
                     .drpdwn-dtsrc{
@@ -105,6 +107,28 @@
 }
 
 
+.text-shadow-none{
+    text-shadow: none !important;
+}
+
+.close:not(:disabled):not(.disabled):hover, 
+.close:not(:disabled):not(.disabled):focus {
+color: #1391FF;
+}
+
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.blue-left-sep{
+    border-left: 2px solid #1391FF;
+    padding-left: 20px;
+    margin-left: 20px;
+    line-height: 12px;
+}
+
+
 //Easy Search popup page
 
 .savedquery{
@@ -112,13 +136,14 @@
         .modal-body{
             .easy-search {
                 display: flex;
-                gap: 58px;
+                // gap: 58px;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 .easy-search__log{
                     display: flex;
                     align-items: center;
                     width: 25%;
-                    
+                    margin-left: 15px;
                     &:first-child{
                         margin-left: 0px;
                     }
@@ -154,20 +179,118 @@
                         }
                     }
                     &.data-feld{
-                        width: 130px;
-                        i{
-                            margin-right: 11px;
-                            font-size: 20px;
-                            color: #1391FF;
-                        }
+                        width: 130px;                        
                         a{
                             color: #FFFFFF;
                             font-family: "Nunito Sans";
                             font-size: 14px;
                             letter-spacing: 0;
                             line-height: 19px;
+                            text-decoration: none;
+                            i{
+                                margin-right: 11px;
+                                font-size: 20px;
+                                color: #1391FF;
+                                vertical-align: middle;                             
+                            }
+                            &:hover{
+                                i{
+                                    color: #FFFFFF;  
+                                }
+                                font-weight: 500;
+                            }
                         }
                     }
+                }
+            }
+            .easy-search__selector{
+                background-color: #12122B;
+                box-shadow: inset 0 2px 20px 0 #070816;
+                padding: 20px;
+                display: none;
+                .srch-selector__ocom{
+                    margin-bottom: 20px;
+                    .srch-selector__ocom__drop{
+                        display: flex;
+                        margin-bottom: 20px;
+                        .drpdwn-dtsrc{
+                            margin-right: 20px;
+                            &:last-child{
+                                margin-right: 0px;
+                            }
+                            ul{
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .srch-selector__ocom__feat{
+                        padding-left: 30px;
+                        .ocom__feat__optn{
+                            border-radius: 2px;
+                            background-color: #151B39;
+                            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.46);
+                            padding: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 10px;
+                            .optn__left{
+                                display: flex;
+                                align-items: center;
+                                .drpdwn-dtsrc{
+                                    margin-right: 20px;
+                                    &:last-child{
+                                        margin-right: 0px;
+                                    }
+                                    ul{
+                                        width: 100%;
+                                    }
+                                }
+                                .mr-30{
+                                    margin-right: 30px;
+                                }
+                                .fa-times, .fa-plus-circle{
+                                    font-size: 18px;
+                                    color: #1391FF;
+                                }
+                            }
+                            .optn__right{
+                                i{
+                                    font-size: 18px;
+                                    color: #1391FF;
+                                }
+                            }
+                            &:last-child{
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+                .srch-selector__btnhold{
+                    margin-top: 40px;
+                    .btn-primery{
+                        width: 120px;
+                        height: 30px;
+                        border-radius: 4px;
+                        background-color: #1391FF;
+                        color: #0A0C1B;
+                        font-family: "Nunito Sans";
+                        font-size: 12px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 16px;
+                        text-align: center;
+                        margin-right: 20px;
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                    }
+                }
+                &.active{
+                    display: block;
                 }
             }
         }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
 
-	<title>End user all data source - Binary Flux</title>
+	<title>Search Results - Binary Flux</title>
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
 	<link type="image/x-icon" href="/binary-flux/images/favicon.ico" rel="shortcut icon">
@@ -20,6 +20,10 @@
 </head><body>
         
         <div id="content">
+        
+<div id="content">
+
+<div id="content">
 <header class="header-section pb-0">
     <div class="d-flex justify-content-between align-items-center">
         <div class="wrap d-flex">
@@ -49,540 +53,21 @@
     </div>
 </header>
 <div class="container-fluid p-0">
-	<div class="end-user-swagger position-relative">
-		<div class="sidebar p-0 sidebar-320">
+    <div class="search-query px-15">
+        <h5 class="section-title text-uppercase mt-15 mb-15 font-weight-bold d-inline-block">Search Result</h5><span class="f-12 blue-left-sep d-inline-block text-darkblue font-weight-bold">No. of events found 1234</span>
+        <div class="graph bar-graph p-15 pb-0 mb-0">
+            <figure class="highcharts-figure mb-0">
+                <div id="end-user-data"></div>
+            </figure>
+        </div>
+    </div>
+	<div class="search-query-swagger position-relative">
+		<div class="p-0 sidebar-320">
 			<div class="sidear-container mobile-slide-in px-0">
-                <button type="button" class="close d-block d-md-none">
-                    <i class="icon-close"></i>
-                </button>
-                <div class="data-wrap d-flex align-items-center justify-content-between pd-space">
-                    <h5 class="section-title text-uppercase m-0 f-12">Data sources</h5>
-                    <button class="btn btn-add-icon text-blue test-btn f-12 btn-wd"><i class="icon-add mr-1 f-9"></i>Add New</button>
-                </div>     
-                <div class="pr-2 pb-2 pl-3 pt-0 d-flex align-items-center justify-content-between">
-					<div class="search-wrap search-wd">
-						<div class="position-relative">
-							<img src="/binary-flux/images/ic_search.svg" class="pa-lc" width="17" height="17" />
-							<input class="form-control input-search input-small pl-3 pr-md-0 bg-transparent" type="search" q="googlesearch" placeholder="Search Data Sources">
-						</div>
-					</div> 
-					<div class="sort d-flex pos-shift">
-                        <button class="reset"><img src="/binary-flux/images/filter-ic.png" class="mx-1"/></button>
-                        <button class="reset"><img src="/binary-flux/images/ic_sort_icon.svg" class="mx-1"/></button>
-					</div>
-				</div>   
-				<div class="nav-list-items">
-                    <ul class="nav-lists no-arrow">
-                        <li class="list-item">
-                            <a href="#" class="list-item-a active">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col-active  swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--5">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a error">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-						</li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a error">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a error">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a error">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a error">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold "> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a error">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold "> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="list-item">
-                            <a href="#" class="list-item-a">
-                                <div class="list-item-wrap">
-                                    <div class="list-item-logo">
-                                        <img src="/binary-flux/images/logo_aws.svg" alt="">
-                                    </div>
-                                    <div class="list-item-label w-100">
-                                        <label class="request-label d-block mb-0">Swagger Australia</label>
-                                        <label class="f-8 d-block mb-0">AWS</label>
-                                        <div class="d-flex align-items-start three-col f-8 mt-1">
-                                            <div class="time-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule">
-                                                <span class="text-white--5">12:42 am</span>
-                                            </div>
-                                            <div class="code-col swagger-item">
-                                                <img src="/binary-flux/images/code.svg" width="12" height="8" alt="code">
-                                                <span class="text-white--5">2.5 m</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/ic-error.svg" width="12" height="12" alt="stop"> 
-                                                <span class="text-white--5"> 75.42 k</span>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-start three-col hover-row">
-                                            <div class="start-col swagger-item">
-                                                <img src="/binary-flux/images/play-grey-icon.svg" width="8" height="9" alt="schedule" class="n-image">
-                                                <img src="/binary-flux/images/play_blue-icon.svg" width="8" height="9" alt="schedule" class="h-image">
-                                                <span class="text-white--3 font-weight-bold">Start</span>
-                                            </div>
-                                            <div class="stop-col swagger-item">
-                                                <img src="/binary-flux/images/stop.svg" width="9" height="10" alt="stop" class="n-image"> 
-                                                <img src="/binary-flux/images/stop_blue.svg" width="9" height="10" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold">Stop</span>
-                                            </div>
-                                            <div class="fail-col swagger-item">
-                                                <img src="/binary-flux/images/schedule.svg" width="12" height="12" alt="schedule" class="n-image"> 
-                                                <img src="/binary-flux/images/schedule-blue.svg" width="12" height="12" alt="schedule" class="h-image">                                                
-                                                <span class="text-white--3 font-weight-bold"> Schedule </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-						</li>
-                    </ul>
-                </div>   
+                Left Content
             </div>
 		</div>
 		<div class="content p-320">
-			<div class="d-flex justify-content-between workspace-header-bar flex-wrap head-space">
-				<div class="workspace-bar-tabs responsive-tabs w-sm-100">	
-					<div class="side-menu-toggle icon-hamburger d-md-none">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					<div class="tab-list">
-						<div class="tab-btn tab pl-md-2 font-weight-semibold">Get Started</div>
-						<div class="tab-btn tab active pl-3">
-							<img src="/binary-flux/images/logo_aws.svg" alt="" class="mr-05" width="17"> Swagger australia <a href="#" class="tab-close pr-1"><img src="/binary-flux/images/close-icon.svg"></a>
-						</div>
-					</div>
-					<div class="tab-list-action">
-						<button class="tab-btn tab-btn-add"><img src="/binary-flux/images/ic-add.svg"></button>
-						<button class="tab-btn tab-btn-more"><i class="icon-dots"></i></button>
-					</div>
-				</div>
-				
-			</div>
-			
 			<div class="workspace-tab-container">
 				<div class="workspace-tab-content">
 					<div class="workspace-tab-header pl-md-2">
@@ -713,13 +198,6 @@
 								</div>
 							</div>
 						</div>
-
-						<div class="graph bar-graph p-15 pb-0 mb-0">
-							<figure class="highcharts-figure mb-0">
-								<div id="end-user-data"></div>
-							</figure>
-						</div>
-
 					</div>
 				</div>
 				<div class="event pb-3">
@@ -841,7 +319,138 @@
 				</div>
 			</div>
 		</div>
-	</div>
+    </div>
+    
+    
+    <div class="search-bar ">
+        <div class="search-bar__upper">
+            <div class="search-bar__top">
+                <div class="search-bar__srch">
+                    <i class="fa fa-caret-up" aria-hidden="true"></i>
+                    Search Query
+                </div>
+                <div class="search-bar__input">
+                    <input name="searches" type="text" class="search-bar__input--text" id="searchrun" placeholder="Enter a query" oninput="suggestions()">
+                    <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                        <div class="drop-display">
+                            <div class="left">
+                                Last 1 month                        
+                            </div>
+                            <div class="right">
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                            </div>
+                            
+                        </div>
+                        <ul class="drop-list">
+                            <li>
+                                <div class="left">                            
+                                    Last day
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="left">                            
+                                    Last 1 week
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left">                            
+                                    Last year
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-bar__suggestn">
+                        <div class="search-suggestn__left">
+                            <div class="search-suggestn__left__top">
+                                <h2>MATCHING SEARCH</h2>
+                                <ul class="sugg__left__optn">
+                                    <li>Fail*|</li>
+                                    <li>Fail #205a_hp</li>
+                                    <li>Fail #passwords</li>
+                                    <li>Fail #passwords Ip specific *no.121.123.112</li>
+                                    <li>Fail #passwords#’hosttype”</li>
+                                </ul>
+                            </div>
+                            <div class="search-suggestn__left__top">
+                                <h2>MATCHING TERMS</h2>
+                                <ul class="sugg__left__optn">
+                                    <li>Fail*|</li>
+                                    <li>Fail #205a_hp</li>
+                                    <li>Fail #passwords</li>
+                                    <li>Fail #125b_hp</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="search-suggestn__right">
+                            <div class="search-suggestn__right__com">
+                                <h2>HOW TO SEARCH</h2>
+                                <p class="text--big14">Step 1: Retrive Elements</p>
+                                <p>The simplest searches return elements that you type in search-bar</p>
+                            </div>
+                            
+                            <div class="search-suggestn__right__com ">
+                                <div class="sugg__right__status">
+                                    <p>Terms</p>
+                                    <p>error login</p>
+                                </div>
+                                <div class="sugg__right__status">
+                                    <p>Quoted phrase</p>
+                                    <p>"database error"</p>
+                                </div>
+                                <div class="sugg__right__status">
+                                    <p>Boolean Operations</p>
+                                    <p>Login NOT (error OR fail)</p>
+                                </div>
+                                <div class="sugg__right__status">
+                                    <p>Wild Cards</p>
+                                    <p>Fail*</p>
+                                </div>
+                                <div class="sugg__right__status">
+                                    <p>Field Value</p>
+                                    <p>status=404, status=404, or Status>200</p>
+                                </div>
+                                
+                            </div>
+            
+                            <div class="search-suggestn__right__com">
+                                <h2>Step 2 : Use Search commands</h2>
+                                <p>The simplest searches retun elements that you type in search bar</p>
+                                <p>More advanced searches use commands to transform, filter, and report on the events you retrieved. Use the vertical bar | , or pipe character, to apply a command to the retried events</p>
+                            </div>
+            
+                        </div>
+                    </div>
+
+                </div>
+                <div class="search-bar__buttons">
+                    <button class="search-bar__run search-button--exe" id="submitquery" >Run</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
+                    <button class="search-bar__run search-bar--option"><i class="fa fa-repeat" aria-hidden="true"></i>Reset</button>
+                </div>
+                
+
+            </div>
+    
+            <div class="search-bar__bottom">
+                <a href="#!" class="search-bottom__link"><i class="fa fa-external-link" aria-hidden="true"></i>Open Saved Query</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-search" aria-hidden="true"></i>Easy Search</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-th-large" aria-hidden="true"></i>Create a Widget</a>
+                <a href="#!" class="search-bottom__link"><i class="fa fa-play" aria-hidden="true"></i>Run a Playbook</a>
+            </div> 
+
+            
+
+        </div>
+
+        
+
+
+        <div class="search-bar__lower"></div>
+                       
+    </div>
+
+
 </div>
 
 
@@ -1252,20 +861,149 @@
 </script>
 
 
+ 
+
 <script>
+    
+    var dropdisplay = document.getElementsByClassName("drop-display");   
+
+    function dropshow () {
+        if(this.classList.contains("shown")) {
+            this.classList.remove("shown");
+            var closest = this.parentNode.querySelectorAll('.drop-list');
+            for (var i=0; i < closest.length; i++) {
+                closest[i].classList.remove("show");
+            }
+        }
+        else{
+            this.classList.add("shown");
+            var closest = this.parentNode.querySelectorAll('.drop-list');
+            for (var i=0; i < closest.length; i++) {
+                closest[i].classList.add("show");
+            }
+        }
+    }
+    
+    for (var i=0; i < dropdisplay.length; i++) {
+        dropdisplay[i].addEventListener('click', dropshow);
+        
+    }
+    
+
+    
+
+
+    
+    
+    
+
+    
+    var droplist = document.querySelectorAll('.drop-list li');
+    
+
+    
+    
+
+
+
+    
+    function searchdraw () {
+        var searchbar = this.closest('.search-bar');
+        console.log(searchbar);
+        if(searchbar.classList.contains("active")){
+            
+            console.log('active state');
+        }
+        else{
+            searchbar.classList.add("active");
+        }
+    }
+
+    function closer () {
+        var searchbar = this.closest('.search-bar');
+        if(searchbar.classList.contains("active")){
+            searchbar.classList.remove("active");
+        }
+        else{
+            console.log('Inactive state');
+        }
+    }
+
+    function searchbtns () {
+        var searchbar = this.closest('.search-bar');
+        console.log(searchbar);
+        if(searchbar.classList.contains("active")){
+            searchbar.classList.remove("active");
+        }
+        else{
+            searchbar.classList.add("active");
+        }
+    }
+
+    var searchinput = document.getElementById("searchrun");
+
+    searchinput.addEventListener("focus", searchdraw);
+
+
+    var submitquery = document.getElementById("submitquery");
+    submitquery.addEventListener("click", closer);
+
+    var searchbuton = document.getElementsByClassName("search-bar__srch");
+    console.log(searchbuton);
+    for (var i=0; i < searchbuton.length; i++) {
+        searchbuton[i].addEventListener('click', searchbtns);        
+    }
+
+
+
+    
+    
+    var suggestiondiv = document.getElementsByClassName("search-bar__suggestn");
+
+    
+
+    function suggestions () {
+        
+        for (var i=0; i < suggestiondiv.length; i++) {
+        suggestiondiv[i].classList.add("active");        
+        }
+        
+        searchinput.addEventListener("blur", myblur);
+        return 5;
+    }
+
+    function myblur () {
+        for (var i=0; i < suggestiondiv.length; i++) {
+        suggestiondiv[i].classList.remove("active");        
+        }
+    }
+
+    
+    
+    
+
+</script>
+
+<script>
+
+    
+
+
     $(document).ready(function () {
 
         
-        $('.drop-display').on("click", function () {
-            if($(this).hasClass('shown')){
-            $(this).removeClass('shown');
-            $(this).parent().find('.drop-list').removeClass('show');  
-            }
-            else{
-                $(this).addClass('shown');
-                $(this).parent().find('.drop-list').addClass('show');
-            }     
-        });
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
         
         $('#data-src-drp .drop-list li').on("click", function () {
