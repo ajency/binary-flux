@@ -233,7 +233,7 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                                                        <div class="drpdwn-dtsrc drpdwn-dtsrcs" id="schedle-mod-drps">
                                                             <div class="drop-display">
                                                                 <div class="left">Last 1 month</div>
                                                                 <div class="right">
@@ -354,22 +354,22 @@
 
 
 
+        //Dropdown Closure on Options
+        var droplists = document.querySelectorAll(".drpdwn-dtsrc .drop-list li");
 
+        for (var i=0; i < droplists.length; i++) {
+            droplists[i].addEventListener("click", closelist);       
+        }
 
-
-
-
-        var droplist = document.querySelectorAll('.drop-list li');
-
-
-
-        console.log(droplist);
-
-
-
-
-
-
+        function closelist () {
+            this.parentNode.classList.remove("show");
+            var dropdisp = this.parentNode.parentNode.getElementsByClassName("drop-display");
+            for (var i=0; i < dropdisp.length; i++) {
+                dropdisp[i].classList.remove("shown");       
+            }
+            console.log("hii");
+        }
+        //Dropdown Closure on Options
 
     </script>
 
