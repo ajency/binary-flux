@@ -175,6 +175,7 @@
                 box-shadow: inset 0 2px 20px 0 #070816;
                 padding: 20px;
                 .srch-selector__ocom{
+                    margin-bottom: 20px;
                     .srch-selector__ocom__drop{
                         display: flex;
                         margin-bottom: 20px;
@@ -182,6 +183,9 @@
                             margin-right: 20px;
                             &:last-child{
                                 margin-right: 0px;
+                            }
+                            ul{
+                                width: 100%;
                             }
                         }
                     }
@@ -195,6 +199,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: space-between;
+                            margin-bottom: 10px;
                             .optn__left{
                                 display: flex;
                                 align-items: center;
@@ -203,11 +208,50 @@
                                     &:last-child{
                                         margin-right: 0px;
                                     }
+                                    ul{
+                                        width: 100%;
+                                    }
+                                }
+                                .mr-30{
+                                    margin-right: 30px;
+                                }
+                                .fa-times, .fa-plus-circle{
+                                    font-size: 18px;
+                                    color: #1391FF;
                                 }
                             }
                             .optn__right{
-
+                                i{
+                                    font-size: 18px;
+                                    color: #1391FF;
+                                }
                             }
+                            &:last-child{
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 0px;
+                    }
+                }
+                .srch-selector__btnhold{
+                    margin-top: 40px;
+                    .btn-primery{
+                        width: 120px;
+                        height: 30px;
+                        border-radius: 4px;
+                        background-color: #1391FF;
+                        color: #0A0C1B;
+                        font-family: "Nunito Sans";
+                        font-size: 12px;
+                        font-weight: bold;
+                        letter-spacing: 0;
+                        line-height: 16px;
+                        text-align: center;
+                        margin-right: 20px;
+                        &:last-child{
+                            margin-right: 0px;
                         }
                     }
                 }
