@@ -112,13 +112,14 @@
         .modal-body{
             .easy-search {
                 display: flex;
-                gap: 58px;
+                // gap: 58px;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 .easy-search__log{
                     display: flex;
                     align-items: center;
                     width: 25%;
-                    
+                    margin-left: 15px;
                     &:first-child{
                         margin-left: 0px;
                     }
@@ -154,18 +155,26 @@
                         }
                     }
                     &.data-feld{
-                        width: 130px;
-                        i{
-                            margin-right: 11px;
-                            font-size: 20px;
-                            color: #1391FF;
-                        }
+                        width: 130px;                        
                         a{
                             color: #FFFFFF;
                             font-family: "Nunito Sans";
                             font-size: 14px;
                             letter-spacing: 0;
                             line-height: 19px;
+                            text-decoration: none;
+                            i{
+                                margin-right: 11px;
+                                font-size: 20px;
+                                color: #1391FF;
+                                vertical-align: middle;                             
+                            }
+                            &:hover{
+                                i{
+                                    color: #FFFFFF;  
+                                }
+                                font-weight: 500;
+                            }
                         }
                     }
                 }
@@ -174,6 +183,7 @@
                 background-color: #12122B;
                 box-shadow: inset 0 2px 20px 0 #070816;
                 padding: 20px;
+                display: none;
                 .srch-selector__ocom{
                     margin-bottom: 20px;
                     .srch-selector__ocom__drop{
@@ -254,6 +264,9 @@
                             margin-right: 0px;
                         }
                     }
+                }
+                &.active{
+                    display: block;
                 }
             }
         }

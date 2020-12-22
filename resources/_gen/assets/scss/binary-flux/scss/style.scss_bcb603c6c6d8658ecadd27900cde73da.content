@@ -12837,12 +12837,13 @@ hr {
 
 .savedquery .modal-content .modal-body .easy-search {
   display: flex;
-  gap: 58px;
+  flex-wrap: wrap;
   justify-content: space-between; }
   .savedquery .modal-content .modal-body .easy-search .easy-search__log {
     display: flex;
     align-items: center;
-    width: 25%; }
+    width: 25%;
+    margin-left: 15px; }
     .savedquery .modal-content .modal-body .easy-search .easy-search__log:first-child {
       margin-left: 0px; }
     .savedquery .modal-content .modal-body .easy-search .easy-search__log.fb-33 {
@@ -12866,21 +12867,28 @@ hr {
           width: 100%; }
     .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld {
       width: 130px; }
-      .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld i {
-        margin-right: 11px;
-        font-size: 20px;
-        color: #1391FF; }
       .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld a {
         color: #FFFFFF;
         font-family: "Nunito Sans";
         font-size: 14px;
         letter-spacing: 0;
-        line-height: 19px; }
+        line-height: 19px;
+        text-decoration: none; }
+        .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld a i {
+          margin-right: 11px;
+          font-size: 20px;
+          color: #1391FF;
+          vertical-align: middle; }
+        .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld a:hover {
+          font-weight: 500; }
+          .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld a:hover i {
+            color: #FFFFFF; }
 
 .savedquery .modal-content .modal-body .easy-search__selector {
   background-color: #12122B;
   box-shadow: inset 0 2px 20px 0 #070816;
-  padding: 20px; }
+  padding: 20px;
+  display: none; }
   .savedquery .modal-content .modal-body .easy-search__selector .srch-selector__ocom {
     margin-bottom: 20px; }
     .savedquery .modal-content .modal-body .easy-search__selector .srch-selector__ocom .srch-selector__ocom__drop {
@@ -12941,6 +12949,8 @@ hr {
       margin-right: 20px; }
       .savedquery .modal-content .modal-body .easy-search__selector .srch-selector__btnhold .btn-primery:last-child {
         margin-right: 0px; }
+  .savedquery .modal-content .modal-body .easy-search__selector.active {
+    display: block; }
 
 @media screen and (min-width: 768px) {
   .addfield .modal-dialog {
