@@ -13196,4 +13196,20 @@ hr {
 .filters-dropdown .btn-done {
   padding: 5px 65px; }
 
+@media (max-width: 767px) {
+  .filters-dropdown .filter-arrow {
+    width: 268px !important;
+    right: -30px;
+    left: auto; }
+  .filters-dropdown .inprogess-box {
+    margin-left: 0 !important; }
+  .filters-dropdown .text-right {
+    text-align: center !important; }
+  .filters-dropdown .filter-arrow::after {
+    left: 75.5% !important; }
+  .data-source-filter .drpdwn-dtsrc .drop-list {
+    right: 0; }
+  .data-source-filter .drop-arrow::after {
+    left: 76%; } }
+
 /*# sourceMappingURL=style.css.map */
