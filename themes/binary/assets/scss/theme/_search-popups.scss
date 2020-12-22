@@ -1,10 +1,11 @@
 .search-query__modal{
     .modal-content{
-        height: 635px;
         .modal-body{
+            padding-top: 20px;
             .table__cont{
                 width: 100%;
-                overflow: scroll;
+                // overflow: auto;
+                height:460px;
                 .searchquery-tbl{
                     width: 100%;
                     min-width: 1200px;
@@ -35,6 +36,7 @@
                     }
                     td{
                         color: #FFFFFF;
+                        border-bottom: 1px solid rgba(93,94,114,.5) !important;
                 
                     }
                     .drpdwn-dtsrc{
@@ -102,6 +104,28 @@
     textarea.form-control{
         height: auto;
     }
+}
+
+
+.text-shadow-none{
+    text-shadow: none !important;
+}
+
+.close:not(:disabled):not(.disabled):hover, 
+.close:not(:disabled):not(.disabled):focus {
+color: #1391FF;
+}
+
+.px-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.blue-left-sep{
+    border-left: 2px solid #1391FF;
+    padding-left: 20px;
+    margin-left: 20px;
+    line-height: 12px;
 }
 
 

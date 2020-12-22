@@ -12,7 +12,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.807e79d62741d64c4b905ade3b7854c57045646292e35b4755c069a41281d2b7.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.66aa4fb4e82fe54985a5781548f2c68ecaab05ddb2eef35edcc2ab21853fd011.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -89,7 +89,7 @@
                                             <label for="dummy1" class="col-form-label">Search Log where</label>
                                             <div class="drpdwn-dtsrc" id="schedle-mod-drps">
                                                 <div class="drop-display">
-                                                    <div class="left">Mac Address(Origin)</div>
+                                                    <div class="left">Log Message</div>
                                                     <div class="right">
                                                         <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                                     </div>
@@ -144,9 +144,10 @@
                                             </div>
                                         </div>                                       
                                             
-                                        <div class="easy-search__log data-feld">
+                                        <div class="easy-search__log data-feld" id="addDataField">
+                                            <a href="#!">
                                             <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                                            <a href="#!">Add Data Feild</a>
+                                            Add Data Feild</a>
                                         </div>
                                         
                                         
@@ -157,7 +158,7 @@
                                             <div class="srch-selector__ocom__drop">
                                                 <div class="drpdwn-dtsrc" id="schedle-mod-drps">
                                                     <div class="drop-display">
-                                                        <div class="left">Last 1 month</div>
+                                                        <div class="left">All of the following</div>
                                                         <div class="right">
                                                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                                         </div>
@@ -180,7 +181,7 @@
                                                 </div>
                                                 <div class="drpdwn-dtsrc" id="schedle-mod-drps">
                                                     <div class="drop-display">
-                                                        <div class="left">Last 1 month</div>
+                                                        <div class="left">Is</div>
                                                         <div class="right">
                                                             <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                                         </div>
@@ -209,7 +210,7 @@
                                                     <div class="optn__left">
                                                         <div class="drpdwn-dtsrc" id="schedle-mod-drp">
                                                             <div class="drop-display">
-                                                                <div class="left">Last 1 month</div>
+                                                                <div class="left">All of the following</div>
                                                                 <div class="right">
                                                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                                                 </div>
@@ -232,7 +233,7 @@
                                                         </div>
                                                         <div class="drpdwn-dtsrc" id="schedle-mod-drps">
                                                             <div class="drop-display">
-                                                                <div class="left">Last 1 month</div>
+                                                                <div class="left">Is</div>
                                                                 <div class="right">
                                                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                                                 </div>
@@ -253,9 +254,9 @@
                                                                 </li>
                                                             </ul>
                                                         </div>
-                                                        <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                                                        <div class="drpdwn-dtsrc drpdwn-dtsrcs" id="schedle-mod-drps">
                                                             <div class="drop-display">
-                                                                <div class="left">Last 1 month</div>
+                                                                <div class="left">123. 121.111</div>
                                                                 <div class="right">
                                                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                                                 </div>
@@ -293,7 +294,7 @@
                                         
                                         <div class="srch-selector__btnhold">
                                             <button class="btn-primery" id="addgroup">Add Group</button>
-                                            <button class="btn-primery" id="addfield">Add Filter</button>
+                                            <button class="btn-primery" id="addfilter">Add Filter</button>
                                         </div>
 
                                     </div>
@@ -374,18 +375,143 @@
 
 
 
+        
+        var droplists = document.querySelectorAll(".drpdwn-dtsrc .drop-list li");
 
+        for (var i=0; i < droplists.length; i++) {
+            droplists[i].addEventListener("click", closelist);       
+        }
 
+        function closelist () {
+            this.parentNode.classList.remove("show");
+            var dropdisp = this.parentNode.parentNode.getElementsByClassName("drop-display");
+            for (var i=0; i < dropdisp.length; i++) {
+                dropdisp[i].classList.remove("shown");       
+            }
+            console.log("hii");
+        }
+        
 
+    </script>
 
+    
+    <script>
+        
+        
+        
 
-        var droplist = document.querySelectorAll('.drop-list li');
+        var adddatafld = document.getElementById("addDataField");
 
+        adddatafld.addEventListener("click", showselector);
 
+        function showselector () {
+            var easyselect = document.getElementsByClassName("easy-search__selector");
 
-        console.log(droplist);
+            for (var i=0; i < easyselect.length; i++) {
+                easyselect[i].classList.add("active");        
+            }
+        }
 
+        
 
+        
+        var addfilter = document.getElementById("addfilter");
+
+        var ocomfeature = document.getElementsByClassName("srch-selector__ocom__feat");
+        var ocomoptn = document.getElementsByClassName("ocom__feat__optn");
+
+        addfilter.addEventListener("click", insertfield);
+        
+        function insertfield() {
+            const div2 = document.createElement('div');
+
+            div2.className = 'ocom__feat__optn';
+
+            div2.innerHTML = `
+            <div class="optn__left">
+                                                        <div class="drpdwn-dtsrc" id="schedle-mod-drp">
+                                                            <div class="drop-display">
+                                                                <div class="left">Last 1 month</div>
+                                                                <div class="right">
+                                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                                </div>
+            
+                                                            </div>
+                                                            <ul class="drop-list">
+                                                                <li>
+                                                                    <div class="left">
+                                                                        Select 1 </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="left">
+                                                                        Select 2 </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="left">
+                                                                        Select 3 </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                                                            <div class="drop-display">
+                                                                <div class="left">Last 1 month</div>
+                                                                <div class="right">
+                                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                                </div>
+            
+                                                            </div>
+                                                            <ul class="drop-list">
+                                                                <li>
+                                                                    <div class="left">
+                                                                        Select 1 </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="left">
+                                                                        Select 2 </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="left">
+                                                                        Select 3 </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                                                            <div class="drop-display">
+                                                                <div class="left">Last 1 month</div>
+                                                                <div class="right">
+                                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                                                </div>
+            
+                                                            </div>
+                                                            <ul class="drop-list">
+                                                                <li>
+                                                                    <div class="left">
+                                                                        Select 1 </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="left">
+                                                                        Select 2 </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="left">
+                                                                        Select 3 </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="#!" id=""><i class="fa fa-times mr-30" aria-hidden="true"></i></a>
+                                                        <a href="#!" id=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                                    </div>
+
+                                                    <div class="optn__right">
+                                                        <a href="#!"><i class="fa fa-times" aria-hidden="true"></i></a>
+                                                    </div>
+                `;
+
+            for (var i=0; i < ocomfeature.length; i++) {
+                ocomfeature[i].appendChild(div2);              
+                
+            }
+        }
 
 
 
