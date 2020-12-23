@@ -181,6 +181,14 @@
         height: calc(100% - 100px);
         overflow-y: auto;
         .search-bar__upper{
+            .search-bar__top{
+                .drpdwn-dtsrc{
+                    .drop-list{
+                        bottom: 0;
+                        top: 36px;
+                    }
+                }
+            }
             .search-bar__bottom{
                 padding: 25px 0 11px 10px;
                 display: block;
