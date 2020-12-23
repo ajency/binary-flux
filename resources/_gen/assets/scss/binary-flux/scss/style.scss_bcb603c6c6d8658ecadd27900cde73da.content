@@ -12923,6 +12923,8 @@ hr {
           font-weight: 500; }
           .savedquery .modal-content .modal-body .easy-search .easy-search__log.data-feld a:hover i {
             color: #FFFFFF; }
+  .savedquery .modal-content .modal-body .easy-search .drpdwn-dtsrc ul {
+    width: 100%; }
   .savedquery .modal-content .modal-body .easy-search label {
     margin-right: 20px; }
     @media screen and (max-width: 991px) {
