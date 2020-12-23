@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html><head>
+
+	<title>Widget Popup - Binary Flux</title>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=no">
+	<link type="image/x-icon" href="/binary-flux/images/favicon.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/css/tempusdominus-bootstrap-4.min.css" integrity="sha512-PMjWzHVtwxdq7m7GIxBot5vdxUY+5aKP9wpKtvnNBZrVv1srI8tU6xvFMzG8crLNcMj/8Xl/WWmo/oAP/40p1g==" crossorigin="anonymous" />
+	
+		
+			
+			<link rel="stylesheet" href="/binary-flux/css/style.min.4cebcc3f36ea7dbccaf514f900cd1a69485ed62a87d7c678057cbac39477c109.css">
+		
+		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
+		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head><body>
+        
+        <div id="content">
+
+    <div id="content">
+        <header class="header-section pb-0">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="wrap d-flex">
+                    <div class="logo-wrap">
+                        <a href="#">
+                            <img src="/binary-flux/images/logo.svg" alt="logo" class="logo">
+                        </a>
+                    </div>
+                    <ul class="nav nav-tabs no-border pl-md-4 pr-md-3 blue-bg mr-l35" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold pt-1 active" id="configure-tab" data-toggle="tab"
+                                href="#configure" role="tab" aria-controls="configure"
+                                aria-selected="true">Configure</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold pt-1" id="getstarted-tab" data-toggle="tab"
+                                href="#dashboards" role="tab" aria-controls="dashboards"
+                                aria-selected="true">Dashboards</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold pt-1" id="organisation-tab" data-toggle="tab"
+                                href="#organisation" role="tab" aria-controls="organisation"
+                                aria-selected="true">Organisation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold pt-1" id="settings-tab" data-toggle="tab"
+                                href="#settings" role="tab" aria-controls="settings" aria-selected="true">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="user">
+                    <span class="text-white font-weight-bold">John Smith<img
+                            src="/binary-flux/images/notifications-outline.svg" width="20" height="20"
+                            alt="notification" class="notification"></span>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid p-0">
+            <div class="btn-group btn-outline-dark-blue mt-5">
+                <button type="button" data-toggle="modal" data-target="#schedulemodal"
+                    class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                    create</button>
+            </div>
+        </div>
+        <div id="schedulemodal" class="modal dashboard-widget fade px-2" role="dialog">
+            <div class="modal-dialog mw-100">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="left w-100">
+                            <div class="col-md-2">
+                                <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
+                            </div>
+                            
+
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <ul class="nav nav-tabs task-tab" id="reportsTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active " data-toggle="tab" role="tab" href="#onetime">Select existing
+                                    dashboard </a>
+                                <div class="brdr-rt"></div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab" role="tab" href="#recurring">Create a New
+                                    Dashboard</a>
+                                <div class="brdr-rt"></div>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active dashboard-filter " id="onetime" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <p class="pt-3">Select a dashboard from the dropdown </p>
+
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn" id="dropbtn">Select
+                                        dashboard 
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i> 
+                                        
+                                        </button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <input type="text" placeholder="Search.." id="myInput"
+                                            onkeyup="filterFunction()">
+                                        <div class="drop-list">
+                                            <a href="#" onclick="selecteddd(this)">Select dashboard</a>
+                                            <a href="#about" onclick="selecteddd(this)">About</a>
+                                            <a href="#base" onclick="selecteddd(this)">Base</a>
+                                            <a href="#blog" onclick="selecteddd(this)">Blog</a>
+                                            <a href="#contact" onclick="selecteddd(this)">Contact</a>
+                                            <a href="#custom" onclick="selecteddd(this)">Custom</a>
+                                            <a href="#support" onclick="selecteddd(this)">Support</a>
+                                            <a href="#tools" onclick="selecteddd(this)">Tools</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <script>
+                                    
+
+                                    function myFunction() {
+                                        document.getElementById("myDropdown").classList.toggle("show");
+                                    }
+
+                                    function selecteddd(el) {
+                                        document.getElementById("dropbtn").innerText = el.text;
+                                        
+
+                                        
+                                        var x = document.createElement("IMG");
+                                        x.setAttribute("src", "/binary-flux/images/ic_chevron_left copy.svg");
+                                        document.body.appendChild(x);
+                                        myFunction();
+                                    }
+
+                                    function filterFunction() {
+                                        var input, filter, ul, li, a, i;
+                                        input = document.getElementById("myInput");
+                                        filter = input.value.toUpperCase();
+                                        div = document.getElementById("myDropdown");
+                                        a = div.getElementsByTagName("a");
+                                        for (i = 0; i < a.length; i++) {
+                                            txtValue = a[i].textContent || a[i].innerText;
+                                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                                a[i].style.display = "";
+                                            } else {
+                                                a[i].style.display = "none";
+                                            }
+                                        }
+                                    }
+
+                                </script>
+
+                            </div>
+                            <div class="tab-pane " id="recurring" role="tabpanel" aria-labelledby="profile-tab">
+                                <form class="mt-2 create-dashboard">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-3">
+                                            <label for="inputEmail4">Dashboard Title</label>
+                                            <input type="text" class="form-control" id="txt" placeholder="Name"
+                                                onkeyup="manage(this)">
+                                        </div>
+                                        <div class="form-group col-md-5">
+                                            <label for="inputPassword4">Add Description</label>
+                                            <input type="text" class="form-control" id="txt1"
+                                                placeholder="Type here" onkeyup="manage(this)">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btn btn-primary mt-3 mb-3"  disabled id="btSubmit">Primary
+                                            button</button>
+                                    </div>
+                                   
+                                    <i class="fa fa-share-alt pl-1" aria-hidden="true"></i>
+                                    
+                                </form>
+                                <script>
+                                    function manage(txt) {
+                                        var bt = document.getElementById('btSubmit');
+                                        var element = document.getElementById('shareimg');
+                                        if (txt.value != '' && txt1.value !='') {
+                                            bt.disabled = false;
+                                            element.classList.remove("disabled");
+                                        }
+                                        else {
+                                            bt.disabled = true;
+                                        }
+                                    }    
+                                </script>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default modal-ok" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.1.2/js/tempusdominus-bootstrap-4.min.js"
+            integrity="sha512-2JBCbWoMJPH+Uj7Wq5OLub8E5edWHlTM4ar/YJkZh3plwB2INhhOC3eDoqHm1Za/ZOSksrLlURLoyXVdfQXqwg=="
+            crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function () {
+                
+                $('.nav-tabs > li a[title]').tooltip();
+
+                
+                $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                    var $target = $(e.target);
+                    if ($target.parent().hasClass('disabled')) {
+                        return false;
+                    }
+                });
+
+                $(".next-step").click(function (e) {
+                    var $active = $('.nav-tabs li>.active');
+                    $active.parent().next().find('.nav-link').removeClass('disabled');
+                    nextTab($active);
+                });
+
+                $(".prev-step").click(function (e) {
+                    var $active = $('.nav-tabs li>a.active');
+                    prevTab($active);
+                });
+            });
+
+            function nextTab(elem) {
+                $(elem).parent().next().find('a[data-toggle="tab"]').click();
+            }
+            function prevTab(elem) {
+                $(elem).parent().prev().find('a[data-toggle="tab"]').click();
+            }
+
+
+        </script>
+
+        
+
+
+        <script>
+    
+            var dropdisplay = document.getElementsByClassName("drop-display");   
+        
+            function dropshow () {
+                if(this.classList.contains("shown")) {
+                    this.classList.remove("shown");
+                    var closest = this.parentNode.querySelectorAll('.drop-list');
+                    for (var i=0; i < closest.length; i++) {
+                        closest[i].classList.remove("show");
+                    }
+                }
+                else{
+                    this.classList.add("shown");
+                    var closest = this.parentNode.querySelectorAll('.drop-list');
+                    for (var i=0; i < closest.length; i++) {
+                        closest[i].classList.add("show");
+                    }
+                }
+            }
+            
+            for (var i=0; i < dropdisplay.length; i++) {
+                dropdisplay[i].addEventListener('click', dropshow);
+                
+            }
+            
+        
+            
+        
+        
+            
+            
+            
+        
+            
+            var droplist = document.querySelectorAll('.drop-list li');
+            
+        
+            
+            
+        
+        
+        
+            
+            function searchdraw () {
+                var searchbar = this.closest('.search-bar');
+                console.log(searchbar);
+                if(searchbar.classList.contains("active")){
+                    
+                    console.log('active state');
+                }
+                else{
+                    searchbar.classList.add("active");
+                }
+            }
+        
+            function closer () {
+                var searchbar = this.closest('.search-bar');
+                if(searchbar.classList.contains("active")){
+                    searchbar.classList.remove("active");
+                }
+                else{
+                    console.log('Inactive state');
+                }
+            }
+        
+            function searchbtns () {
+                var searchbar = this.closest('.search-bar');
+                console.log(searchbar);
+                if(searchbar.classList.contains("active")){
+                    searchbar.classList.remove("active");
+                }
+                else{
+                    searchbar.classList.add("active");
+                }
+            }
+        
+            var searchinput = document.getElementById("searchrun");
+        
+            searchinput.addEventListener("focus", searchdraw);
+        
+        
+            var submitquery = document.getElementById("submitquery");
+            submitquery.addEventListener("click", closer);
+        
+            var searchbuton = document.getElementsByClassName("search-bar__srch");
+            console.log(searchbuton);
+            for (var i=0; i < searchbuton.length; i++) {
+                searchbuton[i].addEventListener('click', searchbtns);        
+            }
+        
+        
+        
+            
+            
+            var suggestiondiv = document.getElementsByClassName("search-bar__suggestn");
+        
+            
+        
+            function suggestions () {
+                
+                for (var i=0; i < suggestiondiv.length; i++) {
+                suggestiondiv[i].classList.add("active");        
+                }
+                
+                searchinput.addEventListener("blur", myblur);
+                return 5;
+            }
+        
+            function myblur () {
+                for (var i=0; i < suggestiondiv.length; i++) {
+                suggestiondiv[i].classList.remove("active");        
+                }
+            }
+        
+            
+        
+        
+            
+            var droplists = document.querySelectorAll(".drpdwn-dtsrc .drop-list li");
+        
+            for (var i=0; i < droplists.length; i++) {
+                droplists[i].addEventListener("click", closelist);       
+            }
+        
+            function closelist () {
+                this.parentNode.classList.remove("show");
+                var dropdisp = this.parentNode.parentNode.getElementsByClassName("drop-display");
+                for (var i=0; i < dropdisp.length; i++) {
+                    dropdisp[i].classList.remove("shown");       
+                }
+                console.log("hii");
+            }
+            
+            
+            
+        
+        </script>
+
+
+        <script>
+            $(document).ready(function () {
+
+
+                $('.drop-display').on("click", function () {
+                    if ($(this).hasClass('shown')) {
+                        $(this).removeClass('shown');
+                        $(this).parent().find('.drop-list').removeClass('show');
+                    }
+                    else {
+                        $(this).addClass('shown');
+                        $(this).parent().find('.drop-list').addClass('show');
+                    }
+                });
+
+
+                $('#data-src-drp .drop-list li').on("click", function () {
+                    var dropdisplayimg1 = $('#data-src-drp .drop-display .left .capt-img');
+                    var dropdisplaytxt1 = $('#data-src-drp .drop-display .left .capt-txt');
+
+                    var imgsrc1 = $(this).find('.capt-img').attr('src');
+                    var text1 = $(this).find('.capt-txt').html();
+
+                    dropdisplayimg1.attr('src', imgsrc1);
+                    dropdisplaytxt1.html(text1);
+
+                    $('#data-src-drp .drop-display').removeClass('shown');
+                    $('#data-src-drp .drop-list').removeClass('show');
+                });
+
+
+                $('#schedle-mod-drp .drop-list li').on("click", function () {
+                    var dropdisplayimg2 = $('#schedle-mod-drp .drop-display .left .capt-img');
+                    var dropdisplaytxt2 = $('#schedle-mod-drp .drop-display .left .capt-txt');
+
+                    var imgsrc2 = $(this).find('.capt-img').attr('src');
+                    var text2 = $(this).find('.capt-txt').html();
+
+                    dropdisplayimg2.attr('src', imgsrc2);
+                    dropdisplaytxt2.html(text2);
+
+                    $('#schedle-mod-drp .drop-display').removeClass('shown');
+                    $('#schedle-mod-drp .drop-list').removeClass('show');
+                });
+
+
+                $('#day-sett .drop-list li').on("click", function () {
+                    var dropdisplayimg3 = $('#day-sett .drop-display .left .capt-img');
+                    var dropdisplaytxt3 = $('#day-sett .drop-display .left .capt-txt');
+
+
+                    var text3 = $(this).find('.capt-txt').html();
+
+
+                    dropdisplaytxt3.html(text3);
+
+                    $('#day-sett .drop-display').removeClass('shown');
+                    $('#day-sett .drop-list').removeClass('show');
+                });
+
+
+                $('#schedulemodal').on('show.bs.modal', function (e) {
+                    $('#day-sett .drop-display').removeClass('shown');
+                    $('#day-sett .drop-list').removeClass('show');
+
+                    $('#schedle-mod-drp .drop-display').removeClass('shown');
+                    $('#schedle-mod-drp .drop-list').removeClass('show');
+
+                });
+
+
+                $('#reportsTab a').on('click', function (e) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                });
+
+                $('#reportsTab li').on('click', function () {
+
+                    $('#reportsTab li').removeClass('active');
+                    $(this).addClass('active');
+                });
+
+
+                $('#day-sett .drop-list li').on("click", function () {
+                    var idcatch = $(this).children('.left').children('.capt-txt').attr('id');
+
+                    $('#weekly-show').removeClass('active');
+                    $('#monthly-show').removeClass('active');
+
+                    if (idcatch == 'd1') {
+                        console.log('d1 clicked');
+                        $('#day-val-changer').html('Days');
+                    } else if (idcatch == 'd2') {
+                        $('#weekly-show').addClass('active');
+                        $('#day-val-changer').html('Week');
+                    } else if (idcatch == 'd3') {
+                        $('#monthly-show').addClass('active');
+                        $('#day-val-changer').html('Months');
+                    } else if (idcatch == 'd4') {
+                        $('#day-val-changer').html('Hours');
+                    } else if (idcatch == 'd5') {
+                        $('#day-val-changer').html('Minutes');
+                    } else if (idcatch == 'd6') {
+                        $('#day-val-changer').html('Seconds');
+                    }
+                    else {
+                        console.log('Nothing to display');
+                    }
+
+                });
+
+
+
+            });
+
+
+        </script>
+
+        <script>
+            var $j = jQuery.noConflict();
+            $j(function () {
+                $j("#datepicker1").datepicker({
+                    format: 'd-M, yyyy'
+                });
+
+                $j("#datepicker2").datepicker({
+                    format: 'd-M, yyyy'
+                });
+
+                $j("#datepicker3").datepicker({
+                    format: 'd-M, yyyy'
+                });
+
+                $j('#timepicker1').datetimepicker({
+                    format: 'LT'
+                });
+
+                $j('#timepicker2').datetimepicker({
+                    format: 'LT'
+                });
+            });
+        </script><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script>
+
+        </div><script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
+<script src="/binary-flux/js/app.js"></script>
+</body>
+</html>
