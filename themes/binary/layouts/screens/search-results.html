@@ -33,7 +33,7 @@
 </header>
 <div class="container-fluid p-0">
     <div class="search-query px-15">
-        <h5 class="section-title text-uppercase mt-15 mb-15 font-weight-bold d-inline-block">Search Result</h5><span class="f-12 blue-left-sep d-inline-block text-darkblue font-weight-bold">No. of events found 1234</span>
+        <!-- <h5 class="section-title text-uppercase mt-15 mb-15 font-weight-bold d-inline-block">Search Result</h5><span class="f-12 blue-left-sep d-inline-block text-darkblue font-weight-bold">No. of events found 1234</span> -->
         <div class="graph bar-graph p-15 pb-0 mb-0">
             <figure class="highcharts-figure mb-0">
                 <div id="end-user-datas"></div>
@@ -43,115 +43,118 @@
 
     
 
-
-	
-    
-    
     <div class="search-bar active">
         <div class="search-bar__upper">
             <div class="search-bar__top">
-                <div class="search-bar__srch">
-                    <i class="fa fa-caret-up" aria-hidden="true"></i>
-                    Search Query
-                </div>
-                <div class="search-bar__input">
-                    <input name="searches" type="text" class="search-bar__input--text" id="searchrun" placeholder="Enter a query" oninput="suggestions()">
-                    <div class="drpdwn-dtsrc" id="schedle-mod-drps">
-                        <div class="drop-display">
-                            <div class="left">
-                                Last 1 month                        
-                            </div>
-                            <div class="right">
-                                <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
-                            </div>
-                            
-                        </div>
-                        <ul class="drop-list">
-                            <li>
-                                <div class="left">                            
-                                    Last day
-                                </div>                        
-                            </li>
-                            <li>
-                                <div class="left">                            
-                                    Last 1 week
-                                </div>
-                            </li>
-                            <li>
-                                <div class="left">                            
-                                    Last year
-                                </div>
-                            </li>
-                        </ul>
+                <div class="search-bar__grp1">
+                    <div class="search-bar__srch">
+                        <i class="fa fa-caret-up" aria-hidden="true"></i>
+                        Search Query
                     </div>
-                    <div class="search-bar__suggestn">
-                        <div class="search-suggestn__left">
-                            <div class="search-suggestn__left__top">
-                                <h2>MATCHING SEARCH</h2>
-                                <ul class="sugg__left__optn">
-                                    <li>Fail*|</li>
-                                    <li>Fail #205a_hp</li>
-                                    <li>Fail #passwords</li>
-                                    <li>Fail #passwords Ip specific *no.121.123.112</li>
-                                    <li>Fail #passwords#’hosttype”</li>
-                                </ul>
-                            </div>
-                            <div class="search-suggestn__left__top">
-                                <h2>MATCHING TERMS</h2>
-                                <ul class="sugg__left__optn">
-                                    <li>Fail*|</li>
-                                    <li>Fail #205a_hp</li>
-                                    <li>Fail #passwords</li>
-                                    <li>Fail #125b_hp</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="search-suggestn__right">
-                            <div class="search-suggestn__right__com">
-                                <h2>HOW TO SEARCH</h2>
-                                <p class="text--big14">Step 1: Retrive Elements</p>
-                                <p>The simplest searches return elements that you type in search-bar</p>
-                            </div>
-                            
-                            <div class="search-suggestn__right__com ">
-                                <div class="sugg__right__status">
-                                    <p>Terms</p>
-                                    <p>error login</p>
+                    <div class="search-bar__input">
+                        <input name="searches" type="text" class="search-bar__input--text" id="searchrun" placeholder="Enter a query" oninput="suggestions()">
+                        <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                            <div class="drop-display">
+                                <div class="left">
+                                    Last 1 month                        
                                 </div>
-                                <div class="sugg__right__status">
-                                    <p>Quoted phrase</p>
-                                    <p>"database error"</p>
-                                </div>
-                                <div class="sugg__right__status">
-                                    <p>Boolean Operations</p>
-                                    <p>Login NOT (error OR fail)</p>
-                                </div>
-                                <div class="sugg__right__status">
-                                    <p>Wild Cards</p>
-                                    <p>Fail*</p>
-                                </div>
-                                <div class="sugg__right__status">
-                                    <p>Field Value</p>
-                                    <p>status=404, status=404, or Status>200</p>
+                                <div class="right">
+                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
                                 </div>
                                 
                             </div>
-            
-                            <div class="search-suggestn__right__com">
-                                <h2>Step 2 : Use Search commands</h2>
-                                <p>The simplest searches retun elements that you type in search bar</p>
-                                <p>More advanced searches use commands to transform, filter, and report on the events you retrieved. Use the vertical bar | , or pipe character, to apply a command to the retried events</p>
-                            </div>
-            
+                            <ul class="drop-list">
+                                <li>
+                                    <div class="left">                            
+                                        Last day
+                                    </div>                        
+                                </li>
+                                <li>
+                                    <div class="left">                            
+                                        Last 1 week
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">                            
+                                        Last year
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+                        <div class="search-bar__suggestn">
+                            <div class="search-suggestn__left">
+                                <div class="search-suggestn__left__top">
+                                    <h2>MATCHING SEARCH</h2>
+                                    <ul class="sugg__left__optn">
+                                        <li>Fail*|</li>
+                                        <li>Fail #205a_hp</li>
+                                        <li>Fail #passwords</li>
+                                        <li>Fail #passwords Ip specific *no.121.123.112</li>
+                                        <li>Fail #passwords#’hosttype”</li>
+                                    </ul>
+                                </div>
+                                <div class="search-suggestn__left__top">
+                                    <h2>MATCHING TERMS</h2>
+                                    <ul class="sugg__left__optn">
+                                        <li>Fail*|</li>
+                                        <li>Fail #205a_hp</li>
+                                        <li>Fail #passwords</li>
+                                        <li>Fail #125b_hp</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="search-suggestn__right">
+                                <div class="search-suggestn__right__com">
+                                    <h2>HOW TO SEARCH</h2>
+                                    <p class="text--big14">Step 1: Retrive Elements</p>
+                                    <p>The simplest searches return elements that you type in search-bar</p>
+                                </div>
+                                
+                                <div class="search-suggestn__right__com ">
+                                    <div class="sugg__right__status">
+                                        <p>Terms</p>
+                                        <p>error login</p>
+                                    </div>
+                                    <div class="sugg__right__status">
+                                        <p>Quoted phrase</p>
+                                        <p>"database error"</p>
+                                    </div>
+                                    <div class="sugg__right__status">
+                                        <p>Boolean Operations</p>
+                                        <p>Login NOT (error OR fail)</p>
+                                    </div>
+                                    <div class="sugg__right__status">
+                                        <p>Wild Cards</p>
+                                        <p>Fail*</p>
+                                    </div>
+                                    <div class="sugg__right__status">
+                                        <p>Field Value</p>
+                                        <p>status=404, status=404, or Status>200</p>
+                                    </div>
+                                    
+                                </div>
+                
+                                <div class="search-suggestn__right__com">
+                                    <h2>Step 2 : Use Search commands</h2>
+                                    <p>The simplest searches retun elements that you type in search bar</p>
+                                    <p>More advanced searches use commands to transform, filter, and report on the events you retrieved. Use the vertical bar | , or pipe character, to apply a command to the retried events</p>
+                                </div>
+                
+                            </div>
+                        </div>
+    
                     </div>
+                </div>                
 
-                </div>
                 <div class="search-bar__buttons">
                     <button class="search-bar__run search-button--exe" id="submitquery" >Run</button>
-                    <button class="search-bar__run search-bar--option"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
-                    <button class="search-bar__run search-bar--option"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
-                    <button class="search-bar__run search-bar--option"><i class="fa fa-repeat" aria-hidden="true"></i>Reset</button>
+                    <button class="search-bar__run search-bar--option pv-ic"><i class="fa fa-floppy-o" aria-hidden="true"></i>Save</button>
+                    <button class="search-bar__run search-bar--option pv-ic"><i class="fa fa-clone" aria-hidden="true"></i>Copy</button>
+                    <button class="search-bar__run search-bar--option pv-ic"><i class="fa fa-repeat" aria-hidden="true"></i>Reset</button>
+                    
+                    <a href="#!" class="mv-ic"><i class="fa fa-floppy-o px-1" aria-hidden="true"></i></a>
+                    <a href="#!" class="mv-ic"><i class="fa fa-clone pr-1" aria-hidden="true"></i></a>
+                    <a href="#!" class="mv-ic"><i class="fa fa-repeat" aria-hidden="true"></i></a>
                 </div>
                 
 
@@ -257,6 +260,18 @@
         </div>
                        
     </div>
+
+    <!-- /////////////////////////////////////////////////////////////////////// -->
+	
+    
+    
+    
+        
+
+        
+
+
+        
 
 
 </div>
