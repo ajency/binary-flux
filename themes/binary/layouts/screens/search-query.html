@@ -1406,6 +1406,24 @@
         searchbuton[i].addEventListener('click', searchbtns);        
     }
     // Enabling Search Query Darwer to open and close based on Input element and Run button press
+
+
+    //Dropdown Closure on Options
+    var droplists = document.querySelectorAll(".drpdwn-dtsrc .drop-list li");
+
+    for (var i=0; i < droplists.length; i++) {
+        droplists[i].addEventListener("click", closelist);       
+    }
+
+    function closelist () {
+        this.parentNode.classList.remove("show");
+        var dropdisp = this.parentNode.parentNode.getElementsByClassName("drop-display");
+        for (var i=0; i < dropdisp.length; i++) {
+            dropdisp[i].classList.remove("shown");       
+        }
+        console.log("hii");
+    }
+    //Dropdown Closure on Options
     
 
 </script>

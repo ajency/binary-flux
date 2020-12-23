@@ -180,11 +180,22 @@
 
 
   
-  // var droplist = document.querySelectorAll('.drop-list li');
-  
+  //Dropdown Closure on Options
+  var droplists = document.querySelectorAll(".drpdwn-dtsrc .drop-list li");
 
-  
-  // console.log(droplist);
+  for (var i=0; i < droplists.length; i++) {
+      droplists[i].addEventListener("click", closelist);       
+  }
+
+  function closelist () {
+      this.parentNode.classList.remove("show");
+      var dropdisp = this.parentNode.parentNode.getElementsByClassName("drop-display");
+      for (var i=0; i < dropdisp.length; i++) {
+          dropdisp[i].classList.remove("shown");       
+      }
+      console.log("hii");
+  }
+  //Dropdown Closure on Options
 
 
 
