@@ -7977,6 +7977,245 @@ select.custom-select-dropdown {
   padding-left: 0;
   margin-top: 10px; }
 
+.progressbar-radio {
+  display: flex;
+  font-size: 14px; }
+  @media screen and (max-width: 991px) {
+    .progressbar-radio {
+      padding-bottom: 27px;
+      padding-top: 20px; } }
+  @media screen and (max-width: 991px) {
+    .progressbar-radio .first-child {
+      position: relative;
+      right: -13px;
+      top: -20px; } }
+  .progressbar-radio .first-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-radio .first-child label.radio-input {
+    position: relative;
+    padding-right: 20px;
+    top: -5px; }
+    .progressbar-radio .first-child label.radio-input:before {
+      content: ' ';
+      position: absolute;
+      right: 0;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      border: 2px solid #fff; }
+    .progressbar-radio .first-child label.radio-input.active:before {
+      border: 2px solid #1391FF !important; }
+    .progressbar-radio .first-child label.radio-input.active:after {
+      content: ' ';
+      position: absolute;
+      left: 7.5px;
+      top: 4.5px;
+      border-radius: 50%;
+      width: 7.5px;
+      height: 7.5px;
+      background-color: #1391FF; }
+  @media screen and (max-width: 991px) {
+    .progressbar-radio .last-child {
+      position: absolute;
+      bottom: 0;
+      right: 4px; } }
+  .progressbar-radio .last-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-radio .last-child label.radio-input {
+    position: relative;
+    padding-left: 20px;
+    top: -5px; }
+    .progressbar-radio .last-child label.radio-input:before {
+      content: ' ';
+      position: absolute;
+      right: 0;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      border: 2px solid #fff; }
+    .progressbar-radio .last-child label.radio-input.active:before {
+      border: 2px solid #1391FF !important; }
+    .progressbar-radio .last-child label.radio-input.active:after {
+      content: ' ';
+      position: absolute;
+      left: 8px;
+      top: 4.5px;
+      border-radius: 50%;
+      width: 7.5px;
+      height: 7.5px;
+      background-color: #1391FF; }
+  .progressbar-radio .line {
+    width: 300px;
+    background-color: #fff;
+    height: 1px;
+    position: relative;
+    top: 10px;
+    margin-left: 5px;
+    margin-right: 5px; }
+    @media screen and (max-width: 991px) {
+      .progressbar-radio .line {
+        width: 1px;
+        top: 3px;
+        height: 130px; } }
+/* Checkmark */
+.progressbar-checkmark {
+  display: flex;
+  font-size: 14px; }
+  @media screen and (max-width: 991px) {
+    .progressbar-checkmark {
+      padding-bottom: 27px;
+      padding-top: 20px; } }
+  @media screen and (max-width: 991px) {
+    .progressbar-checkmark .first-child {
+      position: relative;
+      right: -13px;
+      top: -20px; } }
+  .progressbar-checkmark .first-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-checkmark .first-child label.checkmark-input {
+    position: relative;
+    padding-right: 20px;
+    top: -5px; }
+    .progressbar-checkmark .first-child label.checkmark-input:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-color: #1391FF;
+      border-radius: 50%; }
+    .progressbar-checkmark .first-child label.checkmark-input.active:after {
+      content: ' ';
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      transform: rotate(-45deg) scale(1);
+      width: 10px;
+      height: 5px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff; }
+  @media screen and (max-width: 991px) {
+    .progressbar-checkmark .last-child {
+      position: absolute;
+      bottom: 0;
+      right: 4px; } }
+  .progressbar-checkmark .last-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-checkmark .last-child label.checkmark-input {
+    position: relative;
+    padding-left: 20px;
+    top: -5px; }
+    .progressbar-checkmark .last-child label.checkmark-input:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-color: #1391FF;
+      border-radius: 50%; }
+    .progressbar-checkmark .last-child label.checkmark-input.active:after {
+      content: ' ';
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      transform: rotate(-45deg) scale(1);
+      width: 10px;
+      height: 5px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff; }
+  .progressbar-checkmark .line {
+    width: 300px;
+    background-color: #fff;
+    height: 1px;
+    position: relative;
+    top: 10px;
+    margin-left: 5px;
+    margin-right: 5px; }
+    @media screen and (max-width: 991px) {
+      .progressbar-checkmark .line {
+        width: 1px;
+        top: 3px;
+        height: 130px; } }
+/* Button style */
+.dropdown-noborder {
+  position: relative; }
+  .dropdown-noborder .drop-display {
+    display: flex;
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    width: 264px;
+    cursor: pointer;
+    padding-left: 0;
+    cursor: pointer; }
+    .dropdown-noborder .drop-display .left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .dropdown-noborder .drop-display .left p {
+        margin-bottom: 0;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
+        font-family: nunito sans;
+        color: #1391FF; }
+    .dropdown-noborder .drop-display .right .drop-down {
+      display: block; }
+    .dropdown-noborder .drop-display .right .drop-up {
+      display: none; }
+  .dropdown-noborder .drop-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(19, 145, 255, 0.54);
+    position: absolute;
+    top: 31px;
+    width: 264px;
+    cursor: pointer; }
+    .dropdown-noborder .drop-list li {
+      list-style-type: none;
+      display: flex;
+      padding: 2px 10px;
+      border-bottom: 1px solid rgba(19, 145, 255, 0.54);
+      background-color: #191A35; }
+      .dropdown-noborder .drop-list li:first-child {
+        position: relative; }
+        .dropdown-noborder .drop-list li:first-child img.top-arrw {
+          position: absolute;
+          top: -7px;
+          right: 8px;
+          width: 16px; }
+      .dropdown-noborder .drop-list li:last-child {
+        border-bottom: 0; }
+      .dropdown-noborder .drop-list li .left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .dropdown-noborder .drop-list li .left p {
+          margin: 0;
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 20px;
+          font-family: nunito sans;
+          color: #1391FF; }
+
+.orange-count {
+  background-color: #D4411E;
+  padding: 1px;
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 5px; }
+
+.btn-220 {
+  min-width: 220px; }
+
 .badge {
   padding: 0;
   min-width: 24px;
@@ -13341,6 +13580,39 @@ hr {
         width: 1px;
         top: 3px;
         height: 130px; } }
+.toast--extrainfo {
+  height: 67.7px;
+  width: 446.7px;
+  max-width: 450px; }
+  .toast--extrainfo .toast-body .toast-wrap .toast-msg ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    list-style-type: none; }
+    .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li {
+      color: #8B8DA5;
+      padding: 0 15px 0 15px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 16px;
+      position: relative; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li::after {
+        content: ' ';
+        position: absolute;
+        width: 1px;
+        height: 12px;
+        top: 2px;
+        right: 0;
+        background-color: #8B8DA5; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li:last-child::after {
+        content: none; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li:first-child {
+        padding-left: 0px; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li span {
+        color: #1391FF; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li a {
+        text-decoration: none; }
+
 .data-source-filter .drpdwn-dtsrc .drop-display {
   width: auto;
   padding: 0;

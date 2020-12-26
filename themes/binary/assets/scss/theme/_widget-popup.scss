@@ -244,3 +244,53 @@
         }
     }
 }
+
+
+.toast--extrainfo{
+    height: 67.7px;
+    width: 446.7px;
+    max-width: 450px;
+    .toast-body{
+        .toast-wrap{
+            .toast-msg{
+                ul{
+                    padding-left: 0px;
+                    margin-bottom: 0px;
+                    display: flex;
+                    list-style-type: none;
+                    li{
+                        color: #8B8DA5;
+                        padding: 0 15px 0 15px ;
+                        font-weight: 600;
+                        letter-spacing: 0;
+                        line-height: 16px;
+                        position: relative;
+                        &::after{
+                            content: ' ';
+                            position: absolute;
+                            width: 1px;
+                            height: 12px;
+                            top: 2px;
+                            right: 0;
+                            background-color: #8B8DA5;
+                        }
+                        &:last-child{
+                            &::after{
+                                content: none;
+                            }
+                        }
+                        &:first-child{
+                            padding-left: 0px;
+                        }
+                        span{
+                            color: #1391FF;
+                        }
+                        a{
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

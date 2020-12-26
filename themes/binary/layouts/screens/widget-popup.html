@@ -36,13 +36,41 @@
                             src="/binary-flux/images/notifications-outline.svg" width="20" height="20"
                             alt="notification" class="notification"></span>
                 </div>
+
+                <div class="toasts test-toast toast--extrainfo">			
+                    <div class="toast-body">
+                        <div class="toast-wrap">
+                            <div class="toast-img">
+                                <i class="fa fa-check tick" aria-hidden="true"></i>
+                            </div>
+                            <div class="toast-msg">
+                                <h3>Successfully created dashboard "Application support"</h3>
+                                <ul>
+                                    <li>Created by: <span>EdSmith</span> on 3rd July.</li>
+                                    <li><a href="#!">Open in new tab</a></li>
+                                </ul>
+                                <p></p>
+                            </div>
+                        </div>			
+                    </div>
+                </div>
+
             </div>
         </header>
+        <!-- Widget Popup Opens -->
         <div class="container-fluid p-0">
             <div class="btn-group btn-outline-dark-blue mt-5">
                 <button type="button" data-toggle="modal" data-target="#schedulemodal"
                     class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
                     create</button>
+            </div>
+        </div>
+        <!-- Toast Button Opens -->
+        <div class="container-fluid p-0">
+            <div class="btn-group btn-outline-dark-blue mt-5">
+                <button type="button" data-toggle="modal" data-target=""
+                    class="btn btn-115 text-center d-flex align-items-center btn-toast justify-content-center btn-text">
+                    Toast</button>
             </div>
         </div>
         <div id="schedulemodal" class="modal dashboard-widget fade px-2" role="dialog">
@@ -339,11 +367,11 @@
         
             var searchinput = document.getElementById("searchrun");
         
-            searchinput.addEventListener("focus", searchdraw);
+            // searchinput.addEventListener("focus", searchdraw);
         
         
             var submitquery = document.getElementById("submitquery");
-            submitquery.addEventListener("click", closer);
+            // submitquery.addEventListener("click", closer);
         
             var searchbuton = document.getElementsByClassName("search-bar__srch");
             console.log(searchbuton);
@@ -399,10 +427,15 @@
         
         </script>
 
+        
+
 
         <script>
             $(document).ready(function () {
 
+                $(".btn-toast").on("click", function(){
+                    $('.toast').toast('show');
+                });
 
                 $('.drop-display').on("click", function () {
                     if ($(this).hasClass('shown')) {
