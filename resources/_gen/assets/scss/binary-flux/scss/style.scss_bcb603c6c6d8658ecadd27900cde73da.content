@@ -10111,6 +10111,9 @@ ul, ol {
 .text-darkblue2 {
   color: rgba(101, 156, 200, 0.8); }
 
+.text-black1 {
+  color: #0A0C1B; }
+
 .navigation-navs ul {
   list-style: none;
   display: flex;
@@ -10825,6 +10828,11 @@ button.btn-ouline-light-blue {
   letter-spacing: 0;
   line-height: 16px;
   padding: 0 70px; }
+
+.btn--saveboard {
+  color: #0A0C1B;
+  font-weight: bold;
+  cursor: pointer; }
 
 @media (min-width: 768px) {
   .border-blue-left-md {
@@ -13617,6 +13625,9 @@ hr {
         color: #1391FF; }
       .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li a {
         text-decoration: none; }
+
+.dashboard-widget .modal-body .btn--saveboard {
+  color: #0A0C1B; }
 
 .dashboard-widget .modal-body .dashboard--share {
   text-decoration: none; }
