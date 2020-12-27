@@ -60,7 +60,7 @@
         <!-- Dashboard Popup Opens -->
         <div class="container-fluid p-0">
             <div class="btn-group btn-outline-dark-blue mt-5">
-                <button type="button" data-toggle="modal" data-target="#schedulemodal"
+                <button type="button" data-toggle="modal" data-target="#schedulemodals"
                     class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
                     create</button>
             </div>
@@ -264,7 +264,7 @@
         </div>
 
 
-        <!-- Dashboard Popup  -->
+        <!-- Genrate Widget Popup  -->
         <div id="schedulemodal" class="modal dashboard-widget fade px-2" role="dialog">
             <div class="modal-dialog mw-100">
                 <div class="modal-content">
@@ -296,15 +296,102 @@
                     </div>
 
                     <div class="modal-body">
-                        <div class="">
-                            
+                        <div class="gen__widget">
+                            <div class="gen__widget__inp">
+                                <input type="search" placeholder="FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && filesize > 100 && extension MATCHES('.pdf','.ppt') BUCKET-ONeventtime SORT-ON eventtime D…" class="form-control" />
+                            </div>
+                            <div class="gen__widget__control mt-2">
+                                <div class="gen__widget__save">
+                                    <button type="button" class="btn btn-primary">Generate Widget</button>
+                                    <button type="button" class="btn btn-primary">Save Widget</button>
+                                    <button type="button" class="btn btn-primary">Go to Dashboard</button>
+                                </div>
+                                <div class="gen__widget__info">
+                                    <div class="">
+                                        <h4>Widget Title</h4>
+                                        <p>Add a title to identify your widget by.</p>
+                                        <input type="text" placeholder="Worldwide Stats" />
+                                    </div>
+                                    <div class="">
+                                        <h4>Description</h4>
+                                        <p>Describe your data.</p>
+                                        <input type="text" placeholder="Worldwide Stats" />
+                                    </div>
+                                    
+                                    <div class="">
+                                        <h4>Priority</h4>
+                                        <p>Assign a priority to the widget.</p>
+                                        <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                                            <div class="drop-display">
+                                                <div class="left">
+                                                    High Priority                        
+                                                </div>
+                                                <div class="right">
+                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                                                </div>
+                                                
+                                            </div>
+                                            <ul class="drop-list">
+                                                <li>
+                                                    <div class="left">                            
+                                                        Last day
+                                                    </div>                        
+                                                </li>
+                                                <li>
+                                                    <div class="left">                            
+                                                        Last 1 week
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                            
+                                                        Last year
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <h4>Visualisation</h4>
+                                        <p>Select a visualisation for your widget.</p>
+                                        <div class="drpdwn-dtsrc" id="schedle-mod-drps">
+                                            <div class="drop-display">
+                                                <div class="left">
+                                                    SVG Map                        
+                                                </div>
+                                                <div class="right">
+                                                    <i class="fa fa-chevron-down" aria-hidden="true"></i>                        
+                                                </div>
+                                                
+                                            </div>
+                                            <ul class="drop-list">
+                                                <li>
+                                                    <div class="left">                            
+                                                        Last day
+                                                    </div>                        
+                                                </li>
+                                                <li>
+                                                    <div class="left">                            
+                                                        Last 1 week
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                            
+                                                        Last year
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
                         
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default modal-ok" data-dismiss="modal">OK</button>
+                        <button type="button" class="btn btn-default modal-ok" data-dismiss="">Back</button>
+                        <button type="button" class="btn btn-default modal-ok" data-dismiss="modal">Done</button>
                     </div>
                 </div>
 
