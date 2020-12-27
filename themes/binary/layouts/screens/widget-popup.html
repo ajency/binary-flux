@@ -37,7 +37,7 @@
                             alt="notification" class="notification"></span>
                 </div>
 
-                <div class="toasts test-toast toast--extrainfo">			
+                <div class="toast test-toast toast--extrainfo" data-delay="1800">			
                     <div class="toast-body">
                         <div class="toast-wrap">
                             <div class="toast-img">
@@ -116,12 +116,12 @@
                             <li class="nav-item">
                                 <a class="nav-link active " data-toggle="tab" role="tab" href="#onetime">Select existing
                                     dashboard </a>
-                                <div class="brdr-rt"></div>
+                                <!-- <div class="brdr-rt"></div> -->
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " data-toggle="tab" role="tab" href="#recurring">Create a New
                                     Dashboard</a>
-                                <div class="brdr-rt"></div>
+                                <!-- <div class="brdr-rt"></div> -->
                             </li>
 
                         </ul>
@@ -164,7 +164,7 @@
                                     function selecteddd(el) {
                                         document.getElementById("dropbtn").innerText = el.text;                                        
                                         var x = document.createElement("IMG");
-                                        x.setAttribute("src", "/binary-flux/images/ic_chevron_left copy.svg");
+                                        x.setAttribute("src", "/binary-flux/images/ic_chevron_left-copy.svg");
                                         document.body.appendChild(x);
                                         myFunction();
                                     }
@@ -192,13 +192,13 @@
                                 <form class="mt-2 create-dashboard">
                                     <div class="form-row">
                                         <div class="form-group col-md-3">
-                                            <label for="inputEmail4">Dashboard Title</label>
-                                            <input type="text" class="form-control" id="txt" placeholder="Name"
+                                            <label for="inputEmail4" class="text-white">Dashboard Title</label>
+                                            <input type="text" class="form-control bg-dark--1" id="txt" placeholder="Name"
                                                 onkeyup="manage(this)">
                                         </div>
                                         <div class="form-group col-md-5">
-                                            <label for="inputPassword4">Add Description</label>
-                                            <input type="text" class="form-control" id="txt1"
+                                            <label for="inputPassword4" class="text-white">Add Description</label>
+                                            <input type="text" class="form-control bg-dark--1" id="txt1"
                                                 placeholder="Type here" onkeyup="manage(this)">
                                         </div>
                                     </div>
@@ -206,7 +206,7 @@
                                         <button type="button" class="btn btn-primary mt-2 mb-2"  disabled id="btSubmit">Save</button>
                                     </div>
                                    
-                                    <i class="fa fa-share-alt pr-1 text-blue text-darkblue" aria-hidden="true"></i>Share with team members
+                                    <a href="#!" class="text-white--5 dashboard--share"><i class="fa fa-share-alt pr-1 text-darkblue" aria-hidden="true"></i>Share with team members</a>
                                     
                                 </form>
                                 <script>

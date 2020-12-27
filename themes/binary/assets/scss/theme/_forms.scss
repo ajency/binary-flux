@@ -277,3 +277,10 @@ input:checked + .slider.round:before{
 	    font-size: 12px;
 	}
 }
+
+.bg-dark--1{
+	background-color: #191A35;
+	&:focus{
+		background-color: #191A35;
+	}
+}

@@ -10575,6 +10575,11 @@ input:checked + .slider.round:before {
     text-transform: uppercase;
     font-size: 12px; }
 
+.bg-dark--1 {
+  background-color: #191A35; }
+  .bg-dark--1:focus {
+    background-color: #191A35; }
+
 .btn {
   padding: 5px 40px;
   min-width: 116px; }
@@ -13612,6 +13617,14 @@ hr {
         color: #1391FF; }
       .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li a {
         text-decoration: none; }
+
+.dashboard-widget .modal-body .dashboard--share {
+  text-decoration: none; }
+  .dashboard-widget .modal-body .dashboard--share i {
+    font-size: 20px;
+    vertical-align: middle; }
+  .dashboard-widget .modal-body .dashboard--share:hover i {
+    color: #fff; }
 
 .data-source-filter .drpdwn-dtsrc .drop-display {
   width: auto;

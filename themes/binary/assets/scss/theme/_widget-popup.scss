@@ -294,3 +294,21 @@
         }
     }
 }
+
+
+.dashboard-widget{
+    .modal-body{
+        .dashboard--share{
+            text-decoration: none;
+            i{
+                font-size: 20px;
+                vertical-align: middle;                
+            }
+            &:hover{
+                i{
+                    color: #fff;
+                }                
+            }            
+        }
+    }
+}
