@@ -352,5 +352,32 @@
   </div>
 </footer>
 
+<script>
+	var dropdisplay = document.getElementsByClassName("drop-display");   
+
+	function dropshow () {
+		if(this.classList.contains("shown")) {
+			this.classList.remove("shown");
+			var closest = this.parentNode.querySelectorAll('.drop-list');
+			for (var i=0; i < closest.length; i++) {
+				closest[i].classList.remove("show");
+			}
+		}
+		else{
+			this.classList.add("shown");
+			var closest = this.parentNode.querySelectorAll('.drop-list');
+			for (var i=0; i < closest.length; i++) {
+				closest[i].classList.add("show");
+			}
+		}
+	}
+
+	for (var i=0; i < dropdisplay.length; i++) {
+		dropdisplay[i].addEventListener('click', dropshow);
+		
+	}
+
+</script>
+
 {{- partial "custom-footer.html" . -}}
 {{ end }}

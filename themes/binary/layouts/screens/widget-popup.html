@@ -57,7 +57,7 @@
 
             </div>
         </header>
-        <!-- Widget Popup Opens -->
+        <!-- Dashboard Popup Opens -->
         <div class="container-fluid p-0">
             <div class="btn-group btn-outline-dark-blue mt-5">
                 <button type="button" data-toggle="modal" data-target="#schedulemodal"
@@ -73,7 +73,17 @@
                     Toast</button>
             </div>
         </div>
-        <div id="schedulemodal" class="modal dashboard-widget fade px-2" role="dialog">
+        <!-- Generate widget Modal Opens -->
+        <div class="container-fluid p-0">
+            <div class="btn-group btn-outline-dark-blue mt-5">
+                <button type="button" data-toggle="modal" data-target="#schedulemodal"
+                    class="btn btn-115 text-center d-flex align-items-center justify-content-center btn-text">
+                    Generate widget</button>
+            </div>
+        </div>
+
+        <!-- Dashboard Popup  -->
+        <div id="schedulemodals" class="modal dashboard-widget fade px-2" role="dialog">
             <div class="modal-dialog mw-100">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -81,7 +91,7 @@
                             <div class="col-md-3 pl-0">
                                 <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
                             </div>
-                            <div class="progressbar-content col-md-6 col-sm-6 col-xs-12">
+                            <!-- <div class="progressbar-content col-md-6 col-sm-6 col-xs-12">
 
                                 <div class="first-child active">
                                     <span>Select Dashboard</span><label class="radio-input active"></label>
@@ -95,7 +105,7 @@
                                        
                                     </div>
 
-                                <!--<ul class="progressbar">
+                                <ul class="progressbar">
                                     
                                     <li class="active first-li">Select Dashboard<input type="radio" class="pl-1" value="1" id="select-dashboard" name="Select Dashboard" checked="">
                                     
@@ -105,7 +115,25 @@
                                         
                                 Create Widget
                                          </li>
-                                </ul>-->
+                                </ul>
+                            </div> -->
+
+                            <div class="progressbar-content col-md- col-sm- col-xs-">
+
+                                <div class="progress__field first-child active">
+                                    <span>Select Dashboard</span>
+                                    <label class="radio-input active"></label>
+                                </div>
+                                <div class="line">
+
+                                </div>
+                                <div class="progress__field last-child">
+                                        <label class="radio-input "></label>
+                                        <span>Create Widget</span>
+                                       
+                                    </div>
+
+                                
                             </div>
                         </div>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -225,6 +253,54 @@
                             </div>
 
                         </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default modal-ok" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Dashboard Popup  -->
+        <div id="schedulemodal" class="modal dashboard-widget fade px-2" role="dialog">
+            <div class="modal-dialog mw-100">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="left w-100">
+                            <div class="col-md-3 pl-0">
+                                <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
+                            </div>
+                            
+                            <div class="progressbar-content col-md- col-sm- col-xs-">
+
+                                <div class="progress__field first-child active">
+                                    <span>Select Dashboard</span>
+                                    <label class="radio-input active"></label>
+                                </div>
+                                <div class="line">
+
+                                </div>
+                                <div class="progress__field last-child">
+                                        <label class="radio-input "></label>
+                                        <span>Create Widget</span>
+                                       
+                                    </div>
+
+                                
+                            </div>
+                        </div>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="">
+                            
+                        </div>
+
+                        
 
                     </div>
                     <div class="modal-footer">
@@ -437,16 +513,16 @@
                     $('.toast').toast('show');
                 });
 
-                $('.drop-display').on("click", function () {
-                    if ($(this).hasClass('shown')) {
-                        $(this).removeClass('shown');
-                        $(this).parent().find('.drop-list').removeClass('show');
-                    }
-                    else {
-                        $(this).addClass('shown');
-                        $(this).parent().find('.drop-list').addClass('show');
-                    }
-                });
+                // $('.drop-display').on("click", function () {
+                //     if ($(this).hasClass('shown')) {
+                //         $(this).removeClass('shown');
+                //         $(this).parent().find('.drop-list').removeClass('show');
+                //     }
+                //     else {
+                //         $(this).addClass('shown');
+                //         $(this).parent().find('.drop-list').addClass('show');
+                //     }
+                // });
 
 
                 $('#data-src-drp .drop-list li').on("click", function () {
@@ -494,14 +570,14 @@
                 });
 
 
-                $('#schedulemodal').on('show.bs.modal', function (e) {
-                    $('#day-sett .drop-display').removeClass('shown');
-                    $('#day-sett .drop-list').removeClass('show');
+                // $('#schedulemodal').on('show.bs.modal', function (e) {
+                //     $('#day-sett .drop-display').removeClass('shown');
+                //     $('#day-sett .drop-list').removeClass('show');
 
-                    $('#schedle-mod-drp .drop-display').removeClass('shown');
-                    $('#schedle-mod-drp .drop-list').removeClass('show');
+                //     $('#schedle-mod-drp .drop-display').removeClass('shown');
+                //     $('#schedle-mod-drp .drop-list').removeClass('show');
 
-                });
+                // });
 
 
                 $('#reportsTab a').on('click', function (e) {

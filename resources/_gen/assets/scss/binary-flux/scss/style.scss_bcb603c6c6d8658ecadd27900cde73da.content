@@ -13518,6 +13518,30 @@ hr {
     .progressbar-content {
       padding-bottom: 27px;
       padding-top: 20px; } }
+  .progressbar-content .progress__field label.radio-input {
+    position: relative;
+    padding-right: 20px;
+    top: -5px; }
+    .progressbar-content .progress__field label.radio-input::before {
+      content: ' ';
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background-color: #8C8C9A;
+      position: absolute;
+      left: 0;
+      top: -2px; }
+    .progressbar-content .progress__field label.radio-input::after {
+      content: ' ';
+      width: 7.5px;
+      height: 7.5px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      left: 5.5px;
+      top: 3.5px; }
+  .progressbar-content .progress__field.active label.radio-input::before {
+    background-color: #1391FF; }
   @media screen and (max-width: 991px) {
     .progressbar-content .first-child {
       position: relative;
@@ -13530,25 +13554,8 @@ hr {
     position: relative;
     padding-right: 20px;
     top: -5px; }
-    .progressbar-content .first-child label.radio-input:before {
-      content: ' ';
-      position: absolute;
-      right: 0;
-      border-radius: 50%;
-      width: 17px;
-      height: 17px;
-      border: 2px solid #fff; }
-    .progressbar-content .first-child label.radio-input.active:before {
-      border: 2px solid #1391ff !important; }
     .progressbar-content .first-child label.radio-input.active:after {
-      content: ' ';
-      position: absolute;
-      left: 7.5px;
-      top: 4.5px;
-      border-radius: 50%;
-      width: 7.5px;
-      height: 7.5px;
-      background-color: #1391ff; }
+      content: ' '; }
   @media screen and (max-width: 991px) {
     .progressbar-content .last-child {
       position: absolute;
@@ -13559,16 +13566,7 @@ hr {
     color: #fff; }
   .progressbar-content .last-child label.radio-input {
     position: relative;
-    padding-left: 20px;
     top: -5px; }
-    .progressbar-content .last-child label.radio-input:before {
-      content: ' ';
-      position: absolute;
-      right: 0;
-      border-radius: 50%;
-      width: 17px;
-      height: 17px;
-      border: 2px solid #fff; }
     .progressbar-content .last-child label.radio-input.active:before {
       border: 2px solid #1391ff !important; }
     .progressbar-content .last-child label.radio-input.active:after {
