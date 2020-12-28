@@ -10121,6 +10121,9 @@ ul, ol {
 .text-black2 {
   color: #191A35; }
 
+.fs-15 {
+  font-size: 15px; }
+
 .navigation-navs ul {
   list-style: none;
   display: flex;
@@ -13721,7 +13724,7 @@ hr {
 
 .filters-dropdown .filter-arrow {
   position: absolute;
-  left: -100%;
+  left: -35px;
   margin-top: 10px; }
 
 .filters-dropdown span {
