@@ -313,6 +313,7 @@
         top: 31px;
         width: 264px;
         cursor: pointer;
+        display: none;
         li{
             list-style-type: none;
             display: flex;
@@ -344,6 +345,10 @@
                     color: #1391FF;
                 }
             }
+        }
+        &.show{
+            display: block !important;
+            z-index: 5;
         }
     }
 }

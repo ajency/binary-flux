@@ -284,3 +284,11 @@ input:checked + .slider.round:before{
 		background-color: #191A35;
 	}
 }
+
+.bg-white--1{
+	background-color: #FFFFFF;
+	&:focus{
+		background-color: #dddddd;
+		color: $black1;
+	}
+}

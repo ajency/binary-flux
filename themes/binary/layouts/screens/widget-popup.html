@@ -298,28 +298,63 @@
                     <div class="modal-body">
                         <div class="gen__widget">
                             <div class="gen__widget__inp">
-                                <input type="search" placeholder="FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && filesize > 100 && extension MATCHES('.pdf','.ppt') BUCKET-ONeventtime SORT-ON eventtime D…" class="form-control" />
+                                <input type="search" placeholder="FIND COUNT(employeeid) ,eventtime IN events WHERE sourcename  = 'sharepoint' && filesize > 100 && extension MATCHES('.pdf','.ppt') BUCKET-ONeventtime SORT-ON eventtime D…" class="form-control bg-white--1 text-black2" />
                             </div>
-                            <div class="gen__widget__control mt-2">
+                            <div class="gen__widget__control mt-3">
                                 <div class="gen__widget__save">
-                                    <button type="button" class="btn btn-primary">Generate Widget</button>
-                                    <button type="button" class="btn btn-primary">Save Widget</button>
-                                    <button type="button" class="btn btn-primary">Go to Dashboard</button>
-                                </div>
-                                <div class="gen__widget__info">
-                                    <div class="">
-                                        <h4>Widget Title</h4>
-                                        <p>Add a title to identify your widget by.</p>
-                                        <input type="text" placeholder="Worldwide Stats" />
+                                    <div class="widget__save__lft">
+                                        <button type="button" class="btn btn-primary mr-3">Generate Widget</button>
+                                        <button type="button" class="btn btn-primary">Save Widget</button>
                                     </div>
-                                    <div class="">
-                                        <h4>Description</h4>
-                                        <p>Describe your data.</p>
-                                        <input type="text" placeholder="Worldwide Stats" />
+                                    <div class="widget__save__lft">
+                                        <div class="dropdown-noborder mr-3">
+                                            <div class="drop-display">
+                                                <div class="left">                                                
+                                                    <span class="orange-count">2</span><p class="capt-txt">Widget Saved to Dashboard</p>
+                                                </div>
+                                                <div class="right">
+                                                    <img src="/binary-flux/images/drop-down.svg" class="drop-down">
+                                                    <img src="/binary-flux/images/drop-up.svg" class="drop-up">
+                                                </div>
+                                            </div>
+                                            <ul class="drop-list">
+                                                <li>
+                                                    <div class="left">                                              
+                                                        <p class="capt-txt" id="d1">Daily</p>
+                                                    </div>
+                                                    <img src="/binary-flux/images/uparrow.png" class="top-arrw">
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                               
+                                                        <p class="capt-txt" id="d2">Weekly</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="left">                                         
+                                                        <p class="capt-txt" id="d3">Monthly</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                       </div>
+                                        <button type="button" class="btn btn-primary">Go to Dashboard</button>
                                     </div>
                                     
-                                    <div class="">
-                                        <h4>Priority</h4>
+                                    
+                                </div>
+                                <div class="gen__widget__info mt-4">
+                                    <div class="widget__item mr-3 fb-200">
+                                        <h5 class="section-title">Widget Title</h5>
+                                        <p>Add a title to identify your widget by.</p>
+                                        <input type="text" placeholder="Worldwide Stats" class="form-control bg-dark--1" />
+                                    </div>
+                                    <div class="widget__item mr-3 fb-625">
+                                        <h5 class="section-title">Description</h5>
+                                        <p>Describe your data.</p>
+                                        <input type="text" placeholder="Type here" class="form-control bg-dark--1" />
+                                    </div>
+                                    
+                                    <div class="widget__item mr-3 fb-166">
+                                        <h5 class="section-title">Priority</h5>
                                         <p>Assign a priority to the widget.</p>
                                         <div class="drpdwn-dtsrc" id="schedle-mod-drps">
                                             <div class="drop-display">
@@ -350,8 +385,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="">
-                                        <h4>Visualisation</h4>
+                                    <div class="widget__item fb-200">
+                                        <h5 class="section-title">Visualisation</h5>
                                         <p>Select a visualisation for your widget.</p>
                                         <div class="drpdwn-dtsrc" id="schedle-mod-drps">
                                             <div class="drop-display">
@@ -385,7 +420,10 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Preview section -->
+                        <div class="gen-widget-prev">
 
+                        </div>
                         
 
                     </div>

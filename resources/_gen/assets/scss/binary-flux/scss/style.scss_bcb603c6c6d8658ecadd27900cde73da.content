@@ -8176,7 +8176,8 @@ select.custom-select-dropdown {
     position: absolute;
     top: 31px;
     width: 264px;
-    cursor: pointer; }
+    cursor: pointer;
+    display: none; }
     .dropdown-noborder .drop-list li {
       list-style-type: none;
       display: flex;
@@ -8203,6 +8204,9 @@ select.custom-select-dropdown {
           line-height: 20px;
           font-family: nunito sans;
           color: #1391FF; }
+    .dropdown-noborder .drop-list.show {
+      display: block !important;
+      z-index: 5; }
 
 .orange-count {
   background-color: #D4411E;
@@ -10114,6 +10118,9 @@ ul, ol {
 .text-black1 {
   color: #0A0C1B; }
 
+.text-black2 {
+  color: #191A35; }
+
 .navigation-navs ul {
   list-style: none;
   display: flex;
@@ -10582,6 +10589,12 @@ input:checked + .slider.round:before {
   background-color: #191A35; }
   .bg-dark--1:focus {
     background-color: #191A35; }
+
+.bg-white--1 {
+  background-color: #FFFFFF; }
+  .bg-white--1:focus {
+    background-color: #dddddd;
+    color: #191A35; }
 
 .btn {
   padding: 5px 40px;
@@ -12044,7 +12057,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     padding: 7px 10px;
-    width: 264px;
+    width: 100%;
     cursor: pointer; }
     .drpdwn-dtsrc .drop-display .left {
       display: flex;
@@ -12081,7 +12094,7 @@ hr {
     border: 1px solid rgba(19, 145, 255, 0.54);
     position: absolute;
     top: 31px;
-    width: 264px;
+    width: 100%;
     display: none;
     cursor: pointer; }
     .drpdwn-dtsrc .drop-list li {
@@ -13634,6 +13647,33 @@ hr {
     vertical-align: middle; }
   .dashboard-widget .modal-body .dashboard--share:hover i {
     color: #fff; }
+
+.gen__widget {
+  background-color: #0F1226;
+  box-shadow: 0 2px 40px 2px rgba(0, 0, 0, 0.24);
+  padding: 20px; }
+  .gen__widget .gen__widget__control .gen__widget__save {
+    display: flex;
+    justify-content: space-between; }
+    .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft {
+      display: flex; }
+  .gen__widget .gen__widget__control .gen__widget__info {
+    display: flex; }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item p {
+      min-height: 36px;
+      opacity: 0.4; }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-160 {
+      max-width: 166px;
+      width: 20%; }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-200 {
+      max-width: 200px;
+      width: 20%; }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-625 {
+      max-width: 625px;
+      width: 60%; }
+
+.gen-widget-prev {
+  min-height: 250px; }
 
 .data-source-filter .drpdwn-dtsrc .drop-display {
   width: auto;

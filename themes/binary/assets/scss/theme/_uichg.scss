@@ -853,7 +853,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 7px 10px;
-        width: 264px;
+        width: 100%;
         cursor: pointer;
         .left{
             display: flex;
@@ -907,7 +907,7 @@
         border: 1px solid rgba(19,145,255,0.54);
         position: absolute;
         top: 31px;
-        width: 264px;
+        width: 100%;
         display: none;
         cursor: pointer;
         li{
@@ -948,10 +948,7 @@
 
                 }
             }
-        }
-        // &.hide{
-        //     display: none !important;
-        // }
+        }        
         &.show{
             display: block !important;
             z-index: 5;
