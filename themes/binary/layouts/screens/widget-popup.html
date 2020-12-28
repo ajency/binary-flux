@@ -607,8 +607,8 @@
             
         
         
-            
-            var droplists = document.querySelectorAll(".drpdwn-dtsrc .drop-list li");
+            // ??Dropdown close on Option click
+            var droplists = document.querySelectorAll(".drop-list li");
         
             for (var i=0; i < droplists.length; i++) {
                 droplists[i].addEventListener("click", closelist);       
@@ -621,7 +621,7 @@
                     dropdisp[i].classList.remove("shown");       
                 }
                 console.log("hii");
-            }
+            }           
             
             
             
