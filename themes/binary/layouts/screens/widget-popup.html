@@ -162,11 +162,12 @@
                                 <div class="dropdown dropdown-list w-200">
                                     <button type="button" onclick="dropdownsh()" class="dropbtn" id="dropbtn">Select
                                         dashboard </button>
-                                        <i class="fa fa-external-link" aria-hidden="false"></i>
+                                        <!-- <i class="fa fa-external-link" aria-hidden="true"></i> -->
+
                                     <div id="myDropdown" class="dropdown-content">
                                         <input type="text" placeholder="Search Dashboard" id="myInput"
                                             onkeyup="filterFunction()">
-                                        <!-- <div class="drop-list">
+                                        <div class="drop-list">
                                             <a href="#about" onclick="selecteddd(this)">About</a>
                                             <a href="#base" onclick="selecteddd(this)">Base</a>
                                             <a href="#blog" onclick="selecteddd(this)">Blog</a>
@@ -174,7 +175,7 @@
                                             <a href="#custom" onclick="selecteddd(this)">Custom</a>
                                             <a href="#support" onclick="selecteddd(this)">Support</a>
                                             <a href="#tools" onclick="selecteddd(this)">Tools</a>
-                                        </div> -->
+                                        </div>
                                     </div>
                                 </div>
 
@@ -489,16 +490,16 @@
         <script>           
 
             function dropdownsh() {
-                document.getElementById("myDropdown").classList.add("show");                
-                document.getElementById("dropbtn").classList.toggle("remove-icon add-icon");
-            }
+                document.getElementById("myDropdown").classList.toggle("show");                
+                // document.getElementById("dropbtn").classList.toggle("remove-icon add-icon");
+            }            
 
             function selecteddd(el) {
                 document.getElementById("dropbtn").innerText = el.text;                                        
-                var x = document.createElement("IMG");
-                x.setAttribute("src", "/binary-flux/images/ic_chevron_left-copy.svg");
-                document.body.appendChild(x);
-                myFunction();
+                // var x = document.createElement("IMG");
+                // x.setAttribute("src", "/binary-flux/images/ic_chevron_left-copy.svg");
+                // document.body.appendChild(x);
+                dropdownsh();
             }
 
             function filterFunction() {
