@@ -335,3 +335,19 @@ button{
 	    padding: 0 70px;
 	}
 }
+
+.btn--saveboard{
+	color: #0A0C1B;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.btn-bgtp{
+	background-color: transparent;
+}
+
+.btn-txbgtp{
+	&:hover{
+		color: #fff !important;
+	}
+}

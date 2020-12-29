@@ -7977,6 +7977,249 @@ select.custom-select-dropdown {
   padding-left: 0;
   margin-top: 10px; }
 
+.progressbar-radio {
+  display: flex;
+  font-size: 14px; }
+  @media screen and (max-width: 991px) {
+    .progressbar-radio {
+      padding-bottom: 27px;
+      padding-top: 20px; } }
+  @media screen and (max-width: 991px) {
+    .progressbar-radio .first-child {
+      position: relative;
+      right: -13px;
+      top: -20px; } }
+  .progressbar-radio .first-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-radio .first-child label.radio-input {
+    position: relative;
+    padding-right: 20px;
+    top: -5px; }
+    .progressbar-radio .first-child label.radio-input:before {
+      content: ' ';
+      position: absolute;
+      right: 0;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      border: 2px solid #fff; }
+    .progressbar-radio .first-child label.radio-input.active:before {
+      border: 2px solid #1391FF !important; }
+    .progressbar-radio .first-child label.radio-input.active:after {
+      content: ' ';
+      position: absolute;
+      left: 7.5px;
+      top: 4.5px;
+      border-radius: 50%;
+      width: 7.5px;
+      height: 7.5px;
+      background-color: #1391FF; }
+  @media screen and (max-width: 991px) {
+    .progressbar-radio .last-child {
+      position: absolute;
+      bottom: 0;
+      right: 4px; } }
+  .progressbar-radio .last-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-radio .last-child label.radio-input {
+    position: relative;
+    padding-left: 20px;
+    top: -5px; }
+    .progressbar-radio .last-child label.radio-input:before {
+      content: ' ';
+      position: absolute;
+      right: 0;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      border: 2px solid #fff; }
+    .progressbar-radio .last-child label.radio-input.active:before {
+      border: 2px solid #1391FF !important; }
+    .progressbar-radio .last-child label.radio-input.active:after {
+      content: ' ';
+      position: absolute;
+      left: 8px;
+      top: 4.5px;
+      border-radius: 50%;
+      width: 7.5px;
+      height: 7.5px;
+      background-color: #1391FF; }
+  .progressbar-radio .line {
+    width: 300px;
+    background-color: #fff;
+    height: 1px;
+    position: relative;
+    top: 10px;
+    margin-left: 5px;
+    margin-right: 5px; }
+    @media screen and (max-width: 991px) {
+      .progressbar-radio .line {
+        width: 1px;
+        top: 3px;
+        height: 130px; } }
+/* Checkmark */
+.progressbar-checkmark {
+  display: flex;
+  font-size: 14px; }
+  @media screen and (max-width: 991px) {
+    .progressbar-checkmark {
+      padding-bottom: 27px;
+      padding-top: 20px; } }
+  @media screen and (max-width: 991px) {
+    .progressbar-checkmark .first-child {
+      position: relative;
+      right: -13px;
+      top: -20px; } }
+  .progressbar-checkmark .first-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-checkmark .first-child label.checkmark-input {
+    position: relative;
+    padding-right: 20px;
+    top: -5px; }
+    .progressbar-checkmark .first-child label.checkmark-input:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-color: #1391FF;
+      border-radius: 50%; }
+    .progressbar-checkmark .first-child label.checkmark-input.active:after {
+      content: ' ';
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      transform: rotate(-45deg) scale(1);
+      width: 10px;
+      height: 5px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff; }
+  @media screen and (max-width: 991px) {
+    .progressbar-checkmark .last-child {
+      position: absolute;
+      bottom: 0;
+      right: 4px; } }
+  .progressbar-checkmark .last-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-checkmark .last-child label.checkmark-input {
+    position: relative;
+    padding-left: 20px;
+    top: -5px; }
+    .progressbar-checkmark .last-child label.checkmark-input:before {
+      content: ' ';
+      position: absolute;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-color: #1391FF;
+      border-radius: 50%; }
+    .progressbar-checkmark .last-child label.checkmark-input.active:after {
+      content: ' ';
+      position: absolute;
+      top: 5px;
+      left: 4px;
+      transform: rotate(-45deg) scale(1);
+      width: 10px;
+      height: 5px;
+      border-left: 2px solid #fff;
+      border-bottom: 2px solid #fff; }
+  .progressbar-checkmark .line {
+    width: 300px;
+    background-color: #fff;
+    height: 1px;
+    position: relative;
+    top: 10px;
+    margin-left: 5px;
+    margin-right: 5px; }
+    @media screen and (max-width: 991px) {
+      .progressbar-checkmark .line {
+        width: 1px;
+        top: 3px;
+        height: 130px; } }
+/* Button style */
+.dropdown-noborder {
+  position: relative; }
+  .dropdown-noborder .drop-display {
+    display: flex;
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    width: 264px;
+    cursor: pointer;
+    padding-left: 0;
+    cursor: pointer; }
+    .dropdown-noborder .drop-display .left {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .dropdown-noborder .drop-display .left p {
+        margin-bottom: 0;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 20px;
+        font-family: nunito sans;
+        color: #1391FF; }
+    .dropdown-noborder .drop-display .right .drop-down {
+      display: block; }
+    .dropdown-noborder .drop-display .right .drop-up {
+      display: none; }
+  .dropdown-noborder .drop-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(19, 145, 255, 0.54);
+    position: absolute;
+    top: 31px;
+    width: 264px;
+    cursor: pointer;
+    display: none; }
+    .dropdown-noborder .drop-list li {
+      list-style-type: none;
+      display: flex;
+      padding: 2px 10px;
+      border-bottom: 1px solid rgba(19, 145, 255, 0.54);
+      background-color: #191A35; }
+      .dropdown-noborder .drop-list li:first-child {
+        position: relative; }
+        .dropdown-noborder .drop-list li:first-child img.top-arrw {
+          position: absolute;
+          top: -7px;
+          right: 8px;
+          width: 16px; }
+      .dropdown-noborder .drop-list li:last-child {
+        border-bottom: 0; }
+      .dropdown-noborder .drop-list li .left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .dropdown-noborder .drop-list li .left p {
+          margin: 0;
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 20px;
+          font-family: nunito sans;
+          color: #1391FF; }
+    .dropdown-noborder .drop-list.show {
+      display: block !important;
+      z-index: 5; }
+
+.orange-count {
+  background-color: #D4411E;
+  padding: 1px;
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 5px; }
+
+.btn-220 {
+  min-width: 220px; }
+
 .badge {
   padding: 0;
   min-width: 24px;
@@ -9872,6 +10115,18 @@ ul, ol {
 .text-darkblue2 {
   color: rgba(101, 156, 200, 0.8); }
 
+.text-black1 {
+  color: #0A0C1B; }
+
+.text-black2 {
+  color: #191A35; }
+
+.text-ltblue1 {
+  color: #1391FF !important; }
+
+.fs-15 {
+  font-size: 15px; }
+
 .navigation-navs ul {
   list-style: none;
   display: flex;
@@ -10336,6 +10591,17 @@ input:checked + .slider.round:before {
     text-transform: uppercase;
     font-size: 12px; }
 
+.bg-dark--1 {
+  background-color: #191A35; }
+  .bg-dark--1:focus {
+    background-color: #191A35; }
+
+.bg-white--1 {
+  background-color: #FFFFFF; }
+  .bg-white--1:focus {
+    background-color: #dddddd;
+    color: #191A35; }
+
 .btn {
   padding: 5px 40px;
   min-width: 116px; }
@@ -10581,6 +10847,17 @@ button.btn-ouline-light-blue {
   letter-spacing: 0;
   line-height: 16px;
   padding: 0 70px; }
+
+.btn--saveboard {
+  color: #0A0C1B;
+  font-weight: bold;
+  cursor: pointer; }
+
+.btn-bgtp {
+  background-color: transparent; }
+
+.btn-txbgtp:hover {
+  color: #fff !important; }
 
 @media (min-width: 768px) {
   .border-blue-left-md {
@@ -11345,23 +11622,23 @@ hr {
       z-index: 5; }
 
 @media screen and (min-width: 768px) {
-  #schedulemodal .modal-dialog {
+  .modal-dialog {
     max-width: 838px; } }
 
-#schedulemodal .modal-dialog .modal-content {
+.modal-dialog .modal-content {
   padding: 20px;
   min-height: 616px; }
-  #schedulemodal .modal-dialog .modal-content .modal-header {
+  .modal-dialog .modal-content .modal-header {
     margin: 0px;
     padding: 0 0 16px; }
-    #schedulemodal .modal-dialog .modal-content .modal-header .left {
+    .modal-dialog .modal-content .modal-header .left {
       display: flex;
       align-items: center; }
       @media screen and (max-width: 768px) {
-        #schedulemodal .modal-dialog .modal-content .modal-header .left {
+        .modal-dialog .modal-content .modal-header .left {
           flex-direction: column;
           align-items: flex-start; } }
-      #schedulemodal .modal-dialog .modal-content .modal-header .left h4 {
+      .modal-dialog .modal-content .modal-header .left h4 {
         color: #FFFFFF;
         font-family: "Nunito Sans";
         font-size: 15px;
@@ -11370,11 +11647,11 @@ hr {
         line-height: 20px;
         margin-right: 52px; }
         @media screen and (max-width: 768px) {
-          #schedulemodal .modal-dialog .modal-content .modal-header .left h4 {
+          .modal-dialog .modal-content .modal-header .left h4 {
             margin-bottom: 10px; } }
-      #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc {
+      .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc {
         position: relative; }
-        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display {
+        .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display {
           display: flex;
           border: 1px solid #5D5E72;
           border-radius: 2px;
@@ -11383,14 +11660,14 @@ hr {
           padding: 7px 10px;
           width: 264px;
           cursor: pointer; }
-          #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left {
+          .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left {
             display: flex;
             justify-content: space-between;
             align-items: center; }
             @media screen and (max-width: 768px) {
-              #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left {
+              .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left {
                 flex-direction: row; } }
-            #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left p {
+            .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left p {
               margin-bottom: 0px;
               margin-left: 20px;
               font-size: 15px;
@@ -11399,22 +11676,22 @@ hr {
               line-height: 20px;
               font-family: "Nunito Sans";
               color: #FFFFFF; }
-            #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left .capt-img {
+            .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .left .capt-img {
               max-width: 47px;
               max-height: 12px; }
-          #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .right .drop-up {
+          .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .right .drop-up {
             display: none; }
-          #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .right .drop-down {
+          .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display .right .drop-down {
             display: block; }
-          #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown {
+          .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown {
             border: 1px solid #1391FF; }
-            #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown .left .capt-txt {
+            .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown .left .capt-txt {
               color: #3C92FF; }
-            #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown .right .drop-down {
+            .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown .right .drop-down {
               display: none; }
-            #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown .right .drop-up {
+            .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-display.shown .right .drop-up {
               display: block; }
-        #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list {
+        .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list {
           list-style-type: none;
           padding: 0px;
           margin: 0px;
@@ -11424,20 +11701,20 @@ hr {
           width: 264px;
           display: none;
           cursor: pointer; }
-          #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li {
+          .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li {
             list-style-type: none;
             display: flex;
             padding: 7px 10px;
             border-bottom: 1px solid #979797;
             background-color: #191A35; }
-            #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left {
+            .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left {
               display: flex;
               justify-content: space-between;
               align-items: center; }
               @media screen and (max-width: 768px) {
-                #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left {
+                .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left {
                   flex-direction: row; } }
-              #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left p {
+              .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left p {
                 margin: 0 0 0 20px;
                 font-size: 15px;
                 font-weight: 900;
@@ -11445,59 +11722,59 @@ hr {
                 line-height: 20px;
                 font-family: "Nunito Sans";
                 color: #FFFFFF; }
-              #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left .capt-img {
+              .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li .left .capt-img {
                 max-width: 47px;
                 max-height: 12px; }
-            #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li:hover {
+            .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li:hover {
               background-color: #1391ff; }
-            #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li:first-child {
+            .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li:first-child {
               position: relative; }
-              #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li:first-child img.top-arrw {
+              .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list li:first-child img.top-arrw {
                 position: absolute;
                 top: -7px;
                 right: 8px;
                 width: 16px; }
-          #schedulemodal .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list.show {
+          .modal-dialog .modal-content .modal-header .left .drpdwn-dtsrc .drop-list.show {
             display: block !important;
             z-index: 5; }
-    #schedulemodal .modal-dialog .modal-content .modal-header .close {
+    .modal-dialog .modal-content .modal-header .close {
       color: #1391FF;
       text-shadow: none; }
-  #schedulemodal .modal-dialog .modal-content .modal-body {
+  .modal-dialog .modal-content .modal-body {
     padding: 0px; }
-    #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab {
+    .modal-dialog .modal-content .modal-body ul.task-tab {
       padding-top: 24px; }
-      #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item {
+      .modal-dialog .modal-content .modal-body ul.task-tab .nav-item {
         margin-right: 0px;
         display: flex;
         align-items: flex-start; }
-        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link {
+        .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link {
           padding: 0px;
           padding-bottom: 10px;
           opacity: 0.5; }
-          #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link.active {
+          .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .nav-link.active {
             border-bottom: 0px;
             opacity: 1;
             border-bottom: 3px solid #1391FF; }
-        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .brdr-rt {
+        .modal-dialog .modal-content .modal-body ul.task-tab .nav-item .brdr-rt {
           width: 31px;
           height: 16px;
           border-right: 1px solid rgba(255, 255, 255, 0.5);
           margin-top: 3px; }
-        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item:last-child .nav-link {
+        .modal-dialog .modal-content .modal-body ul.task-tab .nav-item:last-child .nav-link {
           margin-left: 30px;
           border-right: none;
           padding-right: none; }
-        #schedulemodal .modal-dialog .modal-content .modal-body ul.task-tab .nav-item:last-child .brdr-rt {
+        .modal-dialog .modal-content .modal-body ul.task-tab .nav-item:last-child .brdr-rt {
           border-right: none; }
-    #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report {
+    .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report {
       padding: 30px 0; }
-      #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row {
+      .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row {
         display: flex;
         align-items: center; }
-        #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .lside {
+        .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .lside {
           width: 170px; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .lside p {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .lside p {
             color: #FFFFFF;
             font-family: "Nunito Sans";
             margin: 20px 0 0;
@@ -11505,65 +11782,65 @@ hr {
             font-weight: 900;
             letter-spacing: 0;
             line-height: 20px; }
-        #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside {
+        .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside {
           display: flex; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist {
             margin-right: 28px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist p {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist p {
               margin: 0 0 6px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group {
               width: 204px; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .date-pick1 {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .date-pick1 {
                 background-color: #191A35; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .tim-clock {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .tim-clock {
                 position: absolute;
                 font-size: 18px;
                 right: 8px;
                 top: 8px; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .da-calen {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist .input-group .da-calen {
                 position: absolute;
                 font-size: 17px;
                 right: 8px;
                 top: 8px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist:last-child {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .onetime-report .s-row .rside .fist:last-child {
               margin-right: 0px; }
-    #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report {
+    .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report {
       padding: 30px 0; }
-      #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode {
+      .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode {
         padding-bottom: 50px;
         border-bottom: 1px solid;
         border-bottom-color: rgba(151, 151, 151, 0.25); }
-        #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row {
+        .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row {
           display: flex;
           margin-bottom: 30px; }
           @media screen and (max-width: 768px) {
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row {
               flex-direction: column; } }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side {
             display: flex;
             align-items: center;
             margin-right: 60px; }
             @media screen and (max-width: 768px) {
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side {
                 margin-right: 0px; } }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik {
               margin: 0 25px 0 0;
               min-width: 66px; }
               @media screen and (max-width: 768px) {
-                #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik {
+                .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik {
                   min-width: 79px; } }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik.mr-a23 {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .topik.mr-a23 {
                 margin-top: 23px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .mw-79 {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .mw-79 {
               min-width: 79px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side label.topik {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side label.topik {
               cursor: pointer; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .inp-valu {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .inp-valu {
               display: flex; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .inp-valu input {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .inp-valu input {
                 width: 123px;
                 background-color: #191A35; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .inp-valu .unit-fixer {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .inp-valu .unit-fixer {
                 width: 81px;
                 background-color: #35374F;
                 opacity: 0.75;
@@ -11577,9 +11854,9 @@ hr {
                 font-family: "Nunito Sans";
                 letter-spacing: 0;
                 line-height: 16px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-display {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-display {
               width: 203px; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-display .left .capt-txt {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-display .left .capt-txt {
                 margin-left: 0px;
                 color: #FFFFFF;
                 font-family: "Nunito Sans";
@@ -11587,11 +11864,11 @@ hr {
                 font-weight: 300;
                 letter-spacing: 0;
                 line-height: 16px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list {
               width: 203px; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list li {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list li {
                 padding: 5px 10px; }
-                #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list li .left .capt-txt {
+                .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list li .left .capt-txt {
                   margin-left: 0px;
                   color: #FFFFFF;
                   font-family: "Nunito Sans";
@@ -11599,49 +11876,49 @@ hr {
                   font-weight: 300;
                   letter-spacing: 0;
                   line-height: 16px; }
-                #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list li:hover {
+                .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .drpdwn-dtsrc .drop-list li:hover {
                   background-color: #1391ff; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side:last-child {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side:last-child {
               margin-right: 0px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist p {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist p {
               margin: 0 0 6px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group {
               width: 204px; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group .date-pick1 {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group .date-pick1 {
                 background-color: #191A35; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group .tim-clock {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group .tim-clock {
                 position: absolute;
                 font-size: 18px;
                 right: 8px;
                 top: 8px; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group .da-calen {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist .input-group .da-calen {
                 position: absolute;
                 font-size: 17px;
                 right: 8px;
                 top: 8px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist:last-child {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .s-row .l-side .fist:last-child {
               margin-right: 0px; }
-        #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show {
+        .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show {
           display: none;
           align-items: center;
           margin-bottom: 25px; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show p {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show p {
             margin: 0px;
             min-width: 66px; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days {
             display: flex;
             align-items: center;
             margin-left: 42px; }
             @media screen and (max-width: 768px) {
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days {
                 flex-wrap: wrap; } }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday {
               margin-right: 40px;
               position: relative; }
               @media screen and (max-width: 768px) {
-                #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday {
+                .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday {
                   min-width: 54px; } }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday label.wk-day-labl {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday label.wk-day-labl {
                 margin: 0px;
                 cursor: pointer;
                 color: #FFFFFF;
@@ -11652,14 +11929,14 @@ hr {
                 letter-spacing: 0;
                 line-height: 20px;
                 opacity: 1; }
-                #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday label.wk-day-labl::before {
+                .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday label.wk-day-labl::before {
                   content: ' ';
                   position: absolute;
                   left: 0px;
                   width: 18px;
                   height: 18px;
                   background-color: #1391FF; }
-                #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday label.wk-day-labl::after {
+                .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday label.wk-day-labl::after {
                   content: ' ';
                   position: absolute;
                   top: 6px;
@@ -11669,50 +11946,50 @@ hr {
                   height: 5px;
                   border-left: 2px solid black;
                   border-bottom: 2px solid black; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday .wk-day {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday .wk-day {
                 position: absolute;
                 left: -9990px;
                 opacity: 0; }
-              #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday .wk-day:checked ~ label::after {
+              .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show .days .weekday .wk-day:checked ~ label::after {
                 transform: rotate(-45deg) scale(1); }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show.active {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .weekly-show.active {
             display: flex; }
-        #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show {
+        .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show {
           display: none;
           align-items: center;
           margin-bottom: 20px; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show p {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show p {
             margin: 0px;
             min-width: 66px;
             margin: 0 25px 0 0; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show .inp-valu {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show .inp-valu {
             display: flex;
             align-items: center; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show .inp-valu input {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show .inp-valu input {
               width: 118px;
               background-color: #191A35; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show .inp-valu .dmonth {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show .inp-valu .dmonth {
               margin-left: 15px; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show.active {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .uppr-mode .monthly-show.active {
             display: flex; }
-      #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode {
+      .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode {
         padding: 21px 0 0; }
-        #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode h3 {
+        .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode h3 {
           color: #FFFFFF;
           font-family: "Nunito Sans";
           font-size: 15px;
           font-weight: 900;
           letter-spacing: 0;
           line-height: 20px; }
-        #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row {
+        .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row {
           display: flex;
           align-items: center;
           margin-bottom: 21px;
           position: relative; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-inp {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-inp {
             opacity: 0;
             position: absolute; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line {
             margin: 0px;
             padding-left: 25px;
             cursor: pointer;
@@ -11724,7 +12001,7 @@ hr {
             letter-spacing: 0;
             line-height: 16px;
             position: relative; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line::before {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line::before {
               content: ' ';
               position: absolute;
               left: 0px;
@@ -11732,7 +12009,7 @@ hr {
               width: 15px;
               height: 15px;
               border: 2px solid #ffffff; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line::after {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .time-line::after {
               content: ' ';
               position: absolute;
               left: 4px;
@@ -11742,36 +12019,36 @@ hr {
               width: 7.5px;
               height: 7.5px;
               background-color: #1391FF; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label::before {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label::before {
             border: 2px solid #1391FF; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label::after {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label::after {
             transform: scale(1); }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row input[type="radio"]:checked ~ label {
             opacity: 1; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row:last-child {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row:last-child {
             margin-bottom: 0px; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .qty-times {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .qty-times {
             width: 204px;
             background-color: #191A35; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .fix-date {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .fix-date {
             display: flex;
             align-items: center;
             min-width: 184px;
             margin-right: 10px; }
-          #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .input-group {
+          .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .input-group {
             width: 203px; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .input-group .date-pick1 {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .input-group .date-pick1 {
               background-color: #191A35; }
-            #schedulemodal .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .input-group .da-calen {
+            .modal-dialog .modal-content .modal-body .tab-content .tab-pane .recur-report .lower-mode .time-mode .inp-row .input-group .da-calen {
               position: absolute;
               font-size: 17px;
               right: 8px;
               top: 8px; }
-  #schedulemodal .modal-dialog .modal-content .modal-footer {
+  .modal-dialog .modal-content .modal-footer {
     border-top: 1px solid;
     border-top-color: rgba(151, 151, 151, 0.25);
     padding-bottom: 0px; }
-    #schedulemodal .modal-dialog .modal-content .modal-footer .modal-ok {
+    .modal-dialog .modal-content .modal-footer .modal-ok {
       background-color: #1391FF;
       border-radius: 2px;
       width: 120px;
@@ -11792,7 +12069,7 @@ hr {
     justify-content: space-between;
     align-items: center;
     padding: 7px 10px;
-    width: 264px;
+    width: 100%;
     cursor: pointer; }
     .drpdwn-dtsrc .drop-display .left {
       display: flex;
@@ -11829,7 +12106,7 @@ hr {
     border: 1px solid rgba(19, 145, 255, 0.54);
     position: absolute;
     top: 31px;
-    width: 264px;
+    width: 100%;
     display: none;
     cursor: pointer; }
     .drpdwn-dtsrc .drop-list li {
@@ -13121,6 +13398,314 @@ hr {
     .search-bar .search-bar__upper .search-bar__input .search-bar__suggestn.active {
       display: flex; }
 
+.w-200 {
+  width: 200px; }
+
+.dropdown-list:after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  width: 13px;
+  height: 13px;
+  color: #fff;
+  background: url(../images/ic_chevron_left.svg) no-repeat;
+  background-size: 13px 13px;
+  top: 13px; }
+
+.dropdown-list #myInput {
+  box-sizing: border-box;
+  background-image: url(../images/ic_search.svg);
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 7px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+  width: 100%; }
+
+.dropdown-list input[type=text] {
+  background-color: #20284c;
+  color: #fff; }
+
+.dropdown-list .drop-list {
+  background-color: #20284c;
+  box-shadow: 1px 7px 40px 2px rgba(0, 0, 0, 0.6); }
+
+.dropdown-list .dropbtn {
+  color: #fff;
+  font-size: 14px;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 2px solid #34364a;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 90%;
+  padding: 8px 10px;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  z-index: 1; }
+
+.dropdown-list #myInput:focus {
+  outline: 0 solid #ddd; }
+
+.dropdown-list .dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-list .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  width: 100%;
+  overflow: auto;
+  z-index: 1; }
+
+.dropdown-list .dropdown-content a {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5); }
+
+.dropdown-list .dropdown-content a:last-child {
+  border: none; }
+
+.dropdown-list.dropdown a:hover {
+  opacity: .4;
+  background-color: #1391ff; }
+
+.dropdown-list .show {
+  display: block; }
+
+.dropdown-list input[type=text]::placeholder {
+  font-size: 12px;
+  color: #659cc8;
+  font-weight: 800; }
+
+.dropdown-list.search-box {
+  caret-color: #fff; }
+
+/*
+.progressbar {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    float: left; 
+  }
+  .first-li{
+    text-align: right;
+    padding-right: 160px;
+    input[type=radio]{
+        position: relative;
+        left: 6px;
+        top: 2px;
+    }
+  }
+  .second-li{
+    text-align: left;
+    padding-left: 160px;
+    input[type=radio]{
+        position: relative;
+        right: 6px;
+        top: 2px;
+    }
+}
+  .progressbar li {
+    list-style-type: none;
+    width: 50%;
+    float: left;
+    font-size: 13px;
+    position: relative;
+  }
+  .progressbar li:after {
+    width: 100%;
+    height: 1px;
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    top: 8px;
+    left: -50%;
+  }
+  .progressbar li:first-child:after {
+    content: none;
+  }
+  .progressbar li.active {
+    color: #fff;
+    font-weight: bold;
+  }
+*/
+.progressbar-content {
+  display: flex;
+  font-size: 14px; }
+  @media screen and (max-width: 991px) {
+    .progressbar-content {
+      padding-bottom: 27px;
+      padding-top: 20px; } }
+  .progressbar-content .progress__field label.radio-input {
+    position: relative;
+    padding-right: 20px;
+    top: -5px; }
+    .progressbar-content .progress__field label.radio-input::before {
+      content: ' ';
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background-color: #8C8C9A;
+      position: absolute;
+      left: 0;
+      top: -2px; }
+    .progressbar-content .progress__field label.radio-input::after {
+      content: ' ';
+      width: 7.5px;
+      height: 7.5px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      left: 5.5px;
+      top: 3.5px; }
+  .progressbar-content .progress__field.active label.radio-input::before {
+    background-color: #1391FF; }
+  @media screen and (max-width: 991px) {
+    .progressbar-content .first-child {
+      position: relative;
+      right: -13px;
+      top: -20px; } }
+  .progressbar-content .first-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-content .first-child label.radio-input {
+    position: relative;
+    padding-right: 20px;
+    top: -5px; }
+    .progressbar-content .first-child label.radio-input.active:after {
+      content: ' '; }
+  @media screen and (max-width: 991px) {
+    .progressbar-content .last-child {
+      position: absolute;
+      bottom: 0;
+      right: 4px; } }
+  .progressbar-content .last-child.active span {
+    font-weight: bold;
+    color: #fff; }
+  .progressbar-content .last-child label.radio-input {
+    position: relative;
+    top: -5px; }
+    .progressbar-content .last-child label.radio-input.active:before {
+      border: 2px solid #1391ff !important; }
+    .progressbar-content .last-child label.radio-input.active:after {
+      content: ' ';
+      position: absolute;
+      left: 7.5px;
+      top: 4.5px;
+      border-radius: 50%;
+      width: 7.5px;
+      height: 7.5px;
+      background-color: #1391ff; }
+  .progressbar-content .line {
+    width: 300px;
+    background-color: #fff;
+    height: 1px;
+    position: relative;
+    top: 10px;
+    margin-left: 5px;
+    margin-right: 5px; }
+    @media screen and (max-width: 991px) {
+      .progressbar-content .line {
+        width: 1px;
+        top: 3px;
+        height: 130px; } }
+.toast--extrainfo {
+  height: 67.7px;
+  width: 446.7px;
+  max-width: 450px; }
+  .toast--extrainfo .toast-body .toast-wrap .toast-msg ul {
+    padding-left: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    list-style-type: none; }
+    .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li {
+      color: #8B8DA5;
+      padding: 0 15px 0 15px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 16px;
+      position: relative; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li::after {
+        content: ' ';
+        position: absolute;
+        width: 1px;
+        height: 12px;
+        top: 2px;
+        right: 0;
+        background-color: #8B8DA5; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li:last-child::after {
+        content: none; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li:first-child {
+        padding-left: 0px; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li span {
+        color: #1391FF; }
+      .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li a {
+        text-decoration: none; }
+
+.dashboard-widget .modal-body .btn--saveboard {
+  color: #0A0C1B; }
+
+.dashboard-widget .modal-body .dashboard--share {
+  text-decoration: none; }
+  .dashboard-widget .modal-body .dashboard--share i {
+    font-size: 20px;
+    vertical-align: middle; }
+  .dashboard-widget .modal-body .dashboard--share:hover i {
+    color: #fff; }
+
+.dashboard-widget .modal-body .btn-gnwdt {
+  color: #1391FF; }
+  .dashboard-widget .modal-body .btn-gnwdt:hover {
+    color: #fff; }
+
+.dashboard-widget .modal-footer .btn__hold {
+  width: 100%;
+  justify-content: space-between; }
+
+.gen__widget {
+  background-color: #0F1226;
+  box-shadow: 0 2px 40px 2px rgba(0, 0, 0, 0.24);
+  padding: 20px; }
+  .gen__widget .gen__widget__control .gen__widget__save {
+    display: flex;
+    justify-content: space-between; }
+    .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft {
+      display: flex; }
+      .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn--save {
+        display: none; }
+        .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn--save.show {
+          display: inline-block; }
+      .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt {
+        display: none; }
+        .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt.show {
+          display: flex; }
+  .gen__widget .gen__widget__control .gen__widget__info {
+    display: none; }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item p {
+      min-height: 36px;
+      opacity: 0.4; }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-160 {
+      max-width: 166px;
+      width: 20%; }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-200 {
+      max-width: 200px;
+      width: 20%; }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-625 {
+      max-width: 625px;
+      width: 60%; }
+    .gen__widget .gen__widget__control .gen__widget__info.show {
+      display: flex; }
+
+.gen-widget-prev {
+  min-height: 250px; }
+
 .data-source-filter .drpdwn-dtsrc .drop-display {
   width: auto;
   padding: 0;
@@ -13167,7 +13752,7 @@ hr {
 
 .filters-dropdown .filter-arrow {
   position: absolute;
-  left: -100%;
+  left: -35px;
   margin-top: 10px; }
 
 .filters-dropdown span {

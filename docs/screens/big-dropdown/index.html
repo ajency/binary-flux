@@ -12,7 +12,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.0c963881903f0087e14a60658089e36cc0da0af18d3bb9010783031150983c67.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.b90679b5721ff4a21ed4bfda2221ea0d6728caf12203daee4f886e532fe87e9f.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -80,10 +80,10 @@
                                 </div>
                             </div>
                             <div class="sort d-flex pos-shift">
-                                <button class="reset filters-dropdown drpdwn-dtsrc" id="filter1" onclick="myFunction()">
+                                <button class="reset filters-dropdown drpdwn-dtsrc" id="filter1" >
                                     <div class="drop-display">
-                                        <img src="/binary-flux/images/filter-ic.png" class="mx-1" />
-
+                                        
+                                        <i class="fa fa-filter fs-15 text-darkblue px-1" aria-hidden="true"></i>
                                     </div>
                                     <div class="drop-list filter-arrow text-left" id="">
                                         <span class="pb-2">FILTERS</span>
@@ -123,7 +123,7 @@
                                                 </div>
                                             </div>
                                             <div class="btn-group btn-outline-dark-blue text-right mb-1">
-                                                <div class="btn btn-115 d-flex btn-done ">Done
+                                                <div class="btn btn-115 d-flex btn-done">Done
     
                                                 </div>
                                             </div>
@@ -330,154 +330,72 @@
             });
         </script>
 
-<script>
-    function myFunction() {
-   var element = document.getElementById("myDIV");
-   element.classList.toggle("display-visibility");
-}
-</script>
         <script>
-            $(document).ready(function () {
+            var dropdisplay = document.getElementsByClassName("drop-display");   
 
-
-                $('.drop-display').on("click", function () {
-                    if ($(this).hasClass('shown')) {
-                        $(this).removeClass('shown');
-                        $(this).parent().find('.drop-list').removeClass('show');
+            function dropshow () {
+                if(this.classList.contains("shown")) {
+                    this.classList.remove("shown");
+                    var closest = this.parentNode.querySelectorAll('.drop-list');
+                    for (var i=0; i < closest.length; i++) {
+                        closest[i].classList.remove("show");
                     }
-                    else {
-                        $(this).addClass('shown');
-                        $(this).parent().find('.drop-list').addClass('show');
+                }
+                else{
+                    this.classList.add("shown");
+                    var closest = this.parentNode.querySelectorAll('.drop-list');
+                    for (var i=0; i < closest.length; i++) {
+                        closest[i].classList.add("show");
                     }
-                });
+                }
+            }
 
+            for (var i=0; i < dropdisplay.length; i++) {
+                dropdisplay[i].addEventListener('click', dropshow);
+                
+            }
 
-                $('#data-src-drp .drop-list li').on("click", function () {
-                    var dropdisplayimg1 = $('#data-src-drp .drop-display .left .capt-img');
-                    var dropdisplaytxt1 = $('#data-src-drp .drop-display .left .capt-txt');
+            
+            var droplists = document.querySelectorAll(".drop-list li");
 
-                    var imgsrc1 = $(this).find('.capt-img').attr('src');
-                    var text1 = $(this).find('.capt-txt').html();
+            for (var i=0; i < droplists.length; i++) {
+                droplists[i].addEventListener("click", closelist);       
+            }
 
-                    dropdisplayimg1.attr('src', imgsrc1);
-                    dropdisplaytxt1.html(text1);
+            function closelist () {
+                this.parentNode.classList.remove("show");
+                var dropdisp = this.parentNode.parentNode.getElementsByClassName("drop-display");
+                for (var i=0; i < dropdisp.length; i++) {
+                    dropdisp[i].classList.remove("shown");       
+                }
+                console.log("hii");
+            }
+            
 
-                    $('#data-src-drp .drop-display').removeClass('shown');
-                    $('#data-src-drp .drop-list').removeClass('show');
-                });
+            var doneclick = document.getElementsByClassName("btn-done");
 
+            for (var i=0; i<doneclick.length; i++) {
+                doneclick[i].addEventListener("click", popupclose);
+            }
 
-                $('#schedle-mod-drp .drop-list li').on("click", function () {
-                    var dropdisplayimg2 = $('#schedle-mod-drp .drop-display .left .capt-img');
-                    var dropdisplaytxt2 = $('#schedle-mod-drp .drop-display .left .capt-txt');
-
-                    var imgsrc2 = $(this).find('.capt-img').attr('src');
-                    var text2 = $(this).find('.capt-txt').html();
-
-                    dropdisplayimg2.attr('src', imgsrc2);
-                    dropdisplaytxt2.html(text2);
-
-                    $('#schedle-mod-drp .drop-display').removeClass('shown');
-                    $('#schedle-mod-drp .drop-list').removeClass('show');
-                });
-
-
-                $('#day-sett .drop-list li').on("click", function () {
-                    var dropdisplayimg3 = $('#day-sett .drop-display .left .capt-img');
-                    var dropdisplaytxt3 = $('#day-sett .drop-display .left .capt-txt');
-
-
-                    var text3 = $(this).find('.capt-txt').html();
-
-
-                    dropdisplaytxt3.html(text3);
-
-                    $('#day-sett .drop-display').removeClass('shown');
-                    $('#day-sett .drop-list').removeClass('show');
-                });
-
-
-                $('#schedulemodal').on('show.bs.modal', function (e) {
-                    $('#day-sett .drop-display').removeClass('shown');
-                    $('#day-sett .drop-list').removeClass('show');
-
-                    $('#schedle-mod-drp .drop-display').removeClass('shown');
-                    $('#schedle-mod-drp .drop-list').removeClass('show');
-
-                });
-
-
-                $('#reportsTab a').on('click', function (e) {
-                    e.preventDefault();
-                    $(this).tab('show');
-                });
-
-                $('#reportsTab li').on('click', function () {
-
-                    $('#reportsTab li').removeClass('active');
-                    $(this).addClass('active');
-                });
-
-
-                $('#day-sett .drop-list li').on("click", function () {
-                    var idcatch = $(this).children('.left').children('.capt-txt').attr('id');
-
-                    $('#weekly-show').removeClass('active');
-                    $('#monthly-show').removeClass('active');
-
-                    if (idcatch == 'd1') {
-                        console.log('d1 clicked');
-                        $('#day-val-changer').html('Days');
-                    } else if (idcatch == 'd2') {
-                        $('#weekly-show').addClass('active');
-                        $('#day-val-changer').html('Week');
-                    } else if (idcatch == 'd3') {
-                        $('#monthly-show').addClass('active');
-                        $('#day-val-changer').html('Months');
-                    } else if (idcatch == 'd4') {
-                        $('#day-val-changer').html('Hours');
-                    } else if (idcatch == 'd5') {
-                        $('#day-val-changer').html('Minutes');
-                    } else if (idcatch == 'd6') {
-                        $('#day-val-changer').html('Seconds');
-                    }
-                    else {
-                        console.log('Nothing to display');
-                    }
-
-                });
-
-
-
-            });
+            function popupclose () {
+                var biglist = this.parentNode.parentNode.parentNode;
+                
+                
+                
+                biglist.classList.remove("show");
+                console.log(biglist);
+                
+            }
 
 
         </script>
 
-        <script>
-            var $j = jQuery.noConflict();
-            $j(function () {
-                $j("#datepicker1").datepicker({
-                    format: 'd-M, yyyy'
-                });
+        
 
-                $j("#datepicker2").datepicker({
-                    format: 'd-M, yyyy'
-                });
+        
 
-                $j("#datepicker3").datepicker({
-                    format: 'd-M, yyyy'
-                });
-
-                $j('#timepicker1').datetimepicker({
-                    format: 'LT'
-                });
-
-                $j('#timepicker2').datetimepicker({
-                    format: 'LT'
-                });
-            });
-        </script><script
+        <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>

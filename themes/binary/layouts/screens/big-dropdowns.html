@@ -59,10 +59,10 @@
                                 </div>
                             </div>
                             <div class="sort d-flex pos-shift">
-                                <button class="reset filters-dropdown drpdwn-dtsrc" id="filter1" onclick="myFunction()">
+                                <button class="reset filters-dropdown drpdwn-dtsrc" id="filter1" >
                                     <div class="drop-display">
-                                        <img src="/binary-flux/images/filter-ic.png" class="mx-1" />
-
+                                        <!-- <img src="/binary-flux/images/filter-ic.png" class="mx-1" /> -->
+                                        <i class="fa fa-filter fs-15 text-darkblue px-1" aria-hidden="true"></i>
                                     </div>
                                     <div class="drop-list filter-arrow text-left" id="">
                                         <span class="pb-2">FILTERS</span>
@@ -102,7 +102,7 @@
                                                 </div>
                                             </div>
                                             <div class="btn-group btn-outline-dark-blue text-right mb-1">
-                                                <div class="btn btn-115 d-flex btn-done ">Done
+                                                <div class="btn btn-115 d-flex btn-done">Done
     
                                                 </div>
                                             </div>
@@ -309,13 +309,75 @@
             });
         </script>
 
-<script>
-    function myFunction() {
-   var element = document.getElementById("myDIV");
-   element.classList.toggle("display-visibility");
-}
-</script>
         <script>
+            var dropdisplay = document.getElementsByClassName("drop-display");   
+
+            function dropshow () {
+                if(this.classList.contains("shown")) {
+                    this.classList.remove("shown");
+                    var closest = this.parentNode.querySelectorAll('.drop-list');
+                    for (var i=0; i < closest.length; i++) {
+                        closest[i].classList.remove("show");
+                    }
+                }
+                else{
+                    this.classList.add("shown");
+                    var closest = this.parentNode.querySelectorAll('.drop-list');
+                    for (var i=0; i < closest.length; i++) {
+                        closest[i].classList.add("show");
+                    }
+                }
+            }
+
+            for (var i=0; i < dropdisplay.length; i++) {
+                dropdisplay[i].addEventListener('click', dropshow);
+                
+            }
+
+            //Dropdown Closure on Options
+            var droplists = document.querySelectorAll(".drop-list li");
+
+            for (var i=0; i < droplists.length; i++) {
+                droplists[i].addEventListener("click", closelist);       
+            }
+
+            function closelist () {
+                this.parentNode.classList.remove("show");
+                var dropdisp = this.parentNode.parentNode.getElementsByClassName("drop-display");
+                for (var i=0; i < dropdisp.length; i++) {
+                    dropdisp[i].classList.remove("shown");       
+                }
+                console.log("hii");
+            }
+            //Dropdown Closure on Options
+
+            var doneclick = document.getElementsByClassName("btn-done");
+
+            for (var i=0; i<doneclick.length; i++) {
+                doneclick[i].addEventListener("click", popupclose);
+            }
+
+            function popupclose () {
+                var biglist = this.parentNode.parentNode.parentNode;
+                // for (var i=0; i<biglist.length; i++) {
+                //     var isreal = biglist[i].classList.contains("show");
+                // }
+                biglist.classList.remove("show");
+                console.log(biglist);
+                // console.log(isreal);
+            }
+
+
+        </script>
+
+        <!-- <script>
+            function myFunction() {
+        var element = document.getElementById("myDIV");
+        element.classList.toggle("display-visibility");
+        }
+        </script> -->
+
+        <!-- <script>
             $(document).ready(function () {
 
 
@@ -431,9 +493,9 @@
             });
 
 
-        </script>
+        </script> -->
 
-        <script>
+        <!-- <script>
             var $j = jQuery.noConflict();
             $j(function () {
                 $j("#datepicker1").datepicker({
@@ -456,7 +518,7 @@
                     format: 'LT'
                 });
             });
-        </script>
+        </script> -->
         
 {{- partial "custom-footer.html" . -}}
 {{ end }}

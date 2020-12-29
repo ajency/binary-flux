@@ -1,6 +1,4 @@
 {{ define "main" }}
-        
-<div id="content">
 
 <div class="container mt-2">
 
@@ -188,43 +186,10 @@
 			<hr>
 			<button class="btn btn-outline-dark">Test</button>
 			<p class="mt-2">Button should have class <code>.btn .btn-outline-dark</code>.</p>
-			<hr>
-			<button class="btn btn-outline-dark btn-220">Test</button>
-			<button class="btn btn-primary btn-220">Save</button>
-			<hr>
-			<div class="dropdown-noborder">
-				<div class="drop-display">
-					<div class="left">                                                
-						<span class="orange-count">2</span><p class="capt-txt">Widget Saved to Dashboard</p>
-					</div>
-					<div class="right">
-						<img src="binary-flux/images/drop-down.svg" class="drop-down">
-						<img src="binary-flux/images/drop-up.svg" class="drop-up">
-					</div>
-				</div>
-				<ul class="drop-list">
-					<li>
-						<div class="left">                                              
-							<p class="capt-txt" id="d1">Daily</p>
-						</div>
-						<img src="binary-flux/images/uparrow.png" class="top-arrw">
-					</li>
-					<li>
-						<div class="left">                                               
-							<p class="capt-txt" id="d2">Weekly</p>
-						</div>
-					</li>
-					<li>
-						<div class="left">                                         
-							<p class="capt-txt" id="d3">Monthly</p>
-						</div>
-					</li>
-				</ul>
-		   </div>
 		</div>
 	</div>
 
-	<hr class="my-5">
+	<hr class="my-5">	
 
 	<div class="row">
 		<div class="col-3">					
@@ -261,123 +226,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-3 text-right">
-			<label>Search</label>
-		</div>
-		<div class="col-3">
-				<div class="search-wrap ">
-					<div class="position-relative">
-						<img src="binary-flux/images/ic_search.svg" class="pa-lc no-bg" width="17" height="17">
-						<input class="form-control input-search input-small pl-4" type="search" q="googlesearch" placeholder="Search">
-					</div>
-				</div>
-		</div>
-	</div>
 
 	<hr class="my-5">
 
-	<div class="row">
-		<div class="col-3">					
-			<h4 class="mb-4">New Elements</h4>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-3 text-right">
-			<label>Radio Progressbar Step</label>
-		</div>
-		<div class="col-9">
-			<div class="progressbar-radio">
-				<div class="first-child active">
-					<span>Select Dashboard</span><label class="radio-input active"></label>
-				</div>
-				<div class="line"></div>
-				<div class="last-child">
-					<label class="radio-input"></label>
-					<span>Create Widget</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-3 text-right">
-			<label>Checkmark Progressbar Step</label>
-		</div>
-		<div class="col-9">
-			<div class="progressbar-checkmark">
-				<div class="first-child active">
-					<span>Select Dashboard</span>
-					<label class="checkmark-input active"></label>
-				</div>
-				<div class="line"></div>
-				<div class="last-child active">
-					<label class="checkmark-input active"></label>
-					<span>Create Widget</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<hr class="my-5">
-</div><footer class="footer">
-  <div class="footer-row">
-    <div class="footer-col d-lg-flex align-items-center">
-      <div class="footer-logo pr-2  mb-2 mb-lg-0">
-        <img src="/binary-flux/images/footer_logo.png" alt="logo">
-      </div>
-      <div class="footer-address pr-2 text-blue position-relative pl-2  mb-2 mb-lg-0">
-          <div class="footer-address-icon p-abs">
-            <img src="/binary-flux/images/address_icon.svg" alt="address">
-          </div>
-          <div class="footer-address-text">
-              3 Pemimpin Drive, 4-01, Industrial Building, Singapore, 576147
-          </div>
-      </div>
-      <div class="footer-phone position-relative pl-2 mb-2 mb-lg-0">
-        <div class="footer-phone-icon p-abs">
-          <img src="/binary-flux/images/phone_icon.svg" alt="phone">
-        </div>
-        <div class="footer-phone-text">
-          <a href="tel:+12023908669">+1(202)390-8669</a>
-        </div>
-      </div>
-      <div class="footer-email-text pl-1 mb-2 mb-lg-0">
-        <a href="https://www.binaryflux.xyz" target="_blank"><span class="">•</span>www.binaryflux.xyz</a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <div class="footer-copyright text-blue">
-         © Copyright Binaryflux
-      </div>
-    </div>
-  </div>
-</footer>
+</div>
 
-<script>
-	var dropdisplay = document.getElementsByClassName("drop-display");   
 
-	function dropshow () {
-		if(this.classList.contains("shown")) {
-			this.classList.remove("shown");
-			var closest = this.parentNode.querySelectorAll('.drop-list');
-			for (var i=0; i < closest.length; i++) {
-				closest[i].classList.remove("show");
-			}
-		}
-		else{
-			this.classList.add("shown");
-			var closest = this.parentNode.querySelectorAll('.drop-list');
-			for (var i=0; i < closest.length; i++) {
-				closest[i].classList.add("show");
-			}
-		}
-	}
-
-	for (var i=0; i < dropdisplay.length; i++) {
-		dropdisplay[i].addEventListener('click', dropshow);
-		
-	}
-
-</script>
-
-{{- partial "custom-footer.html" . -}}
+{{- partial "footer.html" . -}}
 {{ end }}
