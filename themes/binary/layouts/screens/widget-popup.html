@@ -160,15 +160,13 @@
                                 <p class="pt-3">Select a dashboard from the dropdown </p>
 
                                 <div class="dropdown dropdown-list w-200">
-                                    <button onclick="myFunction()" class="dropbtn remove-icon" id="dropbtn">Select
-                                        dashboard 
-                                       
-                                        <i class="fa fa-external-link" aria-hidden="true"></i>
-                                        </button>
+                                    <button type="button" onclick="dropdownsh()" class="dropbtn" id="dropbtn">Select
+                                        dashboard </button>
+                                        <i class="fa fa-external-link" aria-hidden="false"></i>
                                     <div id="myDropdown" class="dropdown-content">
                                         <input type="text" placeholder="Search Dashboard" id="myInput"
                                             onkeyup="filterFunction()">
-                                        <div class="drop-list">
+                                        <!-- <div class="drop-list">
                                             <a href="#about" onclick="selecteddd(this)">About</a>
                                             <a href="#base" onclick="selecteddd(this)">Base</a>
                                             <a href="#blog" onclick="selecteddd(this)">Blog</a>
@@ -176,44 +174,11 @@
                                             <a href="#custom" onclick="selecteddd(this)">Custom</a>
                                             <a href="#support" onclick="selecteddd(this)">Support</a>
                                             <a href="#tools" onclick="selecteddd(this)">Tools</a>
-                                        </div>
-
+                                        </div> -->
                                     </div>
                                 </div>
 
-                                <script>
-                                    
-
-                                    function myFunction() {
-                                        document.getElementById("myDropdown").classList.toggle("show");
-                                        document.getElementById("dropbtn").classList.toggle("remove-icon add-icon");
-                                    }
-
-                                    function selecteddd(el) {
-                                        document.getElementById("dropbtn").innerText = el.text;                                        
-                                        var x = document.createElement("IMG");
-                                        x.setAttribute("src", "/binary-flux/images/ic_chevron_left-copy.svg");
-                                        document.body.appendChild(x);
-                                        myFunction();
-                                    }
-
-                                    function filterFunction() {
-                                        var input, filter, ul, li, a, i;
-                                        input = document.getElementById("myInput");
-                                        filter = input.value.toUpperCase();
-                                        div = document.getElementById("myDropdown");
-                                        a = div.getElementsByTagName("a");
-                                        for (i = 0; i < a.length; i++) {
-                                            txtValue = a[i].textContent || a[i].innerText;
-                                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                                                a[i].style.display = "";
-                                            } else {
-                                                a[i].style.display = "none";
-                                            }
-                                        }
-                                    }
-
-                                </script>
+                                
 
                             </div>
                             <div class="tab-pane " id="recurring" role="tabpanel" aria-labelledby="profile-tab">
@@ -303,10 +268,10 @@
                             <div class="gen__widget__control mt-3">
                                 <div class="gen__widget__save">
                                     <div class="widget__save__lft">
-                                        <button type="button" class="btn btn-primary mr-3">Generate Widget</button>
-                                        <button type="button" class="btn btn-primary">Save Widget</button>
+                                        <button type="button" class="btn btn-primary btn-bgtp text-ltblue1 mr-3 btn-gnwdt">Generate Widget</button>
+                                        <button type="button" class="btn btn-primary font-weight-bolder">Save Widget</button>
                                     </div>
-                                    <div class="widget__save__lft">
+                                    <div class="widget__save__lft widget__save__rt">
                                         <div class="dropdown-noborder mr-3">
                                             <div class="drop-display">
                                                 <div class="left">                                                
@@ -336,7 +301,7 @@
                                                 </li>
                                             </ul>
                                        </div>
-                                        <button type="button" class="btn btn-primary">Go to Dashboard</button>
+                                        <button type="button" class="btn btn-primary btn-bgtp text-ltblue1">Go to Dashboard</button>
                                     </div>
                                     
                                     
@@ -486,7 +451,52 @@
 
         </script>
 
-        
+        <script>
+            var gnwdt = document.getElementsByClassName("btn-gnwdt");
+            gnwdt[0].addEventListener("click", wdtfunc);
+
+            function wdtfunc () {
+                var gnwd = this.parentNode.parentNode;
+                gnwd.querySelector(".widget__save__rt").classList.add("show");
+                var gninfo = gnwd.parentNode.getElementsByClassName("gen__widget__info");
+                gninfo[0].classList.add("show");
+                console.log(gnwd);
+            }
+        </script>
+
+        <script>           
+
+            function dropdownsh() {
+                // document.getElementById("myDropdown").classList.add("show");
+                
+                // document.getElementById("dropbtn").classList.toggle("remove-icon add-icon");
+            }
+
+            function selecteddd(el) {
+                document.getElementById("dropbtn").innerText = el.text;                                        
+                var x = document.createElement("IMG");
+                x.setAttribute("src", "/binary-flux/images/ic_chevron_left-copy.svg");
+                document.body.appendChild(x);
+                // myFunction();
+            }
+
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    txtValue = a[i].textContent || a[i].innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+
+        </script>
 
 
         <script>

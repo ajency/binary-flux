@@ -359,10 +359,16 @@
             justify-content: space-between;
             .widget__save__lft{
                 display: flex;
+                &.widget__save__rt{
+                    display: none;
+                    &.show{
+                        display: flex;
+                    }
+                }
             }
         }
         .gen__widget__info{
-            display: flex;
+            display: none;
             // margin-top: 45px;
             .widget__item {
                 p{
@@ -381,6 +387,9 @@
                     max-width: 625px;
                     width: 60%;
                 }
+            }
+            &.show{
+                display: flex;
             }
         }        
     }

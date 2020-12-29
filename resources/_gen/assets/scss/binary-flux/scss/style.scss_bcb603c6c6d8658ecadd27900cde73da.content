@@ -10121,6 +10121,9 @@ ul, ol {
 .text-black2 {
   color: #191A35; }
 
+.text-ltblue1 {
+  color: #1391FF !important; }
+
 .fs-15 {
   font-size: 15px; }
 
@@ -10849,6 +10852,9 @@ button.btn-ouline-light-blue {
   color: #0A0C1B;
   font-weight: bold;
   cursor: pointer; }
+
+.btn-bgtp {
+  background-color: transparent; }
 
 @media (min-width: 768px) {
   .border-blue-left-md {
@@ -13660,8 +13666,12 @@ hr {
     justify-content: space-between; }
     .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft {
       display: flex; }
+      .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt {
+        display: none; }
+        .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt.show {
+          display: flex; }
   .gen__widget .gen__widget__control .gen__widget__info {
-    display: flex; }
+    display: none; }
     .gen__widget .gen__widget__control .gen__widget__info .widget__item p {
       min-height: 36px;
       opacity: 0.4; }
@@ -13674,6 +13684,8 @@ hr {
     .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-625 {
       max-width: 625px;
       width: 60%; }
+    .gen__widget .gen__widget__control .gen__widget__info.show {
+      display: flex; }
 
 .gen-widget-prev {
   min-height: 250px; }
