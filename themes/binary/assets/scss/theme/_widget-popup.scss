@@ -344,7 +344,19 @@
                     color: #fff;
                 }                
             }            
-        }        
+        }
+        .btn-gnwdt{
+            color: #1391FF;
+            &:hover{
+                color: #fff ;
+            }
+        }      
+    }
+    .modal-footer{
+        .btn__hold {
+            width: 100%;
+            justify-content: space-between;
+        }
     }
 }
 
@@ -359,6 +371,12 @@
             justify-content: space-between;
             .widget__save__lft{
                 display: flex;
+                .btn--save{
+                    display: none;
+                    &.show{
+                        display: inline-block;
+                    }
+                }
                 &.widget__save__rt{
                     display: none;
                     &.show{

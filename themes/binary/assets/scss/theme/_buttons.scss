@@ -345,3 +345,9 @@ button{
 .btn-bgtp{
 	background-color: transparent;
 }
+
+.btn-txbgtp{
+	&:hover{
+		color: #fff !important;
+	}
+}

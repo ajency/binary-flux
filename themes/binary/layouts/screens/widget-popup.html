@@ -238,8 +238,20 @@
                             <div class="col-md-3 pl-0">
                                 <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
                             </div>
+
+                            <div class="progressbar-checkmark">
+                                <div class="first-child active">
+                                    <span>Select Dashboard</span>
+                                    <label class="checkmark-input active"></label>
+                                </div>
+                                <div class="line"></div>
+                                <div class="last-child active">
+                                    <label class="checkmark-input active"></label>
+                                    <span>Create Widget</span>
+                                </div>
+                            </div>
                             
-                            <div class="progressbar-content col-md- col-sm- col-xs-">
+                            <!-- <div class="progressbar-content col-md- col-sm- col-xs-">
 
                                 <div class="progress__field first-child active">
                                     <span>Select Dashboard</span>
@@ -249,13 +261,12 @@
 
                                 </div>
                                 <div class="progress__field last-child">
-                                        <label class="radio-input "></label>
-                                        <span>Create Widget</span>
+                                    <label class="radio-input "></label>
+                                    <span>Create Widget</span>
                                        
-                                    </div>
+                                </div>                                
+                            </div> -->
 
-                                
-                            </div>
                         </div>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
@@ -268,8 +279,8 @@
                             <div class="gen__widget__control mt-3">
                                 <div class="gen__widget__save">
                                     <div class="widget__save__lft">
-                                        <button type="button" class="btn btn-primary btn-bgtp text-ltblue1 mr-3 btn-gnwdt">Generate Widget</button>
-                                        <button type="button" class="btn btn-primary font-weight-bolder">Save Widget</button>
+                                        <button type="button" class="btn btn-primary btn-bgtp mr-3 btn-gnwdt">Generate Widget</button>
+                                        <button type="button" class="btn btn-primary font-weight-bolder btn--save">Save Widget</button>
                                     </div>
                                     <div class="widget__save__lft widget__save__rt">
                                         <div class="dropdown-noborder mr-3">
@@ -301,7 +312,7 @@
                                                 </li>
                                             </ul>
                                        </div>
-                                        <button type="button" class="btn btn-primary btn-bgtp text-ltblue1">Go to Dashboard</button>
+                                        <button type="button" class="btn btn-primary btn-bgtp btn-txbgtp text-ltblue1">Go to Dashboard</button>
                                     </div>
                                     
                                     
@@ -393,8 +404,10 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default modal-ok" data-dismiss="">Back</button>
-                        <button type="button" class="btn btn-default modal-ok" data-dismiss="modal">Done</button>
+                        <div class="btn__hold d-flex">
+                            <button type="button" class="btn btn-primary btn-txbgtp btn-bgtp text-ltblue1" data-dismiss="">Back</button>
+                            <button type="button" class="btn btn-primary modal-ok" data-dismiss="modal">Done</button>
+                        </div>                        
                     </div>
                 </div>
 
@@ -451,6 +464,8 @@
 
         </script>
 
+
+        <!-- Generate Widget screen -->
         <script>
             var gnwdt = document.getElementsByClassName("btn-gnwdt");
             gnwdt[0].addEventListener("click", wdtfunc);
@@ -460,16 +475,22 @@
                 gnwd.querySelector(".widget__save__rt").classList.add("show");
                 var gninfo = gnwd.parentNode.getElementsByClassName("gen__widget__info");
                 gninfo[0].classList.add("show");
+                var btnsave = gnwd.getElementsByClassName("btn--save");
+                btnsave[0].classList.add("show");
                 console.log(gnwd);
             }
         </script>
+        <!-- Generate Widget screen -->
+
+
+
+
 
         <script>           
 
             function dropdownsh() {
-                // document.getElementById("myDropdown").classList.add("show");
-                
-                // document.getElementById("dropbtn").classList.toggle("remove-icon add-icon");
+                document.getElementById("myDropdown").classList.add("show");                
+                document.getElementById("dropbtn").classList.toggle("remove-icon add-icon");
             }
 
             function selecteddd(el) {
@@ -477,7 +498,7 @@
                 var x = document.createElement("IMG");
                 x.setAttribute("src", "/binary-flux/images/ic_chevron_left-copy.svg");
                 document.body.appendChild(x);
-                // myFunction();
+                myFunction();
             }
 
             function filterFunction() {

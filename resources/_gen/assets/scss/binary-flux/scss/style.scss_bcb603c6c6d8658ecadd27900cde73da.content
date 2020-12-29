@@ -10856,6 +10856,9 @@ button.btn-ouline-light-blue {
 .btn-bgtp {
   background-color: transparent; }
 
+.btn-txbgtp:hover {
+  color: #fff !important; }
+
 @media (min-width: 768px) {
   .border-blue-left-md {
     border-left: 2px solid #121631; } }
@@ -13657,6 +13660,15 @@ hr {
   .dashboard-widget .modal-body .dashboard--share:hover i {
     color: #fff; }
 
+.dashboard-widget .modal-body .btn-gnwdt {
+  color: #1391FF; }
+  .dashboard-widget .modal-body .btn-gnwdt:hover {
+    color: #fff; }
+
+.dashboard-widget .modal-footer .btn__hold {
+  width: 100%;
+  justify-content: space-between; }
+
 .gen__widget {
   background-color: #0F1226;
   box-shadow: 0 2px 40px 2px rgba(0, 0, 0, 0.24);
@@ -13666,6 +13678,10 @@ hr {
     justify-content: space-between; }
     .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft {
       display: flex; }
+      .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn--save {
+        display: none; }
+        .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn--save.show {
+          display: inline-block; }
       .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt {
         display: none; }
         .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt.show {
