@@ -13398,8 +13398,8 @@ hr {
     .search-bar .search-bar__upper .search-bar__input .search-bar__suggestn.active {
       display: flex; }
 
-.w-200 {
-  width: 200px; }
+.w-220 {
+  width: 220px; }
 
 .dropdown-list #myInput {
   box-sizing: border-box;
@@ -13458,6 +13458,9 @@ hr {
   display: block;
   font-size: 13px;
   border-bottom: 1px solid rgba(151, 151, 151, 0.5); }
+
+.dropdown-list .dropdown-content a:hover {
+  color: white; }
 
 .dropdown-list .dropdown-content a:last-child {
   border: none; }
@@ -13546,13 +13549,12 @@ hr {
 .dashboard-filter .dropbtn {
   background-color: #191a35;
   color: white;
-  padding: 16px;
   font-size: 16px;
   border: 1px solid #5d5e72;
   border-radius: 2px;
   cursor: pointer;
   opacity: 90%;
-  width: 242px;
+  width: 100%;
   text-align: left; }
 
 .dashboard-filter .dropbtn::after {
@@ -13590,17 +13592,9 @@ hr {
   display: none;
   position: absolute;
   background-color: #f6f6f6;
-  min-width: 230px;
+  width: 100%;
   overflow: auto;
   z-index: 1; }
-
-.dashboard-filter .dropdown-content a {
-  color: rgba(255, 255, 255, 0.5);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 13px;
-  border-bottom: 1px solid rgba(151, 151, 151, 0.5); }
 
 .dashboard-filter .dropdown-content a:last-child {
   border: none; }

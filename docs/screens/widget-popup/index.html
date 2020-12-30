@@ -12,7 +12,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.b90679b5721ff4a21ed4bfda2221ea0d6728caf12203daee4f886e532fe87e9f.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.fe601fe80bc2a0ca97fbdc5b4cfc1b8faf18f1f2b1e3cbdd342c0e3b8cf0cb10.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -155,14 +155,23 @@
                                 aria-labelledby="home-tab">
                                 <p class="pt-3">Select a dashboard from the dropdown </p>
 
-                                <div class="dropdown dropdown-list w-200">
+                                <div class="dropdown dropdown-list w-220">
                                     <button type="button" onclick="dropdownsh()" class="dropbtn" id="dropbtn">Select
                                         dashboard </button>
-                                        <i class="fa fa-external-link" aria-hidden="false"></i>
+                                        
+
                                     <div id="myDropdown" class="dropdown-content">
                                         <input type="text" placeholder="Search Dashboard" id="myInput"
                                             onkeyup="filterFunction()">
-                                        
+                                        <div class="drop-list">
+                                            <a href="#about" onclick="selecteddd(this)">About</a>
+                                            <a href="#base" onclick="selecteddd(this)">Base</a>
+                                            <a href="#blog" onclick="selecteddd(this)">Blog</a>
+                                            <a href="#contact" onclick="selecteddd(this)">Contact</a>
+                                            <a href="#custom" onclick="selecteddd(this)">Custom</a>
+                                            <a href="#support" onclick="selecteddd(this)">Support</a>
+                                            <a href="#tools" onclick="selecteddd(this)">Tools</a>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -463,16 +472,16 @@
         <script>           
 
             function dropdownsh() {
-                document.getElementById("myDropdown").classList.add("show");                
-                document.getElementById("dropbtn").classList.toggle("remove-icon add-icon");
-            }
+                document.getElementById("myDropdown").classList.toggle("show");                
+                
+            }            
 
             function selecteddd(el) {
                 document.getElementById("dropbtn").innerText = el.text;                                        
-                var x = document.createElement("IMG");
-                x.setAttribute("src", "/binary-flux/images/ic_chevron_left-copy.svg");
-                document.body.appendChild(x);
-                myFunction();
+                
+                
+                
+                dropdownsh();
             }
 
             function filterFunction() {
@@ -519,24 +528,7 @@
                 dropdisplay[i].addEventListener('click', dropshow);
                 
             }
-            
-        
-            
-        
-        
-            
-            
-            
-        
-            
-            var droplist = document.querySelectorAll('.drop-list li');
-            
-        
-            
-            
-        
-        
-        
+
             
             function searchdraw () {
                 var searchbar = this.closest('.search-bar');
@@ -562,7 +554,7 @@
         
             function searchbtns () {
                 var searchbar = this.closest('.search-bar');
-                console.log(searchbar);
+                
                 if(searchbar.classList.contains("active")){
                     searchbar.classList.remove("active");
                 }
@@ -580,7 +572,7 @@
             
         
             var searchbuton = document.getElementsByClassName("search-bar__srch");
-            console.log(searchbuton);
+            
             for (var i=0; i < searchbuton.length; i++) {
                 searchbuton[i].addEventListener('click', searchbtns);        
             }
@@ -633,6 +625,56 @@
         
         </script>
 
+
+        
+        <script>
+            
+            var droplist2 = document.getElementsByClassName("drop-list");
+            
+            
+
+            var html = document.body.parentNode;
+
+            html.addEventListener('click', function(event) {
+                event.preventDefault();
+                for (var i=0; i<dropdisplay.length; i++) {
+                    if (dropdisplay[i].contains(event.target)) {
+                        
+                    }
+                    else{
+                        dropdisplay[i].classList.remove('shown');
+                        var templist = dropdisplay[i].parentNode.getElementsByClassName("drop-list");
+                        
+                        templist[0].classList.remove("show");
+                    }
+                }
+
+                
+                
+                
+                
+                
+                
+                
+                
+
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                    
+                
+                
+            });            
+
+        </script>
         
 
 
@@ -643,62 +685,7 @@
                     $('.toast').toast('show');
                 });
 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-
-
-                $('#data-src-drp .drop-list li').on("click", function () {
-                    var dropdisplayimg1 = $('#data-src-drp .drop-display .left .capt-img');
-                    var dropdisplaytxt1 = $('#data-src-drp .drop-display .left .capt-txt');
-
-                    var imgsrc1 = $(this).find('.capt-img').attr('src');
-                    var text1 = $(this).find('.capt-txt').html();
-
-                    dropdisplayimg1.attr('src', imgsrc1);
-                    dropdisplaytxt1.html(text1);
-
-                    $('#data-src-drp .drop-display').removeClass('shown');
-                    $('#data-src-drp .drop-list').removeClass('show');
-                });
-
-
-                $('#schedle-mod-drp .drop-list li').on("click", function () {
-                    var dropdisplayimg2 = $('#schedle-mod-drp .drop-display .left .capt-img');
-                    var dropdisplaytxt2 = $('#schedle-mod-drp .drop-display .left .capt-txt');
-
-                    var imgsrc2 = $(this).find('.capt-img').attr('src');
-                    var text2 = $(this).find('.capt-txt').html();
-
-                    dropdisplayimg2.attr('src', imgsrc2);
-                    dropdisplaytxt2.html(text2);
-
-                    $('#schedle-mod-drp .drop-display').removeClass('shown');
-                    $('#schedle-mod-drp .drop-list').removeClass('show');
-                });
-
-
-                $('#day-sett .drop-list li').on("click", function () {
-                    var dropdisplayimg3 = $('#day-sett .drop-display .left .capt-img');
-                    var dropdisplaytxt3 = $('#day-sett .drop-display .left .capt-txt');
-
-
-                    var text3 = $(this).find('.capt-txt').html();
-
-
-                    dropdisplaytxt3.html(text3);
-
-                    $('#day-sett .drop-display').removeClass('shown');
-                    $('#day-sett .drop-list').removeClass('show');
-                });
-
+           
 
                 
                 
@@ -710,45 +697,11 @@
                 
 
 
-                $('#reportsTab a').on('click', function (e) {
-                    e.preventDefault();
-                    $(this).tab('show');
-                });
+                
 
-                $('#reportsTab li').on('click', function () {
-
-                    $('#reportsTab li').removeClass('active');
-                    $(this).addClass('active');
-                });
+               
 
 
-                $('#day-sett .drop-list li').on("click", function () {
-                    var idcatch = $(this).children('.left').children('.capt-txt').attr('id');
-
-                    $('#weekly-show').removeClass('active');
-                    $('#monthly-show').removeClass('active');
-
-                    if (idcatch == 'd1') {
-                        console.log('d1 clicked');
-                        $('#day-val-changer').html('Days');
-                    } else if (idcatch == 'd2') {
-                        $('#weekly-show').addClass('active');
-                        $('#day-val-changer').html('Week');
-                    } else if (idcatch == 'd3') {
-                        $('#monthly-show').addClass('active');
-                        $('#day-val-changer').html('Months');
-                    } else if (idcatch == 'd4') {
-                        $('#day-val-changer').html('Hours');
-                    } else if (idcatch == 'd5') {
-                        $('#day-val-changer').html('Minutes');
-                    } else if (idcatch == 'd6') {
-                        $('#day-val-changer').html('Seconds');
-                    }
-                    else {
-                        console.log('Nothing to display');
-                    }
-
-                });
 
 
 
@@ -788,7 +741,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
-<script src="/binary-flux/js/app.js"></script>
+
 
         </div><script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -798,6 +751,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.32.0/codemirror.min.js"></script>
-<script src="/binary-flux/js/app.js"></script>
+
 </body>
 </html>
