@@ -1512,6 +1512,58 @@
 
 </script>
 
+
+<!-- Close Dropdown on click outside -->
+<script>
+            
+    var droplist2 = document.getElementsByClassName("drop-list");
+    // console.log(droplist2);
+    // console.log(dropdisplay);
+
+    var html = document.body.parentNode;
+
+    html.addEventListener('click', function(event) {
+        event.preventDefault();
+        for (var i=0; i<dropdisplay.length; i++) {
+            if (dropdisplay[i].contains(event.target)) {
+                // console.log('clicked menu link');
+            }
+            else{
+                dropdisplay[i].classList.remove('shown');
+                var templist = dropdisplay[i].parentNode.getElementsByClassName("drop-list");
+                // console.log(templist);
+                templist[0].classList.remove("show");
+            }
+        }
+
+        // for (var i=0; i<droplist2.length; i++) {
+        //     if (droplist2[i].contains(event.target)) {
+        //         console.log('clicked menu link2');
+        //     }
+        //     else{
+        //         droplist2[i].classList.remove('show');
+        //     }
+        // }
+
+
+        // if (dropdisplay[0].contains(event.target)) {
+        //     alert('clicked menu link');
+        // } else {
+        //     // alert('clicked outside of menu button');
+        //     // for (var i=0; i<dropdisplay.length; i++) {
+        //     //     dropdisplay[i].classList.remove('shown');
+        //     // }
+        //     // for (var i=0; i<droplist2.length; i++) {
+        //     //     droplist2[i].classList.remove('show');
+        //     // }
+            
+        //     // droplist2[0].classList.remove('show');
+        // }
+    });            
+
+</script>
+<!-- Close Dropdown on click outside -->
+
 <script>
 
     
