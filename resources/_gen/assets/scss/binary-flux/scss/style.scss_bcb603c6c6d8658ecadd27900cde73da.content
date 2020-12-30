@@ -8066,7 +8066,8 @@ select.custom-select-dropdown {
   @media screen and (max-width: 991px) {
     .progressbar-checkmark {
       padding-bottom: 27px;
-      padding-top: 20px; } }
+      padding-top: 20px;
+      display: none; } }
   @media screen and (max-width: 991px) {
     .progressbar-checkmark .first-child {
       position: relative;
@@ -13641,7 +13642,8 @@ hr {
   @media screen and (max-width: 991px) {
     .progressbar-content {
       padding-bottom: 27px;
-      padding-top: 20px; } }
+      padding-top: 20px;
+      display: none; } }
   .progressbar-content .progress__field label.radio-input {
     position: relative;
     padding-right: 20px;
@@ -13775,30 +13777,75 @@ hr {
   .gen__widget .gen__widget__control .gen__widget__save {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 992px) {
+      .gen__widget .gen__widget__control .gen__widget__save {
+        flex-direction: column; } }
     .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft {
       display: flex; }
+      @media screen and (max-width: 640px) {
+        .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px; } }
+      @media screen and (max-width: 640px) {
+        .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn-bgtp {
+          margin-right: 0px !important; } }
       .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn--save {
         display: none; }
         .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn--save.show {
           display: inline-block; }
       .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt {
         display: none; }
+        @media screen and (max-width: 992px) {
+          .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt {
+            margin-top: 10px;
+            justify-content: flex-end; } }
+        @media screen and (max-width: 640px) {
+          .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt {
+            flex-direction: column;
+            align-items: center; } }
         .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt.show {
           display: flex; }
+        @media screen and (max-width: 640px) {
+          .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt .dropdown-noborder {
+            margin-right: 0px !important; } }
   .gen__widget .gen__widget__control .gen__widget__info {
     display: none; }
+    @media screen and (max-width: 992px) {
+      .gen__widget .gen__widget__control .gen__widget__info {
+        flex-direction: column; } }
+    @media screen and (max-width: 992px) {
+      .gen__widget .gen__widget__control .gen__widget__info .widget__item {
+        margin-bottom: 10px; } }
     .gen__widget .gen__widget__control .gen__widget__info .widget__item p {
       min-height: 36px;
       opacity: 0.4; }
-    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-160 {
+      @media screen and (max-width: 992px) {
+        .gen__widget .gen__widget__control .gen__widget__info .widget__item p {
+          min-height: 18px; } }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-166 {
       max-width: 166px;
       width: 20%; }
+      @media screen and (max-width: 992px) {
+        .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-166 {
+          width: 100%;
+          max-width: initial; } }
     .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-200 {
       max-width: 200px;
       width: 20%; }
+      @media screen and (max-width: 992px) {
+        .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-200 {
+          width: 100%;
+          max-width: initial; } }
     .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-625 {
       max-width: 625px;
       width: 60%; }
+      @media screen and (max-width: 992px) {
+        .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-625 {
+          width: 100%;
+          max-width: initial; } }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item .drpdwn-dtsrc {
+      max-width: 264px; }
     .gen__widget .gen__widget__control .gen__widget__info.show {
       display: flex; }
 

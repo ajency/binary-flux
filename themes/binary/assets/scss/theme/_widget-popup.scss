@@ -288,6 +288,7 @@
     @media screen and (max-width: 991px){
         padding-bottom: 27px;
         padding-top: 20px;
+        display: none;
     }
     .progress__field{
         label.radio-input{
@@ -513,8 +514,21 @@
         .gen__widget__save{
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width:992px) {
+                flex-direction: column;
+            }
             .widget__save__lft{
                 display: flex;
+                @media screen and (max-width:640px) {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .btn-bgtp{
+                    @media screen and (max-width:640px) {
+                        margin-right: 0px !important;
+                    }
+                }
                 .btn--save{
                     display: none;
                     &.show{
@@ -523,8 +537,21 @@
                 }
                 &.widget__save__rt{
                     display: none;
+                    @media screen and (max-width:992px) {
+                        margin-top: 10px;
+                        justify-content: flex-end;
+                    }
+                    @media screen and (max-width:640px) {
+                        flex-direction: column;
+                        align-items: center;
+                    }
                     &.show{
                         display: flex;
+                    }
+                    .dropdown-noborder{
+                        @media screen and (max-width:640px) {
+                            margin-right: 0px !important;
+                        }
                     }
                 }
             }
@@ -532,22 +559,46 @@
         .gen__widget__info{
             display: none;
             // margin-top: 45px;
+            @media screen and (max-width:992px) {
+                flex-direction: column;
+            }
             .widget__item {
+                @media screen and (max-width:992px) {
+                    margin-bottom: 10px;
+                }
                 p{
                     min-height: 36px;
                     opacity: 0.4;
+                    @media screen and (max-width:992px) {
+                        min-height: 18px;
+                    }
                 }
-                &.fb-160{
+                &.fb-166{
                     max-width: 166px;
                     width: 20%;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                        max-width: initial;
+                    }
                 }
                 &.fb-200{
                     max-width: 200px;
                     width: 20%;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                        max-width: initial;
+                    }
                 }
                 &.fb-625{
                     max-width: 625px;
                     width: 60%;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                        max-width: initial;
+                    }
+                }
+                .drpdwn-dtsrc{
+                    max-width: 264px;
                 }
             }
             &.show{
