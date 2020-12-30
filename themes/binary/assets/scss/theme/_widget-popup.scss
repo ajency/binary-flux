@@ -218,9 +218,22 @@
         background-color: #f6f6f6;
         // min-width: 230px;
         width: 100%;
-        // max-height: 350px;
+        height: 353px;
         overflow: auto;
         z-index: 1;
+        // &::before{
+        //     content: " ";
+        //     position: absolute;
+        //     right: 0;
+        //     top: -15px;
+        //     width: 0px;
+        //     height: 0px;
+        //     background-color: transparent;
+        //     border-right: 10px solid #fff;
+        //     border-top: 5px solid #fff;
+        //     border-left: 10px solid transparent;
+        //     border-bottom: 5px solid transparent;
+        // }
     }   
     
     .dropdown-content a:last-child {

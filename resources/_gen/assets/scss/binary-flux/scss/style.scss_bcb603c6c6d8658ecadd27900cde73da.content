@@ -13593,6 +13593,7 @@ hr {
   position: absolute;
   background-color: #f6f6f6;
   width: 100%;
+  height: 353px;
   overflow: auto;
   z-index: 1; }
 
