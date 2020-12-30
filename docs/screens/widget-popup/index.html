@@ -636,10 +636,16 @@
             var html = document.body.parentNode;
 
             html.addEventListener('click', function(event) {
-                event.preventDefault();
+                
+                
                 for (var i=0; i<dropdisplay.length; i++) {
                     if (dropdisplay[i].contains(event.target)) {
                         
+                        event.stopPropagation();
+                    }
+                    else if (droplist2[i].contains(event.target)) {
+                        console.log('clicked menu link2');
+                        event.stopPropagation();
                     }
                     else{
                         dropdisplay[i].classList.remove('shown');
