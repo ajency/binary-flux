@@ -654,10 +654,16 @@
             var html = document.body.parentNode;
 
             html.addEventListener('click', function(event) {
-                event.preventDefault();
+                // event.preventDefault();
+                // event.stopPropagation();
                 for (var i=0; i<dropdisplay.length; i++) {
                     if (dropdisplay[i].contains(event.target)) {
                         // console.log('clicked menu link');
+                        event.stopPropagation();
+                    }
+                    else if (droplist2[i].contains(event.target)) {
+                        console.log('clicked menu link2');
+                        event.stopPropagation();
                     }
                     else{
                         dropdisplay[i].classList.remove('shown');

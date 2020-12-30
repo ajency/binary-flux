@@ -93,15 +93,22 @@
             background-color:#20284c;
             border-radius: 2px;
         }
+        input[type=checkbox]:checked::before{
+            background: #1391FF;
+            color: #20284c;
+            content: "\2713";
+            text-align: center;
+            border-color: #1391FF;
+        }
     }
    
-   label input[type=checkbox]:checked::before{
-    background: #1391FF;
-    color: #20284c;
-    content: "\2713";
-    text-align: center;
-    border-color: #1391FF;
-   }
+//    label input[type=checkbox]:checked::before{
+//     background: #1391FF;
+//     color: #20284c;
+//     content: "\2713";
+//     text-align: center;
+//     border-color: #1391FF;
+//    }
    small{
        color:#ffffff;
        opacity: 50%;
