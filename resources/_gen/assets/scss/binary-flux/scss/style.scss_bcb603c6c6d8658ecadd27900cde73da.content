@@ -13401,17 +13401,6 @@ hr {
 .w-200 {
   width: 200px; }
 
-.dropdown-list:after {
-  content: '';
-  position: absolute;
-  right: 12px;
-  width: 13px;
-  height: 13px;
-  color: #fff;
-  background: url(../images/ic_chevron_left.svg) no-repeat;
-  background-size: 13px 13px;
-  top: 13px; }
-
 .dropdown-list #myInput {
   box-sizing: border-box;
   background-image: url(../images/ic_search.svg);
