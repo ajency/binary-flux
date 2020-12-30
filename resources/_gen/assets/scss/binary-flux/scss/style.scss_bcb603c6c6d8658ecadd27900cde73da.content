@@ -13537,6 +13537,120 @@ hr {
     font-weight: bold;
   }
 */
+.dashboard-filter p {
+  opacity: 0.7;
+  color: #ffffff;
+  font-family: "Nunito Sans";
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px; }
+
+.dashboard-filter input[type="text"] {
+  background-color: #20284c;
+  color: #ffffff; }
+
+.dashboard-filter .drop-list {
+  background-color: #20284c;
+  box-shadow: 1px 7px 40px 2px rgba(0, 0, 0, 0.6); }
+
+.dashboard-filter .dropbtn {
+  background-color: #191a35;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: 1px solid #5d5e72;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 90%;
+  width: 242px;
+  text-align: left; }
+
+.dashboard-filter .dropbtn::after {
+  content: "\f078";
+  font-family: "FontAwesome";
+  float: right;
+  opacity: 65%; }
+
+.dashboard-filter .dropbtn span.mystyle::after {
+  content: "\f35d";
+  font-family: "FontAwesome"; }
+
+.dashboard-filter .dropbtn:hover,
+.dashboard-filter .dropbtn:focus {
+  background-color: #191a35; }
+
+.dashboard-filter #myInput {
+  box-sizing: border-box;
+  background-image: url("ic_search.svg");
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 7px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5); }
+
+.dashboard-filter #myInput:focus {
+  outline: 0px solid #ddd; }
+
+.dashboard-filter .dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dashboard-filter .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  z-index: 1; }
+
+.dashboard-filter .dropdown-content a {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 13px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5); }
+
+.dashboard-filter .dropdown-content a:last-child {
+  border: none; }
+
+.dashboard-filter .dropdown a:hover {
+  opacity: 0.4;
+  background-color: #1391ff; }
+
+.dashboard-filter .show {
+  display: block; }
+
+.dashboard-filter input[type="text"]::placeholder {
+  font-size: 12px;
+  color: #659cc8;
+  font-weight: 800; }
+
+.dashboard-filter .search-box {
+  caret-color: #ffffff; }
+
+.create-dashboard label {
+  color: #ffffff; }
+
+.create-dashboard .form-control {
+  background-color: #191a35;
+  border-color: #5D5E72;
+  border-radius: 2px; }
+
+.create-dashboard input[type=text]::placeholder {
+  color: #ffffff;
+  opacity: 20%; }
+
+.create-dashboard .btn-primary {
+  background-color: #1391FF;
+  color: #0A0C1B;
+  font-weight: 800; }
+
+.create-dashboard .disabled {
+  opacity: 0.5; }
+
 .progressbar-content {
   display: flex;
   font-size: 14px; }
