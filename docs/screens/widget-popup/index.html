@@ -12,7 +12,7 @@
 	
 		
 			
-			<link rel="stylesheet" href="/binary-flux/css/style.min.fe601fe80bc2a0ca97fbdc5b4cfc1b8faf18f1f2b1e3cbdd342c0e3b8cf0cb10.css">
+			<link rel="stylesheet" href="/binary-flux/css/style.min.01612bc74598f4236d848d488c1f140fe53e5b66eabd337e5d7c3bda3fd19b09.css">
 		
 		<link rel="stylesheet" href="/binary-flux/vendor/select2/select2.min.css">
 		<link rel="stylesheet" href="/binary-flux/vendor/highchart/highcharts.css">
@@ -109,7 +109,8 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <div class="left w-100">
-                            <div class="col-md-3 pl-0">
+                            
+                            <div class="col-md- pl-0">
                                 <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
                             </div>
                             
@@ -154,26 +155,30 @@
                             <div class="tab-pane active dashboard-filter " id="onetime" role="tabpanel"
                                 aria-labelledby="home-tab">
                                 <p class="pt-3">Select a dashboard from the dropdown </p>
-
-                                <div class="dropdown dropdown-list w-220">
-                                    <button type="button" onclick="dropdownsh()" class="dropbtn" id="dropbtn">Select
-                                        dashboard </button>
-                                        
-
-                                    <div id="myDropdown" class="dropdown-content">
-                                        <input type="text" placeholder="Search Dashboard" id="myInput"
-                                            onkeyup="filterFunction()">
-                                        <div class="drop-list">
-                                            <a href="#about" onclick="selecteddd(this)">About</a>
-                                            <a href="#base" onclick="selecteddd(this)">Base</a>
-                                            <a href="#blog" onclick="selecteddd(this)">Blog</a>
-                                            <a href="#contact" onclick="selecteddd(this)">Contact</a>
-                                            <a href="#custom" onclick="selecteddd(this)">Custom</a>
-                                            <a href="#support" onclick="selecteddd(this)">Support</a>
-                                            <a href="#tools" onclick="selecteddd(this)">Tools</a>
+                                <div class="cdboard__dropCont">
+                                    <div class="dropdown dropdown-list w-220">
+                                        <button type="button" onclick="dropdownsh()" class="dropbtn" id="dropbtn">Select
+                                            dashboard </button>
+                                            
+    
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <input type="text" placeholder="Search Dashboard" id="myInput"
+                                                onkeyup="filterFunction()">
+                                            <div class="drop-list">
+                                                <a href="#about" onclick="selecteddd(this)">About</a>
+                                                <a href="#base" onclick="selecteddd(this)">Base</a>
+                                                <a href="#blog" onclick="selecteddd(this)">Blog</a>
+                                                <a href="#contact" onclick="selecteddd(this)">Contact</a>
+                                                <a href="#custom" onclick="selecteddd(this)">Custom</a>
+                                                <a href="#support" onclick="selecteddd(this)">Support</a>
+                                                <a href="#tools" onclick="selecteddd(this)">Tools</a>
+                                            </div>
                                         </div>
                                     </div>
+                                    
+                                    <a href="#!"><img src="/binary-flux/images/ext-links.svg" class="px-1"/></a>
                                 </div>
+                                
 
                                 
 
@@ -232,9 +237,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <div class="left w-100">
-                            <div class="col-md-3 pl-0">
+                            <div class="col-md- pl-0">
                                 <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
                             </div>
+                            
 
                             <div class="progressbar-checkmark">
                                 <div class="first-child active">
@@ -629,9 +635,10 @@
         
         <script>
             
-            var droplist2 = document.getElementsByClassName("drop-list");
-            
-            
+            var droplist2 = document.getElementsByClassName("drop-list");          
+
+            var srchdrdpdwn = document.getElementById("myDropdown");
+            var dropdownlist = document.getElementsByClassName("dropdown-list");
 
             var html = document.body.parentNode;
 
@@ -644,7 +651,9 @@
                         event.stopPropagation();
                     }
                     else if (droplist2[i].contains(event.target)) {
-                        console.log('clicked menu link2');
+                        event.stopPropagation();
+                    }
+                    else if(dropdownlist[0].contains(event.target)) { 
                         event.stopPropagation();
                     }
                     else{
@@ -652,32 +661,10 @@
                         var templist = dropdisplay[i].parentNode.getElementsByClassName("drop-list");
                         
                         templist[0].classList.remove("show");
+                        srchdrdpdwn.classList.remove("show");
                     }
                 }
 
-                
-                
-                
-                
-                
-                
-                
-                
-
-
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                    
-                
-                
             });            
 
         </script>

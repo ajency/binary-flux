@@ -88,7 +88,10 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <div class="left w-100">
-                            <div class="col-md-3 pl-0">
+                            <!-- <div class="col-md-3 pl-0">
+                                <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
+                            </div> -->
+                            <div class="col-md- pl-0">
                                 <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
                             </div>
                             <!-- <div class="progressbar-content col-md-6 col-sm-6 col-xs-12">
@@ -158,26 +161,30 @@
                             <div class="tab-pane active dashboard-filter " id="onetime" role="tabpanel"
                                 aria-labelledby="home-tab">
                                 <p class="pt-3">Select a dashboard from the dropdown </p>
-
-                                <div class="dropdown dropdown-list w-220">
-                                    <button type="button" onclick="dropdownsh()" class="dropbtn" id="dropbtn">Select
-                                        dashboard </button>
-                                        <!-- <i class="fa fa-external-link" aria-hidden="true"></i> -->
-
-                                    <div id="myDropdown" class="dropdown-content">
-                                        <input type="text" placeholder="Search Dashboard" id="myInput"
-                                            onkeyup="filterFunction()">
-                                        <div class="drop-list">
-                                            <a href="#about" onclick="selecteddd(this)">About</a>
-                                            <a href="#base" onclick="selecteddd(this)">Base</a>
-                                            <a href="#blog" onclick="selecteddd(this)">Blog</a>
-                                            <a href="#contact" onclick="selecteddd(this)">Contact</a>
-                                            <a href="#custom" onclick="selecteddd(this)">Custom</a>
-                                            <a href="#support" onclick="selecteddd(this)">Support</a>
-                                            <a href="#tools" onclick="selecteddd(this)">Tools</a>
+                                <div class="cdboard__dropCont">
+                                    <div class="dropdown dropdown-list w-220">
+                                        <button type="button" onclick="dropdownsh()" class="dropbtn" id="dropbtn">Select
+                                            dashboard </button>
+                                            <!-- <i class="fa fa-external-link" aria-hidden="true"></i> -->
+    
+                                        <div id="myDropdown" class="dropdown-content">
+                                            <input type="text" placeholder="Search Dashboard" id="myInput"
+                                                onkeyup="filterFunction()">
+                                            <div class="drop-list">
+                                                <a href="#about" onclick="selecteddd(this)">About</a>
+                                                <a href="#base" onclick="selecteddd(this)">Base</a>
+                                                <a href="#blog" onclick="selecteddd(this)">Blog</a>
+                                                <a href="#contact" onclick="selecteddd(this)">Contact</a>
+                                                <a href="#custom" onclick="selecteddd(this)">Custom</a>
+                                                <a href="#support" onclick="selecteddd(this)">Support</a>
+                                                <a href="#tools" onclick="selecteddd(this)">Tools</a>
+                                            </div>
                                         </div>
                                     </div>
+                                    
+                                    <a href="#!"><img src="{{"images/ext-links.svg" | relURL }}" class="px-1"/></a>
                                 </div>
+                                
 
                                 
 
@@ -236,9 +243,12 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <div class="left w-100">
-                            <div class="col-md-3 pl-0">
+                            <div class="col-md- pl-0">
                                 <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
                             </div>
+                            <!-- <div class="col-md-3 pl-0">
+                                <h4 class="modal-title text-uppercase mr-0">Create a Widget</h4>
+                            </div> -->
 
                             <div class="progressbar-checkmark">
                                 <div class="first-child active">
@@ -647,9 +657,10 @@
         <!-- Close Dropdown on click outside -->
         <script>
             
-            var droplist2 = document.getElementsByClassName("drop-list");
-            // console.log(droplist2);
-            // console.log(dropdisplay);
+            var droplist2 = document.getElementsByClassName("drop-list");          
+
+            var srchdrdpdwn = document.getElementById("myDropdown");
+            var dropdownlist = document.getElementsByClassName("dropdown-list");
 
             var html = document.body.parentNode;
 
@@ -662,7 +673,9 @@
                         event.stopPropagation();
                     }
                     else if (droplist2[i].contains(event.target)) {
-                        console.log('clicked menu link2');
+                        event.stopPropagation();
+                    }
+                    else if(dropdownlist[0].contains(event.target)) { //For the search dropdown in Select dashboard Tab
                         event.stopPropagation();
                     }
                     else{
@@ -670,32 +683,10 @@
                         var templist = dropdisplay[i].parentNode.getElementsByClassName("drop-list");
                         // console.log(templist);
                         templist[0].classList.remove("show");
+                        srchdrdpdwn.classList.remove("show");
                     }
                 }
 
-                // for (var i=0; i<droplist2.length; i++) {
-                //     if (droplist2[i].contains(event.target)) {
-                //         console.log('clicked menu link2');
-                //     }
-                //     else{
-                //         droplist2[i].classList.remove('show');
-                //     }
-                // }
-
-
-                // if (dropdisplay[0].contains(event.target)) {
-                //     alert('clicked menu link');
-                // } else {
-                //     // alert('clicked outside of menu button');
-                //     // for (var i=0; i<dropdisplay.length; i++) {
-                //     //     dropdisplay[i].classList.remove('shown');
-                //     // }
-                //     // for (var i=0; i<droplist2.length; i++) {
-                //     //     droplist2[i].classList.remove('show');
-                //     // }
-                    
-                //     // droplist2[0].classList.remove('show');
-                // }
             });            
 
         </script>

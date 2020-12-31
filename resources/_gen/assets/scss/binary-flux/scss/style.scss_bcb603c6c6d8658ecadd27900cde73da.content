@@ -8062,19 +8062,20 @@ select.custom-select-dropdown {
 /* Checkmark */
 .progressbar-checkmark {
   display: flex;
-  font-size: 14px; }
-  @media screen and (max-width: 991px) {
+  font-size: 14px;
+  width: calc(100% - 250px);
+  justify-content: center;
+  margin-left: 20px; }
+  @media screen and (max-width: 768px) {
     .progressbar-checkmark {
-      padding-bottom: 27px;
-      padding-top: 20px; } }
-  @media screen and (max-width: 991px) {
-    .progressbar-checkmark .first-child {
-      position: relative;
-      right: -13px;
-      top: -20px; } }
+      margin-left: 0px;
+      width: 100%; } }
   .progressbar-checkmark .first-child.active span {
     font-weight: bold;
     color: #fff; }
+  @media screen and (max-width: 440px) {
+    .progressbar-checkmark .first-child span {
+      font-size: 10px; } }
   .progressbar-checkmark .first-child label.checkmark-input {
     position: relative;
     padding-right: 20px;
@@ -8097,11 +8098,6 @@ select.custom-select-dropdown {
       height: 5px;
       border-left: 2px solid #fff;
       border-bottom: 2px solid #fff; }
-  @media screen and (max-width: 991px) {
-    .progressbar-checkmark .last-child {
-      position: absolute;
-      bottom: 0;
-      right: 4px; } }
   .progressbar-checkmark .last-child.active span {
     font-weight: bold;
     color: #fff; }
@@ -8127,19 +8123,21 @@ select.custom-select-dropdown {
       height: 5px;
       border-left: 2px solid #fff;
       border-bottom: 2px solid #fff; }
+  @media screen and (max-width: 440px) {
+    .progressbar-checkmark .last-child span {
+      font-size: 10px; } }
   .progressbar-checkmark .line {
-    width: 300px;
+    width: calc(100% - 270px);
+    max-width: 300px;
     background-color: #fff;
     height: 1px;
     position: relative;
     top: 10px;
     margin-left: 5px;
     margin-right: 5px; }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 440px) {
       .progressbar-checkmark .line {
-        width: 1px;
-        top: 3px;
-        height: 130px; } }
+        width: calc(100% - 240px); } }
 /* Button style */
 .dropdown-noborder {
   position: relative; }
@@ -13593,6 +13591,7 @@ hr {
   position: absolute;
   background-color: #f6f6f6;
   width: 100%;
+  height: 353px;
   overflow: auto;
   z-index: 1; }
 
@@ -13636,11 +13635,14 @@ hr {
 
 .progressbar-content {
   display: flex;
-  font-size: 14px; }
-  @media screen and (max-width: 991px) {
+  font-size: 14px;
+  width: calc(100% - 250px);
+  justify-content: center;
+  margin-left: 20px; }
+  @media screen and (max-width: 768px) {
     .progressbar-content {
-      padding-bottom: 27px;
-      padding-top: 20px; } }
+      margin-left: 0px;
+      width: 100%; } }
   .progressbar-content .progress__field label.radio-input {
     position: relative;
     padding-right: 20px;
@@ -13663,13 +13665,11 @@ hr {
       position: absolute;
       left: 5.5px;
       top: 3.5px; }
+  @media screen and (max-width: 440px) {
+    .progressbar-content .progress__field span {
+      font-size: 10px; } }
   .progressbar-content .progress__field.active label.radio-input::before {
     background-color: #1391FF; }
-  @media screen and (max-width: 991px) {
-    .progressbar-content .first-child {
-      position: relative;
-      right: -13px;
-      top: -20px; } }
   .progressbar-content .first-child.active span {
     font-weight: bold;
     color: #fff; }
@@ -13677,13 +13677,6 @@ hr {
     position: relative;
     padding-right: 20px;
     top: -5px; }
-    .progressbar-content .first-child label.radio-input.active:after {
-      content: ' '; }
-  @media screen and (max-width: 991px) {
-    .progressbar-content .last-child {
-      position: absolute;
-      bottom: 0;
-      right: 4px; } }
   .progressbar-content .last-child.active span {
     font-weight: bold;
     color: #fff; }
@@ -13702,18 +13695,17 @@ hr {
       height: 7.5px;
       background-color: #1391ff; }
   .progressbar-content .line {
-    width: 300px;
+    width: calc(100% - 270px);
+    max-width: 300px;
     background-color: #fff;
     height: 1px;
     position: relative;
     top: 10px;
     margin-left: 5px;
     margin-right: 5px; }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 440px) {
       .progressbar-content .line {
-        width: 1px;
-        top: 3px;
-        height: 130px; } }
+        width: calc(100% - 240px); } }
 .toast--extrainfo {
   height: 67.7px;
   width: 446.7px;
@@ -13747,6 +13739,11 @@ hr {
       .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li a {
         text-decoration: none; }
 
+.dashboard-widget .modal-body .nav-tabs {
+  display: flex; }
+  @media screen and (max-width: 440px) {
+    .dashboard-widget .modal-body .nav-tabs .nav-item .nav-link {
+      font-size: 10px; } }
 .dashboard-widget .modal-body .btn--saveboard {
   color: #0A0C1B; }
 
@@ -13774,30 +13771,75 @@ hr {
   .gen__widget .gen__widget__control .gen__widget__save {
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 992px) {
+      .gen__widget .gen__widget__control .gen__widget__save {
+        flex-direction: column; } }
     .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft {
       display: flex; }
+      @media screen and (max-width: 640px) {
+        .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px; } }
+      @media screen and (max-width: 640px) {
+        .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn-bgtp {
+          margin-right: 0px !important; } }
       .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn--save {
         display: none; }
         .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft .btn--save.show {
           display: inline-block; }
       .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt {
         display: none; }
+        @media screen and (max-width: 992px) {
+          .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt {
+            margin-top: 10px;
+            justify-content: flex-end; } }
+        @media screen and (max-width: 640px) {
+          .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt {
+            flex-direction: column;
+            align-items: center; } }
         .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt.show {
           display: flex; }
+        @media screen and (max-width: 640px) {
+          .gen__widget .gen__widget__control .gen__widget__save .widget__save__lft.widget__save__rt .dropdown-noborder {
+            margin-right: 0px !important; } }
   .gen__widget .gen__widget__control .gen__widget__info {
     display: none; }
+    @media screen and (max-width: 992px) {
+      .gen__widget .gen__widget__control .gen__widget__info {
+        flex-direction: column; } }
+    @media screen and (max-width: 992px) {
+      .gen__widget .gen__widget__control .gen__widget__info .widget__item {
+        margin-bottom: 10px; } }
     .gen__widget .gen__widget__control .gen__widget__info .widget__item p {
       min-height: 36px;
       opacity: 0.4; }
-    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-160 {
+      @media screen and (max-width: 992px) {
+        .gen__widget .gen__widget__control .gen__widget__info .widget__item p {
+          min-height: 18px; } }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-166 {
       max-width: 166px;
       width: 20%; }
+      @media screen and (max-width: 992px) {
+        .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-166 {
+          width: 100%;
+          max-width: initial; } }
     .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-200 {
       max-width: 200px;
       width: 20%; }
+      @media screen and (max-width: 992px) {
+        .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-200 {
+          width: 100%;
+          max-width: initial; } }
     .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-625 {
       max-width: 625px;
       width: 60%; }
+      @media screen and (max-width: 992px) {
+        .gen__widget .gen__widget__control .gen__widget__info .widget__item.fb-625 {
+          width: 100%;
+          max-width: initial; } }
+    .gen__widget .gen__widget__control .gen__widget__info .widget__item .drpdwn-dtsrc {
+      max-width: 264px; }
     .gen__widget .gen__widget__control .gen__widget__info.show {
       display: flex; }
 

@@ -218,9 +218,22 @@
         background-color: #f6f6f6;
         // min-width: 230px;
         width: 100%;
-        // max-height: 350px;
+        height: 353px;
         overflow: auto;
         z-index: 1;
+        // &::before{
+        //     content: " ";
+        //     position: absolute;
+        //     right: 0;
+        //     top: -15px;
+        //     width: 0px;
+        //     height: 0px;
+        //     background-color: transparent;
+        //     border-right: 10px solid #fff;
+        //     border-top: 5px solid #fff;
+        //     border-left: 10px solid transparent;
+        //     border-bottom: 5px solid transparent;
+        // }
     }   
     
     .dropdown-content a:last-child {
@@ -272,9 +285,17 @@
 .progressbar-content{
     display: flex;
     font-size: 14px;
+    width: calc(100% - 250px);
+    justify-content: center;
+    margin-left: 20px;
     @media screen and (max-width: 991px){
-        padding-bottom: 27px;
-        padding-top: 20px;
+        // padding-bottom: 27px;
+        // padding-top: 20px;
+        // display: none;
+    }
+    @media screen and (max-width: 768px){
+        margin-left: 0px;
+        width: 100%;
     }
     .progress__field{
         label.radio-input{
@@ -308,6 +329,11 @@
                 top: 3.5px;
             }
         }
+        span{
+            @media screen and (max-width: 440px){
+                font-size: 10px;
+            }
+        }
         &.active{
             label.radio-input {
                 &::before{
@@ -318,9 +344,9 @@
     }
     .first-child{
         @media screen and (max-width: 991px){
-            position: relative;
-            right: -13px;
-            top: -20px;
+            // position: relative;
+            // right: -13px;
+            // top: -20px;
         }
         &.active{
             span{
@@ -331,30 +357,14 @@
         label.radio-input{
             position: relative;
             padding-right: 20px;
-            top:-5px;
-            
-            &.active{
-                &:before{
-                    // border:2px solid #1391ff !important;
-                }
-                &:after{
-                    content: ' ';
-                    // position: absolute;
-                    // left: 7.5px;
-                    // top: 4.5px;
-                    // border-radius: 50%;
-                    // width: 7.5px;
-                    // height: 7.5px;
-                    // background-color: #1391ff;
-                }
-            }
+            top:-5px;           
         } 
     }
     .last-child{
         @media screen and (max-width: 991px){
-            position: absolute;
-            bottom: 0;
-            right: 4px;
+            // position: absolute;
+            // bottom: 0;
+            // right: 4px;
         }
         &.active{
             span{
@@ -393,7 +403,8 @@
         }
     }
     .line{
-        width: 300px;
+        width: calc(100% - 270px);
+        max-width: 300px;
         background-color: #fff;
         height: 1px;
         position: relative;
@@ -401,9 +412,12 @@
         margin-left: 5px;
         margin-right: 5px;
         @media screen and (max-width: 991px){
-            width: 1px;
-            top: 3px;
-            height: 130px;
+            // width: 1px;
+            // top: 3px;
+            // height: 130px;
+        }
+        @media screen and (max-width: 440px){
+            width: calc(100% - 240px);
         }
     }
 }
@@ -461,6 +475,16 @@
 
 .dashboard-widget{
     .modal-body{
+        .nav-tabs{
+            display: flex;
+            .nav-item{
+                .nav-link{
+                    @media screen and (max-width:440px) {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
         .btn--saveboard{
             color: #0A0C1B;
         }
@@ -500,8 +524,21 @@
         .gen__widget__save{
             display: flex;
             justify-content: space-between;
+            @media screen and (max-width:992px) {
+                flex-direction: column;
+            }
             .widget__save__lft{
                 display: flex;
+                @media screen and (max-width:640px) {
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .btn-bgtp{
+                    @media screen and (max-width:640px) {
+                        margin-right: 0px !important;
+                    }
+                }
                 .btn--save{
                     display: none;
                     &.show{
@@ -510,8 +547,21 @@
                 }
                 &.widget__save__rt{
                     display: none;
+                    @media screen and (max-width:992px) {
+                        margin-top: 10px;
+                        justify-content: flex-end;
+                    }
+                    @media screen and (max-width:640px) {
+                        flex-direction: column;
+                        align-items: center;
+                    }
                     &.show{
                         display: flex;
+                    }
+                    .dropdown-noborder{
+                        @media screen and (max-width:640px) {
+                            margin-right: 0px !important;
+                        }
                     }
                 }
             }
@@ -519,22 +569,46 @@
         .gen__widget__info{
             display: none;
             // margin-top: 45px;
+            @media screen and (max-width:992px) {
+                flex-direction: column;
+            }
             .widget__item {
+                @media screen and (max-width:992px) {
+                    margin-bottom: 10px;
+                }
                 p{
                     min-height: 36px;
                     opacity: 0.4;
+                    @media screen and (max-width:992px) {
+                        min-height: 18px;
+                    }
                 }
-                &.fb-160{
+                &.fb-166{
                     max-width: 166px;
                     width: 20%;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                        max-width: initial;
+                    }
                 }
                 &.fb-200{
                     max-width: 200px;
                     width: 20%;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                        max-width: initial;
+                    }
                 }
                 &.fb-625{
                     max-width: 625px;
                     width: 60%;
+                    @media screen and (max-width:992px) {
+                        width: 100%;
+                        max-width: initial;
+                    }
+                }
+                .drpdwn-dtsrc{
+                    max-width: 264px;
                 }
             }
             &.show{
