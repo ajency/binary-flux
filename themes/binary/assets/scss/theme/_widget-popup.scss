@@ -357,23 +357,7 @@
         label.radio-input{
             position: relative;
             padding-right: 20px;
-            top:-5px;
-            
-            &.active{
-                &:before{
-                    // border:2px solid #1391ff !important;
-                }
-                &:after{
-                    content: ' ';
-                    // position: absolute;
-                    // left: 7.5px;
-                    // top: 4.5px;
-                    // border-radius: 50%;
-                    // width: 7.5px;
-                    // height: 7.5px;
-                    // background-color: #1391ff;
-                }
-            }
+            top:-5px;           
         } 
     }
     .last-child{
