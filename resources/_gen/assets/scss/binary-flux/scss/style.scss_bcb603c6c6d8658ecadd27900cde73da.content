@@ -8062,20 +8062,20 @@ select.custom-select-dropdown {
 /* Checkmark */
 .progressbar-checkmark {
   display: flex;
-  font-size: 14px; }
-  @media screen and (max-width: 991px) {
+  font-size: 14px;
+  width: calc(100% - 250px);
+  justify-content: center;
+  margin-left: 20px; }
+  @media screen and (max-width: 768px) {
     .progressbar-checkmark {
-      padding-bottom: 27px;
-      padding-top: 20px;
-      display: none; } }
-  @media screen and (max-width: 991px) {
-    .progressbar-checkmark .first-child {
-      position: relative;
-      right: -13px;
-      top: -20px; } }
+      margin-left: 0px;
+      width: 100%; } }
   .progressbar-checkmark .first-child.active span {
     font-weight: bold;
     color: #fff; }
+  @media screen and (max-width: 440px) {
+    .progressbar-checkmark .first-child span {
+      font-size: 10px; } }
   .progressbar-checkmark .first-child label.checkmark-input {
     position: relative;
     padding-right: 20px;
@@ -8098,11 +8098,6 @@ select.custom-select-dropdown {
       height: 5px;
       border-left: 2px solid #fff;
       border-bottom: 2px solid #fff; }
-  @media screen and (max-width: 991px) {
-    .progressbar-checkmark .last-child {
-      position: absolute;
-      bottom: 0;
-      right: 4px; } }
   .progressbar-checkmark .last-child.active span {
     font-weight: bold;
     color: #fff; }
@@ -8128,19 +8123,21 @@ select.custom-select-dropdown {
       height: 5px;
       border-left: 2px solid #fff;
       border-bottom: 2px solid #fff; }
+  @media screen and (max-width: 440px) {
+    .progressbar-checkmark .last-child span {
+      font-size: 10px; } }
   .progressbar-checkmark .line {
-    width: 300px;
+    width: calc(100% - 270px);
+    max-width: 300px;
     background-color: #fff;
     height: 1px;
     position: relative;
     top: 10px;
     margin-left: 5px;
     margin-right: 5px; }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 440px) {
       .progressbar-checkmark .line {
-        width: 1px;
-        top: 3px;
-        height: 130px; } }
+        width: calc(100% - 240px); } }
 /* Button style */
 .dropdown-noborder {
   position: relative; }
@@ -13680,8 +13677,6 @@ hr {
     position: relative;
     padding-right: 20px;
     top: -5px; }
-    .progressbar-content .first-child label.radio-input.active:after {
-      content: ' '; }
   .progressbar-content .last-child.active span {
     font-weight: bold;
     color: #fff; }
