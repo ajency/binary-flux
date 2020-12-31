@@ -13638,12 +13638,14 @@ hr {
 
 .progressbar-content {
   display: flex;
-  font-size: 14px; }
-  @media screen and (max-width: 991px) {
+  font-size: 14px;
+  width: calc(100% - 250px);
+  justify-content: center;
+  margin-left: 20px; }
+  @media screen and (max-width: 768px) {
     .progressbar-content {
-      padding-bottom: 27px;
-      padding-top: 20px;
-      display: none; } }
+      margin-left: 0px;
+      width: 100%; } }
   .progressbar-content .progress__field label.radio-input {
     position: relative;
     padding-right: 20px;
@@ -13666,13 +13668,11 @@ hr {
       position: absolute;
       left: 5.5px;
       top: 3.5px; }
+  @media screen and (max-width: 440px) {
+    .progressbar-content .progress__field span {
+      font-size: 10px; } }
   .progressbar-content .progress__field.active label.radio-input::before {
     background-color: #1391FF; }
-  @media screen and (max-width: 991px) {
-    .progressbar-content .first-child {
-      position: relative;
-      right: -13px;
-      top: -20px; } }
   .progressbar-content .first-child.active span {
     font-weight: bold;
     color: #fff; }
@@ -13682,11 +13682,6 @@ hr {
     top: -5px; }
     .progressbar-content .first-child label.radio-input.active:after {
       content: ' '; }
-  @media screen and (max-width: 991px) {
-    .progressbar-content .last-child {
-      position: absolute;
-      bottom: 0;
-      right: 4px; } }
   .progressbar-content .last-child.active span {
     font-weight: bold;
     color: #fff; }
@@ -13705,18 +13700,17 @@ hr {
       height: 7.5px;
       background-color: #1391ff; }
   .progressbar-content .line {
-    width: 300px;
+    width: calc(100% - 270px);
+    max-width: 300px;
     background-color: #fff;
     height: 1px;
     position: relative;
     top: 10px;
     margin-left: 5px;
     margin-right: 5px; }
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 440px) {
       .progressbar-content .line {
-        width: 1px;
-        top: 3px;
-        height: 130px; } }
+        width: calc(100% - 240px); } }
 .toast--extrainfo {
   height: 67.7px;
   width: 446.7px;
@@ -13750,6 +13744,11 @@ hr {
       .toast--extrainfo .toast-body .toast-wrap .toast-msg ul li a {
         text-decoration: none; }
 
+.dashboard-widget .modal-body .nav-tabs {
+  display: flex; }
+  @media screen and (max-width: 440px) {
+    .dashboard-widget .modal-body .nav-tabs .nav-item .nav-link {
+      font-size: 10px; } }
 .dashboard-widget .modal-body .btn--saveboard {
   color: #0A0C1B; }
 
